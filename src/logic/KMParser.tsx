@@ -88,39 +88,3 @@ export class MMGraph {
     return currentNode;
   }
 }
-
-export default function parseData(id: string | null) {
-
-  const convertTo = (input: any, searchID: string | null): (MMNode | undefined) => {
-    let currentNode: MMNode = { 'title': input['data']['text'], 'id': input['data']['id'] };
-
-    const id = searchID == null || searchID == currentNode.id ? null : searchID;
-
-    if (input.data.hasOwnProperty('note')) {
-      let lines: string[] = input['data']['note'].split('\n');
-
-      if (lines[0].includes('{ICON:')) {
-        currentNode.icon = (<DynamicFaIcon name={lines[0].substring(6, lines[0].length - 1)} />);
-        lines.splice(0, 1);
-      }
-
-      let info = lines.join('\n');
-      if (info.length) currentNode.info = info;
-    }
-
-    if (Array.isArray(input['children']) && input['children'].length != 0) {
-      currentNode.children = [];
-      for (const child of input['children']) {
-        let childNode = convertTo(child, id);
-        if (id != null && childNode != undefined) {
-          return childNode;
-        }
-
-        if (childNode != undefined) currentNode.children.push(childNode);
-      }
-    }
-
-    return id == null ? currentNode : undefined;
-  }
-  return convertTo(Data['root'], id);
-}

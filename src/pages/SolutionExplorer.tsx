@@ -25,7 +25,6 @@ import { ReactNode } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 import { Link as ReactLink } from 'react-router-dom';
-import parseData from '../logic/KMParser';
 import { MMGraph } from '../logic/KMParser';
 
 interface StatsCardProps {
