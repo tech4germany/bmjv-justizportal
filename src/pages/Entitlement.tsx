@@ -41,8 +41,7 @@ export const EntitlementCheck = (props: FeatureProps) => {
             _hover={{
               transitionDuration: '0.2s',
               color: green,
-            }}
-          >
+            }}>
             <FaInfoCircle size="1.8em" onClick={onOpen} />
           </Box>
         </HStack>
@@ -55,12 +54,7 @@ export const EntitlementCheck = (props: FeatureProps) => {
         </RadioGroup>
 
         <HStack>
-          <Button
-            rounded={'full'}
-            colorScheme="gray"
-            as={ReactLink}
-            to="/solution"
-          >
+          <Button rounded={'full'} colorScheme="gray" as={ReactLink} to="/solution">
             Zurück
           </Button>
           <Button
@@ -68,9 +62,8 @@ export const EntitlementCheck = (props: FeatureProps) => {
             colorScheme="green"
             bg={useColorModeValue('green.500', 'green.300')}
             as={ReactLink}
-            to="#"
-            disabled={value != '2'}
-          >
+            to={value == '1' ? '/exit' : '/zpo'}
+            disabled={value != '2' && value != '1'}>
             Weiter
           </Button>
         </HStack>
@@ -88,15 +81,13 @@ export const EntitlementCheck = (props: FeatureProps) => {
           <ModalCloseButton />
           <ModalBody pb={6}>
             <Text>
-              Wenn die Mietenden den Mangel ganz oder teilweise mitverursacht
-              haben, bestehen in der Regel keine Ansprüche gegen den Vermieter.
+              Wenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine
+              Ansprüche gegen den Vermieter.
               <br />
               <br />
-              Etwas anders kann dann gelten, wenn Versicherungen für den
-              Eintritt eines solchen Mangels bestehen. Existiert bspw. eine
-              Gebäudeversicherung, die von den Mietenden mit getragen wird (über
-              die Betriebskosten), dann muss der Vermieter diese bei Schäden in
-              Anspruch nehmen.
+              Etwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen.
+              Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die
+              Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen.
             </Text>
           </ModalBody>
 

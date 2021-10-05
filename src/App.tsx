@@ -9,6 +9,8 @@ import { MenuWithSubnavigation } from './components/shared/MainMenu';
 import { EntitlementCheck } from './pages/Entitlement';
 import { Home } from './pages/Home';
 import { SolutionExplorer } from './pages/SolutionExplorer';
+import { ExitJourney } from './pages/ExitJourney';
+import { ZPOInformation } from './pages/ZPOInformation';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -55,6 +57,18 @@ export const App = () => {
             <title>Justiz Portal - Anspruchsprüfung</title>
           </Helmet>
           <EntitlementCheck />
+        </Route>
+        <Route path="/exit" exact>
+          <Helmet>
+            <title>Justiz Portal - Anspruchsprüfung</title>
+          </Helmet>
+          <ExitJourney />
+        </Route>
+        <Route path="/zpo" exact>
+          <Helmet>
+            <title>Justiz Portal - ZPO</title>
+          </Helmet>
+          <ZPOInformation />
         </Route>
       </Switch>
       <Spacer />
