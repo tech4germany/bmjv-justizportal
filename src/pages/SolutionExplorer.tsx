@@ -26,6 +26,7 @@ import { FaInfoCircle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 import { Link as ReactLink } from 'react-router-dom';
 import parseData from '../logic/KMParser';
+import { MMGraph } from '../logic/KMParser';
 
 interface StatsCardProps {
   title: string;
@@ -112,7 +113,10 @@ interface FeatureProps {
 
 export const SolutionExplorer = (props: FeatureProps) => {
   const { id } = props;
-  const data = parseData(id);
+  const mmobject = new MMGraph();
+  mmobject.initialize();
+  const data = mmobject.getNode(id);
+  const parent = mmobject.getParent(id);
 
   return (
     <Box textAlign="left" fontSize="xl">
@@ -128,7 +132,7 @@ export const SolutionExplorer = (props: FeatureProps) => {
         </Flex>
 
         <HStack>
-          <Button rounded={'full'} colorScheme="gray" as={ReactLink} to="/">
+          <Button rounded={'full'} colorScheme="gray" as={ReactLink} to={`${parent == undefined ? '' : '/solution?id=' + parent.id}`}>
             Zurück
           </Button>
           <Button
