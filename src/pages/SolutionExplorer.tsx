@@ -11,7 +11,6 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  SimpleGrid,
   Spacer,
   Stat,
   StatLabel,
@@ -44,14 +43,14 @@ function StatsCard(props: StatsCardProps) {
       <Stat
         shadow={'0px 0px 0.5em gray'}
         border={'1px solid'}
+        width="20%"
         borderColor={useColorModeValue('gray.200', 'whiteAlpha.400')}
         bg={useColorModeValue('gray.100', 'whiteAlpha.200')}
         rounded={'lg'}
         _hover={{
           transitionDuration: '0.2s',
           bg: useColorModeValue('gray.200', 'whiteAlpha.400'),
-        }}
-      >
+        }}>
         <>
           <Box
             display={info == undefined ? 'none' : ''}
@@ -65,33 +64,26 @@ function StatsCard(props: StatsCardProps) {
             _hover={{
               transitionDuration: '0.2s',
               color: green,
-            }}
-          >
+            }}>
             <FaInfoCircle
-              size="1.4em"
+              size="1.3em"
               onClick={(e) => {
                 e.stopPropagation();
                 onOpen();
               }}
             />
           </Box>
-
-          <Flex
-            justifyContent={'space-between'}
-            flexDir="column"
-            alignItems="center"
-            as={ReactLink}
-            to={link}
-            p={3}
-          >
-            <Box my={'auto'} color={green} padding="0.8em">
+          <Flex flexDir="column" alignItems="center" as={ReactLink} to={link} p={3}>
+            <Box color={green} padding="0.8em">
               {icon}
             </Box>
-            <StatLabel fontSize={'lg'}>{title}</StatLabel>
+            <StatLabel fontSize={'lg'} textAlign="center">
+              {title}
+            </StatLabel>
           </Flex>
         </>
       </Stat>
-      <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose}>
+      <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>
@@ -102,9 +94,7 @@ function StatsCard(props: StatsCardProps) {
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <ReactMarkdown components={ChakraUIRenderer()}>
-              {info != undefined ? info : ''}
-            </ReactMarkdown>
+            <ReactMarkdown components={ChakraUIRenderer()}>{info != undefined ? info : ''}</ReactMarkdown>
           </ModalBody>
 
           <ModalFooter>
@@ -129,21 +119,13 @@ export const SolutionExplorer = (props: FeatureProps) => {
       <Spacer height={{ base: '1em', md: '1em' }} />
 
       <VStack padding={'1em'} spacing={'2em'}>
-        <Heading>
-          {' '}
-          In welchem Bereich Ihres Lebens haben Sie ein Problem?
-        </Heading>
+        <Heading> In welchem Bereich Ihres Lebens haben Sie ein Problem?</Heading>
 
-        <SimpleGrid columns={{ base: 2, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+        <Flex gridGap="1.5em" flexWrap="wrap">
           {data!.children!.map((child) => (
-            <StatsCard
-              link={`${child.children == undefined ? '/entitlement' : ''}?id=${
-                child.id
-              }`}
-              {...child}
-            />
+            <StatsCard link={`${child.children == undefined ? '/entitlement' : ''}?id=${child.id}`} {...child} />
           ))}
-        </SimpleGrid>
+        </Flex>
 
         <HStack>
           <Button rounded={'full'} colorScheme="gray" as={ReactLink} to="/">
@@ -155,8 +137,7 @@ export const SolutionExplorer = (props: FeatureProps) => {
             colorScheme="green"
             bg={useColorModeValue('green.500', 'green.300')}
             as={ReactLink}
-            to="/entitlement"
-          >
+            to="/entitlement">
             Weiter
           </Button>
         </HStack>
