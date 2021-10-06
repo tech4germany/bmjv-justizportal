@@ -24,7 +24,7 @@
                                 "x": 2,
                                 "y": 3
                             },
-                            "expandState": "collapse",
+                            "expandState": "expand",
                             "note": "{ICON:FaSeedling}\nWas ist ein **Mietmangel**? Vermieter:innen einer Wohnung sind verpflichtet, ihre Mieter:innen die Wohnung während der Mietzeit nutzen zu lassen. Die Wohnung muss dabei in einem geeigneten Zustand überlassen und erhalten werden. Liegt die **Wohnung in einem erheblich schlechteren Zustand vor** als üblicherweise erwartet werden kann oder **besteht eine Störung**, liegt gegebenenfalls ein Mangel vor. \n\n**Bei Mängeln kann ein Anspruch auf Mietminderung, Mängelbeseitigung, Kostenerstattung und/oder Schadensersatz bestehen** (§535 ff. BGB). Ansprüche gegen den Vermietenden wegen eines Mangels an der Mietsache bestehen nur, wenn der Mangel **erheblich** ist und **nicht** vom Mietenden **hingenommen werden muss.** Ein Mangel ist erheblich, wenn er nicht nur geringfügigen Umfang hat und die Brauchbarkeit nicht wesentlich stört."
                         },
                         "children": [
@@ -41,7 +41,7 @@
                                             "id": "cerik08cssg0",
                                             "created": 1633441130864,
                                             "text": "Haben Sie den Mangel verursacht?",
-                                            "note": "{TYPE:YNQUESTION}\nWenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen den Vermieter. \n\nEtwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen. Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen. ",
+                                            "note": "Wenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen den Vermieter. \n\nEtwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen. Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen. ",
                                             "expandState": "expand"
                                         },
                                         "children": [
@@ -63,7 +63,7 @@
                                                     "id": "cerik08cssg1",
                                                     "created": 1633441130864,
                                                     "text": "War das Problem / der Mangel schon bei Vertragsschluss bekannt oder hätte es Ihnen bekannt sein können?",
-                                                    "note": "{TYPE:YNQUESTION}\nWenn ein Problem oder ein Mangel schon bei Vertragsschluss bekannt war, ohne dass die Mietenden die Vermietenden auf das Problem angesprochen und um Behebung gebeten haben, dann können Mängelansprüche ausgeschlossen sein. Wer bei Vertragsschluss also signalisiert hat, dass die Mietsache so in Ordnung ist, kann später nicht sagen, es lag von Anfang an ein Mangel vor. \n\nWenn bspw. bei der Wohnungsbesichtigung schon ein Riss im Fenster war und es wurde nicht mit der vermietenden Person darüber gesprochen, dass der Riss noch beseitigt werden muss, dann kann man nachher nicht sagen, dass ein Mangel vorliegt. Anders ist die Situation, wenn die vermietende Person den Mangel bewusst verschwiegen oder sogar versteckt hat, wenn die mietende Person also getäuscht wurde.  ",
+                                                    "note": "Wenn ein Problem oder ein Mangel schon bei Vertragsschluss bekannt war, ohne dass die Mietenden die Vermietenden auf das Problem angesprochen und um Behebung gebeten haben, dann können Mängelansprüche ausgeschlossen sein. Wer bei Vertragsschluss also signalisiert hat, dass die Mietsache so in Ordnung ist, kann später nicht sagen, es lag von Anfang an ein Mangel vor. \n\nWenn bspw. bei der Wohnungsbesichtigung schon ein Riss im Fenster war und es wurde nicht mit der vermietenden Person darüber gesprochen, dass der Riss noch beseitigt werden muss, dann kann man nachher nicht sagen, dass ein Mangel vorliegt. Anders ist die Situation, wenn die vermietende Person den Mangel bewusst verschwiegen oder sogar versteckt hat, wenn die mietende Person also getäuscht wurde.  ",
                                                     "priority": 1
                                                 },
                                                 "children": [
@@ -85,7 +85,7 @@
                                                             "id": "ceriyb1ejn40",
                                                             "created": 1633442251487,
                                                             "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
-                                                            "note": "{TYPE:YNQUESTION}\nDamit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
+                                                            "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
                                                             "priority": 1
                                                         },
                                                         "children": [
