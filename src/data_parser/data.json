@@ -24,7 +24,7 @@
                                 "x": 2,
                                 "y": 3
                             },
-                            "expandState": "expand",
+                            "expandState": "collapse",
                             "note": "{ICON:FaSeedling}\nWas ist ein **Mietmangel**? Vermieter:innen einer Wohnung sind verpflichtet, ihre Mieter:innen die Wohnung während der Mietzeit nutzen zu lassen. Die Wohnung muss dabei in einem geeigneten Zustand überlassen und erhalten werden. Liegt die **Wohnung in einem erheblich schlechteren Zustand vor** als üblicherweise erwartet werden kann oder **besteht eine Störung**, liegt gegebenenfalls ein Mangel vor. \n\n**Bei Mängeln kann ein Anspruch auf Mietminderung, Mängelbeseitigung, Kostenerstattung und/oder Schadensersatz bestehen** (§535 ff. BGB). Ansprüche gegen den Vermietenden wegen eines Mangels an der Mietsache bestehen nur, wenn der Mangel **erheblich** ist und **nicht** vom Mietenden **hingenommen werden muss.** Ein Mangel ist erheblich, wenn er nicht nur geringfügigen Umfang hat und die Brauchbarkeit nicht wesentlich stört."
                         },
                         "children": [
@@ -35,7 +35,89 @@
                                     "text": "Schimmel",
                                     "note": "{ICON:FaBahai}\n💬 **Definition - Wohnungsmängel durch Schimmel**: Schimmelpilze entstehen bei zu hoher Feuchtigkeit in der Wohnung. Diese ensteht beispielsweise durch unzureichendes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Seite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)\n\nDen Schimmelbefall oder auch feuchte Stellen müssen den Vermietenden sofort angezeigt werden ([Vorlage Mängelanzeige](https://www.notion.so/Vorlage-M-ngelanzeige-a6d70b4dbd7d4140bd146218f997025c)). \n\n**Mögliche Ansprüche:** Ob ein Anspruch wegen eines Mietmangels durch den Schimmel besteht oder nicht, hängt davon ab, ob die Mietenden den Schimmel (mit) verursacht haben. Sie müssen die Mietsache ordentlich heizen und lüften. Außerdem müssen auch die Möbel so in der Wohnung aufgestellt werden, dass sie ausreichend Abstand zu den Außenwänden haben. Halten die Mietenden diese Sorgfaltspflichten ein, dann ist es wahrscheinlich, dass die Schimmelentstehung im Verantwortungsbereich der Vermietenden liegt und entsprechende Ansprüche gegen die Vermietenden bestehen.\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cerik08cssg0",
+                                            "created": 1633441130864,
+                                            "text": "Haben Sie den Mangel verursacht?",
+                                            "note": "{TYPE:YNQUESTION}\nWenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen den Vermieter. \n\nEtwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen. Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen. ",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cepy74jpz1c0",
+                                                    "created": 1633282139370,
+                                                    "text": "{EXIT}",
+                                                    "priority": 3,
+                                                    "hyperlink": null,
+                                                    "hyperlinkTitle": null,
+                                                    "note": "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cerik08cssg1",
+                                                    "created": 1633441130864,
+                                                    "text": "War das Problem / der Mangel schon bei Vertragsschluss bekannt oder hätte es Ihnen bekannt sein können?",
+                                                    "note": "{TYPE:YNQUESTION}\nWenn ein Problem oder ein Mangel schon bei Vertragsschluss bekannt war, ohne dass die Mietenden die Vermietenden auf das Problem angesprochen und um Behebung gebeten haben, dann können Mängelansprüche ausgeschlossen sein. Wer bei Vertragsschluss also signalisiert hat, dass die Mietsache so in Ordnung ist, kann später nicht sagen, es lag von Anfang an ein Mangel vor. \n\nWenn bspw. bei der Wohnungsbesichtigung schon ein Riss im Fenster war und es wurde nicht mit der vermietenden Person darüber gesprochen, dass der Riss noch beseitigt werden muss, dann kann man nachher nicht sagen, dass ein Mangel vorliegt. Anders ist die Situation, wenn die vermietende Person den Mangel bewusst verschwiegen oder sogar versteckt hat, wenn die mietende Person also getäuscht wurde.  ",
+                                                    "priority": 1
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cepy74jpz1c1",
+                                                            "created": 1633282139370,
+                                                            "text": "{EXIT}",
+                                                            "priority": 3,
+                                                            "hyperlink": null,
+                                                            "hyperlinkTitle": null,
+                                                            "note": "Wenn das Problem / der Mangel bei Vertragsschluss schon bekannt war, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "ceriyb1ejn40",
+                                                            "created": 1633442251487,
+                                                            "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
+                                                            "note": "{TYPE:YNQUESTION}\nDamit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
+                                                            "priority": 1
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "2",
+                                                                    "created": 1633282139370,
+                                                                    "text": "{EXIT}",
+                                                                    "priority": 1,
+                                                                    "hyperlink": null,
+                                                                    "hyperlinkTitle": null,
+                                                                    "note": "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.",
+                                                                    "expandState": "expand"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cerizvbz0og0",
+                                                                    "created": 1633442374026,
+                                                                    "text": "{CONTINUE}",
+                                                                    "priority": 3
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "data": {
@@ -61,12 +143,13 @@
                                     "created": 1633282114895,
                                     "text": "Ein anderes Problem",
                                     "note": "{ICON:FaQuestionCircle}",
-                                    "priority": null
+                                    "priority": null,
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "cepy74jpz1c0",
+                                            "id": "cepy74jpz1c3",
                                             "created": 1633282139370,
                                             "text": "{EXIT}",
                                             "priority": 1,
