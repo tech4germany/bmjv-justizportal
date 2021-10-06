@@ -18,6 +18,8 @@ import {
   useColorModeValue,
   useDisclosure,
   VStack,
+  Wrap,
+  WrapItem,
 } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
@@ -41,12 +43,12 @@ function StatsCard(props: StatsCardProps) {
   return (
     <>
       <Stat
-        shadow={'0px 0px 0.5em gray'}
-        border={'1px solid'}
-        width="20%"
+        shadow="0px 0px 0.5em gray"
+        border="1px solid"
+        height="100%"
         borderColor={useColorModeValue('gray.200', 'whiteAlpha.400')}
         bg={useColorModeValue('gray.100', 'whiteAlpha.200')}
-        rounded={'lg'}
+        rounded="lg"
         _hover={{
           transitionDuration: '0.2s',
           bg: useColorModeValue('gray.200', 'whiteAlpha.400'),
@@ -58,8 +60,8 @@ function StatsCard(props: StatsCardProps) {
             href="#"
             pos="absolute"
             width="auto"
-            top={1.5}
-            right={1.5}
+            top=".5em"
+            right=".5em"
             color={useColorModeValue('gray.700', 'whiteAlpha.400')}
             _hover={{
               transitionDuration: '0.2s',
@@ -77,7 +79,7 @@ function StatsCard(props: StatsCardProps) {
             <Box color={green} padding="0.8em">
               {icon}
             </Box>
-            <StatLabel fontSize={'lg'} textAlign="center">
+            <StatLabel fontSize={{ base: 'md', md: 'lg' }} textAlign="center">
               {title}
             </StatLabel>
           </Flex>
@@ -118,20 +120,26 @@ export const SolutionExplorer = (props: FeatureProps) => {
   const parent = mmobject.getParent(id);
 
   return (
-    <Box textAlign="left" fontSize="xl">
+    <Box textAlign="left">
       <Spacer height={{ base: '1em', md: '1em' }} />
 
       <VStack padding={'1em'} spacing={'2em'}>
-        <Heading> In welchem Bereich Ihres Lebens haben Sie ein Problem?</Heading>
+        <Heading>In welchem Bereich Ihres Lebens haben Sie ein Problem?</Heading>
 
-        <Flex gridGap="1.5em" flexWrap="wrap">
+        <Wrap spacing="1.2em" justify="center" align="stretch">
           {data!.children!.map((child) => (
-            <StatsCard link={`${child.children == undefined ? '/entitlement' : ''}?id=${child.id}`} {...child} />
+            <WrapItem w={{ base: '8em', md: '9em' }}>
+              <StatsCard link={`${child.children == undefined ? '/entitlement' : ''}?id=${child.id}`} {...child} />
+            </WrapItem>
           ))}
-        </Flex>
+        </Wrap>
 
         <HStack>
-          <Button rounded={'full'} colorScheme="gray" as={ReactLink} to={`${parent == undefined ? '' : '/solution?id=' + parent.id}`}>
+          <Button
+            rounded={'full'}
+            colorScheme="gray"
+            as={ReactLink}
+            to={`${parent == undefined ? '' : '/solution?id=' + parent.id}`}>
             Zurück
           </Button>
           <Button
