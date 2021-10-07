@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import * as Icons from 'react-icons/fa';
 
 import Data from '../data_parser/data.json';
+import Glossary from '../data_parser/glossary.json';
 
 interface DynamicFaIconProps {
   name: string;
@@ -60,19 +61,47 @@ export class MMGraph {
     }
   }
 
+  private getIndicesOf(searchStr: string, str: string) {
+    var searchStrLen: number = searchStr.length;
+    if (searchStrLen == 0) {
+      return [];
+    }
+    var startIndex: number = 0;
+    var index: number = 0;
+    let indices: number[] = [];
+    str = str.toLowerCase();
+    searchStr = searchStr.toLowerCase();
+    while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+      indices.push(index);
+      startIndex = index + searchStrLen;
+    }
+    return indices;
+  }
+
+  private configureContent(currentNode: MMNode, currentInput: any) {
+    let lines: string[] = currentInput['data']['note'].split('\n');
+    if (lines[0].includes('{ICON:')) {
+      currentNode.icon = <DynamicFaIcon name={lines[0].substring(6, lines[0].length - 1)} />;
+      lines.splice(0, 1);
+    }
+
+    for (let i = 0; i < lines.length; i++) {
+      Glossary.forEach((valuePair) => {
+        let splitLine: string[] = lines[i].split(valuePair.Name);
+        // lines[i] = splitLine.join('<Tooltip label=' + valuePair.Text + '>' + valuePair.Name + '</Tooltip>');
+        // lines[i] = splitLine.join(<Tooltip label={valuePair.Text}>{valuePair.Name}</Tooltip>);
+      });
+    }
+    // Array of elements, only search string elements
+    let info = lines.join('\n');
+    if (info.length) currentNode.info = info;
+  }
+
   private traverseMindMap(currentInput: any): MMNode {
     let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'] };
 
     if (currentInput.data.hasOwnProperty('note')) {
-      let lines: string[] = currentInput['data']['note'].split('\n');
-
-      if (lines[0].includes('{ICON:')) {
-        currentNode.icon = <DynamicFaIcon name={lines[0].substring(6, lines[0].length - 1)} />;
-        lines.splice(0, 1);
-      }
-
-      let info = lines.join('\n');
-      if (info.length) currentNode.info = info;
+      this.configureContent(currentNode, currentInput);
     }
 
     if (Array.isArray(currentInput['children']) && currentInput['children'].length != 0) {
@@ -84,7 +113,7 @@ export class MMGraph {
         }
 
         this.parent[child['data']['id']] = currentNode;
-        let childObject = this.traverseMindMap(child);
+        let childObject: MMNode = this.traverseMindMap(child);
         currentNode.children.push(childObject);
       }
     }
