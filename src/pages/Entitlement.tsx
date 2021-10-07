@@ -3,99 +3,107 @@ import {
   Button,
   Heading,
   HStack,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
   Radio,
   RadioGroup,
   Spacer,
   Text,
   useColorModeValue,
-  useDisclosure,
   VStack,
 } from '@chakra-ui/react';
+import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
-import { Link as ReactLink } from 'react-router-dom';
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import ReactMarkdown from 'react-markdown';
+import { Link as ReactLink } from 'react-router-dom';
+import { MMGraph } from '../logic/KMParser';
 
-interface FeatureProps {}
+interface FeatureProps {
+  id: string;
+}
 
 export const EntitlementCheck = (props: FeatureProps) => {
+  const { id } = props;
+
   const [value, setValue] = React.useState('0');
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const green = useColorModeValue('green.500', 'green.300');
+  const mmobject = new MMGraph();
+  mmobject.initialize();
+  const data = mmobject.getNode(id);
+  const parent = mmobject.getParent(id);
+
+  // TODO Skip on ony one Children
+
+  let linkOnYes: string = '';
+  let linkOnNo: string = '';
+
+  if (data.children != undefined) {
+    data.children.forEach((child) => {
+      const pre = (child.title == '{EXIT}' ? '/exit' : '') + (child.title == '{CONTINUE}' ? '/options' : '');
+      if (child.type == 'YESANSWERD') {
+        linkOnYes = pre + `?id=${child.id}`;
+      } else {
+        linkOnNo = pre + `?id=${child.id}`;
+      }
+    });
+  }
 
   return (
-    <Box textAlign="left" fontSize="xl">
+    <Box padding="3em">
       <Spacer height={{ base: '1em', md: '1em' }} />
-      <VStack padding={'1em'} spacing={'2em'}>
-        <HStack spacing={3} alignItems="center" height="1.8em">
-          <Heading>Haben Sie den Mangel verusacht?</Heading>
+
+      <HStack align="top" wrap="wrap" spacing="2em">
+        <VStack spacing="2em" flex="1" align="left">
+          <Heading>{data.title}</Heading>
+          <RadioGroup size="lg" onChange={setValue}>
+            <VStack spacing="24px" alignItems="left">
+              <Radio value="1">Ja</Radio>
+              <Radio value="2">Nein</Radio>
+            </VStack>
+          </RadioGroup>
+          <Spacer height={{ base: '1em', md: '1em' }} />
+        </VStack>
+        <Box flex="1">
           <Box
+            display={data.info ? '' : 'none'}
+            padding="1em"
+            shadow="0px 0px 0.5em gray"
+            border="1px solid"
+            height="100%"
+            borderColor="whiteAlpha.400"
+            bg="whiteAlpha.200"
+            rounded="lg"
             _hover={{
               transitionDuration: '0.2s',
-              color: green,
+              bg: 'whiteAlpha.400',
             }}>
-            <FaInfoCircle size="1.8em" onClick={onOpen} />
-          </Box>
-        </HStack>
-
-        <RadioGroup onChange={setValue} size="lg">
-          <VStack spacing="24px" alignItems="left">
-            <Radio value="1">Ja, ist das was schlechtes?</Radio>
-            <Radio value="2">Ehm, ich glaube der Hund wars...</Radio>
-          </VStack>
-        </RadioGroup>
-
-        <HStack>
-          <Button rounded={'full'} colorScheme="gray" as={ReactLink} to="/solution">
-            Zurück
-          </Button>
-          <Button
-            rounded={'full'}
-            colorScheme="green"
-            bg={useColorModeValue('green.500', 'green.300')}
-            as={ReactLink}
-            to={value == '1' ? '/exit' : '/zpo'}
-            disabled={value != '2' && value != '1'}>
-            Weiter
-          </Button>
-        </HStack>
-      </VStack>
-
-      <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>
             <HStack>
-              <FaInfoCircle size="1.4em" />
-              <Text>Info</Text>
+              <FaInfoCircle size="1.2em" />
+              <Text fontWeight="bold">Info</Text>
             </HStack>
-          </ModalHeader>
-          <ModalCloseButton />
-          <ModalBody pb={6}>
-            <Text>
-              Wenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine
-              Ansprüche gegen den Vermieter.
-              <br />
-              <br />
-              Etwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen.
-              Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die
-              Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen.
-            </Text>
-          </ModalBody>
+            <Spacer height="1em" />
+            <ReactMarkdown components={ChakraUIRenderer()}>{data.info ? data.info : ''}</ReactMarkdown>
+          </Box>
+        </Box>
+      </HStack>
 
-          <ModalFooter>
-            <Button onClick={onClose}>Okay</Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
+      <HStack>
+        <Button
+          rounded={'full'}
+          colorScheme="gray"
+          as={ReactLink}
+          to={`${parent != undefined ? '?id=' + parent.id : '/'}`}>
+          Zurück
+        </Button>
+        <Button
+          rounded={'full'}
+          colorScheme="green"
+          bg={useColorModeValue('green.500', 'green.300')}
+          as={ReactLink}
+          to={value == '1' ? linkOnYes : linkOnNo}
+          disabled={value != '2' && value != '1'}>
+          Weiter
+        </Button>
+      </HStack>
     </Box>
   );
 };

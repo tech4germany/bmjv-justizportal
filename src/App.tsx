@@ -11,6 +11,7 @@ import { Home } from './pages/Home';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ExitJourney } from './pages/ExitJourney';
 import { ZPOInformation } from './pages/ZPOInformation';
+import { Options } from './pages/Options';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,11 +41,7 @@ export const App = () => {
           <Helmet>
             <title>Justiz Portal - Home</title>
           </Helmet>
-          <Home
-            anchorId={window.location.href.slice(
-              window.location.href.indexOf('#') + 1
-            )}
-          />
+          <Home anchorId={window.location.href.slice(window.location.href.indexOf('#') + 1)} />
         </Route>
         <Route path="/solution" exact>
           <Helmet>
@@ -56,19 +53,26 @@ export const App = () => {
           <Helmet>
             <title>Justiz Portal - Anspruchsprüfung</title>
           </Helmet>
-          <EntitlementCheck />
+
+          <EntitlementCheck id={query.get('id')!} />
         </Route>
         <Route path="/exit" exact>
           <Helmet>
-            <title>Justiz Portal - Anspruchsprüfung</title>
+            <title>Justiz Portal - Ende</title>
           </Helmet>
-          <ExitJourney />
+          <ExitJourney id={query.get('id')!} />
         </Route>
         <Route path="/zpo" exact>
           <Helmet>
             <title>Justiz Portal - ZPO</title>
           </Helmet>
           <ZPOInformation />
+        </Route>
+        <Route path="/options" exact>
+          <Helmet>
+            <title>Justiz Portal - Handlungsoptionen</title>
+          </Helmet>
+          <Options id={query.get('id')!} />
         </Route>
       </Switch>
       <Spacer />
