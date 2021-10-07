@@ -11,7 +11,7 @@ import { Home } from './pages/Home';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ExitJourney } from './pages/ExitJourney';
 import { ZPOInformation } from './pages/ZPOInformation';
-import { Options } from './pages/Options';
+import { PossibleEntitlements } from './pages/PEntitlements';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,7 +30,8 @@ function useQuery() {
 }
 
 export const App = () => {
-  let query = useQuery();
+  const query = useQuery();
+  const featureProps = { id: query.get('id') };
 
   return (
     <Box display="flex" flexDir="column" minH="100vh">
@@ -43,24 +44,17 @@ export const App = () => {
           </Helmet>
           <Home anchorId={window.location.href.slice(window.location.href.indexOf('#') + 1)} />
         </Route>
-        <Route path="/solution" exact>
+        <Route path="/solutionexplorer" exact>
           <Helmet>
             <title>Justiz Portal - Lösungsfinder</title>
           </Helmet>
-          <SolutionExplorer id={query.get('id')} />
-        </Route>
-        <Route path="/entitlement" exact>
-          <Helmet>
-            <title>Justiz Portal - Anspruchsprüfung</title>
-          </Helmet>
-
-          <EntitlementCheck id={query.get('id')!} />
+          <SolutionExplorer {...featureProps} />
         </Route>
         <Route path="/exit" exact>
           <Helmet>
             <title>Justiz Portal - Ende</title>
           </Helmet>
-          <ExitJourney id={query.get('id')!} />
+          <ExitJourney {...featureProps} />
         </Route>
         <Route path="/zpo" exact>
           <Helmet>
@@ -72,7 +66,7 @@ export const App = () => {
           <Helmet>
             <title>Justiz Portal - Handlungsoptionen</title>
           </Helmet>
-          <Options id={query.get('id')!} />
+          <PossibleEntitlements {...featureProps} />
         </Route>
       </Switch>
       <Spacer />
