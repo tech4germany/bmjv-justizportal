@@ -23,6 +23,7 @@ const DynamicFaIcon = (props: DynamicFaIconProps) => {
 export interface MMNode {
   id: string;
   title: string;
+  type: string;
   icon?: ReactNode;
   info?: string;
   children?: MMNode[];
@@ -35,12 +36,12 @@ export class MMGraph {
   private numberOfNotes = 0;
 
   constructor() {
-    this.root = { title: '', id: '' };
+    this.root = { title: '', id: '', type: 'root' };
   }
 
   initialize() {
     let currentInput: any = Data['root'];
-    let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'] };
+    let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'], type: 'root' };
     this.root = this.traverseMindMap(Data['root']);
   }
 
@@ -61,7 +62,7 @@ export class MMGraph {
   }
 
   private traverseMindMap(currentInput: any): MMNode {
-    let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'] };
+    let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'], type: 'default' };
 
     if (currentInput.data.hasOwnProperty('note')) {
       let lines: string[] = currentInput['data']['note'].split('\n');
@@ -73,6 +74,14 @@ export class MMGraph {
 
       let info = lines.join('\n');
       if (info.length) currentNode.info = info;
+    }
+
+    if (currentInput.data.hasOwnProperty('priority')) {
+      if (currentInput.data['priority'] == 1) {
+        currentNode.type = 'NOANSWERD';
+      } else if (currentInput.data['priority'] == 3) {
+        currentNode.type = 'YESANSWERD';
+      }
     }
 
     if (Array.isArray(currentInput['children']) && currentInput['children'].length != 0) {
