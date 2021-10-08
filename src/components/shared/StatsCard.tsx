@@ -21,7 +21,10 @@ import * as React from 'react';
 import { ReactNode } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
+import { Tooltip } from '@chakra-ui/react';
 import { Link as ReactLink } from 'react-router-dom';
+
+import Glossary from '../../data_parser/glossary.json';
 
 interface StatsCardProps {
   title: string;
@@ -91,7 +94,15 @@ export const StatsCard = (props: StatsCardProps) => {
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <ReactMarkdown components={ChakraUIRenderer()}>{info != undefined ? info : ''}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                code({ node, inline, className, children, ...props }) {
+                  let key: string = children + '';
+                  return <Tooltip label={Glossary.find((value) => value.Name == key)?.Text}>{children + ''}</Tooltip>;
+                },
+              }}>
+              {info != undefined ? info : ''}
+            </ReactMarkdown>
           </ModalBody>
 
           <ModalFooter>
