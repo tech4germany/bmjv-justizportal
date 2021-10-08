@@ -9,6 +9,7 @@ import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { StatsCard } from '../components/shared/StatsCard';
 import { MMGraph } from '../logic/KMParser';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 
 interface FeatureProps {
   id: string | null;
@@ -75,7 +76,7 @@ export const SolutionExplorer = (props: FeatureProps) => {
             <Card flex="1" minWidth="20em">
               <CardHeader title="Info" action={<FaInfoCircle size="1.2em" />} />
               <CardContent padding="1em">
-                <ReactMarkdown components={ChakraUIRenderer()}>{data.info ? data.info : ''}</ReactMarkdown>
+                <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>
             </Card>
           </Flex>

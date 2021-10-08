@@ -25,6 +25,7 @@ import { Tooltip } from '@chakra-ui/react';
 import { Link as ReactLink } from 'react-router-dom';
 
 import Glossary from '../../data_parser/glossary.json';
+import { AnnotadedText } from './AnnotatedText';
 
 interface StatsCardProps {
   title: string;
@@ -94,15 +95,7 @@ export const StatsCard = (props: StatsCardProps) => {
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <ReactMarkdown
-              components={{
-                code({ node, inline, className, children, ...props }) {
-                  let key: string = children + '';
-                  return <Tooltip label={Glossary.find((value) => value.Name == key)?.Text}>{children + ''}</Tooltip>;
-                },
-              }}>
-              {info != undefined ? info : ''}
-            </ReactMarkdown>
+            <AnnotadedText text={info != undefined ? info : ''} />
           </ModalBody>
 
           <ModalFooter>

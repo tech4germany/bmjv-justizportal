@@ -62,63 +62,14 @@ export class MMGraph {
     }
   }
 
-  private getIndicesOf(searchStr: string, str: string) {
-    var searchStrLen: number = searchStr.length;
-    if (searchStrLen == 0) {
-      return [];
-    }
-    var startIndex: number = 0;
-    var index: number = 0;
-    let indices: number[] = [];
-    str = str.toLowerCase();
-    searchStr = searchStr.toLowerCase();
-    while ((index = str.indexOf(searchStr, startIndex)) > -1) {
-      indices.push(index);
-      startIndex = index + searchStrLen;
-    }
-    return indices;
-  }
-
-  private addTooltips(arrayRef: string[], keyword: string, infoText: string): string[] {
-    let tempDict: { [id: number]: string[] } = {};
-    for (var i = 0; i < arrayRef.length; i++) {
-      if (typeof arrayRef[i] === 'string') {
-        let indices: number[] = this.getIndicesOf(keyword, arrayRef[i]);
-        if (indices.length > 0) {
-          tempDict[i] = [];
-          var lastAddedIndex: number = 0;
-          indices.forEach((index) => {
-            tempDict[i].push(arrayRef[i].substr(lastAddedIndex, index - lastAddedIndex));
-            tempDict[i].push('`' + keyword + '`');
-            lastAddedIndex = index + keyword.length;
-          });
-          tempDict[i].push(arrayRef[i].substr(lastAddedIndex, arrayRef[i].length - lastAddedIndex));
-        } else {
-          tempDict[i] = [arrayRef[i]];
-        }
-      } else {
-        tempDict[i] = [arrayRef[i]];
-      }
-    }
-    let returnArray: string[] = [];
-    for (var i = 0; i < Object.keys(tempDict).length; i++) {
-      tempDict[i].forEach((object) => returnArray.push(object));
-    }
-    return returnArray;
-  }
-
   private configureContent(currentNode: MMNode, currentInput: any) {
     let lines: string[] = currentInput['data']['note'].split('\n');
     if (lines[0].includes('{ICON:')) {
       currentNode.icon = <DynamicFaIcon name={lines[0].substring(6, lines[0].length - 1)} />;
       lines.splice(0, 1);
     }
-    var infoText = lines.join('\n');
-    var infoArray: string[] = [infoText];
-    Glossary.forEach((valuePair) => {
-      infoArray = this.addTooltips(infoArray, valuePair.Name, valuePair.Text);
-    });
-    currentNode.info = infoArray.join('');
+
+    currentNode.info = lines.join('\n');
   }
 
   private traverseMindMap(currentInput: any): MMNode {
