@@ -1,9 +1,4 @@
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  CloseIcon,
-  HamburgerIcon,
-} from '@chakra-ui/icons';
+import { ChevronDownIcon, ChevronRightIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
@@ -23,7 +18,6 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
-
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 export const MenuWithSubnavigation = () => {
@@ -41,31 +35,18 @@ export const MenuWithSubnavigation = () => {
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'}
-      >
-        <Flex
-          flex={{ base: 1, md: 'auto' }}
-          ml={{ base: -2 }}
-          display={{ base: 'flex', md: 'none' }}
-        >
+        align={'center'}>
+        <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
           <IconButton
             onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
+            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
           />
         </Flex>
         <Flex flex={{ base: 2 }} justify={{ base: 'center', md: 'start' }}>
           <Link as={ReactLink} to="/">
-            <svg
-              width="208"
-              height="31"
-              viewBox="0 0 139 21"
-              fill={color}
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="208" height="31" viewBox="0 0 139 21" fill={color} xmlns="http://www.w3.org/2000/svg">
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -83,21 +64,9 @@ export const MenuWithSubnavigation = () => {
           </Flex>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={'flex-end'}
-          direction={'row'}
-          spacing={6}
-        >
-          <ColorModeSwitcher
-            justifySelf="flex-end"
-            display={{ base: 'none', md: 'flex' }}
-          />
-          <Button
-            colorScheme="green"
-            bg={useColorModeValue('green.500', 'green.300')}
-            rounded={'full'}
-          >
+        <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
+          <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
+          <Button colorScheme="green" bg={useColorModeValue('green.500', 'green.300')} rounded={'full'}>
             Anmelden
           </Button>
         </Stack>
@@ -140,21 +109,13 @@ const DesktopNav = () => {
                   borderBottom: 'solid',
                   borderBottomWidth: 4,
                   borderBottomColor: greenHex,
-                }}
-              >
+                }}>
                 {navItem.label}
               </Link>
             </PopoverTrigger>
 
             {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={'xl'}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={'xl'}
-                minW={'sm'}
-              >
+              <PopoverContent border={0} boxShadow={'xl'} bg={popoverContentBgColor} p={4} rounded={'xl'} minW={'sm'}>
                 <Stack>
                   {navItem.children.map((child) => (
                     <DesktopSubNav key={child.label} {...child} />
@@ -177,15 +138,10 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
-    >
+      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text
-            transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
-            fontWeight={500}
-          >
+          <Text transition={'all .3s ease'} _groupHover={{ color: 'pink.400' }} fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
@@ -197,8 +153,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
           justify={'flex-end'}
           align={'center'}
-          flex={1}
-        >
+          flex={1}>
           <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
@@ -215,13 +170,7 @@ const MobileNav = () => {
         ))}
       </Stack>
 
-      <Box
-        display="flex"
-        alignItems="center"
-        width="100%"
-        height="auto"
-        borderTop="1px solid gray"
-      >
+      <Box display="flex" alignItems="center" width="100%" height="auto" borderTop="1px solid gray">
         <Spacer flex={1} />
         <Text>Dark mode:</Text>
         <ColorModeSwitcher justifySelf="flex-end" />
@@ -250,12 +199,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         }}
         _hover={{
           textDecoration: 'none',
-        }}
-      >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue('gray.600', 'gray.200')}
-        >
+        }}>
+        <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
           {label}
         </Text>
         {children && (
@@ -276,8 +221,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           borderLeft={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.700')}
-          align={'start'}
-        >
+          align={'start'}>
           {children &&
             children.map((child) => (
               <Link key={child.label} py={2} href={child.href}>
@@ -300,6 +244,6 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'Lösungsfinder',
-    href: '/solution',
+    href: '/solutionexplorer',
   },
 ];
