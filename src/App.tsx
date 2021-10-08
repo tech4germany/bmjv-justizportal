@@ -12,6 +12,7 @@ import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ExitJourney } from './pages/ExitJourney';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { PossibleEntitlements } from './pages/PEntitlements';
+import { MMGraph } from './logic/KMParser';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,7 +32,11 @@ function useQuery() {
 
 export const App = () => {
   const query = useQuery();
-  const featureProps = { id: query.get('id') };
+
+  const mmobject = new MMGraph();
+  mmobject.initialize();
+
+  const featureProps = { id: query.get('id'), mmobject: mmobject };
 
   return (
     <Box display="flex" flexDir="column" minH="100vh">

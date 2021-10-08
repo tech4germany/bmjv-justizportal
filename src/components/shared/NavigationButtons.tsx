@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 
 export const NavButtons = (props: any) => (
-  <HStack spacing="1em">
+  <HStack spacing="1em" justify={props.jusitfy}>
     <Button
       display={props.linkBack ? undefined : 'none'}
       rounded={'full'}
