@@ -1,15 +1,13 @@
-import { Box, Flex, Heading, HStack, Radio, RadioGroup, Spacer, VStack, Wrap, WrapItem } from '@chakra-ui/react';
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+import { Box, Flex, Heading, Radio, RadioGroup, Spacer, VStack, Wrap, WrapItem } from '@chakra-ui/react';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
-import ReactMarkdown from 'react-markdown';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
 import { CardContent } from '../components/shared/CardContent';
 import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { StatsCard } from '../components/shared/StatsCard';
 import { MMGraph } from '../logic/KMParser';
-import { AnnotadedText } from '../components/shared/AnnotatedText';
 
 interface FeatureProps {
   id: string | null;

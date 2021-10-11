@@ -54,7 +54,7 @@ export const StatsCard = (props: StatsCardProps) => {
         }}>
         <>
           <Box
-            display={info == undefined ? 'none' : ''}
+            display={info ? '' : 'none'}
             as="a"
             href="#"
             pos="absolute"
