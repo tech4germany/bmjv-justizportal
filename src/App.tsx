@@ -1,6 +1,6 @@
 import { Spacer } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/react';
-import React, { useEffect } from 'react';
+import React, { Children, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Route, Switch, useLocation } from 'react-router-dom';
 
@@ -13,6 +13,7 @@ import { ExitJourney } from './pages/ExitJourney';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { PossibleEntitlements } from './pages/PEntitlements';
 import { MMGraph } from './logic/KMParser';
+import { Bryter } from './pages/BRYTER';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -72,6 +73,12 @@ export const App = () => {
             <title>Justiz Portal - Handlungsoptionen</title>
           </Helmet>
           <PossibleEntitlements {...featureProps} />
+        </Route>
+        <Route path="/bryter" exact>
+          <Helmet>
+            <title>Justiz Portal - Handlungsoptionen</title>
+          </Helmet>
+          <Bryter {...featureProps} />
         </Route>
       </Switch>
       <Spacer />

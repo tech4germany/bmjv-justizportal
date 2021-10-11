@@ -207,89 +207,20 @@
                     "created": 1633281742285,
                     "text": "Arbeit",
                     "note": "{ICON:FaBriefcase}",
-                    "expandState": "collapse"
+                    "expandState": "expand"
                 },
-                "children": [
-                    {
-                        "data": {
-                            "id": "cepy22a4pco0",
-                            "created": 1633281742616,
-                            "text": "Arbeit"
-                        },
-                        "children": []
-                    }
-                ]
+                "children": []
             },
             {
                 "data": {
                     "id": "cepn7tavqgow",
                     "created": 1633251161046,
                     "text": "Reisen",
-                    "expandState": "collapse",
+                    "expandState": "expand",
                     "progress": null,
                     "note": "{ICON:FaPlaneDeparture}"
                 },
-                "children": [
-                    {
-                        "data": {
-                            "id": "ceo2i3wul79c",
-                            "created": 1633091164519,
-                            "text": "Test ",
-                            "layout_mind_offset": {
-                                "x": -4,
-                                "y": -9
-                            },
-                            "resource": [],
-                            "note": "Dies ist ein Test",
-                            "expandState": "expand"
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "cepn8j5ofrb4",
-                                    "created": 1633251217328,
-                                    "text": "Topic",
-                                    "expandState": "expand"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cepn8k7e464g",
-                                            "created": 1633251219608,
-                                            "text": "Topic"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cepn8jkdpgxs",
-                                                    "created": 1633251218217,
-                                                    "text": "Topic"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cepn8p0pglc0",
-                                    "created": 1633251230088,
-                                    "text": "Topic"
-                                },
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "cepn8nhyszk0",
-                            "created": 1633251226778,
-                            "text": "Topic"
-                        },
-                        "children": []
-                    }
-                ]
+                "children": []
             },
             {
                 "data": {
