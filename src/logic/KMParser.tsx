@@ -32,10 +32,10 @@ export interface MMNode {
 }
 
 export enum Claims {
-  Mietminderung,
-  Mängelbeseitigung,
-  Schadensersatz,
-  Aufwandungsersatz,
+  Mietminderung = 'Mietminderung',
+  Mängelbeseitigung = 'Mängelbeseitigung',
+  Schadensersatz = 'Schadensersatz',
+  Aufwandungsersatz = 'Aufwandungsersatz',
 }
 
 export class MMGraph {
@@ -87,6 +87,9 @@ export class MMGraph {
     let lines: string[] = currentInput['data']['note'].split('\n');
     if (lines[0].includes('{ICON:')) {
       currentNode.icon = <DynamicFaIcon name={lines[0].substring(6, lines[0].length - 1)} />;
+      lines.splice(0, 1);
+    } else if (lines[0].includes("{'")) {
+      currentNode.claims = JSON.parse(lines[0].replaceAll("'", '"'))['entitlements'];
       lines.splice(0, 1);
     }
 
