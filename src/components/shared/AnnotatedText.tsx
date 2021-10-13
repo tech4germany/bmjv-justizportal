@@ -26,10 +26,6 @@ import { Link as ReactLink } from 'react-router-dom';
 
 import Glossary from '../../data_parser/glossary.json';
 
-interface AnnotadedTextProps {
-  text: string;
-}
-
 function getIndicesOf(searchStr: string, str: string): number[] {
   var searchStrLen: number = searchStr.length;
   if (searchStrLen == 0) {
@@ -64,6 +60,10 @@ function addInlineCodeMarkdown(text: string, keyword: string, infoText: string):
   return tempString.join('');
 }
 
+interface AnnotadedTextProps {
+  text: string;
+}
+
 export const AnnotadedText = (props: AnnotadedTextProps) => {
   const { text } = props;
 
@@ -78,7 +78,13 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
         components={ChakraUIRenderer({
           code({ node, inline, className, children, ...props }) {
             let key: string = children + '';
-            return <Tooltip label={Glossary.find((value) => value.Name == key)?.Text}>{children + ''}</Tooltip>;
+            return (
+              <Tooltip hasArrow label={Glossary.find((value) => value.Name == key)?.Text}>
+                <Text as="span" style={{ textDecoration: 'underline dotted gray' }}>
+                  {children + ''}
+                </Text>
+              </Tooltip>
+            );
           },
         })}>
         {annotatedText}
