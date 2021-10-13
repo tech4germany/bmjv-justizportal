@@ -2,15 +2,7 @@ import { Box, Button, Container, Stack, Text, useColorModeValue, VisuallyHidden 
 import React, { ReactNode } from 'react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
-const SocialButton = ({
-  children,
-  label,
-  href,
-}: {
-  children: ReactNode;
-  label: string;
-  href: string;
-}) => {
+const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
   return (
     <Button
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
@@ -35,10 +27,7 @@ const SocialButton = ({
 
 export default function FooterSmallWithSocial() {
   return (
-    <Box
-      bg={useColorModeValue('gray.100', 'gray.600')}
-      color={useColorModeValue('gray.600', 'gray.200')}
-    >
+    <Box bg={useColorModeValue('gray.100', 'gray.600')} color={useColorModeValue('gray.600', 'gray.200')}>
       <Container
         as={Stack}
         maxW={'6xl'}
@@ -48,17 +37,6 @@ export default function FooterSmallWithSocial() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Text>Gebaut von ⚖️ und 🐌 mit ❤️</Text>
-        <Stack direction={'row'} spacing={5}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
-          </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
-            <FaInstagram />
-          </SocialButton>
-        </Stack>
       </Container>
     </Box>
   );

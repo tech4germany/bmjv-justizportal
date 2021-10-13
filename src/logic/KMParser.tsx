@@ -35,7 +35,7 @@ export enum Claims {
   Mietminderung = 'Mietminderung',
   Mängelbeseitigung = 'Mängelbeseitigung',
   Schadensersatz = 'Schadensersatz',
-  Aufwandungsersatz = 'Aufwandungsersatz',
+  Aufwendungsersatz = 'Aufwendungsersatz',
 }
 
 export class MMGraph {
