@@ -15,6 +15,7 @@ import { MMGraph } from './logic/KMParser';
 import { Bryter } from './pages/BRYTER';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
+import { Options } from './pages/Options';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,7 +63,7 @@ export const App = () => {
         <Route path="/exit" component={() => <ExitJourney {...featureProps} />} exact />
         <Route path="/zpo" component={() => <ZPOInformation />} exact />
         <Route path="/possibleentitlements" component={() => <PossibleEntitlements {...featureProps} />} exact />
-        <Route path="/options" component={() => <PossibleEntitlements {...featureProps} />} exact />
+        <Route path="/options" component={() => <Options {...featureProps} />} exact />
         <Route path="/bryter" exact>
           <Helmet>
             <title>Justiz Portal - BRYTER</title>
