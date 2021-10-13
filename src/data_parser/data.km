@@ -159,7 +159,7 @@
                                                                                     "created": 1634133696017,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 1,
-                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                 },
                                                                                 "children": []
                                                                             },
@@ -178,7 +178,7 @@
                                                                                             "created": 1634133504986,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
-                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung',]}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -226,7 +226,7 @@
                                                                                                             "created": 1634133474458,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "priority": 3,
-                                                                                                            "note": "{'options': ['Vermieterschreiben','Klage''],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                            "note": "{'options': ['Vermieterschreiben','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                                         },
                                                                                                         "children": []
                                                                                                     }
