@@ -58,19 +58,11 @@ export const App = () => {
           </Helmet>
           <Home anchorId={window.location.href.slice(window.location.href.indexOf('#') + 1)} />
         </Route>
-        <Route path="/solutionexplorer" exact>
-          <SolutionExplorer {...featureProps} />
-        </Route>
-        <Route path="/exit" exact>
-          <Helmet>
-            <title>Justiz Portal - Ende</title>
-          </Helmet>
-          <ExitJourney {...featureProps} />
-        </Route>
-        <Route path="/zpo" component={ZPOInformation} exact />
-        <Route path="/options" exact>
-          <PossibleEntitlements {...featureProps} />
-        </Route>
+        <Route path="/solutionexplorer" component={() => <SolutionExplorer {...featureProps} />} exact />
+        <Route path="/exit" component={() => <ExitJourney {...featureProps} />} exact />
+        <Route path="/zpo" component={() => <ZPOInformation />} exact />
+        <Route path="/possibleentitlements" component={() => <PossibleEntitlements {...featureProps} />} exact />
+        <Route path="/options" component={() => <PossibleEntitlements {...featureProps} />} exact />
         <Route path="/bryter" exact>
           <Helmet>
             <title>Justiz Portal - BRYTER</title>

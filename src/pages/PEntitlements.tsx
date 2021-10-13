@@ -119,7 +119,7 @@ Es gilt: Wenn der Mangel schon bei Vertragsschluss vorlag, dann haften die Vermi
       </Accordion>
       <Spacer height="2em" />
 
-      <NavButtons linkBack={`/solutionexplorer?id=${mmobject.getParent(id)?.id}`} linkForward="/zpo" />
+      <NavButtons linkBack={`/solutionexplorer?id=${mmobject.getParent(id)?.id}`} linkForward={`/options?id=${id}`} />
     </PageBody>
   );
 };
