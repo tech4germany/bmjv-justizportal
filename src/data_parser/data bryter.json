@@ -1,0 +1,1919 @@
+{
+  "id": "1i8HxEOET0ihVzEdVk0lKA",
+  "version": 2018,
+  "name": "Klagegenerierung Mietmangel",
+  "data": {
+    "moduleName": "Klagegenerierung Mietmangel",
+    "version": 73,
+    "startNodeId": "node_id_a6b2d730e4a98be240e2",
+    "locale": "de",
+    "groups": {
+      "group_node_id_690808fd089216f222c9": {
+        "nodes": [
+          "node_id_690808fd089216f222c9",
+          "node_id_bb2ea17b46d1301e5eb0",
+          "node_id_8d44693c202913eb44fc",
+          "node_id_167f844e9e05a7d9c860",
+          "node_id_a6e9db41adea26cb66e3",
+          "node_id_e0136d187933f9746f5b",
+          "node_id_f2578c6f08e0710ed749",
+          "node_id_c8f34ea2cb26b2fde253",
+          "node_id_3bdc36eb24cfd856f2b1",
+          "node_id_775bc941243c6c49e753"
+        ],
+        "isCollapsed": false,
+        "label": "antraege"
+      },
+      "group_node_id_2ab468bd3b92862715c7": {
+        "nodes": [
+          "node_id_2ab468bd3b92862715c7",
+          "node_id_e80306560f6669df31b8",
+          "node_id_ad4af1f12a0bf46bc67a",
+          "node_id_f26cfa0ca17dac28e666"
+        ],
+        "isCollapsed": true,
+        "label": "Preset Values"
+      }
+    },
+    "nodes": {
+      "node_id_d9a43867dd18a0a3d161": {
+        "id": "node_id_d9a43867dd18a0a3d161",
+        "type": "document_generation",
+        "label": "Ihre Mietmangel-Klage",
+        "content": { "html": "" },
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_4a66bef7f3e8a9b79bb2",
+        "transitions": [
+          {
+            "id": "id_0021d10f8c21d0cfaafd",
+            "from": "node_id_d9a43867dd18a0a3d161",
+            "to": "node_id_49b505dfc1127c4e949b",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "document": {
+          "id": "id_784d259ac6a1e8924bf7",
+          "parameters": {
+            "docName": [{ "type": "plain", "text": "Klage Mietmangel" }],
+            "placeholders": [
+              { "name": "amtsgericht-stadt", "variableId": "var_id_7336d744b64e223a1254" },
+              { "name": "amtsgericht-adresse", "variableId": "var_id_d55c74faab4a25885f78" },
+              { "name": "erstellungsdatum", "variableId": "var_id_6346ff231def8400925d" },
+              { "name": "klagende", "variableId": "var_id_047a91ec73900ed33db2" },
+              { "name": "beklagte", "variableId": "var_id_2598b19113002624deee" },
+              { "name": "antraege", "variableId": "var_id_5935d2db480863f0dd8d" },
+              { "name": "streitwert-text", "variableId": "var_id_3b2335fbb88ad2d6cfd5" },
+              { "name": "antragstext", "variableId": "var_id_23965f7798bb907cf2e5" },
+              { "name": "mietvertrag-datum", "variableId": "var_id_501d8077685a56b2b1b4.var_id_1d7b1296603d084f519b" },
+              { "name": "wohnung-straße", "variableId": "var_id_501d8077685a56b2b1b4.var_id_b25a0bd46b40b8616de2" },
+              { "name": "wohnung-etage", "variableId": "var_id_501d8077685a56b2b1b4.var_id_064c09b3a78ea62b2582" },
+              { "name": "wohnung-stadt", "variableId": "var_id_501d8077685a56b2b1b4.var_id_7c1d7ce47ebe76dfb701" },
+              { "name": "wohnung-plz", "variableId": "var_id_501d8077685a56b2b1b4.var_id_06fe8253fa5054d98ffd" },
+              {
+                "name": "mietvertrag-miete-gesamt",
+                "variableId": "var_id_501d8077685a56b2b1b4.var_id_7fd0efb734f017d2bae4"
+              },
+              {
+                "name": "mietvertrag-miete-netto",
+                "variableId": "var_id_501d8077685a56b2b1b4.var_id_e205c725da20edd81790"
+              },
+              {
+                "name": "mietvertrag-miete-nebenkosten",
+                "variableId": "var_id_501d8077685a56b2b1b4.var_id_8b2e4518415adf4328cb"
+              },
+              {
+                "name": "mangel-beschreibung",
+                "variableId": "var_id_0c5529f96daf38375bca.var_id_004ac7278adc4f74fa13"
+              },
+              { "name": "mangel-zeitpunkt", "variableId": "var_id_0c5529f96daf38375bca.var_id_ec2490cb14fcaa10a5d7" },
+              { "name": "mangel-entstehung", "variableId": "var_id_0c5529f96daf38375bca.var_id_6c4c6de216db5f821134" },
+              { "name": "mangel-beweis", "variableId": "var_id_a17e68de8970f0fc242c.var_id_1d544f190c6f5e40428e" },
+              {
+                "name": "maengelanzeige-datum",
+                "variableId": "var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41"
+              },
+              { "name": "maengelanzeige-typ", "variableId": "var_id_15e950de923ea623b160.var_id_5cc40c8da8e6062eabd1" },
+              {
+                "name": "maengelanzeige-frist",
+                "variableId": "var_id_15e950de923ea623b160.var_id_dfbea48ee0317212109f"
+              },
+              {
+                "name": "maengelanzeige-reaktion",
+                "variableId": "var_id_15e950de923ea623b160.var_id_fcd1d66a2f1eda2dd787"
+              },
+              {
+                "name": "maengelbeseitigung-versuch",
+                "variableId": "var_id_6e9f7a7c101f5f2f2a30.var_id_9c365826adbdc60c47f8"
+              },
+              { "name": "begruendung-aufwand-schaden", "variableId": "var_id_2744833ac06d831aa9b8" },
+              { "name": "klaegerin-name", "variableId": "var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2" }
+            ],
+            "templateName": "BRYTER Klage Template - V4.1.docx",
+            "templateId": "4SIPOwniQpCMcG6Hff-Zqw",
+            "templateType": "USER_DEFINED"
+          }
+        },
+        "description": ""
+      },
+      "node_id_49b505dfc1127c4e949b": {
+        "id": "node_id_49b505dfc1127c4e949b",
+        "type": "result",
+        "label": "Énde",
+        "content": {
+          "html": "<h2><strong>Klage erfolgreich erstellt</strong></h2><p>Vielen Dank. Sie können Ihre Klage jetzt hier als Textdatei herunterladen und alle Inhalte noch einmal auf Richtigkeit prüfen.</p><p><span data-type=\"variable\" variable-id=\"var_id_4a66bef7f3e8a9b79bb2\"></span></p><p></p><p><strong>Wie kann ich die Klage einreichen?</strong></p><p>Sie können die Klage nun unterschreiben und per Post an Ihr Amtsgericht schicken, oder dort persönlich einreichen. Wenn Sie sich vor Gericht anwaltlich vertreten lassen möchten, können Sie die Klage auch an einen Anwalt weiterleiten, der diese dann für Sie einreicht und das weitere Verfahren führt.</p><p></p><p>Ihr Amtsgericht:</p><p><span data-type=\"variable\" variable-id=\"var_id_7336d744b64e223a1254\"></span></p><p><span data-type=\"variable\" variable-id=\"var_id_d55c74faab4a25885f78\"></span></p><p></p><p>Aus Ihren Anträgen ergibt sich ein Streitwert von <span data-type=\"variable\" variable-id=\"var_id_8289fa7f783887450365\"></span> Euro. Aus diesem berechnet Sich die höhe des Gerichtskostenvorschusses. Dieser beträgt: <span data-type=\"variable\" variable-id=\"var_id_d382d525f2c1ce3162be\"></span> Euro.</p><p></p><p><strong>Bitte versenden Sie Ihre Klage mit allen Anhängen:</strong></p><ul><li><p>Ihrem Mietvertrag vom <span data-type=\"variable\" variable-id=\"var_id_501d8077685a56b2b1b4.var_id_1d7b1296603d084f519b\"></span></p></li><li><p>Ihrer Mängelanzeige vom <span data-type=\"variable\" variable-id=\"var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41\"></span></p></li><li><p>Gegebenenfalls Antwortschreiben der Vermieter:in </p></li><li><p>Alle erwähnten Beweisen, bspw. Rechnungen</p></li></ul><p></p><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p><strong>Was passiert als nächstes im Gerichtsverfahren?</strong></p></div><div class=\"textblock-content\"><p>Nachdem Sie die Klage an das Amtsgericht geschickt haben, beginnt das schriftliche Vorverfahren. Dabei sendet die Richter:in die Klage auch an Ihre Vermieter:in, die dann aufgefordert wird, dazu Stellung zu nehmen. Sie werden dann per Post über die Antwort Ihrer Vermieter:in benachricht, und können gegebenenfalls noch einmal Stellung nehmen. Wenn es zu einem mündlichen Verhandlungstermin kommt, erhalten Sie ebenfalls eine Einladung per Post.</p><p></p><p><a href=\"https://www.notion.so/t4gbmjv/Informationen-zu-Gerichtsverfahren-3ffa0757f321469fa90f667b0f1c913b\" href-format=\"string\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Einen erweiterten Überblick über den Ablauf eines Gerichtsverfahrens erhalten Sie hier.</a></p></div><div><p></p></div></div>"
+        },
+        "showReadyForSubmission": false,
+        "description": "+ E-Mail Summary schicken\n+ Best & Worst Case\n+ XML Datei\n\nSiehe Figma Notes Eileen"
+      },
+      "node_id_8199352f0411925a1612": {
+        "id": "node_id_8199352f0411925a1612",
+        "type": "user_input",
+        "label": "klaegerin-informationen",
+        "content": {
+          "html": "<h2><strong>(1/8) Ihre Kontaktinformationen</strong></h2><p>Im Folgenden bitten wir Sie um Ihren Namen und Ihre Adressdaten.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_d176b8c200a98deecd09",
+            "from": "node_id_8199352f0411925a1612",
+            "to": "node_id_2e5f3a95284efe14d0e1",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_ca026974fb3792416147",
+        "presentation": {
+          "var_id_ca026974fb3792416147": {
+            "variableOrder": [
+              "var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2",
+              "var_id_ca026974fb3792416147.var_id_c4fcdad735b9a9196a06",
+              "var_id_ca026974fb3792416147.var_id_f0a92a253db6a5bb89a1",
+              "var_id_ca026974fb3792416147.var_id_b6b20ad8ddd4478a370c",
+              "var_id_ca026974fb3792416147.var_id_81674a1bd921c3537a53",
+              "var_id_ca026974fb3792416147.var_id_8fb0663f0743d8102135"
+            ],
+            "presentation": {
+              "var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2": {
+                "content": {
+                  "html": "<p><strong>Wie heißen Sie?</strong> </p><p>Bitte geben Sie alle Ihre Vornamen und Ihren Familiennamen an.</p>"
+                },
+                "placeholder": "Vorname(n) Nachname",
+                "defaultValue": null
+              },
+              "var_id_ca026974fb3792416147.var_id_f0a92a253db6a5bb89a1": {
+                "placeholder": "Straße & Hausnummer",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Wo wohnen Sie?</strong></p><p>Bitte geben Sie Ihre Adresse an. Wir nutzen diese für die weitere Kommunikation mit Ihnen.</p>"
+                }
+              },
+              "var_id_ca026974fb3792416147.var_id_b6b20ad8ddd4478a370c": {
+                "placeholder": "Stadt",
+                "defaultValue": null,
+                "content": { "html": "" }
+              },
+              "var_id_ca026974fb3792416147.var_id_81674a1bd921c3537a53": {
+                "placeholder": "Postleitzahl",
+                "defaultValue": null,
+                "content": { "html": "" }
+              },
+              "var_id_ca026974fb3792416147.var_id_8fb0663f0743d8102135": {
+                "placeholder": "Land",
+                "defaultValue": [{ "type": "plain", "text": "Deutschland" }],
+                "content": { "html": "" }
+              },
+              "var_id_ca026974fb3792416147.var_id_c4fcdad735b9a9196a06": {
+                "content": {
+                  "html": "<p><strong>Geschlecht</strong></p><p>Bitte geben Sie hier Ihr Geschlecht an, damit wir Sie korrekt ansprechen können.</p>"
+                },
+                "choiceOrder": [
+                  "choice_id_fe2d21c89c65ef492582",
+                  "choice_id_b1f3b5356e85289d7315",
+                  "choice_id_c1f056afd977fc364d59"
+                ],
+                "isHorizontal": false,
+                "isDropdown": false,
+                "defaultValue": null
+              }
+            }
+          }
+        },
+        "description": ""
+      },
+      "node_id_e80306560f6669df31b8": {
+        "id": "node_id_e80306560f6669df31b8",
+        "type": "set_value",
+        "label": "amtsgericht-stadt",
+        "value": { "html": "<p>Musterstadt</p>" },
+        "transitions": [
+          {
+            "id": "id_4244232ca00865943eaa",
+            "from": "node_id_e80306560f6669df31b8",
+            "to": "node_id_ad4af1f12a0bf46bc67a",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_7336d744b64e223a1254",
+        "description": "https://www.verzeichnis-anwalt.de/gerichtsverzeichnis/amtsgerichte-deutschland.html"
+      },
+      "node_id_ad4af1f12a0bf46bc67a": {
+        "id": "node_id_ad4af1f12a0bf46bc67a",
+        "type": "set_value",
+        "label": "amtsgericht-adresse",
+        "value": { "html": "<p>Musterstraße 10, 10708 Musterstadt, Deutschland</p>" },
+        "transitions": [
+          {
+            "id": "id_92c7115f965ede673d52",
+            "from": "node_id_ad4af1f12a0bf46bc67a",
+            "to": "node_id_f26cfa0ca17dac28e666",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_d55c74faab4a25885f78",
+        "description": "https://www.verzeichnis-anwalt.de/gerichtsverzeichnis/amtsgerichte-deutschland.html"
+      },
+      "node_id_a6b2d730e4a98be240e2": {
+        "id": "node_id_a6b2d730e4a98be240e2",
+        "type": "content",
+        "label": "Einstieg",
+        "content": {
+          "html": "<h2>Justizportal Klagegenerator für Mietmängel</h2><p>Im Folgenden unterstützen wir Sie bei der Erstellung &amp; dem Versand einer Klageschrift an Ihr Amtsgericht für die Bearbeitung Ihres Mietmangel-Falls. Dafür benötigen wir einige Informationen von Ihnen.</p><p></p><p><strong>Bitte halten Sie folgende Informationen und Dokumente bereit:</strong></p><ul><li><p>Addressdaten von Ihnen, der betroffenen Wohnung und der Vermieter:in</p></li><li><p>Ihren Mietvertrag</p></li><li><p>Alle wegen Rechnungen von Mängelbeseitigung oder entstandenen Schäden</p></li></ul><p></p><p><strong>Im Folgenden führen wir Sie durch folgende Schritte:</strong></p><ol><li><p>Aufnahme der Adressdaten</p></li><li><p>Auswahl Ihrer Anträge</p></li><li><p>Beschreibung des Mangels</p></li><li><p>Beschreibung der außergerichtlichen Kommunikation mit Ihrer Vermieter:in</p></li><li><p>Beschreibung der Mängelbeseitigung (optional)</p></li><li><p>Erstellung und Versand der Klage</p></li></ol><p></p><p>Bei Fragen und Problemen können Sie sich telefonisch an die Rechtsantragsstelle Ihres Amtsgerichts wenden. Zudem steht Ihnen das Justizportal Team wochentags von 9-17 per E-Mail unter fragen@justizportal.bund zur Verfügung.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_049919ce4129d59e87d6",
+            "from": "node_id_a6b2d730e4a98be240e2",
+            "to": "node_id_2ab468bd3b92862715c7",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "description": "Brauchen eine gute Übersicht über alle Schritte"
+      },
+      "id_89d71d95b371e77fef3f": {
+        "id": "id_89d71d95b371e77fef3f",
+        "type": "user_input",
+        "label": "beklagte-informationen",
+        "content": {
+          "html": "<h2><strong>(2/8) Kontaktinformationen der Vermieter:in</strong></h2><p>Ihre Klage müssen Sie gegen die Vermieter:in richten, die im Mietvertrag angegeben ist. Vermieter:in und Hausverwaltung können sich voneinander unterscheiden. Im Folgenden bitten wir Sie um Namen und Adressdaten Ihrer Vermieter:in.</p><p></p>"
+        },
+        "transitions": [
+          {
+            "id": "id_3bedc33a5ba4df5a6108",
+            "from": "id_89d71d95b371e77fef3f",
+            "to": "node_id_02e504f7e8965231633f",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "id_7339f62f38c5ac2018c2",
+        "presentation": {
+          "id_7339f62f38c5ac2018c2": {
+            "variableOrder": [
+              "id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3",
+              "id_7339f62f38c5ac2018c2.var_id_e04ce090a30f69d73e20",
+              "id_7339f62f38c5ac2018c2.var_id_f302a630d2b7260e9492",
+              "id_7339f62f38c5ac2018c2.id_d526a96b534924c9dc8d",
+              "id_7339f62f38c5ac2018c2.id_2f6d08294954f565823c",
+              "id_7339f62f38c5ac2018c2.id_fa78be9541f43693c897",
+              "id_7339f62f38c5ac2018c2.id_5262d832193f85813c04",
+              "id_7339f62f38c5ac2018c2.id_82bf7546506df82f259b"
+            ],
+            "presentation": {
+              "id_7339f62f38c5ac2018c2.id_d526a96b534924c9dc8d": {
+                "content": { "html": "<p><strong>Wie heißt Ihre Vermieter:in?</strong></p>" },
+                "placeholder": "Vorname(n) & Nachname der Vermieter:in",
+                "defaultValue": null,
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": {
+                    "type": "variable",
+                    "variableId": "id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3"
+                  },
+                  "operation": "==",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_d17c35d1cc05d59d518c" }
+                  }
+                }
+              },
+              "id_7339f62f38c5ac2018c2.id_2f6d08294954f565823c": {
+                "placeholder": "Straße & Hausnummer",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Adressdaten der Vermieter:in</strong></p><p>Bitte geben Sie die offizielle Adresse Ihrer Vermieter:in an. An diese Adresse wird auch die Klage zuestellt.</p>"
+                }
+              },
+              "id_7339f62f38c5ac2018c2.id_fa78be9541f43693c897": {
+                "placeholder": "Stadt",
+                "defaultValue": null,
+                "content": { "html": "" }
+              },
+              "id_7339f62f38c5ac2018c2.id_5262d832193f85813c04": {
+                "placeholder": "Postleitzahl",
+                "defaultValue": null,
+                "content": { "html": "" }
+              },
+              "id_7339f62f38c5ac2018c2.id_82bf7546506df82f259b": {
+                "placeholder": "Land",
+                "defaultValue": [{ "type": "plain", "text": "Deutschland" }],
+                "content": { "html": "" }
+              },
+              "id_7339f62f38c5ac2018c2.var_id_e04ce090a30f69d73e20": {
+                "placeholder": "Vermietendes Unternehmen",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Unternehmen</strong></p><p>Von welchem Unternehmen mieten Sie die Wohnung? Bitte geben Sie die volle Firmenbezeichnung an, beispielsweise: Wohnen GmbH.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": {
+                    "type": "variable",
+                    "variableId": "id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3"
+                  },
+                  "operation": "==",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_7ec50b565285477b4813" }
+                  }
+                }
+              },
+              "id_7339f62f38c5ac2018c2.var_id_f302a630d2b7260e9492": {
+                "placeholder": "Name der Geschäftsführer:in",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Name der Geschäftsführer:in</strong></p><p>Wie lautet der Name der Geschäftsführer:in des vermietenden Unternehmens? Diesen finden Sie im Mietvertrag.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": {
+                    "type": "variable",
+                    "variableId": "id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3"
+                  },
+                  "operation": "==",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_7ec50b565285477b4813" }
+                  }
+                }
+              },
+              "id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3": {
+                "content": {
+                  "html": "<p><strong>Ist Ihre Vermieter:in eine Privatperson oder ein Unternehmen?</strong></p>"
+                },
+                "choiceOrder": ["choice_id_d17c35d1cc05d59d518c", "choice_id_7ec50b565285477b4813"],
+                "isHorizontal": false,
+                "isDropdown": false,
+                "defaultValue": null
+              }
+            }
+          }
+        },
+        "description": ""
+      },
+      "node_id_690808fd089216f222c9": {
+        "id": "node_id_690808fd089216f222c9",
+        "type": "user_input",
+        "label": "antraege",
+        "content": {
+          "html": "<h2>(4/8) Ihre Anträge</h2><p>Klageanträge sind das zentrale Element der Klage. Hier wählen Sie, was Sie von der Gegenseite erwarten (also eine Geldzahlung, Unterlassung oder Vornahme einer Handlung). Die möglichen Anträge richten sich nach den Ansprüchen, die Ihnen aus einem Mietmangel entstehen können. </p><p></p><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Was ist ein Antrag auf Mängelbeseitigung?</p></div><div class=\"textblock-content\"><p>Einen Antrag auf Beseitigung des Mangels zu stellen heißt: Die Vermieter:in bitten, diese zu beseitigen.</p><p>Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand zu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. Dafür zahlen die Mietenden die Miete. Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. Ausnahme: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur, wenn das im Vertrag so steht und ein Jahres-Höchstbetrag festgelegt wurde. Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam mit der Mitteilung über den Mangel.</p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Was ist ein Antrag auf Mietminderung?</p></div><div class=\"textblock-content\"><p>Ein Antrag auf Mietminderung heißt: Für einen Zeitraum, in der die Nutzung der Wohnung durch einen Mangel erheblich eingeschränkt wurde, eine geringere Miete zu bezahlen. </p><p></p><p>Ein Anspruch auf Mietminderung kann zusätzlich neben dem Anspruch auf Mängelbeseitigung bestehen. Die Minderung der Miete tritt automatisch ein, wenn die Mängel in der Wohnung festgestellt werden. Vorher müssen die Mietenden den Mangel aber den Vermietenden anzeigen. </p><p></p><p><strong>Wie hoch darf die Mietminderung ausfallen? </strong>Die Miete sollte zunächst nicht eigenmächtig gekürzt werden, sondern unter <strong>Vorbehalt</strong> gestellt und in voller Höhe weitergezahlt werden. Denn um wieviel die Miete gekürzt werden kann, hängt davon ab, wie schwer der Mangel ist und wie lange er vorliegt. Eine fehlende Einbauküche, die laut Mietvertrag in der Wohnung hätte sein müssen, kann bspw. eine Minderung von 20 Prozent rechtfertigen. Solche Entscheidungen lassen sich in Mietminderungstabellen finden. Die Urteile dort sind aber nur Richtwerte und bieten lediglich eine grobe Orientierung. Eine zu hohe Kürzung ist gefährlich, weil sie unter Umständen eine <strong>Kündigung</strong> rechtfertigen kann.</p><p></p><p>Die Herabsetzung der Miete durch Mietminderung setzt voraus, dass der Mangel erheblich ist. Ein unerheblicher Mangel liegt vor, wenn der Mangel leicht erkennbar und mit geringen Kosten zu beseitigen ist. Geringfügig kann ein Mangel bspw. dann sein, wenn einmalig Lärm aus der Nachbarwohnung dringt und die Schalldämmung nur ein wenig unterschritten wurde oder bei einem sehr kurzen Heizungsausfall. Wenn die <strong>Wohnungsgröße</strong> mehr als <strong>10%</strong> von der im Mietvertrag vereinbarten Größe abweicht, kann ein erheblicher Mangel vorliegen.</p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Was ist ein Antrag auf Aufwendungsersatz?</p></div><div class=\"textblock-content\"><p>Ein Antrag auf Aufwendungsersatz kann gestellt werden, wenn Sie einen Mangel selbstständig beseitigen und sich die Kosten dafür ersetzen lassen möchten. In den folgenden Fällen dürfen Mietende den Mangel selbst beseitigen (sogenannte Ersatzvornahme) und sich die Aufwendungen ersetzen lassen: Entweder wenn der Vermietende <strong>mit der Beseitigung des Mangels in Verzug</strong> ist oder wenn die Mangelbeseitigung <strong>umgehend erforderlich </strong>war, weil es sich um eine <strong>Not- oder Eilmaßnahme </strong>handelte.</p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Was ist ein Antrag auf Schadensersatz?</p></div><div class=\"textblock-content\"><p>Einen Antrag auf Schadensersatz stellen heißt: Sich weitere Kosten für Schäden, die durch den Mietmangel entstanden sind, erstatten lassen. </p><p></p><p>Andere Schäden wie etwa Lebensmittel, die wegen eines Stromausfalls verdorben sind, Hotelkosten oder Möbel, die infolge eines Brandes, Feuchtigkeitseinwirkung, Schimmel- oder Parasitenbefalls unbrauchbar geworden sind, können unter Umständen ersetzt werden. Auch wenn die mietende Person körperliche Schädigungen erleidet. In diesem Fall können Ansprüche auf Ersatz der Heilbehandlungskosten und des Verdienstausfalls oder auch auf Zahlung eines angemessenen Schmerzensgelds bestehen. Es gilt: Wenn der <strong>Mangel schon bei Vertragsschluss</strong> vorlag, dann haften die Vermietenden <strong>unabhängig von ihrem etwaigen Verschulden</strong>. Entstand der <strong>Mangel erst nach Vertragsschluss</strong>, dann kommt es darauf an, ob die vermietende Person den <strong>Mangel zu vertreten</strong> hat oder mit der Beseitigung des Mangels in <strong>Verzug</strong> war.</p></div><div><p></p></div></div><p></p><p><strong>Welche Anträge möchten Sie stellen?</strong></p>"
+        },
+        "transitions": [
+          {
+            "id": "id_59fe94a66e2b5f8f143c",
+            "from": "node_id_690808fd089216f222c9",
+            "to": "node_id_bb2ea17b46d1301e5eb0",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_5935d2db480863f0dd8d",
+        "presentation": {
+          "var_id_5935d2db480863f0dd8d": {
+            "choiceOrder": [
+              "choice_id_bae3b37932ee14440c87",
+              "choice_id_1da15931d9294f950c62",
+              "choice_id_67739099aa7fdbf818b3",
+              "choice_id_15950490c3490d2cf285"
+            ],
+            "isHorizontal": true,
+            "isDropdown": false,
+            "defaultValues": []
+          }
+        },
+        "description": "Information Overload --> Was muss man hier wirklich wissen?"
+      },
+      "node_id_2ab468bd3b92862715c7": {
+        "id": "node_id_2ab468bd3b92862715c7",
+        "type": "empty",
+        "label": "Preset Values",
+        "transitions": [
+          {
+            "id": "id_e8a03b85f47a8d2be6de",
+            "from": "node_id_2ab468bd3b92862715c7",
+            "to": "node_id_e80306560f6669df31b8",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "description": "Hier werden Daten generiert, die aktuell noch nicht abgefragt werden können."
+      },
+      "node_id_f26cfa0ca17dac28e666": {
+        "id": "node_id_f26cfa0ca17dac28e666",
+        "type": "set_value",
+        "label": "erstellungsdatum",
+        "value": { "value": "DATE_OF_INTERACTION", "sourceType": "interaction" },
+        "transitions": [
+          {
+            "id": "id_542baf97ac6552dd499b",
+            "from": "node_id_f26cfa0ca17dac28e666",
+            "to": "node_id_8199352f0411925a1612",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_6346ff231def8400925d"
+      },
+      "node_id_8d44693c202913eb44fc": {
+        "id": "node_id_8d44693c202913eb44fc",
+        "type": "user_input",
+        "label": "maengelbeseitigung",
+        "content": {
+          "html": "<h2>Antrag auf Mängelbeseitigung</h2><p>Im Folgenden sammeln wir alle nötigen Informationen für Ihren Antrag auf Mängelbeseitigung.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_910d404a7d3d3e3d7330",
+            "from": "node_id_8d44693c202913eb44fc",
+            "to": "node_id_167f844e9e05a7d9c860",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_33fcf2e2dc963d721555",
+        "presentation": {
+          "var_id_33fcf2e2dc963d721555": {
+            "variableOrder": ["var_id_33fcf2e2dc963d721555.var_id_d90e092b04d2923437ca"],
+            "presentation": {
+              "var_id_33fcf2e2dc963d721555.var_id_d90e092b04d2923437ca": {
+                "placeholder": "1. Mangel: Beschreibung in einem Satz",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Zusammenfassende Mängelbeschreibung</strong></p><p>Für Ihren Antrag auf Mängelbeseitigung benötigt das Gericht eine konkrete Beschreibung des Mangels. Auch ihre Vermieter:in sollte genau wissen, worum es geht. </p><p></p><p>Beschreiben Sie den Mangel nach Ausmaß und Lage in oder an der Wohnung genau und in nur einem Satz. Sollten mehrere Mängel vorliegen, benutzen Sie mehrere Zeilen und nummerieren diese.</p><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Beispiel</p></div><div class=\"textblock-content\"><p>der Schwarzschimmel am linken Fenster im Badezimmer, oder: Die defekte Heizung im Kinderzimmer)</p></div><div><p></p></div></div><p></p>"
+                }
+              }
+            }
+          }
+        }
+      },
+      "node_id_a6e9db41adea26cb66e3": {
+        "id": "node_id_a6e9db41adea26cb66e3",
+        "type": "user_input",
+        "label": "mietminderung",
+        "content": {
+          "html": "<h2>Antrag auf Mietminderung</h2><p>Im Folgenden sammeln wir alle nötigen Informationen für Ihren Antrag auf Mietminderung.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_ea2998cce41128844382",
+            "from": "node_id_a6e9db41adea26cb66e3",
+            "to": "node_id_e0136d187933f9746f5b",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_1bb2857d72949d45cad9",
+        "presentation": {
+          "var_id_1bb2857d72949d45cad9": {
+            "variableOrder": ["var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a"],
+            "presentation": {
+              "var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a": {
+                "placeholder": "Höhe der Mietminderung in Prozent",
+                "defaultValue": null,
+                "allowDecimals": false,
+                "numberRestriction": {
+                  "isNumberRestrictionActive": true,
+                  "minValue": [{ "type": "plain", "text": "0" }],
+                  "maxValue": [{ "type": "plain", "text": "100" }]
+                },
+                "content": {
+                  "html": "<p><strong>Höhe der Mietminderung</strong></p><p>Hier beantragen Sie die Höhe der Mietminderung in Prozent. Das ist entscheidend, da das Gericht keine höhere Minderung als beantragt stattgeben kann.</p><p>Für die Höhe der Minderung können Sie sich an einer Mietminderungstabelle orientieren. <a href=\"https://mietminderungstabelle.de/\" href-format=\"string\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://mietminderungstabelle.de/</a></p>"
+                }
+              }
+            }
+          }
+        },
+        "description": "Mietminderungstabelle + Wurde Mangel schon behoben?"
+      },
+      "node_id_1712b5ef1bb333663722": {
+        "id": "node_id_1712b5ef1bb333663722",
+        "type": "calculation",
+        "label": "Streitwert",
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_8289fa7f783887450365",
+        "transitions": [
+          {
+            "id": "id_d46029adae071c62e225",
+            "from": "node_id_1712b5ef1bb333663722",
+            "to": "node_id_95a751be5ad61f69be1c",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "input": [
+          { "type": "variable", "variableId": "var_id_f0abfeaa38541db8efa9" },
+          { "type": "plain", "text": "+12*(" },
+          { "type": "variable", "variableId": "var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a" },
+          { "type": "plain", "text": "/100)*" },
+          { "type": "variable", "variableId": "var_id_501d8077685a56b2b1b4.var_id_7fd0efb734f017d2bae4" },
+          { "type": "plain", "text": "+" },
+          { "type": "variable", "variableId": "var_id_b3aaa9f7b27aa30c0db1.var_id_0adb3a79ed86abe4d011" },
+          { "type": "plain", "text": " + " },
+          { "type": "variable", "variableId": "var_id_e544c52c5605d3ba7b80.var_id_8eae151051a3f19ab182" }
+        ],
+        "description": "TBD Bugs\nBerechnung falsch bei behobenen Mängeln?\n--> Wenn ein Feld nicht definiert ist, gibt es keinen Streitwert\n\nDer Streitwert bei dem Antrag auf Mietminderung beziffert sich seit 2021 auf den Jahresbetrag der Minderung. Derselbe Streitwert wird für Mängelbeseitigung angesetzt."
+      },
+      "node_id_f2578c6f08e0710ed749": {
+        "id": "node_id_f2578c6f08e0710ed749",
+        "type": "user_input",
+        "label": "aufwendungsersatz",
+        "content": {
+          "html": "<h2>Antrag auf Aufwendungsersatz</h2><p>Im Folgenden sammeln wir alle nötigen Informationen für Ihren Antrag auf Aufwendunsersatz.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_28a903cb84248e57df54",
+            "from": "node_id_f2578c6f08e0710ed749",
+            "to": "node_id_c8f34ea2cb26b2fde253",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_b3aaa9f7b27aa30c0db1",
+        "presentation": {
+          "var_id_b3aaa9f7b27aa30c0db1": {
+            "variableOrder": ["var_id_b3aaa9f7b27aa30c0db1.var_id_0adb3a79ed86abe4d011"],
+            "presentation": {
+              "var_id_b3aaa9f7b27aa30c0db1.var_id_0adb3a79ed86abe4d011": {
+                "placeholder": "",
+                "defaultValue": null,
+                "allowDecimals": true,
+                "numberRestriction": {
+                  "isNumberRestrictionActive": true,
+                  "minValue": [{ "type": "plain", "text": "0" }],
+                  "maxValue": []
+                },
+                "content": {
+                  "html": "<p><strong>Höhe des Aufwendungsersatz</strong></p><p>Wie hoch waren die Ausgaben, die Sie für die Beseitigung des Mangels getätigt haben? Bitte addieren Sie alle Rechnungen zusammen, die Sie bezahlt haben.</p>"
+                }
+              }
+            }
+          }
+        },
+        "description": "Das müssen wir besser erklären"
+      },
+      "node_id_3bdc36eb24cfd856f2b1": {
+        "id": "node_id_3bdc36eb24cfd856f2b1",
+        "type": "user_input",
+        "label": "schadensersatz",
+        "content": {
+          "html": "<h2>Antrag auf Schadensersatz</h2><p>Im Folgenden sammeln wir alle nötigen Informationen für Ihren Antrag auf Schadensersatz.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_90569edd2ee3af9f301e",
+            "from": "node_id_3bdc36eb24cfd856f2b1",
+            "to": "node_id_775bc941243c6c49e753",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_e544c52c5605d3ba7b80",
+        "presentation": {
+          "var_id_e544c52c5605d3ba7b80": {
+            "variableOrder": ["var_id_e544c52c5605d3ba7b80.var_id_8eae151051a3f19ab182"],
+            "presentation": {
+              "var_id_e544c52c5605d3ba7b80.var_id_8eae151051a3f19ab182": {
+                "placeholder": "",
+                "defaultValue": null,
+                "allowDecimals": true,
+                "numberRestriction": {
+                  "isNumberRestrictionActive": true,
+                  "minValue": [{ "type": "plain", "text": "0" }],
+                  "maxValue": []
+                },
+                "content": {
+                  "html": "<p><strong>Höhe des Schadensersatzes</strong></p><p>Wie hoch waren die Schäden, die Ihnen durch den Mangel entstanden sind? Bitte addieren Sie alle Schäden zusammen.</p>"
+                }
+              }
+            }
+          }
+        },
+        "description": "Das müssen wir besser erklären."
+      },
+      "node_id_3a9aa8eef6b824edaf24": {
+        "id": "node_id_3a9aa8eef6b824edaf24",
+        "type": "user_input",
+        "label": "mietvertrag",
+        "content": {
+          "html": "<h2>(3/8) Informationen zu Mietvertrag &amp; Wohnung</h2><p>Im Folgenden erheben wir einige Informationen zu Ihrem Mietvertrag und der betroffenen Wohnung.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_b88a5987ea67878fab45",
+            "from": "node_id_3a9aa8eef6b824edaf24",
+            "to": "node_id_690808fd089216f222c9",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_501d8077685a56b2b1b4",
+        "presentation": {
+          "var_id_501d8077685a56b2b1b4": {
+            "variableOrder": [
+              "var_id_501d8077685a56b2b1b4.var_id_b25a0bd46b40b8616de2",
+              "var_id_501d8077685a56b2b1b4.var_id_064c09b3a78ea62b2582",
+              "var_id_501d8077685a56b2b1b4.var_id_7c1d7ce47ebe76dfb701",
+              "var_id_501d8077685a56b2b1b4.var_id_06fe8253fa5054d98ffd",
+              "var_id_501d8077685a56b2b1b4.var_id_b3e7b7e0ebe121e99150",
+              "var_id_501d8077685a56b2b1b4.var_id_1d7b1296603d084f519b",
+              "var_id_501d8077685a56b2b1b4.var_id_7fd0efb734f017d2bae4",
+              "var_id_501d8077685a56b2b1b4.var_id_e205c725da20edd81790",
+              "var_id_501d8077685a56b2b1b4.var_id_8b2e4518415adf4328cb"
+            ],
+            "presentation": {
+              "var_id_501d8077685a56b2b1b4.var_id_b25a0bd46b40b8616de2": {
+                "placeholder": "Straße & Hausnummer",
+                "defaultValue": [
+                  { "type": "variable", "variableId": "var_id_ca026974fb3792416147.var_id_f0a92a253db6a5bb89a1" }
+                ],
+                "content": {
+                  "html": "<p><strong>Adresse der Wohnung</strong></p><p>Wo liegt Ihre Wohnung? Bitte geben Sie Straße, Stadt sowie die genaue Lage der Wohnung im Haus an (bspw. Etage).</p><p>Wir haben diese Werte von Ihren Kontaktdaten vorausgefüllt. Wenn die Wohnung nicht mit Ihrer jetzigen Adresse übereinstimmt, bitte ändern Sie diese.</p>"
+                }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_064c09b3a78ea62b2582": {
+                "placeholder": "Genaue Lage der Wohnung (bspw. 2. Etage, linke Wohnung)",
+                "defaultValue": null,
+                "content": {
+                  "html": "<div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Genaue Lage</p></div><div class=\"textblock-content\"><p>Wenn in Ihrem Stockwerk mehrere Wohnungen liegen, können Sie hier die genaue Lage der Wohnung beschreiben, damit man Sie auch ohne ein Namensschild wiederfinden könnte. Beispielsweise: Die linke Wohnung in der zweiten Etage.</p></div><div><p></p></div></div>"
+                }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_7c1d7ce47ebe76dfb701": {
+                "placeholder": "Stadt",
+                "defaultValue": [
+                  { "type": "variable", "variableId": "var_id_ca026974fb3792416147.var_id_b6b20ad8ddd4478a370c" }
+                ],
+                "content": { "html": "" }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_06fe8253fa5054d98ffd": {
+                "placeholder": "Postleitzahl",
+                "defaultValue": [
+                  { "type": "variable", "variableId": "var_id_ca026974fb3792416147.var_id_81674a1bd921c3537a53" }
+                ],
+                "content": { "html": "" }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_1d7b1296603d084f519b": {
+                "defaultValue": null,
+                "dateRestriction": {
+                  "isDateRestrictionActive": true,
+                  "earliestDate": null,
+                  "latestDate": { "value": "DATE_OF_INTERACTION", "sourceType": "interaction" }
+                },
+                "content": {
+                  "html": "<p><strong>Angaben zum Mietvertrag</strong></p><p>Wann wurde Ihr Mietvertrag abgeschlossen?</p>"
+                }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_7fd0efb734f017d2bae4": {
+                "placeholder": "Gesamtmiete",
+                "defaultValue": null,
+                "allowDecimals": true,
+                "numberRestriction": {
+                  "isNumberRestrictionActive": true,
+                  "minValue": [{ "type": "plain", "text": "0" }],
+                  "maxValue": []
+                },
+                "content": {
+                  "html": "<p><strong>Miethöhe</strong></p><p>Bitte geben Sie hier Ihre monatliche Miete in Euro an. Schlüsseln Sie diese außerdem in Nettokaltmiete und Betriebs- und Nebenkosten auf.</p>"
+                }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_e205c725da20edd81790": {
+                "placeholder": "Nettomiete",
+                "defaultValue": null,
+                "allowDecimals": true,
+                "numberRestriction": {
+                  "isNumberRestrictionActive": true,
+                  "minValue": [{ "type": "plain", "text": "0" }],
+                  "maxValue": []
+                },
+                "content": { "html": "" }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_8b2e4518415adf4328cb": {
+                "placeholder": "Betriebs- und Nebenkosten",
+                "defaultValue": null,
+                "allowDecimals": true,
+                "numberRestriction": {
+                  "isNumberRestrictionActive": true,
+                  "minValue": [{ "type": "plain", "text": "0" }],
+                  "maxValue": []
+                },
+                "content": { "html": "" }
+              },
+              "var_id_501d8077685a56b2b1b4.var_id_b3e7b7e0ebe121e99150": {
+                "placeholder": "",
+                "defaultValue": [{ "type": "plain", "text": "Deutschland" }],
+                "content": { "html": "" }
+              }
+            }
+          }
+        },
+        "description": "TBD: Adresse Wohnung vorbefüllen lassen\n--> Muss hier eine Abfrage rein?"
+      },
+      "node_id_50006add49c385fbc8d7": {
+        "id": "node_id_50006add49c385fbc8d7",
+        "type": "user_input",
+        "label": "maengelbeschreibung",
+        "content": {
+          "html": "<h2>(5/8) Mängelbeschreibung</h2><p>Für die Begründung Ihrer Klage müssen Sie den Mangel sowie seine Entstehung genauer beschreiben. Bitte beantworten Sie dafür die folgenden Fragen.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_4681aefbfff1b70c6c19",
+            "from": "node_id_50006add49c385fbc8d7",
+            "to": "node_id_10dc54eb905300c3b26c",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_0c5529f96daf38375bca",
+        "presentation": {
+          "var_id_0c5529f96daf38375bca": {
+            "variableOrder": [
+              "var_id_0c5529f96daf38375bca.var_id_004ac7278adc4f74fa13",
+              "var_id_0c5529f96daf38375bca.var_id_ec2490cb14fcaa10a5d7",
+              "var_id_0c5529f96daf38375bca.var_id_6c4c6de216db5f821134",
+              "var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44",
+              "var_id_0c5529f96daf38375bca.var_id_5f15da0c7452f128fac9"
+            ],
+            "presentation": {
+              "var_id_0c5529f96daf38375bca.var_id_004ac7278adc4f74fa13": {
+                "placeholder": "Mangelbeschreibung",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Detaillierte Mängelbeschreibung</strong></p><p>Bitte beschreiben Sie den Mangel und seine Position im Detail. Dabei sollten Sie so genau sein, dass eine andere Person diesen nur auf Basis Ihrer Beschreibung in der Wohnung wiederfinden könnte.&nbsp;</p><p></p><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Beispiel für eine Mangelbeschreibung bei Schimmel</p></div><div class=\"textblock-content\"><p>Im Schlafzimmer befindet sich ein Schimmelfleck mit einem Durchmesser von 50cm auf der Wand rechts neben der Türe. </p></div><div><p></p></div></div>"
+                }
+              },
+              "var_id_0c5529f96daf38375bca.var_id_ec2490cb14fcaa10a5d7": {
+                "placeholder": "",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Zeitpunkt des ersten Auftretens des Mangels</strong></p><p>Wann haben Sie den Mangel zum ersten Mal wahrgenommen? Bitte geben Sie zumindest Jahr und Monat, im besten Fall einen genauen Tag an.</p><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Beispiel bei Lärmbelästigung</p></div><div class=\"textblock-content\"><p>Die lauten Klapper-Geräusche waren zum ersten Mal am 1. Mai 2021 zu hören.</p></div><div><p></p></div></div>"
+                }
+              },
+              "var_id_0c5529f96daf38375bca.var_id_6c4c6de216db5f821134": {
+                "placeholder": "",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Entstehung des Mangels</strong></p><p>Wenn Sie wissen, wie der Mangel entstanden ist, können Sie den Grund hier angeben. Damit können Sie bestenfalls zeigen, dass der Mangel nicht durch Ihr Verhalten entstanden ist, sondern Sie die Wohnung vertragsgerechnet nutzen (bspw. durch regelmäßiges Lüften und Heizen).</p><div class=\"textblock-wrapper\" data-type=\"infoText\"><div class=\"textblock-header\"></div><div class=\"textblock-title\"><p>Beispiel</p></div><div class=\"textblock-content\"><p>Der Schimmelfleck trat kurz nach einem Umbau der Abluftanlage auf, die vor einigen Wochen baulich verändert wurde.</p></div><div><p></p></div></div>"
+                }
+              },
+              "var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44": {
+                "content": { "html": "<p><strong>Besteht der Mangel weiterhin?</strong></p>" },
+                "choiceOrder": ["choice_id_fa0a3962ad9237e26182", "choice_id_eacbe5a25216ab1f397b"],
+                "isHorizontal": false,
+                "isDropdown": false,
+                "defaultValue": null
+              },
+              "var_id_0c5529f96daf38375bca.var_id_5f15da0c7452f128fac9": {
+                "defaultValue": null,
+                "dateRestriction": { "isDateRestrictionActive": false, "earliestDate": null, "latestDate": null },
+                "content": {
+                  "html": "<p>Wenn der Mangel nicht mehr besteht: Wann wurde dieser behoben? Bitte geben Sie das Datum an.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": {
+                    "type": "variable",
+                    "variableId": "var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44"
+                  },
+                  "operation": "==",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_eacbe5a25216ab1f397b" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "TBD Schimmel Beispieltexte + beschriebenes Beispielbild\n\nMieter muss beweisen, dass es Schimmel gibt\n\nVermieter muss beweisen, dass es nicht bauseits bedingt ist, sondern am Verhalten des Mieters"
+      },
+      "node_id_af593adc5cc482e6940d": {
+        "id": "node_id_af593adc5cc482e6940d",
+        "type": "user_input",
+        "label": "aussergerichtliches-verfahren",
+        "content": {
+          "html": "<h2>(7/8) Informationen zum außergerichtlichen Verfahren</h2><p>Für die Richter:in ist es wichtig zu wissen, wie Sie Ihre Vermieter:in schon vor der Klageeinreichung auf den Mangel hingewiesen haben, und wie darauf reagiert wurde. Eine Mängelanzeige ist beispielsweise eine notwendige Anforderung für die Einreichung einer Klage.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_11772f236af484c75a88",
+            "from": "node_id_af593adc5cc482e6940d",
+            "to": "node_id_502d4f69c468c0679ec7",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_15e950de923ea623b160",
+        "presentation": {
+          "var_id_15e950de923ea623b160": {
+            "variableOrder": [
+              "var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41",
+              "var_id_15e950de923ea623b160.var_id_5cc40c8da8e6062eabd1",
+              "var_id_15e950de923ea623b160.var_id_dfbea48ee0317212109f",
+              "var_id_15e950de923ea623b160.var_id_fcd1d66a2f1eda2dd787"
+            ],
+            "presentation": {
+              "var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41": {
+                "defaultValue": null,
+                "dateRestriction": {
+                  "isDateRestrictionActive": true,
+                  "earliestDate": null,
+                  "latestDate": { "value": "var_id_6346ff231def8400925d", "sourceType": "variable" }
+                },
+                "content": {
+                  "html": "<p><strong>Datum der Mängelanzeige</strong></p><p>Bitte geben Sie an, wann Sie die Mängelanzeige an Ihre Vermieter:in geschickt haben.</p>"
+                }
+              },
+              "var_id_15e950de923ea623b160.var_id_5cc40c8da8e6062eabd1": {
+                "content": { "html": "<p><strong>Wie haben Sie den Mangel angezeigt?</strong></p>" },
+                "choiceOrder": [
+                  "choice_id_cfe2603c0e57993f5101",
+                  "choice_id_3428370668897cb98d55",
+                  "choice_id_c94bd0991fd428f92493",
+                  "choice_id_b3ea5b3ba59c349ad9bb",
+                  "choice_id_1fa8b64e55c0be8331f5"
+                ],
+                "isHorizontal": false,
+                "isDropdown": false,
+                "defaultValue": null
+              },
+              "var_id_15e950de923ea623b160.var_id_dfbea48ee0317212109f": {
+                "defaultValue": null,
+                "dateRestriction": {
+                  "isDateRestrictionActive": true,
+                  "earliestDate": null,
+                  "latestDate": { "value": "var_id_6346ff231def8400925d", "sourceType": "variable" }
+                },
+                "content": { "html": "<p>Welche Frist haben Sie bis zur Beseitigung des Mangels gesetzt?</p>" }
+              },
+              "var_id_15e950de923ea623b160.var_id_fcd1d66a2f1eda2dd787": {
+                "placeholder": "",
+                "defaultValue": [
+                  {
+                    "type": "plain",
+                    "text": "Die beklagte Partei ist bis heute untätig geblieben. Der Mangel besteht weiterhin."
+                  }
+                ],
+                "content": {
+                  "html": "<p><strong>Behebung des Mangels durch die Vermieter:in</strong></p><p>Hat die Vermieter:in versucht, den Mangel zu beheben? </p><ul><li><p>Wenn ja, schildern Sie den Versuch.</p></li></ul><ul><li><p>Wenn nein, geben Sie an: \"Die beklagte Partei ist bis heute untätig geblieben. Der Mangel besteht weiterhin.\"</p></li></ul>"
+                }
+              }
+            }
+          }
+        },
+        "description": "!! Mangel besteht ggf. gar nicht mehr, dann dürfen wir das nicht anzeigen.\n\n--> vllt. macht es mehr Sinn, Kontaktaufnahme in einem unstrukturierten Textfeld mit Beispieltext aufzunehmen"
+      },
+      "node_id_bb2ea17b46d1301e5eb0": {
+        "id": "node_id_bb2ea17b46d1301e5eb0",
+        "type": "empty",
+        "label": "Switch Mängelbeseitigung",
+        "transitions": [
+          {
+            "id": "id_3d98400bb490b42ffcf4",
+            "from": "node_id_bb2ea17b46d1301e5eb0",
+            "to": "node_id_8d44693c202913eb44fc",
+            "condition": {
+              "type": "operation",
+              "operation": "contains",
+              "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+              "rightArgument": {
+                "type": "constant",
+                "value": { "type": "ChoiceId", "value": "choice_id_bae3b37932ee14440c87" }
+              }
+            },
+            "label": ""
+          },
+          {
+            "id": "id_54aeca02a1b02d97ec18",
+            "from": "node_id_bb2ea17b46d1301e5eb0",
+            "to": "node_id_167f844e9e05a7d9c860",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_167f844e9e05a7d9c860": {
+        "id": "node_id_167f844e9e05a7d9c860",
+        "type": "empty",
+        "label": "Switch Mietminderung",
+        "transitions": [
+          {
+            "id": "id_13ca15d08b098158aaca",
+            "from": "node_id_167f844e9e05a7d9c860",
+            "to": "node_id_a6e9db41adea26cb66e3",
+            "condition": {
+              "type": "operation",
+              "operation": "contains",
+              "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+              "rightArgument": {
+                "type": "constant",
+                "value": { "type": "ChoiceId", "value": "choice_id_1da15931d9294f950c62" }
+              }
+            },
+            "label": ""
+          },
+          {
+            "id": "id_5924bb1cabe3be5aed0c",
+            "from": "node_id_167f844e9e05a7d9c860",
+            "to": "node_id_e0136d187933f9746f5b",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_e0136d187933f9746f5b": {
+        "id": "node_id_e0136d187933f9746f5b",
+        "type": "empty",
+        "label": "Switch Aufwendungsersatz",
+        "transitions": [
+          {
+            "id": "id_a1e6b5966084d97ed05d",
+            "from": "node_id_e0136d187933f9746f5b",
+            "to": "node_id_c8f34ea2cb26b2fde253",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          },
+          {
+            "id": "id_e47d0da86e708b3975af",
+            "from": "node_id_e0136d187933f9746f5b",
+            "to": "node_id_f2578c6f08e0710ed749",
+            "condition": {
+              "type": "operation",
+              "operation": "contains",
+              "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+              "rightArgument": {
+                "type": "constant",
+                "value": { "type": "ChoiceId", "value": "choice_id_67739099aa7fdbf818b3" }
+              }
+            },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_c8f34ea2cb26b2fde253": {
+        "id": "node_id_c8f34ea2cb26b2fde253",
+        "type": "empty",
+        "label": "Switch Schadensersatz",
+        "transitions": [
+          {
+            "id": "id_75cc7ebe3eef242bc970",
+            "from": "node_id_c8f34ea2cb26b2fde253",
+            "to": "node_id_3bdc36eb24cfd856f2b1",
+            "condition": {
+              "type": "operation",
+              "operation": "contains",
+              "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+              "rightArgument": {
+                "type": "constant",
+                "value": { "type": "ChoiceId", "value": "choice_id_15950490c3490d2cf285" }
+              }
+            },
+            "label": ""
+          },
+          {
+            "id": "id_bbed30a24739e8baca39",
+            "from": "node_id_c8f34ea2cb26b2fde253",
+            "to": "node_id_775bc941243c6c49e753",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_10dc54eb905300c3b26c": {
+        "id": "node_id_10dc54eb905300c3b26c",
+        "type": "user_input",
+        "label": "beweisaufnahme",
+        "content": {
+          "html": "<h2>(6/8) Beweisaufnahme</h2><p>Ein Beweis ist ein Nachweis, dass etwas zu Recht behauptet wird. Mit einem Beweis können Sie Ihre Klage begründen, um sowohl die Richter:in, als auch Ihre Vermieter:in von Ihrer Beschreibung des Mangels zu überzeugen.</p><p>Für eine Klageeinreichung müssen Sie zunächst nichts beweisen. Wir empfehlen Ihnen allerdings, vorhandene Beweise wie Fotos oder Mängelprotokolle sofort mitzusenden.</p><p>&nbsp;</p><p><strong>Folgende Beweisarten können aufgeführt werden:</strong></p><ol><li><p><strong>Mängelprotokolle </strong>helfen, Ort und Schwere des Mangels zu verstehen. Darunter fallen <strong>beschriebene Fotos</strong> des Mangels, ein <strong>Grundriss der Wohnung</strong> mit der Einzeichnung des Mangels, oder auch ein <strong>Lärmprotokoll</strong> (Dokumentation, wann und wie der Lärm aufgetreten ist).</p></li><li><p>Wenn vorhanden können <strong>Sachverständigengutachten </strong>Ihre Beschreibung des Mangels unterstützen. Ansonsten wird das Gericht diese einholen lassen, falls notwendig.</p></li><li><p>Sie können zudem <strong>Zeugen</strong> mit Namen und Adressen benennen, die den Mangel ebenfalls in Ihrer Wohnung erlebt haben. Geben Sie dabei in einem Satz an, warum der Zeuge eine Aussage zu Ihrem Mangel treffen kann.</p></li><li><p>Zu guter Letzt können Sie sich auch auf <strong>Augenschein</strong> berufen. Dabei beantragen Sie, dass die Richter:in sich selbst ein Bild vom Mangel in Ihrer Wohnung macht.</p></li></ol>"
+        },
+        "transitions": [
+          {
+            "id": "id_f87bdfdf7d7aec24f6aa",
+            "from": "node_id_10dc54eb905300c3b26c",
+            "to": "node_id_af593adc5cc482e6940d",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_a17e68de8970f0fc242c",
+        "presentation": {
+          "var_id_a17e68de8970f0fc242c": {
+            "variableOrder": ["var_id_a17e68de8970f0fc242c.var_id_1d544f190c6f5e40428e"],
+            "presentation": {
+              "var_id_a17e68de8970f0fc242c.var_id_1d544f190c6f5e40428e": {
+                "placeholder": "",
+                "defaultValue": null,
+                "content": { "html": "<p><strong>Bitte listen Sie hier alle Ihre Beweise kurz auf.</strong></p>" }
+              }
+            }
+          }
+        },
+        "description": "TBD Umwandlung in nummerierte Liste? --> Augenschein kann man einfach immer dazusetzen\nSachverständigen ggf raus\n\nHier mehr Hilfe beim Ausfüllen\n--> Wie mache ich Lärmprotokoll?\n--> Ist es realistisch dass Leute hier schon ein Sachverständigengutachten haben?\n\nWenn optional / nicht ausgefüllt sollte der Block aus dem Dokument ersetzt werden (\"Es werden keine Beweise angetreten.\""
+      },
+      "node_id_502d4f69c468c0679ec7": {
+        "id": "node_id_502d4f69c468c0679ec7",
+        "type": "user_input",
+        "label": "maengelbeseitigung",
+        "content": {
+          "html": "<h2>(8/8) Informationen zur Mängelbeseitigung</h2><p>Wenn Sie versucht haben, den Mangel selbst zu beseitigen, können Sie diese hier dem Gericht mitteilen.</p>"
+        },
+        "transitions": [
+          {
+            "id": "id_e8f79740f64cb19f6593",
+            "from": "node_id_502d4f69c468c0679ec7",
+            "to": "node_id_1fed82c3753b9bfb0ffe",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_6e9f7a7c101f5f2f2a30",
+        "presentation": {
+          "var_id_6e9f7a7c101f5f2f2a30": {
+            "variableOrder": [
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_9c365826adbdc60c47f8",
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_31806532f6aa74a7c84b",
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_42f3881ce6ea5d516c45",
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_118d0bd9d3e7f73c6d87",
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_bcee4b08a3fbb499dc81"
+            ],
+            "presentation": {
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_9c365826adbdc60c47f8": {
+                "placeholder": "",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Haben Sie selbst versucht, den Mangel zu beheben?</strong> </p><ul><li><p>Wenn ja, beschreiben Sie bitte wie. Gehen Sie auch darauf ein, inwieweit der Mangel behoben wurde.</p></li><li><p>Wenn nein, lassen Sie das Feld einfach leer.</p><p></p></li></ul>"
+                }
+              },
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_31806532f6aa74a7c84b": {
+                "placeholder": "",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Kosten durch Mängelbeseitigung</strong></p><p>Da Sie einen Antrag auf Aufwendungsersatz in Höhe von <span data-type=\"variable\" variable-id=\"var_id_b3aaa9f7b27aa30c0db1.var_id_0adb3a79ed86abe4d011\"></span> Euro stellen, sollten Sie hier die Kosten für die Mängelbeseitigung genau anführen. Listen Sie alle entstandenen Aufwendungen auf.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+                  "operation": "contains",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_67739099aa7fdbf818b3" }
+                  }
+                }
+              },
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_118d0bd9d3e7f73c6d87": {
+                "placeholder": "",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p><strong>Schäden durch Mangel</strong></p><p>Da Sie einen Antrag auf Schadensersatz in Höhe von <span data-type=\"variable\" variable-id=\"var_id_e544c52c5605d3ba7b80.var_id_8eae151051a3f19ab182\"></span> Euro stellen, sollten Sie hier die entstandenen Schäden genau anführen. Listen Sie alle entstandenen Schäden auf. </p><p></p><p>Wenn beispielsweise Möbel durch den Mangel beschädigt wurden, können Sie deren Wertverlust hier angeben. Dieser berechnet sich nach deren Zeitwert.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+                  "operation": "contains",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_15950490c3490d2cf285" }
+                  }
+                }
+              },
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_42f3881ce6ea5d516c45": {
+                "placeholder": "",
+                "defaultValue": [{ "type": "plain", "text": "Rechnung der Firma [Firmenname] vom [Datum]" }],
+                "content": {
+                  "html": "<p>Bitte listen Sie hier alle Rechnungen für die eben beschriebenen Aufwendungen auf. Diese müssen Sie beim Versand der Klage auch als Beweise anhängen.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+                  "operation": "contains",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_67739099aa7fdbf818b3" }
+                  }
+                }
+              },
+              "var_id_6e9f7a7c101f5f2f2a30.var_id_bcee4b08a3fbb499dc81": {
+                "placeholder": "Rechnung der Firma [Firmenname] vom [Datum]",
+                "defaultValue": null,
+                "content": {
+                  "html": "<p>Wenn vorhanden, listen Sie hier bitte alle Rechnungen für die eben beschriebenen Schäden auf. Diese müssen Sie beim Versand der Klage auch als Beweise anhängen.</p>"
+                },
+                "displayCondition": {
+                  "type": "operation",
+                  "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+                  "operation": "contains",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_15950490c3490d2cf285" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "TBD: Antragsspezifisch, \n\n!! Abschreibung Schäden\n\nHier brauchen wir mehr Hilfe - welche Kosten darf man ansetzen für Aufwendungsersatz / Schadensersatz?"
+      },
+      "node_id_382009967b0ca6a3466c": {
+        "id": "node_id_382009967b0ca6a3466c",
+        "type": "set_value",
+        "label": "antragstext",
+        "value": {
+          "html": "<div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;contains&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_bae3b37932ee14440c87&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><strong>Antrag auf Mängelbeseitigung</strong></p><p><span data-type=\"auto-number\" data-list-name=\"\" data-nesting-level=\"1\"></span>. die beklagte Partei zu verurteilen, in der von mir angemieteten Wohnung in der <span data-type=\"variable\" variable-id=\"var_id_501d8077685a56b2b1b4.var_id_b25a0bd46b40b8616de2\"></span>, <span data-type=\"variable\" variable-id=\"var_id_501d8077685a56b2b1b4.var_id_064c09b3a78ea62b2582\"></span>, <span data-type=\"variable\" variable-id=\"var_id_501d8077685a56b2b1b4.var_id_7c1d7ce47ebe76dfb701\"></span> <span data-type=\"variable\" variable-id=\"var_id_501d8077685a56b2b1b4.var_id_06fe8253fa5054d98ffd\"></span>, die nachfolgend bezeichneten Mängel zu beseitigen:</p><p><span data-type=\"variable\" variable-id=\"var_id_33fcf2e2dc963d721555.var_id_d90e092b04d2923437ca\"></span></p><p></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;contains&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_1da15931d9294f950c62&quot;}}},{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_fa0a3962ad9237e26182&quot;}}}]}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><strong>Antrag auf Feststellung einer Mietminderung</strong></p><p><span data-type=\"auto-number\" data-list-name=\"\" data-nesting-level=\"1\"></span>. festzustellen, dass die Gesamtmiete für die vorbezeichnete Wohnung, beginnend mit dem <span data-type=\"variable\" variable-id=\"var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41\"></span> bis zur Beseitigung der beschriebenen Mängel monatlich um <span data-type=\"variable\" variable-id=\"var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a\"></span>% gemindert ist.</p><p></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_bae3b37932ee14440c87&quot;}}},{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_eacbe5a25216ab1f397b&quot;}}}]}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><strong>Antrag auf Mietminderung</strong></p><p><span data-type=\"auto-number\" data-list-name=\"\" data-nesting-level=\"1\"></span>. die beklagte Partei zu verurteilen, an mich eine Zahlung wegen Mietminderung in Höhe von <span data-type=\"variable\" variable-id=\"var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a\"></span>% der Gesamtmiete für den Zeitraum des Mangels vom Auftritt bis zur Beseitigung am <span data-type=\"variable\" variable-id=\"var_id_0c5529f96daf38375bca.var_id_5f15da0c7452f128fac9\"></span> nebst Zinsen in Höhe von fünf Prozentpunkten über dem jeweiligen Basiszinssatz seit Rechtshängigkeit zu zahlen.</p><p></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;contains&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_67739099aa7fdbf818b3&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><strong>Antrag auf Aufwendungsersatz</strong></p><p><span data-type=\"auto-number\" data-list-name=\"\" data-nesting-level=\"1\"></span>. die beklagte Partei zu verurteilen, an mich Aufwendungsersatz in Höhe von <span data-type=\"variable\" variable-id=\"var_id_b3aaa9f7b27aa30c0db1.var_id_0adb3a79ed86abe4d011\"></span> Euro nebst Zinsen in Höhe von fünf Prozentpunkten über dem jeweiligen Basiszinssatz seit Rechtshängigkeit zu zahlen.</p><p></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;contains&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_15950490c3490d2cf285&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><strong>Antrag auf Schadensersatz</strong></p><p><span data-type=\"auto-number\" data-list-name=\"\" data-nesting-level=\"1\"></span>. die beklagte Partei zu verurteilen, an mich Schadensersatz in Höhe von <span data-type=\"variable\" variable-id=\"var_id_e544c52c5605d3ba7b80.var_id_8eae151051a3f19ab182\"></span> Euro nebst Zinsen in Höhe von fünf Prozentpunkten über dem jeweiligen Basiszinssatz seit Rechtshängigkeit zu zahlen.</p><p></p></div><div><p></p></div></div>"
+        },
+        "transitions": [
+          {
+            "id": "id_fb16bf9bc0f231bf2fc0",
+            "from": "node_id_382009967b0ca6a3466c",
+            "to": "node_id_d9a43867dd18a0a3d161",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_23965f7798bb907cf2e5",
+        "description": "Rückwirkende Mietminderung Antrag falsch\n\ndie Beklagte zu verurteilen, an mich eine Zahlung in Höhe von {{mietminderung}} wegen Mietminderung für die Zeit vom {maengelanzeige} bis zum {datum der beseitigung} nebst Zinsen in Höhe von fünf Prozentpunkten über dem jeweiligen Basiszinssatz seit Rechtshängigkeit zu zahlen."
+      },
+      "node_id_fd6db938fd0e7fdf79e5": {
+        "id": "node_id_fd6db938fd0e7fdf79e5",
+        "type": "set_value",
+        "label": "gerichtskostenvorschuss",
+        "value": [{ "type": "plain", "text": "0" }],
+        "transitions": [
+          {
+            "id": "id_0b1ec51d5013728fc1fa",
+            "from": "node_id_fd6db938fd0e7fdf79e5",
+            "to": "node_id_382009967b0ca6a3466c",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_d382d525f2c1ce3162be",
+        "description": "TBD: Berechnung basierend auf Streitwert\n--> Ginge auch mit Conditional Blocks"
+      },
+      "node_id_2e5f3a95284efe14d0e1": {
+        "id": "node_id_2e5f3a95284efe14d0e1",
+        "type": "set_value",
+        "label": "klagende",
+        "value": {
+          "html": "<div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_ca026974fb3792416147.var_id_c4fcdad735b9a9196a06&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_fe2d21c89c65ef492582&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>von Herrn <span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2\"></span></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_ca026974fb3792416147.var_id_c4fcdad735b9a9196a06&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_b1f3b5356e85289d7315&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>von Frau <span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2\"></span></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_ca026974fb3792416147.var_id_c4fcdad735b9a9196a06&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_c1f056afd977fc364d59&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>von <span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2\"></span></p></div><div><p></p></div></div><p><span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_f0a92a253db6a5bb89a1\"></span>, <span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_b6b20ad8ddd4478a370c\"></span> <span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_81674a1bd921c3537a53\"></span>, <span data-type=\"variable\" variable-id=\"var_id_ca026974fb3792416147.var_id_8fb0663f0743d8102135\"></span></p>"
+        },
+        "transitions": [
+          {
+            "id": "id_51101759b2c65c7203ad",
+            "from": "node_id_2e5f3a95284efe14d0e1",
+            "to": "id_89d71d95b371e77fef3f",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_047a91ec73900ed33db2",
+        "description": "TBD: Mehrere Kläger abfragen"
+      },
+      "node_id_02e504f7e8965231633f": {
+        "id": "node_id_02e504f7e8965231633f",
+        "type": "set_value",
+        "label": "beklagte",
+        "value": {
+          "html": "<div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_7ec50b565285477b4813&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.var_id_e04ce090a30f69d73e20\"></span></p><p>vertreten durch <span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.var_id_f302a630d2b7260e9492\"></span> (Geschäftsführung)</p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3&quot;},&quot;operation&quot;:&quot;==&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_d17c35d1cc05d59d518c&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p><span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.id_d526a96b534924c9dc8d\"></span></p></div><div><p></p></div></div><p><span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.id_2f6d08294954f565823c\"></span>, <span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.id_fa78be9541f43693c897\"></span> <span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.id_5262d832193f85813c04\"></span>, <span data-type=\"variable\" variable-id=\"id_7339f62f38c5ac2018c2.id_82bf7546506df82f259b\"></span></p>"
+        },
+        "transitions": [
+          {
+            "id": "id_d398ea579ef005239a57",
+            "from": "node_id_02e504f7e8965231633f",
+            "to": "node_id_3a9aa8eef6b824edaf24",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_2598b19113002624deee",
+        "description": "TBD: Gendering Beklagte / Geschäftsführung"
+      },
+      "node_id_95a751be5ad61f69be1c": {
+        "id": "node_id_95a751be5ad61f69be1c",
+        "type": "set_value",
+        "label": "streitwert-text",
+        "value": {
+          "html": "<div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_bae3b37932ee14440c87&quot;}}},{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains_not&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_1da15931d9294f950c62&quot;}}}]}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>Das Gericht wird gebeten, den Streitwert vorläufig festzusetzen</p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;or&quot;,&quot;conditions&quot;:[{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains_not&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_bae3b37932ee14440c87&quot;}}},{&quot;type&quot;:&quot;operation&quot;,&quot;operation&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_bae3b37932ee14440c87&quot;}}},{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_1da15931d9294f950c62&quot;}}}]}]}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>vorläufiger Streitwert: <strong><span data-type=\"variable\" variable-id=\"var_id_8289fa7f783887450365\"></span> Euro</strong></p></div><div><p></p></div></div>"
+        },
+        "transitions": [
+          {
+            "id": "id_c13801e6c71582a479ce",
+            "from": "node_id_95a751be5ad61f69be1c",
+            "to": "node_id_fd6db938fd0e7fdf79e5",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_3b2335fbb88ad2d6cfd5",
+        "description": "Bei Beseitigung des Mangels berechnet sich der Streitwert aus der möglichen Minderungshöhe. Wenn aber keine Minderung beantragt wird, muss die Nutzer:in den Streitwert nicht schätzen, und wir lagern das an das Gericht aus (Vorschlag Ragna). "
+      },
+      "node_id_fa9c993c8233e8cb250d": {
+        "id": "node_id_fa9c993c8233e8cb250d",
+        "type": "days_between_dates",
+        "label": "mietminderung-dauer",
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_def78bb2d07cadabb4a1",
+        "transitions": [
+          {
+            "id": "id_91d035fc0bb6466ae00b",
+            "from": "node_id_fa9c993c8233e8cb250d",
+            "to": "node_id_82bba73d78cfd9f57045",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "inputs": {
+          "startDate": "var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41",
+          "startDateSourceType": "variable",
+          "endDate": "var_id_0c5529f96daf38375bca.var_id_5f15da0c7452f128fac9",
+          "endDateSourceType": "variable",
+          "skipDays": { "active": false, "selectedWeekdays": ["sat", "sun"] },
+          "skipDates": { "active": false, "selectedDates": [{ "date": "", "type": "custom" }] },
+          "includeFirstDay": false,
+          "includeLastDay": true
+        },
+        "description": "Wird nur bei beseitigten Mängeln berechnet."
+      },
+      "node_id_82bba73d78cfd9f57045": {
+        "id": "node_id_82bba73d78cfd9f57045",
+        "type": "set_value",
+        "label": "mietminderung-summe",
+        "value": [
+          { "type": "plain", "text": "(" },
+          { "type": "variable", "variableId": "var_id_def78bb2d07cadabb4a1" },
+          { "type": "plain", "text": "/30)*(" },
+          { "type": "variable", "variableId": "var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a" },
+          { "type": "plain", "text": "/100)*" },
+          { "type": "variable", "variableId": "var_id_501d8077685a56b2b1b4.var_id_e205c725da20edd81790" }
+        ],
+        "transitions": [
+          {
+            "id": "id_e6123166732e44514a40",
+            "from": "node_id_82bba73d78cfd9f57045",
+            "to": "node_id_350af029ced4a7cf5fb2",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_f0abfeaa38541db8efa9",
+        "description": "Berechnung der zu zahlenden Mietminderung bei behobenen Mängeln.\n\nGesamtmiete im Streitwert & Zahlung? Oder Kaltmiete?"
+      },
+      "node_id_8da77c54e684eb6222a5": {
+        "id": "node_id_8da77c54e684eb6222a5",
+        "type": "empty",
+        "label": "LastCalculations",
+        "transitions": [
+          {
+            "id": "id_70cd4caf3d53ece4d0a5",
+            "from": "node_id_8da77c54e684eb6222a5",
+            "to": "node_id_fa9c993c8233e8cb250d",
+            "condition": {
+              "type": "operation",
+              "operation": "and",
+              "conditions": [
+                {
+                  "type": "operation",
+                  "leftArgument": { "type": "variable", "variableId": "var_id_5935d2db480863f0dd8d" },
+                  "operation": "contains",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_1da15931d9294f950c62" }
+                  }
+                },
+                {
+                  "type": "operation",
+                  "leftArgument": {
+                    "type": "variable",
+                    "variableId": "var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44"
+                  },
+                  "operation": "==",
+                  "rightArgument": {
+                    "type": "constant",
+                    "value": { "type": "ChoiceId", "value": "choice_id_eacbe5a25216ab1f397b" }
+                  }
+                }
+              ]
+            },
+            "label": ""
+          },
+          {
+            "id": "id_67300d19d960f31c3b59",
+            "from": "node_id_8da77c54e684eb6222a5",
+            "to": "node_id_350af029ced4a7cf5fb2",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_775bc941243c6c49e753": {
+        "id": "node_id_775bc941243c6c49e753",
+        "type": "empty",
+        "label": "antraege-ende",
+        "transitions": [
+          {
+            "id": "id_0658824cca85fc96b57f",
+            "from": "node_id_775bc941243c6c49e753",
+            "to": "node_id_50006add49c385fbc8d7",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_350af029ced4a7cf5fb2": {
+        "id": "node_id_350af029ced4a7cf5fb2",
+        "type": "empty",
+        "label": "Switch",
+        "transitions": [
+          {
+            "id": "id_f7df912bb6e8c56603b6",
+            "from": "node_id_350af029ced4a7cf5fb2",
+            "to": "node_id_1712b5ef1bb333663722",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ]
+      },
+      "node_id_1fed82c3753b9bfb0ffe": {
+        "id": "node_id_1fed82c3753b9bfb0ffe",
+        "type": "set_value",
+        "label": "begruendung-aufwand-schaden",
+        "value": {
+          "html": "<div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_67739099aa7fdbf818b3&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>Durch die Mängelbeseitigung ist mir folgender Aufwand entstanden:</p><p><span data-type=\"variable\" variable-id=\"var_id_6e9f7a7c101f5f2f2a30.var_id_31806532f6aa74a7c84b\"></span></p><p></p><p><strong>Beweis:</strong></p><p><span data-type=\"variable\" variable-id=\"var_id_6e9f7a7c101f5f2f2a30.var_id_42f3881ce6ea5d516c45\"></span></p><p></p></div><div><p></p></div></div><div class=\"textblock-wrapper\" data-type=\"conditionalText\" data-condition=\"{&quot;type&quot;:&quot;operation&quot;,&quot;leftArgument&quot;:{&quot;type&quot;:&quot;variable&quot;,&quot;variableId&quot;:&quot;var_id_5935d2db480863f0dd8d&quot;},&quot;operation&quot;:&quot;contains&quot;,&quot;rightArgument&quot;:{&quot;type&quot;:&quot;constant&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;ChoiceId&quot;,&quot;value&quot;:&quot;choice_id_15950490c3490d2cf285&quot;}}}\"><div class=\"textblock-header\"></div><div class=\"textblock-content\"><p>Der Mangel hat weitere Schäden in folgender Höhe verursacht:</p><p><span data-type=\"variable\" variable-id=\"var_id_6e9f7a7c101f5f2f2a30.var_id_118d0bd9d3e7f73c6d87\"></span></p><p></p><p><strong>Beweis:</strong></p><p><span data-type=\"variable\" variable-id=\"var_id_6e9f7a7c101f5f2f2a30.var_id_bcee4b08a3fbb499dc81\"></span></p><p></p></div><div><p></p></div></div>"
+        },
+        "transitions": [
+          {
+            "id": "id_849e7d5e300c86ed88f1",
+            "from": "node_id_1fed82c3753b9bfb0ffe",
+            "to": "node_id_8da77c54e684eb6222a5",
+            "condition": { "type": "constant", "value": true },
+            "label": ""
+          }
+        ],
+        "reassignedVariableId": null,
+        "declaredVariableId": "var_id_2744833ac06d831aa9b8"
+      }
+    },
+    "variables": {
+      "var_id_4a66bef7f3e8a9b79bb2": {
+        "id": "var_id_4a66bef7f3e8a9b79bb2",
+        "name": "Ihre Mietmangel-Klage",
+        "optional": false,
+        "type": "file_upload",
+        "contentTypes": ["application/vnd.openxmlformats-officedocument.wordprocessingml.document"]
+      },
+      "var_id_ca026974fb3792416147": {
+        "id": "var_id_ca026974fb3792416147",
+        "name": "klaegerin-informationen",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_ca026974fb3792416147.var_id_d8acc8074c65ede54ae2",
+            "name": "klaegerin-name",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false,
+            "regex": "^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+          },
+          {
+            "id": "var_id_ca026974fb3792416147.var_id_f0a92a253db6a5bb89a1",
+            "name": "klaegerin-straße",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 100,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_ca026974fb3792416147.var_id_b6b20ad8ddd4478a370c",
+            "name": "klaegerin-stadt",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_ca026974fb3792416147.var_id_81674a1bd921c3537a53",
+            "name": "klaegerin-plz",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 5,
+            "allowLinebreaks": false,
+            "regex": "[0-9]{5}"
+          },
+          {
+            "id": "var_id_ca026974fb3792416147.var_id_8fb0663f0743d8102135",
+            "name": "klaegerin-land",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_ca026974fb3792416147.var_id_c4fcdad735b9a9196a06",
+            "name": "klaegerin-geschlecht",
+            "type": "single_choice",
+            "choices": [
+              { "id": "choice_id_fe2d21c89c65ef492582", "label": [{ "type": "plain", "text": "Männlich" }] },
+              { "id": "choice_id_b1f3b5356e85289d7315", "label": [{ "type": "plain", "text": "Weiblich" }] },
+              { "id": "choice_id_c1f056afd977fc364d59", "label": [{ "type": "plain", "text": "Divers" }] }
+            ],
+            "optional": false
+          }
+        ]
+      },
+      "var_id_7336d744b64e223a1254": {
+        "id": "var_id_7336d744b64e223a1254",
+        "name": "amtsgericht-stadt",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      },
+      "var_id_d55c74faab4a25885f78": {
+        "id": "var_id_d55c74faab4a25885f78",
+        "name": "amtsgericht-adresse",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      },
+      "id_7339f62f38c5ac2018c2": {
+        "id": "id_7339f62f38c5ac2018c2",
+        "name": "beklagte-informationen",
+        "type": "object",
+        "variables": [
+          {
+            "id": "id_7339f62f38c5ac2018c2.id_d526a96b534924c9dc8d",
+            "name": "beklagte-name",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false,
+            "regex": "^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.id_2f6d08294954f565823c",
+            "name": "beklagte-straße",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 100,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.id_fa78be9541f43693c897",
+            "name": "beklagte-stadt",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.id_5262d832193f85813c04",
+            "name": "beklagte-plz",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 5,
+            "allowLinebreaks": false,
+            "regex": "[0-9]{5}"
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.id_82bf7546506df82f259b",
+            "name": "beklagte-land",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.var_id_e04ce090a30f69d73e20",
+            "name": "beklagte-unternehmen",
+            "type": "text",
+            "optional": false,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.var_id_f302a630d2b7260e9492",
+            "name": "beklagte-geschaeftsfuehrung",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false,
+            "regex": "^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+          },
+          {
+            "id": "id_7339f62f38c5ac2018c2.var_id_f1954346ee19177efbf3",
+            "name": "beklagte-art",
+            "type": "single_choice",
+            "choices": [
+              { "id": "choice_id_d17c35d1cc05d59d518c", "label": [{ "type": "plain", "text": "Privatperson" }] },
+              { "id": "choice_id_7ec50b565285477b4813", "label": [{ "type": "plain", "text": "Unternehmen" }] }
+            ],
+            "optional": false
+          }
+        ]
+      },
+      "var_id_5935d2db480863f0dd8d": {
+        "id": "var_id_5935d2db480863f0dd8d",
+        "name": "antraege",
+        "type": "multiple_select",
+        "choices": [
+          { "id": "choice_id_bae3b37932ee14440c87", "label": [{ "type": "plain", "text": "Mängelbeseitigung" }] },
+          { "id": "choice_id_1da15931d9294f950c62", "label": [{ "type": "plain", "text": "Mietminderung" }] },
+          { "id": "choice_id_67739099aa7fdbf818b3", "label": [{ "type": "plain", "text": "Aufwendungsersatz" }] },
+          { "id": "choice_id_15950490c3490d2cf285", "label": [{ "type": "plain", "text": "Schadensersatz" }] }
+        ],
+        "optional": false
+      },
+      "var_id_6346ff231def8400925d": {
+        "id": "var_id_6346ff231def8400925d",
+        "name": "erstellungsdatum",
+        "optional": false,
+        "type": "datetime",
+        "datetimeFormat": "DD.MM.YYYY"
+      },
+      "var_id_33fcf2e2dc963d721555": {
+        "id": "var_id_33fcf2e2dc963d721555",
+        "name": "maengelbeseitigung",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_33fcf2e2dc963d721555.var_id_d90e092b04d2923437ca",
+            "name": "zusammenfassung",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 500,
+            "allowLinebreaks": true
+          }
+        ]
+      },
+      "var_id_1bb2857d72949d45cad9": {
+        "id": "var_id_1bb2857d72949d45cad9",
+        "name": "mietminderung",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_1bb2857d72949d45cad9.var_id_c54aaf66fe279ffe164a",
+            "name": "mangel-mietminderung",
+            "type": "number",
+            "optional": false
+          }
+        ]
+      },
+      "var_id_b3aaa9f7b27aa30c0db1": {
+        "id": "var_id_b3aaa9f7b27aa30c0db1",
+        "name": "aufwendungsersatz",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_b3aaa9f7b27aa30c0db1.var_id_0adb3a79ed86abe4d011",
+            "name": "aufwendungsersatz-hoehe",
+            "type": "number",
+            "optional": false
+          }
+        ]
+      },
+      "var_id_e544c52c5605d3ba7b80": {
+        "id": "var_id_e544c52c5605d3ba7b80",
+        "name": "schadensersatz",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_e544c52c5605d3ba7b80.var_id_8eae151051a3f19ab182",
+            "name": "schadensersatz-hoehe",
+            "type": "number",
+            "optional": false
+          }
+        ]
+      },
+      "var_id_501d8077685a56b2b1b4": {
+        "id": "var_id_501d8077685a56b2b1b4",
+        "name": "mietvertrag",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_b25a0bd46b40b8616de2",
+            "name": "wohnung-straße",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 100,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_064c09b3a78ea62b2582",
+            "name": "wohnung-etage",
+            "type": "text",
+            "optional": true,
+            "characterLimit": 100,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_7c1d7ce47ebe76dfb701",
+            "name": "wohnung-stadt",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_06fe8253fa5054d98ffd",
+            "name": "wohnung-plz",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 5,
+            "allowLinebreaks": false,
+            "regex": "[0-9]{5}"
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_b3e7b7e0ebe121e99150",
+            "name": "wohnung-land",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 50,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_1d7b1296603d084f519b",
+            "name": "mietvertrag-datum",
+            "type": "datetime",
+            "optional": false,
+            "datetimeFormat": "DD.MM.YYYY"
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_7fd0efb734f017d2bae4",
+            "name": "mietvertrag-miete-gesamt",
+            "type": "number",
+            "optional": false
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_e205c725da20edd81790",
+            "name": "mietvertrag-miete-netto",
+            "type": "number",
+            "optional": false
+          },
+          {
+            "id": "var_id_501d8077685a56b2b1b4.var_id_8b2e4518415adf4328cb",
+            "name": "mietvertrag-miete-nebenkosten",
+            "type": "number",
+            "optional": false
+          }
+        ]
+      },
+      "var_id_0c5529f96daf38375bca": {
+        "id": "var_id_0c5529f96daf38375bca",
+        "name": "maengelbeschreibung",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_0c5529f96daf38375bca.var_id_004ac7278adc4f74fa13",
+            "name": "mangel-beschreibung",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 1500,
+            "allowLinebreaks": true
+          },
+          {
+            "id": "var_id_0c5529f96daf38375bca.var_id_ec2490cb14fcaa10a5d7",
+            "name": "mangel-zeitpunkt",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 500,
+            "allowLinebreaks": false
+          },
+          {
+            "id": "var_id_0c5529f96daf38375bca.var_id_6c4c6de216db5f821134",
+            "name": "mangel-entstehung",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 500,
+            "allowLinebreaks": true
+          },
+          {
+            "id": "var_id_0c5529f96daf38375bca.var_id_789bd6654b579c36ab44",
+            "name": "mangel-bestand",
+            "type": "single_choice",
+            "choices": [
+              { "id": "choice_id_fa0a3962ad9237e26182", "label": [{ "type": "plain", "text": "Ja" }] },
+              { "id": "choice_id_eacbe5a25216ab1f397b", "label": [{ "type": "plain", "text": "Nein" }] }
+            ],
+            "optional": false
+          },
+          {
+            "id": "var_id_0c5529f96daf38375bca.var_id_5f15da0c7452f128fac9",
+            "name": "mangel-behebung-datum",
+            "optional": false,
+            "type": "datetime",
+            "datetimeFormat": "YYYY-MM-DD"
+          }
+        ]
+      },
+      "var_id_15e950de923ea623b160": {
+        "id": "var_id_15e950de923ea623b160",
+        "name": "aussergerichtliches-verfahren",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_15e950de923ea623b160.var_id_3fabbf8c095739776f41",
+            "name": "maengelanzeige-datum",
+            "type": "datetime",
+            "optional": false,
+            "datetimeFormat": "DD.MM.YYYY"
+          },
+          {
+            "id": "var_id_15e950de923ea623b160.var_id_5cc40c8da8e6062eabd1",
+            "name": "maengelanzeige-typ",
+            "type": "single_choice",
+            "choices": [
+              { "id": "choice_id_cfe2603c0e57993f5101", "label": [{ "type": "plain", "text": "per Brief" }] },
+              { "id": "choice_id_3428370668897cb98d55", "label": [{ "type": "plain", "text": "per E-Mail" }] },
+              { "id": "choice_id_c94bd0991fd428f92493", "label": [{ "type": "plain", "text": "per Fax" }] },
+              {
+                "id": "choice_id_b3ea5b3ba59c349ad9bb",
+                "label": [{ "type": "plain", "text": "in einem telefonischen Gespäch" }]
+              },
+              {
+                "id": "choice_id_1fa8b64e55c0be8331f5",
+                "label": [{ "type": "plain", "text": "in einem persönlichen Gespräch" }]
+              }
+            ],
+            "optional": false
+          },
+          {
+            "id": "var_id_15e950de923ea623b160.var_id_dfbea48ee0317212109f",
+            "name": "maengelanzeige-frist",
+            "type": "datetime",
+            "optional": false,
+            "datetimeFormat": "DD.MM.YYYY"
+          },
+          {
+            "id": "var_id_15e950de923ea623b160.var_id_fcd1d66a2f1eda2dd787",
+            "name": "maengelanzeige-reaktion",
+            "type": "text",
+            "optional": false,
+            "characterLimit": 500,
+            "allowLinebreaks": true
+          }
+        ]
+      },
+      "var_id_a17e68de8970f0fc242c": {
+        "id": "var_id_a17e68de8970f0fc242c",
+        "name": "beweisaufnahme",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_a17e68de8970f0fc242c.var_id_1d544f190c6f5e40428e",
+            "name": "mangel-beweis",
+            "type": "text",
+            "optional": true,
+            "characterLimit": 50000,
+            "allowLinebreaks": true
+          }
+        ]
+      },
+      "var_id_6e9f7a7c101f5f2f2a30": {
+        "id": "var_id_6e9f7a7c101f5f2f2a30",
+        "name": "maengelbeseitigung",
+        "type": "object",
+        "variables": [
+          {
+            "id": "var_id_6e9f7a7c101f5f2f2a30.var_id_9c365826adbdc60c47f8",
+            "name": "maengelbeseitigung-versuch",
+            "type": "text",
+            "optional": true,
+            "characterLimit": 500,
+            "allowLinebreaks": true
+          },
+          {
+            "id": "var_id_6e9f7a7c101f5f2f2a30.var_id_31806532f6aa74a7c84b",
+            "name": "maengelbeseitigung-kosten",
+            "type": "text",
+            "optional": false,
+            "allowLinebreaks": true
+          },
+          {
+            "id": "var_id_6e9f7a7c101f5f2f2a30.var_id_118d0bd9d3e7f73c6d87",
+            "name": "mangel-schaden",
+            "type": "text",
+            "optional": false,
+            "allowLinebreaks": true
+          },
+          {
+            "id": "var_id_6e9f7a7c101f5f2f2a30.var_id_42f3881ce6ea5d516c45",
+            "name": "aufwendungsersatz-beweise",
+            "type": "text",
+            "optional": false,
+            "allowLinebreaks": true
+          },
+          {
+            "id": "var_id_6e9f7a7c101f5f2f2a30.var_id_bcee4b08a3fbb499dc81",
+            "name": "schaden-beweis",
+            "type": "text",
+            "optional": false,
+            "allowLinebreaks": true
+          }
+        ]
+      },
+      "var_id_23965f7798bb907cf2e5": {
+        "id": "var_id_23965f7798bb907cf2e5",
+        "name": "antragstext",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      },
+      "var_id_8289fa7f783887450365": {
+        "id": "var_id_8289fa7f783887450365",
+        "name": "Streitwert",
+        "optional": false,
+        "type": "number"
+      },
+      "var_id_d382d525f2c1ce3162be": {
+        "id": "var_id_d382d525f2c1ce3162be",
+        "name": "gerichtskostenvorschuss",
+        "optional": false,
+        "type": "number"
+      },
+      "var_id_047a91ec73900ed33db2": {
+        "id": "var_id_047a91ec73900ed33db2",
+        "name": "klagende",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      },
+      "var_id_2598b19113002624deee": {
+        "id": "var_id_2598b19113002624deee",
+        "name": "beklagte",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      },
+      "var_id_3b2335fbb88ad2d6cfd5": {
+        "id": "var_id_3b2335fbb88ad2d6cfd5",
+        "name": "streitwert-text",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      },
+      "var_id_def78bb2d07cadabb4a1": {
+        "id": "var_id_def78bb2d07cadabb4a1",
+        "name": "mietminderung-dauer",
+        "optional": false,
+        "type": "number"
+      },
+      "var_id_f0abfeaa38541db8efa9": {
+        "id": "var_id_f0abfeaa38541db8efa9",
+        "name": "mietminderung-summe",
+        "optional": false,
+        "type": "number"
+      },
+      "var_id_2744833ac06d831aa9b8": {
+        "id": "var_id_2744833ac06d831aa9b8",
+        "name": "begruendung-aufwand-schaden",
+        "optional": false,
+        "type": "text",
+        "allowLinebreaks": false
+      }
+    }
+  },
+  "serviceId": "TKC3ujsjQsqPgByCdzc-mA",
+  "createdAt": "2021-10-10T14:42:51.954350Z"
+}

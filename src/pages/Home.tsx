@@ -5,14 +5,14 @@ import { Link as ReactLink } from 'react-router-dom';
 import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
+import { UserState } from '../logic/UserState';
 
 interface FeatureProps {
   anchorId: string;
 }
 
-export const Home = (props: FeatureProps) => {
-  const { anchorId } = props;
-  const howRef = React.useRef<null | HTMLElement>(null);
+export const Home = ({ anchorId, ...rest }: FeatureProps) => {
+  const howRef = React.useRef<HTMLElement>(null);
   const executeScroll = () => howRef.current && howRef.current.scrollIntoView({ behavior: 'smooth' });
 
   React.useEffect(() => {

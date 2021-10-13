@@ -7,13 +7,11 @@ import { HeroSplit } from '../components/shared/Hero_Split';
 import { MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
-  id: string;
+  id: string | null;
   mmobject: MMGraph;
 }
 
-export const ExitJourney = (props: FeatureProps) => {
-  const { id, mmobject } = props;
-
+export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
   const data = mmobject.getNode(id);
 
   return (

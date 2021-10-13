@@ -5,9 +5,7 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Button,
   Heading,
-  HStack,
   Spacer,
   Text,
   useColorModeValue,
@@ -15,7 +13,6 @@ import {
 } from '@chakra-ui/react';
 import * as React from 'react';
 import { FaAccessibleIcon, FaCompass, FaLandmark, FaMagento } from 'react-icons/fa';
-import { Link as ReactLink } from 'react-router-dom';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { MMGraph } from '../logic/KMParser';
 import ReactMarkdown from 'react-markdown';
@@ -38,13 +35,12 @@ const AccItem = (props: { title: string; children: React.ReactNode; icon?: React
 );
 
 interface FeatureProps {
-  id: string;
+  id: string | null;
   mmobject: MMGraph;
 }
 
-export const PossibleEntitlements = (props: FeatureProps) => {
+export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) => {
   const green = useColorModeValue('green.500', 'green.300');
-  const { id, mmobject } = props;
 
   return (
     <Box textAlign="left" fontSize="xl" padding="3em">
@@ -104,7 +100,7 @@ Es gilt: Wenn der Mangel schon bei Vertragsschluss vorlag, dann haften die Vermi
       </Accordion>
       <Spacer height="2em" />
 
-      <NavButtons linkBack={`/solutionexplorer?id=${mmobject.getParent(id)?.id}`} linkForward="/zpo" justify="center" />
+      <NavButtons linkBack={`/solutionexplorer?id=${mmobject.getParent(id)?.id}`} linkForward="/zpo" />
     </Box>
   );
 };

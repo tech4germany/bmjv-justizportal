@@ -6,7 +6,6 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 
 import FooterSmallWithSocial from './components/shared/Footer';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
-import { EntitlementCheck } from './pages/Entitlement';
 import { Home } from './pages/Home';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ExitJourney } from './pages/ExitJourney';
@@ -14,6 +13,8 @@ import { ZPOInformation } from './pages/ZPOInformation';
 import { PossibleEntitlements } from './pages/PEntitlements';
 import { MMGraph } from './logic/KMParser';
 import { Bryter } from './pages/BRYTER';
+import { usePersistedState } from './logic/PersistedState';
+import { UserState } from './logic/UserState';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -37,7 +38,14 @@ export const App = () => {
   const mmobject = new MMGraph();
   mmobject.initialize();
 
-  const featureProps = { id: query.get('id'), mmobject: mmobject };
+  let [userState, setUserState] = usePersistedState('UserState', new UserState());
+
+  const featureProps = {
+    id: query.get('id'),
+    mmobject: mmobject,
+    userState: userState,
+    setUserState: setUserState,
+  };
 
   return (
     <Box display="flex" flexDir="column" minH="100vh">
@@ -76,12 +84,11 @@ export const App = () => {
         </Route>
         <Route path="/bryter" exact>
           <Helmet>
-            <title>Justiz Portal - Handlungsoptionen</title>
+            <title>Justiz Portal - BRYTER</title>
           </Helmet>
           <Bryter {...featureProps} />
         </Route>
       </Switch>
-      <Spacer />
       <FooterSmallWithSocial />
     </Box>
   );

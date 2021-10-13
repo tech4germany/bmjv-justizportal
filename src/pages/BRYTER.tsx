@@ -168,12 +168,21 @@ Der Vermieter will die Miete von 600 Euro auf 750 Euro erhöhen. Für die 100 Qu
 Sie können selbstständig eine Klage über unser Portal einreichen. Auf den folgenden Seiten helfen wir Ihnen dabei. Alternativ können Sie eine Klage über eine Anwält:in einreichen lassen.
 `;
   return (
-    <Box textAlign="left">
-      <Hero title="">
-        <iframe
-          width="100%"
-          src="https://openprogram.bryter.io/s/KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel"></iframe>
-      </Hero>
+    <Box flex="1">
+      <iframe
+        src="https://openprogram.bryter.io/s/KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel"
+        onLoad={(o) => {
+          //o.o.style.height = o.contentWindow.document.body.scrollHeight + 'px';
+        }}
+        style={{
+          height: '100%',
+          minHeight: '40em',
+          width: '100%',
+          display: 'inline',
+          border: 'none',
+          overflow: 'hidden',
+        }}
+      />
     </Box>
   );
 };

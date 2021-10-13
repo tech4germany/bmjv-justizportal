@@ -2,25 +2,27 @@ import { Box, BoxProps, Button, ButtonGroup, HStack, useColorModeValue } from '@
 import * as React from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 
-export const NavButtons = (props: any) => (
-  <HStack spacing="1em" justify={props.jusitfy}>
-    <Button
-      display={props.linkBack ? undefined : 'none'}
-      rounded={'full'}
-      as={ReactLink}
-      to={props.linkBack}
-      {...props}>
-      Zurück
-    </Button>
-    <Button
-      display={props.linkForward ? undefined : 'none'}
-      rounded={'full'}
-      colorScheme="green"
-      as={ReactLink}
-      to={props.linkForward}
-      disabled={props.disableForward}
-      {...props}>
-      Weiter
-    </Button>
+interface FeatureProps extends BoxProps {
+  linkBack?: string;
+  linkForward?: string;
+  disableForward?: boolean;
+}
+
+export const NavButtons = ({ linkBack, linkForward, disableForward, ...rest }: FeatureProps) => (
+  <HStack spacing="1em" {...rest}>
+    {linkBack ? (
+      <Button rounded={'full'} as={ReactLink} to={linkBack}>
+        Zurück
+      </Button>
+    ) : (
+      ''
+    )}
+    {linkForward ? (
+      <Button rounded={'full'} as={ReactLink} to={disableForward ? '' : linkForward} isDisabled={disableForward}>
+        Weiter
+      </Button>
+    ) : (
+      ''
+    )}
   </HStack>
 );
