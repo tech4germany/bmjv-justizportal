@@ -113,9 +113,48 @@
                                                                                     "id": "ceybo8p0lww0",
                                                                                     "created": 1634132634670,
                                                                                     "text": "Wurde durch den Mangel Eigentum beschädigt?",
-                                                                                    "priority": 3
+                                                                                    "priority": 3,
+                                                                                    "expandState": "expand"
                                                                                 },
-                                                                                "children": []
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "cepy74jpz1c3",
+                                                                                            "created": 1633282139370,
+                                                                                            "text": "{CONTINUE}",
+                                                                                            "priority": 3,
+                                                                                            "hyperlink": null,
+                                                                                            "hyperlinkTitle": null,
+                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz','Aufwandungsersatz']}"
+                                                                                        },
+                                                                                        "children": []
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceriyb1ejn40",
+                                                                                    "created": 1633442251487,
+                                                                                    "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
+                                                                                    "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
+                                                                                    "priority": 1,
+                                                                                    "expandState": "expand"
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "2",
+                                                                                            "created": 1633282139370,
+                                                                                            "text": "{EXIT}",
+                                                                                            "priority": 1,
+                                                                                            "hyperlink": null,
+                                                                                            "hyperlinkTitle": null,
+                                                                                            "note": "Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.",
+                                                                                            "expandState": "expand"
+                                                                                        },
+                                                                                        "children": []
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ]
                                                                     }
@@ -126,21 +165,10 @@
                                                                     "id": "ceybwmd2ejk0",
                                                                     "created": 1634133291336,
                                                                     "text": "Haben Sie den Mangel Ihrer Vermieter:in schriftlich gemeldet?",
-                                                                    "note": "Haben Sie den Schimmel Ihrer Vermietung ",
                                                                     "expandState": "expand",
                                                                     "priority": 3
                                                                 },
                                                                 "children": [
-                                                                    {
-                                                                        "data": {
-                                                                            "id": "ceyc1s9qvmg0",
-                                                                            "created": 1634133696017,
-                                                                            "text": "{CONTINUE}",
-                                                                            "priority": 1,
-                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
-                                                                        },
-                                                                        "children": []
-                                                                    },
                                                                     {
                                                                         "data": {
                                                                             "id": "ceybx2wl2w00",
@@ -255,6 +283,37 @@
                                                                                 ]
                                                                             }
                                                                         ]
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceybygg5cs80",
+                                                                            "created": 1634133435190,
+                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                            "expandState": "expand",
+                                                                            "priority": 1
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybyumxibs0",
+                                                                                    "created": 1634133466075,
+                                                                                    "text": "{CONTINUE}",
+                                                                                    "priority": 1,
+                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                },
+                                                                                "children": []
+                                                                            },
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybyyhkqn40",
+                                                                                    "created": 1634133474458,
+                                                                                    "text": "{CONTINUE}",
+                                                                                    "priority": 3,
+                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
                                                                     }
                                                                 ]
                                                             }
@@ -293,20 +352,7 @@
                                     "priority": null,
                                     "expandState": "expand"
                                 },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cepy74jpz1c3",
-                                            "created": 1633282139370,
-                                            "text": "{EXIT}",
-                                            "priority": 1,
-                                            "hyperlink": null,
-                                            "hyperlinkTitle": null,
-                                            "note": "Leider können wir Sie bei Ihrem Problem aktuell nicht unterstützen - wir arbeiten jedoch ständig an diesem Tool, um zu weiteren Rechtsfällen informieren zu können. "
-                                        },
-                                        "children": []
-                                    }
-                                ]
+                                "children": []
                             }
                         ]
                     },
@@ -336,33 +382,7 @@
                             "note": "{ICON:FaToolbox}",
                             "expandState": "expand"
                         },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "ceriyb1ejn40",
-                                    "created": 1633442251487,
-                                    "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
-                                    "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
-                                    "priority": 1,
-                                    "expandState": "expand"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "2",
-                                            "created": 1633282139370,
-                                            "text": "{EXIT}",
-                                            "priority": 1,
-                                            "hyperlink": null,
-                                            "hyperlinkTitle": null,
-                                            "note": "Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.",
-                                            "expandState": "expand"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            }
-                        ]
+                        "children": []
                     },
                     {
                         "data": {
