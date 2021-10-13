@@ -28,6 +28,14 @@ export interface MMNode {
   icon?: ReactNode;
   info?: string;
   children?: MMNode[];
+  claims: Claims[];
+}
+
+export enum Claims {
+  Mietminderung,
+  Mängelbeseitigung,
+  Schadensersatz,
+  Aufwandungsersatz,
 }
 
 export class MMGraph {
@@ -37,12 +45,17 @@ export class MMGraph {
   private numberOfNotes = 0;
 
   constructor() {
-    this.root = { title: '', id: '', type: 'root' };
+    this.root = { title: '', id: '', type: 'root', claims: [] };
   }
 
   initialize() {
     let currentInput: any = Data['root'];
-    let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'], type: 'root' };
+    let currentNode: MMNode = {
+      title: currentInput['data']['text'],
+      id: currentInput['data']['id'],
+      type: 'root',
+      claims: [],
+    };
     this.root = this.traverseMindMap(Data['root']);
   }
 
@@ -51,6 +64,14 @@ export class MMGraph {
       return this.nodes[id];
     } else {
       return this.root;
+    }
+  }
+
+  getTags(id: string | null): Claims[] {
+    if (id != null && id in this.nodes) {
+      return this.nodes[id].claims;
+    } else {
+      return [];
     }
   }
 
@@ -73,7 +94,12 @@ export class MMGraph {
   }
 
   private traverseMindMap(currentInput: any): MMNode {
-    let currentNode: MMNode = { title: currentInput['data']['text'], id: currentInput['data']['id'], type: 'default' };
+    let currentNode: MMNode = {
+      title: currentInput['data']['text'],
+      id: currentInput['data']['id'],
+      type: 'default',
+      claims: [],
+    };
 
     if (currentInput.data.hasOwnProperty('note')) {
       this.configureContent(currentNode, currentInput);

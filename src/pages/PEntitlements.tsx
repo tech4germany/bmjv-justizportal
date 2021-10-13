@@ -14,12 +14,17 @@ import {
 import * as React from 'react';
 import { FaAccessibleIcon, FaCompass, FaLandmark, FaMagento } from 'react-icons/fa';
 import { NavButtons } from '../components/shared/NavigationButtons';
-import { MMGraph } from '../logic/KMParser';
+import { MMGraph, Claims } from '../logic/KMParser';
 import ReactMarkdown from 'react-markdown';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 
-const AccItem = (props: { title: string; children: React.ReactNode; icon?: React.ReactNode }) => (
-  <AccordionItem>
+const AccItem = (props: {
+  title: string;
+  children: React.ReactNode;
+  icon?: React.ReactNode;
+  display?: string | undefined;
+}) => (
+  <AccordionItem display={props.display}>
     <AccordionButton fontSize="xl" fontWeight="bold">
       {props.icon}
       {props.icon ? <Spacer minW="1em" flex="0" /> : ''}
@@ -41,6 +46,7 @@ interface FeatureProps {
 
 export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) => {
   const green = useColorModeValue('green.500', 'green.300');
+  let claims: Claims[] = mmobject.getNode(id).claims;
 
   return (
     <Box textAlign="left" fontSize="xl" padding="3em">
@@ -48,7 +54,10 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       <Spacer height="2em"></Spacer>
 
       <Accordion colorScheme="green" allowToggle allowMultiple>
-        <AccItem title="Beseitigung des Mangels" icon={<FaAccessibleIcon size="2.5em" />}>
+        <AccItem
+          title="Beseitigung des Mangels"
+          icon={<FaAccessibleIcon size="2.5em" />}
+          display={claims.indexOf(Claims.Mängelbeseitigung) != -1 ? 'inherit' : 'none'}>
           <Text>
             Einen Anspruch auf Beseitigung des Mangels geltend zu machen heißt: <br />
             Den Vermieter bitten, diese zu beseitigen. Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand
@@ -62,7 +71,10 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
             mit der Mitteilung über den Mangel.
           </Text>
         </AccItem>
-        <AccItem title="Mietminderung" icon={<FaCompass size="2.5em" />}>
+        <AccItem
+          title="Mietminderung"
+          icon={<FaCompass size="2.5em" />}
+          display={claims.indexOf(Claims.Mietminderung) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Einen Anspruch auf Mietminderung geltend zu machen heißt: 
 Für einen Zeitraum, in der die Nutzung der Wohnung durch einen Mangel erheblich eingeschränkt wurde, eine geringere Miete zu bezahlen. Ein Anspruch auf Mietminderung kann zusätzlich neben dem Anspruch auf Mängelbeseitigung bestehen. Die Minderung der Miete tritt automatisch ein, wenn die Mängel in der Wohnung festgestellt werden. Vorher müssen die Mietenden den Mangel aber den Vermietenden anzeigen. 
@@ -78,7 +90,10 @@ Die Miete sollte zunächst nicht eigenmächtig gekürzt werden, sondern unter **
 `}
           </ReactMarkdown>
         </AccItem>
-        <AccItem title="Aufwendungsersatz" icon={<FaLandmark size="2.5em" />}>
+        <AccItem
+          title="Aufwendungsersatz"
+          icon={<FaLandmark size="2.5em" />}
+          display={claims.indexOf(Claims.Aufwandungsersatz) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Ein Anspruch auf Aufwendungsersatz kann bestehen, wenn Mieter:innen einen Mangel selbstständig beseitigen und sich die Kosten dafür ersetzen lassen möchten.
 
@@ -86,7 +101,10 @@ In den folgenden Fällen dürfen Mietende den Mangel selbst beseitigen (sogenann
 `}
           </ReactMarkdown>
         </AccItem>
-        <AccItem title="Schadensersatz" icon={<FaMagento size="2.5em" />}>
+        <AccItem
+          title="Schadensersatz"
+          icon={<FaMagento size="2.5em" />}
+          display={claims.indexOf(Claims.Schadensersatz) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Einen Anspruch auf Schadensersatz geltend zu machen heißt:
 Sich weitere Kosten für Schäden, die durch den Mietmangel entstanden sind, erstatten lassen.
