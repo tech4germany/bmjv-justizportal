@@ -94,7 +94,7 @@ Die Miete sollte zunächst nicht eigenmächtig gekürzt werden, sondern unter **
         <AccItem
           title="Aufwendungsersatz"
           icon={<FaLandmark size="2.5em" />}
-          display={claims.indexOf(Claims.Aufwandungsersatz) != -1 ? 'inherit' : 'none'}>
+          display={claims.indexOf(Claims.Aufwendungsersatz) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Ein Anspruch auf Aufwendungsersatz kann bestehen, wenn Mieter:innen einen Mangel selbstständig beseitigen und sich die Kosten dafür ersetzen lassen möchten.
 
