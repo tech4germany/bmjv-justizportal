@@ -18,7 +18,12 @@ export const NavButtons = ({ linkBack, linkForward, disableForward, ...rest }: F
       ''
     )}
     {linkForward ? (
-      <Button rounded={'full'} as={ReactLink} to={disableForward ? '' : linkForward} isDisabled={disableForward}>
+      <Button
+        colorScheme="green"
+        rounded={'full'}
+        as={ReactLink}
+        to={disableForward ? '' : linkForward}
+        isDisabled={disableForward}>
         Weiter
       </Button>
     ) : (

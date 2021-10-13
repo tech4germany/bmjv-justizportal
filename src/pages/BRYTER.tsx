@@ -170,7 +170,7 @@ Sie können selbstständig eine Klage über unser Portal einreichen. Auf den fol
   return (
     <Box flex="1">
       <iframe
-        src="https://openprogram.bryter.io/s/KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel"
+        src="https://openprogram.bryter.io/s/KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel?antraege=M%C3%A4ngelbeseitigung,%20Mietminderung"
         onLoad={(o) => {
           //o.o.style.height = o.contentWindow.document.body.scrollHeight + 'px';
         }}

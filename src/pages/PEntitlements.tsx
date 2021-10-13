@@ -17,6 +17,7 @@ import { NavButtons } from '../components/shared/NavigationButtons';
 import { MMGraph, Claims } from '../logic/KMParser';
 import ReactMarkdown from 'react-markdown';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+import { PageBody } from '../components/shared/PageBody';
 
 const AccItem = (props: {
   title: string;
@@ -49,11 +50,11 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
   let claims: Claims[] = mmobject.getNode(id).claims;
 
   return (
-    <Box textAlign="left" fontSize="xl" padding="3em">
+    <PageBody title="Mögliche Ansprüche">
       <Heading>Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Heading>
-      <Spacer height="2em"></Spacer>
+      <Spacer />
 
-      <Accordion colorScheme="green" allowToggle allowMultiple>
+      <Accordion alignSelf="stretch" allowToggle allowMultiple>
         <AccItem
           title="Beseitigung des Mangels"
           icon={<FaAccessibleIcon size="2.5em" />}
@@ -119,6 +120,6 @@ Es gilt: Wenn der Mangel schon bei Vertragsschluss vorlag, dann haften die Vermi
       <Spacer height="2em" />
 
       <NavButtons linkBack={`/solutionexplorer?id=${mmobject.getParent(id)?.id}`} linkForward="/zpo" />
-    </Box>
+    </PageBody>
   );
 };

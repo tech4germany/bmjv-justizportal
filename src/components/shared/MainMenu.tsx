@@ -65,8 +65,8 @@ export const MenuWithSubnavigation = () => {
         </Flex>
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-          <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
-          <Button colorScheme="green" bg={useColorModeValue('green.500', 'green.300')} rounded={'full'}>
+          <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'flex', md: 'flex' }} />
+          <Button display="none" colorScheme="green" bg={useColorModeValue('green.500', 'green.300')} rounded={'full'}>
             Anmelden
           </Button>
         </Stack>

@@ -59,9 +59,6 @@ export const App = () => {
           <Home anchorId={window.location.href.slice(window.location.href.indexOf('#') + 1)} />
         </Route>
         <Route path="/solutionexplorer" exact>
-          <Helmet>
-            <title>Justiz Portal - Lösungsfinder</title>
-          </Helmet>
           <SolutionExplorer {...featureProps} />
         </Route>
         <Route path="/exit" exact>
@@ -70,16 +67,8 @@ export const App = () => {
           </Helmet>
           <ExitJourney {...featureProps} />
         </Route>
-        <Route path="/zpo" exact>
-          <Helmet>
-            <title>Justiz Portal - ZPO</title>
-          </Helmet>
-          <ZPOInformation />
-        </Route>
+        <Route path="/zpo" component={ZPOInformation} exact />
         <Route path="/options" exact>
-          <Helmet>
-            <title>Justiz Portal - Handlungsoptionen</title>
-          </Helmet>
           <PossibleEntitlements {...featureProps} />
         </Route>
         <Route path="/bryter" exact>
