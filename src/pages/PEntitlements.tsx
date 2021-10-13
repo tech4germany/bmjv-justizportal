@@ -12,12 +12,13 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import * as React from 'react';
-import { FaAccessibleIcon, FaCompass, FaLandmark, FaMagento } from 'react-icons/fa';
+import { FaTools, FaMoneyBill, FaReceipt } from 'react-icons/fa';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { MMGraph, Claims } from '../logic/KMParser';
 import ReactMarkdown from 'react-markdown';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import { PageBody } from '../components/shared/PageBody';
+import { FiTrendingDown } from 'react-icons/fi';
 
 const AccItem = (props: {
   title: string;
@@ -57,7 +58,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       <Accordion alignSelf="stretch" allowToggle allowMultiple>
         <AccItem
           title="Beseitigung des Mangels"
-          icon={<FaAccessibleIcon size="2.5em" />}
+          icon={<FaTools size="2.5em" />}
           display={claims.indexOf(Claims.Mängelbeseitigung) != -1 ? 'inherit' : 'none'}>
           <Text>
             Einen Anspruch auf Beseitigung des Mangels geltend zu machen heißt: <br />
@@ -74,7 +75,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
         </AccItem>
         <AccItem
           title="Mietminderung"
-          icon={<FaCompass size="2.5em" />}
+          icon={<FiTrendingDown size="2.5em" />}
           display={claims.indexOf(Claims.Mietminderung) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Einen Anspruch auf Mietminderung geltend zu machen heißt: 
@@ -93,7 +94,7 @@ Die Miete sollte zunächst nicht eigenmächtig gekürzt werden, sondern unter **
         </AccItem>
         <AccItem
           title="Aufwendungsersatz"
-          icon={<FaLandmark size="2.5em" />}
+          icon={<FaReceipt size="2.5em" />}
           display={claims.indexOf(Claims.Aufwendungsersatz) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Ein Anspruch auf Aufwendungsersatz kann bestehen, wenn Mieter:innen einen Mangel selbstständig beseitigen und sich die Kosten dafür ersetzen lassen möchten.
@@ -104,7 +105,7 @@ In den folgenden Fällen dürfen Mietende den Mangel selbst beseitigen (sogenann
         </AccItem>
         <AccItem
           title="Schadensersatz"
-          icon={<FaMagento size="2.5em" />}
+          icon={<FaMoneyBill size="2.5em" />}
           display={claims.indexOf(Claims.Schadensersatz) != -1 ? 'inherit' : 'none'}>
           <ReactMarkdown components={ChakraUIRenderer()}>
             {`Einen Anspruch auf Schadensersatz geltend zu machen heißt:
