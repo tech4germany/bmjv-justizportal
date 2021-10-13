@@ -5,23 +5,27 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
+  Button,
   Heading,
   Spacer,
-  Text,
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react';
 import * as React from 'react';
-import { FaAccessibleIcon, FaCompass, FaLandmark, FaMagento } from 'react-icons/fa';
+import { FaEnvelopeOpen, FaPencilAlt, FaUserTie } from 'react-icons/fa';
+import { HiScale } from 'react-icons/hi';
+import { TiArrowLoop } from 'react-icons/ti';
+import { Link as ReactLink } from 'react-router-dom';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
-import { MMGraph, Claims } from '../logic/KMParser';
-import ReactMarkdown from 'react-markdown';
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import { PageBody } from '../components/shared/PageBody';
+import { Claims, MMGraph } from '../logic/KMParser';
 
 const AccItem = (props: {
   title: string;
   children: React.ReactNode;
+  buttonLink?: string;
+  buttonText?: string;
   icon?: React.ReactNode;
   display?: string | undefined;
 }) => (
@@ -35,7 +39,16 @@ const AccItem = (props: {
       <AccordionIcon />
     </AccordionButton>
     <AccordionPanel pb={4}>
-      <VStack align="start">{props.children}</VStack>
+      <VStack align="start">
+        {props.children}
+        <Spacer />{' '}
+        {props.buttonLink && props.buttonText ? (
+          <Button colorScheme="green" rounded={'full'} as={ReactLink} to={props.buttonLink}>
+            {props.buttonText}
+          </Button>
+        ) : null}
+        <Spacer />{' '}
+      </VStack>
     </AccordionPanel>
   </AccordionItem>
 );
@@ -56,67 +69,102 @@ export const Options = ({ id, mmobject, ...rest }: FeatureProps) => {
 
       <Accordion alignSelf="stretch" allowToggle allowMultiple>
         <AccItem
-          title="1. Beseitigung des Mangels"
-          icon={<FaAccessibleIcon size="2.5em" />}
+          title="Dokumentation des Mangels"
+          icon={<FaPencilAlt size="2.5em" />}
+          buttonText=""
           display={claims.indexOf(Claims.Mängelbeseitigung) != -1 ? 'inherit' : 'none'}>
-          <Text>
-            Einen Anspruch auf Beseitigung des Mangels geltend zu machen heißt: <br />
-            Den Vermieter bitten, diese zu beseitigen. Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand
-            zu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. Dafür zahlen die Mietenden die
-            Miete. Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. <br />
-            <br />
-            Ausnahme: <br />
-            bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur, wenn das im Vertrag so steht und
-            ein Jahres-Höchstbetrag festgelegt wurde. Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem
-            Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam
-            mit der Mitteilung über den Mangel.
-          </Text>
+          <AnnotadedText
+            text={`
+- **Warum?** 
+	- Um Ihrer Vermieter:in den Mangel zeigen zu können, und einen Nachweis für den weiteren Prozess zu haben.
+- **Wie gehe ich vor?** 
+	- Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
+	- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, sollten Sie ein Protokoll anlegen, wann und in welcher Form dieser auftritt.
+`}
+          />
         </AccItem>
         <AccItem
-          title="Mietminderung"
-          icon={<FaCompass size="2.5em" />}
+          title="Mängelanzeige bei Ihrer Vermieter:in"
+          icon={<FaEnvelopeOpen size="2.5em" />}
+          buttonText="Zur Vorlage für die Mängelanzeige"
+          buttonLink="#"
           display={claims.indexOf(Claims.Mietminderung) != -1 ? 'inherit' : 'none'}>
-          <ReactMarkdown components={ChakraUIRenderer()}>
-            {`Einen Anspruch auf Mietminderung geltend zu machen heißt: 
-Für einen Zeitraum, in der die Nutzung der Wohnung durch einen Mangel erheblich eingeschränkt wurde, eine geringere Miete zu bezahlen. Ein Anspruch auf Mietminderung kann zusätzlich neben dem Anspruch auf Mängelbeseitigung bestehen. Die Minderung der Miete tritt automatisch ein, wenn die Mängel in der Wohnung festgestellt werden. Vorher müssen die Mietenden den Mangel aber den Vermietenden anzeigen. 
+          <AnnotadedText
+            text={`
+- **Warum?** 
+	- Ihre Vermieter:in direkt zu kontaktieren ist der schnellste und leichteste Weg, um Ihre Ansprüche durchzusetzen. 
+	- Die meisten Konflikte lassen sich bereits im Dialog lösen. 
+	- Mit einer schriftlichen Mängelanzeige haben Sie außerdem einen Nachweis für den weiteren Prozess
 
-**Wie hoch darf die Mietminderung ausfallen?** 
-Die Miete sollte zunächst nicht eigenmächtig gekürzt werden, sondern unter **Vorbehalt** gestellt und in voller Höhe weitergezahlt werden. Denn um wieviel die Miete gekürzt werden kann, hängt davon ab, wie schwer der Mangel ist und wie lange er vorliegt. Eine fehlende Einbauküche, die laut Mietvertrag in der Wohnung hätte sein müssen, kann bspw. eine Minderung von 20 Prozent rechtfertigen. Solche Entscheidungen lassen sich in Mietminderungstabellen finden. Die Urteile dort sind aber nur Richtwerte und bieten lediglich eine grobe Orientierung. Eine zu hohe Kürzung ist gefährlich, weil sie unter Umständen eine **Kündigung** rechtfertigen kann. 
-
-**Bezugspunkt für die Mietminderung ist die Bruttomiete** einschließlich aller von den Mietenden endgültig zu tragenden Betriebs- und Nebenkosten. 
-
-**Wie stellt man die Mietzahlungen unter Vorbehalt? —> [Vorlage Mängelanzeige](https://www.notion.so/Vorlage-M-ngelanzeige-a6d70b4dbd7d4140bd146218f997025c)** 
-
-> Die Herabsetzung der Miete durch Mietminderung setzt voraus, dass der Mangel erheblich ist. Ein unerheblicher Mangel liegt vor, wenn der Mangel leicht erkennbar und mit geringen Kosten zu beseitigen ist. Geringfügig kann ein Mangel bspw. dann sein, wenn einmalig Lärm aus der Nachbarwohnung dringt und die Schalldämmung nur ein wenig unterschritten wurde oder bei einem sehr kurzen Heizungsausfall. Wenn die **Wohnungsgröße** mehr als **10%** von der im Mietvertrag vereinbarten Größe abweicht, kann ein erheblicher Mangel vorliegen. 
+- **Wie gehe ich vor?** 
+	- Kontaktieren Sie ihre Vermieter:in direkt und schildern Sie den Mangel konkret und sachlich. Benennen Sie klar Ihre Forderung (bspw. Mängelbeseitigung), und bleiben Sie dabei freundlich und höflich. 
+	- Gleichzeitig sollten Sie eine schriftliche Mängelanzeige senden. Auch hier beschreiben Sie den Mangel und Ihre Forderung. Gleichzeitig setzen Sie eine realistische Frist, um den Mangel zu beseitigen. Um Ihre Miete mindern zu können, sollten Sie angeben, Ihre Miete ab sofort nur noch unter Vorbehalt zu zahlen.
 `}
-          </ReactMarkdown>
+          />
         </AccItem>
         <AccItem
-          title="Aufwendungsersatz"
-          icon={<FaLandmark size="2.5em" />}
-          display={claims.indexOf(Claims.Aufwandungsersatz) != -1 ? 'inherit' : 'none'}>
-          <ReactMarkdown components={ChakraUIRenderer()}>
-            {`Ein Anspruch auf Aufwendungsersatz kann bestehen, wenn Mieter:innen einen Mangel selbstständig beseitigen und sich die Kosten dafür ersetzen lassen möchten.
+          title="Zweites Schreiben an die Vermieter:in senden"
+          icon={<TiArrowLoop size="2.5em" />}
+          buttonText="Zur Vorlage für die zweite Mängelanzeige"
+          buttonLink="#"
+          display={claims.indexOf(Claims.Mietminderung) != -1 ? 'inherit' : 'none'}>
+          <AnnotadedText
+            text={`
+- **Warum?** 
+	- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht nur übersehen. Dann kann sich eine zweite Kontaktaufnahme lohnen. 
 
-In den folgenden Fällen dürfen Mietende den Mangel selbst beseitigen (sogenannte Ersatzvornahme) und sich die Aufwendungen ersetzen lassen: Entweder wenn der Vermietende **mit der Beseitigung des Mangels in Verzug** ist oder wenn die Mangelbeseitigung **umgehend erforderlich** war, weil es sich um eine **Not- oder Eilmaßnahme**  handelte.
+- **Wie gehe ich vor?** 
+	- Nutzen Sie erneut unsere Vorlage für eine Mängelanzeige und ergänzen Sie, dass Sie ein letztes Mal um Mängelbeseitigung bitten, bevor Sie weitere rechtliche Schritte einleiten.
 `}
-          </ReactMarkdown>
+          />
         </AccItem>
         <AccItem
-          title="Schadensersatz"
-          icon={<FaMagento size="2.5em" />}
-          display={claims.indexOf(Claims.Schadensersatz) != -1 ? 'inherit' : 'none'}>
-          <ReactMarkdown components={ChakraUIRenderer()}>
-            {`Einen Anspruch auf Schadensersatz geltend zu machen heißt:
-Sich weitere Kosten für Schäden, die durch den Mietmangel entstanden sind, erstatten lassen.
+          title="Rechtlich beraten lassen"
+          icon={<FaUserTie size="2.5em" />}
+          buttonText="Zur Übersicht für Beratungsangebote"
+          buttonLink="#"
+          display={claims.indexOf(Claims.Mietminderung) != -1 ? 'inherit' : 'none'}>
+          <AnnotadedText
+            text={`
+- **Warum?** 
+	- In einer Rechtsberatung kann ihr Fall individuell von einer Expert:in bewertet werden. 
+  - Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
+  - Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
 
-Andere Schäden wie etwa Lebensmittel, die wegen eines Stromausfalls verdorben sind, Hotelkosten oder Möbel, die infolge eines Brandes, Feuchtigkeitseinwirkung, Schimmel- oder Parasitenbefalls unbrauchbar geworden sind, können unter Umständen ebenfalls ersetzt werden. Auch wenn die mietende Person körperliche Schädigungen erleidet. In diesem Fall können Ansprüche auf Ersatz der Heilbehandlungskosten und des Verdienstausfalls oder auch auf Zahlung eines angemessenen Schmerzensgelds bestehen.
+- **Wie gehe ich vor?** 
+	-  In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
+  - Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 
+  - Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen, um ein Gespräch zu vereinbaren.
+  `}
+          />
+        </AccItem>
+        <AccItem
+          title="Über das Justizportal eine Klage einreichen"
+          icon={<HiScale size="2.5em" />}
+          buttonText="Mehr Informationen zur Klage"
+          buttonLink={`/zpo?id=${id}`}
+          display={claims.indexOf(Claims.Mietminderung) != -1 ? 'inherit' : 'none'}>
+          <AnnotadedText
+            text={`
+- **Warum?** 
+  - Eine Klage ist ein Antrag auf eine gerichtliche Entscheidung durch eine Richter:in. 
+  - Damit ist eine Klage der letzte Weg, Ihre Ansprüche durchzusetzen, wenn Ihre Vermieter:in diese nicht von sich erfüllt. 
 
-Es gilt: Wenn der Mangel schon bei Vertragsschluss vorlag, dann haften die Vermietenden unabhängig von ihrem etwaigen Verschulden. Entstand der Mangel erst nach Vertragsschluss, dann kommt es darauf an, ob die vermietende Person den Mangel zu vertreten hat oder mit der Beseitigung des Mangels in Verzug war.
+- **Wie gehe ich vor?** 
+	- Durch eine Klage wird ein Gerichtsverfahren eingeleitet.
+  - Auch im Gericht wird erst versucht eine Einigung zu finden.
+  - Sollte das nicht klappen wird eine Richter:in mit einem Urteil über ihren Fall entschieden. 
+  - Hier informieren wir Sie, wie eine Klageeinreichung und das Gerichtsverfahren abläuft, und welche Kosten dabei entstehen. Im Anschluss können Sie selbst eine Klage einreichen.
 `}
-          </ReactMarkdown>
+          />
         </AccItem>
       </Accordion>
+      <AnnotadedText
+        text={`Wenn sie nicht alle Punkte schriftlich kommuniziert haben, sollten Sie ein neues Schreiben erstellen.  
+              Hier helfen wir Ihnen dabei: Wenn Sie den Vermietenden eine Frist zur Behebung des Mangels gesetzt haben, dann
+              **warten** **Sie zunächst den Ablauf der Frist ab**, bevor Sie weitere Schritte unternehmen.
+      `}
+      />
       <Spacer height="2em" />
 
       <NavButtons linkBack={`/possibleentitlements?id=${mmobject.getParent(id)?.id}`} linkForward={`/zpo?id=${id}`} />

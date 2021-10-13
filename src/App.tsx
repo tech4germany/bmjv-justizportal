@@ -61,7 +61,7 @@ export const App = () => {
         </Route>
         <Route path="/solutionexplorer" component={() => <SolutionExplorer {...featureProps} />} exact />
         <Route path="/exit" component={() => <ExitJourney {...featureProps} />} exact />
-        <Route path="/zpo" component={() => <ZPOInformation />} exact />
+        <Route path="/zpo" component={() => <ZPOInformation {...featureProps} />} exact />
         <Route path="/possibleentitlements" component={() => <PossibleEntitlements {...featureProps} />} exact />
         <Route path="/options" component={() => <Options {...featureProps} />} exact />
         <Route path="/bryter" exact>

@@ -1,16 +1,17 @@
-import { Box, useColorModeValue } from '@chakra-ui/react';
+import { Box, Button, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link as ReactLink } from 'react-router-dom';
 import { PageBody } from '../components/shared/PageBody';
 
-interface FeatureProps {}
+interface FeatureProps {
+  id: string;
+}
 
 export const ZPOInformation = (props: FeatureProps) => {
   const green = useColorModeValue('green.500', 'green.300');
   const s: string = `
-# Informationen zur Klage & Gerichtsverfahren
-
 [comment]: <> (## Zusammenfassung)
 
 [comment]: <> (Wenn ein Konflikt nicht gelöst werden kann, kann es als letzte Konsequenz nötig sein, vor Gericht zu gehen. Gerichte können Konflikte verbindlich klären und Entscheidungen dazu treffen.)
@@ -18,19 +19,17 @@ export const ZPOInformation = (props: FeatureProps) => {
 
 [comment]: <> (Mit einem Urteil legen die Richter:innen fest, was beiden Parteien aus dem Konflikt zu steht. Außerdem wird festgelegt, wer die Kosten des Prozesses bezahlen muss. Abhängig von der Bewertung der Richter:innen muss entweder eine Partei alle Kosten tragen oder die Kosten werden geteilt. Die Höhe der Kosten richtet sich nach dem materiellen Wert, um den gestritten wird. Je höher der Wert desto höher die Kosten. )
 
-## **Auf einen Blick**
+#### **Auf einen Blick**
 
 - Am Ende des Gerichtsprozesses gibt es ein verbindliches Ergebnis.
 - Die Kosten eines Gerichtsprozesses sind gesetzlich festgeschrieben. Sie hängen vom materiellen Wert ab, über den verhandelt wird. Je höher der Wert, desto höher sind die Kosten.
 - Der Verlierer des Prozesses trägt die Kosten. Abhängig von der Entscheidung, können die Kosten aber auch auf beide Parteien verteilt werden.
 - Sie können Prozesskostenhilfe beantragen, falls sie finanziell nicht in der Lage sind, die Porzesskosten zu tragen.
 - Ein Klageverfahren folgt einem festgelegten Ablauf und dauert üblicherweise zwischen 4 und 10 Monaten.
-- Sie können auch ohne Anwalt klagen. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten. Unteranderem können Anwält:innen die Erfolgsaussichten für Ihren Fall bewerten.
+- Sie können auch ohne Anwalt klagen. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten. Unteranderem können Anwält:innen die Erfolgsaussichten für Ihren Fall bewerten.    
+  
+[comment]: <>  (**Ich fühle mich ausreichend informiert und möchte Klage einreichen:**)
 
-[**Ich fühle mich ausreichend informiert und möchte Klage einreichen.**](/bryter) 
-  
-  
-  
 
 [comment]: <> (## **Was erwartet Sie, wenn Sie eine Klage einreichen?**  )
 
@@ -54,7 +53,14 @@ export const ZPOInformation = (props: FeatureProps) => {
   return (
     <PageBody title="ZPO Informationen">
       <Box>
+        <Heading>Informationen zur Klage & Gerichtsverfahren</Heading>
         <ReactMarkdown components={ChakraUIRenderer()} children={s} />
+        <Text fontWeight="bold" paddingBlock="1.2em">
+          Ich fühle mich ausreichend informiert und möchte Klage einreichen:
+        </Text>
+        <Button colorScheme="green" rounded={'full'} as={ReactLink} to={`/bryter?id=${props.id}`}>
+          Klageschriftgenerator
+        </Button>
       </Box>
     </PageBody>
   );
