@@ -86,7 +86,8 @@
                                                             "created": 1633442251487,
                                                             "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
                                                             "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
-                                                            "priority": 1
+                                                            "priority": 1,
+                                                            "expandState": "expand"
                                                         },
                                                         "children": [
                                                             {
@@ -97,19 +98,147 @@
                                                                     "priority": 1,
                                                                     "hyperlink": null,
                                                                     "hyperlinkTitle": null,
-                                                                    "note": "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.",
+                                                                    "note": "Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.",
                                                                     "expandState": "expand"
                                                                 },
                                                                 "children": []
                                                             },
                                                             {
                                                                 "data": {
-                                                                    "id": "cerizvbz0og0",
-                                                                    "created": 1633442374026,
-                                                                    "text": "{CONTINUE}",
+                                                                    "id": "ceybn9kuanc0",
+                                                                    "created": 1634132558230,
+                                                                    "text": "Besteht der Mangel noch?",
+                                                                    "expandState": "expand",
                                                                     "priority": 3
                                                                 },
-                                                                "children": []
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceybne7ha3c0",
+                                                                            "created": 1634132568306,
+                                                                            "text": "Sind bei der Beseitigung Kosten entstanden?",
+                                                                            "expandState": "expand",
+                                                                            "priority": 1
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybnwr6fow0",
+                                                                                    "created": 1634132608680,
+                                                                                    "text": "Wurde die Miete unter Vorbehalt gezahlt?",
+                                                                                    "expandState": "expand",
+                                                                                    "priority": 3
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybo8p0lww0",
+                                                                                            "created": 1634132634670,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "priority": 3
+                                                                                        },
+                                                                                        "children": []
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceybwmd2ejk0",
+                                                                            "created": 1634133291336,
+                                                                            "text": "Haben Sie den Mangel Ihrer Vermieter:in gemeldet?",
+                                                                            "note": "Haben Sie den Schimmel Ihrer Vermietung ",
+                                                                            "expandState": "expand",
+                                                                            "priority": 3
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceyc1s9qvmg0",
+                                                                                    "created": 1634133696017,
+                                                                                    "text": "{CONTINUE}",
+                                                                                    "priority": 1,
+                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                },
+                                                                                "children": []
+                                                                            },
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybx2wl2w00",
+                                                                                    "created": 1634133327345,
+                                                                                    "text": "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt um den Mangel zu entfernen?",
+                                                                                    "expandState": "expand",
+                                                                                    "priority": 3
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybzcigd5c0",
+                                                                                            "created": 1634133504986,
+                                                                                            "text": "{CONTINUE}",
+                                                                                            "priority": 1,
+                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                        },
+                                                                                        "children": []
+                                                                                    },
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybxmil1c00",
+                                                                                            "created": 1634133370034,
+                                                                                            "text": " Und ist diese Frist schon Abgelaufen?",
+                                                                                            "expandState": "expand",
+                                                                                            "priority": 3
+                                                                                        },
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "ceyby2yfosw0",
+                                                                                                    "created": 1634133405821,
+                                                                                                    "text": "{EXIT}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "Sie sollten erst warten bis die Frist abgelaufen ist, bevor Sie weitere Schritte gehen."
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "ceybygg5cs80",
+                                                                                                    "created": 1634133435190,
+                                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                                    "expandState": "expand",
+                                                                                                    "priority": 3
+                                                                                                },
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "ceybyumxibs0",
+                                                                                                            "created": 1634133466075,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "priority": 1,
+                                                                                                            "note": "{'options': ['Vermieterschreiben','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "ceybyyhkqn40",
+                                                                                                            "created": 1634133474458,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "priority": 3,
+                                                                                                            "note": "{'options': ['Vermieterschreiben','Klage''],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
                                                     }
