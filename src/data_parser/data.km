@@ -1,1 +1,439 @@
-{"root":{"data":{"id":"bopmq7968674","created":1633091151499,"text":"Solution Explorer"},"children":[{"data":{"id":"ceppclbpk3s0","created":1633257177722,"text":"Wohnen","note":"{ICON:FaHome}","expandState":"expand"},"children":[{"data":{"id":"ceppdowbfco0","created":1633257263863,"text":"Mängel in der Wohnung","layout_bottom_offset":{"x":2,"y":3},"expandState":"expand","note":"{ICON:FaSeedling}\nWas ist ein **Mietmangel**? Vermieter:innen einer Wohnung sind verpflichtet, ihre Mieter:innen die Wohnung während der Mietzeit nutzen zu lassen. Die Wohnung muss dabei in einem geeigneten Zustand überlassen und erhalten werden. Liegt die **Wohnung in einem erheblich schlechteren Zustand vor** als üblicherweise erwartet werden kann oder **besteht eine Störung**, liegt gegebenenfalls ein Mangel vor. \n\n**Bei Mängeln kann ein Anspruch auf Mietminderung, Mängelbeseitigung, Kostenerstattung und/oder Schadensersatz bestehen** (§535 ff. BGB). Ansprüche gegen den Vermietenden wegen eines Mangels an der Mietsache bestehen nur, wenn der Mangel **erheblich** ist und **nicht** vom Mietenden **hingenommen werden muss.** Ein Mangel ist erheblich, wenn er nicht nur geringfügigen Umfang hat und die Brauchbarkeit nicht wesentlich stört."},"children":[{"data":{"id":"ceppdwxwwig0","created":1633257281374,"text":"Schimmel","note":"{ICON:FaBahai}\n💬 **Definition - Wohnungsmängel durch Schimmel**: Schimmelpilze entstehen bei zu hoher Feuchtigkeit in der Wohnung. Diese ensteht beispielsweise durch unzureichendes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Seite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)\n\nDen Schimmelbefall oder auch feuchte Stellen müssen den Vermietenden sofort angezeigt werden ([Vorlage Mängelanzeige](https://www.notion.so/Vorlage-M-ngelanzeige-a6d70b4dbd7d4140bd146218f997025c)). \n\n**Mögliche Ansprüche:** Ob ein Anspruch wegen eines Mietmangels durch den Schimmel besteht oder nicht, hängt davon ab, ob die Mietenden den Schimmel (mit) verursacht haben. Sie müssen die Mietsache ordentlich heizen und lüften. Außerdem müssen auch die Möbel so in der Wohnung aufgestellt werden, dass sie ausreichend Abstand zu den Außenwänden haben. Halten die Mietenden diese Sorgfaltspflichten ein, dann ist es wahrscheinlich, dass die Schimmelentstehung im Verantwortungsbereich der Vermietenden liegt und entsprechende Ansprüche gegen die Vermietenden bestehen.\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"},"children":[{"data":{"id":"cerik08cssg0","created":1633441130864,"text":"Haben Sie den Mangel verursacht?","note":"Wenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen den Vermieter. \n\nEtwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen. Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen. ","expandState":"expand"},"children":[{"data":{"id":"cepy74jpz1c0","created":1633282139370,"text":"{EXIT}","priority":3,"hyperlink":null,"hyperlinkTitle":null,"note":"Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.","expandState":"expand"},"children":[]},{"data":{"id":"cerik08cssg1","created":1633441130864,"text":"War das Problem / der Mangel schon bei Vertragsschluss bekannt oder hätte es Ihnen bekannt sein können?","note":"Wenn ein Problem oder ein Mangel schon bei Vertragsschluss bekannt war, ohne dass die Mietenden die Vermietenden auf das Problem angesprochen und um Behebung gebeten haben, dann können Mängelansprüche ausgeschlossen sein. Wer bei Vertragsschluss also signalisiert hat, dass die Mietsache so in Ordnung ist, kann später nicht sagen, es lag von Anfang an ein Mangel vor. \n\nWenn bspw. bei der Wohnungsbesichtigung schon ein Riss im Fenster war und es wurde nicht mit der vermietenden Person darüber gesprochen, dass der Riss noch beseitigt werden muss, dann kann man nachher nicht sagen, dass ein Mangel vorliegt. Anders ist die Situation, wenn die vermietende Person den Mangel bewusst verschwiegen oder sogar versteckt hat, wenn die mietende Person also getäuscht wurde.  ","priority":1},"children":[{"data":{"id":"cepy74jpz1c1","created":1633282139370,"text":"{EXIT}","priority":3,"hyperlink":null,"hyperlinkTitle":null,"note":"Wenn das Problem / der Mangel bei Vertragsschluss schon bekannt war, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.","expandState":"expand"},"children":[]},{"data":{"id":"ceriyb1ejn40","created":1633442251487,"text":"Haben Sie den Mangel oder das Problem dokumentiert? ","note":"Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ","priority":1,"expandState":"expand"},"children":[{"data":{"id":"2","created":1633282139370,"text":"{EXIT}","priority":1,"hyperlink":null,"hyperlinkTitle":null,"note":"Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.","expandState":"expand"},"children":[]},{"data":{"id":"ceybn9kuanc0","created":1634132558230,"text":"Besteht der Mangel noch?","expandState":"expand","priority":3},"children":[{"data":{"id":"ceybne7ha3c0","created":1634132568306,"text":"Sind bei der Beseitigung Kosten entstanden?","expandState":"expand","priority":1},"children":[{"data":{"id":"ceybnwr6fow0","created":1634132608680,"text":"Wurde die Miete unter Vorbehalt gezahlt?","expandState":"expand","priority":3},"children":[{"data":{"id":"ceybo8p0lww0","created":1634132634670,"text":"Wurde durch den Mangel Eigentum beschädigt?","priority":3},"children":[]}]}]},{"data":{"id":"ceybwmd2ejk0","created":1634133291336,"text":"Haben Sie den Mangel Ihrer Vermieter:in gemeldet?","note":"Haben Sie den Schimmel Ihrer Vermietung ","expandState":"expand","priority":3},"children":[{"data":{"id":"ceyc1s9qvmg0","created":1634133696017,"text":"{CONTINUE}","priority":1,"note":"{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"},"children":[]},{"data":{"id":"ceybx2wl2w00","created":1634133327345,"text":"Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt um den Mangel zu entfernen?","expandState":"expand","priority":3},"children":[{"data":{"id":"ceybzcigd5c0","created":1634133504986,"text":"{CONTINUE}","priority":1,"note":"{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"},"children":[]},{"data":{"id":"ceybxmil1c00","created":1634133370034,"text":" Und ist diese Frist schon Abgelaufen?","expandState":"expand","priority":3},"children":[{"data":{"id":"ceyby2yfosw0","created":1634133405821,"text":"{EXIT}","priority":1,"note":"Sie sollten erst warten bis die Frist abgelaufen ist, bevor Sie weitere Schritte gehen."},"children":[]},{"data":{"id":"ceybygg5cs80","created":1634133435190,"text":"Wurde durch den Mangel Eigentum beschädigt?","expandState":"expand","priority":3},"children":[{"data":{"id":"ceybyumxibs0","created":1634133466075,"text":"{CONTINUE}","priority":1,"note":"{'options': ['Vermieterschreiben','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"},"children":[]},{"data":{"id":"ceybyyhkqn40","created":1634133474458,"text":"{CONTINUE}","priority":3,"note":"{'options': ['Vermieterschreiben','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"},"children":[]}]}]}]}]}]}]}]}]}]},{"data":{"id":"ceppe048r140","created":1633257288287,"text":"Lärm","note":"{ICON:FaAssistiveListeningSystems}\n💬 **Definition - Wohnungsmängel durch Lärm / Ruhestörung:** Ruhestörungen oder Lärmbelästigungen können einen Mangel der Mietsache begründen, wenn sie erheblich sind. \n\n**Wann liegt ein Mangel vor?** Erhebliche Ruhestörungen liegen bei Lärm in den Ruhezeiten vor. Diese sind täglich nachts von 22 bis 6 Uhr morgens, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n\n✅ **Unter Ruhestörungen** **fallen** Störungen der Nachtruhe (über 30 Dezibel: Musik, Staubsaugen, laute Waschmaschine), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst den persönlichen Austausch suchen, um den Haussegen zu bewahren. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Ein freundliches und höfliches Gespräch kann helfen, die Lärmbelästigung für den Tag und auch für die Zukunft zu beheben.  Bei akuten, sehr starken Störungen können auch Ordnungsamt oder Polizei eingeschaltet werden.  \n\nTrifft die Beschreibung einer Ruhestörung auf Ihr Problem zu? Dann erfahren Sie mehr über mögliche rechtliche Ansprüche. Zur [Anspruchsprüfung]({/entitlement})"},"children":[]},{"data":{"id":"cepy6axcig80","created":1633282074890,"text":"Wasserschaden","note":"{ICON:FaBath}\n💬 **Definition - Wohnungsmängel durch Wasserschaden:** Wasserschäden entstehen durch das Eindringen von Wasser in den Wohnraum, beispielsweise durch Naturkatastrophen oder durch Schäden an Wasserleitungen.\n\nEs kann verschiedene Ursachen für Wasserschäden in einer Mietwohnung geben. Beispielsweise kann die Rohrleitung in einer Wand undicht werden, der Schlauch einer Waschmaschine kann sich lösen oder die Badewanne läuft über. Wichtig ist, als erstes die Wasser- und Stromzufuhr abzustellen, wenn der Wasserschaden bemerkt wird.  \n\nOb Ansprüche gegen die Vermietenden wegen des Wasserschadens bestehen, hängt davon ab, wer den Wasserschaden verursacht hat. \n\n**Verschulden der Mietenden**: Werden Wasserschäden durch defekte Geräte der Mietenden wie die Waschmaschine oder den Geschirrspüler verursacht, dann haften diese in der Regel für den Wasserschaden. Etwas anderes kann gelten, wenn die Geräte ebenfalls von den Vermietenden mit angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\n\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung möglicherweise weiterhelfen. \n\n**Verschulden der Vermietenden**: Für einen Wasserrohrbruch oder ähnliches sind regelmäßig die Hauseigentümer:innen verantwortlich (die ja auch oft Vermietende sind). Mietende können dann Ansprüche auf Beseitigung des Mangels, auf Schadensersatz, Minderung und eventuell auch auf Aufwendungsersatz haben).\n\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"},"children":[]},{"data":{"id":"cepy6tay75k0","created":1633282114895,"text":"Ein anderes Problem","note":"{ICON:FaQuestionCircle}","priority":null,"expandState":"expand"},"children":[{"data":{"id":"cepy74jpz1c3","created":1633282139370,"text":"{EXIT}","priority":1,"hyperlink":null,"hyperlinkTitle":null,"note":"Leider können wir Sie bei Ihrem Problem aktuell nicht unterstützen - wir arbeiten jedoch ständig an diesem Tool, um zu weiteren Rechtsfällen informieren zu können. "},"children":[]}]}]},{"data":{"id":"cepy2izylpc0","created":1633281779006,"text":"Mieterhöhung","note":"{ICON:FaCoins}"},"children":[]},{"data":{"id":"cepy324wtug0","created":1633281820664,"text":"Mietpreisbremse","note":"{ICON:FaRegStopCircle}"},"children":[]},{"data":{"id":"cepy361915c0","created":1633281829150,"text":"Renovierung bei Auszug","note":"{ICON:FaToolbox}"},"children":[]},{"data":{"id":"cepy392s7z40","created":1633281835773,"text":"Kündigung","note":"{ICON:FaDoorClosed}"},"children":[]}]},{"data":{"id":"cepy224nok80","created":1633281742285,"text":"Arbeit","note":"{ICON:FaBriefcase}","expandState":"expand"},"children":[]},{"data":{"id":"cepn7tavqgow","created":1633251161046,"text":"Reisen","expandState":"expand","progress":null,"note":"{ICON:FaPlaneDeparture}"},"children":[]},{"data":{"id":"ceo2i4zs4t8g","created":1633091166874,"text":"Verkehr","layout_mind_offset":{"x":2,"y":1},"note":"{ICON:FaCarCrash}"},"children":[]},{"data":{"id":"ceq2ao2tc1s0","created":1633293701415,"text":"Einkaufen","note":"{ICON:FaShoppingCart}\n"},"children":[]},{"data":{"id":"ceo2i632lh4w","created":1633091169249,"text":"Familie","layout_mind_offset":{"x":448,"y":-116},"note":"{ICON:FaBabyCarriage}"},"children":[]}]},"template":"filetree","theme":"snow-compact","version":"1.4.43"}
+{
+    "root": {
+        "data": {
+            "id": "bopmq7968674",
+            "created": 1633091151499,
+            "text": "Solution Explorer"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ceppclbpk3s0",
+                    "created": 1633257177722,
+                    "text": "Wohnen",
+                    "note": "{ICON:FaHome}",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ceppdowbfco0",
+                            "created": 1633257263863,
+                            "text": "Mängel in der Wohnung",
+                            "layout_bottom_offset": {
+                                "x": 2,
+                                "y": 3
+                            },
+                            "expandState": "expand",
+                            "note": "{ICON:FaSeedling}\nWas ist ein **Mietmangel**? Vermieter:innen einer Wohnung sind verpflichtet, ihre Mieter:innen die Wohnung während der Mietzeit nutzen zu lassen. Die Wohnung muss dabei in einem geeigneten Zustand überlassen und erhalten werden. Liegt die **Wohnung in einem erheblich schlechteren Zustand vor** als üblicherweise erwartet werden kann oder **besteht eine Störung**, liegt gegebenenfalls ein Mangel vor. \n\n**Bei Mängeln kann ein Anspruch auf Mietminderung, Mängelbeseitigung, Kostenerstattung und/oder Schadensersatz bestehen** (§535 ff. BGB). Ansprüche gegen den Vermietenden wegen eines Mangels an der Mietsache bestehen nur, wenn der Mangel **erheblich** ist und **nicht** vom Mietenden **hingenommen werden muss.** Ein Mangel ist erheblich, wenn er nicht nur geringfügigen Umfang hat und die Brauchbarkeit nicht wesentlich stört."
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ceppdwxwwig0",
+                                    "created": 1633257281374,
+                                    "text": "Schimmel",
+                                    "note": "{ICON:FaBahai}\n💬 **Definition - Wohnungsmängel durch Schimmel**: Schimmelpilze entstehen bei zu hoher Feuchtigkeit in der Wohnung. Diese ensteht beispielsweise durch unzureichendes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Seite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)\n\nDen Schimmelbefall oder auch feuchte Stellen müssen den Vermietenden sofort angezeigt werden ([Vorlage Mängelanzeige](https://www.notion.so/Vorlage-M-ngelanzeige-a6d70b4dbd7d4140bd146218f997025c)). \n\n**Mögliche Ansprüche:** Ob ein Anspruch wegen eines Mietmangels durch den Schimmel besteht oder nicht, hängt davon ab, ob die Mietenden den Schimmel (mit) verursacht haben. Sie müssen die Mietsache ordentlich heizen und lüften. Außerdem müssen auch die Möbel so in der Wohnung aufgestellt werden, dass sie ausreichend Abstand zu den Außenwänden haben. Halten die Mietenden diese Sorgfaltspflichten ein, dann ist es wahrscheinlich, dass die Schimmelentstehung im Verantwortungsbereich der Vermietenden liegt und entsprechende Ansprüche gegen die Vermietenden bestehen.\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cerik08cssg0",
+                                            "created": 1633441130864,
+                                            "text": "Haben Sie den Mangel verursacht?",
+                                            "note": "Wenn die Mietenden den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen den Vermieter. \n\nEtwas anders kann dann gelten, wenn Versicherungen für den Eintritt eines solchen Mangels bestehen. Existiert bspw. eine Gebäudeversicherung, die von den Mietenden mit getragen wird (über die Betriebskosten), dann muss der Vermieter diese bei Schäden in Anspruch nehmen. ",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cepy74jpz1c0",
+                                                    "created": 1633282139370,
+                                                    "text": "{EXIT}",
+                                                    "priority": 3,
+                                                    "hyperlink": null,
+                                                    "hyperlinkTitle": null,
+                                                    "note": "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cerik08cssg1",
+                                                    "created": 1633441130864,
+                                                    "text": "War der Mangel schon bei Vertragsschluss bekannt?",
+                                                    "note": "Wenn ein Problem oder ein Mangel schon bei Vertragsschluss bekannt war, ohne dass die Mietenden die Vermietenden auf das Problem angesprochen und um Behebung gebeten haben, dann können Mängelansprüche ausgeschlossen sein. Wer bei Vertragsschluss also signalisiert hat, dass die Mietsache so in Ordnung ist, kann später nicht sagen, es lag von Anfang an ein Mangel vor. \n\nWenn bspw. bei der Wohnungsbesichtigung schon ein Riss im Fenster war und es wurde nicht mit der vermietenden Person darüber gesprochen, dass der Riss noch beseitigt werden muss, dann kann man nachher nicht sagen, dass ein Mangel vorliegt. Anders ist die Situation, wenn die vermietende Person den Mangel bewusst verschwiegen oder sogar versteckt hat, wenn die mietende Person also getäuscht wurde.  ",
+                                                    "priority": 1,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cepy74jpz1c1",
+                                                            "created": 1633282139370,
+                                                            "text": "{EXIT}",
+                                                            "priority": 3,
+                                                            "hyperlink": null,
+                                                            "hyperlinkTitle": null,
+                                                            "note": "Wenn das Problem / der Mangel bei Vertragsschluss schon bekannt war, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit der Gegenpartei suchen.",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "ceybn9kuanc0",
+                                                            "created": 1634132558230,
+                                                            "text": "Besteht der Mangel noch?",
+                                                            "expandState": "expand",
+                                                            "priority": 1
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "ceybne7ha3c0",
+                                                                    "created": 1634132568306,
+                                                                    "text": "Sind bei der Beseitigung Kosten entstanden?",
+                                                                    "expandState": "expand",
+                                                                    "priority": 1
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceybnwr6fow0",
+                                                                            "created": 1634132608680,
+                                                                            "text": "Wurde die Miete unter Vorbehalt gezahlt?",
+                                                                            "expandState": "expand",
+                                                                            "priority": 3
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybo8p0lww0",
+                                                                                    "created": 1634132634670,
+                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                    "priority": 3
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "ceybwmd2ejk0",
+                                                                    "created": 1634133291336,
+                                                                    "text": "Haben Sie den Mangel Ihrer Vermieter:in schriftlich gemeldet?",
+                                                                    "note": "Haben Sie den Schimmel Ihrer Vermietung ",
+                                                                    "expandState": "expand",
+                                                                    "priority": 3
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceyc1s9qvmg0",
+                                                                            "created": 1634133696017,
+                                                                            "text": "{CONTINUE}",
+                                                                            "priority": 1,
+                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceybx2wl2w00",
+                                                                            "created": 1634133327345,
+                                                                            "text": "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt um den Mangel zu entfernen?",
+                                                                            "expandState": "expand",
+                                                                            "priority": 3
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybxmil1c00",
+                                                                                    "created": 1634133370034,
+                                                                                    "text": " Und ist diese Frist schon Abgelaufen?",
+                                                                                    "expandState": "expand",
+                                                                                    "priority": 3
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybygg5cs80",
+                                                                                            "created": 1634133435190,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "expandState": "expand",
+                                                                                            "priority": 3
+                                                                                        },
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "ceybyumxibs0",
+                                                                                                    "created": 1634133466075,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "ceybyyhkqn40",
+                                                                                                    "created": 1634133474458,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybygg5cs80",
+                                                                                            "created": 1634133435190,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "expandState": "expand",
+                                                                                            "priority": 1
+                                                                                        },
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "ceybyumxibs0",
+                                                                                                    "created": 1634133466075,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "{'options': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "ceybyyhkqn40",
+                                                                                                    "created": 1634133474458,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "note": "{'options': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "ceybygg5cs80",
+                                                                                    "created": 1634133435190,
+                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                    "expandState": "expand",
+                                                                                    "priority": 1
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybyumxibs0",
+                                                                                            "created": 1634133466075,
+                                                                                            "text": "{CONTINUE}",
+                                                                                            "priority": 1,
+                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                        },
+                                                                                        "children": []
+                                                                                    },
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "ceybyyhkqn40",
+                                                                                            "created": 1634133474458,
+                                                                                            "text": "{CONTINUE}",
+                                                                                            "priority": 3,
+                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                        },
+                                                                                        "children": []
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ceppe048r140",
+                                    "created": 1633257288287,
+                                    "text": "Lärm",
+                                    "note": "{ICON:FaAssistiveListeningSystems}\n💬 **Definition - Wohnungsmängel durch Lärm / Ruhestörung:** Ruhestörungen oder Lärmbelästigungen können einen Mangel der Mietsache begründen, wenn sie erheblich sind. \n\n**Wann liegt ein Mangel vor?** Erhebliche Ruhestörungen liegen bei Lärm in den Ruhezeiten vor. Diese sind täglich nachts von 22 bis 6 Uhr morgens, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n\n✅ **Unter Ruhestörungen** **fallen** Störungen der Nachtruhe (über 30 Dezibel: Musik, Staubsaugen, laute Waschmaschine), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst den persönlichen Austausch suchen, um den Haussegen zu bewahren. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Ein freundliches und höfliches Gespräch kann helfen, die Lärmbelästigung für den Tag und auch für die Zukunft zu beheben.  Bei akuten, sehr starken Störungen können auch Ordnungsamt oder Polizei eingeschaltet werden.  \n\nTrifft die Beschreibung einer Ruhestörung auf Ihr Problem zu? Dann erfahren Sie mehr über mögliche rechtliche Ansprüche. Zur [Anspruchsprüfung]({/entitlement})"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cepy6axcig80",
+                                    "created": 1633282074890,
+                                    "text": "Wasserschaden",
+                                    "note": "{ICON:FaBath}\n💬 **Definition - Wohnungsmängel durch Wasserschaden:** Wasserschäden entstehen durch das Eindringen von Wasser in den Wohnraum, beispielsweise durch Naturkatastrophen oder durch Schäden an Wasserleitungen.\n\nEs kann verschiedene Ursachen für Wasserschäden in einer Mietwohnung geben. Beispielsweise kann die Rohrleitung in einer Wand undicht werden, der Schlauch einer Waschmaschine kann sich lösen oder die Badewanne läuft über. Wichtig ist, als erstes die Wasser- und Stromzufuhr abzustellen, wenn der Wasserschaden bemerkt wird.  \n\nOb Ansprüche gegen die Vermietenden wegen des Wasserschadens bestehen, hängt davon ab, wer den Wasserschaden verursacht hat. \n\n**Verschulden der Mietenden**: Werden Wasserschäden durch defekte Geräte der Mietenden wie die Waschmaschine oder den Geschirrspüler verursacht, dann haften diese in der Regel für den Wasserschaden. Etwas anderes kann gelten, wenn die Geräte ebenfalls von den Vermietenden mit angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\n\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung möglicherweise weiterhelfen. \n\n**Verschulden der Vermietenden**: Für einen Wasserrohrbruch oder ähnliches sind regelmäßig die Hauseigentümer:innen verantwortlich (die ja auch oft Vermietende sind). Mietende können dann Ansprüche auf Beseitigung des Mangels, auf Schadensersatz, Minderung und eventuell auch auf Aufwendungsersatz haben).\n\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cepy6tay75k0",
+                                    "created": 1633282114895,
+                                    "text": "Ein anderes Problem",
+                                    "note": "{ICON:FaQuestionCircle}",
+                                    "priority": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cepy74jpz1c3",
+                                            "created": 1633282139370,
+                                            "text": "{EXIT}",
+                                            "priority": 1,
+                                            "hyperlink": null,
+                                            "hyperlinkTitle": null,
+                                            "note": "Leider können wir Sie bei Ihrem Problem aktuell nicht unterstützen - wir arbeiten jedoch ständig an diesem Tool, um zu weiteren Rechtsfällen informieren zu können. "
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cepy2izylpc0",
+                            "created": 1633281779006,
+                            "text": "Mieterhöhung",
+                            "note": "{ICON:FaCoins}"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cepy324wtug0",
+                            "created": 1633281820664,
+                            "text": "Mietpreisbremse",
+                            "note": "{ICON:FaRegStopCircle}"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cepy361915c0",
+                            "created": 1633281829150,
+                            "text": "Renovierung bei Auszug",
+                            "note": "{ICON:FaToolbox}",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ceriyb1ejn40",
+                                    "created": 1633442251487,
+                                    "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
+                                    "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
+                                    "priority": 1,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "2",
+                                            "created": 1633282139370,
+                                            "text": "{EXIT}",
+                                            "priority": 1,
+                                            "hyperlink": null,
+                                            "hyperlinkTitle": null,
+                                            "note": "Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cepy392s7z40",
+                            "created": 1633281835773,
+                            "text": "Kündigung",
+                            "note": "{ICON:FaDoorClosed}"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cepy224nok80",
+                    "created": 1633281742285,
+                    "text": "Arbeit",
+                    "note": "{ICON:FaBriefcase}",
+                    "expandState": "expand"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cepn7tavqgow",
+                    "created": 1633251161046,
+                    "text": "Reisen",
+                    "expandState": "expand",
+                    "progress": null,
+                    "note": "{ICON:FaPlaneDeparture}"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "ceo2i4zs4t8g",
+                    "created": 1633091166874,
+                    "text": "Verkehr",
+                    "layout_mind_offset": {
+                        "x": 2,
+                        "y": 1
+                    },
+                    "note": "{ICON:FaCarCrash}"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "ceq2ao2tc1s0",
+                    "created": 1633293701415,
+                    "text": "Einkaufen",
+                    "note": "{ICON:FaShoppingCart}\n"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "ceo2i632lh4w",
+                    "created": 1633091169249,
+                    "text": "Familie",
+                    "layout_mind_offset": {
+                        "x": 448,
+                        "y": -116
+                    },
+                    "note": "{ICON:FaBabyCarriage}"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "snow-compact",
+    "version": "1.4.43"
+}
