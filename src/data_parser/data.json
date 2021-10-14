@@ -92,67 +92,191 @@
                                                         "children": [
                                                             {
                                                                 "data": {
-                                                                    "id": "ceybne7ha3c0",
-                                                                    "created": 1634132568306,
-                                                                    "text": "Sind bei der Beseitigung Kosten entstanden?",
-                                                                    "expandState": "expand",
-                                                                    "priority": 1
+                                                                    "id": "ceriyb1ejn40",
+                                                                    "created": 1633442251487,
+                                                                    "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
+                                                                    "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
+                                                                    "priority": 1,
+                                                                    "expandState": "expand"
                                                                 },
                                                                 "children": [
                                                                     {
                                                                         "data": {
-                                                                            "id": "ceybnwr6fow0",
-                                                                            "created": 1634132608680,
-                                                                            "text": "Wurde die Miete unter Vorbehalt gezahlt?",
+                                                                            "id": "2",
+                                                                            "created": 1633282139370,
+                                                                            "text": "{EXIT}",
+                                                                            "priority": 1,
+                                                                            "hyperlink": null,
+                                                                            "hyperlinkTitle": null,
+                                                                            "note": "Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.",
+                                                                            "expandState": "expand"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ceybne7ha3c0",
+                                                                            "created": 1634132568306,
+                                                                            "text": "Sind bei der Beseitigung Kosten entstanden?",
                                                                             "expandState": "expand",
                                                                             "priority": 3
                                                                         },
                                                                         "children": [
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "ceybo8p0lww0",
-                                                                                    "created": 1634132634670,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
-                                                                                    "priority": 3,
-                                                                                    "expandState": "expand"
+                                                                                    "id": "ceybnwr6fow0",
+                                                                                    "created": 1634132608680,
+                                                                                    "text": "Wurde die Miete unter Vorbehalt gezahlt?",
+                                                                                    "expandState": "expand",
+                                                                                    "priority": 3
                                                                                 },
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cepy74jpz1c3",
-                                                                                            "created": 1633282139370,
-                                                                                            "text": "{CONTINUE}",
+                                                                                            "id": "ceybo8p0lww0",
+                                                                                            "created": 1634132634670,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
                                                                                             "priority": 3,
-                                                                                            "hyperlink": null,
-                                                                                            "hyperlinkTitle": null,
-                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz','Aufwandungsersatz']}"
+                                                                                            "expandState": "expand",
+                                                                                            "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
                                                                                         },
-                                                                                        "children": []
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cepy74jpz1c3",
+                                                                                                    "created": 1633282139370,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "hyperlink": null,
+                                                                                                    "hyperlinkTitle": null,
+                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwandungsersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5c2rjzjc0",
+                                                                                                    "created": 1634216314690,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Aufwandungsersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "cez5s6nf8140",
+                                                                                            "created": 1634217576974,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "priority": 1
+                                                                                        },
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5sxzf70o0",
+                                                                                                    "created": 1634217636473,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Schadensersatz','Aufwandungsersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5t18xyd40",
+                                                                                                    "created": 1634217643579,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Aufwandungsersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
                                                                                     }
                                                                                 ]
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "ceriyb1ejn40",
-                                                                                    "created": 1633442251487,
-                                                                                    "text": "Haben Sie den Mangel oder das Problem dokumentiert? ",
-                                                                                    "note": "Damit man später Streit darüber vermeidet, ob der Defekt/ die Störung/ der Mangel wirklich vorgelegen hat, hilft es, Fotos oder Videos davon zu machen. Wenn das nicht möglich ist wie bspw. bei Lärm- oder Geruchsbelästigung, kann man auch eine dritte Person (Freunde, Bekannte, Nachbarn) bitten, sich den Mangel einmal anzusehen.\n\nDiese Personen können im Streitfall später bestätigen, was sie gesehen/ gehört oder gerochen haben. \n\nWenn es sich bei dem Problem um Geräusche oder Lärm handelt, sollten Sie in jedem Fall ein Lärmprotokoll anfertigen. Dort schreiben Sie genau auf, wann welche Geräusche störend zu hören sind. \n>Wenn Sie den Mangel noch nicht auf eine der beschriebenen Weisen dokumentiert haben, dann sollten Sie das unbedingt zeitnah machen. Das kann helfen, weiteren Streit zu vermeiden. ",
+                                                                                    "id": "cez5ne2tlr40",
+                                                                                    "created": 1634217201322,
+                                                                                    "text": "Wurde die Miete unter Vorbehalt gezahlt?",
                                                                                     "priority": 1,
-                                                                                    "expandState": "expand"
+                                                                                    "note": null
                                                                                 },
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "2",
-                                                                                            "created": 1633282139370,
-                                                                                            "text": "{EXIT}",
-                                                                                            "priority": 1,
-                                                                                            "hyperlink": null,
-                                                                                            "hyperlinkTitle": null,
-                                                                                            "note": "Wenn sie den Mangel noch nicht dokumentiert haben, sollten sie das als erstes machen bevor sie im Prozess weitergehen. \n\nHirzu sind vor allem Fotos geignet, oder auch Protokolle.",
-                                                                                            "expandState": "expand"
+                                                                                            "id": "cez5o46tidc0",
+                                                                                            "created": 1634217258161,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
+                                                                                            "priority": 3
                                                                                         },
-                                                                                        "children": []
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5rqjend40",
+                                                                                                    "created": 1634217541903,
+                                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                                    "expandState": "expand",
+                                                                                                    "priority": 3
+                                                                                                },
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "cez5ryu7leg0",
+                                                                                                            "created": 1634217559970,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "priority": 3,
+                                                                                                            "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "cez5s07wa540",
+                                                                                                            "created": 1634217562975,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "priority": 1,
+                                                                                                            "note": "{'options': ['Klage'],'entitlements':['Mietminderung']}"
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5rts2r8g0",
+                                                                                                    "created": 1634217548957,
+                                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                                    "priority": 1
+                                                                                                },
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "cez5rtzqviw0",
+                                                                                                            "created": 1634217549421,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "priority": 3,
+                                                                                                            "note": "{'options': ['Klage'],'entitlements':['Schadensersatz']}"
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "cez5rxmlsb40",
+                                                                                                            "created": 1634217557334,
+                                                                                                            "text": "{EXIT}",
+                                                                                                            "priority": 1,
+                                                                                                            "note": "Mit Ihren Angaben haben Sie vermutlich keine Ansprüche. Sie können sich dazu aber beraten lassen."
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
                                                                                     }
                                                                                 ]
                                                                             }
@@ -189,42 +313,23 @@
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "ceybygg5cs80",
-                                                                                            "created": 1634133435190,
-                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "id": "cez5kt8sw2o0",
+                                                                                            "created": 1634216999243,
+                                                                                            "text": "{EXIT}",
                                                                                             "expandState": "expand",
-                                                                                            "priority": 3
+                                                                                            "priority": 1,
+                                                                                            "note": "Sie sollten zuerst warten, bis die von Ihnen gesetzte Frist abgelaufen ist."
                                                                                         },
-                                                                                        "children": [
-                                                                                            {
-                                                                                                "data": {
-                                                                                                    "id": "ceybyumxibs0",
-                                                                                                    "created": 1634133466075,
-                                                                                                    "text": "{CONTINUE}",
-                                                                                                    "priority": 1,
-                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
-                                                                                                },
-                                                                                                "children": []
-                                                                                            },
-                                                                                            {
-                                                                                                "data": {
-                                                                                                    "id": "ceybyyhkqn40",
-                                                                                                    "created": 1634133474458,
-                                                                                                    "text": "{CONTINUE}",
-                                                                                                    "priority": 3,
-                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
-                                                                                                },
-                                                                                                "children": []
-                                                                                            }
-                                                                                        ]
+                                                                                        "children": []
                                                                                     },
                                                                                     {
                                                                                         "data": {
                                                                                             "id": "ceybygg5cs80",
                                                                                             "created": 1634133435190,
-                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt? Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
                                                                                             "expandState": "expand",
-                                                                                            "priority": 1
+                                                                                            "priority": 3,
+                                                                                            "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
                                                                                         },
                                                                                         "children": [
                                                                                             {
@@ -233,7 +338,7 @@
                                                                                                     "created": 1634133466075,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 1,
-                                                                                                    "note": "{'options': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                                    "note": "{'options': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             },
@@ -243,7 +348,7 @@
                                                                                                     "created": 1634133474458,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 3,
-                                                                                                    "note": "{'options': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                    "note": "{'options': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             }
@@ -255,9 +360,10 @@
                                                                                 "data": {
                                                                                     "id": "ceybygg5cs80",
                                                                                     "created": 1634133435190,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt? Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
                                                                                     "expandState": "expand",
-                                                                                    "priority": 1
+                                                                                    "priority": 1,
+                                                                                    "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
                                                                                 },
                                                                                 "children": [
                                                                                     {
@@ -266,7 +372,7 @@
                                                                                             "created": 1634133466075,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
-                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                            "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -276,7 +382,7 @@
                                                                                             "created": 1634133474458,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
-                                                                                            "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                            "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     }
@@ -288,9 +394,10 @@
                                                                         "data": {
                                                                             "id": "ceybygg5cs80",
                                                                             "created": 1634133435190,
-                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt? Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
                                                                             "expandState": "expand",
-                                                                            "priority": 1
+                                                                            "priority": 1,
+                                                                            "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
                                                                         },
                                                                         "children": [
                                                                             {
@@ -299,7 +406,7 @@
                                                                                     "created": 1634133466075,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 1,
-                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                    "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                 },
                                                                                 "children": []
                                                                             },
@@ -309,7 +416,7 @@
                                                                                     "created": 1634133474458,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 3,
-                                                                                    "note": "{'options': ['Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                    "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
                                                                                 },
                                                                                 "children": []
                                                                             }
