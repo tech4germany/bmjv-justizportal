@@ -86,7 +86,7 @@ export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...res
             gridGap={{ base: '1em', md: '2em' }}
             flexDir={{ base: 'column-reverse', md: 'row' }}>
             <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
-              <RadioGroup size="lg" onChange={setValue} padding="1em">
+              <RadioGroup size="lg" onChange={setValue} value={value} padding="1em">
                 <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
                   <Radio value="1">Ja</Radio>
                   <Radio value="2">Nein</Radio>
@@ -103,6 +103,7 @@ export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...res
                 }
                 linkForward={value == '1' ? linkOnYes : linkOnNo}
                 disableForward={value != '2' && value != '1'}
+                onClick={() => setValue('0')}
               />
             </VStack>
             <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>

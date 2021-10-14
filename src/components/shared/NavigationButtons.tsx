@@ -6,12 +6,13 @@ interface FeatureProps extends BoxProps {
   linkBack?: string;
   linkForward?: string;
   disableForward?: boolean;
+  onClick?: React.MouseEventHandler<HTMLElement>;
 }
 
-export const NavButtons = ({ linkBack, linkForward, disableForward, ...rest }: FeatureProps) => (
+export const NavButtons = ({ linkBack, linkForward, disableForward, onClick, ...rest }: FeatureProps) => (
   <HStack spacing="1em" {...rest}>
     {linkBack ? (
-      <Button rounded={'full'} as={ReactLink} to={linkBack}>
+      <Button onClick={onClick} rounded={'full'} as={ReactLink} to={linkBack}>
         Zurück
       </Button>
     ) : (
@@ -19,6 +20,7 @@ export const NavButtons = ({ linkBack, linkForward, disableForward, ...rest }: F
     )}
     {linkForward ? (
       <Button
+        onClick={onClick}
         colorScheme="green"
         rounded={'full'}
         as={ReactLink}
