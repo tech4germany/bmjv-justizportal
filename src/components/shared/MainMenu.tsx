@@ -246,4 +246,18 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'Lösungsfinder',
     href: '/solutionexplorer',
   },
+  {
+    label: 'Shortcuts',
+    href: '/short',
+    children: [
+      {
+        label: 'Schimmel',
+        href: '/solutionexplorer?id=cerik08cssg0',
+      },
+      {
+        label: 'Ansprüche',
+        href: '/possibleentitlements?id=ceybyumxibs0',
+      },
+    ],
+  },
 ];
