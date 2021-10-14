@@ -8,7 +8,6 @@ import {
   Button,
   Heading,
   Spacer,
-  useColorModeValue,
   VStack,
 } from '@chakra-ui/react';
 import * as React from 'react';
@@ -59,7 +58,7 @@ interface FeatureProps {
 }
 
 export const Options = ({ id, mmobject, ...rest }: FeatureProps) => {
-  const green = useColorModeValue('green.500', 'green.300');
+  //  const green = useColorModeValue('green.500', 'green.300');
   let claims: Claims[] = mmobject.getNode(id).claims;
 
   return (

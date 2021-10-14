@@ -1,7 +1,7 @@
 import { Box, Button, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import React, { ReactNode } from 'react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
   return (
     <Button

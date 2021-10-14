@@ -1,20 +1,21 @@
-import React, { ReactNode } from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
-  IconButton,
   Box,
+  BoxProps,
   CloseButton,
   Flex,
+  FlexProps,
   Icon,
-  useColorModeValue,
+  IconButton,
   Link,
   Text,
+  useColorModeValue,
   useDisclosure,
-  BoxProps,
-  FlexProps,
 } from '@chakra-ui/react';
-import { FiHome, FiTrendingUp, FiCompass, FiStar, FiSettings, FiMenu } from 'react-icons/fi';
+import React, { ReactText } from 'react';
 import { IconType } from 'react-icons';
-import { ReactText } from 'react';
+import { FiCompass, FiHome, FiMenu, FiTrendingUp } from 'react-icons/fi';
 
 interface LinkItemProps {
   name: string;

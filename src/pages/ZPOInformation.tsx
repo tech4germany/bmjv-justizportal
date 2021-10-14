@@ -1,16 +1,14 @@
-import { Box, Button, Heading, Text, useColorModeValue } from '@chakra-ui/react';
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+import { Box, Button, Heading, Text } from '@chakra-ui/react';
 import * as React from 'react';
-import ReactMarkdown from 'react-markdown';
 import { Link as ReactLink } from 'react-router-dom';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
 
 interface FeatureProps {
-  id: string;
+  id: string | null;
 }
 
 export const ZPOInformation = (props: FeatureProps) => {
-  const green = useColorModeValue('green.500', 'green.300');
   const s: string = `
 [comment]: <> (## Zusammenfassung)
 
@@ -54,7 +52,7 @@ export const ZPOInformation = (props: FeatureProps) => {
     <PageBody title="ZPO Informationen">
       <Box>
         <Heading>Informationen zur Klage & Gerichtsverfahren</Heading>
-        <ReactMarkdown components={ChakraUIRenderer()} children={s} />
+        <AnnotadedText text={s} />
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>

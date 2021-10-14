@@ -5,7 +5,6 @@ import { Link as ReactLink } from 'react-router-dom';
 import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
-import { UserState } from '../logic/UserState';
 
 interface FeatureProps {
   anchorId: string;

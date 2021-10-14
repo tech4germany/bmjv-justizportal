@@ -1,21 +1,19 @@
-import { Spacer } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/react';
-import React, { Children, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
-
 import FooterSmallWithSocial from './components/shared/Footer';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
-import { Home } from './pages/Home';
-import { SolutionExplorer } from './pages/SolutionExplorer';
-import { ExitJourney } from './pages/ExitJourney';
-import { ZPOInformation } from './pages/ZPOInformation';
-import { PossibleEntitlements } from './pages/PEntitlements';
 import { MMGraph } from './logic/KMParser';
-import { Bryter } from './pages/BRYTER';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
+import { Bryter } from './pages/BRYTER';
+import { ExitJourney } from './pages/ExitJourney';
+import { Home } from './pages/Home';
 import { Options } from './pages/Options';
+import { PossibleEntitlements } from './pages/PEntitlements';
+import { SolutionExplorer } from './pages/SolutionExplorer';
+import { ZPOInformation } from './pages/ZPOInformation';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -59,11 +57,11 @@ export const App = () => {
           </Helmet>
           <Home anchorId={window.location.href.slice(window.location.href.indexOf('#') + 1)} />
         </Route>
-        <Route path="/solutionexplorer" component={() => <SolutionExplorer {...featureProps} />} exact />
-        <Route path="/exit" component={() => <ExitJourney {...featureProps} />} exact />
-        <Route path="/zpo" component={() => <ZPOInformation {...featureProps} />} exact />
-        <Route path="/possibleentitlements" component={() => <PossibleEntitlements {...featureProps} />} exact />
-        <Route path="/options" component={() => <Options {...featureProps} />} exact />
+        <Route path="/solutionexplorer" children={() => <SolutionExplorer {...featureProps} />} exact />
+        <Route path="/exit" children={() => <ExitJourney {...featureProps} />} exact />
+        <Route path="/zpo" children={() => <ZPOInformation {...featureProps} />} exact />
+        <Route path="/possibleentitlements" children={() => <PossibleEntitlements {...featureProps} />} exact />
+        <Route path="/options" children={() => <Options {...featureProps} />} exact />
         <Route path="/bryter" exact>
           <Helmet>
             <title>Justiz Portal - BRYTER</title>

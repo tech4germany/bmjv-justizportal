@@ -1,11 +1,9 @@
-import { Box, Heading, HStack, Spacer, Text, useColorModeValue, VStack } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
-import { FaInfoCircle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
-import { HeroSplit } from '../components/shared/Hero_Split';
-import { MMGraph } from '../logic/KMParser';
 import { PageBody } from '../components/shared/PageBody';
+import { MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
   id: string | null;

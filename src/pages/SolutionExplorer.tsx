@@ -1,15 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  HStack,
-  Radio,
-  RadioGroup,
-  useColorModeValue,
-  VStack,
-  Wrap,
-  WrapItem,
-} from '@chakra-ui/react';
+import { Flex, Heading, Radio, RadioGroup, Spacer, VStack, Wrap, WrapItem } from '@chakra-ui/react';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
@@ -17,12 +6,10 @@ import { Card } from '../components/shared/Card';
 import { CardContent } from '../components/shared/CardContent';
 import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
-import ProgressBar from '../components/shared/SideMenu';
+import { PageBody } from '../components/shared/PageBody';
 import { StatsCard } from '../components/shared/StatsCard';
 import { MMGraph } from '../logic/KMParser';
-import { Spacer } from '@chakra-ui/react';
 import { UserState } from '../logic/UserState';
-import { PageBody } from '../components/shared/PageBody';
 
 interface FeatureProps {
   id: string | null;
@@ -69,9 +56,9 @@ export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...res
           <Heading>In welchem Bereich Ihres Lebens haben Sie ein Problem?</Heading>
           <Wrap spacing="1.2em" justify="center" align="stretch">
             {data!.children!.map((child) => (
-              <WrapItem w={{ base: '9em', md: '10.5em' }}>
+              <WrapItem key={child.id} w={{ base: '9em', md: '10.5em' }}>
                 <StatsCard
-                  link={child.children ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}` : '#'}
+                  link={child.children ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s` : '#s'}
                   {...child}
                 />
               </WrapItem>
@@ -82,8 +69,8 @@ export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...res
             linkBack={
               parent != undefined
                 ? parent.children?.length == 1
-                  ? '?id=' + mmobject.getParent(parent.id)?.id
-                  : '?id=' + parent.id
+                  ? '?id=' + mmobject.getParent(parent.id)?.id + '#s'
+                  : '?id=' + parent.id + '#s'
                 : '/'
             }
           />

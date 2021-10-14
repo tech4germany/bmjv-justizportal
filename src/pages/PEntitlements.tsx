@@ -8,17 +8,16 @@ import {
   Heading,
   Spacer,
   Text,
-  useColorModeValue,
   VStack,
 } from '@chakra-ui/react';
-import * as React from 'react';
-import { FaTools, FaMoneyBill, FaReceipt } from 'react-icons/fa';
-import { NavButtons } from '../components/shared/NavigationButtons';
-import { MMGraph, Claims } from '../logic/KMParser';
-import ReactMarkdown from 'react-markdown';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
-import { PageBody } from '../components/shared/PageBody';
+import * as React from 'react';
+import { FaMoneyBill, FaReceipt, FaTools } from 'react-icons/fa';
 import { FiTrendingDown } from 'react-icons/fi';
+import ReactMarkdown from 'react-markdown';
+import { NavButtons } from '../components/shared/NavigationButtons';
+import { PageBody } from '../components/shared/PageBody';
+import { Claims, MMGraph } from '../logic/KMParser';
 
 const AccItem = (props: {
   title: string;
@@ -47,7 +46,7 @@ interface FeatureProps {
 }
 
 export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) => {
-  const green = useColorModeValue('green.500', 'green.300');
+  // const green = useColorModeValue('.500', 'green.300');
   let claims: Claims[] = mmobject.getNode(id).claims;
 
   return (

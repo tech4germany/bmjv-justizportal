@@ -16,15 +16,10 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import { ReactNode } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
-import ReactMarkdown from 'react-markdown';
-import { Tooltip } from '@chakra-ui/react';
 import { Link as ReactLink } from 'react-router-dom';
-
-import Glossary from '../../data_parser/glossary.json';
 import { AnnotadedText } from './AnnotatedText';
 
 interface StatsCardProps {
@@ -56,7 +51,7 @@ export const StatsCard = (props: StatsCardProps) => {
           <Box
             display={info ? '' : 'none'}
             as="a"
-            href="#"
+            href="#s"
             pos="absolute"
             width="auto"
             top=".5em"

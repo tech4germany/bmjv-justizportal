@@ -1,29 +1,7 @@
-import {
-  Box,
-  Button,
-  Flex,
-  HStack,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  Stat,
-  StatLabel,
-  Text,
-  useColorModeValue,
-  useDisclosure,
-} from '@chakra-ui/react';
+import { Text, Tooltip } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
-import { ReactNode } from 'react';
-import { FaInfoCircle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
-import { Tooltip } from '@chakra-ui/react';
-import { Link as ReactLink } from 'react-router-dom';
-
 import Glossary from '../../data_parser/glossary.json';
 
 function getIndicesOf(searchStr: string, str: string): number[] {
