@@ -149,7 +149,7 @@
                                                                                                     "priority": 3,
                                                                                                     "hyperlink": null,
                                                                                                     "hyperlinkTitle": null,
-                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwandungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             },
@@ -159,7 +159,7 @@
                                                                                                     "created": 1634216314690,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 1,
-                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Aufwandungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             }
@@ -179,7 +179,7 @@
                                                                                                     "created": 1634217636473,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 3,
-                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Schadensersatz','Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz','Aufwandungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             },
@@ -189,7 +189,7 @@
                                                                                                     "created": 1634217643579,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 1,
-                                                                                                    "note": "{'options': ['Klage'],'entitlements':['Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Aufwandungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             }
@@ -230,7 +230,7 @@
                                                                                                             "created": 1634217559970,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "priority": 3,
-                                                                                                            "note": "{'options': ['Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
+                                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
                                                                                                         },
                                                                                                         "children": []
                                                                                                     },
@@ -240,7 +240,7 @@
                                                                                                             "created": 1634217562975,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "priority": 1,
-                                                                                                            "note": "{'options': ['Klage'],'entitlements':['Mietminderung']}"
+                                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung']}"
                                                                                                         },
                                                                                                         "children": []
                                                                                                     }
@@ -260,7 +260,7 @@
                                                                                                             "created": 1634217549421,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "priority": 3,
-                                                                                                            "note": "{'options': ['Klage'],'entitlements':['Schadensersatz']}"
+                                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz']}"
                                                                                                         },
                                                                                                         "children": []
                                                                                                     },
@@ -338,7 +338,7 @@
                                                                                                     "created": 1634133466075,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 1,
-                                                                                                    "note": "{'options': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                                    "note": "{'nextsteps': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             },
@@ -348,7 +348,7 @@
                                                                                                     "created": 1634133474458,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 3,
-                                                                                                    "note": "{'options': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             }
@@ -372,7 +372,7 @@
                                                                                             "created": 1634133466075,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
-                                                                                            "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                            "note": "{'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -382,7 +382,7 @@
                                                                                             "created": 1634133474458,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
-                                                                                            "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                            "note": "{'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     }
@@ -406,7 +406,7 @@
                                                                                     "created": 1634133466075,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 1,
-                                                                                    "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
+                                                                                    "note": "{'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']}"
                                                                                 },
                                                                                 "children": []
                                                                             },
@@ -416,7 +416,7 @@
                                                                                     "created": 1634133474458,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 3,
-                                                                                    "note": "{'options': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
+                                                                                    "note": "{'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']}"
                                                                                 },
                                                                                 "children": []
                                                                             }

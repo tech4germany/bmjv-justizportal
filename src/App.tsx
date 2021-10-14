@@ -10,7 +10,7 @@ import { UserState } from './logic/UserState';
 import { Bryter } from './pages/BRYTER';
 import { ExitJourney } from './pages/ExitJourney';
 import { Home } from './pages/Home';
-import { Options } from './pages/Options';
+import { NextSteps } from './pages/NextSteps';
 import { PossibleEntitlements } from './pages/PEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
@@ -61,7 +61,7 @@ export const App = () => {
         <Route path="/exit" children={() => <ExitJourney {...featureProps} />} exact />
         <Route path="/zpo" children={() => <ZPOInformation {...featureProps} />} exact />
         <Route path="/possibleentitlements" children={() => <PossibleEntitlements {...featureProps} />} exact />
-        <Route path="/options" children={() => <Options {...featureProps} />} exact />
+        <Route path="/nextsteps" children={() => <NextSteps {...featureProps} />} exact />
         <Route path="/bryter" exact>
           <Helmet>
             <title>Justiz Portal - BRYTER</title>

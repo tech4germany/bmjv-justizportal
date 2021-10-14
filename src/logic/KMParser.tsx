@@ -26,7 +26,7 @@ export interface MMNode {
   info?: string;
   children?: MMNode[];
   claims: Claims[];
-  options: NextSteps[];
+  nextSteps: NextStepsType[];
 }
 
 export enum Claims {
@@ -36,7 +36,7 @@ export enum Claims {
   Aufwendungsersatz = 'Aufwendungsersatz',
 }
 
-export enum NextSteps {
+export enum NextStepsType {
   Docu = 'Doku',
   LandlordLetter = 'Vermieterschreiben',
   LandlordLetterReview = 'Vermieterschreiben Überprüfung',
@@ -50,7 +50,7 @@ export class MMGraph {
   // private numberOfNotes = 0;
 
   constructor() {
-    this.root = { title: '', id: '', type: 'root', claims: [], options: [] };
+    this.root = { title: '', id: '', type: 'root', claims: [], nextSteps: [] };
   }
 
   initialize() {
@@ -95,7 +95,7 @@ export class MMGraph {
       lines.splice(0, 1);
     } else if (lines[0].includes("{'")) {
       currentNode.claims = JSON.parse(lines[0].replaceAll("'", '"'))['entitlements'];
-      currentNode.options = JSON.parse(lines[0].replaceAll("'", '"'))['options'];
+      currentNode.nextSteps = JSON.parse(lines[0].replaceAll("'", '"'))['nextsteps'];
       lines.splice(0, 1);
     }
 
@@ -108,7 +108,7 @@ export class MMGraph {
       id: currentInput['data']['id'],
       type: 'default',
       claims: [],
-      options: [],
+      nextSteps: [],
     };
 
     if (currentInput.data.hasOwnProperty('note') && currentInput.data['note'] != null) {
