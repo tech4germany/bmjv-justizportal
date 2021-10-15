@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import * as serviceWorker from './serviceWorker';
 import { HelmetProvider } from 'react-helmet-async';
-import { ThemeEditorProvider } from '@hypertheme-editor/chakra-ui';
+import { ThemeEditorProvider } from '@hypertheme-editor-pro/chakra-ui';
 import theme from './theme';
 
 ReactDOM.render(

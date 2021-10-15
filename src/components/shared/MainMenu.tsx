@@ -19,7 +19,7 @@ import {
 import React from 'react';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
-import { HyperThemeEditor } from '@hypertheme-editor/chakra-ui';
+import { HyperThemeEditor } from '@hypertheme-editor-pro/chakra-ui';
 
 export const MenuWithSubnavigation = () => {
   const { isOpen, onToggle } = useDisclosure();
