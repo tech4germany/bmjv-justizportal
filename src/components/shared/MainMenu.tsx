@@ -19,6 +19,7 @@ import {
 import React from 'react';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import { HyperThemeEditor } from '@hypertheme-editor/chakra-ui';
 
 export const MenuWithSubnavigation = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -66,7 +67,10 @@ export const MenuWithSubnavigation = () => {
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
           <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'flex', md: 'flex' }} />
-          <Button colorScheme="green">Anmelden</Button>
+          <Button display="none" colorScheme="green">
+            Anmelden
+          </Button>
+          <HyperThemeEditor />
         </Stack>
       </Flex>
 

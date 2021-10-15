@@ -5,17 +5,20 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import * as serviceWorker from './serviceWorker';
 import { HelmetProvider } from 'react-helmet-async';
+import { ThemeEditorProvider } from '@hypertheme-editor/chakra-ui';
 import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <HelmetProvider>
-          <ColorModeScript />
-          <App />
-        </HelmetProvider>
-      </BrowserRouter>
+      <ThemeEditorProvider>
+        <BrowserRouter>
+          <HelmetProvider>
+            <ColorModeScript />
+            <App />
+          </HelmetProvider>
+        </BrowserRouter>
+      </ThemeEditorProvider>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
