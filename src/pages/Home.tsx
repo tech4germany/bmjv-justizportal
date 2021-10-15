@@ -36,12 +36,11 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'green'}
             bg={useColorModeValue('green.500', 'green.300')}
-            rounded={'full'}
             as={ReactLink}
             to="/solutionexplorer">
             Jetzt starten!
           </Button>
-          <Button rounded={'full'} as={ReactLink} to="#how" onClick={executeScroll}>
+          <Button as={ReactLink} to="#how" onClick={executeScroll}>
             Wie es funktioniert
           </Button>
         </Stack>
@@ -90,7 +89,6 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'green'}
             bg={useColorModeValue('green.500', 'green.300')}
-            rounded={'full'}
             as={ReactLink}
             to="/solutionexplorer">
             Jetzt starten!

@@ -1,4 +1,26 @@
 Name,Text
-Klage,"Hallo Test 
-sdf sdf"
-Anspruch,"Nothing in here"
+Klage,"Die Klage ist ein Mittel, um bestimmte Ansprüche vor Gericht geltend zu machen.
+
+Für Klagen gelten eine Reihe von formalen Anforderungen; für Zivilklagen sind die Grundzüge z.B. in § 253 ZPO geregelt.
+Beispielsweise müssen Klagen fast immer schriftlich erhoben werden, den Beklagten bezeichnen und gewisse Anträge enthalten."
+Anspruch,"Der Anspruch ist das, was ich brauche, um von jemandem ein bestimmtes Tun oder Unterlassen verlangen zu können.
+
+Im deutschen Recht ergibt sich ein Anspruch in der Regel aus einem bestimmten Paragraphen eines Gesetzes.
+Daher heißen diese Vorschriften auch ""Anspruchsgrundlagen""."
+Vorbehalt,???
+Streitwert,"Mit dem Streitwert wird der Wert des Streitgegenstandes bemessen. Die Wertfestsetzung steht im freien Ermessen des Gerichts. Nach dem Streitwert richtet sich auch die Höhe der Vergütung der Rechtsanwälte sowie die der Gerichtskosten.
+
+Beispiel: Bei einem Streit um ein Haus (=Streitgegenstand), das 100.000 Euro wert ist, wird der Streitwert ebenfalls 100.000 Euro betragen."
+Mangel,Nach dem Wortlaut des § 535 Abs. 1 Satz 2 BGB hat der Vermieter die Mietsache dem Mieter in einem zum vertragsgemässen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.
+Gerichtskosten,"Gerichtskosten sind ein Teil der anfallenden Kosten innerhalb eines Prozesses. Der deutsche Staat erhebt diese Kosten für Tätigkeiten in den einzelnen Gerichtsverfahren.
+
+Die Höhe der Kosten richtet sich nach dem Gerichtskostengesetz, der Kostenordnung und die dazugehörigen Nebengesetze. Die Gerichtskosten lassen sich demnach in Gebühren und Auslagen gliedern. Gebühren werden für die Tätigkeit als solche erhoben. Auslagen hingegen richten sich nach dem Einzelfall. Dies können vor allem die Beförderungskosten der Zeugen, Sachverständigenkosten, sowie Post- und Telekommunikationskosten sein."
+Prozess,"Der Prozess ist ein gerichtliches Verfahren.
+Er wird durch eine Klage eingeleitet und endet mit dem Urteil."
+Prozesskostenhilfe,"Die Prozesskostenhilfe (PKH) ist eine finanzielle Möglichkeit, wonach einkommensschwachen Personen eine finanzielle Unterstützung vom Staat zur Durchführung von Gerichtsverfahren gewährt wird."
+Urteil,"Mit Urteil wird in der Rechtssprache eine gerichtliche Entscheidung bezeichnet, gegen die in der Regel ein Rechtsmittel (Berufung oder Revision) eingelegt werden kann. Dies hat zur Folge, dass die nächsthöhere Instanz über die Sache ihrerseits mit einem Urteil entscheiden muss (sog. Devolutiveffekt)."
+Verjährung,"Nach Eintritt der Verjährung geht der Anspruch zwar nicht unter, er kann aber nicht mehr durchgesetzt werden.
+
+Die regelmäßige Verjährungsfrist beträgt 3 Jahre, § 195 BGB. Sie greift, wenn das Gesetz für einen bestimmten Fall nicht eine kürzere oder eine längere Verjährungsfrist vorsieht (z.B. § 197 BGB)."
+Mietminderung,"Als Mieter:in hat man hierzulande das Privileg, die Miete mindern zu können, wenn ein Mangel am Mietobjekt auftritt. Die Gründe für eine Mietminderung sind sehr unterschiedlich und umfassen u.a. Schimmel in der Wohnung, Wasserschäden oder auch Baulärm. Eigenständig sollten Mieter die Miete jedoch nicht mindern, die Minderungsquote sollte stets durch einen Experten erfolgen, da es hierfür keine starren Vorgaben gibt, es also stets einzelfallabhängig ist, um welchen Betrag die Miete gemindert werden sollte."
+Ruhestörung,"Ruhestörung (auch ""Lärmbelästigung"" genannt) ist grundsätzlich eine unzumutbare Belästigung anderer Menschen in Form von Lärm. Wenn der Lärm die Nachbarschaft oder die Allgemeinheit erheblich stört (Lärmstörung), stellt dies eine Ordnungswidrigkeit dar."

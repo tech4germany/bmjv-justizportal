@@ -56,7 +56,7 @@ export const ZPOInformation = (props: FeatureProps) => {
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>
-        <Button colorScheme="green" rounded={'full'} as={ReactLink} to={`/bryter?id=${props.id}`}>
+        <Button colorScheme="green" as={ReactLink} to={`/bryter?id=${props.id}`}>
           Klageschriftgenerator
         </Button>
       </Box>

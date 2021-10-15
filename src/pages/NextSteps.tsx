@@ -132,7 +132,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
                 <Spacer height="1.5em" />
                 {acc.buttonLink && acc.buttonText ? (
                   <>
-                    <Button colorScheme="green" paddingBlock="1em" rounded={'full'} as={ReactLink} to={acc.buttonLink}>
+                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={acc.buttonLink}>
                       {acc.buttonText}
                     </Button>
                   </>

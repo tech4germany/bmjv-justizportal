@@ -6,7 +6,6 @@ const SocialButton = ({ children, label, href }: { children: ReactNode; label: s
   return (
     <Button
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-      rounded={'full'}
       w={12}
       h={8}
       cursor={'pointer'}

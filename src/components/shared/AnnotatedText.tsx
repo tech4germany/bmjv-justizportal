@@ -58,7 +58,9 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
             let key: string = children + '';
             return (
               <Tooltip hasArrow label={Glossary.find((value) => value.Name == key)?.Text}>
-                <Text as="span" style={{ textDecoration: 'underline dotted gray' }}>
+                <Text
+                  as="span"
+                  style={{ textDecoration: 'underline', textDecorationStyle: 'dotted', textDecorationColor: 'gray' }}>
                   {children + ''}
                 </Text>
               </Tooltip>

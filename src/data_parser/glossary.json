@@ -1,4 +1,47 @@
 [
-  { "Name": "Mietmangel", "Text": "Hallo Test \nsdf sdf" },
-  { "Name": "Anspruch", "Text": "Nothing in here" }
+  {
+    "Name": "Klage",
+    "Text": "Die Klage ist ein Mittel, um bestimmte Anspr\u00fcche vor Gericht geltend zu machen.\n\nF\u00fcr Klagen gelten eine Reihe von formalen Anforderungen; f\u00fcr Zivilklagen sind die Grundz\u00fcge z.B. in \u00a7 253 ZPO geregelt.\nBeispielsweise m\u00fcssen Klagen fast immer schriftlich erhoben werden, den Beklagten bezeichnen und gewisse Antr\u00e4ge enthalten."
+  },
+  {
+    "Name": "Anspruch",
+    "Text": "Der Anspruch ist das, was ich brauche, um von jemandem ein bestimmtes Tun oder Unterlassen verlangen zu k\u00f6nnen.\n\nIm deutschen Recht ergibt sich ein Anspruch in der Regel aus einem bestimmten Paragraphen eines Gesetzes.\nDaher hei\u00dfen diese Vorschriften auch \"Anspruchsgrundlagen\"."
+  },
+  { "Name": "Vorbehalt", "Text": "???" },
+  {
+    "Name": "Streitwert",
+    "Text": "Mit dem Streitwert wird der Wert des Streitgegenstandes bemessen. Die Wertfestsetzung steht im freien Ermessen des Gerichts. Nach dem Streitwert richtet sich auch die H\u00f6he der Verg\u00fctung der Rechtsanw\u00e4lte sowie die der Gerichtskosten.\n\nBeispiel: Bei einem Streit um ein Haus (=Streitgegenstand), das 100.000 Euro wert ist, wird der Streitwert ebenfalls 100.000 Euro betragen."
+  },
+  {
+    "Name": " Mangel",
+    "Text": "Nach dem Wortlaut des \u00a7 535 Abs. 1 Satz 2 BGB hat der Vermieter die Mietsache dem Mieter in einem zum vertragsgem\u00e4ssen Gebrauch geeigneten Zustand zu \u00fcberlassen und sie w\u00e4hrend der Mietzeit in diesem Zustand zu erhalten."
+  },
+  {
+    "Name": "Gerichtskosten",
+    "Text": "Gerichtskosten sind ein Teil der anfallenden Kosten innerhalb eines Prozesses. Der deutsche Staat erhebt diese Kosten f\u00fcr T\u00e4tigkeiten in den einzelnen Gerichtsverfahren.\n\nDie H\u00f6he der Kosten richtet sich nach dem Gerichtskostengesetz, der Kostenordnung und die dazugeh\u00f6rigen Nebengesetze. Die Gerichtskosten lassen sich demnach in Geb\u00fchren und Auslagen gliedern. Geb\u00fchren werden f\u00fcr die T\u00e4tigkeit als solche erhoben. Auslagen hingegen richten sich nach dem Einzelfall. Dies k\u00f6nnen vor allem die Bef\u00f6rderungskosten der Zeugen, Sachverst\u00e4ndigenkosten, sowie Post- und Telekommunikationskosten sein."
+  },
+  {
+    "Name": "Prozess",
+    "Text": "Der Prozess ist ein gerichtliches Verfahren.\nEr wird durch eine Klage eingeleitet und endet mit dem Urteil."
+  },
+  {
+    "Name": "Prozesskostenhilfe",
+    "Text": "Die Prozesskostenhilfe (PKH) ist eine finanzielle M\u00f6glichkeit, wonach einkommensschwachen Personen eine finanzielle Unterst\u00fctzung vom Staat zur Durchf\u00fchrung von Gerichtsverfahren gew\u00e4hrt wird."
+  },
+  {
+    "Name": "Urteil",
+    "Text": "Mit Urteil wird in der Rechtssprache eine gerichtliche Entscheidung bezeichnet, gegen die in der Regel ein Rechtsmittel (Berufung oder Revision) eingelegt werden kann. Dies hat zur Folge, dass die n\u00e4chsth\u00f6here Instanz \u00fcber die Sache ihrerseits mit einem Urteil entscheiden muss (sog. Devolutiveffekt)."
+  },
+  {
+    "Name": "Verj\u00e4hrung",
+    "Text": "Nach Eintritt der Verj\u00e4hrung geht der Anspruch zwar nicht unter, er kann aber nicht mehr durchgesetzt werden.\n\nDie regelm\u00e4\u00dfige Verj\u00e4hrungsfrist betr\u00e4gt 3 Jahre, \u00a7 195 BGB. Sie greift, wenn das Gesetz f\u00fcr einen bestimmten Fall nicht eine k\u00fcrzere oder eine l\u00e4ngere Verj\u00e4hrungsfrist vorsieht (z.B. \u00a7 197 BGB)."
+  },
+  {
+    "Name": "Mietminderung",
+    "Text": "Als Mieter:in hat man hierzulande das Privileg, die Miete mindern zu k\u00f6nnen, wenn ein Mangel am Mietobjekt auftritt. Die Gr\u00fcnde f\u00fcr eine Mietminderung sind sehr unterschiedlich und umfassen u.a. Schimmel in der Wohnung, Wassersch\u00e4den oder auch Baul\u00e4rm. Eigenst\u00e4ndig sollten Mieter die Miete jedoch nicht mindern, die Minderungsquote sollte stets durch einen Experten erfolgen, da es hierf\u00fcr keine starren Vorgaben gibt, es also stets einzelfallabh\u00e4ngig ist, um welchen Betrag die Miete gemindert werden sollte."
+  },
+  {
+    "Name": "Ruhest\u00f6rung",
+    "Text": "Ruhest\u00f6rung (auch \"L\u00e4rmbel\u00e4stigung\" genannt) ist grunds\u00e4tzlich eine unzumutbare Bel\u00e4stigung anderer Menschen in Form von L\u00e4rm. Wenn der L\u00e4rm die Nachbarschaft oder die Allgemeinheit erheblich st\u00f6rt (L\u00e4rmst\u00f6rung), stellt dies eine Ordnungswidrigkeit dar."
+  }
 ]
