@@ -149,7 +149,7 @@
                                                                                                     "priority": 3,
                                                                                                     "hyperlink": null,
                                                                                                     "hyperlinkTitle": null,
-                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwendungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             },
@@ -159,7 +159,7 @@
                                                                                                     "created": 1634216314690,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 1,
-                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Aufwendungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             }
@@ -170,7 +170,8 @@
                                                                                             "id": "cez5s6nf8140",
                                                                                             "created": 1634217576974,
                                                                                             "text": "Wurde durch den Mangel Eigentum beschädigt?",
-                                                                                            "priority": 1
+                                                                                            "priority": 1,
+                                                                                            "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
                                                                                         },
                                                                                         "children": [
                                                                                             {
@@ -179,7 +180,7 @@
                                                                                                     "created": 1634217636473,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 3,
-                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz','Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz','Aufwendungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             },
@@ -189,7 +190,7 @@
                                                                                                     "created": 1634217643579,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 1,
-                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Aufwandungsersatz']}"
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Aufwendungsersatz']}"
                                                                                                 },
                                                                                                 "children": []
                                                                                             }
@@ -203,7 +204,8 @@
                                                                                     "created": 1634217201322,
                                                                                     "text": "Wurde die Miete unter Vorbehalt gezahlt?",
                                                                                     "priority": 1,
-                                                                                    "note": null
+                                                                                    "note": null,
+                                                                                    "expandState": "expand"
                                                                                 },
                                                                                 "children": [
                                                                                     {
@@ -212,69 +214,60 @@
                                                                                             "created": 1634217258161,
                                                                                             "text": "Wurde durch den Mangel Eigentum beschädigt?",
                                                                                             "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
-                                                                                            "priority": 3
+                                                                                            "priority": 3,
+                                                                                            "expandState": "expand"
                                                                                         },
                                                                                         "children": [
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cez5rqjend40",
-                                                                                                    "created": 1634217541903,
-                                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
-                                                                                                    "expandState": "expand",
-                                                                                                    "priority": 3
+                                                                                                    "id": "cez5ryu7leg0",
+                                                                                                    "created": 1634217559970,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
                                                                                                 },
-                                                                                                "children": [
-                                                                                                    {
-                                                                                                        "data": {
-                                                                                                            "id": "cez5ryu7leg0",
-                                                                                                            "created": 1634217559970,
-                                                                                                            "text": "{CONTINUE}",
-                                                                                                            "priority": 3,
-                                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
-                                                                                                        },
-                                                                                                        "children": []
-                                                                                                    },
-                                                                                                    {
-                                                                                                        "data": {
-                                                                                                            "id": "cez5s07wa540",
-                                                                                                            "created": 1634217562975,
-                                                                                                            "text": "{CONTINUE}",
-                                                                                                            "priority": 1,
-                                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung']}"
-                                                                                                        },
-                                                                                                        "children": []
-                                                                                                    }
-                                                                                                ]
+                                                                                                "children": []
                                                                                             },
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cez5rts2r8g0",
-                                                                                                    "created": 1634217548957,
-                                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
-                                                                                                    "priority": 1
+                                                                                                    "id": "cez5s07wa540",
+                                                                                                    "created": 1634217562975,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung']}"
                                                                                                 },
-                                                                                                "children": [
-                                                                                                    {
-                                                                                                        "data": {
-                                                                                                            "id": "cez5rtzqviw0",
-                                                                                                            "created": 1634217549421,
-                                                                                                            "text": "{CONTINUE}",
-                                                                                                            "priority": 3,
-                                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz']}"
-                                                                                                        },
-                                                                                                        "children": []
-                                                                                                    },
-                                                                                                    {
-                                                                                                        "data": {
-                                                                                                            "id": "cez5rxmlsb40",
-                                                                                                            "created": 1634217557334,
-                                                                                                            "text": "{EXIT}",
-                                                                                                            "priority": 1,
-                                                                                                            "note": "Mit Ihren Angaben haben Sie vermutlich keine Ansprüche. Sie können sich dazu aber beraten lassen."
-                                                                                                        },
-                                                                                                        "children": []
-                                                                                                    }
-                                                                                                ]
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "cez5rts2r8g0",
+                                                                                            "created": 1634217548957,
+                                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                            "priority": 1,
+                                                                                            "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
+                                                                                        },
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5rtzqviw0",
+                                                                                                    "created": 1634217549421,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cez5rxmlsb40",
+                                                                                                    "created": 1634217557334,
+                                                                                                    "text": "{EXIT}",
+                                                                                                    "priority": 1,
+                                                                                                    "note": "Mit Ihren Angaben haben Sie vermutlich keine Ansprüche. Sie können sich dazu aber beraten lassen."
+                                                                                                },
+                                                                                                "children": []
                                                                                             }
                                                                                         ]
                                                                                     }
@@ -459,7 +452,18 @@
                                     "priority": null,
                                     "expandState": "expand"
                                 },
-                                "children": []
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cez5rxmlsb40",
+                                            "created": 1634217557334,
+                                            "text": "{EXIT}",
+                                            "priority": 1,
+                                            "note": "Aufgrund der kurzen Zeit"
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -514,17 +518,6 @@
             },
             {
                 "data": {
-                    "id": "cepn7tavqgow",
-                    "created": 1633251161046,
-                    "text": "Reisen",
-                    "expandState": "expand",
-                    "progress": null,
-                    "note": "{ICON:FaPlaneDeparture}"
-                },
-                "children": []
-            },
-            {
-                "data": {
                     "id": "ceo2i4zs4t8g",
                     "created": 1633091166874,
                     "text": "Verkehr",
@@ -532,9 +525,29 @@
                         "x": 2,
                         "y": 1
                     },
-                    "note": "{ICON:FaCarCrash}"
+                    "note": "{ICON:FaCarCrash}",
+                    "expandState": "expand"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "cf008ca222o0",
+                            "created": 1634303476350,
+                            "text": "Fluggastrechte",
+                            "note": "{ICON:FaPlane}"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf008n7nesg0",
+                            "created": 1634303500150,
+                            "text": "Auto Unfall",
+                            "note": "{ICON:FaCarCrash}"
+                        },
+                        "children": []
+                    }
+                ]
             },
             {
                 "data": {
