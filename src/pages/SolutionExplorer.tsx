@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Heading, Radio, RadioGroup, SimpleGrid, Spacer, VStack, Wrap, WrapItem } from '@chakra-ui/react';
+import { Flex, GridItem, Heading, Progress, Radio, RadioGroup, SimpleGrid, Spacer, useToast, VStack, Wrap, WrapItem } from '@chakra-ui/react';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
@@ -13,14 +13,16 @@ import { UserState } from '../logic/UserState';
 
 interface FeatureProps {
   id: string | null;
+  anchorId: string;
   mmobject: MMGraph;
   userState: UserState;
   setUserState: React.Dispatch<any>;
 }
 
-export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...rest }: FeatureProps) => {
+export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserState, ...rest }: FeatureProps) => {
   const [value, setValue] = React.useState('0');
 
+  const toast = useToast();
   const data = mmobject.getNode(id);
   const parent = mmobject.getParent(id);
 
@@ -51,14 +53,31 @@ export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...res
 
   return (
     <PageBody title="Lösungsfinder">
+      <Heading>{state != 'SE' ? data.title : 'In welchem Bereich Ihres Lebens haben Sie ein Problem?'}</Heading>
+      <Progress colorScheme="green" size="sm" value={(mmobject.getNumberOfParents(id) / 11) * 100} width="100%" />
       {state == 'SE' ? (
         <>
-          <Heading>In welchem Bereich Ihres Lebens haben Sie ein Problem?</Heading>
           <SimpleGrid columns={[2, null, 3]} spacing="40px">
             {data!.children!.map((child) => (
               <GridItem key={child.id} w={{ base: '6.5em', sm: '9em', md: '10.5em', lg: '11em' }}>
                 <StatsCard
-                  link={child.children ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s` : '#s'}
+                  link={
+                    child.children
+                      ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
+                      : `?id=${id}#notimplemented:${child.id}`
+                  }
+                  onClick={() =>
+                    child.children
+                      ? undefined
+                      : toast({
+                        title: 'Dieser Pfad wurde noch nicht implementiert',
+                        description:
+                          'Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden.',
+                        status: 'info',
+                        duration: 8000,
+                        isClosable: true,
+                      })
+                  }
                   {...child}
                 />
               </GridItem>
@@ -76,46 +95,43 @@ export const SolutionExplorer = ({ id, mmobject, userState, setUserState, ...res
           />
         </>
       ) : (
-          <>
-            <Heading>{data.title}</Heading>
-            <Flex
-              align="top"
-              wrap="nowrap"
-              alignSelf="stretch"
-              padding={{ base: 0, md: '1em' }}
-              gridGap={{ base: '1em', md: '2em' }}
-              flexDir={{ base: 'column-reverse', md: 'row' }}>
-              <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
-                <RadioGroup size="lg" onChange={setValue} value={value} padding="1em">
-                  <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
-                    <Radio value="1">Ja</Radio>
-                    <Radio value="2">Nein</Radio>
-                  </Flex>
-                </RadioGroup>
-                <NavButtons
-                  padding="1em"
-                  linkBack={
-                    parent != undefined
-                      ? parent.children?.length == 1
-                        ? '?id=' + mmobject.getParent(parent.id)?.id
-                        : '?id=' + parent.id
-                      : '/'
-                  }
-                  linkForward={value == '1' ? linkOnYes : linkOnNo}
-                  disableForward={value != '2' && value != '1'}
-                  onClick={() => setValue('0')}
-                />
-              </VStack>
-              <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
-                <CardHeader title="Info" action={<FaInfoCircle size="1.2em" />} />
-                <CardContent padding="1em">
-                  <AnnotadedText text={data.info ? data.info : ''} />
-                </CardContent>
-              </Card>
-            </Flex>
-            <Spacer minH="3em" />
-          </>
+          <Flex
+            align="top"
+            wrap="nowrap"
+            alignSelf="stretch"
+            padding={{ base: 0, md: '1em' }}
+            gridGap={{ base: '1em', md: '2em' }}
+            flexDir={{ base: 'column-reverse', md: 'row' }}>
+            <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
+              <RadioGroup size="lg" onChange={setValue} value={value} padding="1em">
+                <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
+                  <Radio value="1">Ja</Radio>
+                  <Radio value="2">Nein</Radio>
+                </Flex>
+              </RadioGroup>
+              <NavButtons
+                padding="1em"
+                linkBack={
+                  parent != undefined
+                    ? parent.children?.length == 1
+                      ? '?id=' + mmobject.getParent(parent.id)?.id
+                      : '?id=' + parent.id
+                    : '/'
+                }
+                linkForward={value == '1' ? linkOnYes : linkOnNo}
+                disableForward={value != '2' && value != '1'}
+                onClick={() => setValue('0')}
+              />
+            </VStack>
+            <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
+              <CardHeader title="Info" action={<FaInfoCircle size="1.2em" />} />
+              <CardContent padding="1em">
+                <AnnotadedText text={data.info ? data.info : ''} />
+              </CardContent>
+            </Card>
+          </Flex>
         )}
+      <Spacer minH="3em" />
     </PageBody>
   );
 };

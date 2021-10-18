@@ -21,16 +21,16 @@ import { ReactNode } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from './AnnotatedText';
+import { BoxProps } from '@chakra-ui/react';
 
-interface StatsCardProps {
+interface StatsCardProps extends BoxProps {
   title: string;
   link: string;
   info?: string;
   icon?: ReactNode;
 }
 
-export const StatsCard = (props: StatsCardProps) => {
-  const { title, info, icon, link } = props;
+export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const green = useColorModeValue('green.500', 'green.300');
 
@@ -44,7 +44,8 @@ export const StatsCard = (props: StatsCardProps) => {
         _hover={{
           transitionDuration: '0.2s',
           bg: useColorModeValue('gray.200', 'whiteAlpha.400'),
-        }}>
+        }}
+        {...rest}>
         <>
           <Box
             display={info ? '' : 'none'}
