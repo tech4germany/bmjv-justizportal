@@ -44,6 +44,7 @@ export const App = () => {
     mmobject: mmobject,
     userState: userState,
     setUserState: setUserState,
+    anchorId: window.location.href.slice(window.location.href.indexOf('#') + 1),
   };
 
   return (
@@ -51,12 +52,7 @@ export const App = () => {
       <ScrollToTop />
       <MenuWithSubnavigation />
       <Switch>
-        <Route path="/" exact>
-          <Helmet>
-            <title>Justiz Portal - Home</title>
-          </Helmet>
-          <Home anchorId={window.location.href.slice(window.location.href.indexOf('#') + 1)} />
-        </Route>
+        <Route path="/" children={() => <Home {...featureProps} />} exact />
         <Route path="/solutionexplorer" children={() => <SolutionExplorer {...featureProps} />} exact />
         <Route path="/exit" children={() => <ExitJourney {...featureProps} />} exact />
         <Route path="/zpo" children={() => <ZPOInformation {...featureProps} />} exact />

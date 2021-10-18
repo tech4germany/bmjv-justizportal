@@ -88,6 +88,14 @@ export class MMGraph {
     }
   }
 
+  getNumberOfParents(id: string | null): number {
+    if (id != null && id in this.parent) {
+      return this.getNumberOfParents(this.parent[id].id) + 1;
+    } else {
+      return 0;
+    }
+  }
+
   private configureContent(currentNode: MMNode, currentInput: any) {
     let lines: string[] = currentInput['data']['note'].split('\n');
     if (lines[0].includes('{ICON:')) {
