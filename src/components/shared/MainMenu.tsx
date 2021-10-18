@@ -100,11 +100,11 @@ const DesktopNav = () => {
                 fontSize={'md'}
                 fontWeight={500}
                 color={linkColor}
-                activeStyle={{
-                  borderBottom: 'solid',
-                  borderBottomWidth: 4,
-                  borderBottomColor: greenHex,
-                }}
+                // activeStyle={{
+                //   borderBottom: 'solid',
+                //   borderBottomWidth: 4,
+                //   borderBottomColor: greenHex,
+                // }}
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
@@ -193,12 +193,12 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         to={href ?? '#'}
         justify={'space-between'}
         align={'center'}
-        activeStyle={{
-          borderBlock: 'solid',
-          borderBlockWidth: 2,
-          borderBlockColor: greenHex,
-          marginBlock: -2,
-        }}
+        // activeStyle={{
+        //   borderBlock: 'solid',
+        //   borderBlockWidth: 2,
+        //   borderBlockColor: greenHex,
+        //   marginBlock: -2,
+        // }}
         _hover={{
           textDecoration: 'none',
         }}>
