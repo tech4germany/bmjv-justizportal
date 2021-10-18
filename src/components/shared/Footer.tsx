@@ -26,7 +26,7 @@ const SocialButton = ({ children, label, href }: { children: ReactNode; label: s
 
 export default function FooterSmallWithSocial() {
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.600')} color={useColorModeValue('gray.600', 'gray.200')}>
+    <Box bg={useColorModeValue('gray.50', 'gray.600')} color={useColorModeValue('gray.600', 'gray.200')}>
       <Container
         as={Stack}
         maxW={'6xl'}

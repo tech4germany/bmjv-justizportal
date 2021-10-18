@@ -10,7 +10,7 @@ const customTheme = extendTheme({
     global: (props: any) => ({
       body: {
         color: mode('gray.700', 'whiteAlpha.900')(props),
-        bg: mode('gray.50', 'gray.900')(props),
+        bg: mode('white', 'gray.900')(props),
         fontSize: '1.2em',
         '.deleted': {
           color: '#ff8383 !important',
@@ -21,15 +21,15 @@ const customTheme = extendTheme({
           fontStyle: 'normal !important',
         },
       },
-      a: {
-        color: mode('green.500', 'green.200')(props),
-        transition: 'color 0.15s',
-        transitionTimingFunction: 'ease-out',
-        fontWeight: '500',
-        _hover: {
-          color: mode('green.600', 'green.300')(props),
-        },
-      },
+      // a: {
+      //   color: mode('green.500', 'green.200')(props),
+      //   transition: 'color 0.15s',
+      //   transitionTimingFunction: 'ease-out',
+      //   fontWeight: '500',
+      //   _hover: {
+      //     color: mode('green.600', 'green.300')(props),
+      //   },
+      // },
     }),
   },
   components: {
@@ -37,14 +37,14 @@ const customTheme = extendTheme({
       baseStyle: (props: any) => ({
         borderColor: mode('gray.200', 'gray.700')(props),
         pb: 2,
-        fontWeight: '500',
+        fontWeight: 'bold',
         size: 'sm',
       }),
     },
     Button: {
       baseStyle: {
         fontWeight: '500',
-        rounded: 'full',
+        rounded: '5',
       },
     },
     Tag: {

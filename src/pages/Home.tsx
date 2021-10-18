@@ -34,8 +34,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
         </Text>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
           <Button
-            colorScheme={'green'}
-            bg={useColorModeValue('green.500', 'green.300')}
+            colorScheme={'orange'}
             as={ReactLink}
             to="/solutionexplorer">
             Jetzt starten!
@@ -87,8 +86,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           </Text>
 
           <Button
-            colorScheme={'green'}
-            bg={useColorModeValue('green.500', 'green.300')}
+            colorScheme={'orange'}
             as={ReactLink}
             to="/solutionexplorer">
             Jetzt starten!

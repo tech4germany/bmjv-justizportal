@@ -37,11 +37,9 @@ export const StatsCard = (props: StatsCardProps) => {
   return (
     <>
       <Stat
-        shadow="0px 0px 0.5em gray"
-        border="1px solid"
+        border="2px solid"
         height="100%"
         borderColor={useColorModeValue('gray.200', 'whiteAlpha.400')}
-        bg={useColorModeValue('gray.100', 'whiteAlpha.200')}
         rounded="lg"
         _hover={{
           transitionDuration: '0.2s',

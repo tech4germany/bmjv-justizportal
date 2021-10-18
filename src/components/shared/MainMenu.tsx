@@ -28,7 +28,7 @@ export const MenuWithSubnavigation = () => {
   return (
     <Box position={{ md: 'sticky' }} top={0} width="100%" zIndex="100">
       <Flex
-        bg={useColorModeValue('gray.100', 'gray.600')}
+        bg={useColorModeValue('gray.50', 'gray.600')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
@@ -97,7 +97,7 @@ const DesktopNav = () => {
                 padding={2}
                 as={NavLink}
                 to={navItem.href ?? '#'}
-                fontSize={'lg'}
+                fontSize={'md'}
                 fontWeight={500}
                 color={linkColor}
                 activeStyle={{
@@ -165,7 +165,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
+    <Box bg={useColorModeValue('gray.50', 'gray.700')}>
       <Stack p={4} display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />

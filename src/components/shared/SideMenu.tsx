@@ -30,7 +30,7 @@ const LinkItems: Array<LinkItemProps> = [
 export default function ProgressBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box height="100%" display={{ base: 'none', md: 'inherit' }} bg={useColorModeValue('gray.100', 'gray.900')}>
+    <Box height="100%" display={{ base: 'none', md: 'inherit' }} bg={useColorModeValue('gray.50', 'gray.900')}>
       <SidebarContent onClose={() => onClose} />
     </Box>
   );
@@ -50,7 +50,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+        <Text fontSize="2xl" fontFamily="body" fontWeight="bold">
           Ihre Angaben
         </Text>
         <CloseButton display={{ base: 'none', md: 'none' }} onClick={onClose} />

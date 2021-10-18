@@ -7,7 +7,7 @@ interface FeatureProps extends BoxProps {
 }
 
 export const Hero = ({ title, bg, children, ...rest }: FeatureProps) => {
-  const bgColor = useColorModeValue('gray.100', 'gray.700');
+  const bgColor = useColorModeValue('gray.50', 'gray.700');
 
   return (
     <VStack padding={[6, 12, 20]} spacing={8} bg={bg ? bg : bgColor}>

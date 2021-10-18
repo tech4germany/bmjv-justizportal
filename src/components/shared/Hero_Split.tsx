@@ -39,26 +39,17 @@ export const HeroSplit = (props: FeatureProps) => {
             <Image
               position="absolute"
               display={{ base: 'none', md: 'inherit' }}
-              right="-42%"
-              top="20%"
+              right="calc(-50% - 8px)"
+              top="5%"
               zIndex="-1"
+              opacity="0.5"
               src="data/53787D84-F85F-402B-AE32-5E1D59E38921.png"
             />
-            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+            <Heading fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }} fontWeight="bold">
               <Text
                 as={'span'}
-                position={'relative'}
-                _after={{
-                  content: "''",
-                  width: 'full',
-                  height: ['20%', '20%'],
-                  position: 'absolute',
-                  alignContent: 'center',
-                  bottom: 1,
-                  left: 0,
-                  bg: green,
-                  zIndex: -1,
-                }}>
+                color={green}
+                position={'relative'}>
                 {title1}
               </Text>
               <br />{' '}

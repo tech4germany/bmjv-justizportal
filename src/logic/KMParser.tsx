@@ -12,10 +12,10 @@ const DynamicFaIcon = (props: DynamicFaIconProps) => {
   if (!IconComponent) {
     // Return a default one
     console.log(`[Warrning] Cloud not find icon '${props.name}'`);
-    return <Icons.FaBeer size="3.5em" />;
+    return <Icons.FaBeer size="3em" />;
   }
 
-  return <IconComponent size="3.5em" />;
+  return <IconComponent size="3em" />;
 };
 
 export interface MMNode {
