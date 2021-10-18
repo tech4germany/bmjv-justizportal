@@ -1,0 +1,21 @@
+{
+  "locales": [
+    "de",
+    "en",
+    "uk",
+    "vi"
+  ],
+  "sourceLocale": "de",
+  "fallbackLocales": {
+    "default": "en"
+  },
+  "catalogs": [
+    {
+      "path": "src/translations/{locale}/messages",
+      "include": [
+        "src"
+      ]
+    }
+  ],
+  "format": "po"
+}

@@ -1,4 +1,16 @@
-import { Flex, GridItem, Heading, Progress, Radio, RadioGroup, SimpleGrid, Spacer, useToast, VStack, Wrap, WrapItem } from '@chakra-ui/react';
+import {
+  Flex,
+  GridItem,
+  Heading,
+  Progress,
+  Radio,
+  RadioGroup,
+  SimpleGrid,
+  Spacer,
+  useToast,
+  VStack,
+} from '@chakra-ui/react';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
@@ -28,10 +40,10 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   const state: string =
     data.children &&
-      (data.children.length == 1 ||
-        (data.children.length == 2 &&
-          ['NOANSWERD', 'YESANSWERD'].includes(data.children[0].type) &&
-          ['NOANSWERD', 'YESANSWERD'].includes(data.children[1].type)))
+    (data.children.length == 1 ||
+      (data.children.length == 2 &&
+        ['NOANSWERD', 'YESANSWERD'].includes(data.children[0].type) &&
+        ['NOANSWERD', 'YESANSWERD'].includes(data.children[1].type)))
       ? 'EC'
       : 'SE';
 
@@ -52,49 +64,58 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
   setUserState(userState);
 
   return (
-    <PageBody title="Lösungsfinder">
-      <Heading>{state != 'SE' ? data.title : 'In welchem Bereich Ihres Lebens haben Sie ein Problem?'}</Heading>
-      <Progress colorScheme="green" size="sm" value={(mmobject.getNumberOfParents(id) / 11) * 100} width="100%" />
-      {state == 'SE' ? (
-        <>
-          <SimpleGrid columns={[2, null, 3]} spacing="40px">
-            {data!.children!.map((child) => (
-              <GridItem key={child.id} w={{ base: '6.5em', sm: '9em', md: '10.5em', lg: '11em' }}>
-                <StatsCard
-                  link={
-                    child.children
-                      ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
-                      : `?id=${id}#notimplemented:${child.id}`
-                  }
-                  onClick={() =>
-                    child.children
-                      ? undefined
-                      : toast({
-                        title: 'Dieser Pfad wurde noch nicht implementiert',
-                        description:
-                          'Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden.',
-                        status: 'info',
-                        duration: 8000,
-                        isClosable: true,
-                      })
-                  }
-                  {...child}
-                />
-              </GridItem>
-            ))}
-          </SimpleGrid>
+    <>
+      <Progress
+        // position="fixed"
+        // bottom={0}
+        // zIndex={10}
+        colorScheme="green"
+        size="md"
+        value={(mmobject.getNumberOfParents(id) / 11) * 100}
+        width="100%"
+      />
 
-          <NavButtons
-            linkBack={
-              parent != undefined
-                ? parent.children?.length == 1
-                  ? '?id=' + mmobject.getParent(parent.id)?.id + '#s'
-                  : '?id=' + parent.id + '#s'
-                : '/'
-            }
-          />
-        </>
-      ) : (
+      <PageBody title={t`Lösungsfinder`}>
+        <Heading>{state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}</Heading>
+        {state == 'SE' ? (
+          <>
+            <SimpleGrid columns={[2, null, 3]} spacing="40px">
+              {data!.children!.map((child) => (
+                <GridItem key={child.id} w={{ base: '6.5em', sm: '9em', md: '10.5em', lg: '11em' }}>
+                  <StatsCard
+                    link={
+                      child.children
+                        ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
+                        : `?id=${id}#notimplemented:${child.id}`
+                    }
+                    onClick={() =>
+                      child.children
+                        ? undefined
+                        : toast({
+                            title: t`Dieser Pfad wurde noch nicht implementiert`,
+                            description: t`Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden.`,
+                            status: 'info',
+                            duration: 8000,
+                            isClosable: true,
+                          })
+                    }
+                    {...child}
+                  />
+                </GridItem>
+              ))}
+            </SimpleGrid>
+
+            <NavButtons
+              linkBack={
+                parent != undefined
+                  ? parent.children?.length == 1
+                    ? '?id=' + mmobject.getParent(parent.id)?.id + '#s'
+                    : '?id=' + parent.id + '#s'
+                  : '/'
+              }
+            />
+          </>
+        ) : (
           <Flex
             align="top"
             wrap="nowrap"
@@ -105,8 +126,12 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
               <RadioGroup size="lg" onChange={setValue} value={value} padding="1em">
                 <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
-                  <Radio value="1">Ja</Radio>
-                  <Radio value="2">Nein</Radio>
+                  <Radio value="1">
+                    <Trans>Ja</Trans>
+                  </Radio>
+                  <Radio value="2">
+                    <Trans>Nein</Trans>
+                  </Radio>
                 </Flex>
               </RadioGroup>
               <NavButtons
@@ -124,14 +149,15 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
               />
             </VStack>
             <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
-              <CardHeader title="Info" action={<FaInfoCircle size="1.2em" />} />
+              <CardHeader title={t`Info`} action={<FaInfoCircle size="1.2em" />} />
               <CardContent padding="1em">
                 <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>
             </Card>
           </Flex>
         )}
-      <Spacer minH="3em" />
-    </PageBody>
+        <Spacer minH="3em" />
+      </PageBody>
+    </>
   );
 };

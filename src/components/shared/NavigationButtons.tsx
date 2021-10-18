@@ -1,4 +1,5 @@
 import { BoxProps, Button, HStack } from '@chakra-ui/react';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 
@@ -13,7 +14,7 @@ export const NavButtons = ({ linkBack, linkForward, disableForward, onClick, ...
   <HStack spacing="1em" {...rest}>
     {linkBack ? (
       <Button onClick={onClick} as={ReactLink} to={linkBack}>
-        Zurück
+        <Trans>Zurück</Trans>
       </Button>
     ) : (
       ''
@@ -25,7 +26,7 @@ export const NavButtons = ({ linkBack, linkForward, disableForward, onClick, ...
         as={ReactLink}
         to={disableForward ? '' : linkForward}
         isDisabled={disableForward}>
-        Weiter
+        <Trans>Weiter</Trans>
       </Button>
     ) : (
       ''

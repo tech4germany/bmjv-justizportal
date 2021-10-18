@@ -1,4 +1,5 @@
 import { Box, Button, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -35,7 +36,9 @@ export default function FooterSmallWithSocial() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>Gebaut von ⚖️ und 🐌 mit ❤️</Text>
+        <Text>
+          <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
+        </Text>
       </Container>
     </Box>
   );

@@ -16,10 +16,10 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import { t } from '@lingui/macro';
 import React from 'react';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
-import { HyperThemeEditor } from '@hypertheme-editor-pro/chakra-ui';
 
 export const MenuWithSubnavigation = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -70,7 +70,7 @@ export const MenuWithSubnavigation = () => {
           <Button display="none" colorScheme="green">
             Anmelden
           </Button>
-          <HyperThemeEditor />
+          {/* <HyperThemeEditor /> */}
         </Stack>
       </Flex>
 
@@ -245,7 +245,7 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Lösungsfinder',
+    label: t`Lösungsfinder`,
     href: '/solutionexplorer',
   },
   {

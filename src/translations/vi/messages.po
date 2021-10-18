@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Localazy (https://localazy.com)\n"
+"Project-Id-Version: Justizportal\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+msgstr "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+
+msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+
+msgid "Beseitigung des Mangels durch die Vermieter:in"
+msgstr "Beseitigung des Mangels durch die Vermieter:in"
+
+msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
+msgstr "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
+
+msgid "Die Justiz im Netz."
+msgstr "Các cơ quan tư pháp trên mạng."
+
+msgid "Dieser Pfad wurde noch nicht implementiert"
+msgstr "Dieser Pfad wurde noch nicht implementiert"
+
+msgid "Einfach, online, jederzeit."
+msgstr "Dễ dàng, trực tuyến, bất cứ lúc nào."
+
+msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+msgstr "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+
+msgid "Handlungsoptionen vergleichen"
+msgstr "Handlungsoptionen vergleichen"
+
+msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
+msgstr "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Ja"
+msgstr "Ja"
+
+msgid "Jetzt starten!"
+msgstr "Bắt đầu ngay bây giờ"
+
+msgid "Lösungsfinder"
+msgstr "Lösungsfinder"
+
+msgid "Mietminderung"
+msgstr "Mietminderung"
+
+msgid "Nein"
+msgstr "Nein"
+
+msgid "Online Klage einreichen"
+msgstr "Online Klage einreichen"
+
+msgid "Rechtsproblem einordnen"
+msgstr "Rechtsproblem einordnen"
+
+msgid "Unser Angebot"
+msgstr "Unser Angebot"
+
+msgid "Weiter"
+msgstr "Weiter"
+
+msgid "Wie es funktioniert"
+msgstr "Cách hoạt động"
+
+msgid "Wobei können wir Ihnen helfen?"
+msgstr "Chúng tôi có thể giúp gì cho bạn?"
+
+msgid "Zurück"
+msgstr "Zurück"
+
+msgid "footer.text"
+msgstr "Gebaut von ⚖️ und 🐌 mit ❤️"
+
+msgid "home.hero_offer"
+msgstr "Justizportal.de là một lời đề nghị của Bộ Tư pháp Liên bang và Bảo vệ người tiêu dùng hợp tác với các bộ tư pháp liên bang ở các tiểu bang liên bang. Cổng thông tin cung cấp cho bạn một cái nhìn tổng quan về quyền của bạn trong các tình huống hàng ngày khác nhau. Nó cũng giúp bạn phân loại và giải quyết các câu hỏi và vấn đề pháp lý của bạn. Bạn sẽ được thông báo về các lựa chọn hành động của bạn và sẽ được hỗ trợ trong việc khẳng định quyền của bạn."
+
+msgid "home.howitwork_claims"
+msgstr "Dann helfen wir Ihnen zu evaluieren, welche Ansprüche in Ihrem Fall vorliegen könnten. Ansprüche sind Rechte, von anderen eine bestimmte Handlung zu verlangen (bspw. die Zahlung von Schadensersatz), zu dulden (bspw. die Untervermietung einer Wohnung) oder zu unterlassen (bspw. das Betreten eines Grundstücks). invidunt ut labore."
+
+msgid "home.howitwork_classify"
+msgstr "Zunächst helfen wir Ihnen zu klären, ob in Ihrem Fall ein Rechtsproblem vorliegt. Dafür zeigen wir Ihnen auf Ihren Fall zugeschnittene Informationen."
+
+msgid "home.howitwork_heading"
+msgstr "Cách hoạt động"
+
+msgid "home.howitwork_lawsuit"
+msgstr "Wenn alle anderen Optionen erschöpft sind, helfen wir Ihnen online eine Klage beim Amtsgericht einzureichen. Dafür erklären wir Ihnen den Prozess unseres Online Verfahrens und zeigen transparent die Kosten für ein Gerichtsverfahren, sowie eine mögliche Rechtsberatung auf."
+
+msgid "home.howitwork_options"
+msgstr "Darauf aufbauend schlagen wir Ihnen Lösungsmöglichkeiten vor - zunächst für eine gütliche Streitbeilegung mit der Gegenseite. <0>Dieser Informationsservice ist für Sie komplett kostenlos.</0>"
+
+msgid "home.howitwork_subheading"
+msgstr "Wir helfen Ihnen in vier einfachen Schritten zur Lösung Ihres Rechtproblems:"
+
+msgid "home.howtohelp_footer"
+msgstr "Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei denen wir Sie unterstützen können."
+
+msgid "home.sub_heading"
+msgstr "Chúng tôi thông báo cho bạn về quyền lợi của bạn trong cuộc sống hàng ngày và giúp bạn giải quyết vấn đề pháp lý của bạn trong các bước đơn giản"
+
+msgid "Über Ansprüche informieren"
+msgstr "Über Ansprüche informieren"

@@ -1,0 +1,13 @@
+{
+  "writeKey": "a8462173649167136584-047c2ae95d9837866968c5be133939eefba583e287773f0b946727caed6bee5a",
+  "readKey": "a8462173649167136584-b7acf8f71ff637da41d2c2035bccd60cf491690d97172d84515a62311c470b94",
+
+  "upload": {
+    "type": "po",
+    "files": "src/translations/de/messages.po"
+  },
+
+  "download": {
+    "files": "src/translations/${lang}/messages.po"
+  }
+}

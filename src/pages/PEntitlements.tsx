@@ -9,6 +9,7 @@ import {
   Spacer,
   Text,
 } from '@chakra-ui/react';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaMoneyBill, FaReceipt, FaTools } from 'react-icons/fa';
 import { FiTrendingDown } from 'react-icons/fi';
@@ -29,12 +30,12 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 
   let data = [
     {
-      label: 'Beseitigung des Mangels durch die Vermieter:in',
+      label: t`Beseitigung des Mangels durch die Vermieter:in`,
       icon: FaTools,
       buttonLink: '',
       buttonText: '',
       condition: claims.indexOf(Claims.Mängelbeseitigung) != -1,
-      content: `
+      content: t`
 
 
 - **Anspruch**
@@ -52,7 +53,7 @@ Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Of
 mit der Mitteilung über den Mangel.`,
     },
     {
-      label: 'Mietminderung',
+      label: t`Mietminderung`,
       icon: FiTrendingDown,
       buttonLink: '',
       buttonText: '',
@@ -100,10 +101,10 @@ Es gilt: Wenn der Mangel schon bei Vertragsschluss vorlag, dann haften die Vermi
   return (
     <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
       <Heading marginInline={{ base: '2em', md: '0em' }}>
-        Aus Ihren Angaben könnten sich folgende Ansprüche ergeben
+        <Trans>Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
       </Heading>
       <AnnotadedText
-        text={`
+        text={t`
 Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche
 für Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person
 einzufordern.`}
