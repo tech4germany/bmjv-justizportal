@@ -17,7 +17,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
 
   return (
     <PageBody title="Lösungsfinder">
-      <Heading>Lassen Sie sich beraten!</Heading>
+      <Heading>Leider können wir Sie nicht weiter unterstützen</Heading>
       <Box
         display={data.info ? '' : 'none'}
         padding="1em"

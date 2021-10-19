@@ -63,7 +63,7 @@
                                                     "id": "cerik08cssg1",
                                                     "created": 1633441130864,
                                                     "text": "War der Mangel schon bei Vertragsschluss bekannt?",
-                                                    "note": "Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \n\nAnders ist die Situation, wenn der Mangel erst entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurdes.  ",
+                                                    "note": "Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \n\nAnders ist die Situation, wenn der Mangel erst später entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurde.  ",
                                                     "priority": 1,
                                                     "expandState": "expand",
                                                     "layout_filetree-down_offset": {
@@ -102,17 +102,17 @@
                                                                     "text": "Haben Sie den Mangel Ihrer Vermieter:in schriftlich gemeldet?",
                                                                     "expandState": "expand",
                                                                     "priority": 3,
-                                                                    "note": "Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis dafür zu haben.\n\nWenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+                                                                    "note": "Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis zu haben.\n\nWenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
                                                                 },
                                                                 "children": [
                                                                     {
                                                                         "data": {
                                                                             "id": "ceybx2wl2w00",
                                                                             "created": 1634133327345,
-                                                                            "text": "Haben Sie Ihrer Vermieter:in schriftlich eine realistische Frist gesetzt, um den Mangel zu entfernen?",
+                                                                            "text": "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt, um den Mangel zu entfernen?",
                                                                             "expandState": "expand",
                                                                             "priority": 3,
-                                                                            "note": "Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung des Mangels gesetzt haben. In der Regel sollten 2-3 Wochen ausreichend sein, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \n\nWenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
+                                                                            "note": "Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung gesetzt haben. In der Regel sollten 2-3 Wochen ausreichen, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \n\nWenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
                                                                         },
                                                                         "children": [
                                                                             {
@@ -143,7 +143,7 @@
                                                                                             "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
                                                                                             "expandState": "expand",
                                                                                             "priority": 3,
-                                                                                            "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstande sind, haben sie vielleicht auch Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
+                                                                                            "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                         },
                                                                                         "children": [
                                                                                             {
@@ -174,10 +174,10 @@
                                                                                 "data": {
                                                                                     "id": "ceybygg5cs80",
                                                                                     "created": 1634133435190,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt? Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
+                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
                                                                                     "expandState": "expand",
                                                                                     "priority": 1,
-                                                                                    "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
+                                                                                    "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                 },
                                                                                 "children": [
                                                                                     {
@@ -208,10 +208,10 @@
                                                                         "data": {
                                                                             "id": "ceybygg5cs80",
                                                                             "created": 1634133435190,
-                                                                            "text": "Wurde durch den Mangel Eigentum beschädigt? Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
+                                                                            "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
                                                                             "expandState": "expand",
                                                                             "priority": 1,
-                                                                            "note": "Mussten sie durch den Mangel zB. Kleidung oder Möbel entsorgen?"
+                                                                            "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                         },
                                                                         "children": [
                                                                             {
@@ -242,28 +242,30 @@
                                                                 "data": {
                                                                     "id": "ceybne7ha3c0",
                                                                     "created": 1634132568306,
-                                                                    "text": "Sind bei der Beseitigung Kosten entstanden?",
+                                                                    "text": "Haben Sie den Mangel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?",
                                                                     "expandState": "expand",
-                                                                    "priority": 1
+                                                                    "priority": 1,
+                                                                    "note": "Wenn Ihre Vermieter:in auch nach Aufforderung und Fristsetzung den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
                                                                 },
                                                                 "children": [
                                                                     {
                                                                         "data": {
                                                                             "id": "ceybnwr6fow0",
                                                                             "created": 1634132608680,
-                                                                            "text": "Wurde die Miete unter Vorbehalt gezahlt?",
+                                                                            "text": "Haben Sie angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen?",
                                                                             "expandState": "expand",
-                                                                            "priority": 3
+                                                                            "priority": 3,
+                                                                            "note": "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen."
                                                                         },
                                                                         "children": [
                                                                             {
                                                                                 "data": {
                                                                                     "id": "ceybo8p0lww0",
                                                                                     "created": 1634132634670,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
                                                                                     "priority": 3,
                                                                                     "expandState": "expand",
-                                                                                    "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
+                                                                                    "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                 },
                                                                                 "children": [
                                                                                     {
@@ -294,9 +296,9 @@
                                                                                 "data": {
                                                                                     "id": "cez5s6nf8140",
                                                                                     "created": 1634217576974,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
                                                                                     "priority": 1,
-                                                                                    "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?"
+                                                                                    "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                 },
                                                                                 "children": [
                                                                                     {
@@ -327,9 +329,9 @@
                                                                         "data": {
                                                                             "id": "cez5ne2tlr40",
                                                                             "created": 1634217201322,
-                                                                            "text": "Wurde die Miete unter Vorbehalt gezahlt?",
+                                                                            "text": "Haben Sie angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen?",
                                                                             "priority": 1,
-                                                                            "note": null,
+                                                                            "note": "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen.",
                                                                             "expandState": "expand"
                                                                         },
                                                                         "children": [
@@ -337,8 +339,8 @@
                                                                                 "data": {
                                                                                     "id": "cez5o46tidc0",
                                                                                     "created": 1634217258161,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
-                                                                                    "note": "Mussten sie durch dem Mangel zB. Kleidung oder Möbel entsorgen?",
+                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                    "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden.",
                                                                                     "priority": 3,
                                                                                     "expandState": "expand"
                                                                                 },
@@ -369,9 +371,9 @@
                                                                                 "data": {
                                                                                     "id": "cez5rts2r8g0",
                                                                                     "created": 1634217548957,
-                                                                                    "text": "Wurde durch den Mangel Eigentum beschädigt?",
+                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
                                                                                     "priority": 1,
-                                                                                    "note": "Mussten sie durch den Mangel zB. Kleidung oder Möbel entsorgen?"
+                                                                                    "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                 },
                                                                                 "children": [
                                                                                     {
@@ -390,7 +392,7 @@
                                                                                             "created": 1634217557334,
                                                                                             "text": "{EXIT}",
                                                                                             "priority": 1,
-                                                                                            "note": "Mit Ihren Angaben haben Sie vermutlich keine Ansprüche. Sie können sich dazu aber beraten lassen."
+                                                                                            "note": "Wenn Ihnen durch den Mangel keine Kosten oder Schäden entstanden sind, Sie keine Mietminderung angekündigt haben und der Mangel bereits behoben wurde, haben Sie vermutlich keine weiteren rechtlichen Ansprüche."
                                                                                         },
                                                                                         "children": []
                                                                                     }
