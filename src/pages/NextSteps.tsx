@@ -36,10 +36,10 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       condition: nextSteps.indexOf(NextStepsType.Docu) != -1,
       content: `
 - **Warum?** 
-	- Um Ihrer Vermieter:in den Mangel zeigen zu können, und einen Nachweis für den weiteren Prozess zu haben.
+	- Um Ihrer Vermieter:in den Mangel zeigen zu können und einen Nachweis für den weiteren Prozess zu haben.
 - **Wie gehe ich vor?** 
 	- Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
-	- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, sollten Sie ein Protokoll anlegen, wann und in welcher Form dieser auftritt.
+	- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, sollten Sie aufschreiben wann und in welcher Form dieser auftritt.
 `,
     },
     {
@@ -50,13 +50,15 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       condition: nextSteps.indexOf(NextStepsType.LandlordLetter) != -1,
       content: `
 - **Warum?** 
-	- Ihre Vermieter:in direkt zu kontaktieren ist der schnellste und leichteste Weg, um Ihre Ansprüche durchzusetzen. 
-	- Die meisten Konflikte lassen sich bereits im Dialog lösen. 
+	- In den meisten Fällen beseitigen die Vermieter:innen den Mangel sobald sie benachrichtigt werden. 
 	- Mit einer schriftlichen Mängelanzeige haben Sie außerdem einen Nachweis für den weiteren Prozess
 
 - **Wie gehe ich vor?** 
-	- Kontaktieren Sie ihre Vermieter:in direkt und schildern Sie den Mangel konkret und sachlich. Benennen Sie klar Ihre Forderung (bspw. Mängelbeseitigung), und bleiben Sie dabei freundlich und höflich. 
-	- Gleichzeitig sollten Sie eine schriftliche Mängelanzeige senden. Auch hier beschreiben Sie den Mangel und Ihre Forderung. Gleichzeitig setzen Sie eine realistische Frist, um den Mangel zu beseitigen. Um Ihre Miete mindern zu können, sollten Sie angeben, Ihre Miete ab sofort nur noch unter Vorbehalt zu zahlen.
+	- Kontaktieren Sie ihre Vermieter:in direkt und schildern Sie den Mangel konkret und sachlich. Benennen Sie klar Ihre Forderung (bspw. Mängelbeseitigung). Bleiben Sie dabei freundlich und höflich. 
+	- **Wichtig bei einer Mängelanzeige:** 
+        - Beschreiben Sie den Mangel und Ihre Forderung. 
+        - Setzen Sie ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
+        - Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen. Wenn Sie einen Anspruch auf Mietminderung haben, können Sie diese nachträglich einforndern. Sollten Sie keinen Anspruch haben, entstehen Ihnen und Ihrer Vermieter:in keine Nachteile.
 `,
     },
     {
@@ -67,10 +69,11 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
       content: `
 - **Warum?** 
-	- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht nur übersehen. Dann kann sich eine zweite Kontaktaufnahme lohnen. 
+	- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht nur übersehen. Dann kann sich eine zweite Kontaktaufnahme lohnen.
+  - Mit der Androhung rechtlicher Schritte erhöhen Sie den Druck. Manche Vermieter:innen reagieren erst auf erhöhten Druck.
 
 - **Wie gehe ich vor?** 
-	- Nutzen Sie erneut unsere Vorlage für eine Mängelanzeige und ergänzen Sie, dass Sie ein letztes Mal um Mängelbeseitigung bitten, bevor Sie weitere rechtliche Schritte einleiten.
+	- Nutzen Sie erneut unsere Vorlage für eine Mängelanzeige und ergänzen Sie: "Ich bitte ein letztes Mal um Mängelbeseitigung. Danach behalte ich mir vor weitere rechtliche Schritte einzuleiten."
 `,
     },
     {
@@ -86,7 +89,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   - Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
 
 - **Wie gehe ich vor?** 
-	-  In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
+	- In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
   - Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 
   - Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen, um ein Gespräch zu vereinbaren.
   `,
@@ -101,9 +104,11 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 - **Warum?** 
   - Eine Klage ist ein Antrag auf eine gerichtliche Entscheidung durch eine Richter:in. 
   - Damit ist eine Klage der letzte Weg, Ihre Ansprüche durchzusetzen, wenn Ihre Vermieter:in diese nicht von sich erfüllt. 
+  - Widersetzt sich Ihre Vermieter:in einem gerichtlichen Urteil, drohen ihr hohe Strafen.
 
 - **Wie gehe ich vor?** 
-	- Durch eine Klage wird ein Gerichtsverfahren eingeleitet.
+  - Als erstes erstellen Sie eine Klageschrift.
+	- Wenn Sie diese bei Gericht einreichen, wird ein Gerichtsverfahren eingeleitet.
   - Auch im Gericht wird erst versucht eine Einigung zu finden.
   - Sollte das nicht klappen wird eine Richter:in mit einem Urteil über ihren Fall entschieden. 
   - Hier informieren wir Sie, wie eine Klageeinreichung und das Gerichtsverfahren abläuft, und welche Kosten dabei entstehen. Im Anschluss können Sie selbst eine Klage einreichen.
