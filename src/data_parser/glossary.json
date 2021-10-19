@@ -1,47 +1,88 @@
 [
   {
-    "Name": "Klage",
-    "Text": "Die Klage ist ein Mittel, um bestimmte Anspr\u00fcche vor Gericht geltend zu machen.\n\nF\u00fcr Klagen gelten eine Reihe von formalen Anforderungen; f\u00fcr Zivilklagen sind die Grundz\u00fcge z.B. in \u00a7 253 ZPO geregelt.\nBeispielsweise m\u00fcssen Klagen fast immer schriftlich erhoben werden, den Beklagten bezeichnen und gewisse Antr\u00e4ge enthalten."
-  },
-  {
     "Name": "Anspruch",
-    "Text": "Der Anspruch ist das, was ich brauche, um von jemandem ein bestimmtes Tun oder Unterlassen verlangen zu k\u00f6nnen.\n\nIm deutschen Recht ergibt sich ein Anspruch in der Regel aus einem bestimmten Paragraphen eines Gesetzes.\nDaher hei\u00dfen diese Vorschriften auch \"Anspruchsgrundlagen\"."
-  },
-  { "Name": "Vorbehalt", "Text": "???" },
-  {
-    "Name": "Streitwert",
-    "Text": "Mit dem Streitwert wird der Wert des Streitgegenstandes bemessen. Die Wertfestsetzung steht im freien Ermessen des Gerichts. Nach dem Streitwert richtet sich auch die H\u00f6he der Verg\u00fctung der Rechtsanw\u00e4lte sowie die der Gerichtskosten.\n\nBeispiel: Bei einem Streit um ein Haus (=Streitgegenstand), das 100.000 Euro wert ist, wird der Streitwert ebenfalls 100.000 Euro betragen."
+    "Regex": "[Aa]nspr(uch|üche)",
+    "Text": "Der Anspruch ist das, was ich brauche, um von jemandem ein bestimmtes Tun oder Unterlassen verlangen zu k\u00f6nnen.\r\n\r\nIm deutschen Recht ergibt sich ein Anspruch in der Regel aus einem bestimmten Paragraphen eines Gesetzes.\r\nDaher hei\u00dfen diese Vorschriften auch \"Anspruchsgrundlagen\"."
   },
   {
-    "Name": " Mangel",
-    "Text": "Nach dem Wortlaut des \u00a7 535 Abs. 1 Satz 2 BGB hat der Vermieter die Mietsache dem Mieter in einem zum vertragsgem\u00e4ssen Gebrauch geeigneten Zustand zu \u00fcberlassen und sie w\u00e4hrend der Mietzeit in diesem Zustand zu erhalten."
+    "Name": "Bruttomiete",
+    "Regex": "[Bb]ruttomiete",
+    "Text": "Der Betrag der Miete mit allen Nebenkosten eingerechnet."
   },
   {
-    "Name": "Gerichtskosten",
-    "Text": "Gerichtskosten sind ein Teil der anfallenden Kosten innerhalb eines Prozesses. Der deutsche Staat erhebt diese Kosten f\u00fcr T\u00e4tigkeiten in den einzelnen Gerichtsverfahren.\n\nDie H\u00f6he der Kosten richtet sich nach dem Gerichtskostengesetz, der Kostenordnung und die dazugeh\u00f6rigen Nebengesetze. Die Gerichtskosten lassen sich demnach in Geb\u00fchren und Auslagen gliedern. Geb\u00fchren werden f\u00fcr die T\u00e4tigkeit als solche erhoben. Auslagen hingegen richten sich nach dem Einzelfall. Dies k\u00f6nnen vor allem die Bef\u00f6rderungskosten der Zeugen, Sachverst\u00e4ndigenkosten, sowie Post- und Telekommunikationskosten sein."
+    "Name": "Schadensersatz",
+    "Regex": "[Ss]chadensersatz",
+    "Text": "Ist durch den Mangel Ihr Eigentum besch\u00e4digt worden, haben Sie das Recht auf Entsch\u00e4digung. Ihr Vermieter muss Ihnen den Schaden in Form einer Geldzahlung entsch\u00e4digen."
   },
   {
-    "Name": "Prozess",
-    "Text": "Der Prozess ist ein gerichtliches Verfahren.\nEr wird durch eine Klage eingeleitet und endet mit dem Urteil."
-  },
-  {
-    "Name": "Prozesskostenhilfe",
-    "Text": "Die Prozesskostenhilfe (PKH) ist eine finanzielle M\u00f6glichkeit, wonach einkommensschwachen Personen eine finanzielle Unterst\u00fctzung vom Staat zur Durchf\u00fchrung von Gerichtsverfahren gew\u00e4hrt wird."
-  },
-  {
-    "Name": "Urteil",
-    "Text": "Mit Urteil wird in der Rechtssprache eine gerichtliche Entscheidung bezeichnet, gegen die in der Regel ein Rechtsmittel (Berufung oder Revision) eingelegt werden kann. Dies hat zur Folge, dass die n\u00e4chsth\u00f6here Instanz \u00fcber die Sache ihrerseits mit einem Urteil entscheiden muss (sog. Devolutiveffekt)."
+    "Name": "M\u00e4ngelbeseitigung",
+    "Regex": "[Mm]\u00e4ngelbeseitigung",
+    "Text": "Bei einem Mangel in Ihrer Wohnung, haben Sie das Recht, dass dieser Mangel beseitigt wird. Diesen Anspruch nennt man Anspruch auf M\u00e4ngelbeseitigung."
   },
   {
     "Name": "Verj\u00e4hrung",
-    "Text": "Nach Eintritt der Verj\u00e4hrung geht der Anspruch zwar nicht unter, er kann aber nicht mehr durchgesetzt werden.\n\nDie regelm\u00e4\u00dfige Verj\u00e4hrungsfrist betr\u00e4gt 3 Jahre, \u00a7 195 BGB. Sie greift, wenn das Gesetz f\u00fcr einen bestimmten Fall nicht eine k\u00fcrzere oder eine l\u00e4ngere Verj\u00e4hrungsfrist vorsieht (z.B. \u00a7 197 BGB)."
+    "Regex": "[Vv]erj\u00e4hrung",
+    "Text": "Ein Anspruch kann nicht ewig vor Gericht eingeklagt werden. In der Regel verj\u00e4hrt ein rechtlicher Anspruch nach 3 Jahren. Es gibt aber auch Ausnahmen mit k\u00fcrzeren und l\u00e4ngeren Fristen. Bei Unklarheit kann eine rechtliche Beratung ermitteln, ob Ihr Anspruch schon verj\u00e4hrt ist."
+  },
+  {
+    "Name": "Prozesskostenhilfe",
+    "Regex": "[Pp]rozesskostenhilfe",
+    "Text": "Mit der Prozesskostenhilfe (PKH) werden B\u00fcrger mit wenig Einkommen vor Gericht unterst\u00fctzt. Sollten Sie zu wenig Einkommen haben, um die Kosten eines Prozesses bezahlen zu k\u00f6nnen, k\u00f6nnen sie beantragen, dass der Staat die Kosten \u00fcbernimmt."
+  },
+  {
+    "Name": "Prozess",
+    "Regex": "[Pp]rozess",
+    "Text": "Der Prozess ist ein gerichtliches Verfahren.\r\nEr wird durch eine Klage eingeleitet und endet mit dem Urteil."
+  },
+  {
+    "Name": "Gerichtskosten",
+    "Regex": "[Gg]erichtskosten",
+    "Text": "Gerichtskosten sind Kosten, die an das Gericht f\u00fcr einen Prozess bezahlt werden m\u00fcssen. Die H\u00f6he der Kosten ist im Gesetz festgeschrieben. Der Wert der Sachen, die verhandelt werden, bestimmt die H\u00f6he der Kosten. Je wertvoller die Sachen, desto h\u00f6her fallen die Gerichtskosten aus. Die Gerichtskosten decken die Kosten, die bei jedem Fall anfallen. F\u00fcr einige F\u00e4lle fallen zus\u00e4tzliche Kosten an. Wenn zum Beispiel Experten angeh\u00f6rt werden, steigen die Kosten, da diese f\u00fcr Ihre Zeit entsch\u00e4digt werden.   "
   },
   {
     "Name": "Mietminderung",
-    "Text": "Als Mieter:in hat man hierzulande das Privileg, die Miete mindern zu k\u00f6nnen, wenn ein Mangel am Mietobjekt auftritt. Die Gr\u00fcnde f\u00fcr eine Mietminderung sind sehr unterschiedlich und umfassen u.a. Schimmel in der Wohnung, Wassersch\u00e4den oder auch Baul\u00e4rm. Eigenst\u00e4ndig sollten Mieter die Miete jedoch nicht mindern, die Minderungsquote sollte stets durch einen Experten erfolgen, da es hierf\u00fcr keine starren Vorgaben gibt, es also stets einzelfallabh\u00e4ngig ist, um welchen Betrag die Miete gemindert werden sollte."
+    "Regex": "[Mm]ietminderung",
+    "Text": "Unter bestimmten Umst\u00e4nden kann man als Mieter:in eine geringere Miete verlangen. Die Gr\u00fcnde f\u00fcr eine Mietminderung sind sehr unterschiedlich und umfassen u.a. Schimmel in der Wohnung, Wassersch\u00e4den oder auch Baul\u00e4rm. Eigenst\u00e4ndig sollten Mieter:innen die Miete jedoch nicht senken. Um wie viel die Miete gesenkt werden darf ist von den Umst\u00e4nden eines Falls abh\u00e4ngig. Senken Sie die Miete eigenst\u00e4ndig zu hoch, kann der Vermieter Sie verklagen. Stattdessen k\u00f6nnen Sie dem Vermieter mitteilen, dass sie die Miete nur noch unter Vorbehalt zahlen. Wenn Sie dann kl\u00e4ren k\u00f6nnen, um wie viel Sie die Miete senken d\u00fcrfen, muss der Vermieter Ihnen auch die bereits zu viel gezahlte Miete zur\u00fcckzahlen."
+  },
+  { "Name": "Mietsache", "Regex": "[Mm]ietsache", "Text": "Wohnung die vermietet wird." },
+  {
+    "Name": "Vorbehalt",
+    "Regex": "[Vv]orbehalt",
+    "Text": "Wenn Sie die Miete aus einem bestimmten Grund unter Vorbehalt zahlen, k\u00f6nnen Sie sp\u00e4ter R\u00fcckzahlungen fordern. Diese sind nur dann m\u00f6glich, wenn sich der Grund als rechtlich korrekt herausstellt. "
+  },
+  {
+    "Name": "Streitwert",
+    "Regex": "[Ss]treitwert",
+    "Text": "Unter dem Begriff Streitwert wird der Wert zusammengefasst, der in einem Gerichtsprozess verhandelt wird. Der Streitwert wird immer in Euro angeben. Wird um bestimmte Gegenst\u00e4nde verhandelt, ist der Streitwert vom Wert der Gegenst\u00e4nde abh\u00e4ngig. Da die Bewertung in manchen F\u00e4llen nicht eindeutig ist, bestimmt das Gericht den Streitwert. Die Kl\u00e4ger:in darf allerdings einen Vorschlag machen.\r\n\r\nBeispiel: Bei einem Streit um ein Haus (=Streitgegenstand), das 100.000 Euro wert ist, wird der Streitwert ebenfalls 100.000 Euro betragen."
+  },
+  {
+    "Name": "Aufwendungsersatz",
+    "Regex": "[Aa]ufwendungsersatz",
+    "Text": "Der Vermieter muss Ihnen entstanden Kosten bei der Beseitigung eines M\u00e4ngels erstatten. Der Name dieses Anspruches ist Aufwendungsersatz."
+  },
+  {
+    "Name": "M\u00e4ngelanzeige",
+    "Regex": "[Mm]\u00e4ngelanzeige",
+    "Text": "Besteht ein Mangel in Ihrer Wohnung, ist es erfoderlich, dass sie Ihren Vermieter informieren. Der juristische Name daf\u00fcr ist M\u00e4ngelanzeige."
+  },
+  {
+    "Name": "Klage",
+    "Regex": "[Kk]lage",
+    "Text": "Wenn Sie eine Klage vor Gericht einreichen, sagen Sie damit, Ihre Rechte wurden verletzt. Mit der Klagen wollen Sie das Gericht dazu bringen, Ihre Rechte durchzusetzen. Der Erfolg der Klage h\u00e4ngt davon ab, ob die Richter:innen Ihnen zustimmen."
+  },
+  {
+    "Name": "Urteil",
+    "Regex": "[Uu]rteil",
+    "Text": "Ein Urteil ist eine gerichtliche Entscheidung in einem Prozess. Beide Parteien k\u00f6nnen einem Urteil in der Regel widersprechen. Durch einen Widerspruch geht der Prozess an einem h\u00f6heren Gericht weiter. Erst wenn es keinen Widerspruch mehr gibt oder das h\u00f6chste Gericht entschieden hat, ist ein Urteil endg\u00fcltig."
+  },
+  {
+    "Name": "Mangel",
+    "Regex": "(M|Mietm)[a\u00e4]ngel",
+    "Text": "Ein Mangel ist allgemein ein Zustand, der das Wohnen in einer Mietwohnung beeintr\u00e4chtigt. Eine Beintr\u00e4chtigung kann auf viele Arten erfolgen. Welche Pflichten und Anspr\u00fcche aus einem Mangel entstehen ist von den Umst\u00e4nden abh\u00e4ngig."
   },
   {
     "Name": "Ruhest\u00f6rung",
+    "Regex": "[Rr]uhest\u00f6rung(en|)",
     "Text": "Ruhest\u00f6rung (auch \"L\u00e4rmbel\u00e4stigung\" genannt) ist grunds\u00e4tzlich eine unzumutbare Bel\u00e4stigung anderer Menschen in Form von L\u00e4rm. Wenn der L\u00e4rm die Nachbarschaft oder die Allgemeinheit erheblich st\u00f6rt (L\u00e4rmst\u00f6rung), stellt dies eine Ordnungswidrigkeit dar."
   }
 ]

@@ -21,23 +21,6 @@ function getIndicesOf(searchStr: string, str: string): number[] {
   return indices;
 }
 
-function addInlineCodeMarkdown(text: string, keyword: string, infoText: string): string {
-  let tempString: string[] = [];
-  let indices: number[] = getIndicesOf(keyword, text);
-  if (indices.length > 0) {
-    var lastAddedIndex: number = 0;
-    indices.forEach((index) => {
-      tempString.push(text.substr(lastAddedIndex, index - lastAddedIndex));
-      tempString.push('`' + keyword + '`');
-      lastAddedIndex = index + keyword.length;
-    });
-    tempString.push(text.substr(lastAddedIndex, text.length - lastAddedIndex));
-  } else {
-    tempString = [text];
-  }
-  return tempString.join('');
-}
-
 interface AnnotadedTextProps {
   text: string;
 }
@@ -47,7 +30,12 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
 
   var annotatedText: string = text;
   Glossary.forEach((valuePair) => {
-    annotatedText = addInlineCodeMarkdown(annotatedText, valuePair.Name, valuePair.Text);
+    annotatedText = annotatedText.replace(new RegExp('[ *]' + valuePair.Regex + '[ \\.,*:]'), (match) => {
+      let splitedMatch = match.split(/[ \.,\*:]/);
+      console.log(splitedMatch);
+      let textIndex = splitedMatch.findIndex((value, index, obj) => value != '');
+      return match.replace(splitedMatch[textIndex], '`' + splitedMatch[textIndex] + '`');
+    });
   });
 
   return (
@@ -57,7 +45,7 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
           code({ node, inline, className, children, ...props }) {
             let key: string = children + '';
             return (
-              <Tooltip hasArrow label={Glossary.find((value) => value.Name == key)?.Text}>
+              <Tooltip hasArrow label={Glossary.find((value) => new RegExp(value.Regex).test(key))?.Text}>
                 <Text
                   as="span"
                   style={{ textDecoration: 'underline', textDecorationStyle: 'dotted', textDecorationColor: 'gray' }}>

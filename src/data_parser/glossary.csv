@@ -1,26 +1,25 @@
-Name,Text
-Klage,"Die Klage ist ein Mittel, um bestimmte Ansprüche vor Gericht geltend zu machen.
-
-Für Klagen gelten eine Reihe von formalen Anforderungen; für Zivilklagen sind die Grundzüge z.B. in § 253 ZPO geregelt.
-Beispielsweise müssen Klagen fast immer schriftlich erhoben werden, den Beklagten bezeichnen und gewisse Anträge enthalten."
-Anspruch,"Der Anspruch ist das, was ich brauche, um von jemandem ein bestimmtes Tun oder Unterlassen verlangen zu können.
+﻿Name,Regex,Text
+Anspruch,[Aa]nspruch,"Der Anspruch ist das, was ich brauche, um von jemandem ein bestimmtes Tun oder Unterlassen verlangen zu können.
 
 Im deutschen Recht ergibt sich ein Anspruch in der Regel aus einem bestimmten Paragraphen eines Gesetzes.
 Daher heißen diese Vorschriften auch ""Anspruchsgrundlagen""."
-Vorbehalt,???
-Streitwert,"Mit dem Streitwert wird der Wert des Streitgegenstandes bemessen. Die Wertfestsetzung steht im freien Ermessen des Gerichts. Nach dem Streitwert richtet sich auch die Höhe der Vergütung der Rechtsanwälte sowie die der Gerichtskosten.
+Bruttomiete,[Bb]ruttomiete,Der Betrag der Miete mit allen Nebenkosten eingerechnet.
+Schadensersatz,[Ss]chadensersatz,"Ist durch den Mangel Ihr Eigentum beschädigt worden, haben Sie das Recht auf Entschädigung. Ihr Vermieter muss Ihnen den Schaden in Form einer Geldzahlung entschädigen."
+Mängelbeseitigung,[Mm]ängelbeseitigung,"Bei einem Mangel in Ihrer Wohnung, haben Sie das Recht, dass dieser Mangel beseitigt wird. Diesen Anspruch nennt man Anspruch auf Mängelbeseitigung."
+Verjährung,[Vv]erjährung,"Ein Anspruch kann nicht ewig vor Gericht eingeklagt werden. In der Regel verjährt ein rechtlicher Anspruch nach 3 Jahren. Es gibt aber auch Ausnahmen mit kürzeren und längeren Fristen. Bei Unklarheit kann eine rechtliche Beratung ermitteln, ob Ihr Anspruch schon verjährt ist."
+Prozesskostenhilfe,[Pp]rozesskostenhilfe,"Mit der Prozesskostenhilfe (PKH) werden Bürger mit wenig Einkommen vor Gericht unterstützt. Sollten Sie zu wenig Einkommen haben, um die Kosten eines Prozesses bezahlen zu können, können sie beantragen, dass der Staat die Kosten übernimmt."
+Prozess,[Pp]rozess,"Der Prozess ist ein gerichtliches Verfahren.
+Er wird durch eine Klage eingeleitet und endet mit dem Urteil."
+Gerichtskosten,[Gg]erichtskosten,"Gerichtskosten sind Kosten, die an das Gericht für einen Prozess bezahlt werden müssen. Die Höhe der Kosten ist im Gesetz festgeschrieben. Der Wert der Sachen, die verhandelt werden, bestimmt die Höhe der Kosten. Je wertvoller die Sachen, desto höher fallen die Gerichtskosten aus. Die Gerichtskosten decken die Kosten, die bei jedem Fall anfallen. Für einige Fälle fallen zusätzliche Kosten an. Wenn zum Beispiel Experten angehört werden, steigen die Kosten, da diese für Ihre Zeit entschädigt werden.   "
+Mietminderung,[Mm]ietminderung,"Unter bestimmten Umständen kann man als Mieter:in eine geringere Miete verlangen. Die Gründe für eine Mietminderung sind sehr unterschiedlich und umfassen u.a. Schimmel in der Wohnung, Wasserschäden oder auch Baulärm. Eigenständig sollten Mieter:innen die Miete jedoch nicht senken. Um wie viel die Miete gesenkt werden darf ist von den Umständen eines Falls abhängig. Senken Sie die Miete eigenständig zu hoch, kann der Vermieter Sie verklagen. Stattdessen können Sie dem Vermieter mitteilen, dass sie die Miete nur noch unter Vorbehalt zahlen. Wenn Sie dann klären können, um wie viel Sie die Miete senken dürfen, muss der Vermieter Ihnen auch die bereits zu viel gezahlte Miete zurückzahlen."
+Mietsache,[Mm]ietsache,Wohnung die vermietet wird.
+Vorbehalt,[Vv]orbehalt,"Wenn Sie die Miete aus einem bestimmten Grund unter Vorbehalt zahlen, können Sie später Rückzahlungen fordern. Diese sind nur dann möglich, wenn sich der Grund als rechtlich korrekt herausstellt. "
+Streitwert,[Ss]treitwert,"Unter dem Begriff Streitwert wird der Wert zusammengefasst, der in einem Gerichtsprozess verhandelt wird. Der Streitwert wird immer in Euro angeben. Wird um bestimmte Gegenstände verhandelt, ist der Streitwert vom Wert der Gegenstände abhängig. Da die Bewertung in manchen Fällen nicht eindeutig ist, bestimmt das Gericht den Streitwert. Die Kläger:in darf allerdings einen Vorschlag machen.
 
 Beispiel: Bei einem Streit um ein Haus (=Streitgegenstand), das 100.000 Euro wert ist, wird der Streitwert ebenfalls 100.000 Euro betragen."
-Mangel,Nach dem Wortlaut des § 535 Abs. 1 Satz 2 BGB hat der Vermieter die Mietsache dem Mieter in einem zum vertragsgemässen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten.
-Gerichtskosten,"Gerichtskosten sind ein Teil der anfallenden Kosten innerhalb eines Prozesses. Der deutsche Staat erhebt diese Kosten für Tätigkeiten in den einzelnen Gerichtsverfahren.
-
-Die Höhe der Kosten richtet sich nach dem Gerichtskostengesetz, der Kostenordnung und die dazugehörigen Nebengesetze. Die Gerichtskosten lassen sich demnach in Gebühren und Auslagen gliedern. Gebühren werden für die Tätigkeit als solche erhoben. Auslagen hingegen richten sich nach dem Einzelfall. Dies können vor allem die Beförderungskosten der Zeugen, Sachverständigenkosten, sowie Post- und Telekommunikationskosten sein."
-Prozess,"Der Prozess ist ein gerichtliches Verfahren.
-Er wird durch eine Klage eingeleitet und endet mit dem Urteil."
-Prozesskostenhilfe,"Die Prozesskostenhilfe (PKH) ist eine finanzielle Möglichkeit, wonach einkommensschwachen Personen eine finanzielle Unterstützung vom Staat zur Durchführung von Gerichtsverfahren gewährt wird."
-Urteil,"Mit Urteil wird in der Rechtssprache eine gerichtliche Entscheidung bezeichnet, gegen die in der Regel ein Rechtsmittel (Berufung oder Revision) eingelegt werden kann. Dies hat zur Folge, dass die nächsthöhere Instanz über die Sache ihrerseits mit einem Urteil entscheiden muss (sog. Devolutiveffekt)."
-Verjährung,"Nach Eintritt der Verjährung geht der Anspruch zwar nicht unter, er kann aber nicht mehr durchgesetzt werden.
-
-Die regelmäßige Verjährungsfrist beträgt 3 Jahre, § 195 BGB. Sie greift, wenn das Gesetz für einen bestimmten Fall nicht eine kürzere oder eine längere Verjährungsfrist vorsieht (z.B. § 197 BGB)."
-Mietminderung,"Als Mieter:in hat man hierzulande das Privileg, die Miete mindern zu können, wenn ein Mangel am Mietobjekt auftritt. Die Gründe für eine Mietminderung sind sehr unterschiedlich und umfassen u.a. Schimmel in der Wohnung, Wasserschäden oder auch Baulärm. Eigenständig sollten Mieter die Miete jedoch nicht mindern, die Minderungsquote sollte stets durch einen Experten erfolgen, da es hierfür keine starren Vorgaben gibt, es also stets einzelfallabhängig ist, um welchen Betrag die Miete gemindert werden sollte."
-Ruhestörung,"Ruhestörung (auch ""Lärmbelästigung"" genannt) ist grundsätzlich eine unzumutbare Belästigung anderer Menschen in Form von Lärm. Wenn der Lärm die Nachbarschaft oder die Allgemeinheit erheblich stört (Lärmstörung), stellt dies eine Ordnungswidrigkeit dar."
+Aufwendungsersatz,[Aa]ufwendungsersatz,Der Vermieter muss Ihnen entstanden Kosten bei der Beseitigung eines Mängels erstatten. Der Name dieses Anspruches ist Aufwendungsersatz.
+Mängelanzeige,[Mm]ängelanzeige,"Besteht ein Mangel in Ihrer Wohnung, ist es erfoderlich, dass sie Ihren Vermieter informieren. Der juristische Name dafür ist Mängelanzeige."
+Klage,[Kk]lage,"Wenn Sie eine Klage vor Gericht einreichen, sagen Sie damit, Ihre Rechte wurden verletzt. Mit der Klagen wollen Sie das Gericht dazu bringen, Ihre Rechte durchzusetzen. Der Erfolg der Klage hängt davon ab, ob die Richter:innen Ihnen zustimmen."
+Urteil,[Uu]rteil,"Ein Urteil ist eine gerichtliche Entscheidung in einem Prozess. Beide Parteien können einem Urteil in der Regel widersprechen. Durch einen Widerspruch geht der Prozess an einem höheren Gericht weiter. Erst wenn es keinen Widerspruch mehr gibt oder das höchste Gericht entschieden hat, ist ein Urteil endgültig."
+Mangel,[Mm][aä]ngel,"Ein Mangel ist allgemein ein Zustand, der das Wohnen in einer Mietwohnung beeinträchtigt. Eine Beinträchtigung kann auf viele Arten erfolgen. Welche Pflichten und Ansprüche aus einem Mangel entstehen ist von den Umständen abhängig."
+Ruhestörung,[Rr]uhestörung,"Ruhestörung (auch ""Lärmbelästigung"" genannt) ist grundsätzlich eine unzumutbare Belästigung anderer Menschen in Form von Lärm. Wenn der Lärm die Nachbarschaft oder die Allgemeinheit erheblich stört (Lärmstörung), stellt dies eine Ordnungswidrigkeit dar."
