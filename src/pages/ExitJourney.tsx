@@ -40,7 +40,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
           abzudecken.
         </Text> */}
         <Text>
-          Sie suchen dennoch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
+          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
           individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie
           diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt.
         </Text>
