@@ -32,7 +32,6 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
   Glossary.forEach((valuePair) => {
     annotatedText = annotatedText.replace(new RegExp('[ *]' + valuePair.Regex + '[ \\.,*:]'), (match) => {
       let splitedMatch = match.split(/[ \.,\*:]/);
-      console.log(splitedMatch);
       let textIndex = splitedMatch.findIndex((value, index, obj) => value != '');
       return match.replace(splitedMatch[textIndex], '`' + splitedMatch[textIndex] + '`');
     });
