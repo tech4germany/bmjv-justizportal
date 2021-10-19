@@ -1,6 +1,7 @@
 import { ChevronDownIcon, ChevronRightIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
+  BoxProps,
   Button,
   Collapse,
   Flex,
@@ -16,17 +17,69 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import { i18n } from '@lingui/core';
 import { t } from '@lingui/macro';
 import React from 'react';
+import { FaGlobeAfrica } from 'react-icons/fa';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import { gerUserLocale, locales, dynamicActivate } from '../../i18n';
 
-export const MenuWithSubnavigation = () => {
+interface FeatureProps extends BoxProps {}
+
+export const LanguageSelector = (props: FeatureProps) => {
+  // const linkColor = useColorModeValue('gray.600', 'gray.200');
+  // const linkHoverColor = useColorModeValue('gray.800', 'white');
+  const popoverContentBgColor = useColorModeValue('gray.100', 'gray.800');
+  // const greenHex = useColorModeValue('#38a169', '#68d391');
+
+  return (
+    <Box alignSelf="center" {...props}>
+      <Popover trigger={'hover'} placement={'bottom-start'}>
+        <PopoverTrigger>
+          <Button aria-label="" paddingInline="0.5rem" fontSize="lg" variant="ghost" leftIcon={<FaGlobeAfrica />}>
+            {' '}
+            {gerUserLocale().toUpperCase()}
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent
+          border={0}
+          boxShadow={'xl'}
+          // bg={popoverContentBgColor}
+          rounded={'xl'}
+          width={'100%'}
+          minW={10}>
+          <Stack>
+            {Object.keys(locales).map((key) => (
+              <Box
+                key={key}
+                role={'group'}
+                display={'block'}
+                _hover={{ background: popoverContentBgColor }}
+                p={2}
+                px={5}
+                rounded={'xl'}
+                onClick={() => {
+                  dynamicActivate(key);
+                }}>
+                <Text transition={'all .3s ease'} fontSize={'2xl'}>
+                  {locales[key][1]}
+                </Text>
+              </Box>
+            ))}
+          </Stack>
+        </PopoverContent>
+      </Popover>
+    </Box>
+  );
+};
+
+export const MenuWithSubnavigation = (props: FeatureProps) => {
   const { isOpen, onToggle } = useDisclosure();
   const color = useColorModeValue('#38a169', '#9ae6b4');
 
   return (
-    <Box position={{ md: 'sticky' }} top={0} width="100%" zIndex="100">
+    <Box position={{ md: 'sticky' }} top={0} width="100%" zIndex="100" {...props}>
       <Flex
         bg={useColorModeValue('gray.50', 'gray.600')}
         color={useColorModeValue('gray.600', 'white')}
@@ -66,7 +119,8 @@ export const MenuWithSubnavigation = () => {
         </Flex>
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-          <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'flex', md: 'flex' }} />
+          <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
+          <LanguageSelector />
           <Button display="none" colorScheme="green">
             Anmelden
           </Button>
@@ -112,7 +166,7 @@ const DesktopNav = () => {
                   borderBottomWidth: 4,
                   borderBottomColor: greenHex,
                 }}>
-                {navItem.label}
+                {i18n._(navItem.label)}
               </Link>
             </PopoverTrigger>
 
@@ -183,7 +237,7 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
-  const greenHex = useColorModeValue('#38a169', '#68d391');
+  // const greenHex = useColorModeValue('#38a169', '#68d391');
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
@@ -249,15 +303,15 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '/solutionexplorer',
   },
   {
-    label: 'Shortcuts',
+    label: '🏎',
     href: '/short',
     children: [
       {
-        label: 'Schimmel',
+        label: '1',
         href: '/solutionexplorer?id=cerik08cssg0',
       },
       {
-        label: 'Ansprüche',
+        label: '2',
         href: '/possibleentitlements?id=ceybyumxibs0',
       },
     ],

@@ -8,6 +8,7 @@
   },
 
   "download": {
-    "files": "src/translations/${lang}/messages.po"
+    "files": "src/translations/${lang}/messages.po",
+    "includeSourceLang": true
   }
 }

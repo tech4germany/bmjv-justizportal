@@ -1,9 +1,12 @@
 import { Box } from '@chakra-ui/react';
+import { i18n } from '@lingui/core';
+import { I18nProvider } from '@lingui/react';
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import FooterSmallWithSocial from './components/shared/Footer';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
+import { dynamicActivate } from './i18n';
 import { MMGraph } from './logic/KMParser';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
@@ -33,9 +36,13 @@ function useQuery() {
 
 export const App = () => {
   const query = useQuery();
-
   const mmobject = new MMGraph();
   mmobject.initialize();
+
+  useEffect(() => {
+    // With this method we dynamically load the catalogs
+    dynamicActivate();
+  }, []);
 
   let [userState, setUserState] = usePersistedState('UserState', new UserState());
 
@@ -48,24 +55,26 @@ export const App = () => {
   };
 
   return (
-    <Box display="flex" flexDir="column" minH="100vh">
-      <ScrollToTop />
-      <MenuWithSubnavigation />
-      <Switch>
-        <Route path="/" children={() => <Home {...featureProps} />} exact />
-        <Route path="/solutionexplorer" children={() => <SolutionExplorer {...featureProps} />} exact />
-        <Route path="/exit" children={() => <ExitJourney {...featureProps} />} exact />
-        <Route path="/zpo" children={() => <ZPOInformation {...featureProps} />} exact />
-        <Route path="/possibleentitlements" children={() => <PossibleEntitlements {...featureProps} />} exact />
-        <Route path="/nextsteps" children={() => <NextSteps {...featureProps} />} exact />
-        <Route path="/bryter" exact>
-          <Helmet>
-            <title>Justiz Portal - BRYTER</title>
-          </Helmet>
-          <Bryter {...featureProps} />
-        </Route>
-      </Switch>
-      <FooterSmallWithSocial />
-    </Box>
+    <I18nProvider i18n={i18n}>
+      <Box display="flex" flexDir="column" minH="100vh">
+        <ScrollToTop />
+        <MenuWithSubnavigation />
+        <Switch>
+          <Route path="/" children={() => <Home {...featureProps} />} exact />
+          <Route path="/solutionexplorer" children={() => <SolutionExplorer {...featureProps} />} exact />
+          <Route path="/exit" children={() => <ExitJourney {...featureProps} />} exact />
+          <Route path="/zpo" children={() => <ZPOInformation {...featureProps} />} exact />
+          <Route path="/possibleentitlements" children={() => <PossibleEntitlements {...featureProps} />} exact />
+          <Route path="/nextsteps" children={() => <NextSteps {...featureProps} />} exact />
+          <Route path="/bryter" exact>
+            <Helmet>
+              <title>Justiz Portal - BRYTER</title>
+            </Helmet>
+            <Bryter {...featureProps} />
+          </Route>
+        </Switch>
+        <FooterSmallWithSocial />
+      </Box>
+    </I18nProvider>
   );
 };
