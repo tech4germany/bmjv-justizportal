@@ -3,7 +3,9 @@
     "de",
     "en",
     "uk",
-    "vi"
+    "vi",
+    "ru",
+    "tr"
   ],
   "sourceLocale": "de",
   "fallbackLocales": {

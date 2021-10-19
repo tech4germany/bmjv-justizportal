@@ -36,7 +36,7 @@ export default function FooterSmallWithSocial() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>
+        <Text fontSize={'md'}>
           <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
         </Text>
       </Container>

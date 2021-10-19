@@ -90,7 +90,7 @@ msgid "home.howitwork_classify"
 msgstr "Zunächst helfen wir Ihnen zu klären, ob in Ihrem Fall ein Rechtsproblem vorliegt. Dafür zeigen wir Ihnen auf Ihren Fall zugeschnittene Informationen."
 
 msgid "home.howitwork_heading"
-msgstr "So funktioniert es"
+msgstr "Nasıl çalışır"
 
 msgid "home.howitwork_lawsuit"
 msgstr "Wenn alle anderen Optionen erschöpft sind, helfen wir Ihnen online eine Klage beim Amtsgericht einzureichen. Dafür erklären wir Ihnen den Prozess unseres Online Verfahrens und zeigen transparent die Kosten für ein Gerichtsverfahren, sowie eine mögliche Rechtsberatung auf."

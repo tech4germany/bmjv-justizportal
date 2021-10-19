@@ -9,28 +9,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
 
 msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
-msgstr "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+msgstr "- **claim**\n  - Landlords have a duty to keep the rented property in a state\nto hand over and receive that corresponds to the contractual agreement. \n  - That's what tenants pay the rent for. \n  - If a defect occurs during the rental period, then the landlord must rectify it. \n- **Exception**: for small repairs up to an amount of approx. 100 euros per repair\n  - if it says so in the contract and\n  - a maximum annual amount has been set. \n- **Enforcement:**\n  - The claim for elimination of the defect can be made against the\nClaim landlords by asking them to remedy the defect. This often happens together\nwith the notification of the defect."
 
 msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-msgstr "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "The following claims could result from your information"
 
 msgid "Beseitigung des Mangels durch die Vermieter:in"
-msgstr "Beseitigung des Mangels durch die Vermieter:in"
+msgstr "Removal of the defect by the landlords"
 
 msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
 msgstr "As only twelve weeks were available for the entire project, this path could not yet be implemented."
 
 msgid "Die Justiz im Netz."
-msgstr "Justice on the Web."
+msgstr "Justice online."
 
 msgid "Dieser Pfad wurde noch nicht implementiert"
 msgstr "This path has not yet been implemented"
 
 msgid "Einfach, online, jederzeit."
-msgstr "Simple, online, at any time."
+msgstr "Simple, anywhere, at any time."
 
 msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
-msgstr "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+msgstr "Done! Based on the information you provide, the following legal claims could\ncome into question for you. A claim is the right to a particular behavior by another person\nto demand."
 
 msgid "Handlungsoptionen vergleichen"
 msgstr "Compare options for action"
@@ -51,7 +51,7 @@ msgid "Lösungsfinder"
 msgstr "Solutionfinder"
 
 msgid "Mietminderung"
-msgstr "Mietminderung"
+msgstr "Rent reduction"
 
 msgid "Nein"
 msgstr "No"
