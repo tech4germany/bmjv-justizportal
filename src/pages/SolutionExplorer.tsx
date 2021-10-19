@@ -40,10 +40,10 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   const state: string =
     data.children &&
-    (data.children.length == 1 ||
-      (data.children.length == 2 &&
-        ['NOANSWERD', 'YESANSWERD'].includes(data.children[0].type) &&
-        ['NOANSWERD', 'YESANSWERD'].includes(data.children[1].type)))
+      (data.children.length == 1 ||
+        (data.children.length == 2 &&
+          ['NOANSWERD', 'YESANSWERD'].includes(data.children[0].type) &&
+          ['NOANSWERD', 'YESANSWERD'].includes(data.children[1].type)))
       ? 'EC'
       : 'SE';
 
@@ -92,12 +92,12 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                       child.children
                         ? undefined
                         : toast({
-                            title: t`Dieser Pfad wurde noch nicht implementiert`,
-                            description: t`Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden.`,
-                            status: 'info',
-                            duration: 8000,
-                            isClosable: true,
-                          })
+                          title: t`Diese Option ist leider noch nicht verfügbar.`,
+                          // description: t`Bisher , konnte dieser Pfad leider noch nicht implementiert werden.`,
+                          status: 'info',
+                          duration: 8000,
+                          isClosable: true,
+                        })
                     }
                     {...child}
                   />

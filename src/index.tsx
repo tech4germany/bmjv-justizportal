@@ -19,7 +19,7 @@ i18n.load({
   uk: ukMessages,
   vi: viMessages,
 });
-i18n.activate('uk');
+i18n.activate('de');
 
 ReactDOM.render(
   <React.StrictMode>

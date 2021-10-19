@@ -25,7 +25,7 @@
                                 "y": 3
                             },
                             "expandState": "expand",
-                            "note": "{ICON:FaSeedling}\nWas ist ein **Mietmangel**? Vermieter:innen einer Wohnung sind verpflichtet, ihre Mieter:innen die Wohnung während der Mietzeit nutzen zu lassen. Die Wohnung muss dabei in einem geeigneten Zustand überlassen und erhalten werden. Liegt die **Wohnung in einem erheblich schlechteren Zustand vor** als üblicherweise erwartet werden kann oder **besteht eine Störung**, liegt gegebenenfalls ein Mangel vor. \n\n**Bei Mängeln kann ein Anspruch auf Mietminderung, Mängelbeseitigung, Kostenerstattung und/oder Schadensersatz bestehen** (§535 ff. BGB). Ansprüche gegen den Vermietenden wegen eines Mangels an der Mietsache bestehen nur, wenn der Mangel **erheblich** ist und **nicht** vom Mietenden **hingenommen werden muss.** Ein Mangel ist erheblich, wenn er nicht nur geringfügigen Umfang hat und die Brauchbarkeit nicht wesentlich stört."
+                            "note": "{ICON:FaSeedling}\n### Was ist ein **Mietmangel**?\n\nIhre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
                         },
                         "children": [
                             {
@@ -33,7 +33,7 @@
                                     "id": "ceppdwxwwig0",
                                     "created": 1633257281374,
                                     "text": "Schimmel",
-                                    "note": "{ICON:FaBahai}\n💬 **Definition - Wohnungsmängel durch Schimmel**: Schimmelpilze entstehen bei zu hoher Feuchtigkeit in der Wohnung. Diese ensteht beispielsweise durch unzureichendes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Seite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)\n\nDen Schimmelbefall oder auch feuchte Stellen müssen den Vermietenden sofort angezeigt werden ([Vorlage Mängelanzeige](https://www.notion.so/Vorlage-M-ngelanzeige-a6d70b4dbd7d4140bd146218f997025c)). \n\n**Mögliche Ansprüche:** Ob ein Anspruch wegen eines Mietmangels durch den Schimmel besteht oder nicht, hängt davon ab, ob die Mietenden den Schimmel (mit) verursacht haben. Sie müssen die Mietsache ordentlich heizen und lüften. Außerdem müssen auch die Möbel so in der Wohnung aufgestellt werden, dass sie ausreichend Abstand zu den Außenwänden haben. Halten die Mietenden diese Sorgfaltspflichten ein, dann ist es wahrscheinlich, dass die Schimmelentstehung im Verantwortungsbereich der Vermietenden liegt und entsprechende Ansprüche gegen die Vermietenden bestehen.\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"
+                                    "note": "{ICON:FaBahai}\n### Wohnungsmängel durch Schimmel\nSchimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
                                 },
                                 "children": [
                                     {
@@ -430,7 +430,7 @@
                                     "id": "ceppe048r140",
                                     "created": 1633257288287,
                                     "text": "Lärm",
-                                    "note": "{ICON:FaAssistiveListeningSystems}\n💬 **Definition - Wohnungsmängel durch Lärm / Ruhestörung:** Ruhestörungen oder Lärmbelästigungen können einen Mangel der Mietsache begründen, wenn sie erheblich sind. \n\n**Wann liegt ein Mangel vor?** Erhebliche Ruhestörungen liegen bei Lärm in den Ruhezeiten vor. Diese sind täglich nachts von 22 bis 6 Uhr morgens, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n\n✅ **Unter Ruhestörungen** **fallen** Störungen der Nachtruhe (über 30 Dezibel: Musik, Staubsaugen, laute Waschmaschine), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst den persönlichen Austausch suchen, um den Haussegen zu bewahren. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Ein freundliches und höfliches Gespräch kann helfen, die Lärmbelästigung für den Tag und auch für die Zukunft zu beheben.  Bei akuten, sehr starken Störungen können auch Ordnungsamt oder Polizei eingeschaltet werden.  \n\nTrifft die Beschreibung einer Ruhestörung auf Ihr Problem zu? Dann erfahren Sie mehr über mögliche rechtliche Ansprüche. Zur [Anspruchsprüfung]({/entitlement})"
+                                    "note": "{ICON:FaAssistiveListeningSystems}\n### Wohnungsmängel durch Lärm\nErheblicher Lärm kann als Mietmangel gelten, beispielswese bei Störungen in den Ruhezeiten. Diese sind in der Regel zwischen 22 und 6 Uhr, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n\n✅ **Unter Ruhestörungen fallen** Störungen der Nachtruhe (Musik, Staubsaugen, laute Waschmaschine über 30 Dezibel), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst freunddlich darauf ansprechen, um Streit zu vermeiden. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Bei akuten, sehr starken Störungen können Sie auch das Ordnungsamt oder die Polizei kontaktieren."
                                 },
                                 "children": []
                             },
@@ -439,7 +439,25 @@
                                     "id": "cepy6axcig80",
                                     "created": 1633282074890,
                                     "text": "Wasserschaden",
-                                    "note": "{ICON:FaBath}\n💬 **Definition - Wohnungsmängel durch Wasserschaden:** Wasserschäden entstehen durch das Eindringen von Wasser in den Wohnraum, beispielsweise durch Naturkatastrophen oder durch Schäden an Wasserleitungen.\n\nEs kann verschiedene Ursachen für Wasserschäden in einer Mietwohnung geben. Beispielsweise kann die Rohrleitung in einer Wand undicht werden, der Schlauch einer Waschmaschine kann sich lösen oder die Badewanne läuft über. Wichtig ist, als erstes die Wasser- und Stromzufuhr abzustellen, wenn der Wasserschaden bemerkt wird.  \n\nOb Ansprüche gegen die Vermietenden wegen des Wasserschadens bestehen, hängt davon ab, wer den Wasserschaden verursacht hat. \n\n**Verschulden der Mietenden**: Werden Wasserschäden durch defekte Geräte der Mietenden wie die Waschmaschine oder den Geschirrspüler verursacht, dann haften diese in der Regel für den Wasserschaden. Etwas anderes kann gelten, wenn die Geräte ebenfalls von den Vermietenden mit angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\n\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung möglicherweise weiterhelfen. \n\n**Verschulden der Vermietenden**: Für einen Wasserrohrbruch oder ähnliches sind regelmäßig die Hauseigentümer:innen verantwortlich (die ja auch oft Vermietende sind). Mietende können dann Ansprüche auf Beseitigung des Mangels, auf Schadensersatz, Minderung und eventuell auch auf Aufwendungsersatz haben).\n\nTrifft das auf Ihr Problem zu? Dann weiter zur [Anspruchsprüfung]({/entitlement})"
+                                    "note": "{ICON:FaBath}\n### Wohnungsmängel durch Wasserschäden\n\nWasserschäden in der Wohnung können beispielsweise durch starken Regen oder Schäden an Wasserleitungen, Geräten und im Bad entstehen.\n\nAnsprüche gegen Vermieter:innen oder Hauseigentümer:innen wegen des Wasserschadens bestehen dann, wenn diese den Mangel verschuldet haben, was beispielsweise oft bei Rohrbrüchen der Fall ist.\n\nWerden Wasserschäden durch eigene defekte Geräte wie Waschmaschine oder Geschirrspüler verursacht, haftet man in der Regel selbst. Etwas anderes kann gelten, wenn die Geräte mit der Wohnung angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\n\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung weiterhelfen. "
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf3gqcsm7iw0",
+                                    "created": 1634654705657,
+                                    "text": "Heizungsausfall",
+                                    "note": "{ICON:FaTemperatureLow}"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cf3grykujw80",
+                                    "created": 1634654831440,
+                                    "text": "Stromausfall",
+                                    "note": "{ICON:FaPowerOff}"
                                 },
                                 "children": []
                             },
@@ -452,18 +470,7 @@
                                     "priority": null,
                                     "expandState": "expand"
                                 },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cez5rxmlsb40",
-                                            "created": 1634217557334,
-                                            "text": "{EXIT}",
-                                            "priority": 1,
-                                            "note": "Aufgrund der kurzen Zeit"
-                                        },
-                                        "children": []
-                                    }
-                                ]
+                                "children": []
                             }
                         ]
                     },
@@ -501,6 +508,15 @@
                             "created": 1633281835773,
                             "text": "Kündigung",
                             "note": "{ICON:FaDoorClosed}"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cf3g1pstnqw0",
+                            "created": 1634652774865,
+                            "text": "Nebenkosten-abrechnung",
+                            "note": "{ICON:FaFileInvoice}"
                         },
                         "children": []
                     }
