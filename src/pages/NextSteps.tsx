@@ -118,8 +118,12 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 
   return (
     <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
-      <Heading marginInline={{ base: '2em', md: '0em' }}>Checkliste: Erste Schritte zur Problemlösung</Heading>
-      <Spacer />
+      <Heading marginInline={{ base: '2em', md: '0em' }}>Checkliste: Ihre nächsten Schritte zur Problemlösung</Heading>
+      <Text>
+        Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen.
+        Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+      </Text>
+      < Spacer />
       <Accordion alignSelf="stretch" allowToggle>
         {data.map((acc, index) =>
           acc.condition ? (
