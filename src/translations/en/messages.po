@@ -23,6 +23,9 @@ msgstr "As only twelve weeks were available for the entire project, this path co
 msgid "Die Justiz im Netz."
 msgstr "Justice online."
 
+msgid "Diese Option ist leider noch nicht verfügbar."
+msgstr "Diese Option ist leider noch nicht verfügbar."
+
 msgid "Dieser Pfad wurde noch nicht implementiert"
 msgstr "This path has not yet been implemented"
 
@@ -42,7 +45,7 @@ msgid "Info"
 msgstr "Info"
 
 msgid "Ja"
-msgstr "yes"
+msgstr "Yes"
 
 msgid "Jetzt starten!"
 msgstr "Start now!"
@@ -73,6 +76,9 @@ msgstr "How it works"
 
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "What can we help you with?"
+
+msgid "Zu den Beratungsangeboten"
+msgstr "Zu den Beratungsangeboten"
 
 msgid "Zurück"
 msgstr "Back"

@@ -7,176 +7,111 @@ msgstr ""
 "Project-Id-Version: Justizportal\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
 
-#: src/pages/PEntitlements.tsx:38
-msgid ""
-"- **Anspruch**\n"
-"- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\n"
-"zu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n"
-"- Dafür zahlen die Mietenden die Miete. \n"
-"- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n"
-"- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n"
-"- wenn das im Vertrag so steht und\n"
-"- ein Jahres-Höchstbetrag festgelegt wurde. \n"
-"- **Durchsetzung:**\n"
-"- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\n"
-"Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\n"
-"mit der Mitteilung über den Mangel."
-msgstr ""
-"- **Anspruch**\n"
-"- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\n"
-"zu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n"
-"- Dafür zahlen die Mietenden die Miete. \n"
-"- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n"
-"- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n"
-"- wenn das im Vertrag so steht und\n"
-"- ein Jahres-Höchstbetrag festgelegt wurde. \n"
-"- **Durchsetzung:**\n"
-"- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\n"
-"Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\n"
-"mit der Mitteilung über den Mangel."
+msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+msgstr "- **Anspruch**\n  - Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n  - Dafür zahlen die Mietenden die Miete. \n  - Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n  - wenn das im Vertrag so steht und\n  - ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n  - Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
 
-#: src/pages/PEntitlements.tsx:104
 msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgstr "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 
-#: src/pages/PEntitlements.tsx:33
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Beseitigung des Mangels durch die Vermieter:in"
 
-#: src/pages/SolutionExplorer.tsx:96
 msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
 msgstr "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
 
-#: src/pages/Home.tsx:31
 msgid "Die Justiz im Netz."
 msgstr "Die Justiz im Netz."
 
-#: src/pages/SolutionExplorer.tsx:95
+msgid "Diese Option ist leider noch nicht verfügbar."
+msgstr "Diese Option ist leider noch nicht verfügbar."
+
 msgid "Dieser Pfad wurde noch nicht implementiert"
 msgstr "Dieser Pfad wurde noch nicht implementiert"
 
-#: src/pages/Home.tsx:32
 msgid "Einfach, online, jederzeit."
 msgstr "Einfach, online, jederzeit."
 
-#: src/pages/PEntitlements.tsx:107
-msgid ""
-"Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\n"
-"für Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\n"
-"einzufordern."
-msgstr ""
-"Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\n"
-"für Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\n"
-"einzufordern."
+msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+msgstr "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
 
-#: src/pages/Home.tsx:79
 msgid "Handlungsoptionen vergleichen"
 msgstr "Handlungsoptionen vergleichen"
 
-#: src/pages/SolutionExplorer.tsx:79
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 msgstr "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 
-#: src/pages/SolutionExplorer.tsx:152
 msgid "Info"
 msgstr "Info"
 
-#: src/pages/SolutionExplorer.tsx:130
 msgid "Ja"
 msgstr "Ja"
 
-#: src/pages/Home.tsx:39
-#: src/pages/Home.tsx:102
 msgid "Jetzt starten!"
 msgstr "Jetzt starten!"
 
-#: src/components/shared/MainMenu.tsx:248
-#: src/pages/SolutionExplorer.tsx:78
 msgid "Lösungsfinder"
 msgstr "Lösungsfinder"
 
-#: src/pages/PEntitlements.tsx:56
 msgid "Mietminderung"
 msgstr "Mietminderung"
 
-#: src/pages/SolutionExplorer.tsx:133
 msgid "Nein"
 msgstr "Nein"
 
-#: src/pages/Home.tsx:85
 msgid "Online Klage einreichen"
 msgstr "Online Klage einreichen"
 
-#: src/pages/Home.tsx:65
 msgid "Rechtsproblem einordnen"
 msgstr "Rechtsproblem einordnen"
 
-#: src/pages/Home.tsx:44
 msgid "Unser Angebot"
 msgstr "Unser Angebot"
 
-#: src/components/shared/NavigationButtons.tsx:29
 msgid "Weiter"
 msgstr "Weiter"
 
-#: src/pages/Home.tsx:40
 msgid "Wie es funktioniert"
 msgstr "Wie es funktioniert"
 
-#: src/pages/Home.tsx:95
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "Wobei können wir Ihnen helfen?"
 
-#: src/components/shared/NavigationButtons.tsx:17
+msgid "Zu den Beratungsangeboten"
+msgstr "Zu den Beratungsangeboten"
+
 msgid "Zurück"
 msgstr "Zurück"
 
-#: src/components/shared/Footer.tsx:40
 msgid "footer.text"
 msgstr "Gebaut von ⚖️ und 🐌 mit ❤️"
 
-#: src/pages/Home.tsx:45
 msgid "home.hero_offer"
 msgstr "Justizportal.de ist ein Angebot des Bundesministeriums der Justiz und für Verbraucherschutz in Zusammenarbeit mit den Justizministerien der Länder. Das Portal gibt Ihnen einen Überblick über Ihre Rechte in verschiedenen Alltagssituationen. Außerdem begleitet es Sie, Ihre rechtlichen Fragen und Probleme einzuordnen und zu lösen. Dabei werden Sie über Ihre Handlungsoptionen informiert und bei der Geltendmachung Ihrer Rechte unterstützt."
 
-#: src/pages/Home.tsx:72
 msgid "home.howitwork_claims"
-msgstr "Dann helfen wir Ihnen zu evaluieren, welche Ansprüche in Ihrem Fall vorliegen könnten. Ansprüche sind Rechte, von anderen eine bestimmte Handlung zu verlangen (bspw. die Zahlung von Schadensersatz), zu dulden (bspw. die Untervermietung einer Wohnung) oder zu unterlassen (bspw. das Betreten eines Grundstücks). invidunt ut labore."
+msgstr "Dann helfen wir Ihnen zu evaluieren, welche Ansprüche in Ihrem Fall vorliegen könnten. Ansprüche sind Rechte, von anderen eine bestimmte Handlung zu verlangen (bspw. die Zahlung von Schadensersatz), zu dulden (bspw. die Untervermietung einer Wohnung) oder zu unterlassen (bspw. das Betreten eines Grundstücks)."
 
-#: src/pages/Home.tsx:66
 msgid "home.howitwork_classify"
 msgstr "Zunächst helfen wir Ihnen zu klären, ob in Ihrem Fall ein Rechtsproblem vorliegt. Dafür zeigen wir Ihnen auf Ihren Fall zugeschnittene Informationen."
 
-#: src/pages/Home.tsx:56
 msgid "home.howitwork_heading"
 msgstr "So funktioniert es"
 
-#: src/pages/Home.tsx:86
 msgid "home.howitwork_lawsuit"
 msgstr "Wenn alle anderen Optionen erschöpft sind, helfen wir Ihnen online eine Klage beim Amtsgericht einzureichen. Dafür erklären wir Ihnen den Prozess unseres Online Verfahrens und zeigen transparent die Kosten für ein Gerichtsverfahren, sowie eine mögliche Rechtsberatung auf."
 
-#: src/pages/Home.tsx:80
 msgid "home.howitwork_options"
 msgstr "Darauf aufbauend schlagen wir Ihnen Lösungsmöglichkeiten vor - zunächst für eine gütliche Streitbeilegung mit der Gegenseite. <0>Dieser Informationsservice ist für Sie komplett kostenlos.</0>"
 
-#: src/pages/Home.tsx:59
 msgid "home.howitwork_subheading"
 msgstr "Wir helfen Ihnen in vier einfachen Schritten zur Lösung Ihres Rechtproblems:"
 
-#: src/pages/Home.tsx:97
 msgid "home.howtohelp_footer"
 msgstr "Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei denen wir Sie unterstützen können."
 
-#: src/pages/Home.tsx:34
 msgid "home.sub_heading"
 msgstr "Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres Rechtsproblems"
 
-#: src/pages/Home.tsx:71
 msgid "Über Ansprüche informieren"
 msgstr "Über Ansprüche informieren"

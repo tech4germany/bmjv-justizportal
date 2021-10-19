@@ -9,64 +9,67 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=((n%10==1) && (n%100!=11)) ? 0 : ((n%10>=2 && n%10<=4) && ((n%100<12 || n%100>14))) ? 1 : 2;\n"
 
 msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
-msgstr "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+msgstr "- **претензия**\n - Арендодатели обязаны держать арендованное имущество в штате\nпередать и получить, что соответствует договорному соглашению. \n - За это арендаторы платят арендную плату. \n - Если в период аренды возникает дефект, арендодатель должен исправить его. \n- **Исключение**: при мелком ремонте до 100 евро за ремонт\n - если так написано в контракте и\n - установлена максимальная годовая сумма. \n- **Правоприменение: **\n - претензия на устранение дефекта может быть предъявлена\nПретендуйте арендодателей, попросив их исправить дефект. Это часто происходит вместе\nс уведомлением о дефекте."
 
 msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-msgstr "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "Следующие претензии могут возникнуть в связи с вашей информацией"
 
 msgid "Beseitigung des Mangels durch die Vermieter:in"
-msgstr "Beseitigung des Mangels durch die Vermieter:in"
+msgstr "Устранение дефекта арендодателями"
 
 msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
-msgstr "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
+msgstr "Поскольку для всего проекта было доступно всего двенадцать недель, этот путь пока не удалось реализовать."
 
 msgid "Die Justiz im Netz."
-msgstr "Die Justiz im Netz."
+msgstr "Судебная власть в сети."
+
+msgid "Diese Option ist leider noch nicht verfügbar."
+msgstr "К сожалению, эта опция пока недоступна."
 
 msgid "Dieser Pfad wurde noch nicht implementiert"
-msgstr "Dieser Pfad wurde noch nicht implementiert"
+msgstr "Этот путь еще не реализован"
 
 msgid "Einfach, online, jederzeit."
-msgstr "Einfach, online, jederzeit."
+msgstr "Легко, онлайн, в любое время."
 
 msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
-msgstr "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+msgstr "Готово! Основываясь на предоставленной вами информации, следующие судебные иски могут\nзадаются вопросом для вас. Претензия — это право на определенное поведение другого человека\nтребовать."
 
 msgid "Handlungsoptionen vergleichen"
-msgstr "Handlungsoptionen vergleichen"
+msgstr "Сравните варианты действий"
 
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
-msgstr "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
+msgstr "В какой сфере вашей жизни у вас есть проблемы?"
 
 msgid "Info"
 msgstr "Информация"
 
 msgid "Ja"
-msgstr "Ja"
+msgstr "да"
 
 msgid "Jetzt starten!"
 msgstr "Начать сейчас"
 
 msgid "Lösungsfinder"
-msgstr "Lösungsfinder"
+msgstr "Поиск решений"
 
 msgid "Mietminderung"
-msgstr "Mietminderung"
+msgstr "снижение арендной платы"
 
 msgid "Nein"
-msgstr "Nein"
+msgstr "нет"
 
 msgid "Online Klage einreichen"
-msgstr "Online Klage einreichen"
+msgstr "Послать иск в Интернете"
 
 msgid "Rechtsproblem einordnen"
-msgstr "Rechtsproblem einordnen"
+msgstr "Классифицировать юридические проблемы"
 
 msgid "Unser Angebot"
-msgstr "Unser Angebot"
+msgstr "Наше предложение"
 
 msgid "Weiter"
-msgstr "Weiter"
+msgstr "Далее"
 
 msgid "Wie es funktioniert"
 msgstr "Как это работает"
@@ -74,38 +77,41 @@ msgstr "Как это работает"
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "Чем мы можем вам помочь?"
 
+msgid "Zu den Beratungsangeboten"
+msgstr "Перейти к консультационным услугам"
+
 msgid "Zurück"
-msgstr "Zurück"
+msgstr "назад"
 
 msgid "footer.text"
-msgstr "Gebaut von ⚖️ und 🐌 mit ❤️"
+msgstr "Создано ⚖️ и 🐌 с ❤️"
 
 msgid "home.hero_offer"
-msgstr "Justizportal.de ist ein Angebot des Bundesministeriums der Justiz und für Verbraucherschutz in Zusammenarbeit mit den Justizministerien der Länder. Das Portal gibt Ihnen einen Überblick über Ihre Rechte in verschiedenen Alltagssituationen. Außerdem begleitet es Sie, Ihre rechtlichen Fragen und Probleme einzuordnen und zu lösen. Dabei werden Sie über Ihre Handlungsoptionen informiert und bei der Geltendmachung Ihrer Rechte unterstützt."
+msgstr "JustizPortal.de — это предложение Федерального министерства юстиции и защиты прав потребителей в сотрудничестве с федеральными министерствами юстиции федеральных земель. Портал предоставляет обзор ваших прав в различных повседневных ситуациях. Это также помогает классифицировать и решать юридические вопросы и проблемы. Вы будете проинформированы о возможных вариантах действий и получите поддержку в отстаивании ваших прав."
 
 msgid "home.howitwork_claims"
-msgstr "Dann helfen wir Ihnen zu evaluieren, welche Ansprüche in Ihrem Fall vorliegen könnten. Ansprüche sind Rechte, von anderen eine bestimmte Handlung zu verlangen (bspw. die Zahlung von Schadensersatz), zu dulden (bspw. die Untervermietung einer Wohnung) oder zu unterlassen (bspw. das Betreten eines Grundstücks). invidunt ut labore."
+msgstr "Затем мы поможем вам оценить, какие претензии могут существовать в вашем случае. Претензии — это право требовать от других конкретных действий (например, возмещение ущерба), потерпеть (например, сдавать квартиру в субаренду) или воздерживаться от (например, въезда в собственность). invidunt it labore."
 
 msgid "home.howitwork_classify"
-msgstr "Zunächst helfen wir Ihnen zu klären, ob in Ihrem Fall ein Rechtsproblem vorliegt. Dafür zeigen wir Ihnen auf Ihren Fall zugeschnittene Informationen."
+msgstr "Во-первых, мы поможем вам выяснить, есть ли юридическая проблема в вашем случае. Мы предоставим вам информацию, адаптированную к вашему случаю."
 
 msgid "home.howitwork_heading"
 msgstr "Как это работает"
 
 msgid "home.howitwork_lawsuit"
-msgstr "Wenn alle anderen Optionen erschöpft sind, helfen wir Ihnen online eine Klage beim Amtsgericht einzureichen. Dafür erklären wir Ihnen den Prozess unseres Online Verfahrens und zeigen transparent die Kosten für ein Gerichtsverfahren, sowie eine mögliche Rechtsberatung auf."
+msgstr "Когда все остальные варианты исчерпаны, мы поможем вам подать иск в районный суд онлайн. С этой целью мы объясняем вам процесс нашего онлайн-процесса и предоставляем прозрачную информацию о стоимости судебных разбирательств, а также возможные юридические консультации."
 
 msgid "home.howitwork_options"
-msgstr "Darauf aufbauend schlagen wir Ihnen Lösungsmöglichkeiten vor - zunächst für eine gütliche Streitbeilegung mit der Gegenseite. <0>Dieser Informationsservice ist für Sie komplett kostenlos.</0>"
+msgstr "Исходя из этого, мы предложим возможные решения для <0>вас - первоначально для дружеского разрешения споров с противоположной стороной.</0>"
 
 msgid "home.howitwork_subheading"
-msgstr "Wir helfen Ihnen in vier einfachen Schritten zur Lösung Ihres Rechtproblems:"
+msgstr "Мы поможем вам решить вашу юридическую проблему в четыре простых шага:"
 
 msgid "home.howtohelp_footer"
-msgstr "Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei denen wir Sie unterstützen können."
+msgstr "Вы можете узнать больше о юридических проблемах, с которыми мы можем вам помочь, на следующих страницах."
 
 msgid "home.sub_heading"
-msgstr "Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres Rechtsproblems"
+msgstr "Мы информируем вас о ваших правах в повседневной жизни и помогаем решить юридическую проблему в простых шагах"
 
 msgid "Über Ansprüche informieren"
-msgstr "Über Ansprüche informieren"
+msgstr "Сообщите о претензиях"

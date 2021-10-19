@@ -23,6 +23,9 @@ msgstr "Оскільки для всього проекту було досту�
 msgid "Die Justiz im Netz."
 msgstr "Судова влада в мережі."
 
+msgid "Diese Option ist leider noch nicht verfügbar."
+msgstr "На жаль, ця опція поки недоступна."
+
 msgid "Dieser Pfad wurde noch nicht implementiert"
 msgstr "Цей шлях ще не реалізований"
 
@@ -73,6 +76,9 @@ msgstr "Як це працює"
 
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "Як ми можемо вам допомогти?"
+
+msgid "Zu den Beratungsangeboten"
+msgstr "Перейти до консультаційних послуг"
 
 msgid "Zurück"
 msgstr "назад"
