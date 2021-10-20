@@ -21,7 +21,7 @@ export const NavButtons = ({ linkBack, linkForward, disableForward, onClick, ...
     )}
     {linkForward ? (
       <Button
-        onClick={onClick}
+        onClick={disableForward ? (event) => event.preventDefault() : onClick}
         colorScheme="green"
         as={ReactLink}
         to={disableForward ? '' : linkForward}
