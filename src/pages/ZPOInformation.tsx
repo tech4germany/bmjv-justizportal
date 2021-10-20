@@ -69,17 +69,12 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da auch weitere Kosten, 
         <Heading>Informationen zur Klage & Gerichtsverfahren</Heading>
         <AnnotadedText text={s} />
         <Table variant="simple">
-          <TableCaption>Ungefähres Kostenrisiko</TableCaption>
+          <TableCaption>Ungefähres Kostenrisiko wenn Sie ohne Anwalt klagen.</TableCaption>
           <Thead>
             <Tr>
-              <Th rowspan="2">Streitwert</Th>
-              <Th rowspan="2">Gerichtsgebühren</Th>
-              <Th rowspan="2">Anwaltshonorar pro Partei</Th>
-              <Th colspan="2">Kostenrisiko bei Verlust</Th>
-            </Tr>
-            <Tr>
-              <Th>Eine Partei anwaltlich vertreten</Th>
-              <Th>Beide Parteien anwaltlich vertreten</Th>
+              <Th>Streitwert</Th>
+              <Th>Gerichtsgebühren (Vorab zu bezahlen)</Th>
+              <Th>Anwaltshonorar Gegenpartei (Bei Verlust zu zahlen)</Th>
             </Tr>
           </Thead>
           <Tbody>
@@ -87,39 +82,35 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da auch weitere Kosten, 
               <Td>€0-€1.000</Td>
               <Td>ca. €150</Td>
               <Td>ca. €200</Td>
-              <Td>ca. €350</Td>
-              <Td>ca. €550</Td>
             </Tr>
             <Tr>
               <Td>€1.000-€2.000</Td>
               <Td>ca. €250</Td>
               <Td>ca. €350</Td>
-              <Td>ca. €600</Td>
-              <Td>ca. €950</Td>
             </Tr>
             <Tr>
               <Td>€2.000-€3.000</Td>
               <Td>ca. €300</Td>
               <Td>ca. €550</Td>
-              <Td>ca. €850</Td>
-              <Td>ca. €1400</Td>
             </Tr>
             <Tr>
               <Td>€3.000-€4.000</Td>
               <Td>ca. €420</Td>
               <Td>ca. €700</Td>
-              <Td>ca. €1220</Td>
-              <Td>ca. €1920</Td>
             </Tr>
             <Tr>
               <Td>€4.000-€5.000</Td>
               <Td>ca. €480</Td>
               <Td>ca. €850</Td>
-              <Td>ca. €1330</Td>
-              <Td>ca. €2180</Td>
             </Tr>
           </Tbody>
         </Table>
+        <AnnotadedText
+          text="**Bsp.:** Der Streitwert Ihrer Klage beträgt €1500. 
+  - Ca. €250 müssen Sie bei Klageeinreichung an das Gericht zahlen. 
+  - Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
+  - Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."
+        />
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>
