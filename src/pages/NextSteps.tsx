@@ -7,6 +7,7 @@ import {
   Button,
   Heading,
   Spacer,
+  Tag,
   Text,
 } from '@chakra-ui/react';
 import * as React from 'react';
@@ -19,16 +20,27 @@ import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
 import { MMGraph, NextStepsType } from '../logic/KMParser';
+import { IconType } from 'react-icons';
 
 interface FeatureProps {
   id: string | null;
   mmobject: MMGraph;
 }
 
+interface NextStepData {
+  label: string;
+  icon: IconType;
+  buttonLink: string;
+  buttonText: string;
+  condition: boolean;
+  content: string;
+  optional: boolean;
+}
+
 export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   let nextSteps: NextStepsType[] = mmobject.getNode(id).nextSteps;
 
-  let data = [
+  let data: NextStepData[] = [
     {
       label: 'Dokumentation des Mangels',
       icon: FaPencilAlt,
@@ -42,6 +54,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 	- Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
 	- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, sollten Sie aufschreiben wann und in welcher Form dieser auftritt.
 `,
+      optional: false,
     },
     {
       label: 'Mängelanzeige bei Ihrer Vermieter:in',
@@ -61,6 +74,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
         - Setzen Sie ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
         - Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen. Wenn Sie einen Anspruch auf Mietminderung haben, können Sie diese nachträglich einforndern. Sollten Sie keinen Anspruch haben, entstehen Ihnen und Ihrer Vermieter:in keine Nachteile.
 `,
+      optional: false,
     },
     {
       label: 'Zweites Schreiben an die Vermieter:in senden',
@@ -76,6 +90,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 - **Wie gehe ich vor?** 
 	- Nutzen Sie erneut unsere Vorlage für eine Mängelanzeige und ergänzen Sie: "Ich bitte ein letztes Mal um Mängelbeseitigung. Danach behalte ich mir vor weitere rechtliche Schritte einzuleiten."
 `,
+      optional: false,
     },
     {
       label: 'Rechtlich beraten lassen',
@@ -94,6 +109,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   - Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 
   - Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen, um ein Gespräch zu vereinbaren.
   `,
+      optional: true,
     },
     {
       label: 'Über das Justizportal eine Klage einreichen',
@@ -114,12 +130,13 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   - Sollte das nicht klappen wird eine Richter:in mit einem Urteil über ihren Fall entschieden. 
   - Hier informieren wir Sie, wie eine Klageeinreichung und das Gerichtsverfahren abläuft, und welche Kosten dabei entstehen. Im Anschluss können Sie selbst eine Klage einreichen.
 `,
+      optional: true,
     },
   ];
 
   return (
-    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
-      <Heading marginInline={{ base: '2em', md: '0em' }}>Checkliste: Ihre nächsten Schritte zur Problemlösung</Heading>
+    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Optionen">
+      <Heading marginInline={{ base: '2em', md: '0em' }}>Ihre nächsten möglichen Schritte zur Problemlösung</Heading>
       <Text>
         Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
         nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
@@ -134,6 +151,9 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
                 <Text fontWeight="bold" padding="1em">
                   {acc.label}
                 </Text>
+                <Tag size="sm" variant="solid" colorScheme={acc.optional ? 'gray' : 'green'}>
+                  {acc.optional ? 'Optional' : 'Empfohlen'}
+                </Tag>
                 <Spacer />
                 <AccordionIcon />
               </AccordionButton>
