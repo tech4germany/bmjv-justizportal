@@ -129,7 +129,10 @@ Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. K
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
       />
-      <NavButtons linkBack={`/solutionexplorer?id=${mmobject.getParent(id)?.id}`} linkForward={`/nextsteps?id=${id}`} />
+      <NavButtons
+        linkBack={`${homeURL}/solutionexplorer?id=${mmobject.getParent(id)?.id}`}
+        linkForward={`${homeURL}/nextsteps?id=${id}`}
+      />
     </PageBody>
   );
 };
