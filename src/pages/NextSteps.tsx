@@ -21,6 +21,7 @@ import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
 import { MMGraph, NextStepsType } from '../logic/KMParser';
 import { IconType } from 'react-icons';
+import { StaticProgress } from '../components/shared/StaticProgress';
 
 interface FeatureProps {
   id: string | null;
@@ -145,46 +146,48 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
   ];
 
   return (
-    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Optionen">
-      <Heading marginInline={{ base: '2em', md: '0em' }}>Ihre nächsten möglichen Schritte zur Problemlösung</Heading>
-      <Text>
-        Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
-        nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
-      </Text>
-      <Spacer />
-      <Accordion alignSelf="stretch" allowToggle>
-        {data.map((acc, index) =>
-          acc.condition ? (
-            <AccordionItem>
-              <AccordionButton>
-                {<acc.icon size="2.5em" />}
-                <Text fontWeight="bold" padding="1em">
-                  {acc.label}
-                </Text>
-                <Tag size="sm" variant="solid" colorScheme={acc.optional ? 'gray' : 'green'}>
-                  {acc.optional ? 'Optional' : 'Empfohlen'}
-                </Tag>
-                <Spacer />
-                <AccordionIcon />
-              </AccordionButton>
-              <AccordionPanel pb={4}>
-                <AnnotadedText text={acc.content} />
-                <Spacer height="1.5em" />
-                {acc.buttonLink && acc.buttonText ? (
-                  <>
-                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
-                      {acc.buttonText}
-                    </Button>
-                  </>
-                ) : null}
-                <Spacer height="1em" />
-              </AccordionPanel>
-            </AccordionItem>
-          ) : null
-        )}
-      </Accordion>
+    <>
+      <StaticProgress currentStep={3} />
+      <PageBody marginInline={{ base: '0em', md: '2em' }} title="Optionen">
+        <Heading marginInline={{ base: '2em', md: '0em' }}>Ihre nächsten möglichen Schritte zur Problemlösung</Heading>
+        <Text>
+          Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
+          nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+        </Text>
+        <Spacer />
+        <Accordion alignSelf="stretch" allowToggle>
+          {data.map((acc, index) =>
+            acc.condition ? (
+              <AccordionItem>
+                <AccordionButton>
+                  {<acc.icon size="2.5em" />}
+                  <Text fontWeight="bold" padding="1em">
+                    {acc.label}
+                  </Text>
+                  <Tag size="sm" variant="solid" colorScheme={acc.optional ? 'gray' : 'green'}>
+                    {acc.optional ? 'Optional' : 'Empfohlen'}
+                  </Tag>
+                  <Spacer />
+                  <AccordionIcon />
+                </AccordionButton>
+                <AccordionPanel pb={4}>
+                  <AnnotadedText text={acc.content} />
+                  <Spacer height="1.5em" />
+                  {acc.buttonLink && acc.buttonText ? (
+                    <>
+                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
+                        {acc.buttonText}
+                      </Button>
+                    </>
+                  ) : null}
+                  <Spacer height="1em" />
+                </AccordionPanel>
+              </AccordionItem>
+            ) : null
+          )}
+        </Accordion>
 
-      {/* <Tabs colorScheme="green" size="md" variant="enclosed" defaultIndex={0} isLazy>
+        {/* <Tabs colorScheme="green" size="md" variant="enclosed" defaultIndex={0} isLazy>
         <TabList>
           {tabData.map((tab, index) => (
             <Tab key={index}>
@@ -201,14 +204,15 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
           ))}
         </TabPanels>
       </Tabs> */}
-      {/* <AnnotadedText
+        {/* <AnnotadedText
         text={`Wenn sie nicht alle Punkte schriftlich kommuniziert haben, sollten Sie ein neues Schreiben erstellen.  
               Hier helfen wir Ihnen dabei: Wenn Sie den Vermietenden eine Frist zur Behebung des Mangels gesetzt haben, dann
               **warten** **Sie zunächst den Ablauf der Frist ab**, bevor Sie weitere Schritte unternehmen.
       `}
       /> */}
 
-      <NavButtons linkBack={`${homeURL}/possibleentitlements?id=${id}`} />
-    </PageBody>
+        <NavButtons linkBack={`${homeURL}/possibleentitlements?id=${id}`} />
+      </PageBody>
+    </>
   );
 };

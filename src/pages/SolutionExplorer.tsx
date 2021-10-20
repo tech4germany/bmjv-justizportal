@@ -19,6 +19,7 @@ import { CardContent } from '../components/shared/CardContent';
 import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { StaticProgress } from '../components/shared/StaticProgress';
 import { StatsCard } from '../components/shared/StatsCard';
 import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
@@ -67,17 +68,9 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   return (
     <>
-      <Progress
-        // position="fixed"
-        // bottom={0}
-        // zIndex={10}
-        colorScheme="green"
-        size="sm"
-        value={(mmobject.getNumberOfParents(id) / 11) * 100}
-        width="100%"
-      />
+      <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
 
-      <PageBody title={t`Lösungsfinder`}>
+      <PageBody title={t`Lösungsfinder`} paddingTop={4}>
         <Heading>{state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}</Heading>
         {state == 'SE' ? (
           <>
