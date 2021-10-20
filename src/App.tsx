@@ -18,6 +18,7 @@ import { PossibleEntitlements } from './pages/PEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { homeURL } from './Const';
+import { Disclaimer } from './pages/disclaimer';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,6 +63,7 @@ export const App = () => {
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
+          <Route exact path={`${homeURL}/disclaimer`} children={() => <Disclaimer {...featureProps} />} />
           <Route exact path={`${homeURL}/solutionexplorer`} children={() => <SolutionExplorer {...featureProps} />} />
           <Route exact path={`${homeURL}/exit`} children={() => <ExitJourney {...featureProps} />} />
           <Route exact path={`${homeURL}/zpo`} children={() => <ZPOInformation {...featureProps} />} />
