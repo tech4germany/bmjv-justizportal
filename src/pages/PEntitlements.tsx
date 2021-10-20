@@ -17,6 +17,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
 
@@ -88,51 +89,54 @@ durch einen Mangel **erheblich eingeschränkt** ist.
   ];
 
   return (
-    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
-      <Heading marginInline={{ base: '2em', md: '0em' }}>
-        <Trans>Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
-      </Heading>
-      <AnnotadedText
-        text={t`
+    <>
+      <StaticProgress currentStep={2} />
+      <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
+        <Heading marginInline={{ base: '2em', md: '0em' }}>
+          <Trans>Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
+        </Heading>
+        <AnnotadedText
+          text={t`
 Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. `}
-      />
-      <Accordion alignSelf="stretch" allowToggle>
-        {data.map((acc, index) =>
-          acc.condition ? (
-            <AccordionItem>
-              <AccordionButton>
-                {<acc.icon size="2.5em" />}
-                <Text fontWeight="bold" padding="1em">
-                  {acc.label}
-                </Text>
-                <Spacer />
-                <AccordionIcon />
-              </AccordionButton>
-              <AccordionPanel pb={4}>
-                <AnnotadedText text={acc.content} />
-                <Spacer height="1.5em" />
-                {acc.buttonLink && acc.buttonText ? (
-                  <>
-                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
-                      {acc.buttonText}
-                    </Button>
-                  </>
-                ) : null}
-                <Spacer height="1em" />
-              </AccordionPanel>
-            </AccordionItem>
-          ) : null
-        )}
-      </Accordion>
-      <AnnotadedText
-        text={t`
+        />
+        <Accordion alignSelf="stretch" allowToggle>
+          {data.map((acc, index) =>
+            acc.condition ? (
+              <AccordionItem>
+                <AccordionButton>
+                  {<acc.icon size="2.5em" />}
+                  <Text fontWeight="bold" padding="1em">
+                    {acc.label}
+                  </Text>
+                  <Spacer />
+                  <AccordionIcon />
+                </AccordionButton>
+                <AccordionPanel pb={4}>
+                  <AnnotadedText text={acc.content} />
+                  <Spacer height="1.5em" />
+                  {acc.buttonLink && acc.buttonText ? (
+                    <>
+                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
+                        {acc.buttonText}
+                      </Button>
+                    </>
+                  ) : null}
+                  <Spacer height="1em" />
+                </AccordionPanel>
+              </AccordionItem>
+            ) : null
+          )}
+        </Accordion>
+        <AnnotadedText
+          text={t`
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
-      />
-      <NavButtons
-        linkBack={`${homeURL}/solutionexplorer?id=${mmobject.getParent(id)?.id}`}
-        linkForward={`${homeURL}/nextsteps?id=${id}`}
-      />
-    </PageBody>
+        />
+        <NavButtons
+          linkBack={`${homeURL}/solutionexplorer?id=${mmobject.getParent(id)?.id}`}
+          linkForward={`${homeURL}/nextsteps?id=${id}`}
+        />
+      </PageBody>
+    </>
   );
 };
