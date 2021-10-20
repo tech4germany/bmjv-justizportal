@@ -97,7 +97,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
         </Heading>
         <AnnotadedText
           text={t`
-Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. `}
+Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. `}
         />
         <Accordion alignSelf="stretch" allowToggle>
           {data.map((acc, index) =>
