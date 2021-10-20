@@ -99,7 +99,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       label: 'Über das Justizportal eine Klage einreichen',
       icon: HiScale,
       buttonText: 'Mehr Informationen zur Klage',
-      buttonLink: `/zpo?id=${id}`,
+      buttonLink: `${homeURL}/zpo?id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
       content: `
 - **Warum?** 
