@@ -3,12 +3,13 @@ import * as React from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
+import { homeURL } from '../Const';
 
 interface FeatureProps {
   id: string | null;
 }
 
-export const ZPOInformation = (props: FeatureProps) => {
+export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
   const s: string = `
 [comment]: <> (## Zusammenfassung)
 
@@ -122,7 +123,7 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da auch weitere Kosten, 
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>
-        <Button colorScheme="green" as={ReactLink} to={`/bryter?id=${props.id}`}>
+        <Button colorScheme="green" as={ReactLink} to={`${homeURL}/bryter?id=${id}`}>
           Klageschriftgenerator
         </Button>
       </Box>

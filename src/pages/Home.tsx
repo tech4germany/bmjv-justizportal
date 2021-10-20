@@ -6,13 +6,14 @@ import { Link as ReactLink } from 'react-router-dom';
 import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
+import { homeURL } from '../Const';
 
 interface FeatureProps {
   anchorId: string;
 }
 
 export const Home = ({ anchorId, ...rest }: FeatureProps) => {
-  const howRef = React.useRef<HTMLElement>(null);
+  const howRef = React.useRef<HTMLDivElement>(null);
   const executeScroll = () => howRef.current && howRef.current.scrollIntoView({ behavior: 'smooth' });
 
   React.useEffect(() => {
@@ -34,7 +35,12 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           Rechtsproblems
         </Trans>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-          <Button colorScheme={'orange'} as={ReactLink} to="/solutionexplorer" children={t`Jetzt starten!`} />
+          <Button
+            colorScheme={'orange'}
+            as={ReactLink}
+            to={`${homeURL}/solutionexplorer`}
+            children={t`Jetzt starten!`}
+          />
           <Button as={ReactLink} to="#how" onClick={executeScroll} children={t`Wie es funktioniert`} />
         </Stack>
       </HeroSplit>
@@ -97,7 +103,12 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
             </Trans>
           </Text>
 
-          <Button colorScheme={'orange'} as={ReactLink} to="/solutionexplorer" children={t`Jetzt starten!`} />
+          <Button
+            colorScheme={'orange'}
+            as={ReactLink}
+            to={`${homeURL}/solutionexplorer`}
+            children={t`Jetzt starten!`}
+          />
         </VStack>
       </Stack>
     </Box>

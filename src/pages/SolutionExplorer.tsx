@@ -20,6 +20,7 @@ import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { StatsCard } from '../components/shared/StatsCard';
+import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
 
@@ -40,10 +41,10 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   const state: string =
     data.children &&
-      (data.children.length == 1 ||
-        (data.children.length == 2 &&
-          ['NOANSWERD', 'YESANSWERD'].includes(data.children[0].type) &&
-          ['NOANSWERD', 'YESANSWERD'].includes(data.children[1].type)))
+    (data.children.length == 1 ||
+      (data.children.length == 2 &&
+        ['NOANSWERD', 'YESANSWERD'].includes(data.children[0].type) &&
+        ['NOANSWERD', 'YESANSWERD'].includes(data.children[1].type)))
       ? 'EC'
       : 'SE';
 
@@ -53,7 +54,8 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
   if (data.children != undefined) {
     data.children.forEach((child) => {
       const pre =
-        (child.title == '{EXIT}' ? '/exit' : '') + (child.title == '{CONTINUE}' ? '/possibleentitlements' : '');
+        (child.title == '{EXIT}' ? `${homeURL}/exit` : '') +
+        (child.title == '{CONTINUE}' ? `${homeURL}/possibleentitlements` : '');
 
       linkOnYes = child.type == 'YESANSWERD' ? `${pre}?id=${child.id}` : linkOnYes;
       linkOnNo = child.type == 'NOANSWERD' ? `${pre}?id=${child.id}` : linkOnNo;
@@ -92,12 +94,12 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                       child.children
                         ? undefined
                         : toast({
-                          title: t`Diese Option ist leider noch nicht verfügbar.`,
-                          // description: t`Bisher , konnte dieser Pfad leider noch nicht implementiert werden.`,
-                          status: 'info',
-                          duration: 8000,
-                          isClosable: true,
-                        })
+                            title: t`Diese Option ist leider noch nicht verfügbar.`,
+                            // description: t`Bisher , konnte dieser Pfad leider noch nicht implementiert werden.`,
+                            status: 'info',
+                            duration: 8000,
+                            isClosable: true,
+                          })
                     }
                     {...child}
                   />
@@ -111,7 +113,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                   ? parent.children?.length == 1
                     ? '?id=' + mmobject.getParent(parent.id)?.id + '#s'
                     : '?id=' + parent.id + '#s'
-                  : '/'
+                  : `${homeURL}/`
               }
             />
           </>
@@ -141,7 +143,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                     ? parent.children?.length == 1
                       ? '?id=' + mmobject.getParent(parent.id)?.id
                       : '?id=' + parent.id
-                    : '/'
+                    : `${homeURL}/`
                 }
                 linkForward={value == '1' ? linkOnYes : linkOnNo}
                 disableForward={value != '2' && value != '1'}

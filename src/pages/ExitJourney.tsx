@@ -1,10 +1,11 @@
 import { Box, Button, Heading, Spacer, Text, VStack } from '@chakra-ui/react';
+import { t } from '@lingui/macro';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
-import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
-import { Link as ReactLink } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import { Link as ReactLink } from 'react-router-dom';
 import { PageBody } from '../components/shared/PageBody';
+import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
@@ -41,11 +42,17 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
         </Text> */}
         <Text>
           Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
-          individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie
-          diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt.
+          individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
+          Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
+          einen Überblick zusammengestellt.
         </Text>
         <Spacer minH={10}></Spacer>
-        <Button colorScheme={'green'} as={ReactLink} to="/beratungsangebote" children={t`Zu den Beratungsangeboten`} />
+        <Button
+          colorScheme={'green'}
+          as={ReactLink}
+          to={`${homeURL}/beratungsangebote`}
+          children={t`Zu den Beratungsangeboten`}
+        />
       </VStack>
     </PageBody>
   );

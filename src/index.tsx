@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './logic/serviceWorker';
 import theme from './theme';
 
 ReactDOM.render(

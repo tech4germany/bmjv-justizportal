@@ -22,8 +22,9 @@ import { t } from '@lingui/macro';
 import React from 'react';
 import { FaGlobeAfrica } from 'react-icons/fa';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
-import { ColorModeSwitcher } from '../../ColorModeSwitcher';
-import { gerUserLocale, locales, dynamicActivate } from '../../i18n';
+import { homeURL } from '../../Const';
+import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
+import { gerUserLocale, locales, dynamicActivate } from '../../translations/i18n';
 
 interface FeatureProps extends BoxProps {}
 
@@ -99,7 +100,7 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
           />
         </Flex>
         <Flex flex={{ base: 2 }} justify={{ base: 'center', md: 'start' }}>
-          <Link as={ReactLink} to="/">
+          <Link as={ReactLink} to={`${homeURL}/`}>
             <svg width="208" height="31" viewBox="0 0 139 21" fill={color} xmlns="http://www.w3.org/2000/svg">
               <path
                 fillRule="evenodd"
@@ -150,7 +151,7 @@ const DesktopNav = () => {
               <Link
                 padding={2}
                 as={NavLink}
-                to={navItem.href ?? '#'}
+                to={`${homeURL}${navItem.href}` ?? '#'}
                 fontSize={'md'}
                 fontWeight={500}
                 color={linkColor}
@@ -244,7 +245,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       <Flex
         py={2}
         as={NavLink}
-        to={href ?? '#'}
+        to={`${homeURL}${href}` ?? '#'}
         justify={'space-between'}
         align={'center'}
         // activeStyle={{

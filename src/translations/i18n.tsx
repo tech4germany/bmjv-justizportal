@@ -32,7 +32,7 @@ export const gerUserLocale = () => userLocale;
 export async function dynamicActivate(locale: string = userLocale) {
   userLocale = locale in locales ? locale : defaultLocale;
 
-  const { messages } = await import(`./translations/${userLocale}/messages`);
+  const { messages } = await import(`./${userLocale}/messages`);
   i18n.load(userLocale, messages);
   i18n.activate(userLocale);
   setCookie('lang', userLocale);

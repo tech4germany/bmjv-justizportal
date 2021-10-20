@@ -17,6 +17,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { homeURL } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
@@ -112,7 +113,7 @@ Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. K
                 <Spacer height="1.5em" />
                 {acc.buttonLink && acc.buttonText ? (
                   <>
-                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={acc.buttonLink}>
+                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
                       {acc.buttonText}
                     </Button>
                   </>
@@ -123,7 +124,8 @@ Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. K
           ) : null
         )}
       </Accordion>
-      <AnnotadedText text={t`
+      <AnnotadedText
+        text={t`
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
       />

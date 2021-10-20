@@ -17,6 +17,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { homeURL } from '../Const';
 import { MMGraph, NextStepsType } from '../logic/KMParser';
 
 interface FeatureProps {
@@ -120,10 +121,10 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
     <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
       <Heading marginInline={{ base: '2em', md: '0em' }}>Checkliste: Ihre nächsten Schritte zur Problemlösung</Heading>
       <Text>
-        Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen.
-        Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+        Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
+        nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
       </Text>
-      < Spacer />
+      <Spacer />
       <Accordion alignSelf="stretch" allowToggle>
         {data.map((acc, index) =>
           acc.condition ? (
@@ -141,7 +142,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
                 <Spacer height="1.5em" />
                 {acc.buttonLink && acc.buttonText ? (
                   <>
-                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={acc.buttonLink}>
+                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
                       {acc.buttonText}
                     </Button>
                   </>
@@ -177,7 +178,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       `}
       /> */}
 
-      <NavButtons linkBack={`/possibleentitlements?id=${id}`} />
+      <NavButtons linkBack={`${homeURL}/possibleentitlements?id=${id}`} />
     </PageBody>
   );
 };

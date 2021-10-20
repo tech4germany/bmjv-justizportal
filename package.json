@@ -1,6 +1,7 @@
 {
   "name": "justizportal",
   "version": "0.1.0",
+  "homepage": "https://dev.tech4germany.org/bmjv-justizportal/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.15.8",
@@ -37,7 +38,9 @@
     "test": "react-scripts test",
     "add-locale": "lingui add-locale",
     "extract": "lingui extract",
-    "compile": "lingui compile"
+    "compile": "lingui compile",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -59,6 +62,7 @@
   },
   "devDependencies": {
     "@lingui/loader": "^2.8.3",
-    "@types/react-router-dom": "^5.3.0"
+    "@types/react-router-dom": "^5.3.0",
+    "gh-pages": "^3.2.3"
   }
 }

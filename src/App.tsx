@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import FooterSmallWithSocial from './components/shared/Footer';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
-import { dynamicActivate } from './i18n';
+import { dynamicActivate } from './translations/i18n';
 import { MMGraph } from './logic/KMParser';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
@@ -17,6 +17,7 @@ import { NextSteps } from './pages/NextSteps';
 import { PossibleEntitlements } from './pages/PEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
+import { homeURL } from './Const';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -60,13 +61,17 @@ export const App = () => {
         <ScrollToTop />
         <MenuWithSubnavigation />
         <Switch>
-          <Route path="/" children={() => <Home {...featureProps} />} exact />
-          <Route path="/solutionexplorer" children={() => <SolutionExplorer {...featureProps} />} exact />
-          <Route path="/exit" children={() => <ExitJourney {...featureProps} />} exact />
-          <Route path="/zpo" children={() => <ZPOInformation {...featureProps} />} exact />
-          <Route path="/possibleentitlements" children={() => <PossibleEntitlements {...featureProps} />} exact />
-          <Route path="/nextsteps" children={() => <NextSteps {...featureProps} />} exact />
-          <Route path="/bryter" exact>
+          <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
+          <Route exact path={`${homeURL}/solutionexplorer`} children={() => <SolutionExplorer {...featureProps} />} />
+          <Route exact path={`${homeURL}/exit`} children={() => <ExitJourney {...featureProps} />} />
+          <Route exact path={`${homeURL}/zpo`} children={() => <ZPOInformation {...featureProps} />} />
+          <Route
+            exact
+            path={`${homeURL}/possibleentitlements`}
+            children={() => <PossibleEntitlements {...featureProps} />}
+          />
+          <Route exact path={`${homeURL}/nextsteps`} children={() => <NextSteps {...featureProps} />} />
+          <Route exact path={`${homeURL}/bryter`}>
             <Helmet>
               <title>Justiz Portal - BRYTER</title>
             </Helmet>
