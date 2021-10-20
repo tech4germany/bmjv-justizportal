@@ -1,6 +1,7 @@
-import { Box, Button, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Box, Button, Container, Stack, Text, Link, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
+import { homeURL } from '../../Const';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
@@ -39,6 +40,12 @@ export default function FooterSmallWithSocial() {
         <Text fontSize={'md'}>
           <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
         </Text>
+        <Text fontSize={'md'} fontWeight="bold">
+          <Trans id="footer.disclaimer">Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!</Trans>
+        </Text>
+        <Link href={`${homeURL}/disclaimer`} fontSize={'md'}>
+          <Trans id="footer.info">Weiter Infos zu Seite findest du hier</Trans>
+        </Link>
       </Container>
     </Box>
   );
