@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Table, TableCaption, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
+import { Box, Button, Heading, Spacer, Table, TableCaption, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
 import * as React from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
@@ -20,15 +20,18 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 
 ### **Auf einen Blick**
 
-- Am Ende des Gerichtsprozesses gibt es ein verbindliches Ergebnis.
-- Die Kosten eines Gerichtsprozesses sind gesetzlich festgeschrieben. Sie hängen vom materiellen Wert ab, über den verhandelt wird. Je höher der Wert, desto höher sind die Kosten.
-- Der Verlierer des Prozesses trägt die Kosten. Abhängig von der Entscheidung, können die Kosten aber auch auf beide Parteien verteilt werden.
-- Sie können Prozesskostenhilfe beantragen, falls sie finanziell nicht in der Lage sind, die Porzesskosten zu tragen.
-- Ein Klageverfahren folgt einem festgelegten Ablauf und dauert üblicherweise zwischen 4 und 10 Monaten.
-- Sie können auch ohne Anwalt klagen. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten. Unteranderem können Anwält:innen die Erfolgsaussichten für Ihren Fall bewerten.    
-  
-[comment]: <>  (**Ich fühle mich ausreichend informiert und möchte Klage einreichen:**)
+- Wenn Sie einen Streit mit einer Person oder einem Unternehmen nicht allein lösen können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie entscheiden.
+- Eine Klage ist ein Antrag für die Eröffnung eines Gerichtsprozesses.
+- Ein Prozess dauert üblicherweise zwischen 4 und 10 Monaten.
+- Vor Gericht stellen Sie und die andere Partei den Fall dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
+- Am Ende des Prozess wird ein Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
+- Der Verlierer des Prozesses trägt die Kosten. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
+- Die Kosten eines Gerichtsprozesses sind abhängig von Ihrer Forderung.
+- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu tragen.
+- Jede Bürger:in ab 18 Jahren kann allein Klage erheben. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten, und die Erfolgsaussichten für Ihren Fall bewerten.    
 
+
+[comment]: <>  (**Ich fühle mich ausreichend informiert und möchte Klage einreichen:**)
 
 [comment]: <> (## **Was erwartet Sie, wenn Sie eine Klage einreichen?**  )
 
@@ -43,33 +46,32 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 
 Während des Gerichtsprozesses entstehen beiden Parteien Kosten.
 Die unterlegende Partei des Prozesses trägt die Kosten von beiden Seiten.
-Gibt die Richter:in einer Partei nicht vollständig Recht, werden die Kosten beider Parteien zusammengerechnet und aufgeteilt.
-Dabei legt die Richter:in fest wie viel Prozent welche Partei von der Gesamtsumme übernehmen muss.
+Gibt die Richter:in einer Partei nicht vollständig Recht, werden die Kosten durch die Richter:in aufgeteilt.
 Die Kosten eines Gerichtsprozesses setzen sich aus den Gerichtsgebühren, den Anwaltshonoraren und weiteren Ausgaben zusammen.
 
 #### Gerichtsgebühren
-Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig davon, wie hoch der verhandelte materielle Wert ist.
+Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert.
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
 Als Kläger müssen Sie die Gerichtsgebühren im Vorraus bezahlen.
 Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach vom Gericht zurück.
 
 #### Anwaltshonorare
-Ihren eigenen Anwalt müssen Sie im Vorraus bezahlen.
-Den Anwalt der Gegenpartei nur, wenn Sie den Prozess verlieren.
-Die Anwaltshonorare werden nicht von den Anwälten:innen festgelegt, sondern sind auch per Gesetz abhängig vom Streitwert festgelegt.
+Wenn Sie eine Anwält:in vertritt, müssen Sie im Vorraus ein Honorar bezahlen.
+Auch die Anwaltshonorare sind gesetzlich abhängig vom Streitwert festgelegt.
+Wenn Sie den Prozess verlieren, bezahlen Sie ihre Anwält:in und die der Gegenseite.
 
 #### Kostenrisiko
-Mit Hilfe des Streitwerts lassen sich also die Gesamtkosten und damit das maximale Kostenrisiko ungefähr abschätzen.
-Im Folgenden finden Sie eine ungefähre Orientierung wie hoch die Kosten für verschiedene Streitwerte ausfallen können.
-Eine genaue Berechnung ist im Vorhinein nicht möglich, da auch weitere Kosten, wie die Vergütungen der Zeugen von den Parteien bezahlt werden müssen.
+Mit Hilfe des Streitwerts können Sie die maximalen Kosten abschätzen.
+Hier finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.
+Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entstehen können, beispielsweise durch die Vergütungen von Zeugen.
 `;
   return (
     <PageBody title="ZPO Informationen">
       <Box>
-        <Heading>Informationen zur Klage & Gerichtsverfahren</Heading>
+        <Heading>Informationen zur Klage und einem Gerichtsprozess</Heading>
         <AnnotadedText text={s} />
         <Table variant="simple">
-          <TableCaption>Ungefähres Kostenrisiko wenn Sie ohne Anwalt klagen.</TableCaption>
+          <TableCaption>Ungefähre Kosten in einem Gerichtsverfahren.</TableCaption>
           <Thead>
             <Tr>
               <Th>Streitwert</Th>
@@ -106,11 +108,15 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da auch weitere Kosten, 
           </Tbody>
         </Table>
         <AnnotadedText
-          text="**Bsp.:** Der Streitwert Ihrer Klage beträgt €1500. 
-  - Ca. €250 müssen Sie bei Klageeinreichung an das Gericht zahlen. 
-  - Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
-  - Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."
-        />
+          text="**Beispiel:** 
+- Der Streitwert Ihrer Klage beträgt €1500. 
+- Ca. €250 müssen Sie bei Klageeinreichung an das Gericht zahlen. 
+- Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
+- Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."/>
+<Spacer h="3em"/>
+<Text>  
+Wenn Sie eine Klage über das Justizportal einreichen, schätzen wir die Gerichtskosten für Sie ab.
+</Text>
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>
