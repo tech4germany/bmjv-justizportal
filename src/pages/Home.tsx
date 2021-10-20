@@ -29,7 +29,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
       <HeroSplit
         title1={t`Die Justiz im Netz.`}
         title2={t`Einfach, online, jederzeit.`}
-        image={'data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.png'}>
+        image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.png`}>
         <Trans render={Text} id="home.sub_heading">
           Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres
           Rechtsproblems

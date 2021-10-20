@@ -1,4 +1,4 @@
-import { Flex, Heading, Spacer } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 import * as React from 'react';
 
 interface Props {
