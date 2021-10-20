@@ -190,7 +190,8 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Link
-      href={href}
+      as={ReactLink}
+      to={`${homeURL}${href}`}
       role={'group'}
       display={'block'}
       p={2}
@@ -281,7 +282,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           align={'start'}>
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link as={ReactLink} key={child.label} py={2} to={`${homeURL}${child.href}`}>
                 {child.label}
               </Link>
             ))}
