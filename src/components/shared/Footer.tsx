@@ -30,6 +30,7 @@ export default function FooterSmallWithSocial() {
   return (
     <Box bg={useColorModeValue('gray.50', 'gray.600')} color={useColorModeValue('gray.600', 'gray.200')}>
       <Container
+        fontSize={'md'}
         as={Stack}
         maxW={'6xl'}
         py={4}
@@ -37,14 +38,14 @@ export default function FooterSmallWithSocial() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text fontSize={'md'}>
+        <Text>
           <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
         </Text>
-        <Text fontSize={'md'} fontWeight="bold">
+        <Text fontWeight="bold">
           <Trans id="footer.disclaimer">Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!</Trans>
         </Text>
-        <Link href={`${homeURL}/disclaimer`} fontSize={'md'}>
-          <Trans id="footer.info">Weiter Infos zu Seite findest du hier</Trans>
+        <Link href={`${homeURL}/disclaimer`} textDecor="underline">
+          <Trans id="footer.info">Weiter Infos zum Prototypen</Trans>
         </Link>
       </Container>
     </Box>
