@@ -4,13 +4,17 @@ import { useEffect } from 'react';
 
 interface FeatureProps {
   id: string;
+  query: URLSearchParams;
 }
 
-export const Bryter = ({ id, ...rest }: FeatureProps) => {
+// function test(name: string) {
+export const Bryter = ({ id, query, ...rest }: FeatureProps) => {
   const type: string = '';
 
+  const baseURL = 'https://openprogram.bryter.io/s/';
   const bryterURLs = {
-    mangel: '',
+    landlordLetter: `${baseURL}OV5WULavROWWM_NS6JnbFg/mietmangel---vermieterschreiben`,
+    claim: `${baseURL}KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel?antr[…]%C3%A4ngelbeseitigung,%20Mietminderung&mangelBehoben=false`,
   };
 
   useEffect(() => {
@@ -31,10 +35,8 @@ export const Bryter = ({ id, ...rest }: FeatureProps) => {
     <Box id="iframeBox" flex="1">
       <iframe
         title="Bryter"
-        src="https://openprogram.bryter.io/s/KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel?antr[…]%C3%A4ngelbeseitigung,%20Mietminderung&mangelBehoben=false"
-        onLoad={(o) => {
-          //o.o.style.height = o.contentWindow.document.body.scrollHeight + 'px';
-        }}
+        src={query.get('mangelanzeige') != null ? bryterURLs.landlordLetter : bryterURLs.claim}
+        onLoad={(o) => {}}
         style={{
           minHeight: '40em',
           width: '100%',

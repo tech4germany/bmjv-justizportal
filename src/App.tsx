@@ -50,6 +50,7 @@ export const App = () => {
 
   const featureProps = {
     id: query.get('id'),
+    query: query,
     mmobject: mmobject,
     userState: userState,
     setUserState: setUserState,
