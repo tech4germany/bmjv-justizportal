@@ -20,6 +20,7 @@ import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
+import { Routes } from '../Routes';
 
 interface FeatureProps {
   id: string | null;
@@ -145,8 +146,8 @@ Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehme
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
         />
         <NavButtons
-          linkBack={`${homeURL}/loesungs-finder?id=${mmobject.getParent(id)?.id}`}
-          linkForward={`${homeURL}/naechste-schritte?id=${id}`}
+          linkBack={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
+          linkForward={`${homeURL}/${Routes.NextSteps}?id=${id}`}
         />
       </PageBody>
     </>

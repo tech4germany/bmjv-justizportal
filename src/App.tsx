@@ -19,6 +19,7 @@ import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { homeURL } from './Const';
 import { Disclaimer } from './pages/disclaimer';
+import { Routes } from './Routes';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -64,17 +65,25 @@ export const App = () => {
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
-          <Route exact path={`${homeURL}/disclaimer`} children={() => <Disclaimer {...featureProps} />} />
-          <Route exact path={`${homeURL}/loesungs-finder`} children={() => <SolutionExplorer {...featureProps} />} />
-          <Route exact path={`${homeURL}/exit`} children={() => <ExitJourney {...featureProps} />} />
-          <Route exact path={`${homeURL}/zpo`} children={() => <ZPOInformation {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Disclaimer}`} children={() => <Disclaimer {...featureProps} />} />
           <Route
             exact
-            path={`${homeURL}/moegliche-ansprueche`}
+            path={`${homeURL}/${Routes.SolutionExplorer}`}
+            children={() => <SolutionExplorer {...featureProps} />}
+          />
+          <Route exact path={`${homeURL}/${Routes.Exit}`} children={() => <ExitJourney {...featureProps} />} />
+          <Route
+            exact
+            path={`${homeURL}/${Routes.ZPOInformation}`}
+            children={() => <ZPOInformation {...featureProps} />}
+          />
+          <Route
+            exact
+            path={`${homeURL}/${Routes.PossibleEntitlements}`}
             children={() => <PossibleEntitlements {...featureProps} />}
           />
-          <Route exact path={`${homeURL}/naechste-schritte`} children={() => <NextSteps {...featureProps} />} />
-          <Route exact path={`${homeURL}/bryter`}>
+          <Route exact path={`${homeURL}/${Routes.NextSteps}`} children={() => <NextSteps {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Bryter}`}>
             <Helmet>
               <title>Justiz Portal - BRYTER</title>
             </Helmet>

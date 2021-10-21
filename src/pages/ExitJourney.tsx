@@ -7,6 +7,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
+import { Routes } from '../Routes';
 
 interface FeatureProps {
   id: string | null;
@@ -50,7 +51,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
         <Button
           colorScheme={'green'}
           as={ReactLink}
-          to={`${homeURL}/beratungsangebote`}
+          to={`${homeURL}/${Routes.ConsultationOffers}`}
           children={t`Zu den Beratungsangeboten`}
         />
       </VStack>

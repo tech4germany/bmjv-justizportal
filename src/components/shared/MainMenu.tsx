@@ -25,6 +25,7 @@ import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { homeURL } from '../../Const';
 import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
 import { gerUserLocale, locales, dynamicActivate } from '../../translations/i18n';
+import { Routes } from '../../Routes';
 
 interface FeatureProps extends BoxProps {}
 
@@ -302,7 +303,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: t`Lösungsfinder`,
-    href: '/loesungs-finder',
+    href: '/' + Routes.SolutionExplorer,
   },
   {
     label: '🏎',
@@ -310,11 +311,11 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: '1',
-        href: '/loesungs-finder?id=cerik08cssg0',
+        href: '/' + Routes.SolutionExplorer + '?id=cerik08cssg0',
       },
       {
         label: '2',
-        href: '/moegliche-ansprueche?id=ceybyumxibs0',
+        href: '/' + Routes.PossibleEntitlements + '?id=ceybyumxibs0',
       },
     ],
   },

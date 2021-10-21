@@ -40,7 +40,7 @@ msgstr ""
 #~ "Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\n"
 #~ "mit der Mitteilung über den Mangel."
 
-#: src/pages/PEntitlements.tsx:39
+#: src/pages/PossibleEntitlements.tsx:40
 msgid ""
 "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
 "- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
@@ -50,10 +50,26 @@ msgstr ""
 "- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
 "- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
 
+#: src/components/shared/StaticProgress.tsx:27
+msgid "1. Ansprüche Prüfen"
+msgstr ""
+
+#: src/components/shared/StaticProgress.tsx:29
+msgid "2. Mögliche Ansprüche"
+msgstr ""
+
+#: src/components/shared/StaticProgress.tsx:31
+msgid "3. Nächste Schritte"
+msgstr ""
+
+#: src/pages/PossibleEntitlements.tsx:66
+msgid "Aufwendungsersatz"
+msgstr "Aufwendungsersatz"
+
 #~ msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 #~ msgstr "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 
-#: src/pages/PEntitlements.tsx:34
+#: src/pages/PossibleEntitlements.tsx:35
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Beseitigung des Mangels durch die Vermieter:in"
 
@@ -64,22 +80,29 @@ msgstr "Beseitigung des Mangels durch die Vermieter:in"
 msgid "Die Justiz im Netz."
 msgstr "Die Justiz im Netz."
 
-#: src/pages/SolutionExplorer.tsx:97
+#: src/pages/SolutionExplorer.tsx:90
 msgid "Diese Option ist leider noch nicht verfügbar."
 msgstr "Diese Option ist leider noch nicht verfügbar."
 
 #~ msgid "Dieser Pfad wurde noch nicht implementiert"
 #~ msgstr "Dieser Pfad wurde noch nicht implementiert"
 
-#: src/pages/PEntitlements.tsx:96
-msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-msgstr "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+#: src/pages/NextSteps.tsx:50
+msgid "Dokumentation des Mangels"
+msgstr "Dokumentation des Mangels"
+
+#~ msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+#~ msgstr "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+
+#: src/pages/PossibleEntitlements.tsx:99
+msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
 
 #: src/pages/Home.tsx:31
 msgid "Einfach, online, jederzeit."
 msgstr "Einfach, online, jederzeit."
 
-#: src/pages/PEntitlements.tsx:93
+#: src/pages/PossibleEntitlements.tsx:96
 msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgstr "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 
@@ -96,15 +119,15 @@ msgstr "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgid "Handlungsoptionen vergleichen"
 msgstr "Handlungsoptionen vergleichen"
 
-#: src/pages/SolutionExplorer.tsx:81
+#: src/pages/SolutionExplorer.tsx:74
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 msgstr "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 
-#: src/pages/SolutionExplorer.tsx:154
+#: src/pages/SolutionExplorer.tsx:147
 msgid "Info"
 msgstr "Bilgi"
 
-#: src/pages/SolutionExplorer.tsx:132
+#: src/pages/SolutionExplorer.tsx:125
 msgid "Ja"
 msgstr "Evet"
 
@@ -113,16 +136,20 @@ msgstr "Evet"
 msgid "Jetzt starten!"
 msgstr "Şimdi başla"
 
-#: src/components/shared/MainMenu.tsx:303
-#: src/pages/SolutionExplorer.tsx:80
+#: src/components/shared/MainMenu.tsx:304
+#: src/pages/SolutionExplorer.tsx:73
 msgid "Lösungsfinder"
 msgstr "Lösungsfinder"
 
-#: src/pages/PEntitlements.tsx:47
+#: src/pages/PossibleEntitlements.tsx:48
 msgid "Mietminderung"
 msgstr "Mietminderung"
 
-#: src/pages/SolutionExplorer.tsx:135
+#: src/pages/NextSteps.tsx:66
+msgid "Mängelanzeige bei Ihrer Vermieter:in"
+msgstr "Mängelanzeige bei Ihrer Vermieter:in"
+
+#: src/pages/SolutionExplorer.tsx:128
 msgid "Nein"
 msgstr "Hayır"
 
@@ -130,9 +157,17 @@ msgstr "Hayır"
 msgid "Online Klage einreichen"
 msgstr "Çevrimiçi bir dava açabilirsiniz"
 
+#: src/pages/NextSteps.tsx:129
+msgid "Rechtlich beraten lassen"
+msgstr "Rechtlich beraten lassen"
+
 #: src/pages/Home.tsx:69
 msgid "Rechtsproblem einordnen"
 msgstr "Rechtsproblem einordnen"
+
+#: src/pages/PossibleEntitlements.tsx:78
+msgid "Schadensersatz"
+msgstr "Schadensersatz"
 
 #: src/pages/Home.tsx:48
 msgid "Unser Angebot"
@@ -142,7 +177,7 @@ msgstr "Unser Angebot"
 msgid "Weiter"
 msgstr "Devam"
 
-#: src/pages/PEntitlements.tsx:128
+#: src/pages/PossibleEntitlements.tsx:131
 msgid ""
 "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \n"
 "wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
@@ -170,15 +205,19 @@ msgstr "Zum Prototypen"
 msgid "Zurück"
 msgstr "Geri"
 
-#: src/components/shared/Footer.tsx:44
+#: src/pages/NextSteps.tsx:89
+msgid "Zweites Schreiben an die Vermieter:in senden"
+msgstr "Zweites Schreiben an die Vermieter:in senden"
+
+#: src/components/shared/Footer.tsx:86
 msgid "footer.disclaimer"
 msgstr "Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!"
 
-#: src/components/shared/Footer.tsx:47
+#: src/components/shared/Footer.tsx:89
 msgid "footer.info"
 msgstr "Weiter Infos zu Seite findest du hier"
 
-#: src/components/shared/Footer.tsx:41
+#: src/components/shared/Footer.tsx:83
 msgid "footer.text"
 msgstr "Gebaut von ⚖️ und 🐌 mit ❤️"
 
@@ -218,6 +257,18 @@ msgstr "Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei
 msgid "home.sub_heading"
 msgstr "Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres Rechtsproblems"
 
+#: src/pages/NextSteps.tsx:157
+msgid "nextsteps.header"
+msgstr "Ihre nächsten möglichen Schritte zur Problemlösung"
+
+#: src/pages/NextSteps.tsx:160
+msgid "nextsteps.sub_header"
+msgstr "Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten."
+
 #: src/pages/Home.tsx:75
 msgid "Über Ansprüche informieren"
 msgstr "Über Ansprüche informieren"
+
+#: src/pages/NextSteps.tsx:106
+msgid "Über das Justizportal eine Klage einreichen"
+msgstr "Über das Justizportal eine Klage einreichen"

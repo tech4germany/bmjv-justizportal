@@ -24,6 +24,7 @@ import { StatsCard } from '../components/shared/StatsCard';
 import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
+import { Routes } from '../Routes';
 
 interface FeatureProps {
   id: string | null;
@@ -55,8 +56,8 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
   if (data.children != undefined) {
     data.children.forEach((child) => {
       const pre =
-        (child.title == '{EXIT}' ? `${homeURL}/exit` : '') +
-        (child.title == '{CONTINUE}' ? `${homeURL}/moegliche-ansprueche` : '');
+        (child.title == '{EXIT}' ? `${homeURL}/${Routes.Exit}` : '') +
+        (child.title == '{CONTINUE}' ? `${homeURL}/${Routes.PossibleEntitlements}` : '');
 
       linkOnYes = child.type == 'YESANSWERD' ? `${pre}?id=${child.id}` : linkOnYes;
       linkOnNo = child.type == 'NOANSWERD' ? `${pre}?id=${child.id}` : linkOnNo;

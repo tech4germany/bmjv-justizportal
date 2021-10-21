@@ -7,6 +7,7 @@ import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
 import { homeURL } from '../Const';
+import { Routes } from '../Routes';
 
 interface FeatureProps {
   anchorId: string;
@@ -38,7 +39,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'orange'}
             as={ReactLink}
-            to={`${homeURL}/loesungs-finder`}
+            to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}
           />
           <Button as={ReactLink} to="#how" onClick={executeScroll} children={t`Wie es funktioniert`} />
@@ -106,7 +107,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'orange'}
             as={ReactLink}
-            to={`${homeURL}/loesungs-finder`}
+            to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}
           />
         </VStack>
