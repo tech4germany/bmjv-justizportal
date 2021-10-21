@@ -11,6 +11,21 @@ msgstr ""
 msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
 msgstr "- **Anspruch**\n  - Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n  - Dafür zahlen die Mietenden die Miete. \n  - Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n  - wenn das im Vertrag so steht und\n  - ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n  - Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
 
+msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
+msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
+
+msgid "1. Ansprüche Prüfen"
+msgstr "1. Ansprüche Prüfen"
+
+msgid "2. Mögliche Ansprüche"
+msgstr "2. Mögliche Ansprüche"
+
+msgid "3. Nächste Schritte"
+msgstr "3. Nächste Schritte"
+
+msgid "Aufwendungsersatz"
+msgstr "Aufwendungsersatz"
+
 msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgstr "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 
@@ -29,8 +44,20 @@ msgstr "Diese Option ist leider noch nicht verfügbar."
 msgid "Dieser Pfad wurde noch nicht implementiert"
 msgstr "Dieser Pfad wurde noch nicht implementiert"
 
+msgid "Dokumentation des Mangels"
+msgstr "Dokumentation des Mangels"
+
+msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+
+msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+
 msgid "Einfach, online, jederzeit."
 msgstr "Einfach, online, jederzeit."
+
+msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 
 msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
 msgstr "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
@@ -56,20 +83,32 @@ msgstr "Lösungsfinder"
 msgid "Mietminderung"
 msgstr "Mietminderung"
 
+msgid "Mängelanzeige bei Ihrer Vermieter:in"
+msgstr "Mängelanzeige bei Ihrer Vermieter:in"
+
 msgid "Nein"
 msgstr "Nein"
 
 msgid "Online Klage einreichen"
 msgstr "Online Klage einreichen"
 
+msgid "Rechtlich beraten lassen"
+msgstr "Rechtlich beraten lassen"
+
 msgid "Rechtsproblem einordnen"
 msgstr "Rechtsproblem einordnen"
+
+msgid "Schadensersatz"
+msgstr "Schadensersatz"
 
 msgid "Unser Angebot"
 msgstr "Unser Angebot"
 
 msgid "Weiter"
 msgstr "Weiter"
+
+msgid "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \nwie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
+msgstr "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \nwie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
 
 msgid "Wie es funktioniert"
 msgstr "Wie es funktioniert"
@@ -80,8 +119,20 @@ msgstr "Wobei können wir Ihnen helfen?"
 msgid "Zu den Beratungsangeboten"
 msgstr "Zu den Beratungsangeboten"
 
+msgid "Zum Prototypen"
+msgstr "Zum Prototypen"
+
 msgid "Zurück"
 msgstr "Zurück"
+
+msgid "Zweites Schreiben an die Vermieter:in senden"
+msgstr "Zweites Schreiben an die Vermieter:in senden"
+
+msgid "footer.disclaimer"
+msgstr "Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!"
+
+msgid "footer.info"
+msgstr "Weiter Infos zu Seite findest du hier"
 
 msgid "footer.text"
 msgstr "Gebaut von ⚖️ und 🐌 mit ❤️"
@@ -113,5 +164,14 @@ msgstr "Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei
 msgid "home.sub_heading"
 msgstr "Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres Rechtsproblems"
 
+msgid "nextsteps.header"
+msgstr "Ihre nächsten möglichen Schritte zur Problemlösung"
+
+msgid "nextsteps.sub_header"
+msgstr "Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten."
+
 msgid "Über Ansprüche informieren"
 msgstr "Über Ansprüche informieren"
+
+msgid "Über das Justizportal eine Klage einreichen"
+msgstr "Über das Justizportal eine Klage einreichen"

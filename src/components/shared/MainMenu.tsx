@@ -25,6 +25,7 @@ import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { homeURL } from '../../Const';
 import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
 import { gerUserLocale, locales, dynamicActivate } from '../../translations/i18n';
+import { Routes } from '../../Const';
 
 interface FeatureProps extends BoxProps {}
 
@@ -190,7 +191,8 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Link
-      href={href}
+      as={ReactLink}
+      to={`${homeURL}${href}`}
       role={'group'}
       display={'block'}
       p={2}
@@ -281,7 +283,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           align={'start'}>
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link as={ReactLink} key={child.label} py={2} to={`${homeURL}${child.href}`}>
                 {child.label}
               </Link>
             ))}
@@ -301,7 +303,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: t`Lösungsfinder`,
-    href: '/solutionexplorer',
+    href: '/' + Routes.SolutionExplorer,
   },
   {
     label: '🏎',
@@ -309,11 +311,11 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: '1',
-        href: '/solutionexplorer?id=cerik08cssg0',
+        href: '/' + Routes.SolutionExplorer + '?id=cerik08cssg0',
       },
       {
         label: '2',
-        href: '/possibleentitlements?id=ceybyumxibs0',
+        href: '/' + Routes.PossibleEntitlements + '?id=ceybyumxibs0',
       },
     ],
   },

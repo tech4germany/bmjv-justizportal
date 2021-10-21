@@ -7,6 +7,7 @@ import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
 import { homeURL } from '../Const';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   anchorId: string;
@@ -29,7 +30,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
       <HeroSplit
         title1={t`Die Justiz im Netz.`}
         title2={t`Einfach, online, jederzeit.`}
-        image={'data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.png'}>
+        image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.png`}>
         <Trans render={Text} id="home.sub_heading">
           Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres
           Rechtsproblems
@@ -38,7 +39,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'orange'}
             as={ReactLink}
-            to={`${homeURL}/solutionexplorer`}
+            to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}
           />
           <Button as={ReactLink} to="#how" onClick={executeScroll} children={t`Wie es funktioniert`} />
@@ -106,7 +107,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'orange'}
             as={ReactLink}
-            to={`${homeURL}/solutionexplorer`}
+            to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}
           />
         </VStack>

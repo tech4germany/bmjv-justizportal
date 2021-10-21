@@ -1,6 +1,8 @@
-import { Box, Button, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Box, Button, Container, Stack, Text, Link, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
+import { homeURL } from '../../Const';
+import { Routes } from '../../Const';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
@@ -29,6 +31,7 @@ export default function FooterSmallWithSocial() {
   return (
     <Box bg={useColorModeValue('gray.50', 'gray.600')} color={useColorModeValue('gray.600', 'gray.200')}>
       <Container
+        fontSize={'md'}
         as={Stack}
         maxW={'6xl'}
         py={4}
@@ -36,9 +39,15 @@ export default function FooterSmallWithSocial() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text fontSize={'md'}>
+        <Text>
           <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
         </Text>
+        <Text fontWeight="bold">
+          <Trans id="footer.disclaimer">Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!</Trans>
+        </Text>
+        <Link href={`${homeURL}/${Routes.Disclaimer}`} textDecor="underline">
+          <Trans id="footer.info">Weiter Infos zum Prototypen</Trans>
+        </Link>
       </Container>
     </Box>
   );

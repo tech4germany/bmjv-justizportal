@@ -6,18 +6,19 @@ import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import FooterSmallWithSocial from './components/shared/Footer';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
-import { dynamicActivate } from './translations/i18n';
+import { homeURL, Routes } from './Const';
 import { MMGraph } from './logic/KMParser';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
 import { Bryter } from './pages/BRYTER';
+import { Disclaimer } from './pages/disclaimer';
 import { ExitJourney } from './pages/ExitJourney';
 import { Home } from './pages/Home';
 import { NextSteps } from './pages/NextSteps';
-import { PossibleEntitlements } from './pages/PEntitlements';
+import { PossibleEntitlements } from './pages/PossibleEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
-import { homeURL } from './Const';
+import { dynamicActivate } from './translations/i18n';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -49,6 +50,7 @@ export const App = () => {
 
   const featureProps = {
     id: query.get('id'),
+    query: query,
     mmobject: mmobject,
     userState: userState,
     setUserState: setUserState,
@@ -62,16 +64,25 @@ export const App = () => {
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
-          <Route exact path={`${homeURL}/solutionexplorer`} children={() => <SolutionExplorer {...featureProps} />} />
-          <Route exact path={`${homeURL}/exit`} children={() => <ExitJourney {...featureProps} />} />
-          <Route exact path={`${homeURL}/zpo`} children={() => <ZPOInformation {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Disclaimer}`} children={() => <Disclaimer {...featureProps} />} />
           <Route
             exact
-            path={`${homeURL}/possibleentitlements`}
+            path={`${homeURL}/${Routes.SolutionExplorer}`}
+            children={() => <SolutionExplorer {...featureProps} />}
+          />
+          <Route exact path={`${homeURL}/${Routes.Exit}`} children={() => <ExitJourney {...featureProps} />} />
+          <Route
+            exact
+            path={`${homeURL}/${Routes.ZPOInformation}`}
+            children={() => <ZPOInformation {...featureProps} />}
+          />
+          <Route
+            exact
+            path={`${homeURL}/${Routes.PossibleEntitlements}`}
             children={() => <PossibleEntitlements {...featureProps} />}
           />
-          <Route exact path={`${homeURL}/nextsteps`} children={() => <NextSteps {...featureProps} />} />
-          <Route exact path={`${homeURL}/bryter`}>
+          <Route exact path={`${homeURL}/${Routes.NextSteps}`} children={() => <NextSteps {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Bryter}`}>
             <Helmet>
               <title>Justiz Portal - BRYTER</title>
             </Helmet>

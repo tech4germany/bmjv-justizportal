@@ -1,15 +1,4 @@
-import {
-  Flex,
-  GridItem,
-  Heading,
-  Progress,
-  Radio,
-  RadioGroup,
-  SimpleGrid,
-  Spacer,
-  useToast,
-  VStack,
-} from '@chakra-ui/react';
+import { Flex, GridItem, Heading, Radio, RadioGroup, SimpleGrid, Spacer, useToast, VStack } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -19,8 +8,9 @@ import { CardContent } from '../components/shared/CardContent';
 import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { StaticProgress } from '../components/shared/StaticProgress';
 import { StatsCard } from '../components/shared/StatsCard';
-import { homeURL } from '../Const';
+import { homeURL, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
 
@@ -54,8 +44,8 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
   if (data.children != undefined) {
     data.children.forEach((child) => {
       const pre =
-        (child.title == '{EXIT}' ? `${homeURL}/exit` : '') +
-        (child.title == '{CONTINUE}' ? `${homeURL}/possibleentitlements` : '');
+        (child.title == '{EXIT}' ? `${homeURL}/${Routes.Exit}` : '') +
+        (child.title == '{CONTINUE}' ? `${homeURL}/${Routes.PossibleEntitlements}` : '');
 
       linkOnYes = child.type == 'YESANSWERD' ? `${pre}?id=${child.id}` : linkOnYes;
       linkOnNo = child.type == 'NOANSWERD' ? `${pre}?id=${child.id}` : linkOnNo;
@@ -67,17 +57,9 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   return (
     <>
-      <Progress
-        // position="fixed"
-        // bottom={0}
-        // zIndex={10}
-        colorScheme="green"
-        size="sm"
-        value={(mmobject.getNumberOfParents(id) / 11) * 100}
-        width="100%"
-      />
+      <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
 
-      <PageBody title={t`Lösungsfinder`}>
+      <PageBody title={t`Lösungsfinder`} paddingTop={4}>
         <Heading>{state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}</Heading>
         {state == 'SE' ? (
           <>
@@ -151,7 +133,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
               />
             </VStack>
             <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
-              <CardHeader title={t`Info`} action={<FaInfoCircle size="1.2em" />} />
+              <CardHeader title={t`Info`} iconLeft={FaInfoCircle} />
               <CardContent padding="1em">
                 <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>

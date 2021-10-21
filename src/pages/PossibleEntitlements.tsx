@@ -17,8 +17,10 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;
@@ -30,6 +32,18 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
   let claims: Claims[] = mmobject.getNode(id).claims;
 
   let data = [
+    {
+      label: t`Ausgleichszahlung`,
+      icon: FaMoneyBill,
+      buttonLink: '',
+      buttonText: '',
+      condition: claims.indexOf(Claims.Ausgleichszahlung) != -1,
+      content: t`
+- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.
+- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.
+- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**.
+`,
+    },
     {
       label: t`Beseitigung des Mangels durch die Vermieter:in`,
       icon: FaTools,
@@ -62,7 +76,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
 `,
     },
     {
-      label: 'Aufwendungsersatz',
+      label: t`Aufwendungsersatz`,
       icon: FaReceipt,
       buttonLink: '',
       buttonText: '',
@@ -74,7 +88,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
 `,
     },
     {
-      label: 'Schadensersatz',
+      label: t`Schadensersatz`,
       icon: FaMoneyBill,
       buttonLink: '',
       buttonText: '',
@@ -88,51 +102,54 @@ durch einen Mangel **erheblich eingeschränkt** ist.
   ];
 
   return (
-    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
-      <Heading marginInline={{ base: '2em', md: '0em' }}>
-        <Trans>Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
-      </Heading>
-      <AnnotadedText
-        text={t`
-Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. `}
-      />
-      <Accordion alignSelf="stretch" allowToggle>
-        {data.map((acc, index) =>
-          acc.condition ? (
-            <AccordionItem>
-              <AccordionButton>
-                {<acc.icon size="2.5em" />}
-                <Text fontWeight="bold" padding="1em">
-                  {acc.label}
-                </Text>
-                <Spacer />
-                <AccordionIcon />
-              </AccordionButton>
-              <AccordionPanel pb={4}>
-                <AnnotadedText text={acc.content} />
-                <Spacer height="1.5em" />
-                {acc.buttonLink && acc.buttonText ? (
-                  <>
-                    <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
-                      {acc.buttonText}
-                    </Button>
-                  </>
-                ) : null}
-                <Spacer height="1em" />
-              </AccordionPanel>
-            </AccordionItem>
-          ) : null
-        )}
-      </Accordion>
-      <AnnotadedText
-        text={t`
+    <>
+      <StaticProgress currentStep={2} />
+      <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
+        <Heading marginInline={{ base: '2em', md: '0em' }}>
+          <Trans>Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
+        </Heading>
+        <AnnotadedText
+          text={t`
+Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. `}
+        />
+        <Accordion alignSelf="stretch" allowToggle>
+          {data.map((acc, index) =>
+            acc.condition ? (
+              <AccordionItem>
+                <AccordionButton>
+                  {<acc.icon size="2.5em" />}
+                  <Text fontWeight="bold" padding="1em">
+                    {acc.label}
+                  </Text>
+                  <Spacer />
+                  <AccordionIcon />
+                </AccordionButton>
+                <AccordionPanel pb={4}>
+                  <AnnotadedText text={acc.content} />
+                  <Spacer height="1.5em" />
+                  {acc.buttonLink && acc.buttonText ? (
+                    <>
+                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
+                        {acc.buttonText}
+                      </Button>
+                    </>
+                  ) : null}
+                  <Spacer height="1em" />
+                </AccordionPanel>
+              </AccordionItem>
+            ) : null
+          )}
+        </Accordion>
+        <AnnotadedText
+          text={t`
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
-      />
-      <NavButtons
-        linkBack={`${homeURL}/solutionexplorer?id=${mmobject.getParent(id)?.id}`}
-        linkForward={`${homeURL}/nextsteps?id=${id}`}
-      />
-    </PageBody>
+        />
+        <NavButtons
+          linkBack={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
+          linkForward={`${homeURL}/${Routes.NextSteps}?id=${id}`}
+        />
+      </PageBody>
+    </>
   );
 };
