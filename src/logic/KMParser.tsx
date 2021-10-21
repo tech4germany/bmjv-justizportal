@@ -27,15 +27,29 @@ export interface MMNode {
   children?: MMNode[];
   claims: Claims[];
   nextSteps: NextStepsType[];
+  caseType?: CaseTypes;
+  caseTopic?: CaseTopics;
 }
 
+export enum CaseTypes {
+  Mietmangel = 'mietmangel',
+  Fluggastrecht = 'flug',
+}
+
+export enum CaseTopics {
+  Schimmel = 'Schimmel',
+  Verspätung = 'Verspätung',
+  Annulierung = 'Annulierung',
+  Überbuchung = 'Überbuchung',
+}
 
 export enum Claims {
   Mietminderung = 'Mietminderung',
   Mängelbeseitigung = 'Mängelbeseitigung',
   Schadensersatz = 'Schadensersatz',
   Aufwendungsersatz = 'Aufwendungsersatz',
-  Ausgleichszahlung = "Ausgleichszahlung"
+  Ausgleichszahlung = 'Ausgleichszahlung',
+  Rückerstattung = 'Rückerstattung',
 }
 
 export enum NextStepsType {
@@ -44,7 +58,7 @@ export enum NextStepsType {
   LandlordLetterReview = 'Vermieterschreiben Überprüfung',
   Complaint = 'Klage',
   FluglinieKontaktieren = 'Fluglinie kontaktieren',
-  Schlichtung = 'Schlichtung'
+  Schlichtung = 'Schlichtung',
 }
 
 export class MMGraph {
@@ -110,7 +124,23 @@ export class MMGraph {
       currentNode.nextSteps = JSON.parse(lines[0].replaceAll("'", '"'))['nextsteps'];
       lines.splice(0, 1);
     }
-
+    if (lines.length > 0 && lines[0].includes("{'")) {
+      if (lines[0].includes('caseType')) {
+        currentNode.caseType = JSON.parse(lines[0].replaceAll("'", '"'))['caseType'];
+      }
+      if (lines[0].includes('caseTopic')) {
+        currentNode.caseTopic = JSON.parse(lines[0].replaceAll("'", '"'))['caseTopic'];
+      }
+      lines.splice(0, 1);
+    }
+    if (this.getParent(currentNode.id)) {
+      if (!currentNode.caseType) {
+        currentNode.caseType = this.getParent(currentNode.id)?.caseType;
+      }
+      if (!currentNode.caseTopic) {
+        currentNode.caseTopic = this.getParent(currentNode.id)?.caseTopic;
+      }
+    }
     currentNode.info = lines.join('\n');
   }
 

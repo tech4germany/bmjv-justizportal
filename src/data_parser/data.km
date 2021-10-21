@@ -25,7 +25,7 @@
                                 "y": 3
                             },
                             "expandState": "expand",
-                            "note": "{ICON:FaSeedling}\n### Was ist ein **Mietmangel**?\n\nIhre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
+                            "note": "{ICON:FaSeedling}\n{'caseType':'mietmangel'}\n### Was ist ein **Mietmangel**?\n\nIhre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
                         },
                         "children": [
                             {
@@ -33,7 +33,7 @@
                                     "id": "ceppdwxwwig0",
                                     "created": 1633257281374,
                                     "text": "Schimmel",
-                                    "note": "{ICON:FaBahai}\n### Wohnungsmängel durch Schimmel\nSchimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
+                                    "note": "{ICON:FaBahai}\n{'caseTopic':'Schimmel'}\n### Wohnungsmängel durch Schimmel\nSchimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
                                 },
                                 "children": [
                                     {
@@ -535,7 +535,7 @@
                             "id": "cf008ca222o0",
                             "created": 1634303476350,
                             "text": "Fluggastrechte",
-                            "note": "{ICON:FaPlane}\n\n### Ihre Rechte nach der EU-Fluggastrechteverordnung\n\nWenn Sie wegen einer Flugverspätung, eines Flugausfalls wegen Annulierung durch die Fluglinie oder einer Beförderungsverweigerung durch Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen."
+                            "note": "{ICON:FaPlane}\n{'caseType':'flug'}\n### Ihre Rechte nach der EU-Fluggastrechteverordnung\n\nWenn Sie wegen einer Flugverspätung, eines Flugausfalls wegen Annulierung durch die Fluglinie oder einer Beförderungsverweigerung durch Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen."
                         },
                         "children": [
                             {
@@ -543,7 +543,7 @@
                                     "id": "cf4getq0jc00",
                                     "created": 1634755362094,
                                     "text": "Verspätung",
-                                    "note": "{ICON:FaHourglassEnd}\n\n### Ihre Rechte bei Verspätung nach der EU-Fluggastrechteverordnung\n\nWenn Ihre Landung am Zielflughafen mehr als drei Stunden verspätet war, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen. \n\nHier informieren wir Sie zu möglichen Ansprüchen für Ihren Fall."
+                                    "note": "{ICON:FaHourglassEnd}\n{'caseTopic':'Verspätung'}\n### Ihre Rechte bei Verspätung nach der EU-Fluggastrechteverordnung\n\nWenn Ihre Landung am Zielflughafen mehr als drei Stunden verspätet war, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen. \n\nHier informieren wir Sie zu möglichen Ansprüchen für Ihren Fall."
                                 },
                                 "children": [
                                     {
