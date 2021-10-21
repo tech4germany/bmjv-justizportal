@@ -11,7 +11,7 @@ const customTheme = extendTheme({
       body: {
         color: mode('gray.700', 'whiteAlpha.900')(props),
         bg: mode('white', 'gray.900')(props),
-        fontSize: '1.2em',
+        fontSize: '1.0em',
         '.deleted': {
           color: '#ff8383 !important',
           fontStyle: 'normal !important',
