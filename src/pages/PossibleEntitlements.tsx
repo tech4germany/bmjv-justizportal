@@ -63,7 +63,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
 `,
     },
     {
-      label: 'Aufwendungsersatz',
+      label: t`Aufwendungsersatz`,
       icon: FaReceipt,
       buttonLink: '',
       buttonText: '',
@@ -75,7 +75,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
 `,
     },
     {
-      label: 'Schadensersatz',
+      label: t`Schadensersatz`,
       icon: FaMoneyBill,
       buttonLink: '',
       buttonText: '',

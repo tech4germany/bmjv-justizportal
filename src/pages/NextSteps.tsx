@@ -22,6 +22,7 @@ import { homeURL } from '../Const';
 import { MMGraph, NextStepsType } from '../logic/KMParser';
 import { IconType } from 'react-icons';
 import { StaticProgress } from '../components/shared/StaticProgress';
+import { t, Trans } from '@lingui/macro';
 
 interface FeatureProps {
   id: string | null;
@@ -43,7 +44,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 
   let data: NextStepData[] = [
     {
-      label: 'Dokumentation des Mangels',
+      label: t`Dokumentation des Mangels`,
       icon: FaPencilAlt,
       buttonLink: '',
       buttonText: '',
@@ -59,7 +60,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       optional: false,
     },
     {
-      label: 'Mängelanzeige bei Ihrer Vermieter:in',
+      label: t`Mängelanzeige bei Ihrer Vermieter:in`,
       icon: FaEnvelopeOpen,
       buttonText: 'Zur Vorlage für die Mängelanzeige',
       buttonLink: `${homeURL}/bryter?mangelanzeige&id=${id}`,
@@ -82,7 +83,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       optional: false,
     },
     {
-      label: 'Zweites Schreiben an die Vermieter:in senden',
+      label: t`Zweites Schreiben an die Vermieter:in senden`,
       icon: TiArrowLoop,
       buttonText: 'Zur Vorlage für die zweite Mängelanzeige',
       buttonLink: `${homeURL}/bryter?mangelanzeige&id=${id}`,
@@ -99,7 +100,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       optional: false,
     },
     {
-      label: 'Über das Justizportal eine Klage einreichen',
+      label: t`Über das Justizportal eine Klage einreichen`,
       icon: HiScale,
       buttonText: 'Mehr Informationen zur Klage',
       buttonLink: `${homeURL}/zpo?id=${id}`,
@@ -122,7 +123,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
       optional: true,
     },
     {
-      label: 'Rechtlich beraten lassen',
+      label: t`Rechtlich beraten lassen`,
       icon: FaUserTie,
       buttonText: 'Zur Übersicht für Beratungsangebote',
       buttonLink: '#',
@@ -149,10 +150,14 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
     <>
       <StaticProgress currentStep={3} />
       <PageBody marginInline={{ base: '0em', md: '2em' }} title="Optionen">
-        <Heading marginInline={{ base: '2em', md: '0em' }}>Ihre nächsten möglichen Schritte zur Problemlösung</Heading>
+        <Heading marginInline={{ base: '2em', md: '0em' }}>
+          <Trans id="nextsteps.header">Ihre nächsten möglichen Schritte zur Problemlösung</Trans>
+        </Heading>
         <Text>
-          Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
-          nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+          <Trans id="nextsteps.sub_header">
+            Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
+            nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+          </Trans>
         </Text>
         <Spacer />
         <Accordion alignSelf="stretch" allowToggle>
