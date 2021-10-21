@@ -6,20 +6,19 @@ import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import FooterSmallWithSocial from './components/shared/Footer';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
-import { dynamicActivate } from './translations/i18n';
+import { homeURL, Routes } from './Const';
 import { MMGraph } from './logic/KMParser';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
 import { Bryter } from './pages/BRYTER';
+import { Disclaimer } from './pages/disclaimer';
 import { ExitJourney } from './pages/ExitJourney';
 import { Home } from './pages/Home';
 import { NextSteps } from './pages/NextSteps';
 import { PossibleEntitlements } from './pages/PossibleEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
-import { homeURL } from './Const';
-import { Disclaimer } from './pages/disclaimer';
-import { Routes } from './Routes';
+import { dynamicActivate } from './translations/i18n';
 
 function ScrollToTop() {
   const { pathname } = useLocation();

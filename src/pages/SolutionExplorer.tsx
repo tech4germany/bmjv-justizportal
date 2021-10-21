@@ -24,7 +24,7 @@ import { StatsCard } from '../components/shared/StatsCard';
 import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
-import { Routes } from '../Routes';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;

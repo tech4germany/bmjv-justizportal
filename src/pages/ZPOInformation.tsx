@@ -4,7 +4,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
-import { Routes } from '../Routes';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;

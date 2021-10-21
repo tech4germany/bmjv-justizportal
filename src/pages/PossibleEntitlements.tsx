@@ -20,7 +20,7 @@ import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
-import { Routes } from '../Routes';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;

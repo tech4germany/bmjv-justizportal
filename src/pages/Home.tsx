@@ -7,7 +7,7 @@ import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
 import { homeURL } from '../Const';
-import { Routes } from '../Routes';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   anchorId: string;

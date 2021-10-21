@@ -7,7 +7,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
-import { Routes } from '../Routes';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;
