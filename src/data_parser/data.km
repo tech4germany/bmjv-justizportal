@@ -535,7 +535,7 @@
                             "id": "cf008ca222o0",
                             "created": 1634303476350,
                             "text": "Fluggastrechte",
-                            "note": "{ICON:FaPlane}\n\n### Ihre Rechte nach der EU-Fluggastrechteverordnung\n\nWenn Sie wegen einer Flugverspätung, eines Flugausfalls wegen Annulierung durch die Airline oder einer Beförderungsverweigerung durch Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen."
+                            "note": "{ICON:FaPlane}\n\n### Ihre Rechte nach der EU-Fluggastrechteverordnung\n\nWenn Sie wegen einer Flugverspätung, eines Flugausfalls wegen Annulierung durch die Fluglinie oder einer Beförderungsverweigerung durch Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen."
                         },
                         "children": [
                             {
@@ -543,14 +543,14 @@
                                     "id": "cf4getq0jc00",
                                     "created": 1634755362094,
                                     "text": "Verspätung",
-                                    "note": "{ICON:FaRegHourglass}"
+                                    "note": "{ICON:FaHourglassEnd}\n\n### Ihre Rechte bei Verspätung nach der EU-Fluggastrechteverordnung\n\nWenn Ihre Landung am Zielflughafen mehr als drei Stunden verspätet war, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen. \n\nHier informieren wir Sie zu möglichen Ansprüchen für Ihren Fall."
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cf4gipf45g00",
                                             "created": 1634755666181,
-                                            "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Airline in der EU/Schweiz gelandet?",
+                                            "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?",
                                             "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz\n\nIst das der Fall?"
                                         },
                                         "children": [
@@ -577,7 +577,7 @@
                                                                     "id": "cf4gu9dswfc0",
                                                                     "created": 1634756571643,
                                                                     "text": "Waren Sie rechtzeitig am Check-in (mindestens 45 Minuten vor dem Start)?",
-                                                                    "note": "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Sie sich rechtzeitig zum Check-in eingefunden haben. Wenn kein anderer Termin von Ihrer Airline angegeben wurde, reichen 45 Minuten vor Abflug.",
+                                                                    "note": "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Sie sich rechtzeitig zum Check-in eingefunden haben. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 45 Minuten vor Abflug.",
                                                                     "priority": 3
                                                                 },
                                                                 "children": [
@@ -592,60 +592,6 @@
                                                                         "children": [
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf4h25v8j540",
-                                                                                    "created": 1634757190904,
-                                                                                    "text": "Hat Ihre Airline außergewöhnliche Umstände für die Verspätung genannt, die Sie nicht vermeiden konnte?",
-                                                                                    "priority": 3,
-                                                                                    "note": "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Airline die Gründe für die Verspätung nicht vermeiden konnte. \n\nBeispiele für außergewöhnliche Umstände sind politische Instabilität, starkes Unwetter, Sicherheitsrisiken oder auch unerwartete Mängel und ein Streik am Flughafen."
-                                                                                },
-                                                                                "children": [
-                                                                                    {
-                                                                                        "data": {
-                                                                                            "id": "cf4h5liuqtc0",
-                                                                                            "created": 1634757460076,
-                                                                                            "text": "{EXIT}",
-                                                                                            "note": "Wenn Ihre  Airline außergewöhnliche Umstände für Ihre Verspätung nennen kann, ist es schwer pauschal abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Deshalb können wir Ihnen keine Klage ohne eine individuelle Beratung empfehlen. Sie können jedoch den direkten Austausch mit Ihrer Airline suchen.",
-                                                                                            "priority": 3
-                                                                                        },
-                                                                                        "children": []
-                                                                                    },
-                                                                                    {
-                                                                                        "data": {
-                                                                                            "id": "cf4hbq4l8pk0",
-                                                                                            "created": 1634757940282,
-                                                                                            "text": "Haben Sie Ihre Airline schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
-                                                                                            "note": "Zunächst sollten Sie Ihre Airline selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
-                                                                                            "priority": 1,
-                                                                                            "expandState": "expand"
-                                                                                        },
-                                                                                        "children": [
-                                                                                            {
-                                                                                                "data": {
-                                                                                                    "id": "cf4hcjzx9bk0",
-                                                                                                    "created": 1634758005304,
-                                                                                                    "text": "{CONTINUE}",
-                                                                                                    "priority": 3,
-                                                                                                    "expandState": "expand",
-                                                                                                    "note": "{'nextsteps': ['Schlichtung', 'Klage'],'entitlements':['Ausgleichszahlung']}"
-                                                                                                },
-                                                                                                "children": []
-                                                                                            },
-                                                                                            {
-                                                                                                "data": {
-                                                                                                    "id": "cf4h5nbt1r40",
-                                                                                                    "created": 1634757464003,
-                                                                                                    "text": "{CONTINUE}",
-                                                                                                    "note": "{'nextsteps': ['Airline kontaktieren','Schlichtung'],'entitlements':['Ausgleichszahlung']}",
-                                                                                                    "priority": 1
-                                                                                                },
-                                                                                                "children": []
-                                                                                            }
-                                                                                        ]
-                                                                                    }
-                                                                                ]
-                                                                            },
-                                                                            {
-                                                                                "data": {
                                                                                     "id": "cf4h26nw7ts0",
                                                                                     "created": 1634757192637,
                                                                                     "text": "{EXIT}",
@@ -653,6 +599,82 @@
                                                                                     "priority": 1
                                                                                 },
                                                                                 "children": []
+                                                                            },
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "cf4z2sjaknc0",
+                                                                                    "created": 1634808020226,
+                                                                                    "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
+                                                                                    "expandState": "expand",
+                                                                                    "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt.",
+                                                                                    "priority": 3
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "cf4h25v8j540",
+                                                                                            "created": 1634757190904,
+                                                                                            "text": "Hat Ihre Fluglinie außergewöhnliche Umstände für die Verspätung genannt, die Sie nicht vermeiden konnte?",
+                                                                                            "priority": 3,
+                                                                                            "note": "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Gründe für die Verspätung nicht vermeiden konnte. \n\nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements"
+                                                                                        },
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cf4h5liuqtc0",
+                                                                                                    "created": 1634757460076,
+                                                                                                    "text": "{EXIT}",
+                                                                                                    "note": "Wenn Ihre  Fluglinie außergewöhnliche Umstände für Ihre Verspätung nennen kann, ist es schwer pauschal abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Deshalb können wir Ihnen keine Klage ohne eine individuelle Beratung empfehlen. Sie können jedoch den direkten Austausch mit Ihrer Fluglinie suchen.",
+                                                                                                    "priority": 3
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cf4hbq4l8pk0",
+                                                                                                    "created": 1634757940282,
+                                                                                                    "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
+                                                                                                    "note": "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
+                                                                                                    "priority": 1,
+                                                                                                    "expandState": "expand"
+                                                                                                },
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "cf4hcjzx9bk0",
+                                                                                                            "created": 1634758005304,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "priority": 3,
+                                                                                                            "expandState": "expand",
+                                                                                                            "note": "{'nextsteps': ['Schlichtung', 'Klage'],'entitlements':['Ausgleichszahlung']}"
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "data": {
+                                                                                                            "id": "cf4h5nbt1r40",
+                                                                                                            "created": 1634757464003,
+                                                                                                            "text": "{CONTINUE}",
+                                                                                                            "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
+                                                                                                            "priority": 1
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "data": {
+                                                                                            "id": "cf4z62tbau00",
+                                                                                            "created": 1634808277692,
+                                                                                            "text": "{EXIT}",
+                                                                                            "priority": 1,
+                                                                                            "note": "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung, da Sie kein reguläres Ticket gekauft haben. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
+                                                                                        },
+                                                                                        "children": []
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ]
                                                                     },
@@ -710,7 +732,7 @@
                                 "data": {
                                     "id": "cf4gev0vue80",
                                     "created": 1634755364925,
-                                    "text": "Annulierung durch die Airline",
+                                    "text": "Annulierung durch die Fluglinie",
                                     "note": "{ICON:FaTimesCircle}"
                                 },
                                 "children": []

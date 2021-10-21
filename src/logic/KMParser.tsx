@@ -29,11 +29,13 @@ export interface MMNode {
   nextSteps: NextStepsType[];
 }
 
+
 export enum Claims {
   Mietminderung = 'Mietminderung',
   Mängelbeseitigung = 'Mängelbeseitigung',
   Schadensersatz = 'Schadensersatz',
   Aufwendungsersatz = 'Aufwendungsersatz',
+  Ausgleichszahlung = "Ausgleichszahlung"
 }
 
 export enum NextStepsType {
@@ -41,6 +43,8 @@ export enum NextStepsType {
   LandlordLetter = 'Vermieterschreiben',
   LandlordLetterReview = 'Vermieterschreiben Überprüfung',
   Complaint = 'Klage',
+  FluglinieKontaktieren = 'Fluglinie kontaktieren',
+  Schlichtung = 'Schlichtung'
 }
 
 export class MMGraph {

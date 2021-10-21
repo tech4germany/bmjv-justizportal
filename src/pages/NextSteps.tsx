@@ -44,6 +44,47 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 
   let data: NextStepData[] = [
     {
+      label: t`Fluglinie kontaktieren`,
+      icon: FaEnvelopeOpen,
+      buttonLink: '',
+      buttonText: '',
+      condition: nextSteps.indexOf(NextStepsType.FluglinieKontaktieren) != -1,
+      content: `
+**Warum?** 
+- Wenn Sie Ihre Fluglinie mit einem korrekten Anspruch kontaktieren, bezahlt diese meistens direkt Ihre Forderung. 
+- Mit einer schriftlichen Aufforderung haben Sie außerdem einen Nachweis für den weiteren Prozess.  
+  
+  
+**Wie gehe ich vor?** 
+- Nutzen Sie das Kontaktformular Ihrer Fluglinie für EU-Fluggastrechte und stellen Sie Ihre Forderung. 
+- Kontaktformulare finden Sie auf den Webseiten aller großen Fluglinien, beispielsweise bei [Ryanair](https://onlineform.ryanair.com/de/de/eu-261), [Lufthansa](https://www.lufthansa.com/de/de/feedback), 
+[British Airways](https://www.britishairways.com/travel/customerportal/public/de_gb#/customer-service-portal), [AirFrance-KLM](https://wwws.airfrance.de/claim) oder [easyJet](https://www.easyjet.com/de/claim/EU261).
+- Wenn Sie kein Formular finden, können Sie Ihre Forderung auch per Post oder E-Mail stellen. Schildern Sie dabei Ihren Fall konkret und setzen Sie eine Frist für die Zahlung, zum Beispiel zwei bis drei Wochen. 
+- Nach Ablauf der Frist können Sie weitere Schritte unternehmen.
+`,
+      optional: false,
+    },
+    {
+      label: t`Schlichtungsantrag stellen`,
+      icon: FaEnvelopeOpen,
+      buttonLink: '',
+      buttonText: '',
+      condition: nextSteps.indexOf(NextStepsType.Schlichtung) != -1,
+      content: `
+**Warum?** 
+- Wenn Sie Ihre Fluglinie bereits kontaktiert haben, und diese Ihrer Forderung nicht nachgekommen ist, kann eine Schlichtung helfen.
+- Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verpflichtend.
+  
+  
+**Wie gehe ich vor?** 
+- Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen [Schlichtungsantrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/).
+- Wenn Ihr Antrag zulässig und berechtigt ist, macht die söp eine Schlichtungsempfehlung an Sie und die Fluglinie.
+- Falls dafür weitere Informationen notwendig sind, fragt sie söp diese bei Ihnen an.
+- Das gesamte Schlichtungsverfahren dauert etwa drei Monate. Danach können Sie immer noch Klage einreichen.
+`,
+      optional: true,
+    },
+    {
       label: t`Dokumentation des Mangels`,
       icon: FaPencilAlt,
       buttonLink: '',

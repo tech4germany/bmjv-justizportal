@@ -32,6 +32,18 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 
   let data = [
     {
+      label: t`Ausgleichszahlung`,
+      icon: FaMoneyBill,
+      buttonLink: '',
+      buttonText: '',
+      condition: claims.indexOf(Claims.Ausgleichszahlung) != -1,
+      content: t`
+- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.
+- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.
+- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**.
+`,
+    },
+    {
       label: t`Beseitigung des Mangels durch die Vermieter:in`,
       icon: FaTools,
       buttonLink: '',
