@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.js": "/bmjv-justizportal/static/js/main.ec8b85a7.chunk.js",
-    "main.js.map": "/bmjv-justizportal/static/js/main.ec8b85a7.chunk.js.map",
-    "runtime-main.js": "/bmjv-justizportal/static/js/runtime-main.7f6cdd44.js",
-    "runtime-main.js.map": "/bmjv-justizportal/static/js/runtime-main.7f6cdd44.js.map",
-    "static/js/2.89bf9d0f.chunk.js": "/bmjv-justizportal/static/js/2.89bf9d0f.chunk.js",
-    "static/js/2.89bf9d0f.chunk.js.map": "/bmjv-justizportal/static/js/2.89bf9d0f.chunk.js.map",
-    "static/js/3.09656a3c.chunk.js": "/bmjv-justizportal/static/js/3.09656a3c.chunk.js",
-    "static/js/3.09656a3c.chunk.js.map": "/bmjv-justizportal/static/js/3.09656a3c.chunk.js.map",
-    "static/js/4.dc579141.chunk.js": "/bmjv-justizportal/static/js/4.dc579141.chunk.js",
-    "static/js/4.dc579141.chunk.js.map": "/bmjv-justizportal/static/js/4.dc579141.chunk.js.map",
-    "static/js/5.22a7aab3.chunk.js": "/bmjv-justizportal/static/js/5.22a7aab3.chunk.js",
-    "static/js/5.22a7aab3.chunk.js.map": "/bmjv-justizportal/static/js/5.22a7aab3.chunk.js.map",
-    "static/js/6.2ec78505.chunk.js": "/bmjv-justizportal/static/js/6.2ec78505.chunk.js",
-    "static/js/6.2ec78505.chunk.js.map": "/bmjv-justizportal/static/js/6.2ec78505.chunk.js.map",
-    "static/js/7.057004fa.chunk.js": "/bmjv-justizportal/static/js/7.057004fa.chunk.js",
-    "static/js/7.057004fa.chunk.js.map": "/bmjv-justizportal/static/js/7.057004fa.chunk.js.map",
-    "static/js/8.56810e94.chunk.js": "/bmjv-justizportal/static/js/8.56810e94.chunk.js",
-    "static/js/8.56810e94.chunk.js.map": "/bmjv-justizportal/static/js/8.56810e94.chunk.js.map",
+    "main.js": "/bmjv-justizportal/static/js/main.8634c506.chunk.js",
+    "main.js.map": "/bmjv-justizportal/static/js/main.8634c506.chunk.js.map",
+    "runtime-main.js": "/bmjv-justizportal/static/js/runtime-main.c67e2316.js",
+    "runtime-main.js.map": "/bmjv-justizportal/static/js/runtime-main.c67e2316.js.map",
+    "static/js/2.f48643b8.chunk.js": "/bmjv-justizportal/static/js/2.f48643b8.chunk.js",
+    "static/js/2.f48643b8.chunk.js.map": "/bmjv-justizportal/static/js/2.f48643b8.chunk.js.map",
+    "static/js/3.70cdd2b4.chunk.js": "/bmjv-justizportal/static/js/3.70cdd2b4.chunk.js",
+    "static/js/3.70cdd2b4.chunk.js.map": "/bmjv-justizportal/static/js/3.70cdd2b4.chunk.js.map",
+    "static/js/4.1dd33a32.chunk.js": "/bmjv-justizportal/static/js/4.1dd33a32.chunk.js",
+    "static/js/4.1dd33a32.chunk.js.map": "/bmjv-justizportal/static/js/4.1dd33a32.chunk.js.map",
+    "static/js/5.b2af3c7e.chunk.js": "/bmjv-justizportal/static/js/5.b2af3c7e.chunk.js",
+    "static/js/5.b2af3c7e.chunk.js.map": "/bmjv-justizportal/static/js/5.b2af3c7e.chunk.js.map",
+    "static/js/6.c8d7e909.chunk.js": "/bmjv-justizportal/static/js/6.c8d7e909.chunk.js",
+    "static/js/6.c8d7e909.chunk.js.map": "/bmjv-justizportal/static/js/6.c8d7e909.chunk.js.map",
+    "static/js/7.bcd81224.chunk.js": "/bmjv-justizportal/static/js/7.bcd81224.chunk.js",
+    "static/js/7.bcd81224.chunk.js.map": "/bmjv-justizportal/static/js/7.bcd81224.chunk.js.map",
+    "static/js/8.bac66bd5.chunk.js": "/bmjv-justizportal/static/js/8.bac66bd5.chunk.js",
+    "static/js/8.bac66bd5.chunk.js.map": "/bmjv-justizportal/static/js/8.bac66bd5.chunk.js.map",
     "index.html": "/bmjv-justizportal/index.html",
-    "static/js/2.89bf9d0f.chunk.js.LICENSE.txt": "/bmjv-justizportal/static/js/2.89bf9d0f.chunk.js.LICENSE.txt"
+    "static/js/2.f48643b8.chunk.js.LICENSE.txt": "/bmjv-justizportal/static/js/2.f48643b8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f6cdd44.js",
-    "static/js/2.89bf9d0f.chunk.js",
-    "static/js/main.ec8b85a7.chunk.js"
+    "static/js/runtime-main.c67e2316.js",
+    "static/js/2.f48643b8.chunk.js",
+    "static/js/main.8634c506.chunk.js"
   ]
 }
