@@ -2,6 +2,7 @@ import { HStack, Spacer } from '@chakra-ui/layout';
 import { Progress } from '@chakra-ui/progress';
 import * as React from 'react';
 import { ProgressBarStep } from './ProgressBarStep';
+import { t } from '@lingui/macro';
 
 interface FeatureProps {
   currentStep: number;
@@ -23,11 +24,11 @@ export const StaticProgress = ({ currentStep, progressNextStepInput, ...rest }: 
   return (
     <HStack width="100%" spacing="-1px" justifyContent="center" alignContent="center" paddingTop={4}>
       <Spacer flex="1" />
-      <ProgressBarStep filled={currentStep >= 1} title="1. Ansprüche Prüfen" />
+      <ProgressBarStep filled={currentStep >= 1} title={t`1. Ansprüche Prüfen`} />
       <Progress colorScheme="green" size="sm" value={progressPercentages[0]} flex="1" zIndex="-1" />
-      <ProgressBarStep filled={currentStep >= 2} title="2. Mögliche Ansprüche" />
+      <ProgressBarStep filled={currentStep >= 2} title={t`2. Mögliche Ansprüche`} />
       <Progress colorScheme="green" size="sm" value={progressPercentages[1]} flex="1" zIndex="-1" />
-      <ProgressBarStep filled={currentStep >= 3} title="3. Nächste Schritte" />
+      <ProgressBarStep filled={currentStep >= 3} title={t`3. Nächste Schritte`} />
       <Spacer flex="1" />
     </HStack>
   );

@@ -40,20 +40,36 @@ msgstr ""
 #~ "Claim landlords by asking them to remedy the defect. This often happens together\n"
 #~ "with the notification of the defect."
 
-#: src/pages/PEntitlements.tsx:39
+#: src/pages/PossibleEntitlements.tsx:40
 msgid ""
 "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
 "- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
 "- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
 msgstr ""
-"- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
-"- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
-"- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
+"- A claim to **remedial defects** is the right to ask your landlord to remedy the defect.\n"
+"- Landlords have the duty to hand over and maintain the rented apartment in a usable condition.\n"
+"- If a defect occurs during the rental period, the landlord must eliminate it."
+
+#: src/components/shared/StaticProgress.tsx:27
+msgid "1. Ansprüche Prüfen"
+msgstr ""
+
+#: src/components/shared/StaticProgress.tsx:29
+msgid "2. Mögliche Ansprüche"
+msgstr ""
+
+#: src/components/shared/StaticProgress.tsx:31
+msgid "3. Nächste Schritte"
+msgstr ""
+
+#: src/pages/PossibleEntitlements.tsx:66
+msgid "Aufwendungsersatz"
+msgstr "Reimbursement of expenses"
 
 #~ msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 #~ msgstr "The following claims could result from your information"
 
-#: src/pages/PEntitlements.tsx:34
+#: src/pages/PossibleEntitlements.tsx:35
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Removal of the defect by the landlords"
 
@@ -64,24 +80,31 @@ msgstr "Removal of the defect by the landlords"
 msgid "Die Justiz im Netz."
 msgstr "Justice online."
 
-#: src/pages/SolutionExplorer.tsx:97
+#: src/pages/SolutionExplorer.tsx:90
 msgid "Diese Option ist leider noch nicht verfügbar."
-msgstr "Diese Option ist leider noch nicht verfügbar."
+msgstr "Unfortunately, this option is not yet available."
 
 #~ msgid "Dieser Pfad wurde noch nicht implementiert"
 #~ msgstr "This path has not yet been implemented"
 
-#: src/pages/PEntitlements.tsx:96
-msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-msgstr "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+#: src/pages/NextSteps.tsx:50
+msgid "Dokumentation des Mangels"
+msgstr "Documentation of the defect"
+
+#~ msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+#~ msgstr "A claim is the right to demand behavior from another person. Click on the claims to learn more about them."
+
+#: src/pages/PossibleEntitlements.tsx:99
+msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "A claim is the right to demand something from another person or company. Click on the claims to learn more about them."
 
 #: src/pages/Home.tsx:31
 msgid "Einfach, online, jederzeit."
 msgstr "Simple, anywhere, at any time."
 
-#: src/pages/PEntitlements.tsx:93
+#: src/pages/PossibleEntitlements.tsx:96
 msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-msgstr "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "Done! The following claims could result from your information"
 
 #~ msgid ""
 #~ "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\n"
@@ -96,15 +119,15 @@ msgstr "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgid "Handlungsoptionen vergleichen"
 msgstr "Compare options for action"
 
-#: src/pages/SolutionExplorer.tsx:81
+#: src/pages/SolutionExplorer.tsx:74
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 msgstr "What area of your life do you have a problem in?"
 
-#: src/pages/SolutionExplorer.tsx:154
+#: src/pages/SolutionExplorer.tsx:147
 msgid "Info"
 msgstr "Info"
 
-#: src/pages/SolutionExplorer.tsx:132
+#: src/pages/SolutionExplorer.tsx:125
 msgid "Ja"
 msgstr "Yes"
 
@@ -113,16 +136,20 @@ msgstr "Yes"
 msgid "Jetzt starten!"
 msgstr "Start now!"
 
-#: src/components/shared/MainMenu.tsx:303
-#: src/pages/SolutionExplorer.tsx:80
+#: src/components/shared/MainMenu.tsx:304
+#: src/pages/SolutionExplorer.tsx:73
 msgid "Lösungsfinder"
 msgstr "Solutionfinder"
 
-#: src/pages/PEntitlements.tsx:47
+#: src/pages/PossibleEntitlements.tsx:48
 msgid "Mietminderung"
 msgstr "Rent reduction"
 
-#: src/pages/SolutionExplorer.tsx:135
+#: src/pages/NextSteps.tsx:66
+msgid "Mängelanzeige bei Ihrer Vermieter:in"
+msgstr "Notice letter of defects to your landlord"
+
+#: src/pages/SolutionExplorer.tsx:128
 msgid "Nein"
 msgstr "No"
 
@@ -130,9 +157,17 @@ msgstr "No"
 msgid "Online Klage einreichen"
 msgstr "File a lawsuit online"
 
+#: src/pages/NextSteps.tsx:129
+msgid "Rechtlich beraten lassen"
+msgstr "Get legal advice"
+
 #: src/pages/Home.tsx:69
 msgid "Rechtsproblem einordnen"
 msgstr "Classify legal problem"
+
+#: src/pages/PossibleEntitlements.tsx:78
+msgid "Schadensersatz"
+msgstr "Damages"
 
 #: src/pages/Home.tsx:48
 msgid "Unser Angebot"
@@ -142,13 +177,13 @@ msgstr "Our offer"
 msgid "Weiter"
 msgstr "Continue"
 
-#: src/pages/PEntitlements.tsx:128
+#: src/pages/PossibleEntitlements.tsx:131
 msgid ""
 "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \n"
 "wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
 msgstr ""
-"Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \n"
-"wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
+"Once you've been informed about your claims, we'll show you \n"
+"how you can enforce them. Just click Next to do so."
 
 #: src/pages/Home.tsx:44
 msgid "Wie es funktioniert"
@@ -160,25 +195,29 @@ msgstr "What can we help you with?"
 
 #: src/pages/ExitJourney.tsx:54
 msgid "Zu den Beratungsangeboten"
-msgstr "Zu den Beratungsangeboten"
+msgstr "Go to advisory services"
 
 #: src/pages/disclaimer.tsx:150
 msgid "Zum Prototypen"
-msgstr "Zum Prototypen"
+msgstr "Go to the prototype"
 
 #: src/components/shared/NavigationButtons.tsx:17
 msgid "Zurück"
 msgstr "Back"
 
-#: src/components/shared/Footer.tsx:44
+#: src/pages/NextSteps.tsx:89
+msgid "Zweites Schreiben an die Vermieter:in senden"
+msgstr "Send a second letter to landlord"
+
+#: src/components/shared/Footer.tsx:86
 msgid "footer.disclaimer"
-msgstr "Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!"
+msgstr "This page is a prototype with no guarantee of legal certainty!"
 
-#: src/components/shared/Footer.tsx:47
+#: src/components/shared/Footer.tsx:89
 msgid "footer.info"
-msgstr "Weiter Infos zu Seite findest du hier"
+msgstr "You can find more information about this page here"
 
-#: src/components/shared/Footer.tsx:41
+#: src/components/shared/Footer.tsx:83
 msgid "footer.text"
 msgstr "Built by ⚖️ and 🐌 with ❤️"
 
@@ -218,6 +257,18 @@ msgstr "You can find out more about the legal problems we can help you with on t
 msgid "home.sub_heading"
 msgstr "We inform you about your rights in everyday life and help you solve your legal problem in simple steps"
 
+#: src/pages/NextSteps.tsx:157
+msgid "nextsteps.header"
+msgstr "Your next possible steps to solve your problem"
+
+#: src/pages/NextSteps.tsx:160
+msgid "nextsteps.sub_header"
+msgstr "We have summarized the possible steps for you to enforce your claims here. Click on the boxes one by one to learn more and get support."
+
 #: src/pages/Home.tsx:75
 msgid "Über Ansprüche informieren"
 msgstr "Inform about claims"
+
+#: src/pages/NextSteps.tsx:106
+msgid "Über das Justizportal eine Klage einreichen"
+msgstr "File a claim via the Justizportal"
