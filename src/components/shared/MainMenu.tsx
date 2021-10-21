@@ -153,7 +153,7 @@ const DesktopNav = () => {
                 padding={2}
                 as={NavLink}
                 to={`${homeURL}${navItem.href}` ?? '#'}
-                fontSize={'md'}
+                fontSize={'lg'}
                 fontWeight={500}
                 color={linkColor}
                 // activeStyle={{
