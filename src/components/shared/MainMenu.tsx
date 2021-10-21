@@ -25,7 +25,7 @@ import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { homeURL } from '../../Const';
 import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
 import { gerUserLocale, locales, dynamicActivate } from '../../translations/i18n';
-import { Routes } from '../../Routes';
+import { Routes } from '../../Const';
 
 interface FeatureProps extends BoxProps {}
 

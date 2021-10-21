@@ -2,7 +2,7 @@ import { Box, Button, Container, Stack, Text, Link, useColorModeValue, VisuallyH
 import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
 import { homeURL } from '../../Const';
-import { Routes } from '../../Routes';
+import { Routes } from '../../Const';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {

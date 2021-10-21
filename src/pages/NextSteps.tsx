@@ -23,7 +23,8 @@ import { MMGraph, NextStepsType } from '../logic/KMParser';
 import { IconType } from 'react-icons';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { t, Trans } from '@lingui/macro';
-import { Routes } from '../Routes';
+import { Card } from '../components/shared/Card';
+import { Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;
