@@ -13,11 +13,11 @@ const NUMBER_STEPS = 3;
 export const StaticProgress = ({ currentStep, progressNextStepInput, ...rest }: FeatureProps) => {
   let progressNextStep = progressNextStepInput === undefined ? 0 : progressNextStepInput;
   let progressPercentages: number[] = [];
-  for (var i = 1; i < currentStep; i++) {
+  for (let i = 1; i < currentStep; i++) {
     progressPercentages.push(100);
   }
   progressPercentages.push(progressNextStep);
-  for (var i = currentStep + 2; i < NUMBER_STEPS; i++) {
+  for (let i = currentStep + 2; i < NUMBER_STEPS; i++) {
     progressPercentages.push(0);
   }
   return (
