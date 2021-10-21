@@ -11,10 +11,10 @@ interface FeatureProps {
 export const Bryter = ({ id, query, ...rest }: FeatureProps) => {
   const type: string = '';
 
-  const baseURL = 'https://openprogram.bryter.io/s/';
+  const baseURL = 'https://tech4germany.bryter.io/s/';
   const bryterURLs = {
-    landlordLetter: `${baseURL}OV5WULavROWWM_NS6JnbFg/mietmangel---vermieterschreiben`,
-    claim: `${baseURL}KGITdkStRbemIKQWkrJH3A/klagegenerierung-mietmangel?antr[…]%C3%A4ngelbeseitigung,%20Mietminderung&mangelBehoben=false`,
+    landlordLetter: `${baseURL}EnTaPD7jRUKEHZA86ss5QA/mietmangel-vermieterschreiben?mangelart=schimmel`,
+    claim: `${baseURL}ekV7FMipRvG6G3gpT6TgxQ/mietmangel-klage?mangelart=schimmel`,
   };
 
   useEffect(() => {
