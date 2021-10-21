@@ -23,6 +23,7 @@ import { MMGraph, NextStepsType } from '../logic/KMParser';
 import { IconType } from 'react-icons';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { t, Trans } from '@lingui/macro';
+import { Routes } from '../Routes';
 
 interface FeatureProps {
   id: string | null;
@@ -63,7 +64,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       label: t`Mängelanzeige bei Ihrer Vermieter:in`,
       icon: FaEnvelopeOpen,
       buttonText: 'Zur Vorlage für die Mängelanzeige',
-      buttonLink: `${homeURL}/bryter?mangelanzeige&id=${id}`,
+      buttonLink: `${homeURL}/${Routes.Bryter}?mangelanzeige&id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.LandlordLetter) != -1,
       content: `
 **Warum?** 
@@ -86,7 +87,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       label: t`Zweites Schreiben an die Vermieter:in senden`,
       icon: TiArrowLoop,
       buttonText: 'Zur Vorlage für die zweite Mängelanzeige',
-      buttonLink: `${homeURL}/bryter?mangelanzeige&id=${id}`,
+      buttonLink: `${homeURL}/${Routes.Bryter}?mangelanzeige&id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
       content: `
 **Warum?** 
@@ -103,7 +104,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       label: t`Über das Justizportal eine Klage einreichen`,
       icon: HiScale,
       buttonText: 'Mehr Informationen zur Klage',
-      buttonLink: `${homeURL}/zpo?id=${id}`,
+      buttonLink: `${homeURL}/${Routes.ZPOInformation}?id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
       content: `
 **Warum?** 
@@ -180,7 +181,7 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
                   <Spacer height="1.5em" />
                   {acc.buttonLink && acc.buttonText ? (
                     <>
-                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
+                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={acc.buttonLink}>
                         {acc.buttonText}
                       </Button>
                     </>
@@ -216,7 +217,7 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
       `}
       /> */}
 
-        <NavButtons linkBack={`${homeURL}/moegliche-ansprueche?id=${id}`} />
+        <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} />
       </PageBody>
     </>
   );

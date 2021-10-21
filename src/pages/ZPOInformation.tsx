@@ -4,6 +4,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
+import { Routes } from '../Routes';
 
 interface FeatureProps {
   id: string | null;
@@ -125,7 +126,7 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entste
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>
-        <Button colorScheme="green" as={ReactLink} to={`${homeURL}/bryter?id=${id}`}>
+        <Button colorScheme="green" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           Klageschriftgenerator
         </Button>
       </Box>
