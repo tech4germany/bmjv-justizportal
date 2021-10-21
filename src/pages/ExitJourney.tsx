@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Spacer, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Heading, Spacer, Text, VStack, HStack } from '@chakra-ui/react';
 import { t } from '@lingui/macro';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
@@ -48,12 +48,16 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
           einen Überblick zusammengestellt.
         </Text>
         <Spacer minH={10}></Spacer>
-        <Button
-          colorScheme={'green'}
-          as={ReactLink}
-          to={`${homeURL}/${Routes.ConsultationOffers}`}
-          children={t`Zu den Beratungsangeboten`}
-        />
+        <HStack spacing="1em">
+          <Button as={ReactLink} to={`${homeURL}/${Routes.SolutionExplorer}?id=${id}`} children={t`Zurück`} />
+          <Button colorScheme={'green'} as={ReactLink} to={homeURL} children={t`Zur Homepage`} />
+          <Button
+            colorScheme={'green'}
+            as={ReactLink}
+            to={`${homeURL}/${Routes.ConsultationOffers}`}
+            children={t`Zu den Beratungsangeboten`}
+          />
+        </HStack>
       </VStack>
     </PageBody>
   );
