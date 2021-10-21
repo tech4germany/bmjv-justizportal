@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useEffect } from 'react';
 
 interface FeatureProps {
-  id: string;
+  id: string | null;
   query: URLSearchParams;
 }
 

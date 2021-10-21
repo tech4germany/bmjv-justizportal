@@ -38,7 +38,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'orange'}
             as={ReactLink}
-            to={`${homeURL}/solutionexplorer`}
+            to={`${homeURL}/loesungs-finder`}
             children={t`Jetzt starten!`}
           />
           <Button as={ReactLink} to="#how" onClick={executeScroll} children={t`Wie es funktioniert`} />
@@ -106,7 +106,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Button
             colorScheme={'orange'}
             as={ReactLink}
-            to={`${homeURL}/solutionexplorer`}
+            to={`${homeURL}/loesungs-finder`}
             children={t`Jetzt starten!`}
           />
         </VStack>

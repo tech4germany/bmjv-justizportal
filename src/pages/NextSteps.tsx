@@ -62,7 +62,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       label: 'Mängelanzeige bei Ihrer Vermieter:in',
       icon: FaEnvelopeOpen,
       buttonText: 'Zur Vorlage für die Mängelanzeige',
-      buttonLink: '#',
+      buttonLink: `${homeURL}/bryter?mangelanzeige&id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.LandlordLetter) != -1,
       content: `
 **Warum?** 
@@ -85,7 +85,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       label: 'Zweites Schreiben an die Vermieter:in senden',
       icon: TiArrowLoop,
       buttonText: 'Zur Vorlage für die zweite Mängelanzeige',
-      buttonLink: '#',
+      buttonLink: `${homeURL}/bryter?mangelanzeige&id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
       content: `
 **Warum?** 
@@ -97,28 +97,6 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 - Nutzen Sie unsere Vorlage und versenden Sie ein zweites Schreiben an Ihre Vermieter:in.
 `,
       optional: false,
-    },
-    {
-      label: 'Rechtlich beraten lassen',
-      icon: FaUserTie,
-      buttonText: 'Zur Übersicht für Beratungsangebote',
-      buttonLink: '#',
-      condition: true,
-      content: `
-**Warum?** 
-- In einer Rechtsberatung kann ihr Fall individuell von einer Expert:in bewertet werden. 
-- Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
-- Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
-  
-  
-**Wie gehe ich vor?** 
-- In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
-- Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 
-  
-  
-Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
-  `,
-      optional: true,
     },
     {
       label: 'Über das Justizportal eine Klage einreichen',
@@ -141,6 +119,28 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
   
 Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der Einreichung.
 `,
+      optional: true,
+    },
+    {
+      label: 'Rechtlich beraten lassen',
+      icon: FaUserTie,
+      buttonText: 'Zur Übersicht für Beratungsangebote',
+      buttonLink: '#',
+      condition: true,
+      content: `
+**Warum?** 
+- In einer Rechtsberatung kann ihr Fall individuell von einer Expert:in bewertet werden. 
+- Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
+- Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
+  
+  
+**Wie gehe ich vor?** 
+- In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
+- Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 
+  
+  
+Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
+  `,
       optional: true,
     },
   ];
@@ -211,7 +211,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
       `}
       /> */}
 
-        <NavButtons linkBack={`${homeURL}/possibleentitlements?id=${id}`} />
+        <NavButtons linkBack={`${homeURL}/moegliche-ansprueche?id=${id}`} />
       </PageBody>
     </>
   );

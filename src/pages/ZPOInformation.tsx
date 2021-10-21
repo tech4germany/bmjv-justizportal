@@ -75,8 +75,14 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entste
           <Thead>
             <Tr>
               <Th>Streitwert</Th>
-              <Th>Gerichtsgebühren (Vorab zu bezahlen)</Th>
-              <Th>Anwaltshonorar Gegenpartei (Bei Verlust zu zahlen)</Th>
+              <Th>
+                Gerichtsgebühren
+                <br /> (Vorab zu bezahlen)
+              </Th>
+              <Th>
+                Anwaltshonorar Gegenpartei
+                <br /> (Bei Verlust zu zahlen)
+              </Th>
             </Tr>
           </Thead>
           <Tbody>
@@ -112,11 +118,10 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entste
 - Der Streitwert Ihrer Klage beträgt €1500. 
 - Ca. €250 müssen Sie bei Klageeinreichung an das Gericht zahlen. 
 - Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
-- Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."/>
-<Spacer h="3em"/>
-<Text>  
-Wenn Sie eine Klage über das Justizportal einreichen, schätzen wir die Gerichtskosten für Sie ab.
-</Text>
+- Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."
+        />
+        <Spacer h="3em" />
+        <Text>Wenn Sie eine Klage über das Justizportal einreichen, schätzen wir die Gerichtskosten für Sie ab.</Text>
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>

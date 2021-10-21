@@ -302,7 +302,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: t`Lösungsfinder`,
-    href: '/solutionexplorer',
+    href: '/loesungs-finder',
   },
   {
     label: '🏎',
@@ -310,11 +310,11 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: '1',
-        href: '/solutionexplorer?id=cerik08cssg0',
+        href: '/loesungs-finder?id=cerik08cssg0',
       },
       {
         label: '2',
-        href: '/possibleentitlements?id=ceybyumxibs0',
+        href: '/moegliche-ansprueche?id=ceybyumxibs0',
       },
     ],
   },

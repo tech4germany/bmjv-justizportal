@@ -56,7 +56,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
     data.children.forEach((child) => {
       const pre =
         (child.title == '{EXIT}' ? `${homeURL}/exit` : '') +
-        (child.title == '{CONTINUE}' ? `${homeURL}/possibleentitlements` : '');
+        (child.title == '{CONTINUE}' ? `${homeURL}/moegliche-ansprueche` : '');
 
       linkOnYes = child.type == 'YESANSWERD' ? `${pre}?id=${child.id}` : linkOnYes;
       linkOnNo = child.type == 'NOANSWERD' ? `${pre}?id=${child.id}` : linkOnNo;

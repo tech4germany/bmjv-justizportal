@@ -133,8 +133,8 @@ Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehme
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
         />
         <NavButtons
-          linkBack={`${homeURL}/solutionexplorer?id=${mmobject.getParent(id)?.id}`}
-          linkForward={`${homeURL}/nextsteps?id=${id}`}
+          linkBack={`${homeURL}/loesungs-finder?id=${mmobject.getParent(id)?.id}`}
+          linkForward={`${homeURL}/naechste-schritte?id=${id}`}
         />
       </PageBody>
     </>
