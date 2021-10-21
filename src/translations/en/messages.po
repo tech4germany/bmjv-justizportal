@@ -7,268 +7,171 @@ msgstr ""
 "Project-Id-Version: Justizportal\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
 
-#~ msgid ""
-#~ "- **Anspruch**\n"
-#~ "- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\n"
-#~ "zu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n"
-#~ "- Dafür zahlen die Mietenden die Miete. \n"
-#~ "- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n"
-#~ "- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n"
-#~ "- wenn das im Vertrag so steht und\n"
-#~ "- ein Jahres-Höchstbetrag festgelegt wurde. \n"
-#~ "- **Durchsetzung:**\n"
-#~ "- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\n"
-#~ "Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\n"
-#~ "mit der Mitteilung über den Mangel."
-#~ msgstr ""
-#~ "- **claim**\n"
-#~ "  - Landlords have a duty to keep the rented property in a state\n"
-#~ "to hand over and receive that corresponds to the contractual agreement. \n"
-#~ "  - That's what tenants pay the rent for. \n"
-#~ "  - If a defect occurs during the rental period, then the landlord must rectify it. \n"
-#~ "- **Exception**: for small repairs up to an amount of approx. 100 euros per repair\n"
-#~ "  - if it says so in the contract and\n"
-#~ "  - a maximum annual amount has been set. \n"
-#~ "- **Enforcement:**\n"
-#~ "  - The claim for elimination of the defect can be made against the\n"
-#~ "Claim landlords by asking them to remedy the defect. This often happens together\n"
-#~ "with the notification of the defect."
+msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+msgstr "- **claim**\n  - Landlords have a duty to keep the rented property in a state\nto hand over and receive that corresponds to the contractual agreement. \n  - That's what tenants pay the rent for. \n  - If a defect occurs during the rental period, then the landlord must rectify it. \n- **Exception**: for small repairs up to an amount of approx. 100 euros per repair\n  - if it says so in the contract and\n  - a maximum annual amount has been set. \n- **Enforcement:**\n  - The claim for elimination of the defect can be made against the\nClaim landlords by asking them to remedy the defect. This often happens together\nwith the notification of the defect."
 
-#: src/pages/PossibleEntitlements.tsx:40
-msgid ""
-"- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
-"- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
-"- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
-msgstr ""
-"- A claim to **remedial defects** is the right to ask your landlord to remedy the defect.\n"
-"- Landlords have the duty to hand over and maintain the rented apartment in a usable condition.\n"
-"- If a defect occurs during the rental period, the landlord must eliminate it."
+msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
+msgstr "- A claim to **remedial defects** is the right to ask your landlord to remedy the defect.\n- Landlords have the duty to hand over and maintain the rented apartment in a usable condition.\n- If a defect occurs during the rental period, the landlord must eliminate it."
 
-#: src/components/shared/StaticProgress.tsx:27
 msgid "1. Ansprüche Prüfen"
-msgstr ""
+msgstr "1. Check claims"
 
-#: src/components/shared/StaticProgress.tsx:29
 msgid "2. Mögliche Ansprüche"
-msgstr ""
+msgstr "2. Show possible claims"
 
-#: src/components/shared/StaticProgress.tsx:31
 msgid "3. Nächste Schritte"
-msgstr ""
+msgstr "3. Next steps"
 
-#: src/pages/PossibleEntitlements.tsx:66
 msgid "Aufwendungsersatz"
 msgstr "Reimbursement of expenses"
 
-#~ msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-#~ msgstr "The following claims could result from your information"
+msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "The following claims could result from your information"
 
-#: src/pages/PossibleEntitlements.tsx:35
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Removal of the defect by the landlords"
 
-#~ msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
-#~ msgstr "As only twelve weeks were available for the entire project, this path could not yet be implemented."
+msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
+msgstr "As only twelve weeks were available for the entire project, this path could not yet be implemented."
 
-#: src/pages/Home.tsx:30
 msgid "Die Justiz im Netz."
 msgstr "Justice online."
 
-#: src/pages/SolutionExplorer.tsx:90
 msgid "Diese Option ist leider noch nicht verfügbar."
 msgstr "Unfortunately, this option is not yet available."
 
-#~ msgid "Dieser Pfad wurde noch nicht implementiert"
-#~ msgstr "This path has not yet been implemented"
+msgid "Dieser Pfad wurde noch nicht implementiert"
+msgstr "This path has not yet been implemented"
 
-#: src/pages/NextSteps.tsx:50
 msgid "Dokumentation des Mangels"
 msgstr "Documentation of the defect"
 
-#~ msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-#~ msgstr "A claim is the right to demand behavior from another person. Click on the claims to learn more about them."
+msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "A claim is the right to demand behavior from another person. Click on the claims to learn more about them."
 
-#: src/pages/PossibleEntitlements.tsx:99
 msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
 msgstr "A claim is the right to demand something from another person or company. Click on the claims to learn more about them."
 
-#: src/pages/Home.tsx:31
 msgid "Einfach, online, jederzeit."
 msgstr "Simple, anywhere, at any time."
 
-#: src/pages/PossibleEntitlements.tsx:96
 msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgstr "Done! The following claims could result from your information"
 
-#~ msgid ""
-#~ "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\n"
-#~ "für Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\n"
-#~ "einzufordern."
-#~ msgstr ""
-#~ "Done! Based on the information you provide, the following legal claims could\n"
-#~ "come into question for you. A claim is the right to a particular behavior by another person\n"
-#~ "to demand."
+msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+msgstr "Done! Based on the information you provide, the following legal claims could\ncome into question for you. A claim is the right to a particular behavior by another person\nto demand."
 
-#: src/pages/Home.tsx:83
 msgid "Handlungsoptionen vergleichen"
 msgstr "Compare options for action"
 
-#: src/pages/SolutionExplorer.tsx:74
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 msgstr "What area of your life do you have a problem in?"
 
-#: src/pages/SolutionExplorer.tsx:147
 msgid "Info"
 msgstr "Info"
 
-#: src/pages/SolutionExplorer.tsx:125
 msgid "Ja"
 msgstr "Yes"
 
-#: src/pages/Home.tsx:42
-#: src/pages/Home.tsx:110
 msgid "Jetzt starten!"
 msgstr "Start now!"
 
-#: src/components/shared/MainMenu.tsx:304
-#: src/pages/SolutionExplorer.tsx:73
 msgid "Lösungsfinder"
 msgstr "Solutionfinder"
 
-#: src/pages/PossibleEntitlements.tsx:48
 msgid "Mietminderung"
 msgstr "Rent reduction"
 
-#: src/pages/NextSteps.tsx:66
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
 msgstr "Notice letter of defects to your landlord"
 
-#: src/pages/SolutionExplorer.tsx:128
 msgid "Nein"
 msgstr "No"
 
-#: src/pages/Home.tsx:89
 msgid "Online Klage einreichen"
 msgstr "File a lawsuit online"
 
-#: src/pages/NextSteps.tsx:129
 msgid "Rechtlich beraten lassen"
 msgstr "Get legal advice"
 
-#: src/pages/Home.tsx:69
 msgid "Rechtsproblem einordnen"
 msgstr "Classify legal problem"
 
-#: src/pages/PossibleEntitlements.tsx:78
 msgid "Schadensersatz"
 msgstr "Damages"
 
-#: src/pages/Home.tsx:48
 msgid "Unser Angebot"
 msgstr "Our offer"
 
-#: src/components/shared/NavigationButtons.tsx:29
 msgid "Weiter"
 msgstr "Continue"
 
-#: src/pages/PossibleEntitlements.tsx:131
-msgid ""
-"Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \n"
-"wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
-msgstr ""
-"Once you've been informed about your claims, we'll show you \n"
-"how you can enforce them. Just click Next to do so."
+msgid "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \nwie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
+msgstr "Once you've been informed about your claims, we'll show you \nhow you can enforce them. Just click Next to do so."
 
-#: src/pages/Home.tsx:44
 msgid "Wie es funktioniert"
 msgstr "How it works"
 
-#: src/pages/Home.tsx:99
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "What can we help you with?"
 
-#: src/pages/ExitJourney.tsx:54
 msgid "Zu den Beratungsangeboten"
 msgstr "Go to advisory services"
 
-#: src/pages/disclaimer.tsx:150
 msgid "Zum Prototypen"
 msgstr "Go to the prototype"
 
-#: src/components/shared/NavigationButtons.tsx:17
 msgid "Zurück"
 msgstr "Back"
 
-#: src/pages/NextSteps.tsx:89
 msgid "Zweites Schreiben an die Vermieter:in senden"
 msgstr "Send a second letter to landlord"
 
-#: src/components/shared/Footer.tsx:86
 msgid "footer.disclaimer"
 msgstr "This page is a prototype with no guarantee of legal certainty!"
 
-#: src/components/shared/Footer.tsx:89
 msgid "footer.info"
 msgstr "You can find more information about this page here"
 
-#: src/components/shared/Footer.tsx:83
 msgid "footer.text"
 msgstr "Built by ⚖️ and 🐌 with ❤️"
 
-#: src/pages/Home.tsx:49
 msgid "home.hero_offer"
 msgstr "Justizportal.de is an offer of the Federal Ministry of Justice and Consumer Protection in cooperation with the federal ministries of justice in the federal states. The portal gives you an overview of your rights in various everyday situations. It also helps you to classify and solve your legal questions and problems. You will be informed about your options for action and will be supported in asserting your rights."
 
-#: src/pages/Home.tsx:76
 msgid "home.howitwork_claims"
 msgstr "We will then help you to evaluate which claims might apply in your case. Claims are rights to demand a certain action from others (e.g. payment of damages), to tolerate (e.g. subletting a flat) or to refrain from (e.g. entering a property)."
 
-#: src/pages/Home.tsx:70
 msgid "home.howitwork_classify"
 msgstr "First, we'll help you clarify whether there is a legal problem in your case. We will show you information tailored to your case."
 
-#: src/pages/Home.tsx:60
 msgid "home.howitwork_heading"
 msgstr "How it works"
 
-#: src/pages/Home.tsx:90
 msgid "home.howitwork_lawsuit"
 msgstr "When all other options are exhausted, we'll help you file a claim with the district court online. To this end, we explain the process of our online process to you and provide transparent information on the costs of legal proceedings as well as possible legal advice."
 
-#: src/pages/Home.tsx:84
 msgid "home.howitwork_options"
 msgstr "Based on this, we will suggest possible solutions for <0>you - initially for an amicable dispute resolution with the opposite side.</0>"
 
-#: src/pages/Home.tsx:63
 msgid "home.howitwork_subheading"
 msgstr "We can help you solve your legal problem in four easy steps:"
 
-#: src/pages/Home.tsx:101
 msgid "home.howtohelp_footer"
 msgstr "You can find out more about the legal problems we can help you with on the following pages."
 
-#: src/pages/Home.tsx:33
 msgid "home.sub_heading"
 msgstr "We inform you about your rights in everyday life and help you solve your legal problem in simple steps"
 
-#: src/pages/NextSteps.tsx:157
 msgid "nextsteps.header"
 msgstr "Your next possible steps to solve your problem"
 
-#: src/pages/NextSteps.tsx:160
 msgid "nextsteps.sub_header"
 msgstr "We have summarized the possible steps for you to enforce your claims here. Click on the boxes one by one to learn more and get support."
 
-#: src/pages/Home.tsx:75
 msgid "Über Ansprüche informieren"
 msgstr "Inform about claims"
 
-#: src/pages/NextSteps.tsx:106
 msgid "Über das Justizportal eine Klage einreichen"
 msgstr "File a claim via the Justizportal"

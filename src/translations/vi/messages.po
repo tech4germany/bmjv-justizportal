@@ -7,268 +7,171 @@ msgstr ""
 "Project-Id-Version: Justizportal\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
 
-#~ msgid ""
-#~ "- **Anspruch**\n"
-#~ "- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\n"
-#~ "zu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n"
-#~ "- Dafür zahlen die Mietenden die Miete. \n"
-#~ "- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n"
-#~ "- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n"
-#~ "- wenn das im Vertrag so steht und\n"
-#~ "- ein Jahres-Höchstbetrag festgelegt wurde. \n"
-#~ "- **Durchsetzung:**\n"
-#~ "- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\n"
-#~ "Vermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\n"
-#~ "mit der Mitteilung über den Mangel."
-#~ msgstr ""
-#~ "- **tuyên bản**\n"
-#~ " - Chủ nhà có nhiệm vụ giữ cho tài sản thuê trong một tiểu bang\n"
-#~ "bàn giao và nhận được tương ứng với thỏa thuận hợp đồng. \n"
-#~ " - Đó là những gì người thuê nhà trả tiền thuê nhà cho. \n"
-#~ " - Nếu một khiếm khuyết xảy ra trong thời gian thuê nhà, thì chủ nhà phải sửa chữa nó. \n"
-#~ "- **Ngoại trí**: để sửa chữa nhỏ lên đến một số tiền khoảng 100 euro cho mỗi sửa chữa\n"
-#~ " - nếu nó nói như vậy trong hợp đồng và\n"
-#~ " - một số tiền tối đa hàng năm đã được thiết lập. \n"
-#~ "- **Thực thi: **\n"
-#~ " - Yêu cầu bồi thường để loại bỏ các khiếm khuyết có thể được thực hiện chống lại\n"
-#~ "Yêu cầu chủ nhà bằng cách yêu cầu họ khắc phục lỗi. Điều này thường xảy ra với nhau\n"
-#~ "với thông báo về khiếm khuyết."
+msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
+msgstr "- **tuyên bản**\n - Chủ nhà có nhiệm vụ giữ cho tài sản thuê trong một tiểu bang\nbàn giao và nhận được tương ứng với thỏa thuận hợp đồng. \n - Đó là những gì người thuê nhà trả tiền thuê nhà cho. \n - Nếu một khiếm khuyết xảy ra trong thời gian thuê nhà, thì chủ nhà phải sửa chữa nó. \n- **Ngoại trí**: để sửa chữa nhỏ lên đến một số tiền khoảng 100 euro cho mỗi sửa chữa\n - nếu nó nói như vậy trong hợp đồng và\n - một số tiền tối đa hàng năm đã được thiết lập. \n- **Thực thi: **\n - Yêu cầu bồi thường để loại bỏ các khiếm khuyết có thể được thực hiện chống lại\nYêu cầu chủ nhà bằng cách yêu cầu họ khắc phục lỗi. Điều này thường xảy ra với nhau\nvới thông báo về khiếm khuyết."
 
-#: src/pages/PossibleEntitlements.tsx:40
-msgid ""
-"- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
-"- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
-"- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
-msgstr ""
-"- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
-"- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
-"- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
+msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
+msgstr "- Yêu cầu bồi thường đối với khuyết tật khắc phục hậu hội là quyền yêu cầu chủ nhà của quý vị khắc phục hậu hội.\n- Chủ nhà có nhiệm vụ bàn giao và duy trì căn hộ thuê trong điều kiện có thể sử dụng được.\n- Nếu có lỗi xảy ra trong thời gian thuê nhà, chủ nhà phải loại bỏ nó."
 
-#: src/components/shared/StaticProgress.tsx:27
 msgid "1. Ansprüche Prüfen"
-msgstr ""
+msgstr "1. Kiểm tra khiếu nại"
 
-#: src/components/shared/StaticProgress.tsx:29
 msgid "2. Mögliche Ansprüche"
-msgstr ""
+msgstr "2. Các khiếu nại có thể"
 
-#: src/components/shared/StaticProgress.tsx:31
 msgid "3. Nächste Schritte"
-msgstr ""
+msgstr "3. Các bước tiếp theo"
 
-#: src/pages/PossibleEntitlements.tsx:66
 msgid "Aufwendungsersatz"
-msgstr "Aufwendungsersatz"
+msgstr "Hoàn trả chi phí"
 
-#~ msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-#~ msgstr "Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
+msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
 
-#: src/pages/PossibleEntitlements.tsx:35
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Loại bỏ các khiếm khuyết của chủ nhà"
 
-#~ msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
-#~ msgstr "Vì chỉ có mười hai tuần đã có sẵn cho toàn bộ dự án, con đường này vẫn chưa thể được thực hiện."
+msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
+msgstr "Vì chỉ có mười hai tuần đã có sẵn cho toàn bộ dự án, con đường này vẫn chưa thể được thực hiện."
 
-#: src/pages/Home.tsx:30
 msgid "Die Justiz im Netz."
 msgstr "Các cơ quan tư pháp trên mạng."
 
-#: src/pages/SolutionExplorer.tsx:90
 msgid "Diese Option ist leider noch nicht verfügbar."
 msgstr "Thật không may, tùy chọn này chưa có sẵn."
 
-#~ msgid "Dieser Pfad wurde noch nicht implementiert"
-#~ msgstr "Con đường này vẫn chưa được thực hiện"
+msgid "Dieser Pfad wurde noch nicht implementiert"
+msgstr "Con đường này vẫn chưa được thực hiện"
 
-#: src/pages/NextSteps.tsx:50
 msgid "Dokumentation des Mangels"
-msgstr "Dokumentation des Mangels"
+msgstr "Tài liệu về khiếm khuyết"
 
-#~ msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-#~ msgstr "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "Yêu cầu bồi thường là quyền yêu cầu hành vi từ người khác. Nhấp vào xác nhận quyền sở hữu để tìm hiểu thêm về chúng."
 
-#: src/pages/PossibleEntitlements.tsx:99
 msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
+msgstr "Yêu cầu bồi thường là quyền yêu cầu một cái gì đó từ một người hoặc công ty khác. Nhấp vào xác nhận quyền sở hữu để tìm hiểu thêm về chúng."
 
-#: src/pages/Home.tsx:31
 msgid "Einfach, online, jederzeit."
 msgstr "Dễ dàng, trực tuyến, bất cứ lúc nào."
 
-#: src/pages/PossibleEntitlements.tsx:96
 msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-msgstr "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
+msgstr "Xong! Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
 
-#~ msgid ""
-#~ "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\n"
-#~ "für Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\n"
-#~ "einzufordern."
-#~ msgstr ""
-#~ "Xong! Dựa trên thông tin bạn cung cấp, các khiếu nại pháp lý sau đây có thể\n"
-#~ "đi vào câu hỏi cho bạn. Yêu cầu bồi thường là quyền đối với một hành vi cụ thể của người khác\n"
-#~ "để yêu cầu."
+msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
+msgstr "Xong! Dựa trên thông tin bạn cung cấp, các khiếu nại pháp lý sau đây có thể\nđi vào câu hỏi cho bạn. Yêu cầu bồi thường là quyền đối với một hành vi cụ thể của người khác\nđể yêu cầu."
 
-#: src/pages/Home.tsx:83
 msgid "Handlungsoptionen vergleichen"
 msgstr "So sánh các tùy chọn cho hành động"
 
-#: src/pages/SolutionExplorer.tsx:74
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 msgstr "Bạn có vấn đề trong lĩnh vực nào trong cuộc sống của bạn?"
 
-#: src/pages/SolutionExplorer.tsx:147
 msgid "Info"
 msgstr "Thông tin"
 
-#: src/pages/SolutionExplorer.tsx:125
 msgid "Ja"
 msgstr "Có"
 
-#: src/pages/Home.tsx:42
-#: src/pages/Home.tsx:110
 msgid "Jetzt starten!"
 msgstr "Bắt đầu ngay bây giờ"
 
-#: src/components/shared/MainMenu.tsx:304
-#: src/pages/SolutionExplorer.tsx:73
 msgid "Lösungsfinder"
 msgstr "Công cụ tìm giải pháp"
 
-#: src/pages/PossibleEntitlements.tsx:48
 msgid "Mietminderung"
 msgstr "Giảm tiền thuê"
 
-#: src/pages/NextSteps.tsx:66
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
-msgstr "Mängelanzeige bei Ihrer Vermieter:in"
+msgstr "Thông báo khuyết tật cho chủ nhà của bạn"
 
-#: src/pages/SolutionExplorer.tsx:128
 msgid "Nein"
 msgstr "Không"
 
-#: src/pages/Home.tsx:89
 msgid "Online Klage einreichen"
 msgstr "Tộp đơn kiện trực tuyến"
 
-#: src/pages/NextSteps.tsx:129
 msgid "Rechtlich beraten lassen"
-msgstr "Rechtlich beraten lassen"
+msgstr "Nhận tư vấn pháp lý"
 
-#: src/pages/Home.tsx:69
 msgid "Rechtsproblem einordnen"
 msgstr "Phân loại vấn đề pháp lý"
 
-#: src/pages/PossibleEntitlements.tsx:78
 msgid "Schadensersatz"
-msgstr "Schadensersatz"
+msgstr "Thiệt hại"
 
-#: src/pages/Home.tsx:48
 msgid "Unser Angebot"
 msgstr "Đề nghị của chúng tôi"
 
-#: src/components/shared/NavigationButtons.tsx:29
 msgid "Weiter"
 msgstr "Tiếp"
 
-#: src/pages/PossibleEntitlements.tsx:131
-msgid ""
-"Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \n"
-"wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
-msgstr ""
-"Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \n"
-"wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
+msgid "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \nwie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
+msgstr "Sau khi bạn đã được thông báo về các yêu cầu của mình, chúng tôi sẽ chỉ cho bạn \nlàm thế nào bạn có thể thực thi chúng. Chỉ cần nhấp vào Tiếp theo để làm như vậy."
 
-#: src/pages/Home.tsx:44
 msgid "Wie es funktioniert"
 msgstr "Cách hoạt động"
 
-#: src/pages/Home.tsx:99
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "Chúng tôi có thể giúp gì cho bạn?"
 
-#: src/pages/ExitJourney.tsx:54
 msgid "Zu den Beratungsangeboten"
 msgstr "Đi đến các dịch vụ tư vấn"
 
-#: src/pages/disclaimer.tsx:150
 msgid "Zum Prototypen"
-msgstr "Zum Prototypen"
+msgstr "Để nguyên mẫu"
 
-#: src/components/shared/NavigationButtons.tsx:17
 msgid "Zurück"
 msgstr "Quay lại"
 
-#: src/pages/NextSteps.tsx:89
 msgid "Zweites Schreiben an die Vermieter:in senden"
-msgstr "Zweites Schreiben an die Vermieter:in senden"
+msgstr "Thư thứ hai gửi chủ nhà vào"
 
-#: src/components/shared/Footer.tsx:86
 msgid "footer.disclaimer"
-msgstr "Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!"
+msgstr "Trang này là một nguyên mẫu không đảm bảo sự chắc chắn về pháp lý!"
 
-#: src/components/shared/Footer.tsx:89
 msgid "footer.info"
-msgstr "Weiter Infos zu Seite findest du hier"
+msgstr "Bạn có thể tìm thêm thông tin về trang này tại đây"
 
-#: src/components/shared/Footer.tsx:83
 msgid "footer.text"
 msgstr "Được xây dựng bởi ⚖️ và 🐌 với ❤️"
 
-#: src/pages/Home.tsx:49
 msgid "home.hero_offer"
 msgstr "Justizportal.de là một lời đề nghị của Bộ Tư pháp Liên bang và Bảo vệ người tiêu dùng hợp tác với các bộ tư pháp liên bang ở các tiểu bang liên bang. Cổng thông tin cung cấp cho bạn một cái nhìn tổng quan về quyền của bạn trong các tình huống hàng ngày khác nhau. Nó cũng giúp bạn phân loại và giải quyết các câu hỏi và vấn đề pháp lý của bạn. Bạn sẽ được thông báo về các lựa chọn hành động của bạn và sẽ được hỗ trợ trong việc khẳng định quyền của bạn."
 
-#: src/pages/Home.tsx:76
 msgid "home.howitwork_claims"
 msgstr "Sau đó, chúng tôi sẽ giúp bạn đánh giá những xác nhận quyền sở hữu nào có thể tồn tại trong trường hợp của bạn. Khiếu nại là quyền yêu cầu một hành động cụ thể từ người khác (ví dụ như thanh toán thiệt hại), để chịu đựng (ví dụ như cho thuê lại một căn hộ) hoặc để kiềm chế (ví dụ như nhập vào một tài sản). invidunt ut labore."
 
-#: src/pages/Home.tsx:70
 msgid "home.howitwork_classify"
 msgstr "Trước tiên, chúng tôi sẽ giúp bạn làm rõ liệu có vấn đề pháp lý trong trường hợp của bạn hay không. Chúng tôi sẽ cho bạn thấy thông tin phù hợp với trường hợp của bạn."
 
-#: src/pages/Home.tsx:60
 msgid "home.howitwork_heading"
 msgstr "Cách hoạt động"
 
-#: src/pages/Home.tsx:90
 msgid "home.howitwork_lawsuit"
 msgstr "Khi tất cả các lựa chọn khác đã hết, chúng tôi sẽ giúp bạn nộp đơn khiếu nại với tòa án quận trực tuyến. Để đạt được điều này, chúng tôi giải thích quá trình của quá trình trực tuyến của chúng tôi cho bạn và cung cấp thông tin minh bạch về các chi phí của thủ tục tố tụng pháp lý cũng như các tư vấn pháp lý có thể."
 
-#: src/pages/Home.tsx:84
 msgid "home.howitwork_options"
 msgstr "Dựa trên điều này, chúng tôi sẽ đề xuất các giải pháp có thể <0> cho bạn - ban đầu cho một giải quyết tranh chấp thân thiện với phía đối diện. </0>"
 
-#: src/pages/Home.tsx:63
 msgid "home.howitwork_subheading"
 msgstr "Chúng tôi có thể giúp bạn giải quyết vấn đề pháp lý của mình bằng bốn bước đơn giản:"
 
-#: src/pages/Home.tsx:101
 msgid "home.howtohelp_footer"
 msgstr "Bạn có thể tìm hiểu thêm về các vấn đề pháp lý mà chúng tôi có thể giúp bạn trên các trang sau đây."
 
-#: src/pages/Home.tsx:33
 msgid "home.sub_heading"
 msgstr "Chúng tôi thông báo cho bạn về quyền lợi của bạn trong cuộc sống hàng ngày và giúp bạn giải quyết vấn đề pháp lý của bạn trong các bước đơn giản"
 
-#: src/pages/NextSteps.tsx:157
 msgid "nextsteps.header"
-msgstr "Ihre nächsten möglichen Schritte zur Problemlösung"
+msgstr "Các bước tiếp theo có thể của bạn để giải quyết vấn đề"
 
-#: src/pages/NextSteps.tsx:160
 msgid "nextsteps.sub_header"
-msgstr "Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten."
+msgstr "Chúng tôi đã tóm tắt các bước có thể để bạn thực thi khiếu nại của mình tại đây. Nhấp vào từng hộp một để tìm hiểu thêm và nhận được hỗ trợ."
 
-#: src/pages/Home.tsx:75
 msgid "Über Ansprüche informieren"
 msgstr "Thông báo về khiếu nại"
 
-#: src/pages/NextSteps.tsx:106
 msgid "Über das Justizportal eine Klage einreichen"
-msgstr "Über das Justizportal eine Klage einreichen"
+msgstr "Nộp đơn yêu cầu bồi thường qua cổng thông tin tư pháp"
