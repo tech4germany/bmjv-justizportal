@@ -110,7 +110,8 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       condition: nextSteps.indexOf(NextStepsType.LandlordLetter) != -1,
       content: `
 **Warum?** 
-- In den meisten Fällen beseitigen die Vermieter:innen einen Mangel, sobald sie benachrichtigt werden. 
+- Als Mieter:in sind Sie verpflichtet, Mängel in Ihrer Wohnung zu melden.
+- Meistens beseitigen Vermieter:innen einen Mangel, sobald sie benachrichtigt werden. 
 - Mit einer schriftlichen Mängelanzeige haben Sie außerdem einen Nachweis für den weiteren Prozess.  
   
   
@@ -126,21 +127,24 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       optional: false,
     },
     {
-      label: t`Zweites Schreiben an die Vermieter:in senden`,
+      label: t`Vermieter:in erneut kontaktieren`,
       icon: TiArrowLoop,
-      buttonText: 'Zur Vorlage für die zweite Mängelanzeige',
-      buttonLink: `${homeURL}/${Routes.Bryter}?mangelanzeige&id=${id}`,
+      buttonLink: '',
+      buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
       content: `
 **Warum?** 
-- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht nur übersehen. Dann kann sich eine zweite Kontaktaufnahme lohnen.
-- Mit der Androhung rechtlicher Schritte erhöhen Sie den Druck. Manche Vermieter:innen reagieren erst auf erhöhten Druck.  
+- Ein zweites Schreiben kann Ihrer Forderung Nachdruck verleihen.
+- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht auch nur übersehen.
+- Wenn neue Kosten entstanden sind (z.B. Aufwendungen durch eigene Mängelbeseitigung), können Sie diese direkt von Ihrer Vermieter:in einfordern.  
   
   
 **Wie gehe ich vor?** 
-- Nutzen Sie unsere Vorlage und versenden Sie ein zweites Schreiben an Ihre Vermieter:in.
+- Kontaktieren Sie ihre Vermieter:in und weisen Sie erneut auf das Problem hin. 
+- Benennen Sie klar Ihre Forderung, und setzen Sie eine letzte Frist zur Mängelbeseitigung oder Zahlung, bevor Sie weitere rechtliche Schritte ergreifen.
+- Bleiben Sie dabei freundlich und höflich.    
 `,
-      optional: false,
+      optional: true,
     },
     {
       label: t`Über das Justizportal eine Klage einreichen`,

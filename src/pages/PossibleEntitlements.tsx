@@ -55,7 +55,8 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 
 - Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.
 - Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.
-- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.`,
+- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.
+- Ausnahme: Mieter können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag mit einem Jahreshöchstbetrag festgelegt wurde.`,
     },
     {
       label: t`Mietminderung`,
@@ -85,6 +86,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       
 - Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.
 - Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.
+- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde. 
 `,
     },
     {
@@ -95,7 +97,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       condition: claims.indexOf(Claims.Schadensersatz) != -1,
       content: `
 - Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.
-- **Mögliche Schäden** sind **Hotelkosten**, unbrauchbar gewordene **Möbel**, oder auch Schmerzensgeld bei körperlichen Schäden.
+- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.
 - Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat.
 `,
     },
@@ -106,7 +108,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       <StaticProgress currentStep={2} />
       <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
         <Heading marginInline={{ base: '2em', md: '0em' }}>
-          <Trans>Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
+          <Trans>Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
         </Heading>
         <AnnotadedText
           text={t`
