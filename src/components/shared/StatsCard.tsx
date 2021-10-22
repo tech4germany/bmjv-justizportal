@@ -22,6 +22,7 @@ import { FaInfoCircle } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from './AnnotatedText';
 import { BoxProps } from '@chakra-ui/react';
+import { Primary } from '../../Const';
 
 interface StatsCardProps extends BoxProps {
   title: string;
@@ -32,18 +33,18 @@ interface StatsCardProps extends BoxProps {
 
 export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const green = useColorModeValue('green.500', 'green.300');
+  const borderColor = useColorModeValue('gray.200', 'whiteAlpha.300');
 
   return (
     <>
       <Stat
         border="2px solid"
         height="100%"
-        borderColor={useColorModeValue('gray.200', 'whiteAlpha.400')}
+        borderColor={borderColor}
         rounded="lg"
         _hover={{
           transitionDuration: '0.2s',
-          bg: useColorModeValue('gray.200', 'whiteAlpha.400'),
+          bg: borderColor,
         }}
         {...rest}>
         <>
@@ -55,10 +56,10 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
             width="auto"
             top=".5em"
             right=".5em"
-            color={useColorModeValue('gray.700', 'whiteAlpha.400')}
+            color={borderColor}
             _hover={{
               transitionDuration: '0.2s',
-              color: green,
+              color: Primary(),
             }}>
             <FaInfoCircle
               size="1.3em"
@@ -69,10 +70,10 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
             />
           </Box>
           <Flex flexDir="column" alignItems="center" as={ReactLink} to={link} p={3}>
-            <Box color={green} padding="0.8em">
+            <Box color={Primary()} padding="0.8em">
               {icon}
             </Box>
-            <StatLabel fontSize={{ sm: 'sm', base: 'md', md: 'lg' }} textAlign="center" wordBreak="break-word">
+            <StatLabel fontSize={{ base: 'sm', sm: 'md', md: 'lg' }} textAlign="center" wordBreak="break-word">
               {title}
             </StatLabel>
           </Flex>
@@ -84,11 +85,11 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
           <ModalHeader>
             <HStack>
               <FaInfoCircle size="1.4em" />
-              <Text>Info</Text>
+              <Text paddingInline={2}>Info</Text>
             </HStack>
           </ModalHeader>
           <ModalCloseButton />
-          <ModalBody pb={6}>
+          <ModalBody>
             <AnnotadedText text={info != undefined ? info : ''} />
           </ModalBody>
 

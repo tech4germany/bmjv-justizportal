@@ -4,27 +4,32 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Box,
   Button,
+  Flex,
   Heading,
+  HStack,
+  SimpleGrid,
   Spacer,
   Tag,
   Text,
 } from '@chakra-ui/react';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
+import { IconType } from 'react-icons';
 import { FaEnvelopeOpen, FaPencilAlt, FaUserTie } from 'react-icons/fa';
 import { HiScale } from 'react-icons/hi';
 import { TiArrowLoop } from 'react-icons/ti';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { Card } from '../components/shared/Card';
+import { CardContent } from '../components/shared/CardContent';
+import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
-import { homeURL } from '../Const';
-import { MMGraph, NextStepsType } from '../logic/KMParser';
-import { IconType } from 'react-icons';
 import { StaticProgress } from '../components/shared/StaticProgress';
-import { t, Trans } from '@lingui/macro';
-import { Card } from '../components/shared/Card';
-import { Routes } from '../Const';
+import { homeURL, Routes } from '../Const';
+import { MMGraph, NextStepsType } from '../logic/KMParser';
 
 interface FeatureProps {
   id: string | null;
@@ -174,7 +179,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
       icon: FaUserTie,
       buttonText: 'Zur Übersicht für Beratungsangebote',
       buttonLink: '#',
-      condition: true,
+      condition: false,
       content: `
 **Warum?** 
 - In einer Rechtsberatung kann ihr Fall individuell von einer Expert:in bewertet werden. 
@@ -196,72 +201,68 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
   return (
     <>
       <StaticProgress currentStep={3} />
-      <PageBody marginInline={{ base: '0em', md: '2em' }} title="Optionen">
-        <Heading marginInline={{ base: '2em', md: '0em' }}>
-          <Trans id="nextsteps.header">Ihre nächsten möglichen Schritte zur Problemlösung</Trans>
-        </Heading>
-        <Text>
-          <Trans id="nextsteps.sub_header">
-            Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
-            nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
-          </Trans>
-        </Text>
+      <PageBody marginInline={{ base: 0, md: 10 }} title="Optionen">
+        <Box mx={{ base: 5, md: 0 }}>
+          <Heading>
+            <Trans id="nextsteps.header">Ihre nächsten möglichen Schritte zur Problemlösung</Trans>
+          </Heading>
+          <Text>
+            <Trans id="nextsteps.sub_header">
+              Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken
+              Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+            </Trans>
+          </Text>
+        </Box>
         <Spacer />
-        <Accordion alignSelf="stretch" allowToggle>
-          {data.map((acc, index) =>
-            acc.condition ? (
-              <AccordionItem>
-                <AccordionButton>
-                  {<acc.icon size="2.5em" />}
-                  <Text fontWeight="bold" padding="1em">
-                    {acc.label}
-                  </Text>
-                  <Tag size="sm" variant="solid" colorScheme={acc.optional ? 'gray' : 'green'}>
-                    {acc.optional ? 'Optional' : 'Empfohlen'}
-                  </Tag>
-                  <Spacer />
-                  <AccordionIcon />
-                </AccordionButton>
-                <AccordionPanel pb={4}>
-                  <AnnotadedText text={acc.content} />
-                  <Spacer height="1.5em" />
-                  {acc.buttonLink && acc.buttonText ? (
-                    <>
-                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={acc.buttonLink}>
-                        {acc.buttonText}
-                      </Button>
-                    </>
-                  ) : null}
-                  <Spacer height="1em" />
-                </AccordionPanel>
-              </AccordionItem>
-            ) : null
-          )}
-        </Accordion>
 
-        {/* <Tabs colorScheme="green" size="md" variant="enclosed" defaultIndex={0} isLazy>
-        <TabList>
-          {tabData.map((tab, index) => (
-            <Tab key={index}>
-              {<tab.icon size="2em" />}
-              <Text>{tab.label}</Text>
-            </Tab>
-          ))}
-        </TabList>
-        <TabPanels>
-          {tabData.map((tab, index) => (
-            <TabPanel key={index} borderInline="1px solid" borderBlockEnd="1px solid" borderColor="inherit">
-              <AnnotadedText text={tab.content} />
-            </TabPanel>
-          ))}
-        </TabPanels>
-      </Tabs> */}
-        {/* <AnnotadedText
-        text={`Wenn sie nicht alle Punkte schriftlich kommuniziert haben, sollten Sie ein neues Schreiben erstellen.  
-              Hier helfen wir Ihnen dabei: Wenn Sie den Vermietenden eine Frist zur Behebung des Mangels gesetzt haben, dann
-              **warten** **Sie zunächst den Ablauf der Frist ab**, bevor Sie weitere Schritte unternehmen.
-      `}
-      /> */}
+        <Flex flexDir={{ base: 'column', md: 'row' }} gridGap="2em">
+          <Accordion flex="3" minW={'20em'} alignSelf="stretch" allowToggle>
+            {data.map((acc, index) =>
+              acc.condition ? (
+                <AccordionItem>
+                  <AccordionButton>
+                    {<acc.icon size="2.5em" />}
+                    <Text fontWeight="bold" padding="1em">
+                      {acc.label}
+                    </Text>
+                    {/* <Tag size="sm" minW="fit-content" variant="solid" colorScheme={acc.optional ? 'gray' : 'green'}>
+                      {acc.optional ? 'Optional' : 'Empfohlen'}
+                    </Tag> */}
+                    <Spacer />
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    <AnnotadedText text={acc.content} />
+                    <Spacer height="1.5em" />
+                    {acc.buttonLink && acc.buttonText ? (
+                      <>
+                        <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
+                          {acc.buttonText}
+                        </Button>
+                      </>
+                    ) : null}
+                    <Spacer height="1em" />
+                  </AccordionPanel>
+                </AccordionItem>
+              ) : null
+            )}
+          </Accordion>
+
+          <Card flex="2" mx={{ base: 5, md: 0 }}>
+            <CardHeader IconLeft={FaUserTie} title={t`Rechtlich beraten lassen`} />
+            <CardContent>
+              <AnnotadedText
+                text={`
+**Fall Sie sich unsicher fühlen, kann ein Rechtsberatung für Sie sinnvoll sein**
+- Hier kann eine Expert:in ihren Fall individuell bewerten. 
+- Einige Beratungsstellen sind kostenlos. Insbesondere für eine Erstberatung oder Personen mit wenig Geld. 
+  `}
+              />
+              <Spacer height={5} />
+              <Button colorScheme="secondary">Überblick Beratungsstellen</Button>
+            </CardContent>
+          </Card>
+        </Flex>
 
         <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} />
       </PageBody>

@@ -26,7 +26,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
   }, []);
 
   return (
-    <Box textAlign="left" fontSize="xl">
+    <Box textAlign="left">
       <HeroSplit
         title1={t`Die Justiz im Netz.`}
         title2={t`Einfach, online, jederzeit.`}

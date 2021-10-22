@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import * as React from 'react';
 import { homeURL } from '../../Const';
 
@@ -11,7 +11,7 @@ interface FeatureProps {
 
 export const HeroSplit = (props: FeatureProps) => {
   const { title1, title2, children, image } = props;
-  const green = useColorModeValue('green.500', 'green.300');
+
   return (
     <Box>
       <Stack minH={'95vh'} direction={{ base: 'column', md: 'row' }}>
@@ -46,14 +46,11 @@ export const HeroSplit = (props: FeatureProps) => {
               opacity="0.5"
               src={`${homeURL}/data/53787D84-F85F-402B-AE32-5E1D59E38921.png`}
             />
-            <Heading fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }} fontWeight="bold">
-              <Text as={'span'} color={green} position={'relative'}>
+            <Heading colorScheme="primary" fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }} fontWeight="bold">
+              <Text as={'span'} position={'relative'}>
                 {title1}
               </Text>
-              <br />{' '}
-              <Text color={green} as={'span'}>
-                {title2}
-              </Text>{' '}
+              <br /> <Text as={'span'}>{title2}</Text>{' '}
             </Heading>
             {children}
           </Stack>

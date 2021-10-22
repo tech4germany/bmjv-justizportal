@@ -57,7 +57,7 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
           },
           a({ href, title, children, ...props }) {
             return (
-              <Link as={ReactLink} color="green.500" to={`${homeURL}${href}`}>
+              <Link as={ReactLink} color="secondary.500" to={`${homeURL}${href}`}>
                 {children + ''}
               </Link>
             );

@@ -30,10 +30,7 @@ import { Routes } from '../../Const';
 interface FeatureProps extends BoxProps {}
 
 export const LanguageSelector = (props: FeatureProps) => {
-  // const linkColor = useColorModeValue('gray.600', 'gray.200');
-  // const linkHoverColor = useColorModeValue('gray.800', 'white');
   const popoverContentBgColor = useColorModeValue('gray.100', 'gray.800');
-  // const greenHex = useColorModeValue('#38a169', '#68d391');
 
   return (
     <Box alignSelf="center" {...props}>
@@ -123,7 +120,7 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
           <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
           <LanguageSelector />
-          <Button display="none" colorScheme="green">
+          <Button display="none" colorScheme="primary">
             Anmelden
           </Button>
           {/* <HyperThemeEditor /> */}
@@ -240,7 +237,6 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
-  // const greenHex = useColorModeValue('#38a169', '#68d391');
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>

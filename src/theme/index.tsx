@@ -32,14 +32,61 @@ const customTheme = extendTheme({
       // },
     }),
   },
+  colors: {
+    primary: {
+      50: '#ffe2ec',
+      100: '#ffb3c5',
+      200: '#fc839f',
+      300: '#f95278',
+      400: '#f62252',
+      500: '#dd0939',
+      600: '#ad032c',
+      700: '#7c001e',
+      800: '#4d0012',
+      900: '#200005',
+    },
+    secondary: {
+      50: '#e9e5ff',
+      100: '#beb4ff',
+      200: '#9284fc',
+      300: '#6653f9',
+      400: '#3b22f6',
+      500: '#2109dd',
+      600: '#1906ad',
+      700: '#0f047d',
+      800: '#07024d',
+      900: '#03001f',
+    },
+
+    primaryWD: (props: any) => ({
+      50: mode('#ffe2ec', '#ffe2ec')(props),
+      100: mode('#ffb3c5', '#ffb3c5')(props),
+      200: mode('#fc839f', '#fc839f')(props),
+      300: mode('#f95278', '#f95278')(props),
+      400: mode('#f62252', '#f62252')(props),
+      500: mode('#dd0939', '#dd0939')(props),
+      600: mode('#ad032c', '#ad032c')(props),
+      700: mode('#7c001e', '#7c001e')(props),
+      800: mode('#4d0012', '#4d0012')(props),
+      900: mode('#200005', '#200005')(props),
+    }),
+  },
   components: {
     Heading: {
-      baseStyle: (props: any) => ({
-        borderColor: mode('gray.200', 'gray.700')(props),
-        pb: 2,
-        fontWeight: 'bold',
-        size: 'sm',
-      }),
+      baseStyle: (props: any) => {
+        const { colorScheme: c } = props;
+        return {
+          color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.600`, `${c}.300`)(props),
+        };
+      },
+    },
+    Text: {
+      baseStyle: (props: any) => {
+        const { colorScheme: c } = props;
+        return {
+          color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.600`, `${c}.300`)(props),
+        };
+      },
     },
     Button: {
       baseStyle: {

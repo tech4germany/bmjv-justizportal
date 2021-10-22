@@ -1,8 +1,7 @@
-import { Box, Button, Container, Stack, Text, Link, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Box, Button, Container, Link, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
-import { homeURL } from '../../Const';
-import { Routes } from '../../Const';
+import { homeURL, Routes } from '../../Const';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {

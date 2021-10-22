@@ -1,14 +1,16 @@
-import { Box, Button, Heading, Spacer, Text, VStack, HStack } from '@chakra-ui/react';
+import { Box, Button, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react';
 import { t } from '@lingui/macro';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
+import { FaInfoCircle } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 import { Link as ReactLink } from 'react-router-dom';
+import { Card } from '../components/shared/Card';
+import { CardContent } from '../components/shared/CardContent';
+import { CardHeader } from '../components/shared/CardHeader';
 import { PageBody } from '../components/shared/PageBody';
-import { homeURL } from '../Const';
+import { homeURL, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
-import { Routes } from '../Const';
-import { AnnotadedText } from '../components/shared/AnnotatedText';
 
 interface FeatureProps {
   id: string | null;
@@ -21,21 +23,12 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
   return (
     <PageBody title="Lösungsfinder">
       <Heading>Leider können wir Sie nicht weiter unterstützen</Heading>
-      <Box
-        display={data.info ? '' : 'none'}
-        padding="1em"
-        shadow="0px 0px 0.5em gray"
-        border="1px solid"
-        height="100%"
-        borderColor="whiteAlpha.400"
-        bg="whiteAlpha.200"
-        rounded="lg"
-        _hover={{
-          transitionDuration: '0.2s',
-          bg: 'whiteAlpha.400',
-        }}>
-        <AnnotadedText text={data?.info ? data.info : ''} />
-      </Box>
+      <Card display={data.info ? '' : 'none'}>
+        <CardHeader IconLeft={FaInfoCircle} title={`Warum?`} />
+        <CardContent>
+          <ReactMarkdown components={ChakraUIRenderer()}>{data?.info ? data.info : ''}</ReactMarkdown>
+        </CardContent>
+      </Card>
       <VStack>
         {/* <Text>
           Leider können wir Sie bei Ihrem Anliegen nicht weiter unterstützen, da unser Portal nur zu einer Reihe von
@@ -51,7 +44,8 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
         <Spacer minH={10}></Spacer>
         <HStack spacing="1em">
           <Button as={ReactLink} to={`${homeURL}/${Routes.SolutionExplorer}?id=${id}`} children={t`Zurück`} />
-          <Button colorScheme={'green'} as={ReactLink} to={homeURL} children={t`Zur Homepage`} />
+            as={ReactLink}
+          {/* <Button colorScheme={'secondary'} as={ReactLink} to={homeURL} children={t`Zur Homepage`} /> */}
           <Button
             colorScheme={'green'}
             as={ReactLink}
