@@ -8,6 +8,7 @@ import { PageBody } from '../components/shared/PageBody';
 import { homeURL } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { Routes } from '../Const';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 
 interface FeatureProps {
   id: string | null;
@@ -33,7 +34,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
           transitionDuration: '0.2s',
           bg: 'whiteAlpha.400',
         }}>
-        <ReactMarkdown components={ChakraUIRenderer()}>{data?.info ? data.info : ''}</ReactMarkdown>
+        <AnnotadedText text={data?.info ? data.info : ''} />
       </Box>
       <VStack>
         {/* <Text>

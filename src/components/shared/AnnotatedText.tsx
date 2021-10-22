@@ -1,7 +1,9 @@
-import { Text, Tooltip } from '@chakra-ui/react';
+import { Link, Text, Tooltip } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { homeURL } from '../../Const';
+import { Link as ReactLink } from 'react-router-dom';
 import Glossary from '../../data_parser/glossary.json';
 
 function getIndicesOf(searchStr: string, str: string): number[] {
@@ -51,6 +53,13 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
                   {children + ''}
                 </Text>
               </Tooltip>
+            );
+          },
+          a({ href, title, children, ...props }) {
+            return (
+              <Link as={ReactLink} color="green.500" to={`${homeURL}${href}`}>
+                {children + ''}
+              </Link>
             );
           },
         })}>
