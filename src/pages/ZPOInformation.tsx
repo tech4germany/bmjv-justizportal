@@ -193,6 +193,7 @@ Gegen das Urteil des Amts- oder Landgerichts können Sie  **binnen eines Monat
 - Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
 - Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."
               />
+              <Spacer height="1em" />
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
@@ -215,7 +216,7 @@ Gegen das Urteil des Amts- oder Landgerichts können Sie  **binnen eines Monat
         <Text fontWeight="bold" paddingBlock="1.2em">
           Ich fühle mich ausreichend informiert und möchte Klage einreichen:
         </Text>
-        <Button colorScheme="green" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
+        <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           Klageschriftgenerator
         </Button>
       </Box>

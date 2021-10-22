@@ -43,11 +43,14 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
         </Text>
         <Spacer minH={10}></Spacer>
         <HStack spacing="1em">
-          <Button as={ReactLink} to={`${homeURL}/${Routes.SolutionExplorer}?id=${id}`} children={t`Zurück`} />
+          <Button
             as={ReactLink}
+            to={`${homeURL}/${Routes.SolutionExplorer}?id=${id && mmobject.getParent(id)?.id}`}
+            children={t`Zurück`}
+          />
           {/* <Button colorScheme={'secondary'} as={ReactLink} to={homeURL} children={t`Zur Homepage`} /> */}
           <Button
-            colorScheme={'green'}
+            colorScheme={'secondary'}
             as={ReactLink}
             to={`${homeURL}/${Routes.ConsultationOffers}`}
             children={t`Zu den Beratungsangeboten`}

@@ -37,7 +37,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
         </Trans>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
           <Button
-            colorScheme={'orange'}
+            colorScheme={'secondary'}
             as={ReactLink}
             to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}
@@ -105,7 +105,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           </Text>
 
           <Button
-            colorScheme={'orange'}
+            colorScheme={'secondary'}
             as={ReactLink}
             to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}

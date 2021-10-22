@@ -121,7 +121,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             gridGap={{ base: '1em', md: '2em' }}
             flexDir={{ base: 'column-reverse', md: 'row' }}>
             <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
-              <RadioGroup size="lg" colorScheme="green" onChange={setValue} value={value} padding="1em">
+              <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={value} padding="1em">
                 <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
                   <Radio value="1">
                     <Trans>Ja</Trans>
