@@ -1,15 +1,4 @@
-import {
-  Flex,
-  GridItem,
-  Heading,
-  Radio,
-  RadioGroup,
-  Text,
-  SimpleGrid,
-  Spacer,
-  useToast,
-  VStack,
-} from '@chakra-ui/react';
+import { Flex, GridItem, Radio, RadioGroup, SimpleGrid, Spacer, Text, useToast, VStack } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';

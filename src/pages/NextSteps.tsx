@@ -8,10 +8,7 @@ import {
   Button,
   Flex,
   Heading,
-  HStack,
-  SimpleGrid,
   Spacer,
-  Tag,
   Text,
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
@@ -225,7 +222,7 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
                     <Text fontWeight="bold" padding="1em">
                       {acc.label}
                     </Text>
-                    {/* <Tag size="sm" minW="fit-content" variant="solid" colorScheme={acc.optional ? 'gray' : 'green'}>
+                    {/* <Tag size="sm" minW="fit-content" variant="solid" colorScheme={acc.optional ? 'gray' : 'primary'}>
                       {acc.optional ? 'Optional' : 'Empfohlen'}
                     </Tag> */}
                     <Spacer />

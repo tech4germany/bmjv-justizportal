@@ -6,8 +6,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { Feature } from '../components/shared/Feature';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
-import { homeURL } from '../Const';
-import { Routes } from '../Const';
+import { homeURL, Routes } from '../Const';
 
 interface FeatureProps {
   anchorId: string;
@@ -103,7 +102,6 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
               Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei denen wir Sie unterstützen können.
             </Trans>
           </Text>
-
           <Button
             colorScheme={'secondary'}
             as={ReactLink}

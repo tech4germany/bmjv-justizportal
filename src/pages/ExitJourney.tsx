@@ -1,4 +1,4 @@
-import { Box, Button, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react';
+import { Button, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react';
 import { t } from '@lingui/macro';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';

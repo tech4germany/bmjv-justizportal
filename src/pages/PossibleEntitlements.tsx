@@ -28,7 +28,6 @@ interface FeatureProps {
 }
 
 export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) => {
-  // const green = useColorModeValue('.500', 'green.300');
   let claims: Claims[] = mmobject.getNode(id).claims;
 
   let data = [
@@ -131,7 +130,11 @@ Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehme
                   <Spacer height="1.5em" />
                   {acc.buttonLink && acc.buttonText ? (
                     <>
-                      <Button colorScheme="green" paddingBlock="1em" as={ReactLink} to={`${homeURL}${acc.buttonLink}`}>
+                      <Button
+                        colorScheme="secondary"
+                        paddingBlock="1em"
+                        as={ReactLink}
+                        to={`${homeURL}${acc.buttonLink}`}>
                         {acc.buttonText}
                       </Button>
                     </>

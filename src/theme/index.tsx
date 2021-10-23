@@ -1,5 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
+import { Secondary } from '../Const';
 
 const customTheme = extendTheme({
   fonts: {
@@ -21,41 +22,32 @@ const customTheme = extendTheme({
           fontStyle: 'normal !important',
         },
       },
-      // a: {
-      //   color: mode('green.500', 'green.200')(props),
-      //   transition: 'color 0.15s',
-      //   transitionTimingFunction: 'ease-out',
-      //   fontWeight: '500',
-      //   _hover: {
-      //     color: mode('green.600', 'green.300')(props),
-      //   },
-      // },
     }),
   },
   colors: {
     primary: {
-      50: '#ffe2ec',
-      100: '#ffb3c5',
-      200: '#fc839f',
-      300: '#f95278',
-      400: '#f62252',
-      500: '#dd0939',
-      600: '#ad032c',
-      700: '#7c001e',
-      800: '#4d0012',
-      900: '#200005',
+      50: '#e3faec',
+      100: '#c5e8d3',
+      200: '#a4d8b9',
+      300: '#83c7a0',
+      400: '#61b789',
+      500: '#489e69',
+      600: '#367b4c',
+      700: '#255833',
+      800: '#12361a',
+      900: '#011400',
     },
     secondary: {
-      50: '#e9e5ff',
-      100: '#beb4ff',
-      200: '#9284fc',
-      300: '#6653f9',
-      400: '#3b22f6',
-      500: '#2109dd',
-      600: '#1906ad',
-      700: '#0f047d',
-      800: '#07024d',
-      900: '#03001f',
+      50: '#FFFAF0',
+      100: '#FEEBC8',
+      200: '#FBD38D',
+      300: '#F6AD55',
+      400: '#ED8936',
+      500: '#DD6B20',
+      600: '#C05621',
+      700: '#9C4221',
+      800: '#7B341E',
+      900: '#652B19',
     },
 
     primaryWD: (props: any) => ({
@@ -101,16 +93,20 @@ const customTheme = extendTheme({
     },
     textarea: {
       baseStyle: {
-        background: 'green.300',
+        background: 'primary.300',
       },
     },
     Link: {
-      baseStyle: {
-        fontWeight: 'inherit',
+      baseStyle: (props: any) => ({
+        color: Secondary(),
+        transition: 'color 0.15s',
+        transitionTimingFunction: 'ease-out',
+        fontWeight: '500',
         _hover: {
+          color: mode('secondary.300', 'secondary.200')(props),
           textDecoration: 'none',
         },
-      },
+      }),
       variants: {
         text: {
           color: 'blue.400',

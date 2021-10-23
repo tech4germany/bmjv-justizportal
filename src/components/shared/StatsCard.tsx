@@ -1,5 +1,6 @@
 import {
   Box,
+  BoxProps,
   Button,
   Flex,
   HStack,
@@ -16,13 +17,13 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import { transparentize } from '@chakra-ui/theme-tools';
 import * as React from 'react';
 import { ReactNode } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
-import { AnnotadedText } from './AnnotatedText';
-import { BoxProps } from '@chakra-ui/react';
 import { Primary } from '../../Const';
+import { AnnotadedText } from './AnnotatedText';
 
 interface StatsCardProps extends BoxProps {
   title: string;
@@ -44,7 +45,7 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
         rounded="lg"
         _hover={{
           transitionDuration: '0.2s',
-          bg: borderColor,
+          bg: transparentize(borderColor, 0.5),
         }}
         {...rest}>
         <>

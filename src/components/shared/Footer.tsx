@@ -44,7 +44,7 @@ export default function FooterSmallWithSocial() {
         <Text fontWeight="bold">
           <Trans id="footer.disclaimer">Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!</Trans>
         </Text>
-        <Link href={`${homeURL}/${Routes.Disclaimer}`} textDecor="underline">
+        <Link href={`${homeURL}/${Routes.Disclaimer}`}>
           <Trans id="footer.info">Weiter Infos zum Prototypen</Trans>
         </Link>
       </Container>

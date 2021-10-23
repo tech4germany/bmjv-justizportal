@@ -5,6 +5,7 @@ export const homeURL: string = '/bmjv-justizportal';
 export const Primary = (): string => useColorModeValue('primary.500', 'primary.300');
 export const Secondary = (): string => useColorModeValue('secondary.500', 'secondary.300');
 export const C_LightGray = (): string => useColorModeValue('gray.400', 'gray.600');
+export const C_DarkGray = (): string => useColorModeValue('gray.700', 'gray.300');
 
 export enum Routes {
   Disclaimer = 'disclaimer',

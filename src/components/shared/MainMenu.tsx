@@ -17,15 +17,16 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import { getColor } from '@chakra-ui/theme-tools';
 import { i18n } from '@lingui/core';
 import { t } from '@lingui/macro';
 import React from 'react';
 import { FaGlobeAfrica } from 'react-icons/fa';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
-import { homeURL } from '../../Const';
+import { C_DarkGray, homeURL, Primary, Routes } from '../../Const';
 import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
-import { gerUserLocale, locales, dynamicActivate } from '../../translations/i18n';
-import { Routes } from '../../Const';
+import theme from '../../theme';
+import { dynamicActivate, gerUserLocale, locales } from '../../translations/i18n';
 
 interface FeatureProps extends BoxProps {}
 
@@ -75,7 +76,7 @@ export const LanguageSelector = (props: FeatureProps) => {
 
 export const MenuWithSubnavigation = (props: FeatureProps) => {
   const { isOpen, onToggle } = useDisclosure();
-  const color = useColorModeValue('#38a169', '#9ae6b4');
+  const color = getColor(theme, Primary());
 
   return (
     <Box position={{ md: 'sticky' }} top={0} width="100%" zIndex="100" {...props}>
@@ -138,7 +139,7 @@ const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');
   const linkHoverColor = useColorModeValue('gray.800', 'white');
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-  const greenHex = useColorModeValue('#38a169', '#68d391');
+  const greenHex = Primary();
 
   return (
     <Stack direction={'row'} spacing={4}>
@@ -255,9 +256,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         _hover={{
           textDecoration: 'none',
         }}>
-        <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
-          {label}
-        </Text>
+        <Text fontWeight="bold">{label}</Text>
         {children && (
           <Icon
             as={ChevronDownIcon}
@@ -270,13 +269,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}
-          align={'start'}>
+        <Stack mt={2} pl={4} borderLeft={1} borderStyle={'solid'} borderColor={C_DarkGray()} align={'start'}>
           {children &&
             children.map((child) => (
               <Link as={ReactLink} key={child.label} py={2} to={`${homeURL}${child.href}`}>
@@ -302,16 +295,20 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '/' + Routes.SolutionExplorer,
   },
   {
+    label: t`Beratungsangebote`,
+    href: '/' + Routes.ConsultationOffers,
+  },
+  {
     label: '🏎',
     href: '/short',
     children: [
       {
-        label: '1',
-        href: '/' + Routes.SolutionExplorer + '?id=cerik08cssg0',
+        label: '🦠',
+        href: '/' + Routes.SolutionExplorer + '?id=ceybyumxibs0',
       },
       {
-        label: '2',
-        href: '/' + Routes.PossibleEntitlements + '?id=ceybyumxibs0',
+        label: '🛩',
+        href: '/' + Routes.PossibleEntitlements + '?id=cf4hcjzx9bk0',
       },
     ],
   },
