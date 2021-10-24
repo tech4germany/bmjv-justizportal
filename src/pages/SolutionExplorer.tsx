@@ -66,7 +66,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
         {state == 'SE' ? (
           <>
             <SimpleGrid columns={[2, null, 3]} spacing={10}>
-              {data!.children!.map((child) => (
+              {data!.children?.map((child) => (
                 <GridItem key={child.id} w={{ base: '7em', sm: '9em', md: '10.5em', lg: '11em' }}>
                   <StatsCard
                     link={
