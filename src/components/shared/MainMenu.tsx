@@ -304,7 +304,7 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: '🦠',
-        href: '/' + Routes.SolutionExplorer + '?id=ceybyumxibs0',
+        href: '/' + Routes.PossibleEntitlements + '?id=ceybyumxibs0',
       },
       {
         label: '🛩',
