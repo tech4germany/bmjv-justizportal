@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/bmjv-justizportal/static/js/main.0bed64f5.chunk.js",
-    "main.js.map": "/bmjv-justizportal/static/js/main.0bed64f5.chunk.js.map",
+    "main.js": "/bmjv-justizportal/static/js/main.d746f736.chunk.js",
+    "main.js.map": "/bmjv-justizportal/static/js/main.d746f736.chunk.js.map",
     "runtime-main.js": "/bmjv-justizportal/static/js/runtime-main.986ff47e.js",
     "runtime-main.js.map": "/bmjv-justizportal/static/js/runtime-main.986ff47e.js.map",
     "static/js/2.e9cf287f.chunk.js": "/bmjv-justizportal/static/js/2.e9cf287f.chunk.js",
@@ -24,6 +24,6 @@
   "entrypoints": [
     "static/js/runtime-main.986ff47e.js",
     "static/js/2.e9cf287f.chunk.js",
-    "static/js/main.0bed64f5.chunk.js"
+    "static/js/main.d746f736.chunk.js"
   ]
 }
