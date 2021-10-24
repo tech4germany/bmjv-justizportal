@@ -68,6 +68,7 @@ const customTheme = extendTheme({
       baseStyle: (props: any) => {
         const { colorScheme: c } = props;
         return {
+          py: '0.1em',
           color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.600`, `${c}.300`)(props),
         };
       },

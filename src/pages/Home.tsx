@@ -30,10 +30,12 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
         title1={t`Die Justiz im Netz.`}
         title2={t`Einfach, online, jederzeit.`}
         image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.png`}>
-        <Trans render={Text} id="home.sub_heading">
-          Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres
-          Rechtsproblems
-        </Trans>
+        <Text fontSize="xl">
+          <Trans render={Text} id="home.sub_heading">
+            Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres
+            Rechtsproblems
+          </Trans>
+        </Text>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
           <Button
             colorScheme={'secondary'}
@@ -55,7 +57,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
       </Hero>
 
       <Stack align="center" id="how" ref={howRef}>
-        <VStack padding={[6, 12, 20]} maxWidth={800} align="center" spacing={8}>
+        <VStack padding={[6, 12, 20]} maxWidth={800} align="center" spacing={6}>
           <Heading>
             <Trans id="home.howitwork_heading">So funktioniert es</Trans>
           </Heading>
