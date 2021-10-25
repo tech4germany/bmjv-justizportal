@@ -51,13 +51,13 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
                   position: 'absolute',
                   bottom: 1,
                   left: 0,
-                  bg: 'red.400',
+                  bg: 'primary.400',
                   zIndex: -1,
                 }}>
                 Justizportal,
               </Text>
               <br />
-              <Text as={'span'} color={'red.400'}>
+              <Text as={'span'} color={'primary.400'}>
                 als Prototyp
               </Text>
             </Heading>
@@ -73,9 +73,9 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
                 size={'lg'}
                 fontWeight={'normal'}
                 px={6}
-                colorScheme={'red'}
-                bg={'red.400'}
-                _hover={{ bg: 'red.500' }}>
+                colorScheme={'primary'}
+                bg={'primary.400'}
+                _hover={{ bg: 'primary.500' }}>
                 Los gehts
               </Button>
               <Button
@@ -96,7 +96,7 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
               top={'-20%'}
               left={0}
               zIndex={-1}
-              color={useColorModeValue('red.50', 'red.400')}
+              color={useColorModeValue('primary.50', 'primary.400')}
             />
             <Box
               position={'relative'}
@@ -147,15 +147,22 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
             einen Überblick zusammengestellt.
           </Text>
           <Spacer minH={10}></Spacer>
-          <Button colorScheme={'green'} as={ReactLink} to={`${homeURL}/`} children={t`Zum Prototypen`} />
+          <Button colorScheme={'secondary'} as={ReactLink} to={`${homeURL}/`} children={t`Zum Prototypen`} />
         </VStack>{' '}
       </PageBody>
-      <Hero title="Roadmap" width="100%">
-        Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
-        individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche
-        bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick
-        zusammengestellt.
+      <Hero title="Nur ein ein kleiner Baustein einer großen Reform" width="100%">
+        TEst
       </Hero>
+      <Heading>Dinge, die es noch braucht, damit der Prototyp funktionieren kann</Heading>
+      <Text>Einfachere ZPO</Text>
+      <Text>Einfachere ZPO</Text>
+      <Text>Einfachere ZPO</Text>
+
+      <Text>
+        Durchdacht sind bis jetzt die Fälle Mietmangel Schimmel in den meisten Variationen und Verspätung eines Fluges{' '}
+      </Text>
+      <Text>Viel Spaß!</Text>
+      <Button>Los Gehts!</Button>
     </>
   );
 };
