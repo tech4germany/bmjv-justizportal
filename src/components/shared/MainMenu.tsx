@@ -172,7 +172,7 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
         </Flex>
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-          <ColorModeSwitcher justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
+          <ColorModeSwitcher alignSelf="center" justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
           <LanguageSelector />
           <Button display="none" colorScheme="primary">
             Anmelden
