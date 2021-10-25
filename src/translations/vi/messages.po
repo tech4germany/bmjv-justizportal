@@ -11,8 +11,14 @@ msgstr ""
 msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
 msgstr "- **tuyên bản**\n - Chủ nhà có nhiệm vụ giữ cho tài sản thuê trong một tiểu bang\nbàn giao và nhận được tương ứng với thỏa thuận hợp đồng. \n - Đó là những gì người thuê nhà trả tiền thuê nhà cho. \n - Nếu một khiếm khuyết xảy ra trong thời gian thuê nhà, thì chủ nhà phải sửa chữa nó. \n- **Ngoại trí**: để sửa chữa nhỏ lên đến một số tiền khoảng 100 euro cho mỗi sửa chữa\n - nếu nó nói như vậy trong hợp đồng và\n - một số tiền tối đa hàng năm đã được thiết lập. \n- **Thực thi: **\n - Yêu cầu bồi thường để loại bỏ các khiếm khuyết có thể được thực hiện chống lại\nYêu cầu chủ nhà bằng cách yêu cầu họ khắc phục lỗi. Điều này thường xảy ra với nhau\nvới thông báo về khiếm khuyết."
 
+msgid "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
+msgstr "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
+
 msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
 msgstr "- Yêu cầu bồi thường đối với khuyết tật khắc phục hậu hội là quyền yêu cầu chủ nhà của quý vị khắc phục hậu hội.\n- Chủ nhà có nhiệm vụ bàn giao và duy trì căn hộ thuê trong điều kiện có thể sử dụng được.\n- Nếu có lỗi xảy ra trong thời gian thuê nhà, chủ nhà phải loại bỏ nó."
+
+msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mieter können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag mit einem Jahreshöchstbetrag festgelegt wurde."
+msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mieter können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag mit einem Jahreshöchstbetrag festgelegt wurde."
 
 msgid "1. Ansprüche Prüfen"
 msgstr "1. Kiểm tra khiếu nại"
@@ -28,6 +34,15 @@ msgstr "Hoàn trả chi phí"
 
 msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgstr "Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
+
+msgid "Ausgleichszahlung"
+msgstr "Ausgleichszahlung"
+
+msgid "Außergerichtliche Einigung"
+msgstr "Außergerichtliche Einigung"
+
+msgid "Beratungsangebote"
+msgstr "Beratungsangebote"
 
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Loại bỏ các khiếm khuyết của chủ nhà"
@@ -55,6 +70,15 @@ msgstr "Yêu cầu bồi thường là quyền yêu cầu một cái gì đó t�
 
 msgid "Einfach, online, jederzeit."
 msgstr "Dễ dàng, trực tuyến, bất cứ lúc nào."
+
+msgid "Erstberatung"
+msgstr "Erstberatung"
+
+msgid "Fluglinie kontaktieren"
+msgstr "Fluglinie kontaktieren"
+
+msgid "Gerichtsverfahren"
+msgstr "Gerichtsverfahren"
 
 msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
 msgstr "Xong! Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
@@ -86,11 +110,23 @@ msgstr "Giảm tiền thuê"
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
 msgstr "Thông báo khuyết tật cho chủ nhà của bạn"
 
+msgid "Mögliche Ansprüche"
+msgstr "Mögliche Ansprüche"
+
 msgid "Nein"
 msgstr "Không"
 
+msgid "Nur kostenlose Angebote anzeigen"
+msgstr "Nur kostenlose Angebote anzeigen"
+
+msgid "Nächste Schritte"
+msgstr "Nächste Schritte"
+
 msgid "Online Klage einreichen"
 msgstr "Tộp đơn kiện trực tuyến"
+
+msgid "Problem einordnen"
+msgstr "Problem einordnen"
 
 msgid "Rechtlich beraten lassen"
 msgstr "Nhận tư vấn pháp lý"
@@ -101,8 +137,14 @@ msgstr "Phân loại vấn đề pháp lý"
 msgid "Schadensersatz"
 msgstr "Thiệt hại"
 
+msgid "Schlichtungsantrag stellen"
+msgstr "Schlichtungsantrag stellen"
+
 msgid "Unser Angebot"
 msgstr "Đề nghị của chúng tôi"
+
+msgid "Vermieter:in erneut kontaktieren"
+msgstr "Vermieter:in erneut kontaktieren"
 
 msgid "Weiter"
 msgstr "Tiếp"
@@ -112,6 +154,9 @@ msgstr "Sau khi bạn đã được thông báo về các yêu cầu của mình
 
 msgid "Wie es funktioniert"
 msgstr "Cách hoạt động"
+
+msgid "Wobei benötigen Sie Unterstützung?"
+msgstr "Wobei benötigen Sie Unterstützung?"
 
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "Chúng tôi có thể giúp gì cho bạn?"
