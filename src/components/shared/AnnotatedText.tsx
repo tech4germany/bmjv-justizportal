@@ -56,11 +56,17 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
             );
           },
           a({ href, title, children, ...props }) {
-            return (
-              <Link as={ReactLink} to={`${homeURL}${href}`}>
-                {children + ''}
-              </Link>
-            );
+            if (href != undefined && href.startsWith('/')) {
+              return (
+                <Link as={ReactLink} to={`${homeURL}${href}`}>
+                  {children + ''}
+                </Link>
+              );
+            } else if (href != undefined) {
+              return <Link href={href}>{children + ''}</Link>;
+            } else {
+              return children + '';
+            }
           },
         })}>
         {annotatedText}

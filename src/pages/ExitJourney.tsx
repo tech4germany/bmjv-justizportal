@@ -11,6 +11,7 @@ import { CardHeader } from '../components/shared/CardHeader';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 
 interface FeatureProps {
   id: string | null;
@@ -26,7 +27,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
       <Card display={data.info ? '' : 'none'}>
         <CardHeader IconLeft={FaInfoCircle} title={`Warum?`} />
         <CardContent>
-          <ReactMarkdown components={ChakraUIRenderer()}>{data?.info ? data.info : ''}</ReactMarkdown>
+          <AnnotadedText text={data?.info ? data.info : ''} />
         </CardContent>
       </Card>
       <VStack>
