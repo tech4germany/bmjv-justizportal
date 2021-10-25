@@ -96,6 +96,7 @@ export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
     if (currentNode.claims.indexOf(Claims.Schadensersatz) != -1) {
       bryterLink += 'Schadensersatz, ';
     }
+    bryterLink = bryterLink.substring(0, bryterLink.length - 2) // Delete last ", " for readability
   }
 
   return (
