@@ -22,12 +22,12 @@ export const StaticProgress = ({ currentStep, progressNextStepInput, ...rest }: 
     progressPercentages.push(0);
   }
   return (
-    <HStack width="100%" spacing="-1px" justifyContent="center" alignContent="center" padding={6}>
+    <HStack width="100%" spacing="-1px" justifyContent="center" alignContent="center" paddingTop={6}>
       <Spacer flex="1" />
-      <ProgressBarStep filled={currentStep >= 1} number={1} title={t`Ansprüche Prüfen`} />
-      <Progress colorScheme="green" size="xs" value={progressPercentages[0]} flex="1" zIndex="-1" />
+      <ProgressBarStep filled={currentStep >= 1} number={1} title={t`Problem einordnen`} />
+      <Progress colorScheme="primary" minW={24} size="xs" value={progressPercentages[0]} flex="1" zIndex="-1" />
       <ProgressBarStep filled={currentStep >= 2} number={2} title={t`Mögliche Ansprüche`} />
-      <Progress colorScheme="green" size="xs" value={progressPercentages[1]} flex="1" zIndex="-1" />
+      <Progress colorScheme="primary" minW={24} size="xs" value={progressPercentages[1]} flex="1" zIndex="-1" />
       <ProgressBarStep filled={currentStep >= 3} number={3} title={t`Nächste Schritte`} />
       <Spacer flex="1" />
     </HStack>

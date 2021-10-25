@@ -245,14 +245,14 @@
                                                                     "text": "Haben Sie den Mangel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?",
                                                                     "expandState": "expand",
                                                                     "priority": 1,
-                                                                    "note": "Wenn Ihre Vermieter:in auch nach Aufforderung und Fristsetzung den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
+                                                                    "note": "Wenn Ihre Vermieter:in auch nach Aufforderung und Ablauf einer realistischen Frist den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
                                                                 },
                                                                 "children": [
                                                                     {
                                                                         "data": {
                                                                             "id": "ceybnwr6fow0",
                                                                             "created": 1634132608680,
-                                                                            "text": "Haben Sie angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen?",
+                                                                            "text": "Haben Sie den Mangel angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?",
                                                                             "expandState": "expand",
                                                                             "priority": 3,
                                                                             "note": "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen."
@@ -276,7 +276,7 @@
                                                                                             "priority": 3,
                                                                                             "hyperlink": null,
                                                                                             "hyperlinkTitle": null,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwendungsersatz']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Schadensersatz','Aufwendungsersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -286,7 +286,7 @@
                                                                                             "created": 1634216314690,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Aufwendungsersatz']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Aufwendungsersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     }
@@ -307,7 +307,7 @@
                                                                                             "created": 1634217636473,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz','Aufwendungsersatz']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Schadensersatz','Aufwendungsersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -317,7 +317,7 @@
                                                                                             "created": 1634217643579,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Aufwendungsersatz']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Aufwendungsersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     }
@@ -329,7 +329,7 @@
                                                                         "data": {
                                                                             "id": "cez5ne2tlr40",
                                                                             "created": 1634217201322,
-                                                                            "text": "Haben Sie angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen?",
+                                                                            "text": "Haben Sie den Mangel angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?",
                                                                             "priority": 1,
                                                                             "note": "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen.",
                                                                             "expandState": "expand"
@@ -351,7 +351,7 @@
                                                                                             "created": 1634217559970,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Schadensersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -361,7 +361,7 @@
                                                                                             "created": 1634217562975,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Mietminderung']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung']}"
                                                                                         },
                                                                                         "children": []
                                                                                     }
@@ -382,7 +382,7 @@
                                                                                             "created": 1634217549421,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
-                                                                                            "note": "{'nextsteps': ['Klage'],'entitlements':['Schadensersatz']}"
+                                                                                            "note": "{'nextsteps': ['Vermieterschreiben Überprüfung','Klage'],'entitlements':['Schadensersatz']}"
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -587,7 +587,7 @@
                                                                             "created": 1634756756384,
                                                                             "text": "Fand der Flug innerhalb der letzten drei Jahre statt?",
                                                                             "priority": 3,
-                                                                            "note": "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. Bis 2021 wären das alle Flüge ab 1.1.2018."
+                                                                            "note": "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. **Der Tag und Monat spielen** dabei **keine Rolle**.\n\nZum Beispiel:\nIm **2021 Jahr** (bis zum 31.12.2021) haben Sie einen Aspruch aus **allen Flüge ab Jahr 2018** (ab dem 1.1.2018) \n"
                                                                         },
                                                                         "children": [
                                                                             {

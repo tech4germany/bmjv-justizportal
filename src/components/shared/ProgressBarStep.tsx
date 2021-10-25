@@ -1,4 +1,5 @@
-import { Box, VStack, Text } from '@chakra-ui/layout';
+import { Box, Text, VStack } from '@chakra-ui/layout';
+import { useColorModeValue as mode } from '@chakra-ui/react';
 import * as React from 'react';
 
 interface FeatureProps {
@@ -14,11 +15,11 @@ export const ProgressBarStep = ({ filled, title, number, ...rest }: FeatureProps
         width="7"
         height="7"
         borderRadius="full"
-        backgroundColor={filled ? '#38A169' : '#fff'}
+        backgroundColor={filled ? mode('primary.500', 'primary.200') : 'background-color'}
         border={filled ? 'none' : '4px solid'}
-        borderColor={filled ? '#38A169' : 'gray.100'}>
+        borderColor={filled ? undefined : mode('gray.100', '#3c3e46')}>
         <Text
-          textColor={filled ? 'white' : 'gray.300'}
+          textColor={filled ? 'white' : mode('gray.300', 'gray.600')}
           fontWeight="bold"
           fontSize="sm"
           position="relative"
@@ -34,7 +35,7 @@ export const ProgressBarStep = ({ filled, title, number, ...rest }: FeatureProps
           <Text
             position="relative"
             transform="translateX(-50%)"
-            textColor={filled ? 'inherit' : 'gray.300'}
+            textColor={filled ? 'inherit' : mode('gray.300', 'gray.600')}
             fontSize="xs"
             display={{ md: 'inherit', base: 'inherit' }}>
             {title}

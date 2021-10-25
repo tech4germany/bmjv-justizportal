@@ -1,4 +1,4 @@
-import { Flex, GridItem, Heading, Radio, RadioGroup, SimpleGrid, Spacer, useToast, VStack } from '@chakra-ui/react';
+import { Flex, GridItem, Radio, RadioGroup, SimpleGrid, Spacer, Text, useToast, VStack } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -59,13 +59,15 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
     <>
       <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
 
-      <PageBody title={t`Lösungsfinder`} paddingTop={4}>
-        <Heading>{state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}</Heading>
+      <PageBody title={t`Lösungsfinder`} paddingTop={2}>
+        <Text fontSize={'2xl'}>
+          {state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}
+        </Text>
         {state == 'SE' ? (
           <>
-            <SimpleGrid columns={[2, null, 3]} spacing="40px">
-              {data!.children!.map((child) => (
-                <GridItem key={child.id} w={{ base: '6.5em', sm: '9em', md: '10.5em', lg: '11em' }}>
+            <SimpleGrid columns={[2, null, 3]} spacing={10}>
+              {data!.children?.map((child) => (
+                <GridItem key={child.id} w={{ base: '7em', sm: '9em', md: '10.5em', lg: '11em' }}>
                   <StatsCard
                     link={
                       child.children
@@ -77,7 +79,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                         ? undefined
                         : toast({
                             title: t`Diese Option ist leider noch nicht verfügbar.`,
-                            // description: t`Bisher , konnte dieser Pfad leider noch nicht implementiert werden.`,
+                            // description: t`Bisher, konnte dieser Pfad leider noch nicht implementiert werden.`,
                             status: 'info',
                             duration: 8000,
                             isClosable: true,
@@ -108,7 +110,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             gridGap={{ base: '1em', md: '2em' }}
             flexDir={{ base: 'column-reverse', md: 'row' }}>
             <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
-              <RadioGroup size="lg" colorScheme="green" onChange={setValue} value={value} padding="1em">
+              <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={value} padding="1em">
                 <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
                   <Radio value="1">
                     <Trans>Ja</Trans>
@@ -133,7 +135,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
               />
             </VStack>
             <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
-              <CardHeader title={t`Info`} iconLeft={FaInfoCircle} />
+              <CardHeader IconLeft={FaInfoCircle} title={t`Info`} />
               <CardContent padding="1em">
                 <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>

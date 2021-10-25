@@ -10,7 +10,7 @@ export const Hero = ({ title, bg, children, ...rest }: FeatureProps) => {
   const bgColor = useColorModeValue('gray.50', 'gray.700');
 
   return (
-    <VStack padding={[6, 12, 20]} spacing={8} bg={bg ? bg : bgColor}>
+    <VStack padding={[5, 10, 16]} spacing={6} bg={bg ? bg : bgColor}>
       <Heading>{title}</Heading>
       <Text maxWidth={{ md: '40em', lg: '50em' }}>{children}</Text>
     </VStack>

@@ -11,8 +11,6 @@ interface FeatureProps {
 
 // function test(name: string) {
 export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
-  const type: string = '';
-
   const baseURL = 'https://tech4germany.bryter.io/s/';
   const bryterURLs = {
     landlordLetter: `${baseURL}EnTaPD7jRUKEHZA86ss5QA/mietmangel-vermieterschreiben?`,
@@ -53,7 +51,6 @@ export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
         break;
       default:
         throw new Error('Unrecongnized Case Type');
-        break;
     }
     switch (currentNode.caseTopic) {
       case CaseTopics.Schimmel:
