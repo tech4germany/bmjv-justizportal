@@ -40,8 +40,8 @@
                                         "data": {
                                             "id": "cerik08cssg0",
                                             "created": 1633441130864,
-                                            "text": "Haben Sie den Mangel verursacht?",
-                                            "note": "Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nicht  verantwortlich sind. Allerdings kann auch seltenes Lüften und Heizen oder das Trocknen von Wäsche zu Schimmel führen.\n\nWenn Sie durch Ihr Verhalten den Mangel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen ihre Vermieter:in.",
+                                            "text": "Haben Sie den Schimmel verursacht?",
+                                            "note": "Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nicht  verantwortlich sind. Allerdings kann auch seltenes Lüften und Heizen oder das Trocknen von Wäsche zu Schimmel führen.\n\nWenn Sie durch Ihr Verhalten den Schimmel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen ihre Vermieter:in.",
                                             "expandState": "expand"
                                         },
                                         "children": [
@@ -62,7 +62,7 @@
                                                 "data": {
                                                     "id": "cerik08cssg1",
                                                     "created": 1633441130864,
-                                                    "text": "War der Mangel schon bei Vertragsschluss bekannt?",
+                                                    "text": "Gab es den Schimmel schon bei Unterzeichnung des Mietvertrags?",
                                                     "note": "Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \n\nAnders ist die Situation, wenn der Mangel erst später entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurde.  ",
                                                     "priority": 1,
                                                     "expandState": "expand",
@@ -89,7 +89,7 @@
                                                         "data": {
                                                             "id": "ceybn9kuanc0",
                                                             "created": 1634132558230,
-                                                            "text": "Besteht der Mangel noch?",
+                                                            "text": "Besteht der Schimmel aktuell noch?",
                                                             "expandState": "expand",
                                                             "priority": 1,
                                                             "note": "Diese Frage hilft uns, Ihnen die richtigen nächsten Schritte zu empfehlen. Wenn der Mangel noch besteht, erklären wir Ihnen beispielsweise, wie Sie diesen beseitigen lassen können."
@@ -99,7 +99,7 @@
                                                                 "data": {
                                                                     "id": "ceybwmd2ejk0",
                                                                     "created": 1634133291336,
-                                                                    "text": "Haben Sie den Mangel Ihrer Vermieter:in schriftlich gemeldet?",
+                                                                    "text": "Haben Sie den Schimmel Ihrer Vermieter:in schriftlich gemeldet?",
                                                                     "expandState": "expand",
                                                                     "priority": 3,
                                                                     "note": "Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis zu haben.\n\nWenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
@@ -109,7 +109,7 @@
                                                                         "data": {
                                                                             "id": "ceybx2wl2w00",
                                                                             "created": 1634133327345,
-                                                                            "text": "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt, um den Mangel zu entfernen?",
+                                                                            "text": "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt, um den Schimmel zu entfernen?",
                                                                             "expandState": "expand",
                                                                             "priority": 3,
                                                                             "note": "Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung gesetzt haben. In der Regel sollten 2-3 Wochen ausreichen, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \n\nWenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
@@ -140,7 +140,7 @@
                                                                                         "data": {
                                                                                             "id": "ceybygg5cs80",
                                                                                             "created": 1634133435190,
-                                                                                            "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                            "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                             "expandState": "expand",
                                                                                             "priority": 3,
                                                                                             "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
@@ -174,7 +174,7 @@
                                                                                 "data": {
                                                                                     "id": "ceybygg5cs80",
                                                                                     "created": 1634133435190,
-                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                    "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                     "expandState": "expand",
                                                                                     "priority": 1,
                                                                                     "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
@@ -208,7 +208,7 @@
                                                                         "data": {
                                                                             "id": "ceybygg5cs80",
                                                                             "created": 1634133435190,
-                                                                            "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                            "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                             "expandState": "expand",
                                                                             "priority": 1,
                                                                             "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
@@ -242,7 +242,7 @@
                                                                 "data": {
                                                                     "id": "ceybne7ha3c0",
                                                                     "created": 1634132568306,
-                                                                    "text": "Haben Sie den Mangel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?",
+                                                                    "text": "Haben Sie den Schimmel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?",
                                                                     "expandState": "expand",
                                                                     "priority": 1,
                                                                     "note": "Wenn Ihre Vermieter:in auch nach Aufforderung und Ablauf einer realistischen Frist den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
@@ -252,7 +252,7 @@
                                                                         "data": {
                                                                             "id": "ceybnwr6fow0",
                                                                             "created": 1634132608680,
-                                                                            "text": "Haben Sie den Mangel angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?",
+                                                                            "text": "Haben Sie den Schimmel bei Ihrer Vermieter:in angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?",
                                                                             "expandState": "expand",
                                                                             "priority": 3,
                                                                             "note": "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen."
@@ -262,7 +262,7 @@
                                                                                 "data": {
                                                                                     "id": "ceybo8p0lww0",
                                                                                     "created": 1634132634670,
-                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                    "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                     "priority": 3,
                                                                                     "expandState": "expand",
                                                                                     "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
@@ -296,7 +296,7 @@
                                                                                 "data": {
                                                                                     "id": "cez5s6nf8140",
                                                                                     "created": 1634217576974,
-                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                    "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                     "priority": 1,
                                                                                     "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                 },
@@ -329,7 +329,7 @@
                                                                         "data": {
                                                                             "id": "cez5ne2tlr40",
                                                                             "created": 1634217201322,
-                                                                            "text": "Haben Sie den Mangel angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?",
+                                                                            "text": "Haben Sie den Schimmel bei Ihrer Vermieter:in angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?",
                                                                             "priority": 1,
                                                                             "note": "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen.",
                                                                             "expandState": "expand"
@@ -339,7 +339,7 @@
                                                                                 "data": {
                                                                                     "id": "cez5o46tidc0",
                                                                                     "created": 1634217258161,
-                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                    "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                     "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden.",
                                                                                     "priority": 3,
                                                                                     "expandState": "expand"
@@ -371,7 +371,7 @@
                                                                                 "data": {
                                                                                     "id": "cez5rts2r8g0",
                                                                                     "created": 1634217548957,
-                                                                                    "text": "Wurde durch den Mangel Eigentum von Ihnen beschädigt?",
+                                                                                    "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                     "priority": 1,
                                                                                     "note": "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
                                                                                 },
