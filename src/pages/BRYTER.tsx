@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import * as React from 'react';
 import { useEffect } from 'react';
+import { Prompt } from 'react-router-dom';
 import { CaseTypes, Claims, MMGraph, CaseTopics } from '../logic/KMParser';
 
 interface FeatureProps {
@@ -16,6 +17,17 @@ export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
     landlordLetter: `${baseURL}EnTaPD7jRUKEHZA86ss5QA/mietmangel-vermieterschreiben?`,
     claimRent: `${baseURL}ekV7FMipRvG6G3gpT6TgxQ/mietmangel-klage?`,
     claimFlight: `${baseURL}tcm04C0OQFyJDyMdsDUGDQ/eu-fluggastrechteverordnung-klage?`,
+  };
+
+  // Show warning on reload or close event
+  window.onbeforeunload = (event) => {
+    const e = event || window.event;
+    // Cancel the event
+    e.preventDefault();
+    if (e) {
+      e.returnValue = ''; // Legacy method for cross browser support
+    }
+    return ''; // Legacy method for cross browser support
   };
 
   useEffect(() => {
@@ -87,19 +99,22 @@ export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
   }
 
   return (
-    <Box id="iframeBox" flex="1">
-      <iframe
-        title="Bryter"
-        src={bryterLink}
-        onLoad={(o) => {}}
-        style={{
-          minHeight: '40em',
-          width: '100%',
-          display: 'inline',
-          border: 'none',
-          overflow: 'hidden',
-        }}
-      />
-    </Box>
+    <>
+      <Prompt when={true} message="Wenn Sie die Seite verlassen, gehen alle eingegebenen Informationen verloren." />
+      <Box id="iframeBox" flex="1">
+        <iframe
+          title="Bryter"
+          src={bryterLink}
+          onLoad={(o) => {}}
+          style={{
+            minHeight: '40em',
+            width: '100%',
+            display: 'inline',
+            border: 'none',
+            overflow: 'hidden',
+          }}
+        />
+      </Box>
+    </>
   );
 };
