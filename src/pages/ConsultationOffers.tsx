@@ -1,22 +1,21 @@
-import * as React from 'react';
-import { PageBody } from '../components/shared/PageBody';
-import { Claims, MMGraph } from '../logic/KMParser';
 import {
-  Heading,
-  Text,
-  Button,
-  ButtonGroup,
-  Checkbox,
   Accordion,
   AccordionButton,
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
   Box,
+  Button,
+  ButtonGroup,
+  Checkbox,
+  Heading,
+  Text,
 } from '@chakra-ui/react';
 import { Trans } from '@lingui/macro';
-import { FaReceipt, FaCheck } from 'react-icons/fa';
-import { booleanLiteral } from '@babel/types';
+import * as React from 'react';
+import { FaCheck } from 'react-icons/fa';
+import { PageBody } from '../components/shared/PageBody';
+import { MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
   id: string | null;
@@ -37,11 +36,7 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
   const [checkbox, setCheckbox] = React.useState(false);
 
   const toggleFilterState = (tag: Tag) =>
-    setFilter(
-      filter.includes(tag)
-        ? filter.filter((element) => element != tag)
-        : filter.concat(tag)
-    );
+    setFilter(filter.includes(tag) ? filter.filter((element) => element != tag) : filter.concat(tag));
 
   const data: { title: string; content: string; tags: Tag[] }[] = [
     {
@@ -62,10 +57,7 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
   ];
 
   return (
-    <PageBody
-      marginInline={{ base: '0em', md: '2em' }}
-      title="Mögliche Lösungen"
-    >
+    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
       <Heading>
         <Trans>Beratungsangebote</Trans>
       </Heading>
@@ -77,22 +69,16 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
           onClick={() => {
             toggleFilterState(Tag.consultation);
           }}
-          rightIcon={
-            filter.includes(Tag.consultation) ? <FaCheck /> : undefined
-          }
-          rounded="full"
-        >
+          rightIcon={filter.includes(Tag.consultation) ? <FaCheck /> : undefined}
+          rounded="full">
           <Trans>Erstberatung</Trans>
         </Button>
         <Button
           onClick={() => {
             toggleFilterState(Tag.solutionOptions);
           }}
-          rightIcon={
-            filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined
-          }
-          rounded="full"
-        >
+          rightIcon={filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined}
+          rounded="full">
           <Trans>Außergerichtliche Einigung</Trans>
         </Button>
         <Button
@@ -100,24 +86,18 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
             toggleFilterState(Tag.trial);
           }}
           rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
-          rounded="full"
-        >
+          rounded="full">
           <Trans>Gerichtsverfahren</Trans>
         </Button>
       </ButtonGroup>
-      <Checkbox
-        checked={checkbox}
-        onChange={(e) => setCheckbox(e.target.checked)}
-      >
+      <Checkbox checked={checkbox} onChange={(e) => setCheckbox(e.target.checked)}>
         <Trans>Nur kostenlose Angebote anzeigen</Trans>
       </Checkbox>
 
       <Accordion>
         {data.map(
           (element) =>
-            (filter.filter((value) => element.tags.includes(value)).length !=
-              0 ||
-              filter.length == 0) &&
+            (filter.filter((value) => element.tags.includes(value)).length != 0 || filter.length == 0) &&
             (checkbox ? element.tags.includes(Tag.free) : true) && (
               <AccordionItem>
                 <h2>

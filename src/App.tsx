@@ -47,10 +47,7 @@ export const App = () => {
     dynamicActivate();
   }, []);
 
-  let [userState, setUserState] = usePersistedState(
-    'UserState',
-    new UserState()
-  );
+  let [userState, setUserState] = usePersistedState('UserState', new UserState());
 
   const featureProps = {
     id: query.get('id'),
@@ -67,36 +64,20 @@ export const App = () => {
         <ScrollToTop />
         <MenuWithSubnavigation />
         <Switch>
-          <Route
-            exact
-            path={`${homeURL}/`}
-            children={() => <Home {...featureProps} />}
-          />
-          <Route
-            exact
-            path={`${homeURL}/${Routes.Disclaimer}`}
-            children={() => <Disclaimer {...featureProps} />}
-          />
+          <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Disclaimer}`} children={() => <Disclaimer {...featureProps} />} />
           <Route
             exact
             path={`${homeURL}/${Routes.SolutionExplorer}`}
             children={() => <SolutionExplorer {...featureProps} />}
           />
-          <Route
-            exact
-            path={`${homeURL}/${Routes.Exit}`}
-            children={() => <ExitJourney {...featureProps} />}
-          />
+          <Route exact path={`${homeURL}/${Routes.Exit}`} children={() => <ExitJourney {...featureProps} />} />
           <Route
             exact
             path={`${homeURL}/${Routes.ZPOInformation}`}
             children={() => <ZPOInformation {...featureProps} />}
           />
-          <Route
-            exact
-            path={`${homeURL}/${Routes.Exit}`}
-            children={() => <ExitJourney {...featureProps} />}
-          />
+          <Route exact path={`${homeURL}/${Routes.Exit}`} children={() => <ExitJourney {...featureProps} />} />
           <Route
             exact
             path={`${homeURL}/${Routes.ZPOInformation}`}
@@ -112,11 +93,7 @@ export const App = () => {
             path={`${homeURL}/${Routes.PossibleEntitlements}`}
             children={() => <PossibleEntitlements {...featureProps} />}
           />
-          <Route
-            exact
-            path={`${homeURL}/${Routes.NextSteps}`}
-            children={() => <NextSteps {...featureProps} />}
-          />
+          <Route exact path={`${homeURL}/${Routes.NextSteps}`} children={() => <NextSteps {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Bryter}`}>
             <Helmet>
               <title>Justiz Portal - BRYTER</title>

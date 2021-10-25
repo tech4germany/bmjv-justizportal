@@ -44,6 +44,7 @@ export const HeroSplit = (props: FeatureProps) => {
               top="5%"
               zIndex="-1"
               opacity="0.5"
+              pointerEvents={'none'}
               src={`${homeURL}/data/53787D84-F85F-402B-AE32-5E1D59E38921.png`}
             />
             <Heading colorScheme="primary" fontSize={{ base: '4xl', md: '5xl', lg: '5xl' }} fontWeight="bold">

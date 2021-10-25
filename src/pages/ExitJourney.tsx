@@ -1,17 +1,15 @@
 import { Button, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react';
 import { t } from '@lingui/macro';
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
-import ReactMarkdown from 'react-markdown';
 import { Link as ReactLink } from 'react-router-dom';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
 import { CardContent } from '../components/shared/CardContent';
 import { CardHeader } from '../components/shared/CardHeader';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
-import { AnnotadedText } from '../components/shared/AnnotatedText';
 
 interface FeatureProps {
   id: string | null;

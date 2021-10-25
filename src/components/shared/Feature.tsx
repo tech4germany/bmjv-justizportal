@@ -1,5 +1,5 @@
+import { Box, Heading, Stack } from '@chakra-ui/react';
 import * as React from 'react';
-import { Box, Heading, Stack, useColorModeValue as mode } from '@chakra-ui/react';
 import { C_LightGray, Primary } from '../../Const';
 
 interface FeatureProps {

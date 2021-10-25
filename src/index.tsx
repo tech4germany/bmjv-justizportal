@@ -1,4 +1,5 @@
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import { ThemeEditorProvider } from '@hypertheme-editor-pro/chakra-ui';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -10,12 +11,14 @@ import theme from './theme';
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <HelmetProvider>
-          <ColorModeScript />
-          <App />
-        </HelmetProvider>
-      </BrowserRouter>
+      <ThemeEditorProvider>
+        <BrowserRouter>
+          <HelmetProvider>
+            <ColorModeScript />
+            <App />
+          </HelmetProvider>
+        </BrowserRouter>
+      </ThemeEditorProvider>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
