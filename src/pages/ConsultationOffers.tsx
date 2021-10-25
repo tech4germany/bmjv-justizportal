@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { Trans } from '@lingui/macro';
 import { FaReceipt, FaCheck } from 'react-icons/fa';
+import { booleanLiteral } from '@babel/types';
 
 interface FeatureProps {
   id: string | null;
@@ -32,21 +33,29 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
     free,
   }
 
-  const [filter, setFilter] = React.useState([Tag.consultation]);
+  const [filter, setFilter] = React.useState<Tag[]>([]);
+  const [checkbox, setCheckbox] = React.useState(false);
+
+  const toggleFilterState = (tag: Tag) =>
+    setFilter(
+      filter.includes(tag)
+        ? filter.filter((element) => element != tag)
+        : filter.concat(tag)
+    );
 
   const data: { title: string; content: string; tags: Tag[] }[] = [
     {
-      title: 'trherhregwerge',
+      title: 'CF',
       content: 'fdsfdfsd',
       tags: [Tag.consultation, Tag.free],
     },
     {
-      title: 'dvdsfd',
+      title: 'C',
       content: 'fsd  hg jh hjgjhssd',
       tags: [Tag.consultation],
     },
     {
-      title: 'fdfsf',
+      title: 'TS',
       content: 'fdsfhhfsdfsiu',
       tags: [Tag.trial, Tag.solutionOptions],
     },
@@ -64,25 +73,52 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
         <Trans>Wobei benötigen Sie Unterstützung?</Trans>
       </Text>
       <ButtonGroup borderColor="#56B280" variant="outline">
-        <Button rightIcon={<FaCheck />} rounded="full">
+        <Button
+          onClick={() => {
+            toggleFilterState(Tag.consultation);
+          }}
+          rightIcon={
+            filter.includes(Tag.consultation) ? <FaCheck /> : undefined
+          }
+          rounded="full"
+        >
           <Trans>Erstberatung</Trans>
         </Button>
-        <Button rightIcon={<FaCheck />} rounded="full">
+        <Button
+          onClick={() => {
+            toggleFilterState(Tag.solutionOptions);
+          }}
+          rightIcon={
+            filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined
+          }
+          rounded="full"
+        >
           <Trans>Außergerichtliche Einigung</Trans>
         </Button>
-        <Button rightIcon={<FaCheck />} rounded="full">
+        <Button
+          onClick={() => {
+            toggleFilterState(Tag.trial);
+          }}
+          rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
+          rounded="full"
+        >
           <Trans>Gerichtsverfahren</Trans>
         </Button>
       </ButtonGroup>
-      <Checkbox>
+      <Checkbox
+        checked={checkbox}
+        onChange={(e) => setCheckbox(e.target.checked)}
+      >
         <Trans>Nur kostenlose Angebote anzeigen</Trans>
       </Checkbox>
 
       <Accordion>
         {data.map(
           (element) =>
-            filter.filter((value) => element.tags.includes(value)).length !=
-              0 && (
+            (filter.filter((value) => element.tags.includes(value)).length !=
+              0 ||
+              filter.length == 0) &&
+            (checkbox ? element.tags.includes(Tag.free) : true) && (
               <AccordionItem>
                 <h2>
                   <AccordionButton>
