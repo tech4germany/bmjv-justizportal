@@ -19,6 +19,7 @@
     "@types/react-dom": "^16.9.14",
     "babel-core": "^7.0.0-bridge.0",
     "chakra-ui-markdown-renderer": "^3.0.1",
+    "cypress": "^8.6.0",
     "framer-motion": "^4.1.17",
     "i18next": "^21.3.2",
     "i18next-browser-languagedetector": "^6.1.2",
