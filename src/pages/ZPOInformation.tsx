@@ -211,14 +211,16 @@ Gegen das Urteil des Amts- oder Landgerichts können Sie  **binnen eines Monat
         </Accordion>
         <Spacer h="3em" />
 
-        <AnnotadedText text="
-- Auf der kommenden Seite können Sie eine Klage für Ihren Fall erstellen.  
-- Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  
-- Nach der Erstellung können Sie alle Informationen zunächst überprüfen. Über die Einreichung können Sie danach entscheiden."
+        <AnnotadedText
+          text="
+        ### Nächste Schritte
+1. Auf der kommenden Seite können Sie das Dokument für eine Klage zu Ihrem Fall erstellen.  
+2. Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  
+3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**"
         />
         <Spacer h="1.5em" />
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
-          Zur Erstellung einer Klage
+          Zur Erstellung des Klagedokuments
         </Button>
       </Box>
     </PageBody>
