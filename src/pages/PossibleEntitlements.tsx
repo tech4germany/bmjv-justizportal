@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
-import { FaMoneyBill, FaReceipt, FaTools } from 'react-icons/fa';
+import { FaMoneyBill, FaMoneyCheck, FaMugHot, FaReceipt, FaTools } from 'react-icons/fa';
 import { FiTrendingDown } from 'react-icons/fi';
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 import { Link as ReactLink } from 'react-router-dom';
@@ -40,7 +40,31 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       content: t`
 - Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.
 - Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.
-- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**.
+- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1.500km)**, **400€ (zwischen 1.500km und 3.500km)** oder **600€ (über 3.500km)**.
+`,
+    },
+    {
+      label: t`Rückerstattung der Flugscheinkosten`,
+      icon: FaMoneyCheck,
+      buttonLink: '',
+      buttonText: '',
+      condition: claims.indexOf(Claims.Rückerstattung) != -1,
+      content: t`
+- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.
+- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.
+- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen.`,
+    },
+    {
+      label: t`Betreuungsleistungen (Essen, Getränke & Unterbringung)`,
+      icon: FaMugHot,
+      buttonLink: '',
+      buttonText: '',
+      condition: claims.indexOf(Claims.Betreuungsleistung) != -1,
+      content: t`
+- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.
+- Sie erhalten Betreuungsleistungen **abhängig von der Flugstrecke ab 2 Stunden** (unter 1.500km), **3 Stunden** (zwischen 1.500km und 3.500km) **oder ab 4 Stunden Verspätung** (über 3.500km).
+- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.
+- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen. 
 `,
     },
     {

@@ -49,6 +49,7 @@ export enum Claims {
   Schadensersatz = 'Schadensersatz',
   Aufwendungsersatz = 'Aufwendungsersatz',
   Ausgleichszahlung = 'Ausgleichszahlung',
+  Betreuungsleistung = 'Betreuungsleistungen',
   Rückerstattung = 'Rückerstattung',
 }
 
