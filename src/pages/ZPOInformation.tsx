@@ -40,14 +40,16 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 [comment]: <> (Mit einem Urteil legen die Richter:innen fest, was beiden Parteien aus dem Konflikt zu steht. Außerdem wird festgelegt, wer die Kosten des Prozesses bezahlen muss. Abhängig von der Bewertung der Richter:innen muss entweder eine Partei alle Kosten tragen oder die Kosten werden geteilt. Die Höhe der Kosten richtet sich nach dem materiellen Wert, um den gestritten wird. Je höher der Wert desto höher die Kosten. )
 
 ### **Auf einen Blick**
-- Wenn Sie einen Streit mit einer Person oder einem Unternehmen nicht allein lösen können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie entscheiden.
+- Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
 - Mit einer Klage eröffnen Sie einen Gerichtsprozesses.
-- Der Verlierer des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig von Ihrer Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Vor Gericht stellen Sie und die andere Partei den Fall dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
-- Am Ende des Prozess wird ein Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
-- Ein Prozess dauert üblicherweise zwischen 4 und 10 Monaten.
+- Zunächst kann die Richter:in Ihnen und der Gegenpartei einen Vergleich vorschlagen, um den Streit schnell beizulegen. Ein Vergleich ist eine für beide Seiten akzeptable Lösung.
+- Kann kein Vergleich gefunden werden, wird am Ende des Prozess ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
+- Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig von Ihrer Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
+- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
-- Sie können alleine Klage erheben, also auch ohne Anwält:in. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten, und die Erfolgsaussichten für Ihren Fall bewerten.    
+- Sie können alleine Klage erheben, also auch ohne Anwält:in. Wenn Sie sich unsicher fühlen, können Anwält:innen Sie beraten.    
+- Ein Prozess dauert üblicherweise zwischen 4 und 10 Monaten.
 `;
 
   let costsText = `
@@ -74,55 +76,45 @@ Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entste
 `;
 
   let processInformation = `
-Jeder Zivilprozess folgt einem festen Ablauf:
+Jeder Gerichtsprozess folgt einem festen Ablauf:
 
 #### I. Schriftliches Vorverfahren
     
-Nachdem Sie die Klage beim Gericht eingereicht haben, wird die Klageschrift der Gegenseite zugestellt. Innerhalb einer **2-Wochen-Frist** muss der Beklagte schriftlich anzeigen, dass er sich gegen die Klage verteidigen will. Ansonsten ergeht ein Versäumnisurteil.
+Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite zugestellt. Innerhalb von zwei Wochen muss die Gegenseite schriftlich erklären, dass sie sich verteidigen will. Ansonsten entscheidet die Richter:in allein nach Ihrer Klage, was oft zu Ihrem Vorteil ausfällt - das nennt sich Versäumnisurteil.
 
-Anschließend haben dann wieder Sie als Kläger Gelegenheit, auf die **Klageerwiderung** – die Stellungnahme der Gegenseite – zu reagieren. Es ist nicht ungewöhnlich, dass Kläger und Beklagter mehrere Schreiben austauschen, bevor es zum Gerichtstermin kommt.
-
-Gerade bei komplexen Rechtsstreitigkeiten kann der Richter so die gegensätzlichen Standpunkte beider Parteien in Ruhe nachvollziehen.
+Antwortet die Gegenseite mit einer Klageerwiederung, haben Sie erneut die Möglichkeit zu reagieren. Es ist nicht ungewöhnlich, dass Klagende und Beklagte mehrere Schreiben austauschen, bevor es zu einem Gerichtstermin kommt.
 
 #### II. Güteverhandlung
     
-Nach dem schriftlichen Vorverfahren lädt das Gericht zur Güteverhandlung. Sie findet vor der eigentlichen mündlichen Verhandlung statt. **Ziel** ist es, den **Prozess abzukürzen** und Ressourcen zu schonen. Das Gericht ordnet in der Regel an, dass beide Parteien persönlich zur Güteverhandlung erscheinen.
+Nach dem schriftlichen Vorverfahren gibt es eine (meistens persönliche) Güteverhandlung, um eine schnelle Lösung zu finden. Gerichtsverhandlungen sind außer im Familienrecht grundsätzlich öffentlich. 
 
-> Wer trotz Ladungen des Gerichts unentschuldigt bei der mündlichen Verhandlung fehlt, dem können prozessuale Nachteile und Ordnungsmittel drohen.
+Hier schildert die Richter:in Ihr Verständnis des Falls und gibt eine vorläufige Bewertung ab. Dabei kann Sie einen Vorschlag für einen Vergleich machen, mit dem beide Parteien leben könnten.
 
-> Das Gericht frühzeitig zu informieren, wenn Sie durch eine Reise oder krankheitsbedingt verhindert sind und Nachweise (Attest bzw. Urlaubsbuchung) einzureichen, kann deshalb sinnvoll sein.
-  
-
-Der Richter schildert den Sachverhalt, wie er ihn bisher verstanden hat, und erläutert seine vorläufige Bewertung des Rechtsstreits. Anschließend kann er einen Vorschlag für einen **Vergleich** machen – also eine angemessene, für beide Seiten akzeptable Lösung.
-
-Mit einem Vergleich ist das Verfahren genauso **verbindlich abgeschlossen** wie durch einen Urteilsspruch. Der Kläger kann seine Forderung wenn nötig per Zwangsvollstreckung durchsetzen.
 
 Eine **Güteverhandlung** kann zu **4 Ergebnissen** führen:
-
-1. Kläger und Beklagter einigen sich auf einen Vergleich
+1. Kläger und Beklagter einigen sich auf einen Vergleich.
 2. Der Beklagte erkennt die Forderung an
 3. Der Kläger zieht die Klage zurück
-4. Kein Ergebnis
-
-Tritt eine der ersten 3 Optionen ein, ist der **Prozess beendet**. Bringt die Güteverhandlung kein Ergebnis, lädt das Gericht die Streitparteien im nächsten Schritt zur **mündlichen Verhandlung**. Diese kann entweder direkt im Anschluss an die Güteverhandlung oder zu einem späteren Termin stattfinden.
+4. Kein Ergebnis  
+  
+  
+Tritt eine der ersten 3 Optionen ein, ist der **Prozess verbindlich abgeschlossen**. Bringt die Güteverhandlung kein Ergebnis, lädt das Gericht zur **mündlichen Verhandlung**, die oft am selben Tag stattfindet.
     
-#### III. Mündliche Verhandlung und ggf. Beweisaufnahme
+#### III. Mündliche Verhandlung und Beweisaufnahmen
     
-Die mündliche Verhandlung – auch **Hauptverhandlung** genannt – beginnt mit einer Bestandsaufnahme und einem Zwischenfazit des Richters. Anschließend **diskutieren** die **Parteien untereinander,**warum die Klage begründet bzw. unbegründet ist. Der Richter erteilt und entzieht den Parteien als Prozessleiter das Wort. Er gibt zudem Hinweise über seine Sicht der Dinge oder fordert auf, weitere Informationen bei Gericht einzureichen.
+Die mündliche Verhandlung beginnt mit einer Bestandsaufnahme durch die Richter:in. Anschließend diskutieren die Parteien, ob die Klage begründet ist. Die Richter:in moderiert das Gespräch und ergänzt Ihre Sichtweise oder fordert weitere Informationen.
 
-Eine Gerichtsverhandlung ist außer bei Familiensachen grundsätzlich öffentlich.
+Widersprechen sich die Darstellungen der Parteien, ordnet die Richter:in eine **Beweisaufnahme** an: Dazu werden von den Parteien benannte **Zeugen** befragt, **Sachverständige** angehört und **Beweise** gesichtet.
 
-Widersprechen sich die Darstellungen der Parteien, ordnet der Richter eine **Beweisaufnahme** an: Um den Sachverhalt eindeutig zu klären, vernimmt er die von den Parteien benannten **Zeugen**, hört **Sachverständige** an und sichtet **Beweise.**
-
-Beide Parteien und der Richter erörtern das Ergebnis der Beweisaufnahme. Sobald alle Parteien ausreichend gehört wurden und das **Gericht** sich seine **Meinung gebildet** hat, ist die mündliche **Verhandlung beendet**.
+Sobald alle Parteien ausreichend gehört wurden und das Gericht sich eine Meinung gebildet hat, ist die mündliche Verhandlung beendet.
     
 #### IV. Urteil
     
-Der Richter verkündet das Urteil entweder **direkt im Anschluss** an die mündliche Verhandlung **oder** aber zu einem späteren Termin. Bei einem **separaten Verkündungstermin** besteht keine Anwesenheitspflicht, das Urteil kann auch telefonisch in der Geschäftsstelle des Gerichts abgefragt werden und geht dem Kläger und dem Beklagten postalisch zu.
+Die Richter:in verkündet das Urteil entweder **direkt im Anschluss** an die mündliche Verhandlung **oder** zu einem späteren Termin. Bei einem separaten Termin besteht keine Anwesenheitspflicht, denn das Urteil geht beiden Parteien auch per Post zu.
 
-Das Urteil ist ein **vollstreckbarer Titel**. Das bedeutet, dass der Gewinner des Rechtsstreits die Zwangsvollstreckung einleiten darf, wenn die unterlegene Seite ihre Pflichten nicht freiwillig erfüllt.
+Das Urteil ist ein **vollstreckbarer Titel**. Das bedeutet, dass die gewinnende Partei eine Zwangsvollstreckung einleiten dürfte, wenn die gegenseite ihre Pflichten nicht freiwillig erfüllt.
 
-Gegen das Urteil des Amts- oder Landgerichts können Sie  **binnen eines Monats** [Berufung einlegen](https://www.advocado.de/ratgeber/verfahrensrecht/prozessrecht/berufung-einlegen.html). Der Fall wird dann von der **nächsthöheren Instanz** noch einmal aufgerollt. Bedingung ist, dass der Streitwert sich auf **mindestens 600 Euro** beläuft.`;
+Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb eines Monats** Berufung einlegen, wenn der Streitwert mindestens 600 Euro beträgt. Der Fall wird dann von einem höheren Gericht neu beurteilt, was den Prozess verlängert.`;
   return (
     <PageBody title="ZPO Informationen">
       <Box>
