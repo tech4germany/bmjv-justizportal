@@ -14,15 +14,13 @@ import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaMoneyBill, FaReceipt, FaTools } from 'react-icons/fa';
 import { FiTrendingDown } from 'react-icons/fi';
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
-import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
-import { homeURL } from '../Const';
+import { homeURL, Routes } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
-import { Routes } from '../Const';
-import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 
 interface FeatureProps {
   id: string | null;

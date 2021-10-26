@@ -1,7 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
 import foundations from './foundations';
-import { mode } from '@chakra-ui/theme-tools';
-import { Secondary } from '../Const';
 
 const direction = 'ltr';
 

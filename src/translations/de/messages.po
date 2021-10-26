@@ -173,6 +173,9 @@ msgstr "Zurück"
 msgid "Zweites Schreiben an die Vermieter:in senden"
 msgstr "Zweites Schreiben an die Vermieter:in senden"
 
+msgid "back"
+msgstr "Zurück"
+
 msgid "footer.disclaimer"
 msgstr "Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!"
 
@@ -181,6 +184,9 @@ msgstr "Weiter Infos zu Seite findest du hier"
 
 msgid "footer.text"
 msgstr "Gebaut von ⚖️ und 🐌 mit ❤️"
+
+msgid "forward"
+msgstr "Weiter"
 
 msgid "home.hero_offer"
 msgstr "Justizportal.de ist ein Angebot des Bundesministeriums der Justiz und für Verbraucherschutz in Zusammenarbeit mit den Justizministerien der Länder. Das Portal gibt Ihnen einen Überblick über Ihre Rechte in verschiedenen Alltagssituationen. Außerdem begleitet es Sie, Ihre rechtlichen Fragen und Probleme einzuordnen und zu lösen. Dabei werden Sie über Ihre Handlungsoptionen informiert und bei der Geltendmachung Ihrer Rechte unterstützt."
@@ -207,7 +213,7 @@ msgid "home.howtohelp_footer"
 msgstr "Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei denen wir Sie unterstützen können."
 
 msgid "home.sub_heading"
-msgstr "Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres Rechtsproblems"
+msgstr "Wir informieren Sie über Ihre Rechte im Alltag und helfen Ihnen in einfachen Schritten zur Lösung Ihres Rechtsproblems."
 
 msgid "nextsteps.header"
 msgstr "Ihre nächsten möglichen Schritte zur Problemlösung"

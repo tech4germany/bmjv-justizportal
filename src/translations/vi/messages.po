@@ -173,6 +173,9 @@ msgstr "Quay lại"
 msgid "Zweites Schreiben an die Vermieter:in senden"
 msgstr "Thư thứ hai gửi chủ nhà vào"
 
+msgid "back"
+msgstr "Zurück"
+
 msgid "footer.disclaimer"
 msgstr "Trang này là một nguyên mẫu không đảm bảo sự chắc chắn về pháp lý!"
 
@@ -181,6 +184,9 @@ msgstr "Bạn có thể tìm thêm thông tin về trang này tại đây"
 
 msgid "footer.text"
 msgstr "Được xây dựng bởi ⚖️ và 🐌 với ❤️"
+
+msgid "forward"
+msgstr "Weiter"
 
 msgid "home.hero_offer"
 msgstr "Justizportal.de là một lời đề nghị của Bộ Tư pháp Liên bang và Bảo vệ người tiêu dùng hợp tác với các bộ tư pháp liên bang ở các tiểu bang liên bang. Cổng thông tin cung cấp cho bạn một cái nhìn tổng quan về quyền của bạn trong các tình huống hàng ngày khác nhau. Nó cũng giúp bạn phân loại và giải quyết các câu hỏi và vấn đề pháp lý của bạn. Bạn sẽ được thông báo về các lựa chọn hành động của bạn và sẽ được hỗ trợ trong việc khẳng định quyền của bạn."

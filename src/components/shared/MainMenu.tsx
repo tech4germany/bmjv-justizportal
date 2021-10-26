@@ -17,7 +17,6 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-import { getColor } from '@chakra-ui/theme-tools';
 import { HyperThemeEditor } from '@hypertheme-editor-pro/chakra-ui';
 import { i18n } from '@lingui/core';
 import { t } from '@lingui/macro';
@@ -26,7 +25,6 @@ import { FaGlobeAfrica } from 'react-icons/fa';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { C_DarkGray, homeURL, Primary, Routes } from '../../Const';
 import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
-import theme from '../../theme';
 import { dynamicActivate, gerUserLocale, locales } from '../../translations/i18n';
 
 interface FeatureProps extends BoxProps {}
@@ -177,7 +175,7 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
           <Button display="none" colorScheme="primary">
             Anmelden
           </Button>
-          <HyperThemeEditor />
+          <HyperThemeEditor display={{ base: 'none', md: 'flex' }} />
         </Stack>
       </Flex>
 

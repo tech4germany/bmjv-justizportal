@@ -173,6 +173,9 @@ msgstr "Back"
 msgid "Zweites Schreiben an die Vermieter:in senden"
 msgstr "Send a second letter to landlord"
 
+msgid "back"
+msgstr "Zurück"
+
 msgid "footer.disclaimer"
 msgstr "This page is a prototype with no guarantee of legal certainty!"
 
@@ -181,6 +184,9 @@ msgstr "You can find more information about this page here"
 
 msgid "footer.text"
 msgstr "Built by ⚖️ and 🐌 with ❤️"
+
+msgid "forward"
+msgstr "Weiter"
 
 msgid "home.hero_offer"
 msgstr "Justizportal.de is an offer of the Federal Ministry of Justice and Consumer Protection in cooperation with the federal ministries of justice in the federal states. The portal gives you an overview of your rights in various everyday situations. It also helps you to classify and solve your legal questions and problems. You will be informed about your options for action and will be supported in asserting your rights."

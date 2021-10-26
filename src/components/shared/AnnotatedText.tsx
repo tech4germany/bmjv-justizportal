@@ -1,4 +1,4 @@
-import { Link, Text, Tooltip } from '@chakra-ui/react';
+import { Link, Text, Tooltip, BoxProps, Box } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -23,13 +23,11 @@ import Glossary from '../../data_parser/glossary.json';
 //   return indices;
 // }
 
-interface AnnotadedTextProps {
+interface AnnotadedTextProps extends BoxProps {
   text: string;
 }
 
-export const AnnotadedText = (props: AnnotadedTextProps) => {
-  const { text } = props;
-
+export const AnnotadedText = ({ text, ...rest }: AnnotadedTextProps) => {
   var annotatedText: string = text;
   Glossary.forEach((valuePair) => {
     annotatedText = annotatedText.replace(new RegExp('[ *]' + valuePair.Regex + '[ \\.,*:]'), (match) => {
@@ -40,7 +38,7 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
   });
 
   return (
-    <>
+    <Box {...rest}>
       <ReactMarkdown
         components={ChakraUIRenderer({
           code({ node, inline, className, children, ...props }) {
@@ -71,6 +69,6 @@ export const AnnotadedText = (props: AnnotadedTextProps) => {
         })}>
         {annotatedText}
       </ReactMarkdown>
-    </>
+    </Box>
   );
 };

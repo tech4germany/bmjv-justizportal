@@ -1,6 +1,6 @@
 import { Box, Heading, Stack } from '@chakra-ui/react';
 import * as React from 'react';
-import { C_LightGray, Primary } from '../../Const';
+import { C_DarkGray, Primary } from '../../Const';
 
 interface FeatureProps {
   title: string;
@@ -18,7 +18,7 @@ export const Feature = (props: FeatureProps) => {
         </Box>
         <Stack spacing="1">
           <Heading size="lg">{title}</Heading>
-          <Box color={C_LightGray()}>{children}</Box>
+          <Box color={C_DarkGray()}>{children}</Box>
         </Stack>
       </Stack>
     </Box>

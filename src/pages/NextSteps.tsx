@@ -4,7 +4,6 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
-  Box,
   Button,
   Flex,
   Heading,
@@ -199,19 +198,15 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
     <>
       <StaticProgress currentStep={3} />
       <PageBody marginInline={{ base: 0, md: 10 }} title="Optionen">
-        <Box mx={{ base: 5, md: 0 }}>
-          <Heading>
-            <Trans id="nextsteps.header">Ihre nächsten möglichen Schritte zur Problemlösung</Trans>
-          </Heading>
-          <Text>
-            <Trans id="nextsteps.sub_header">
-              Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken
-              Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
-            </Trans>
-          </Text>
-        </Box>
-        <Spacer />
-
+        <Heading px={{ base: 5, md: 0 }}>
+          <Trans id="nextsteps.header">Ihre nächsten möglichen Schritte zur Problemlösung</Trans>
+        </Heading>
+        <Text px={{ base: 5, md: 0 }}>
+          <Trans id="nextsteps.sub_header">
+            Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
+            nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
+          </Trans>
+        </Text>
         <Flex flexDir={{ base: 'column', md: 'row' }} gridGap="2em">
           <Accordion flex="3" minW={'20em'} alignSelf="stretch" allowToggle>
             {data.map((acc, index) =>

@@ -41,7 +41,7 @@ export default function FooterSmallWithSocial() {
         <Text>
           <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
         </Text>
-        <Text fontWeight="bold">
+        <Text fontWeight="bold" textAlign="center">
           <Trans id="footer.disclaimer">Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!</Trans>
         </Text>
         <Link href={`${homeURL}/${Routes.Disclaimer}`}>
