@@ -42,29 +42,28 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 ### **Auf einen Blick**
 - Wenn Sie einen Streit mit einer Person oder einem Unternehmen nicht allein lösen können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie entscheiden.
 - Mit einer Klage eröffnen Sie einen Gerichtsprozesses.
-- Die Kosten eines Gerichtsprozesses sind abhängig von Ihrer Forderung.
-- Der Verlierer des Prozesses trägt die Kosten. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
+- Der Verlierer des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig von Ihrer Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Vor Gericht stellen Sie und die andere Partei den Fall dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
 - Am Ende des Prozess wird ein Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
 - Ein Prozess dauert üblicherweise zwischen 4 und 10 Monaten.
-- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu tragen.
-- Sie können alleine Klage erheben. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten, und die Erfolgsaussichten für Ihren Fall bewerten.    
+- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
+- Sie können alleine Klage erheben, also auch ohne Anwält:in. Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten, und die Erfolgsaussichten für Ihren Fall bewerten.    
 `;
 
   let costsText = `
 Während des Gerichtsprozesses entstehen beiden Parteien Kosten.
-Die unterlegende Partei des Prozesses trägt die Kosten von beiden Seiten.
+Die unterlegene Partei des Prozesses trägt die Kosten von beiden Seiten.
 Gibt die Richter:in einer Partei nicht vollständig Recht, werden die Kosten durch die Richter:in aufgeteilt.
 Die Kosten eines Gerichtsprozesses setzen sich aus den Gerichtsgebühren, den Anwaltshonoraren und weiteren Ausgaben zusammen.
 
 #### Gerichtsgebühren
 Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert.
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
-Als Kläger müssen Sie die Gerichtsgebühren im Vorraus bezahlen.
+Als Kläger müssen Sie die Gerichtsgebühren im Voraus bezahlen.
 Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach vom Gericht zurück.
 
 #### Anwaltshonorare
-Wenn Sie eine Anwält:in vertritt, müssen Sie im Vorraus ein Honorar bezahlen.
+Wenn Sie eine Anwält:in vertritt, müssen Sie im Voraus ein Honorar bezahlen.
 Auch die Anwaltshonorare sind gesetzlich abhängig vom Streitwert festgelegt.
 Wenn Sie den Prozess verlieren, bezahlen Sie ihre Anwält:in und die der Gegenseite.
 
@@ -187,9 +186,9 @@ Gegen das Urteil des Amts- oder Landgerichts können Sie  **binnen eines Monat
                 </Tbody>
               </Table>
               <AnnotadedText
-                text="**Beispiel:** 
-- Der Streitwert Ihrer Klage beträgt €1500. 
-- Ca. €250 müssen Sie bei Klageeinreichung an das Gericht zahlen. 
+                text="**Beispielrechnung:** 
+- Der Streitwert einer Klage beträgt €1500. 
+- Ca. €250 muss nach Klageeinreichung als Vorschuss an das Gericht gezahlt werden. 
 - Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
 - Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."
               />
@@ -212,12 +211,14 @@ Gegen das Urteil des Amts- oder Landgerichts können Sie  **binnen eines Monat
         </Accordion>
         <Spacer h="3em" />
 
-        <Text>Wenn Sie eine Klage über das Justizportal einreichen, schätzen wir die Gerichtskosten für Sie ab.</Text>
-        <Text fontWeight="bold" paddingBlock="1.2em">
-          Ich fühle mich ausreichend informiert und möchte Klage einreichen:
-        </Text>
+        <AnnotadedText text="
+- Auf der kommenden Seite können Sie eine Klage für Ihren Fall erstellen.  
+- Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  
+- Nach der Erstellung können Sie alle Informationen zunächst überprüfen. Über die Einreichung können Sie danach entscheiden."
+        />
+        <Spacer h="1.5em" />
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
-          Klageschriftgenerator
+          Zur Erstellung einer Klage
         </Button>
       </Box>
     </PageBody>

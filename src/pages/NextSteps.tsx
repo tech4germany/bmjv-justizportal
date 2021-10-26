@@ -77,7 +77,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       content: `
 **Warum?** 
 - Wenn Sie Ihre Fluglinie bereits kontaktiert haben, und diese Ihrer Forderung nicht nachgekommen ist, kann eine Schlichtung helfen.
-- Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verpflichtend.
+- Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verbindlich für die Fluglinie.
   
   
 **Wie gehe ich vor?** 
@@ -256,7 +256,7 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
   `}
               />
               <Spacer height={5} />
-              <Button colorScheme="secondary">Überblick Beratungsstellen</Button>
+              <Button colorScheme="primary">Überblick Beratungsstellen</Button>
             </CardContent>
           </Card>
         </Flex>

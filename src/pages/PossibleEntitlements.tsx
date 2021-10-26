@@ -55,7 +55,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 - Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.
 - Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.
 - Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.
-- Ausnahme: Mieter können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag mit einem Jahreshöchstbetrag festgelegt wurde.`,
+- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde.`,
     },
     {
       label: t`Mietminderung`,
@@ -69,9 +69,8 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 durch einen Mangel **erheblich eingeschränkt** ist. 
 - Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.
 - Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.
-- Die Miete sollte nicht allein gekürzt werden, da man so eine Kündigung wegen Mietverzug riskiert. Stattdessen sollten Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**.
+- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.
 - Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden.
-
 
 `,
     },
@@ -107,11 +106,12 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       <StaticProgress currentStep={2} />
       <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
         <Heading marginInline={{ base: '2em', md: '0em' }}>
-          <Trans>Aus Ihren Angaben könnten sich folgende Ansprüche ergeben</Trans>
+          <Trans>Fast geschafft! Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
         </Heading>
         <AnnotadedText
           text={t`
-Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. `}
+Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. 
+Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte. `}
         />
         <Accordion alignSelf="stretch" allowToggle>
           {data.map((acc, index) =>
