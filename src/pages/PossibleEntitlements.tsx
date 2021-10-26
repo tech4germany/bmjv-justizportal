@@ -6,6 +6,7 @@ import {
   AccordionPanel,
   Button,
   Heading,
+  HStack,
   Spacer,
   Text,
 } from '@chakra-ui/react';
@@ -21,6 +22,7 @@ import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
 import { Routes } from '../Const';
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 
 interface FeatureProps {
   id: string | null;
@@ -109,6 +111,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
           <Trans>Fast geschafft! Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
         </Heading>
         <AnnotadedText
+          px={{ base: 5, md: 0 }}
           text={t`
 Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. 
 Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte. `}
@@ -146,14 +149,26 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
           )}
         </Accordion>
         <AnnotadedText
+          px={{ base: 5, md: 0 }}
           text={t`
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
         />
-        <NavButtons
-          linkBack={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
-          linkForward={`${homeURL}/${Routes.NextSteps}?id=${id}`}
-        />
+        <HStack spacing="1em" {...rest}>
+          <Button
+            as={ReactLink}
+            to={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
+            leftIcon={<IoMdArrowRoundBack />}>
+            <Trans id="back">Zurück</Trans>
+          </Button>
+          <Button
+            colorScheme="secondary"
+            as={ReactLink}
+            to={`${homeURL}/${Routes.NextSteps}?id=${id}`}
+            rightIcon={<IoMdArrowRoundForward />}>
+            <Trans id="forward">Weiter</Trans>
+          </Button>
+        </HStack>
       </PageBody>
     </>
   );
