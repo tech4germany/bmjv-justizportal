@@ -47,13 +47,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
             to={`${homeURL}/${Routes.SolutionExplorer}?id=${id && mmobject.getParent(id)?.id}`}
             children={t`Zurück`}
           />
-          {/* <Button colorScheme={'secondary'} as={ReactLink} to={homeURL} children={t`Zur Homepage`} /> */}
-          <Button
-            colorScheme={'secondary'}
-            as={ReactLink}
-            to={`${homeURL}/${Routes.ConsultationOffers}`}
-            children={t`Zu den Beratungsangeboten`}
-          />
+          <Button colorScheme={'secondary'} as={ReactLink} to={homeURL} children={t`Zurück zur Homepage`} />
         </HStack>
       </VStack>
     </PageBody>
