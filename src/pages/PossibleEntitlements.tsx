@@ -62,7 +62,6 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       condition: claims.indexOf(Claims.Betreuungsleistung) != -1,
       content: t`
 - Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.
-- Sie erhalten Betreuungsleistungen **abhängig von der Flugstrecke ab 2 Stunden** (unter 1.500km), **3 Stunden** (zwischen 1.500km und 3.500km) **oder ab 4 Stunden Verspätung** (über 3.500km).
 - Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.
 - Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen. 
 `,
@@ -130,7 +129,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       <StaticProgress currentStep={2} />
       <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
         <Heading marginInline={{ base: '2em', md: '0em' }}>
-          <Trans>Fast geschafft! Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
+          <Trans>Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
         </Heading>
         <AnnotadedText
           px={{ base: 5, md: 0 }}

@@ -818,7 +818,7 @@
                                                                                 "data": {
                                                                                     "id": "cf9iycov5e00",
                                                                                     "created": 1635270334302,
-                                                                                    "text": "{{EXIT}}",
+                                                                                    "text": "{EXIT}",
                                                                                     "priority": 3,
                                                                                     "note": "Wenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, oder die Flugscheinkosten schon erstattet wurden, haben Sie vermutlich keine weiteren Ansprüche, da Ihr Flug nicht kurzfristig annulliert wurde."
                                                                                 },
@@ -838,7 +838,7 @@
                                                                                         "data": {
                                                                                             "id": "cf9j13y71c80",
                                                                                             "created": 1635270550368,
-                                                                                            "text": "{{EXIT}}",
+                                                                                            "text": "{EXIT}",
                                                                                             "priority": 1,
                                                                                             "note": "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
                                                                                         },
@@ -947,7 +947,7 @@
                                                                                                 "data": {
                                                                                                     "id": "cf9j13y71c80",
                                                                                                     "created": 1635270550368,
-                                                                                                    "text": "{{EXIT}}",
+                                                                                                    "text": "{EXIT}",
                                                                                                     "priority": 1,
                                                                                                     "note": "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
                                                                                                 },
@@ -1058,7 +1058,7 @@
                                                                                         "data": {
                                                                                             "id": "cf9k9wzh3680",
                                                                                             "created": 1635274061595,
-                                                                                            "text": "{{EXIT}}",
+                                                                                            "text": "{EXIT}",
                                                                                             "priority": 3,
                                                                                             "note": "Ihr Flug wurde kurzfristig storniert, aber Ihnen wurde ein alternativer vergleichbarer Flug  angeboten. Da Sie diesen angenommen haben, oder Ihnen bereits die Kosten des Flugscheins zurückerstattet wurden, liegen vermutlich keine weiteren Ansprüche vor. "
                                                                                         },
@@ -1082,8 +1082,8 @@
                                 "data": {
                                     "id": "cf4gevbcl0o0",
                                     "created": 1634755365558,
-                                    "text": "Beförderungs-verweigerung (Überbuchung)",
-                                    "note": "{ICON:FaUserTimes}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\nWenn Ihnen die Mitreise verweigert wurde, weil Ihr Flug überbucht war, und Sie nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen haben, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+                                    "text": "Beförderungs-verweigerung bei Überbuchung",
+                                    "note": "{ICON:FaUserTimes}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\nWenn Ihnen die Mitreise verweigert wurde, weil Ihr Flug überbucht war, und Sie nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen haben, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
                                 },
                                 "children": [
                                     {
@@ -1110,7 +1110,8 @@
                                                     "created": 1634756075279,
                                                     "text": "Haben Sie eine Bestätigung für Ihre Buchung?",
                                                     "note": "Damit Sie Ansprüche für Ihre Buchung geltend machen können, benötigen Sie eine Bestätigung für Ihre Buchung. Das kann eine Bestätigungs-E-Mail sein, eine Rechnung, oder auch Ihr Boarding Pass.",
-                                                    "priority": 3
+                                                    "priority": 3,
+                                                    "expandState": "expand"
                                                 },
                                                 "children": [
                                                     {
@@ -1119,119 +1120,99 @@
                                                             "created": 1634756293873,
                                                             "text": "{EXIT}",
                                                             "priority": 1,
-                                                            "note": "Eine Buchungsbestätigung ist notwendig, um Ansprüche aus Ihrem Flug geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie eine Bestätigung in Ihren E-Mails finden, oder bei Ihrem Reisebüro anfragen."
+                                                            "note": "Eine Buchungsbestätigung ist notwendig, um Ansprüche aus Ihrem Flug geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie eine Bestätigung in Ihren E-Mails finden, oder bei Ihrem Reisebüro anfragen.",
+                                                            "expandState": "expand"
                                                         },
                                                         "children": []
                                                     },
                                                     {
                                                         "data": {
-                                                            "id": "cf4gqowe54g0",
-                                                            "created": 1634756291963,
-                                                            "text": "War ihre Landung um mindestens drei Stunden verspätet?",
-                                                            "priority": 3,
-                                                            "note": "Ein Anspruch auf Ausgleichszahlung entstehen erst ab drei Stunden Verspätung am Zielflughafen. Verspätungen beim Start sind dabei irrelevant. \n\nAls Landezeit gilt der Moment, in dem die Flugzeugtüren geöffnet werden. "
+                                                            "id": "cf4gu9dswfc0",
+                                                            "created": 1634756571643,
+                                                            "text": "Waren Sie rechtzeitig beim Boarding (mindestens 5 Minuten vor dem Start)?",
+                                                            "note": "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug.\n",
+                                                            "priority": 3
                                                         },
                                                         "children": [
                                                             {
                                                                 "data": {
-                                                                    "id": "cf4gua09lhk0",
-                                                                    "created": 1634756573002,
+                                                                    "id": "cf4gwmowah40",
+                                                                    "created": 1634756757341,
                                                                     "text": "{EXIT}",
-                                                                    "note": "Bei Landungserspätungen unter 3 Stunden haben Sie leider keinen Anspruch auf Ausgleichszahlung. Es kann aber ein Anspruch auf Verpflegung bestehen, zum Beispiel Essen oder Getränke.",
+                                                                    "note": "Wenn Sie nicht rechtzeitig beim Boarding waren, haben Sie vermutlich keinen Anspruch auf Ausgleichszahlung.",
                                                                     "priority": 1
                                                                 },
                                                                 "children": []
                                                             },
                                                             {
                                                                 "data": {
-                                                                    "id": "cf4gu9dswfc0",
-                                                                    "created": 1634756571643,
-                                                                    "text": "Waren Sie rechtzeitig beim Boarding (mindestens 5 Minuten vor dem Start)?",
-                                                                    "note": "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug.\n",
-                                                                    "priority": 3
+                                                                    "id": "cf4gwm92hgw0",
+                                                                    "created": 1634756756384,
+                                                                    "text": "Fand der Flug innerhalb der letzten drei Jahre statt?",
+                                                                    "priority": 3,
+                                                                    "note": "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. Der genaue Tag und Monat spielen dabei keine Rolle.\n\nBeispiel: Im Jahr 2021 sind alle Flüge ab dem 1.1.2018 von der Verordnung abgedeckt.\n"
                                                                 },
                                                                 "children": [
                                                                     {
                                                                         "data": {
-                                                                            "id": "cf4gwmowah40",
-                                                                            "created": 1634756757341,
+                                                                            "id": "cf4h26nw7ts0",
+                                                                            "created": 1634757192637,
                                                                             "text": "{EXIT}",
-                                                                            "note": "Wenn Sie nicht rechtzeitig beim Boarding waren, haben Sie vermutlich keinen Anspruch auf Ausgleichszahlung.",
+                                                                            "note": "Wenn Ihr Flug vor über drei Jahren stattgefunden hat, ist Ihr Anspruch vermutlich verjährt. Daher können wir Ihnen nicht weiterhelfen.",
                                                                             "priority": 1
                                                                         },
                                                                         "children": []
                                                                     },
                                                                     {
                                                                         "data": {
-                                                                            "id": "cf4gwm92hgw0",
-                                                                            "created": 1634756756384,
-                                                                            "text": "Fand der Flug innerhalb der letzten drei Jahre statt?",
-                                                                            "priority": 3,
-                                                                            "note": "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. Der genaue Tag und Monat spielen dabei keine Rolle.\n\nBeispiel: Im Jahr 2021 sind alle Flüge ab dem 1.1.2018 von der Verordnung abgedeckt.\n"
+                                                                            "id": "cf4z2sjaknc0",
+                                                                            "created": 1634808020226,
+                                                                            "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
+                                                                            "expandState": "expand",
+                                                                            "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt.",
+                                                                            "priority": 3
                                                                         },
                                                                         "children": [
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf4h26nw7ts0",
-                                                                                    "created": 1634757192637,
+                                                                                    "id": "cf4z62tbau00",
+                                                                                    "created": 1634808277692,
                                                                                     "text": "{EXIT}",
-                                                                                    "note": "Wenn Ihr Flug vor über drei Jahren stattgefunden hat, ist Ihr Anspruch vermutlich verjährt. Daher können wir Ihnen nicht weiterhelfen.",
-                                                                                    "priority": 1
+                                                                                    "priority": 1,
+                                                                                    "note": "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung, da Sie kein reguläres Ticket gekauft haben. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
                                                                                 },
                                                                                 "children": []
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf4z2sjaknc0",
-                                                                                    "created": 1634808020226,
-                                                                                    "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
-                                                                                    "expandState": "expand",
-                                                                                    "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt.",
-                                                                                    "priority": 3
+                                                                                    "id": "cf4hbq4l8pk0",
+                                                                                    "created": 1634757940282,
+                                                                                    "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
+                                                                                    "note": "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
+                                                                                    "priority": 3,
+                                                                                    "expandState": "expand"
                                                                                 },
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4z62tbau00",
-                                                                                            "created": 1634808277692,
-                                                                                            "text": "{EXIT}",
-                                                                                            "priority": 1,
-                                                                                            "note": "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung, da Sie kein reguläres Ticket gekauft haben. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
+                                                                                            "id": "cf4h5nbt1r40",
+                                                                                            "created": 1634757464003,
+                                                                                            "text": "{CONTINUE}",
+                                                                                            "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
+                                                                                            "priority": 1
                                                                                         },
                                                                                         "children": []
                                                                                     },
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4hbq4l8pk0",
-                                                                                            "created": 1634757940282,
-                                                                                            "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
-                                                                                            "note": "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
+                                                                                            "id": "cf4hcjzx9bk0",
+                                                                                            "created": 1634758005304,
+                                                                                            "text": "{CONTINUE}",
                                                                                             "priority": 3,
-                                                                                            "expandState": "expand"
+                                                                                            "expandState": "expand",
+                                                                                            "note": "{'nextsteps': ['Schlichtung', 'Klage'],'entitlements':['Ausgleichszahlung']}"
                                                                                         },
-                                                                                        "children": [
-                                                                                            {
-                                                                                                "data": {
-                                                                                                    "id": "cf4h5nbt1r40",
-                                                                                                    "created": 1634757464003,
-                                                                                                    "text": "{CONTINUE}",
-                                                                                                    "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
-                                                                                                    "priority": 1
-                                                                                                },
-                                                                                                "children": []
-                                                                                            },
-                                                                                            {
-                                                                                                "data": {
-                                                                                                    "id": "cf4hcjzx9bk0",
-                                                                                                    "created": 1634758005304,
-                                                                                                    "text": "{CONTINUE}",
-                                                                                                    "priority": 3,
-                                                                                                    "expandState": "expand",
-                                                                                                    "note": "{'nextsteps': ['Schlichtung', 'Klage'],'entitlements':['Ausgleichszahlung']}"
-                                                                                                },
-                                                                                                "children": []
-                                                                                            }
-                                                                                        ]
+                                                                                        "children": []
                                                                                     }
                                                                                 ]
                                                                             }
