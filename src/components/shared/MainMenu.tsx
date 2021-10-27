@@ -170,12 +170,12 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
         </Flex>
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-          <ColorModeSwitcher alignSelf="center" justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} />
+          {/* <ColorModeSwitcher alignSelf="center" justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} /> */}
           <LanguageSelector />
           <Button display="none" colorScheme="primary">
             Anmelden
           </Button>
-          <HyperThemeEditor display={{ base: 'none', md: 'flex' }} />
+          {/* <HyperThemeEditor display={{ base: 'none', md: 'flex' }} /> */}
         </Stack>
       </Flex>
 
@@ -203,7 +203,7 @@ const DesktopNav = () => {
                 as={NavLink}
                 to={`${homeURL}${navItem.href}` ?? '#'}
                 fontSize={'lg'}
-                fontWeight={500}
+                fontWeight={'normal'}
                 color={linkColor}
                 // activeStyle={{
                 //   borderBottom: 'solid',
@@ -341,14 +341,14 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: t`Lösungsfinder`,
-    href: '/' + Routes.SolutionExplorer,
-  },
-  {
-    label: t`Beratungsangebote`,
-    href: '/' + Routes.ConsultationOffers,
-  },
+  // {
+  //   label: t`Lösungsfinder`,
+  //   href: '/' + Routes.SolutionExplorer,
+  // },
+  // {
+  //   label: t`Beratungsangebote`,
+  //   href: '/' + Routes.ConsultationOffers,
+  // },
   {
     label: '🏎',
     href: '/short',

@@ -187,7 +187,7 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
             as={ReactLink}
             to={`${homeURL}/${Routes.NextSteps}?id=${id}`}
             rightIcon={<IoMdArrowRoundForward />}>
-            <Trans id="forward">Weiter</Trans>
+            <Trans id="pe.to_next_steps">Zu den nächsten Schritten</Trans>
           </Button>
         </HStack>
       </PageBody>

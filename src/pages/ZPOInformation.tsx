@@ -7,6 +7,7 @@ import {
   Box,
   Button,
   Heading,
+  Image,
   Spacer,
   Table,
   TableCaption,
@@ -25,6 +26,7 @@ import { homeURL } from '../Const';
 import { Routes } from '../Const';
 import { FaMoneyBill } from 'react-icons/fa';
 import { RiBankFill } from 'react-icons/ri';
+import { Card } from '../components/shared/Card';
 
 interface FeatureProps {
   id: string | null;
@@ -39,17 +41,19 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 
 [comment]: <> (Mit einem Urteil legen die Richter:innen fest, was beiden Parteien aus dem Konflikt zu steht. Außerdem wird festgelegt, wer die Kosten des Prozesses bezahlen muss. Abhängig von der Bewertung der Richter:innen muss entweder eine Partei alle Kosten tragen oder die Kosten werden geteilt. Die Höhe der Kosten richtet sich nach dem materiellen Wert, um den gestritten wird. Je höher der Wert desto höher die Kosten. )
 
-### **Auf einen Blick**
+**Was ist eine Klage?**
 - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
 - Mit einer Klage eröffnen Sie einen Gerichtsprozesses.
 - Vor Gericht stellen Sie und die andere Partei den Fall dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
+###  
+**Kosten?**
 - Zunächst kann die Richter:in Ihnen und der Gegenpartei einen Vergleich vorschlagen, um den Streit schnell beizulegen. Ein Vergleich ist eine für beide Seiten akzeptable Lösung.
 - Kann kein Vergleich gefunden werden, wird am Ende des Prozess ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
-- Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig von Ihrer Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
+- **Die Verlierer:in des Prozesses trägt die Kosten**. Die Höhe der Kosten ist abhängig von Ihrer Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
-- Sie können alleine Klage erheben, also auch ohne Anwält:in. Wenn Sie sich unsicher fühlen, können Anwält:innen Sie beraten.    
-- Ein Prozess dauert üblicherweise zwischen 4 und 10 Monaten.
+- **Sie können alleine Klage erheben**, also auch ohne Anwält:in. Wenn Sie sich unsicher fühlen, können Anwält:innen Sie beraten.    
+- Ein Prozess **dauert** üblicherweise zwischen **4 und 10 Monaten**.
 `;
 
   let costsText = `
@@ -58,18 +62,21 @@ Die unterlegene Partei des Prozesses trägt die Kosten von beiden Seiten.
 Gibt die Richter:in einer Partei nicht vollständig Recht, werden die Kosten durch die Richter:in aufgeteilt.
 Die Kosten eines Gerichtsprozesses setzen sich aus den Gerichtsgebühren, den Anwaltshonoraren und weiteren Ausgaben zusammen.
 
-#### Gerichtsgebühren
+###  
+##### Gerichtsgebühren
 Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert.
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
 Als Kläger müssen Sie die Gerichtsgebühren im Voraus bezahlen.
 Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach vom Gericht zurück.
 
-#### Anwaltshonorare
+###  
+##### Anwaltshonorare
 Wenn Sie eine Anwält:in vertritt, müssen Sie im Voraus ein Honorar bezahlen.
 Auch die Anwaltshonorare sind gesetzlich abhängig vom Streitwert festgelegt.
-Wenn Sie den Prozess verlieren, bezahlen Sie ihre Anwält:in und die der Gegenseite.
-
-#### Kostenrisiko
+Wenn Sie den Prozess verlieren, bezahlen Sie ihre Anwält:in und die der Gegenseite.  
+  
+###  
+##### Kostenrisiko
 Mit Hilfe des Streitwerts können Sie die maximalen Kosten abschätzen.
 Hier finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.
 Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entstehen können, beispielsweise durch die Vergütungen von Zeugen.
@@ -118,14 +125,21 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
   return (
     <PageBody title="ZPO Informationen">
       <Box>
-        <Heading>Informationen zur Klage und einem Gerichtsprozess</Heading>
-        <AnnotadedText text={summaryText} />
+        <Heading textAlign="center">Eine Klage einreichen</Heading>
+        <Spacer height={12} />
+        <Card p={{ base: 10, md: 14 }}>
+          <Heading textAlign="center" fontSize="2xl">
+            Die wichtigsten Informationen auf einen Blick
+          </Heading>
+          <Spacer height={14} />
+          <AnnotadedText text={summaryText} />
+        </Card>
         <Spacer height="3em" />
         <Accordion alignSelf="stretch" allowToggle>
           <AccordionItem>
             <AccordionButton>
               {<FaMoneyBill size="2.5em" />}
-              <Text fontWeight="bold" padding="1em">
+              <Text fontWeight="bold" fontSize="lg" padding="1em">
                 Kosten für einen Gerichtsprozess
               </Text>
               <Spacer />
@@ -190,30 +204,35 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
           <AccordionItem>
             <AccordionButton>
               {<RiBankFill size="2.5em" />}
-              <Text fontWeight="bold" padding="1em">
+              <Text fontWeight="bold" fontSize="lg" padding="1em">
                 Ablauf eines Gerichtsprozesses
               </Text>
               <Spacer />
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pb={4}>
+              <Spacer height="3em" />
+              <Image src={'data/ablauf.svg'} />
               <AnnotadedText text={processInformation} />
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
-        <Spacer h="3em" />
+        <Spacer h={10} />
 
+        <Heading fontSize="2xl" py={6}>
+          Nächste Schritte
+        </Heading>
         <AnnotadedText
           text="
-        ### Nächste Schritte
 1. Auf der kommenden Seite können Sie das Dokument für eine Klage zu Ihrem Fall erstellen.  
 2. Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  
 3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**"
         />
-        <Spacer h="1.5em" />
+        <Spacer h={8} />
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           Zur Erstellung des Klagedokuments
         </Button>
+        <Spacer h={8} />
       </Box>
     </PageBody>
   );

@@ -13,7 +13,6 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  VStack,
 } from '@chakra-ui/react';
 import { t } from '@lingui/macro';
 import * as React from 'react';
@@ -62,8 +61,8 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-              Hier kannst du dir einen erste Version live anschauen. Der Prototyp ist in Zusammenarbeit von Tech4Germany
-              und den Bundesministerimum der Justiz und für Verbraucherschutz entstanden.
+              Der Prototyp ist in Zusammenarbeit von Tech4Germany und den Bundesministerimum der Justiz und für
+              Verbraucherschutz entstanden. Hier kannst du dir einen erste Version live anschauen.
             </Text>
             <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
               <Button
@@ -131,24 +130,21 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
           </Flex>
         </Stack>
       </Container>
-      <Hero title="Umsetzumg" width="100%">
-        Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
-        individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche
-        bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick
-        zusammengestellt.
-      </Hero>
       <PageBody title="Disclaimer">
-        <VStack>
-          <Heading>Ziele</Heading>
-          <Text>
-            Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
-            individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
-            Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
-            einen Überblick zusammengestellt.
-          </Text>
-          <Spacer minH={10}></Spacer>
-          <Button colorScheme={'secondary'} as={ReactLink} to={`${homeURL}/`} children={t`Zum Prototypen`} />
-        </VStack>{' '}
+        <Hero title="Umsetzumg" width="100%">
+          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
+          individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
+          Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
+          einen Überblick zusammengestellt.
+        </Hero>
+        <Hero title="Ziele" width="100%" bg={undefined}>
+          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
+          individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
+          Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
+          einen Überblick zusammengestellt.
+        </Hero>
+        <Spacer minH={10}></Spacer>
+        <Button colorScheme={'secondary'} as={ReactLink} to={`${homeURL}/`} children={t`Zum Prototypen`} />
       </PageBody>
       <Hero title="Nur ein ein kleiner Baustein einer großen Reform" width="100%">
         TEst

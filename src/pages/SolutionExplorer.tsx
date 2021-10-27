@@ -60,7 +60,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
       <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
 
       <PageBody title={t`Lösungsfinder`} paddingTop={2}>
-        <Text fontSize={'2xl'}>
+        <Text width="100%" fontSize={'2xl'}>
           {state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}
         </Text>
         {state == 'SE' ? (

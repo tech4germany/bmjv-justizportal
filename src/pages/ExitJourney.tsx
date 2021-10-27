@@ -1,5 +1,5 @@
 import { Button, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react';
-import { t } from '@lingui/macro';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
@@ -21,7 +21,9 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
 
   return (
     <PageBody title="Lösungsfinder">
-      <Heading>Leider können wir Sie nicht weiter unterstützen</Heading>
+      <Heading>
+        <Trans id="exit.heading">Leider haben wir ihren Fall nicht abgedeckt</Trans>
+      </Heading>
       <Card display={data.info ? '' : 'none'}>
         <CardHeader IconLeft={FaInfoCircle} title={`Warum?`} />
         <CardContent>

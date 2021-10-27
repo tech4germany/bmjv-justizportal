@@ -1,5 +1,5 @@
 import { mode } from '@chakra-ui/theme-tools';
-import { Secondary } from '../../Const';
+import { Primary } from '../../Const';
 
 const components = {
   Heading: {
@@ -7,6 +7,7 @@ const components = {
       const { colorScheme: c } = props;
       return {
         py: '0.1em',
+
         color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.500`, `${c}.300`)(props),
       };
     },
@@ -37,12 +38,12 @@ const components = {
   },
   Link: {
     baseStyle: (props: any) => ({
-      color: Secondary(),
+      color: Primary(),
       transition: 'color 0.15s',
       transitionTimingFunction: 'ease-out',
       fontWeight: '500',
       _hover: {
-        color: mode('secondary.300', 'secondary.200')(props),
+        color: mode('primary.300', 'primary.200')(props),
         textDecoration: 'none',
       },
     }),

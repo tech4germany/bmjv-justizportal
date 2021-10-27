@@ -4,10 +4,12 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Box,
   Button,
-  Flex,
   Heading,
+  Link,
   Spacer,
+  Tag,
   Text,
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
@@ -18,14 +20,12 @@ import { HiScale } from 'react-icons/hi';
 import { TiArrowLoop } from 'react-icons/ti';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
-import { Card } from '../components/shared/Card';
-import { CardContent } from '../components/shared/CardContent';
-import { CardHeader } from '../components/shared/CardHeader';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
-import { homeURL, Routes } from '../Const';
+import { homeURL, Routes, Primary, Secondary } from '../Const';
 import { MMGraph, NextStepsType } from '../logic/KMParser';
+import sizes from '../theme/foundations/sizes';
 
 interface FeatureProps {
   id: string | null;
@@ -150,7 +150,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
     {
       label: t`Über das Justizportal eine Klage einreichen`,
       icon: HiScale,
-      buttonText: 'Mehr Informationen zur Klage',
+      buttonText: 'Zur Klageerstellung',
       buttonLink: `${homeURL}/${Routes.ZPOInformation}?id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
       content: `
@@ -198,49 +198,60 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
     <>
       <StaticProgress currentStep={3} />
       <PageBody marginInline={{ base: 0, md: 10 }} title="Optionen">
-        <Heading px={{ base: 5, md: 0 }}>
-          <Trans id="nextsteps.header">Ihre nächsten möglichen Schritte zur Problemlösung</Trans>
+        <Heading px={{ base: 5, md: 0 }} fontSize="3xl">
+          Ende des Lösungfinders: Mögliche nächste Schritte
+          {/* <Trans id="nextsteps.header">Hier haben wir für nächste Schritte zusammengefasst:</Trans> */}
         </Heading>
         <Text px={{ base: 5, md: 0 }}>
-          <Trans id="nextsteps.sub_header">
-            Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie
-            nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten.
-          </Trans>
+          Hier haben wir für Sie nächste Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. <br />
+          Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren.
+          {/* <Trans id="nextsteps.sub_header">
+            Hier haben wir für Sie nächste Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. <br />
+            Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren.
+          </Trans> */}
         </Text>
-        <Flex flexDir={{ base: 'column', md: 'row' }} gridGap="2em">
-          <Accordion flex="3" minW={'20em'} alignSelf="stretch" allowToggle>
-            {data.map((acc, index) =>
-              acc.condition ? (
-                <AccordionItem>
-                  <AccordionButton>
-                    {<acc.icon size="2.5em" />}
-                    <Text fontWeight="bold" padding="1em">
-                      {acc.label}
-                    </Text>
-                    {/* <Tag size="sm" minW="fit-content" variant="solid" colorScheme={acc.optional ? 'gray' : 'primary'}>
+        {/* <Box>// flexDir={{ base: 'column', md: 'row' }} gridGap="2em"> */}
+        {/* <Box> */}
+        <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
+          {data.map((acc, index) =>
+            acc.condition ? (
+              <AccordionItem>
+                <AccordionButton>
+                  {
+                    <Box color={Primary()}>
+                      <acc.icon size="2.5em" />
+                    </Box>
+                  }
+                  <Text fontWeight="bold" fontSize="lg" padding="1em">
+                    {acc.label}
+                  </Text>
+                  {/* <Tag size="sm" minW="fit-content" variant="solid" colorScheme={acc.optional ? 'gray' : 'primary'}>
                       {acc.optional ? 'Optional' : 'Empfohlen'}
                     </Tag> */}
-                    <Spacer />
-                    <AccordionIcon />
-                  </AccordionButton>
-                  <AccordionPanel pb={4}>
-                    <AnnotadedText text={acc.content} />
-                    <Spacer height="1.5em" />
-                    {acc.buttonLink && acc.buttonText ? (
-                      <>
-                        <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
-                          {acc.buttonText}
-                        </Button>
-                      </>
-                    ) : null}
-                    <Spacer height="1em" />
-                  </AccordionPanel>
-                </AccordionItem>
-              ) : null
-            )}
-          </Accordion>
+                  <Spacer />
+                  <Tag size="md" minW="fit-content" variant="solid" colorScheme={'secondary'}>
+                    Mehr erfahren
+                  </Tag>
+                  {/* <AccordionIcon /> */}
+                </AccordionButton>
+                <AccordionPanel pb={4}>
+                  <AnnotadedText text={acc.content} />
+                  <Spacer height="1.5em" />
+                  {acc.buttonLink && acc.buttonText ? (
+                    <>
+                      <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
+                        {acc.buttonText}
+                      </Button>
+                    </>
+                  ) : null}
+                  <Spacer height="1em" />
+                </AccordionPanel>
+              </AccordionItem>
+            ) : null
+          )}
+        </Accordion>
 
-          <Card flex="2" mx={{ base: 5, md: 0 }}>
+        {/* <Card flex="2" mx={{ base: 5, md: 0 }}>
             <CardHeader IconLeft={FaUserTie} title={t`Rechtlich beraten lassen`} />
             <CardContent>
               <AnnotadedText
@@ -251,10 +262,16 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
   `}
               />
               <Spacer height={5} />
-              <Button colorScheme="primary">Überblick Beratungsstellen</Button>
+              <Button colorScheme="gray">Überblick Beratungsstellen</Button>
             </CardContent>
-          </Card>
-        </Flex>
+          </Card> */}
+        {/* </Box> */}
+        <Box>
+          <Text>
+            Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
+            <Link>hier Beratungsangebote zusammengefasst.</Link>
+          </Text>
+        </Box>
 
         <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} />
       </PageBody>

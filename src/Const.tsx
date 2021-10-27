@@ -11,7 +11,7 @@ export enum Routes {
   Disclaimer = 'disclaimer',
   SolutionExplorer = 'loesungs-finder',
   Exit = 'exit',
-  ZPOInformation = 'zivil-prozess-info',
+  ZPOInformation = 'klage-einreichen',
   PossibleEntitlements = 'moegliche-ansprueche',
   NextSteps = 'naechste-schritte',
   Bryter = 'formular',
