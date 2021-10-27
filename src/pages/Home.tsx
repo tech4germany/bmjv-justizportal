@@ -37,7 +37,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
             Rechtsproblems
           </Trans>
         </Text>
-        <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+        <Stack direction={{ base: 'column', md: 'row' }} alignSelf="start" spacing={4}>
           <Button
             colorScheme={'secondary'}
             as={ReactLink}
@@ -58,8 +58,8 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
       </Hero>
 
       <Stack align="center" id="how" ref={howRef}>
-        <VStack padding={[6, 12, 20]} maxWidth={800} align="center" spacing={6}>
-          <Heading>
+        <VStack padding={[6, 12, 16]} maxWidth={800} align="start" spacing={5}>
+          <Heading size="lg" alignSelf="center">
             <Trans id="home.howitwork_heading">So funktioniert es</Trans>
           </Heading>
           <Text>
@@ -67,8 +67,8 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
               Wir helfen Ihnen in vier einfachen Schritten zur Lösung Ihres Rechtproblems:
             </Trans>
           </Text>
-          <Spacer height={16}></Spacer>
-          <VStack spacing={20}>
+          <Spacer height={14}></Spacer>
+          <VStack spacing={16}>
             <Feature title={t`Rechtsproblem einordnen`} icon={<FaCompass />}>
               <Trans id="home.howitwork_classify">
                 Zunächst helfen wir Ihnen zu klären, ob in Ihrem Fall ein Rechtsproblem vorliegt. Dafür zeigen wir Ihnen
@@ -99,7 +99,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           </VStack>
           <Spacer height={16}></Spacer>
 
-          <Heading size="lg" children={t`Wobei können wir Ihnen helfen?`} />
+          <Heading size="lg" alignSelf="center" children={t`Wobei können wir Ihnen helfen?`} />
           <Text align="left">
             <Trans id="home.howtohelp_footer">
               Auf den kommenden Seiten erfahren Sie mehr über die Rechtsprobleme, bei denen wir Sie unterstützen können.
