@@ -11,14 +11,14 @@ import theme from './theme';
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <ThemeEditorProvider>
-        <BrowserRouter>
-          <HelmetProvider>
-            <ColorModeScript />
-            <App />
-          </HelmetProvider>
-        </BrowserRouter>
-      </ThemeEditorProvider>
+      {/* <ThemeEditorProvider> */}
+      <BrowserRouter>
+        <HelmetProvider>
+          <ColorModeScript />
+          <App />
+        </HelmetProvider>
+      </BrowserRouter>
+      {/* </ThemeEditorProvider> */}
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
