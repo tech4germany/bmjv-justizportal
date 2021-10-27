@@ -20,6 +20,7 @@ import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
 import { ConsultationOffers } from './pages/ConsultationOffers';
+import { DisclaimerBanner } from './components/shared/DisclaimerBanner';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,6 +63,7 @@ export const App = () => {
     <I18nProvider i18n={i18n}>
       <Box display="flex" flexDir="column" minH="100vh">
         <ScrollToTop />
+        <DisclaimerBanner />
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
@@ -101,7 +103,6 @@ export const App = () => {
             <Bryter {...featureProps} />
           </Route>
         </Switch>
-        <FooterSmallWithSocial />
       </Box>
     </I18nProvider>
   );
