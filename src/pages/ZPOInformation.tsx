@@ -46,7 +46,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 - Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
-
+###
 **Wer kann klagen?**
 - Jede Person ab 18 Jahren kann in Deutschland alleine am Amtsgericht klagen.
 - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie aber beraten oder ganz vertreten.
@@ -198,7 +198,7 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
             <AccordionButton>
               {<RiBankFill size="2.5em" />}
               <Text fontWeight="bold" fontSize="lg" padding="1em">
-                Ablauf eines Gerichtsprozesses
+                Wie läuft ein Gerichtsprozesses genau ab?
               </Text>
               <Spacer />
               <AccordionIcon />
