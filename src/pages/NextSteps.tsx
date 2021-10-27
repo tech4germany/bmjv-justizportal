@@ -53,11 +53,13 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.FluglinieKontaktieren) != -1,
       content: `
+        
+        
 **Warum?** 
 - Wenn Sie Ihre Fluglinie mit einem korrekten Anspruch kontaktieren, bezahlt diese meistens direkt Ihre Forderung. 
 - Mit einer schriftlichen Aufforderung haben Sie außerdem einen Nachweis für den weiteren Prozess.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Nutzen Sie das Kontaktformular Ihrer Fluglinie für EU-Fluggastrechte und stellen Sie Ihre Forderung. 
 - Kontaktformulare finden Sie auf den Webseiten aller großen Fluglinien, beispielsweise bei [Ryanair](https://onlineform.ryanair.com/de/de/eu-261), [Lufthansa](https://www.lufthansa.com/de/de/feedback), 
@@ -74,11 +76,13 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.Schlichtung) != -1,
       content: `
+        
+        
 **Warum?** 
 - Wenn Sie Ihre Fluglinie bereits kontaktiert haben, und diese Ihrer Forderung nicht nachgekommen ist, kann eine Schlichtung helfen.
 - Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verbindlich für die Fluglinie.
   
-  
+###  
 **Wie gehe ich vor?** 
 - Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen [Schlichtungsantrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/).
 - Wenn Ihr Antrag zulässig und berechtigt ist, macht die söp eine Schlichtungsempfehlung an Sie und die Fluglinie.
@@ -94,13 +98,15 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.Docu) != -1,
       content: `
+        
+        
 **Warum?** 
 - Um einen Nachweis für Ihre Vermieter:in und den weiteren Prozess zu haben, sollten Sie den Mangel dokumentieren.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
-- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, sollten Sie aufschreiben wann und in welcher Form dieser auftritt.`,
+- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video kann helfen.`,
       optional: false,
     },
     {
@@ -110,19 +116,21 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonLink: `${homeURL}/${Routes.Bryter}?mangelanzeige&id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.LandlordLetter) != -1,
       content: `
+        
+        
 **Warum?** 
 - Als Mieter:in sind Sie verpflichtet, Mängel in Ihrer Wohnung zu melden.
 - Meistens beseitigen Vermieter:innen einen Mangel, sobald sie benachrichtigt werden. 
 - Mit einer schriftlichen Mängelanzeige haben Sie außerdem einen Nachweis für den weiteren Prozess.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Kontaktieren Sie ihre Vermieter:in und schildern Sie den Mangel sachlich. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie Ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
 - Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen, wenn Sie einen Anspruch auf Mietminderung haben.
 - Bleiben Sie dabei freundlich und höflich.  
   
-  
+###  
 Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 `,
       optional: false,
@@ -134,12 +142,14 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
       content: `
+        
+        
 **Warum?** 
 - Ein zweites Schreiben kann Ihrer Forderung Nachdruck verleihen.
 - Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht auch nur übersehen.
 - Wenn neue Kosten entstanden sind (z.B. Aufwendungen durch eigene Mängelbeseitigung), können Sie diese direkt von Ihrer Vermieter:in einfordern.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Kontaktieren Sie ihre Vermieter:in und weisen Sie erneut auf das Problem hin. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie eine letzte Frist zur Mängelbeseitigung oder Zahlung, bevor Sie weitere rechtliche Schritte ergreifen.
@@ -154,17 +164,21 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       buttonLink: `${homeURL}/${Routes.ZPOInformation}?id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
       content: `
+        
+        
 **Warum?** 
-- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn Ihre Vermieter:in diese nicht erfüllt. 
-- Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.
+- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn die Gegenseite diese nicht erfüllt. 
+- Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsverfahrens informieren.
 - Dann helfen wir Ihnen, eine Klageschrift zu erstellen und einzureichen.
 - Vor Gericht versucht die Richter:in, eine Lösung für Sie und Ihre Vermieter:in zu finden.
 - Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über ihren Fall entschieden. 
   
+###  
+Wichtig ist, dass Sie die **Gegenseite schon direkt aufgefordert** haben, Ihre Ansprüche zu erfüllen.
   
 Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der Einreichung.
 `,
@@ -182,7 +196,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
 - Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
 - Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
   
-  
+###  
 **Wie gehe ich vor?** 
 - In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
 - Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 

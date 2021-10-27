@@ -61,7 +61,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert Ihrer Forderung (circa 10-15%).
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
 Als Kläger müssen Sie die Gerichtsgebühren im Voraus bezahlen.
-Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück.
+Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).
 
 ###  
 ##### Anwaltshonorare
