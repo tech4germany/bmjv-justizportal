@@ -4,13 +4,14 @@ import { I18nProvider } from '@lingui/react';
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
-import FooterSmallWithSocial from './components/shared/Footer';
+import { DisclaimerBanner } from './components/shared/DisclaimerBanner';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
 import { homeURL, Routes } from './Const';
 import { MMGraph } from './logic/KMParser';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
 import { Bryter } from './pages/BRYTER';
+import { ConsultationOffers } from './pages/ConsultationOffers';
 import { Disclaimer } from './pages/disclaimer';
 import { ExitJourney } from './pages/ExitJourney';
 import { Home } from './pages/Home';
@@ -19,7 +20,6 @@ import { PossibleEntitlements } from './pages/PossibleEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
-import { ConsultationOffers } from './pages/ConsultationOffers';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,6 +62,7 @@ export const App = () => {
     <I18nProvider i18n={i18n}>
       <Box display="flex" flexDir="column" minH="100vh">
         <ScrollToTop />
+        <DisclaimerBanner />
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
@@ -101,7 +102,6 @@ export const App = () => {
             <Bryter {...featureProps} />
           </Route>
         </Switch>
-        <FooterSmallWithSocial />
       </Box>
     </I18nProvider>
   );

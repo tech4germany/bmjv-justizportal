@@ -9,12 +9,19 @@ import {
   ButtonGroup,
   Checkbox,
   Heading,
+  Link,
+  Spacer,
   Text,
+  VStack,
 } from '@chakra-ui/react';
-import { Trans } from '@lingui/macro';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
+import { IconType } from 'react-icons';
 import { FaCheck } from 'react-icons/fa';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
+import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
@@ -38,81 +45,110 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
   const toggleFilterState = (tag: Tag) =>
     setFilter(filter.includes(tag) ? filter.filter((element) => element != tag) : filter.concat(tag));
 
-  const data: { title: string; content: string; tags: Tag[] }[] = [
+  const data: { label: string; icon?: IconType; content: string; tags: Tag[] }[] = [
     {
-      title: 'CF',
+      label: 'CF',
       content: 'fdsfdfsd',
       tags: [Tag.consultation, Tag.free],
     },
     {
-      title: 'C',
+      label: 'C',
       content: 'fsd  hg jh hjgjhssd',
       tags: [Tag.consultation],
     },
     {
-      title: 'TS',
+      label: 'TS',
       content: 'fdsfhhfsdfsiu',
       tags: [Tag.trial, Tag.solutionOptions],
     },
   ];
 
   return (
-    <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
-      <Heading>
-        <Trans>Beratungsangebote</Trans>
+    <PageBody marginInline={{ base: 0, md: 10 }} title={t`Mögliche Lösungen`}>
+      <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5}>
+        <Trans id="consultation.header">Beratungsangebote</Trans>
       </Heading>
-      <Text>
-        <Trans>Wobei benötigen Sie Unterstützung?</Trans>
+      <Text px={{ base: 5, md: 0 }}>
+        <Trans id="consultation.sub_header">Wobei benötigen Sie Unterstützung?</Trans>
       </Text>
-      <ButtonGroup borderColor="#56B280" variant="outline">
-        <Button
-          onClick={() => {
-            toggleFilterState(Tag.consultation);
-          }}
-          rightIcon={filter.includes(Tag.consultation) ? <FaCheck /> : undefined}
-          rounded="full">
-          <Trans>Erstberatung</Trans>
-        </Button>
-        <Button
-          onClick={() => {
-            toggleFilterState(Tag.solutionOptions);
-          }}
-          rightIcon={filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined}
-          rounded="full">
-          <Trans>Außergerichtliche Einigung</Trans>
-        </Button>
-        <Button
-          onClick={() => {
-            toggleFilterState(Tag.trial);
-          }}
-          rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
-          rounded="full">
-          <Trans>Gerichtsverfahren</Trans>
-        </Button>
-      </ButtonGroup>
-      <Checkbox checked={checkbox} onChange={(e) => setCheckbox(e.target.checked)}>
-        <Trans>Nur kostenlose Angebote anzeigen</Trans>
-      </Checkbox>
+      <VStack align="center" width="100%">
+        <ButtonGroup variant="outline">
+          <Button
+            onClick={() => {
+              toggleFilterState(Tag.consultation);
+            }}
+            rightIcon={filter.includes(Tag.consultation) ? <FaCheck /> : undefined}
+            rounded="full">
+            <Trans>Erstberatung</Trans>
+          </Button>
+          <Button
+            onClick={() => {
+              toggleFilterState(Tag.solutionOptions);
+            }}
+            rightIcon={filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined}
+            rounded="full">
+            <Trans>Außergerichtliche Einigung</Trans>
+          </Button>
+          <Button
+            onClick={() => {
+              toggleFilterState(Tag.trial);
+            }}
+            rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
+            rounded="full">
+            <Trans>Gerichtsverfahren</Trans>
+          </Button>
+        </ButtonGroup>
+        <Checkbox checked={checkbox} onChange={(e) => setCheckbox(e.target.checked)}>
+          <Trans>Nur kostenlose Angebote anzeigen</Trans>
+        </Checkbox>
+      </VStack>
+      <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
+        {data
+          .filter(
+            (i) =>
+              (filter.filter((value) => i.tags.includes(value)).length != 0 || filter.length == 0) &&
+              (checkbox ? i.tags.includes(Tag.free) : true)
+          )
+          .map((acc, index) => (
+            <AccordionItem>
+              <AccordionButton>
+                <Box color={Primary()}>{acc.icon && <acc.icon size="2.5em" />}</Box>
 
-      <Accordion>
-        {data.map(
-          (element) =>
-            (filter.filter((value) => element.tags.includes(value)).length != 0 || filter.length == 0) &&
-            (checkbox ? element.tags.includes(Tag.free) : true) && (
-              <AccordionItem>
-                <h2>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      {element.title}
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </h2>
-                <AccordionPanel pb={4}>{element.content}</AccordionPanel>
-              </AccordionItem>
-            )
-        )}
+                <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                  {acc.label}
+                </Text>
+                <Spacer />
+                <Text>
+                  <Trans>Mehr erfahren</Trans>
+                </Text>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel pb={4}>
+                <Spacer height={5} />
+                <AnnotadedText text={acc.content} />
+                {/* <Spacer height={10} />
+                {acc.buttonLink && acc.buttonText ? (
+                  <>
+                    <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
+                      {acc.buttonText}
+                    </Button>
+                  </>
+                ) : null} */}
+                <Spacer height="1em" />
+              </AccordionPanel>
+            </AccordionItem>
+          ))}
       </Accordion>
+
+      <Text px={{ base: 5, md: 0 }}>
+        <Trans>
+          Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
+          <Link>hier Beratungsangebote zusammengefasst.</Link>
+        </Trans>
+      </Text>
+
+      {/* <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=`} px={{ base: 5, md: 0 }} /> */}
+      <Spacer w={5} />
     </PageBody>
   );
 };

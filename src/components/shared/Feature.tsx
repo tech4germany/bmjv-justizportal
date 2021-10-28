@@ -13,11 +13,11 @@ export const Feature = (props: FeatureProps) => {
   return (
     <Box>
       <Stack spacing={{ base: '4', md: '6' }} direction={{ base: 'column', md: 'row' }}>
-        <Box fontSize="6xl" color={Primary()}>
+        <Box fontSize="5xl" color={Primary()}>
           {icon}
         </Box>
         <Stack spacing="1">
-          <Heading size="lg">{title}</Heading>
+          <Heading variant="subheading">{title}</Heading>
           <Box color={C_DarkGray()}>{children}</Box>
         </Stack>
       </Stack>
