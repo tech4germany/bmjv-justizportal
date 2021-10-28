@@ -6,23 +6,6 @@ import { Link as ReactLink } from 'react-router-dom';
 import { homeURL } from '../../Const';
 import Glossary from '../../data_parser/glossary.json';
 
-// function getIndicesOf(searchStr: string, str: string): number[] {
-//   var searchStrLen: number = searchStr.length;
-//   if (searchStrLen == 0) {
-//     return [];
-//   }
-//   var startIndex: number = 0;
-//   var index: number = 0;
-//   let indices: number[] = [];
-//   str = str.toLowerCase();
-//   searchStr = searchStr.toLowerCase();
-//   while ((index = str.indexOf(searchStr, startIndex)) > -1) {
-//     indices.push(index);
-//     startIndex = index + searchStrLen;
-//   }
-//   return indices;
-// }
-
 interface AnnotadedTextProps extends BoxProps {
   text: string;
 }
@@ -57,13 +40,13 @@ export const AnnotadedText = ({ text, ...rest }: AnnotadedTextProps) => {
             if (href != undefined && href.startsWith('/')) {
               return (
                 <Link as={ReactLink} to={`${homeURL}${href}`}>
-                  {children + ''}
+                  {children}
                 </Link>
               );
             } else if (href != undefined) {
-              return <Link href={href}>{children + ''}</Link>;
+              return <Link href={href}>{children}</Link>;
             } else {
-              return children + '';
+              return children;
             }
           },
         })}>
