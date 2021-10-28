@@ -35,6 +35,9 @@ msgstr "### Wohnungsmängel durch Wasserschäden\nWasserschäden in der Wohnung 
 msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
 msgstr "- **tuyên bản**\n - Chủ nhà có nhiệm vụ giữ cho tài sản thuê trong một tiểu bang\nbàn giao và nhận được tương ứng với thỏa thuận hợp đồng. \n - Đó là những gì người thuê nhà trả tiền thuê nhà cho. \n - Nếu một khiếm khuyết xảy ra trong thời gian thuê nhà, thì chủ nhà phải sửa chữa nó. \n- **Ngoại trí**: để sửa chữa nhỏ lên đến một số tiền khoảng 100 euro cho mỗi sửa chữa\n - nếu nó nói như vậy trong hợp đồng và\n - một số tiền tối đa hàng năm đã được thiết lập. \n- **Thực thi: **\n - Yêu cầu bồi thường để loại bỏ các khiếm khuyết có thể được thực hiện chống lại\nYêu cầu chủ nhà bằng cách yêu cầu họ khắc phục lỗi. Điều này thường xảy ra với nhau\nvới thông báo về khiếm khuyết."
 
+msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
+msgstr "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
+
 msgid "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
 msgstr "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
 
@@ -43,6 +46,9 @@ msgstr "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entsch
 
 msgid "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.\n- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen."
 msgstr "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.\n- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen."
+
+msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+msgstr "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
 
 msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
 msgstr "- Yêu cầu bồi thường đối với khuyết tật khắc phục hậu hội là quyền yêu cầu chủ nhà của quý vị khắc phục hậu hội.\n- Chủ nhà có nhiệm vụ bàn giao và duy trì căn hộ thuê trong điều kiện có thể sử dụng được.\n- Nếu có lỗi xảy ra trong thời gian thuê nhà, chủ nhà phải loại bỏ nó."
@@ -55,6 +61,9 @@ msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermiete
 
 msgid "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.\n- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
 msgstr "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.\n- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
+
+msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
+msgstr "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
 
 msgid "1. Ansprüche Prüfen"
 msgstr "1. Kiểm tra khiếu nại"
@@ -169,6 +178,9 @@ msgstr "Einkaufen"
 
 msgid "Erstberatung"
 msgstr "Erstberatung"
+
+msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
+msgstr "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
 
 msgid "Familie"
 msgstr "Familie"
@@ -287,6 +299,9 @@ msgstr "Lärm"
 msgid "Lösungsfinder"
 msgstr "Công cụ tìm giải pháp"
 
+msgid "Mehr erfahren"
+msgstr "Mehr erfahren"
+
 msgid "Mieterhöhung"
 msgstr "Mieterhöhung"
 
@@ -305,6 +320,9 @@ msgstr "Thông báo khuyết tật cho chủ nhà của bạn"
 msgid "Mögliche Ansprüche"
 msgstr "Mögliche Ansprüche"
 
+msgid "Mögliche Lösungen"
+msgstr "Mögliche Lösungen"
+
 msgid "Nebenkosten-abrechnung"
 msgstr "Nebenkosten-abrechnung"
 
@@ -319,6 +337,9 @@ msgstr "Nächste Schritte"
 
 msgid "Online Klage einreichen"
 msgstr "Tộp đơn kiện trực tuyến"
+
+msgid "Optionen"
+msgstr "Optionen"
 
 msgid "Problem einordnen"
 msgstr "Problem einordnen"
@@ -350,6 +371,9 @@ msgstr "Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nic
 msgid "Schlichtungsantrag stellen"
 msgstr "Schlichtungsantrag stellen"
 
+msgid "Schritt"
+msgstr "Schritt"
+
 msgid "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen, und zum Beispiel den Mangel selbst beseitigen."
 msgstr "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen, und zum Beispiel den Mangel selbst beseitigen."
 
@@ -367,6 +391,9 @@ msgstr "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der
 
 msgid "Solution Explorer"
 msgstr "Solution Explorer"
+
+msgid "Startseite"
+msgstr "Startseite"
 
 msgid "Stromausfall"
 msgstr "Stromausfall"
@@ -506,6 +533,15 @@ msgstr "Thư thứ hai gửi chủ nhà vào"
 msgid "back"
 msgstr "Zurück"
 
+msgid "consultation.header"
+msgstr "Beratungsangebote"
+
+msgid "consultation.sub_header"
+msgstr "Wobei benötigen Sie Unterstützung?"
+
+msgid "exit.footer"
+msgstr "Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt."
+
 msgid "exit.heading"
 msgstr "Leider haben wir ihren Fall nicht abgedeckt"
 
@@ -553,6 +589,12 @@ msgstr "Các bước tiếp theo có thể của bạn để giải quyết vấ
 
 msgid "nextsteps.sub_header"
 msgstr "Chúng tôi đã tóm tắt các bước có thể để bạn thực thi khiếu nại của mình tại đây. Nhấp vào từng hộp một để tìm hiểu thêm và nhận được hỗ trợ."
+
+msgid "pe.header"
+msgstr "Aus Ihren Angaben könnten sich diese Ansprüche ergeben"
+
+msgid "pe.sub_header"
+msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
 
 msgid "pe.to_next_steps"
 msgstr "Zu den nächsten Schritten"

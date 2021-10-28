@@ -14,7 +14,7 @@ export const HeroSplit = (props: FeatureProps) => {
 
   return (
     <Box>
-      <Stack minH={'95vh'} direction={{ base: 'column', md: 'row' }}>
+      <Stack minH={'calc(100vh - 60px)'} direction={{ base: 'column', md: 'row' }}>
         <Flex
           p={8}
           direction="column"

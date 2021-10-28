@@ -35,6 +35,9 @@ msgstr "### Housing deficiencies due to water damage\nWater damage in the home c
 msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
 msgstr "- **claim**\n  - Landlords have a duty to keep the rented property in a state\nto hand over and receive that corresponds to the contractual agreement. \n  - That's what tenants pay the rent for. \n  - If a defect occurs during the rental period, then the landlord must rectify it. \n- **Exception**: for small repairs up to an amount of approx. 100 euros per repair\n  - if it says so in the contract and\n  - a maximum annual amount has been set. \n- **Enforcement:**\n  - The claim for elimination of the defect can be made against the\nClaim landlords by asking them to remedy the defect. This often happens together\nwith the notification of the defect."
 
+msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
+msgstr "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
+
 msgid "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
 msgstr "- A claim to**Compensation** is the right to a**Compensation** from your airline.\n- You will receive a chargeback if you were unable to reach your destination or were delayed due to **delay**, **cancellation**, or **overbooking**.\n- The **amount of payment** depends on the**flight distance** and is €250 (under 1500 km) **, **€400 (up to 3500 km) ** or**€600 (over 3500 km) **."
 
@@ -43,6 +46,9 @@ msgstr "- A claim to **Compensation** is the right to a **Compensation** from yo
 
 msgid "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.\n- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen."
 msgstr "- A claim to **care services** is the right to additional support such as food and drink if your departure is severely delayed.\n- Care services must be appropriate to the waiting time and time of day. (Small) meals and drinks, and access to telephone or internet are always appropriate.\n- If there are **long waiting times at the airport at night**, you may also have the right to a **hotel accommodation** with transport there."
+
+msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+msgstr "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
 
 msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
 msgstr "- A claim to **remedial defects** is the right to ask your landlord to remedy the defect.\n- Landlords have the duty to hand over and maintain the rented apartment in a usable condition.\n- If a defect occurs during the rental period, the landlord must eliminate it."
@@ -55,6 +61,9 @@ msgstr "- A claim to**remedial defects** is the right to ask your **landlord to 
 
 msgid "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.\n- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
 msgstr "- A claim to **Ticket Fee Refund** is the right to receive your paid ticket price back within one week if cancelled.\n- In addition, you will receive a return flight to your first departure location if a connecting flight has been cancelled.\n- You can choose to transfer the airline to your destination instead of reimbursement."
+
+msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
+msgstr "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
 
 msgid "1. Ansprüche Prüfen"
 msgstr "1. Check claims"
@@ -169,6 +178,9 @@ msgstr "Shopping"
 
 msgid "Erstberatung"
 msgstr "Initial consultation"
+
+msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
+msgstr "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
 
 msgid "Familie"
 msgstr "Family"
@@ -287,6 +299,9 @@ msgstr "Noise"
 msgid "Lösungsfinder"
 msgstr "Solutionfinder"
 
+msgid "Mehr erfahren"
+msgstr "Mehr erfahren"
+
 msgid "Mieterhöhung"
 msgstr "Rent increase"
 
@@ -305,6 +320,9 @@ msgstr "Notice letter of defects to your landlord"
 msgid "Mögliche Ansprüche"
 msgstr "Possible claims"
 
+msgid "Mögliche Lösungen"
+msgstr "Mögliche Lösungen"
+
 msgid "Nebenkosten-abrechnung"
 msgstr "Utilities billing"
 
@@ -319,6 +337,9 @@ msgstr "Next steps"
 
 msgid "Online Klage einreichen"
 msgstr "File a lawsuit online"
+
+msgid "Optionen"
+msgstr "Optionen"
 
 msgid "Problem einordnen"
 msgstr "Classify issue"
@@ -350,6 +371,9 @@ msgstr "Mold in the apartment can be caused by construction failures, for which 
 msgid "Schlichtungsantrag stellen"
 msgstr "Submit a request for conciliation"
 
+msgid "Schritt"
+msgstr "Schritt"
+
 msgid "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen, und zum Beispiel den Mangel selbst beseitigen."
 msgstr "Have you reported your defect and set a deadline for remediation? Then you have to wait for it to expire first. If the defect has not been rectified afterwards, you can take further steps, such as correcting the defect yourself."
 
@@ -367,6 +391,9 @@ msgstr "You can only enforce your claims if the flight took place within the las
 
 msgid "Solution Explorer"
 msgstr "Solution explorer"
+
+msgid "Startseite"
+msgstr "Startseite"
 
 msgid "Stromausfall"
 msgstr "Blackout"
@@ -506,6 +533,15 @@ msgstr "Send a second letter to landlord"
 msgid "back"
 msgstr "Back"
 
+msgid "consultation.header"
+msgstr "Beratungsangebote"
+
+msgid "consultation.sub_header"
+msgstr "Wobei benötigen Sie Unterstützung?"
+
+msgid "exit.footer"
+msgstr "Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt."
+
 msgid "exit.heading"
 msgstr "Unfortunately, we didn't cover her case"
 
@@ -553,6 +589,12 @@ msgstr "Your next possible steps to solve your problem"
 
 msgid "nextsteps.sub_header"
 msgstr "We have summarized the possible steps for you to enforce your claims here. Click on the boxes one by one to learn more and get support."
+
+msgid "pe.header"
+msgstr "Aus Ihren Angaben könnten sich diese Ansprüche ergeben"
+
+msgid "pe.sub_header"
+msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
 
 msgid "pe.to_next_steps"
 msgstr "To the next steps"
