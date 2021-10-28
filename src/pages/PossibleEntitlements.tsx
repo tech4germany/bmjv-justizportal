@@ -128,7 +128,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
   return (
     <>
       <PageBody marginInline={{ base: 0, md: 10 }} title={t`Mögliche Lösungen`}>
-        <StaticProgress currentStep={3} />
+        <StaticProgress currentStep={2} />
         <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5} fontSize="3xl">
           <Trans id="pe.header">Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
         </Heading>

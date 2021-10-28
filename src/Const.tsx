@@ -1,4 +1,6 @@
+import React from 'react';
 import { useColorModeValue } from '@chakra-ui/react';
+import { Redirect, Route } from 'react-router';
 
 export const homeURL: string = '/bmjv-justizportal';
 
@@ -17,3 +19,16 @@ export enum Routes {
   Bryter = 'formular',
   ConsultationOffers = 'beratungsangebote',
 }
+
+export const ShortCuts = ({ ...props }): JSX.Element => {
+  return (
+    <>
+      <Route exact path={`${homeURL}/schimmel-mieterschreiben`}>
+        <Redirect to={`${homeURL}/${Routes.PossibleEntitlements}?id=ceybyumxibs2`} />{' '}
+      </Route>
+      <Route exact path={`${homeURL}/schimmel-klage`}>
+        <Redirect to={`${homeURL}/${Routes.PossibleEntitlements}?id=ceybyumxibs0`} />{' '}
+      </Route>
+    </>
+  );
+};

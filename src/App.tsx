@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { DisclaimerBanner } from './components/shared/DisclaimerBanner';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
-import { homeURL, Routes } from './Const';
+import { homeURL, Routes, ShortCuts } from './Const';
 import { MMGraph } from './logic/KMParser';
 import { usePersistedState } from './logic/PersistedState';
 import { UserState } from './logic/UserState';
@@ -101,6 +101,7 @@ export const App = () => {
             </Helmet>
             <Bryter {...featureProps} />
           </Route>
+          <ShortCuts />
         </Switch>
       </Box>
     </I18nProvider>
