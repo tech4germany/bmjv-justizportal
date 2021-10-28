@@ -59,7 +59,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
     <>
       <PageBody title={t`Lösungsfinder`}>
         <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
-        <Text width="100%" fontSize={'2xl'}>
+        <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (
             <HStack>
               <Text>{data.title} </Text>
