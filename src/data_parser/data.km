@@ -534,8 +534,8 @@
                         "data": {
                             "id": "cf008ca222o0",
                             "created": 1634303476350,
-                            "text": "Fluggastrechte",
-                            "note": "{ICON:FaPlane}\n{'caseType':'flug'}\n### Ihre Rechte nach der EU-Fluggastrechteverordnung\n\nWenn Sie wegen einer Flugverspätung, einer Annullierung durch die Fluglinie oder einer Beförderungsverweigerung wegen Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung vielleicht einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen. Zusätzlich können Sie bei Annullierung einen alternativen Flug wählen, oder sich Ihre Flugscheinkosten erstatten lassen. \n\nHier helfen wir Ihnen, mögliche Ansprüche für Ihren Fall durchzusetzen."
+                            "text": "Entschädigungen für einen Flug",
+                            "note": "{ICON:FaPlane}\n{'caseType':'flug'}\n### Entschädigungen nach der EU-Fluggastrechteverordnung\n\n- Sie haben wegen einer Flugverspätung, einer Annullierung durch die Fluglinie oder einer Beförderungsverweigerung wegen Überbuchung Ihr Ziel verspätet oder gar nicht erreicht? Dann haben Sie nach der EU-Fluggastrechteverordnung vielleicht einen Anspruch auf eine Ausgleichszahlung. \n- Die Höhe der  Ausgleichszahlung ist abhängig von der Flugstrecke und kann bis zu 600 Euro betragen. \n- Bei Annullierung haben Sie zudem einen Anspruch auf Erstattung der Flugscheinkosten oder eine alternative Beförderung.\n- Für lange Wartezeiten am Flughafen können Sie auch Betreuungsleistungen wie Essen und Getränke, oder eine nächtliche Hotelübernachtung erhalten."
                         },
                         "children": [
                             {
@@ -550,8 +550,8 @@
                                         "data": {
                                             "id": "cf4gipf45g00",
                                             "created": 1634755666181,
-                                            "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?",
-                                            "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz"
+                                            "text": "Ist ihr Flug in Europa* gestartet, oder sind Sie mit einer EU-Fluglinie in Europa gelandet?",
+                                            "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa.\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der Europäischen Union.\n###\n\\* Die Verordnung gilt neben Ländern der Europäischen Union auch für Norwegen und die Schweiz."
                                         },
                                         "children": [
                                             {
@@ -597,7 +597,7 @@
                                                                     "id": "cf4gua09lhk0",
                                                                     "created": 1634756573002,
                                                                     "text": "{EXIT}",
-                                                                    "note": "Bei Verspätungen der Landung unter 3 Stunden haben Sie leider keinen Anspruch auf Ausgleichszahlung. Es kann aber ein Anspruch auf Verpflegung bestehen, zum Beispiel Essen oder Getränke.",
+                                                                    "note": "Bei Verspätungen der Landung unter 3 Stunden haben Sie leider keinen Anspruch auf Ausgleichszahlung. Es kann aber ein Anspruch auf Betreuungsleistungen bestehen, zum Beispiel Essen oder Getränke.",
                                                                     "priority": 1
                                                                 },
                                                                 "children": []
@@ -646,7 +646,7 @@
                                                                                     "created": 1634808020226,
                                                                                     "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
                                                                                     "expandState": "expand",
-                                                                                    "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt.",
+                                                                                    "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets der Fluglinie). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) und Geschäftsreisen sind aber abgedeckt.",
                                                                                     "priority": 3
                                                                                 },
                                                                                 "children": [
@@ -686,7 +686,7 @@
                                                                                                     "created": 1634757190904,
                                                                                                     "text": "Hat Ihre Fluglinie außergewöhnliche Umstände für die Verspätung genannt, die Sie nicht vermeiden konnte?",
                                                                                                     "priority": 3,
-                                                                                                    "note": "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Verspätung nicht vermeiden konnte. \n\nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements",
+                                                                                                    "note": "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Verspätung nicht vermeiden konnte. \n\nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unbeherrschbare Fehler am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements",
                                                                                                     "expandState": "expand"
                                                                                                 },
                                                                                                 "children": [
@@ -741,8 +741,8 @@
                                         "data": {
                                             "id": "cf4gipf45g01",
                                             "created": 1634755666181,
-                                            "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?",
-                                            "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz",
+                                            "text": "Ist ihr Flug in Europa* gestartet, oder sind Sie mit einer EU-Fluglinie in Europa gelandet?",
+                                            "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa.\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der Europäischen Union.\n###\n\\* Die Verordnung gilt neben Ländern der Europäischen Union auch für Norwegen und die Schweiz.",
                                             "expandState": "expand"
                                         },
                                         "children": [
@@ -781,7 +781,7 @@
                                                             "created": 1634808020226,
                                                             "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
                                                             "expandState": "expand",
-                                                            "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt.",
+                                                            "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets der Fluglinie). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) und Geschäftsreisen sind aber abgedeckt.",
                                                             "priority": 3
                                                         },
                                                         "children": [
@@ -799,7 +799,7 @@
                                                                 "data": {
                                                                     "id": "cf9iujlasi00",
                                                                     "created": 1635270035868,
-                                                                    "text": "Wurde Ihr Flug weniger als zwei Wochen vor dem Abflug annulliert?",
+                                                                    "text": "Wurden Sie weniger als zwei Wochen vor dem Abflug über die Annullierung des Flugs informiert?",
                                                                     "priority": 3,
                                                                     "note": "Wenn Ihr Flug kurzfristig annulliert wurde, können Ihnen zusätzliche Ansprüche entstehen, beispielsweise auf Ausgleichszahlung.",
                                                                     "expandState": "expand"
@@ -1025,7 +1025,7 @@
                                                                                                     "created": 1634757190904,
                                                                                                     "text": "Hat Ihre Fluglinie außergewöhnliche Umstände für die Annullierung genannt, die Sie nicht vermeiden konnte?",
                                                                                                     "priority": 3,
-                                                                                                    "note": "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Annullierung nicht vermeiden konnte. \n\nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements",
+                                                                                                    "note": "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Annullierung nicht vermeiden konnte. \n\nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unbeherrschbare Fehler am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements",
                                                                                                     "expandState": "expand"
                                                                                                 },
                                                                                                 "children": [
@@ -1082,16 +1082,16 @@
                                 "data": {
                                     "id": "cf4gevbcl0o0",
                                     "created": 1634755365558,
-                                    "text": "Beförderungs-verweigerung bei Überbuchung",
-                                    "note": "{ICON:FaUserTimes}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\nWenn Ihnen die Mitreise verweigert wurde, weil Ihr Flug überbucht war, und Sie nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen haben, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+                                    "text": "Beförderungsverweigerung bei Überbuchung",
+                                    "note": "{ICON:FaUserTimes}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\n- Ihnen wurde die Mitreise verweigert, weil Ihr Flug überbucht war, und Sie haben nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen?\n- Dann haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cf4gipf45g02",
                                             "created": 1634755666181,
-                                            "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?",
-                                            "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz"
+                                            "text": "Ist ihr Flug in Europa* gestartet, oder sind Sie mit einer EU-Fluglinie in Europa gelandet?",
+                                            "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa.\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der Europäischen Union.\n###\n\\* Die Verordnung gilt neben Ländern der Europäischen Union auch für Norwegen und die Schweiz."
                                         },
                                         "children": [
                                             {
@@ -1169,7 +1169,7 @@
                                                                             "created": 1634808020226,
                                                                             "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
                                                                             "expandState": "expand",
-                                                                            "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt.",
+                                                                            "note": "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets der Fluglinie). \n\nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) und Geschäftsreisen sind aber abgedeckt.",
                                                                             "priority": 3
                                                                         },
                                                                         "children": [
@@ -1185,34 +1185,55 @@
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf4hbq4l8pk5",
-                                                                                    "created": 1634757940282,
-                                                                                    "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
-                                                                                    "note": "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
+                                                                                    "id": "cfb3domatds0",
+                                                                                    "created": 1635429517889,
+                                                                                    "text": "Haben Sie ein alternatives Angebot Ihrer Fluglinie angenommen, oder lagen vertretbare Gründe für die Beförderungsverweigerung vor (Krankheit, unvollständige Unterlagen)?",
                                                                                     "priority": 3,
-                                                                                    "expandState": "expand"
+                                                                                    "note": "Bei Überbuchung suchen Fluglinien zunächst Freiwillige, die für eine Gegenleistung auf den Flug verzichten. Freiwillige haben dann keinen Anspruch auf weitere Ausgleichszahlungen.\n\nZusätzlich kann sich die Fluglinie auf vertretbare Gründe  für die Beförderungsverweigerung berufen. Bei Krankheit, unvollständigen Reiseunterlagen (z.B. Visa) oder auch gefährlichem Verhalten hätten Sie dann keinen Anspruch auf eine Ausgleichszahlung."
                                                                                 },
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4h5nbt1r45",
-                                                                                            "created": 1634757464003,
-                                                                                            "text": "{CONTINUE}",
-                                                                                            "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
-                                                                                            "priority": 1
+                                                                                            "id": "cfb3dqc2ty80",
+                                                                                            "created": 1635429521622,
+                                                                                            "text": "{EXIT}",
+                                                                                            "priority": 3,
+                                                                                            "note": "Wenn Sie für eine Gegenleistung freiwillig auf Ihren Flug verzichtet haben, oder vertretbare Gründe für die Beförderungsverweigerung vorlagen, bestehen keine Ansprüche auf Ausgleichszahlungen."
                                                                                         },
                                                                                         "children": []
                                                                                     },
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4hcjzx9bk5",
-                                                                                            "created": 1634758005304,
-                                                                                            "text": "{CONTINUE}",
-                                                                                            "priority": 3,
-                                                                                            "expandState": "expand",
-                                                                                            "note": "{'nextsteps': ['Schlichtung', 'Klage'],'entitlements':['Ausgleichszahlung']}"
+                                                                                            "id": "cf4hbq4l8pk5",
+                                                                                            "created": 1634757940282,
+                                                                                            "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
+                                                                                            "note": "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
+                                                                                            "priority": 1,
+                                                                                            "expandState": "expand"
                                                                                         },
-                                                                                        "children": []
+                                                                                        "children": [
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cf4h5nbt1r45",
+                                                                                                    "created": 1634757464003,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
+                                                                                                    "priority": 1
+                                                                                                },
+                                                                                                "children": []
+                                                                                            },
+                                                                                            {
+                                                                                                "data": {
+                                                                                                    "id": "cf4hcjzx9bk5",
+                                                                                                    "created": 1634758005304,
+                                                                                                    "text": "{CONTINUE}",
+                                                                                                    "priority": 3,
+                                                                                                    "expandState": "expand",
+                                                                                                    "note": "{'nextsteps': ['Schlichtung', 'Klage'],'entitlements':['Ausgleichszahlung']}"
+                                                                                                },
+                                                                                                "children": []
+                                                                                            }
+                                                                                        ]
                                                                                     }
                                                                                 ]
                                                                             }

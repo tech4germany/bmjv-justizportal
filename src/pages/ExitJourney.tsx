@@ -22,7 +22,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
   return (
     <PageBody title="Lösungsfinder">
       <Heading>
-        <Trans id="exit.heading">Leider haben wir ihren Fall nicht abgedeckt</Trans>
+        <Trans id="exit.heading">Leider haben wir ihren Fall nicht abgedeckt.</Trans>
       </Heading>
       <Card display={data.info ? '' : 'none'}>
         <CardHeader IconLeft={FaInfoCircle} title={`Warum?`} />
@@ -32,10 +32,9 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
       </Card>
       <Text>
         <Trans id="exit.footer">
-          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
+          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie
           individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
-          Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
-          einen Überblick zusammengestellt.
+          Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir [hier einen Überblick über Beratungsstellen aufbereitet](/beratungsangebote).
         </Trans>
       </Text>
       <HStack spacing={5}>

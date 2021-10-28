@@ -56,15 +56,16 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 - Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen.`,
     },
     {
-      label: t`Betreuungsleistungen (Essen, Getränke & Unterbringung)`,
+      label: t`Betreuungsleistungen`,
       icon: FaMugHot,
       buttonLink: '',
       buttonText: '',
       condition: claims.indexOf(Claims.Betreuungsleistung) != -1,
       content: t`
-- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.
-- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.
+- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr **Abflug stark verzögert**.
+- Betreuungsleistungen müssen **angemessen zur Wartezeit und Tageszeit** sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.
 - Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen. 
+- In der Regel werden Ihnen diese Leistungen **von der Fluglinie angeboten**; wenn nicht, können Sie **Schadensersatz** für notwendige Ausgaben mit Rechnungen beantragen.
 `,
     },
     {
@@ -183,7 +184,7 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
           px={{ base: 5, md: 0 }}
           text={t`
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
-          wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
+          wie Sie diese durchsetzen können. `}
         />
 
         <HStack spacing="1em" px={{ base: 5, md: 0 }}>

@@ -78,9 +78,9 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   
 ###  
 **Wie gehe ich vor?** 
-- Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen [Schlichtungsantrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/).
-- Wenn Ihr Antrag zulässig und berechtigt ist, macht die söp eine Schlichtungsempfehlung an Sie und die Fluglinie.
-- Falls dafür weitere Informationen notwendig sind, fragt sie söp diese bei Ihnen an.
+- Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen Schlichtungsantrag.
+- Für die [meisten europäischen Fluglinien](https://soep-online.de/assets/files/20.07.soep-Mitgliederliste.pdf) können Sie einen [Antrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/) stellen. Ansonsten ist die [Schlichtungsstelle Luftverkehr beim Bundesamt für Justiz](https://www.bundesjustizamt.de/DE/Themen/Buergerdienste/Luftverkehr/Schlichtungsstelle_node.html) für Ihren Fall zuständig.
+- Wenn Ihr Antrag zulässig und berechtigt ist, macht die Stelle eine Schlichtungsempfehlung an Sie und die Fluglinie.w
 - Das gesamte Schlichtungsverfahren dauert etwa drei Monate. Danach können Sie immer noch Klage einreichen.
 `,
       optional: true,
@@ -160,7 +160,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 **Wie gehe ich vor?** 
 - Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsverfahrens informieren.
 - Dann helfen wir Ihnen, eine Klageschrift zu erstellen und einzureichen.
-- Vor Gericht versucht die Richter:in, eine Lösung für Sie und Ihre Vermieter:in zu finden.
+- Vor Gericht versucht die Richter:in, eine Lösung für Sie und die Gegenseite zu finden.
 - Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über ihren Fall entschieden. 
   
 ###  

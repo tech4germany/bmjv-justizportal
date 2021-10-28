@@ -49,6 +49,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 ###
 **Wer kann klagen?**
 - Jede Person ab 18 Jahren kann in Deutschland alleine am Amtsgericht klagen.
+- Eltern können auch für Ihre minderjährigen Kinder eine Klage einreichen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
 - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie aber beraten oder ganz vertreten.
 `;
 
