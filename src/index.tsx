@@ -5,13 +5,14 @@ import ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
+import Fonts from './Fonts';
 import * as serviceWorker from './logic/serviceWorker';
 import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      {/* <ThemeEditorProvider> */}
+      <Fonts />
       <BrowserRouter>
         <HelmetProvider>
           <ColorModeScript />

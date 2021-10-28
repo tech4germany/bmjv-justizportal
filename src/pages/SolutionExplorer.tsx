@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Radio, RadioGroup, Spacer, Text, useToast } from '@chakra-ui/react';
+import { Box, Flex, HStack, Radio, RadioGroup, SimpleGrid, Spacer, Text, useToast } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -57,10 +57,9 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   return (
     <>
-      <PageBody title={t`Lösungsfinder`} paddingTop={2}>
+      <PageBody title={t`Lösungsfinder`}>
         <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
-        <Spacer h={10} />
-        <Text width="100%" fontSize={'2xl'}>
+        <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (
             <HStack>
               <Text>{data.title} </Text>
@@ -74,7 +73,12 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
         </Text>
         {state == 'SE' ? (
           <>
-            <Flex columns={[2, null, 3]} gridGap={{ base: 8, md: 12 }} flexWrap="wrap" justifyContent="space-between">
+            <SimpleGrid
+              columns={{ base: 2, md: 3 }}
+              gridGap={{ base: 8, md: 12 }}
+              width="100%"
+              flexWrap="wrap"
+              justifyContent="space-between">
               {data!.children?.map((child) => (
                 // <GridItem key={child.id}>
                 <StatsCard
@@ -100,7 +104,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                 />
                 // </GridItem>
               ))}
-            </Flex>
+            </SimpleGrid>
 
             <NavButtons
               linkBack={

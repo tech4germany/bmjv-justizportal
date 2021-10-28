@@ -39,7 +39,6 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
         height="100%"
         borderColor={borderColor}
         rounded="lg"
-        w={{ base: 36, sm: '10em', md: '12em' }}
         minH={{ base: 36, sm: '10em', md: '10em' }}
         as={ReactLink}
         to={link}

@@ -81,7 +81,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
 
       <Stack align="center" id="how" ref={howRef}>
         <VStack padding={[6, 12, 16]} maxWidth={800} align="start" spacing={5}>
-          <Heading size="lg" alignSelf="center">
+          <Heading alignSelf="center">
             <Trans id="home.howitwork_heading">So funktioniert es</Trans>
           </Heading>
           <Text>
@@ -134,7 +134,6 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
           <Spacer height={16}></Spacer>
 
           <Heading
-            size="lg"
             alignSelf="center"
             children={t`Wobei können wir Ihnen helfen?`}
           />
