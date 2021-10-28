@@ -591,10 +591,10 @@ msgid "nextsteps.sub_header"
 msgstr "Hier haben wir für Sie die möglichen Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren und Unterstützung zu erhalten."
 
 msgid "pe.header"
-msgstr "Aus Ihren Angaben könnten sich diese Ansprüche ergeben"
+msgstr "Mögliche rechtliche Ansprüche"
 
 msgid "pe.sub_header"
-msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
+msgstr "Aus Ihren Angaben könnten sich die folgenden Ansprüche ergeben. Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Dabei können Sie auch mehrere Ansprüche gleichzeitig durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
 
 msgid "pe.to_next_steps"
 msgstr "Zu den nächsten Schritten"
