@@ -32,21 +32,15 @@ export default function FooterSmallWithSocial() {
       <Container
         fontSize={'md'}
         as={Stack}
-        maxW={'6xl'}
+        maxW={'60rem'}
         py={4}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>
-          <Trans id="footer.text">Gebaut von ⚖️ und 🐌 mit ❤️</Trans>
-        </Text>
         <Text fontWeight="bold" textAlign="center">
-          <Trans id="footer.disclaimer">Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!</Trans>
+          Illustrations by <Link href="www.freepik.com ">Freepic</Link>
         </Text>
-        <Link href={`${homeURL}/${Routes.Disclaimer}`}>
-          <Trans id="footer.info">Weiter Infos zum Prototypen</Trans>
-        </Link>
       </Container>
     </Box>
   );

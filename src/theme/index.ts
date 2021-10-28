@@ -4,8 +4,8 @@ import foundations from './foundations';
 const direction = 'ltr';
 
 const config = {
-  useSystemColorMode: true,
-  initialColorMode: 'dark',
+  useSystemColorMode: false,
+  initialColorMode: 'light',
   cssVarPrefix: 'chakra',
 };
 

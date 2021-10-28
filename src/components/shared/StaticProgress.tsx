@@ -1,10 +1,11 @@
 import { HStack, Spacer } from '@chakra-ui/layout';
 import { Progress } from '@chakra-ui/progress';
+import { StackProps } from '@chakra-ui/react';
+import { t } from '@lingui/macro';
 import * as React from 'react';
 import { ProgressBarStep } from './ProgressBarStep';
-import { t } from '@lingui/macro';
 
-interface FeatureProps {
+interface FeatureProps extends StackProps {
   currentStep: number;
   progressNextStepInput?: number | undefined;
 }
@@ -22,14 +23,14 @@ export const StaticProgress = ({ currentStep, progressNextStepInput, ...rest }: 
     progressPercentages.push(0);
   }
   return (
-    <HStack width="100%" spacing="-1px" justifyContent="center" alignContent="center" paddingTop={6}>
-      <Spacer flex="1" />
+    <HStack width="100%" spacing="-1px" justifyContent="center" alignContent="center" {...rest}>
+      <Spacer minW={10} flex={0} />
       <ProgressBarStep filled={currentStep >= 1} number={1} title={t`Problem einordnen`} />
       <Progress colorScheme="primary" minW={24} size="xs" value={progressPercentages[0]} flex="1" zIndex="-1" />
       <ProgressBarStep filled={currentStep >= 2} number={2} title={t`Mögliche Ansprüche`} />
       <Progress colorScheme="primary" minW={24} size="xs" value={progressPercentages[1]} flex="1" zIndex="-1" />
       <ProgressBarStep filled={currentStep >= 3} number={3} title={t`Nächste Schritte`} />
-      <Spacer flex="1" />
+      <Spacer minW={10} flex={0} />
     </HStack>
   );
 };

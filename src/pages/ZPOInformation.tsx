@@ -34,52 +34,53 @@ interface FeatureProps {
 
 export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
   let summaryText = `
-[comment]: <> (## Zusammenfassung)
-
-[comment]: <> (Wenn ein Konflikt nicht gelöst werden kann, kann es als letzte Konsequenz nötig sein, vor Gericht zu gehen. Gerichte können Konflikte verbindlich klären und Entscheidungen dazu treffen.)
-[comment]: <> (Vor Gericht entscheiden Richter:innen. Bei einer Klage unterscheidet man zwischen der Klagendenpartei und der Beklagtenpartei. Beide Parteien haben die Möglichkeit ihre Ansicht darzustellen. Mit den dargestellten Informationen treffen die Richter:innen eine Entscheidung. Wenn nicht klar ist, welche Version einer Geschichte stimmt, müssen Beweis erbracht werden. )
-
-[comment]: <> (Mit einem Urteil legen die Richter:innen fest, was beiden Parteien aus dem Konflikt zu steht. Außerdem wird festgelegt, wer die Kosten des Prozesses bezahlen muss. Abhängig von der Bewertung der Richter:innen muss entweder eine Partei alle Kosten tragen oder die Kosten werden geteilt. Die Höhe der Kosten richtet sich nach dem materiellen Wert, um den gestritten wird. Je höher der Wert desto höher die Kosten. )
-
-**Was ist eine Klage?**
+**Wie funktioniert eine Klage?**
 - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
-- Mit einer Klage eröffnen Sie einen Gerichtsprozesses.
-- Vor Gericht stellen Sie und die andere Partei den Fall dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
-###  
-**Kosten?**
-- Zunächst kann die Richter:in Ihnen und der Gegenpartei einen Vergleich vorschlagen, um den Streit schnell beizulegen. Ein Vergleich ist eine für beide Seiten akzeptable Lösung.
-- Kann kein Vergleich gefunden werden, wird am Ende des Prozess ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
-- **Die Verlierer:in des Prozesses trägt die Kosten**. Die Höhe der Kosten ist abhängig von Ihrer Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
+- Mit einer Klage eröffnen Sie einen Gerichtsprozess.
+- Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
+- Zunächst kann die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
+- Kann kein Vergleich gefunden werden, wird am Ende des Prozesses ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
+- Insgesamt dauert ein Prozess üblicherweise zwischen vier und zehn Monaten.
+###
+**Was kostet ein Gerichtsverfahren?**
+- Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
-- **Sie können alleine Klage erheben**, also auch ohne Anwält:in. Wenn Sie sich unsicher fühlen, können Anwält:innen Sie beraten.    
-- Ein Prozess **dauert** üblicherweise zwischen **4 und 10 Monaten**.
+###
+**Wer kann klagen?**
+- Jede Person ab 18 Jahren kann in Deutschland alleine am Amtsgericht klagen.
+- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie aber beraten oder ganz vertreten.
 `;
 
   let costsText = `
-Während des Gerichtsprozesses entstehen beiden Parteien Kosten.
-Die unterlegene Partei des Prozesses trägt die Kosten von beiden Seiten.
-Gibt die Richter:in einer Partei nicht vollständig Recht, werden die Kosten durch die Richter:in aufgeteilt.
-Die Kosten eines Gerichtsprozesses setzen sich aus den Gerichtsgebühren, den Anwaltshonoraren und weiteren Ausgaben zusammen.
+  
+  Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.
 
 ###  
 ##### Gerichtsgebühren
-Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert.
+Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert Ihrer Forderung (circa 10-15%).
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
 Als Kläger müssen Sie die Gerichtsgebühren im Voraus bezahlen.
-Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach vom Gericht zurück.
+Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).
 
 ###  
 ##### Anwaltshonorare
 Wenn Sie eine Anwält:in vertritt, müssen Sie im Voraus ein Honorar bezahlen.
-Auch die Anwaltshonorare sind gesetzlich abhängig vom Streitwert festgelegt.
-Wenn Sie den Prozess verlieren, bezahlen Sie ihre Anwält:in und die der Gegenseite.  
+Auch die Anwaltshonorare sind gesetzlich festgelegt, und abhängig vom Streitwert (circa 20%).
+Wer den Prozess verliert, bezahlt auch alle Anwält:innen.  
   
 ###  
-##### Kostenrisiko
-Mit Hilfe des Streitwerts können Sie die maximalen Kosten abschätzen.
-Hier finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.
-Eine genaue Berechnung ist im Vorhinein nicht möglich, da weitere Kosten entstehen können, beispielsweise durch die Vergütungen von Zeugen.
+##### Weitere Kosten
+Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeugen verhört werden. Diese erhalten dann eine Vergütung. 
+Auch Sachverständigengutachten können weitere Kosten verursachen.
+  
+###  
+##### Welche Kosten können mir insgesamt entstehen?
+Die Kosten Ihres Falls können Sie mithilfe des Streitwerts abschätzen.
+Ihren Streitwert berechnen wir im nächsten Schritt, wenn Sie eine Klage anlegen.
+In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.  
+  
+Beispiel: Bei Klagen zur EU-Fluggastrechteverordnung liegen Streitwerte häufig unter 1.000 Euro. Damit betragen die Gerichtsgebühren circa 150 Euro. Diese erhalten Sie bei Gewinn zurück.
 `;
 
   let processInformation = `
@@ -125,10 +126,10 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
   return (
     <PageBody title="ZPO Informationen">
       <Box>
-        <Heading textAlign="center">Eine Klage einreichen</Heading>
+        <Heading textAlign="center">Eine Klage am Amtsgericht einreichen</Heading>
         <Spacer height={12} />
         <Card p={{ base: 10, md: 14 }}>
-          <Heading textAlign="center" fontSize="2xl">
+          <Heading textAlign="center" variant="subheading">
             Die wichtigsten Informationen auf einen Blick
           </Heading>
           <Spacer height={14} />
@@ -139,9 +140,9 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
           <AccordionItem>
             <AccordionButton>
               {<FaMoneyBill size="2.5em" />}
-              <Text fontWeight="bold" fontSize="lg" padding="1em">
-                Kosten für einen Gerichtsprozess
-              </Text>
+              <Heading variant="subheading" padding="1em">
+                Welche Kosten entstehen in einem Gerichtsprozess?
+              </Heading>
               <Spacer />
               <AccordionIcon />
             </AccordionButton>
@@ -149,17 +150,19 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
               <AnnotadedText text={costsText} />
               <Spacer height="1em" />
               <Table variant="simple">
-                <TableCaption>Ungefähre Kosten in einem Gerichtsverfahren.</TableCaption>
+                <TableCaption>Ungefähre Kosten in einem Gerichtsverfahren für verschiedene Streitwerte.</TableCaption>
                 <Thead>
                   <Tr>
                     <Th>Streitwert</Th>
                     <Th>
                       Gerichtsgebühren
-                      <br /> (Vorab zu bezahlen)
+                      <br />
+                      (Vorschuss)
                     </Th>
                     <Th>
-                      Anwaltshonorar Gegenpartei
-                      <br /> (Bei Verlust zu zahlen)
+                      Anwaltshonorar
+                      <br />
+                      (pro Seite)
                     </Th>
                   </Tr>
                 </Thead>
@@ -191,21 +194,13 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
                   </Tr>
                 </Tbody>
               </Table>
-              <AnnotadedText
-                text="**Beispielrechnung:** 
-- Der Streitwert einer Klage beträgt €1500. 
-- Ca. €250 muss nach Klageeinreichung als Vorschuss an das Gericht gezahlt werden. 
-- Gewinnen Sie, bekommen Sie den vollen Betrag zurück. 
-- Verlieren Sie, müssen Sie zusätzlich ca. €350 für den Anwalt der Gegenpartei zahlen."
-              />
-              <Spacer height="1em" />
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
             <AccordionButton>
               {<RiBankFill size="2.5em" />}
               <Text fontWeight="bold" fontSize="lg" padding="1em">
-                Ablauf eines Gerichtsprozesses
+                Wie läuft ein Gerichtsprozesses genau ab?
               </Text>
               <Spacer />
               <AccordionIcon />
@@ -219,7 +214,7 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
         </Accordion>
         <Spacer h={10} />
 
-        <Heading fontSize="2xl" py={6}>
+        <Heading variant="subheading" py={6}>
           Nächste Schritte
         </Heading>
         <AnnotadedText

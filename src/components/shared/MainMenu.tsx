@@ -350,7 +350,7 @@ const NAV_ITEMS: Array<NavItem> = [
   //   href: '/' + Routes.ConsultationOffers,
   // },
   {
-    label: '🏎',
+    label: ' ',
     href: '/short',
     children: [
       {

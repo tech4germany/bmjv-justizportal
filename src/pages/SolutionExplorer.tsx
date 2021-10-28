@@ -1,4 +1,4 @@
-import { Flex, GridItem, Radio, RadioGroup, SimpleGrid, Spacer, Text, useToast, VStack } from '@chakra-ui/react';
+import { Box, Flex, HStack, Radio, RadioGroup, Spacer, Text, useToast } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -10,7 +10,7 @@ import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { StatsCard } from '../components/shared/StatsCard';
-import { homeURL, Routes } from '../Const';
+import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
 
@@ -57,39 +57,50 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   return (
     <>
-      <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
-
       <PageBody title={t`Lösungsfinder`} paddingTop={2}>
+        <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
+        <Spacer h={10} />
         <Text width="100%" fontSize={'2xl'}>
-          {state != 'SE' ? data.title : t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`}
+          {state != 'SE' ? (
+            <HStack>
+              <Text>{data.title} </Text>
+              <Box color={Primary()} px={2}>
+                <FaInfoCircle></FaInfoCircle>
+              </Box>
+            </HStack>
+          ) : (
+            t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`
+          )}
         </Text>
         {state == 'SE' ? (
           <>
-            <SimpleGrid columns={[2, null, 3]} spacing={10}>
+            <Flex columns={[2, null, 3]} gridGap={{ base: 8, md: 12 }} flexWrap="wrap" justifyContent="space-between">
               {data!.children?.map((child) => (
-                <GridItem key={child.id} w={{ base: '7em', sm: '9em', md: '10.5em', lg: '11em' }}>
-                  <StatsCard
-                    link={
-                      child.children
-                        ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
-                        : `?id=${id}#notimplemented:${child.id}`
-                    }
-                    onClick={() =>
-                      child.children
-                        ? undefined
-                        : toast({
-                            title: t`Diese Option ist leider noch nicht verfügbar.`,
-                            // description: t`Bisher, konnte dieser Pfad leider noch nicht implementiert werden.`,
-                            status: 'info',
-                            duration: 8000,
-                            isClosable: true,
-                          })
-                    }
-                    {...child}
-                  />
-                </GridItem>
+                // <GridItem key={child.id}>
+                <StatsCard
+                  link={
+                    child.children
+                      ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
+                      : `?id=${id}#notimplemented:${child.id}`
+                  }
+                  onClick={() =>
+                    child.children
+                      ? undefined
+                      : toast({
+                          title: t`Diese Option ist leider noch nicht verfügbar.`,
+                          // description: t`Bisher, konnte dieser Pfad leider noch nicht implementiert werden.`,
+                          status: 'info',
+                          duration: 8000,
+                          isClosable: true,
+                        })
+                  }
+                  title={child.title}
+                  info={child.info}
+                  icon={child.icon}
+                />
+                // </GridItem>
               ))}
-            </SimpleGrid>
+            </Flex>
 
             <NavButtons
               linkBack={
@@ -102,45 +113,36 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             />
           </>
         ) : (
-          <Flex
-            align="top"
-            wrap="nowrap"
-            alignSelf="stretch"
-            padding={{ base: 0, md: '1em' }}
-            gridGap={{ base: '1em', md: '2em' }}
-            flexDir={{ base: 'column-reverse', md: 'row' }}>
-            <VStack flex="1" justify="end" align={{ base: 'center', md: 'start' }}>
-              <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={value} padding="1em">
-                <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
-                  <Radio value="1">
-                    <Trans>Ja</Trans>
-                  </Radio>
-                  <Radio value="2">
-                    <Trans>Nein</Trans>
-                  </Radio>
-                </Flex>
-              </RadioGroup>
-              <NavButtons
-                padding="1em"
-                linkBack={
-                  parent != undefined
-                    ? parent.children?.length == 1
-                      ? '?id=' + mmobject.getParent(parent.id)?.id
-                      : '?id=' + parent.id
-                    : `${homeURL}/`
-                }
-                linkForward={value == '1' ? linkOnYes : linkOnNo}
-                disableForward={value != '2' && value != '1'}
-                onClick={() => setValue('0')}
-              />
-            </VStack>
+          <>
             <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
               <CardHeader IconLeft={FaInfoCircle} title={t`Info`} />
               <CardContent padding="1em">
                 <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>
             </Card>
-          </Flex>
+            <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={value}>
+              <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
+                <Radio value="1">
+                  <Trans>Ja</Trans>
+                </Radio>
+                <Radio value="2">
+                  <Trans>Nein</Trans>
+                </Radio>
+              </Flex>
+            </RadioGroup>
+            <NavButtons
+              linkBack={
+                parent != undefined
+                  ? parent.children?.length == 1
+                    ? '?id=' + mmobject.getParent(parent.id)?.id
+                    : '?id=' + parent.id
+                  : `${homeURL}/`
+              }
+              linkForward={value == '1' ? linkOnYes : linkOnNo}
+              disableForward={value != '2' && value != '1'}
+              onClick={() => setValue('0')}
+            />
+          </>
         )}
         <Spacer minH="3em" />
       </PageBody>

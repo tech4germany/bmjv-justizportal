@@ -172,7 +172,7 @@
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "ceybygg5cs80",
+                                                                                    "id": "ceybygg5cs81",
                                                                                     "created": 1634133435190,
                                                                                     "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                                     "expandState": "expand",
@@ -182,7 +182,7 @@
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "ceybyumxibs0",
+                                                                                            "id": "ceybyumxibs1",
                                                                                             "created": 1634133466075,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 1,
@@ -192,7 +192,7 @@
                                                                                     },
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "ceybyyhkqn40",
+                                                                                            "id": "ceybyyhkqn41",
                                                                                             "created": 1634133474458,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
@@ -206,7 +206,7 @@
                                                                     },
                                                                     {
                                                                         "data": {
-                                                                            "id": "ceybygg5cs80",
+                                                                            "id": "ceybygg5cs82",
                                                                             "created": 1634133435190,
                                                                             "text": "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?",
                                                                             "expandState": "expand",
@@ -216,7 +216,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "ceybyumxibs0",
+                                                                                    "id": "ceybyumxibs2",
                                                                                     "created": 1634133466075,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 1,
@@ -226,7 +226,7 @@
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "ceybyyhkqn40",
+                                                                                    "id": "ceybyyhkqn42",
                                                                                     "created": 1634133474458,
                                                                                     "text": "{CONTINUE}",
                                                                                     "priority": 3,
@@ -739,7 +739,7 @@
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "cf4gipf45g00",
+                                            "id": "cf4gipf45g01",
                                             "created": 1634755666181,
                                             "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?",
                                             "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz",
@@ -748,7 +748,7 @@
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "cf4gnxz5m1k0",
+                                                    "id": "cf4gnxz5m1k1",
                                                     "created": 1634756076628,
                                                     "text": "{EXIT}",
                                                     "note": "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung. Deshalb können Sie über das Portal keine Ansprüche geltend machen.",
@@ -758,7 +758,7 @@
                                             },
                                             {
                                                 "data": {
-                                                    "id": "cf4gwm92hgw0",
+                                                    "id": "cf4gwm92hgw1",
                                                     "created": 1634756756384,
                                                     "text": "Fand der Flug innerhalb der letzten drei Jahre statt?",
                                                     "priority": 3,
@@ -767,7 +767,7 @@
                                                 "children": [
                                                     {
                                                         "data": {
-                                                            "id": "cf4h26nw7ts0",
+                                                            "id": "cf4h26nw7ts1",
                                                             "created": 1634757192637,
                                                             "text": "{EXIT}",
                                                             "note": "Wenn Ihr Flug vor über drei Jahren stattgefunden hat, ist Ihr Anspruch vermutlich verjährt. Daher können wir Ihnen nicht weiterhelfen.",
@@ -777,7 +777,7 @@
                                                     },
                                                     {
                                                         "data": {
-                                                            "id": "cf4z2sjaknc0",
+                                                            "id": "cf4z2sjaknc1",
                                                             "created": 1634808020226,
                                                             "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
                                                             "expandState": "expand",
@@ -787,7 +787,7 @@
                                                         "children": [
                                                             {
                                                                 "data": {
-                                                                    "id": "cf4z62tbau00",
+                                                                    "id": "cf4z62tbau01",
                                                                     "created": 1634808277692,
                                                                     "text": "{EXIT}",
                                                                     "priority": 1,
@@ -846,7 +846,7 @@
                                                                                     },
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4hbq4l8pk0",
+                                                                                            "id": "cf4hbq4l8pk1",
                                                                                             "created": 1634757940282,
                                                                                             "text": "Haben Sie Ihre Fluglinie schon aufgefordert, die Flugscheinkosten zu erstatten?",
                                                                                             "note": "Vermutlich haben Sie einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden. Ist das noch nicht geschehen, sollten Sie Ihre Fluglinie zunächst selbst zur Zahlung auffordern. Dabei können wir Ihnen helfen.",
@@ -856,7 +856,7 @@
                                                                                         "children": [
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4h5nbt1r40",
+                                                                                                    "id": "cf4h5nbt1r41",
                                                                                                     "created": 1634757464003,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Rückerstattung']}",
@@ -866,7 +866,7 @@
                                                                                             },
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4hcjzx9bk0",
+                                                                                                    "id": "cf4hcjzx9bk1",
                                                                                                     "created": 1634758005304,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 3,
@@ -883,7 +883,7 @@
                                                                     },
                                                                     {
                                                                         "data": {
-                                                                            "id": "cf9iv82djdk0",
+                                                                            "id": "cf9iv82djdk1",
                                                                             "created": 1635270089143,
                                                                             "text": "Haben Sie ein Angebot für einen Ersatzflug angenommen, oder wurden ihnen die Flugscheinkosten schon vollständig erstattet?",
                                                                             "note": "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden.\n\nWenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, können Ihnen noch Ansprüche auf Ausgleichszahlung entstehen.",
@@ -902,7 +902,7 @@
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4hbq4l8pk0",
+                                                                                            "id": "cf4hbq4l8pk2",
                                                                                             "created": 1634757940282,
                                                                                             "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Zahlung an Sie zu leisten und dafür eine realistische Frist gesetzt?",
                                                                                             "note": "Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu. Eine Ausnahme sind außergewöhnliche Umstände, bei denen die Fluglinie die Annullierung nicht vermeiden konnte.\n\nZusätzlich haben Sie vermutlich einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden.\n\nZunächst sollten Sie Ihre Fluglinie selbst auffordern, die Zahlungen an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
@@ -912,7 +912,7 @@
                                                                                         "children": [
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4h5nbt1r40",
+                                                                                                    "id": "cf4h5nbt1r42",
                                                                                                     "created": 1634757464003,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung', 'Rückerstattung']}",
@@ -922,7 +922,7 @@
                                                                                             },
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4hcjzx9bk0",
+                                                                                                    "id": "cf4hcjzx9bk2",
                                                                                                     "created": 1634758005304,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "priority": 3,
@@ -935,7 +935,7 @@
                                                                                     },
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf9iye28wnc0",
+                                                                                            "id": "cf9iye28wnc1",
                                                                                             "created": 1635270337288,
                                                                                             "text": "Haben Sie einen Zahlungsbeweis für Ihren Flugschein?",
                                                                                             "note": "Sie haben angegeben, dass die Kosten für Ihren Flug noch nicht erstattet wurden. Um einen Anspruch auf Rückerstattung durchsetzen zu können, müssen Sie einen Zahlungsbeleg vorweisen können. Dazu zählen beispielsweise:\n- Zahlungsbestätigung der Fluglinie\n- Kontoauszug mit der Zahlung\n- Kreditkartenabrechnung mit der Zahlung",
@@ -945,7 +945,7 @@
                                                                                         "children": [
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf9j13y71c80",
+                                                                                                    "id": "cf9j13y71c81",
                                                                                                     "created": 1635270550368,
                                                                                                     "text": "{EXIT}",
                                                                                                     "priority": 1,
@@ -955,7 +955,7 @@
                                                                                             },
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4hbq4l8pk0",
+                                                                                                    "id": "cf4hbq4l8pk3",
                                                                                                     "created": 1634757940282,
                                                                                                     "text": "Haben Sie Ihre Fluglinie schon aufgefordert, die Flugscheinkosten zu erstatten?",
                                                                                                     "note": "Vermutlich haben Sie einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden. Ist das noch nicht geschehen, sollten Sie Ihre Fluglinie zunächst selbst zur Zahlung auffordern. Dabei können wir Ihnen helfen.",
@@ -965,7 +965,7 @@
                                                                                                 "children": [
                                                                                                     {
                                                                                                         "data": {
-                                                                                                            "id": "cf4h5nbt1r40",
+                                                                                                            "id": "cf4h5nbt1r43",
                                                                                                             "created": 1634757464003,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Rückerstattung']}",
@@ -975,7 +975,7 @@
                                                                                                     },
                                                                                                     {
                                                                                                         "data": {
-                                                                                                            "id": "cf4hcjzx9bk0",
+                                                                                                            "id": "cf4hcjzx9bk3",
                                                                                                             "created": 1634758005304,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "priority": 3,
@@ -992,7 +992,7 @@
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf9k2znuxao0",
+                                                                                    "id": "cf9k2znuxao1",
                                                                                     "created": 1635273518874,
                                                                                     "text": "Wurde Ihnen ein alternativer Flug angeboten, mit dem Sie Ihr Ziel nur wenige Stunden später erreichen konnten?",
                                                                                     "note": "Ein **Anspruch auf Ausgleichszahlung** kann bei einer kurzfristigen Annullierung nur bestehen, wenn die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten hat. \n\nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht.",
@@ -1001,7 +1001,7 @@
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4hbq4l8pk0",
+                                                                                            "id": "cf4hbq4l8pk4",
                                                                                             "created": 1634757940282,
                                                                                             "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
                                                                                             "note": "Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu.\n\nZunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
@@ -1011,7 +1011,7 @@
                                                                                         "children": [
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4h5nbt1r40",
+                                                                                                    "id": "cf4h5nbt1r44",
                                                                                                     "created": 1634757464003,
                                                                                                     "text": "{CONTINUE}",
                                                                                                     "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
@@ -1021,7 +1021,7 @@
                                                                                             },
                                                                                             {
                                                                                                 "data": {
-                                                                                                    "id": "cf4h25v8j540",
+                                                                                                    "id": "cf4h25v8j541",
                                                                                                     "created": 1634757190904,
                                                                                                     "text": "Hat Ihre Fluglinie außergewöhnliche Umstände für die Annullierung genannt, die Sie nicht vermeiden konnte?",
                                                                                                     "priority": 3,
@@ -1031,7 +1031,7 @@
                                                                                                 "children": [
                                                                                                     {
                                                                                                         "data": {
-                                                                                                            "id": "cf4h5liuqtc0",
+                                                                                                            "id": "cf4h5liuqtc1",
                                                                                                             "created": 1634757460076,
                                                                                                             "text": "{EXIT}",
                                                                                                             "note": "Wenn Ihre  Fluglinie außergewöhnliche Umstände für die Annullierung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\n\nWenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/zivil-prozess-info).",
@@ -1041,7 +1041,7 @@
                                                                                                     },
                                                                                                     {
                                                                                                         "data": {
-                                                                                                            "id": "cf4hcjzx9bk0",
+                                                                                                            "id": "cf4hcjzx9bk4",
                                                                                                             "created": 1634758005304,
                                                                                                             "text": "{CONTINUE}",
                                                                                                             "priority": 1,
@@ -1088,7 +1088,7 @@
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "cf4gipf45g00",
+                                            "id": "cf4gipf45g02",
                                             "created": 1634755666181,
                                             "text": "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?",
                                             "note": "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz"
@@ -1096,7 +1096,7 @@
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "cf4gnxz5m1k0",
+                                                    "id": "cf4gnxz5m1k2",
                                                     "created": 1634756076628,
                                                     "text": "{EXIT}",
                                                     "note": "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung. Deshalb können Sie über das Portal keine Ansprüche geltend machen.",
@@ -1106,7 +1106,7 @@
                                             },
                                             {
                                                 "data": {
-                                                    "id": "cf4gnxcudvk0",
+                                                    "id": "cf4gnxcudvk1",
                                                     "created": 1634756075279,
                                                     "text": "Haben Sie eine Bestätigung für Ihre Buchung?",
                                                     "note": "Damit Sie Ansprüche für Ihre Buchung geltend machen können, benötigen Sie eine Bestätigung für Ihre Buchung. Das kann eine Bestätigungs-E-Mail sein, eine Rechnung, oder auch Ihr Boarding Pass.",
@@ -1116,7 +1116,7 @@
                                                 "children": [
                                                     {
                                                         "data": {
-                                                            "id": "cf4gqprzdhs0",
+                                                            "id": "cf4gqprzdhs1",
                                                             "created": 1634756293873,
                                                             "text": "{EXIT}",
                                                             "priority": 1,
@@ -1127,7 +1127,7 @@
                                                     },
                                                     {
                                                         "data": {
-                                                            "id": "cf4gu9dswfc0",
+                                                            "id": "cf4gu9dswfc1",
                                                             "created": 1634756571643,
                                                             "text": "Waren Sie rechtzeitig beim Boarding (mindestens 5 Minuten vor dem Start)?",
                                                             "note": "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug.\n",
@@ -1136,7 +1136,7 @@
                                                         "children": [
                                                             {
                                                                 "data": {
-                                                                    "id": "cf4gwmowah40",
+                                                                    "id": "cf4gwmowah41",
                                                                     "created": 1634756757341,
                                                                     "text": "{EXIT}",
                                                                     "note": "Wenn Sie nicht rechtzeitig beim Boarding waren, haben Sie vermutlich keinen Anspruch auf Ausgleichszahlung.",
@@ -1146,7 +1146,7 @@
                                                             },
                                                             {
                                                                 "data": {
-                                                                    "id": "cf4gwm92hgw0",
+                                                                    "id": "cf4gwm92hgw2",
                                                                     "created": 1634756756384,
                                                                     "text": "Fand der Flug innerhalb der letzten drei Jahre statt?",
                                                                     "priority": 3,
@@ -1155,7 +1155,7 @@
                                                                 "children": [
                                                                     {
                                                                         "data": {
-                                                                            "id": "cf4h26nw7ts0",
+                                                                            "id": "cf4h26nw7ts2",
                                                                             "created": 1634757192637,
                                                                             "text": "{EXIT}",
                                                                             "note": "Wenn Ihr Flug vor über drei Jahren stattgefunden hat, ist Ihr Anspruch vermutlich verjährt. Daher können wir Ihnen nicht weiterhelfen.",
@@ -1165,7 +1165,7 @@
                                                                     },
                                                                     {
                                                                         "data": {
-                                                                            "id": "cf4z2sjaknc0",
+                                                                            "id": "cf4z2sjaknc2",
                                                                             "created": 1634808020226,
                                                                             "text": "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?",
                                                                             "expandState": "expand",
@@ -1175,7 +1175,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf4z62tbau00",
+                                                                                    "id": "cf4z62tbau02",
                                                                                     "created": 1634808277692,
                                                                                     "text": "{EXIT}",
                                                                                     "priority": 1,
@@ -1185,7 +1185,7 @@
                                                                             },
                                                                             {
                                                                                 "data": {
-                                                                                    "id": "cf4hbq4l8pk0",
+                                                                                    "id": "cf4hbq4l8pk5",
                                                                                     "created": 1634757940282,
                                                                                     "text": "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?",
                                                                                     "note": "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei.",
@@ -1195,7 +1195,7 @@
                                                                                 "children": [
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4h5nbt1r40",
+                                                                                            "id": "cf4h5nbt1r45",
                                                                                             "created": 1634757464003,
                                                                                             "text": "{CONTINUE}",
                                                                                             "note": "{'nextsteps': ['Fluglinie kontaktieren'],'entitlements':['Ausgleichszahlung']}",
@@ -1205,7 +1205,7 @@
                                                                                     },
                                                                                     {
                                                                                         "data": {
-                                                                                            "id": "cf4hcjzx9bk0",
+                                                                                            "id": "cf4hcjzx9bk5",
                                                                                             "created": 1634758005304,
                                                                                             "text": "{CONTINUE}",
                                                                                             "priority": 3,
@@ -1227,6 +1227,17 @@
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cepy6tay75k0",
+                                    "created": 1633282114895,
+                                    "text": "Ein anderes Problem",
+                                    "note": "{ICON:FaQuestionCircle}",
+                                    "priority": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
                             }
                         ]
                     },

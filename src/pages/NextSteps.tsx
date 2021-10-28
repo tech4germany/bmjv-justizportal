@@ -9,23 +9,21 @@ import {
   Heading,
   Link,
   Spacer,
-  Tag,
   Text,
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { IconType } from 'react-icons';
-import { FaEnvelopeOpen, FaPencilAlt, FaUserTie } from 'react-icons/fa';
-import { HiScale } from 'react-icons/hi';
-import { TiArrowLoop } from 'react-icons/ti';
+import { FaEnvelopeOpen, FaRegEdit, FaUserTie } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
+import { RiScales3Fill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
-import { homeURL, Routes, Primary, Secondary } from '../Const';
+import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph, NextStepsType } from '../logic/KMParser';
-import sizes from '../theme/foundations/sizes';
 
 interface FeatureProps {
   id: string | null;
@@ -57,7 +55,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 - Wenn Sie Ihre Fluglinie mit einem korrekten Anspruch kontaktieren, bezahlt diese meistens direkt Ihre Forderung. 
 - Mit einer schriftlichen Aufforderung haben Sie außerdem einen Nachweis für den weiteren Prozess.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Nutzen Sie das Kontaktformular Ihrer Fluglinie für EU-Fluggastrechte und stellen Sie Ihre Forderung. 
 - Kontaktformulare finden Sie auf den Webseiten aller großen Fluglinien, beispielsweise bei [Ryanair](https://onlineform.ryanair.com/de/de/eu-261), [Lufthansa](https://www.lufthansa.com/de/de/feedback), 
@@ -78,7 +76,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 - Wenn Sie Ihre Fluglinie bereits kontaktiert haben, und diese Ihrer Forderung nicht nachgekommen ist, kann eine Schlichtung helfen.
 - Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verbindlich für die Fluglinie.
   
-  
+###  
 **Wie gehe ich vor?** 
 - Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen [Schlichtungsantrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/).
 - Wenn Ihr Antrag zulässig und berechtigt ist, macht die söp eine Schlichtungsempfehlung an Sie und die Fluglinie.
@@ -89,7 +87,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
     },
     {
       label: t`Dokumentation des Mangels`,
-      icon: FaPencilAlt,
+      icon: FaRegEdit,
       buttonLink: '',
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.Docu) != -1,
@@ -97,10 +95,10 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 **Warum?** 
 - Um einen Nachweis für Ihre Vermieter:in und den weiteren Prozess zu haben, sollten Sie den Mangel dokumentieren.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
-- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, sollten Sie aufschreiben wann und in welcher Form dieser auftritt.`,
+- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video kann helfen.`,
       optional: false,
     },
     {
@@ -115,21 +113,21 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 - Meistens beseitigen Vermieter:innen einen Mangel, sobald sie benachrichtigt werden. 
 - Mit einer schriftlichen Mängelanzeige haben Sie außerdem einen Nachweis für den weiteren Prozess.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Kontaktieren Sie ihre Vermieter:in und schildern Sie den Mangel sachlich. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie Ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
 - Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen, wenn Sie einen Anspruch auf Mietminderung haben.
 - Bleiben Sie dabei freundlich und höflich.  
   
-  
+###  
 Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 `,
       optional: false,
     },
     {
       label: t`Vermieter:in erneut kontaktieren`,
-      icon: TiArrowLoop,
+      icon: FiMail,
       buttonLink: '',
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
@@ -139,7 +137,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 - Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht auch nur übersehen.
 - Wenn neue Kosten entstanden sind (z.B. Aufwendungen durch eigene Mängelbeseitigung), können Sie diese direkt von Ihrer Vermieter:in einfordern.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Kontaktieren Sie ihre Vermieter:in und weisen Sie erneut auf das Problem hin. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie eine letzte Frist zur Mängelbeseitigung oder Zahlung, bevor Sie weitere rechtliche Schritte ergreifen.
@@ -148,23 +146,25 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       optional: true,
     },
     {
-      label: t`Über das Justizportal eine Klage einreichen`,
-      icon: HiScale,
+      label: t`Online Klage einreichen`,
+      icon: RiScales3Fill,
       buttonText: 'Zur Klageerstellung',
       buttonLink: `${homeURL}/${Routes.ZPOInformation}?id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
       content: `
 **Warum?** 
-- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn Ihre Vermieter:in diese nicht erfüllt. 
-- Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.
+- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn die Gegenseite diese nicht erfüllt. 
+- Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.  
   
-  
+###  
 **Wie gehe ich vor?** 
 - Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsverfahrens informieren.
 - Dann helfen wir Ihnen, eine Klageschrift zu erstellen und einzureichen.
 - Vor Gericht versucht die Richter:in, eine Lösung für Sie und Ihre Vermieter:in zu finden.
 - Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über ihren Fall entschieden. 
   
+###  
+Wichtig ist, dass Sie die **Gegenseite schon direkt aufgefordert** haben, Ihre Ansprüche zu erfüllen.
   
 Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der Einreichung.
 `,
@@ -182,7 +182,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
 - Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
 - Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
   
-  
+###  
 **Wie gehe ich vor?** 
 - In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. 
 - Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. 
@@ -196,25 +196,21 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
 
   return (
     <>
-      <StaticProgress currentStep={3} />
-      <PageBody marginInline={{ base: 0, md: 10 }} title="Optionen">
-        <Heading px={{ base: 5, md: 0 }} fontSize="3xl">
-          Ende des Lösungfinders: Mögliche nächste Schritte
-          {/* <Trans id="nextsteps.header">Hier haben wir für nächste Schritte zusammengefasst:</Trans> */}
+      <PageBody marginInline={{ base: 0, md: 10 }} title={t`Optionen`}>
+        <StaticProgress currentStep={3} />
+        <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5} fontSize="3xl">
+          <Trans id="nextsteps.header">Ende des Lösungfinders: Mögliche nächste Schritte</Trans>
         </Heading>
         <Text px={{ base: 5, md: 0 }}>
-          Hier haben wir für Sie nächste Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. <br />
-          Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren.
-          {/* <Trans id="nextsteps.sub_header">
+          <Trans id="nextsteps.sub_header">
             Hier haben wir für Sie nächste Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. <br />
             Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren.
-          </Trans> */}
+          </Trans>
         </Text>
-        {/* <Box>// flexDir={{ base: 'column', md: 'row' }} gridGap="2em"> */}
-        {/* <Box> */}
         <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
-          {data.map((acc, index) =>
-            acc.condition ? (
+          {data
+            .filter((i) => i.condition)
+            .map((acc, index) => (
               <AccordionItem>
                 <AccordionButton>
                   {
@@ -222,21 +218,19 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
                       <acc.icon size="2.5em" />
                     </Box>
                   }
-                  <Text fontWeight="bold" fontSize="lg" padding="1em">
-                    {acc.label}
+                  <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                    <Trans>Schritt</Trans> {index + 1}: {acc.label}
                   </Text>
-                  {/* <Tag size="sm" minW="fit-content" variant="solid" colorScheme={acc.optional ? 'gray' : 'primary'}>
-                      {acc.optional ? 'Optional' : 'Empfohlen'}
-                    </Tag> */}
                   <Spacer />
-                  <Tag size="md" minW="fit-content" variant="solid" colorScheme={'secondary'}>
-                    Mehr erfahren
-                  </Tag>
-                  {/* <AccordionIcon /> */}
+                  <Text>
+                    <Trans>Mehr erfahren</Trans>
+                  </Text>
+                  <AccordionIcon />
                 </AccordionButton>
                 <AccordionPanel pb={4}>
+                  <Spacer height={5} />
                   <AnnotadedText text={acc.content} />
-                  <Spacer height="1.5em" />
+                  <Spacer height={10} />
                   {acc.buttonLink && acc.buttonText ? (
                     <>
                       <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
@@ -247,33 +241,18 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
                   <Spacer height="1em" />
                 </AccordionPanel>
               </AccordionItem>
-            ) : null
-          )}
+            ))}
         </Accordion>
 
-        {/* <Card flex="2" mx={{ base: 5, md: 0 }}>
-            <CardHeader IconLeft={FaUserTie} title={t`Rechtlich beraten lassen`} />
-            <CardContent>
-              <AnnotadedText
-                text={`
-**Fall Sie sich unsicher fühlen, kann ein Rechtsberatung für Sie sinnvoll sein**
-- Hier kann eine Expert:in ihren Fall individuell bewerten. 
-- Einige Beratungsstellen sind kostenlos. Insbesondere für eine Erstberatung oder Personen mit wenig Geld. 
-  `}
-              />
-              <Spacer height={5} />
-              <Button colorScheme="gray">Überblick Beratungsstellen</Button>
-            </CardContent>
-          </Card> */}
-        {/* </Box> */}
-        <Box>
-          <Text>
+        <Text px={{ base: 5, md: 0 }}>
+          <Trans>
             Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
             <Link>hier Beratungsangebote zusammengefasst.</Link>
-          </Text>
-        </Box>
+          </Trans>
+        </Text>
 
-        <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} />
+        <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} px={{ base: 5, md: 0 }} />
+        <Spacer w={5} />
       </PageBody>
     </>
   );

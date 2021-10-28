@@ -4,6 +4,7 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Box,
   Button,
   Heading,
   HStack,
@@ -19,7 +20,7 @@ import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
-import { homeURL, Routes } from '../Const';
+import { homeURL, Primary, Routes } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
 
 interface FeatureProps {
@@ -86,14 +87,14 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       buttonLink: '',
       buttonText: '',
       condition: claims.indexOf(Claims.Mietminderung) != -1,
-      content: `
+      content: t`
       
 - Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**
 durch einen Mangel **erheblich eingeschränkt** ist. 
-- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.
+- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch und die Wohnqualität stark beeinträchtigt ist.
 - Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.
 - Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.
-- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden.
+- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden.
 
 `,
     },
@@ -103,7 +104,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       buttonLink: '',
       buttonText: '',
       condition: claims.indexOf(Claims.Aufwendungsersatz) != -1,
-      content: `
+      content: t`
       
 - Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.
 - Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.
@@ -116,7 +117,7 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       buttonLink: '',
       buttonText: '',
       condition: claims.indexOf(Claims.Schadensersatz) != -1,
-      content: `
+      content: t`
 - Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.
 - **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.
 - Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat.
@@ -126,39 +127,48 @@ durch einen Mangel **erheblich eingeschränkt** ist.
 
   return (
     <>
-      <StaticProgress currentStep={2} />
-      <PageBody marginInline={{ base: '0em', md: '2em' }} title="Mögliche Lösungen">
-        <Heading marginInline={{ base: '2em', md: '0em' }}>
-          <Trans>Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
+      <PageBody marginInline={{ base: 0, md: 10 }} title={t`Mögliche Lösungen`}>
+        <StaticProgress currentStep={3} />
+        <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5} fontSize="3xl">
+          <Trans id="pe.header">Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
         </Heading>
         <AnnotadedText
           px={{ base: 5, md: 0 }}
-          text={t`
+          text={t({
+            id: 'pe.sub_header',
+            message: `
 Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. 
-Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte. `}
+Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte. `,
+          })}
         />
-        <Accordion alignSelf="stretch" allowToggle>
-          {data.map((acc, index) =>
-            acc.condition ? (
+
+        <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
+          {data
+            .filter((i) => i.condition)
+            .map((acc, index) => (
               <AccordionItem>
                 <AccordionButton>
-                  {<acc.icon size="2.5em" />}
-                  <Text fontWeight="bold" padding="1em">
+                  {
+                    <Box color={Primary()}>
+                      <acc.icon size="2.5em" />
+                    </Box>
+                  }
+                  <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
                     {acc.label}
                   </Text>
                   <Spacer />
+                  <Text>
+                    <Trans>Mehr erfahren</Trans>
+                  </Text>
                   <AccordionIcon />
                 </AccordionButton>
                 <AccordionPanel pb={4}>
+                  <Spacer height={5} />
                   <AnnotadedText text={acc.content} />
-                  <Spacer height="1.5em" />
+                  <Spacer height={10} />
                   {acc.buttonLink && acc.buttonText ? (
                     <>
-                      <Button
-                        colorScheme="secondary"
-                        paddingBlock="1em"
-                        as={ReactLink}
-                        to={`${homeURL}${acc.buttonLink}`}>
+                      <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
                         {acc.buttonText}
                       </Button>
                     </>
@@ -166,16 +176,17 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
                   <Spacer height="1em" />
                 </AccordionPanel>
               </AccordionItem>
-            ) : null
-          )}
+            ))}
         </Accordion>
+
         <AnnotadedText
           px={{ base: 5, md: 0 }}
           text={t`
           Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
           wie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter. `}
         />
-        <HStack spacing="1em" {...rest}>
+
+        <HStack spacing="1em" px={{ base: 5, md: 0 }}>
           <Button
             as={ReactLink}
             to={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
@@ -190,6 +201,8 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
             <Trans id="pe.to_next_steps">Zu den nächsten Schritten</Trans>
           </Button>
         </HStack>
+
+        <Spacer w={5} />
       </PageBody>
     </>
   );
