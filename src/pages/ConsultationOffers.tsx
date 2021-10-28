@@ -19,10 +19,11 @@ import * as React from 'react';
 import { IconType } from 'react-icons';
 import { FaCheck } from 'react-icons/fa';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
-import { NavButtons } from '../components/shared/NavigationButtons';
+
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
+import { Blob } from './disclaimer';
 
 interface FeatureProps {
   id: string | null;
@@ -43,12 +44,25 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
   const [checkbox, setCheckbox] = React.useState(false);
 
   const toggleFilterState = (tag: Tag) =>
-    setFilter(filter.includes(tag) ? filter.filter((element) => element != tag) : filter.concat(tag));
+    setFilter(
+      filter.includes(tag)
+        ? filter.filter((element) => element != tag)
+        : filter.concat(tag)
+    );
 
-  const data: { label: string; icon?: IconType; content: string; tags: Tag[] }[] = [
+  const data: {
+    label: string;
+    icon?: IconType;
+    content: string;
+    tags: Tag[];
+  }[] = [
     {
-      label: 'CF',
-      content: 'fdsfdfsd',
+      label: 'Städtische Mietberatungen',
+      content: `
+- **Angebot:** Erste Anlaufstelle für drängende Mietfragen (Verträge, Mieterhöhung, Kündigung), teils Beratung in Fremdsprachen
+- **Verfügbarkeit:** Telefonische oder persönliche Beratung in vielen großen Städten, zum Beispiel in Berlin, München, Hamburg, Stuttgart oder Nürnberg.
+- **Kosten:** Die meisten Angebote sind kostenlos verfügbar.
+- Einige große Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind oft für drängende Probleme (fristlose Kündigung, Räumungsklage) oder Bürger:innen mit begrenzten finanziellen Mitteln gedacht.`,
       tags: [Tag.consultation, Tag.free],
     },
     {
@@ -69,7 +83,9 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
         <Trans id="consultation.header">Beratungsangebote</Trans>
       </Heading>
       <Text px={{ base: 5, md: 0 }}>
-        <Trans id="consultation.sub_header">Wobei benötigen Sie Unterstützung?</Trans>
+        <Trans id="consultation.sub_header">
+          Wobei benötigen Sie Unterstützung?
+        </Trans>
       </Text>
       <VStack align="center" width="100%">
         <ButtonGroup variant="outline">
@@ -77,16 +93,22 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
             onClick={() => {
               toggleFilterState(Tag.consultation);
             }}
-            rightIcon={filter.includes(Tag.consultation) ? <FaCheck /> : undefined}
-            rounded="full">
+            rightIcon={
+              filter.includes(Tag.consultation) ? <FaCheck /> : undefined
+            }
+            rounded="full"
+          >
             <Trans>Erstberatung</Trans>
           </Button>
           <Button
             onClick={() => {
               toggleFilterState(Tag.solutionOptions);
             }}
-            rightIcon={filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined}
-            rounded="full">
+            rightIcon={
+              filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined
+            }
+            rounded="full"
+          >
             <Trans>Außergerichtliche Einigung</Trans>
           </Button>
           <Button
@@ -94,27 +116,45 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
               toggleFilterState(Tag.trial);
             }}
             rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
-            rounded="full">
+            rounded="full"
+          >
             <Trans>Gerichtsverfahren</Trans>
           </Button>
         </ButtonGroup>
-        <Checkbox checked={checkbox} onChange={(e) => setCheckbox(e.target.checked)}>
+        <Checkbox
+          checked={checkbox}
+          onChange={(e) => setCheckbox(e.target.checked)}
+        >
           <Trans>Nur kostenlose Angebote anzeigen</Trans>
         </Checkbox>
       </VStack>
-      <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
+      <Accordion
+        width="100%"
+        flex="1"
+        minW={'20em'}
+        alignSelf="stretch"
+        allowToggle
+      >
         {data
           .filter(
             (i) =>
-              (filter.filter((value) => i.tags.includes(value)).length != 0 || filter.length == 0) &&
+              (filter.filter((value) => i.tags.includes(value)).length != 0 ||
+                filter.length == 0) &&
               (checkbox ? i.tags.includes(Tag.free) : true)
           )
           .map((acc, index) => (
             <AccordionItem>
               <AccordionButton>
-                <Box color={Primary()}>{acc.icon && <acc.icon size="2.5em" />}</Box>
+                <Box color={Primary()}>
+                  {acc.icon && <acc.icon size="2.5em" />}
+                </Box>
 
-                <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                <Text
+                  textAlign="left"
+                  fontWeight="bold"
+                  fontSize="lg"
+                  padding="1em"
+                >
                   {acc.label}
                 </Text>
                 <Spacer />
@@ -142,8 +182,8 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
 
       <Text px={{ base: 5, md: 0 }}>
         <Trans>
-          Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
-          <Link>hier Beratungsangebote zusammengefasst.</Link>
+          Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen.
+          Dafür haben wir <Link>hier Beratungsangebote zusammengefasst.</Link>
         </Trans>
       </Text>
 
