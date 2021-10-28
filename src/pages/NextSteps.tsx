@@ -115,7 +115,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   
 ###  
 **Wie gehe ich vor?** 
-- Kontaktieren Sie ihre Vermieter:in und schildern Sie den Mangel sachlich. 
+- Kontaktieren Sie Ihre Vermieter:in und schildern Sie den Mangel sachlich. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie Ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
 - Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen, wenn Sie einen Anspruch auf Mietminderung haben.
 - Bleiben Sie dabei freundlich und höflich.  
@@ -158,10 +158,10 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
   
 ###  
 **Wie gehe ich vor?** 
-- Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsverfahrens informieren.
+- Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsprozesses informieren.
 - Dann helfen wir Ihnen, eine Klageschrift zu erstellen und einzureichen.
 - Vor Gericht versucht die Richter:in, eine Lösung für Sie und die Gegenseite zu finden.
-- Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über ihren Fall entschieden. 
+- Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über Ihren Fall entscheiden. 
   
 ###  
 Wichtig ist, dass Sie die **Gegenseite schon direkt aufgefordert** haben, Ihre Ansprüche zu erfüllen.

@@ -269,7 +269,7 @@
     'consultation.header': 'Beratungsangebote',
     'consultation.sub_header': 'Wobei benötigen Sie Unterstützung?',
     'exit.footer':
-      'Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt.',
+      'Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt.',
     'exit.heading': 'Leider haben wir ihren Fall nicht abgedeckt',
     'footer.disclaimer': 'Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!',
     'footer.info': 'Weiter Infos zu Seite findest du hier',

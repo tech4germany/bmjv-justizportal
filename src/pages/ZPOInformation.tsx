@@ -42,7 +42,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 - Kann kein Vergleich gefunden werden, wird am Ende des Prozesses ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
 - Insgesamt dauert ein Prozess üblicherweise zwischen vier und zehn Monaten.
 ###
-**Was kostet ein Gerichtsverfahren?**
+**Was kostet ein Gerichtsprozess?**
 - Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
@@ -61,7 +61,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 ##### Gerichtsgebühren
 Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert Ihrer Forderung (circa 10-15%).
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
-Als Kläger müssen Sie die Gerichtsgebühren im Voraus bezahlen.
+Als Kläger:in müssen Sie die Gerichtsgebühren im Voraus bezahlen.
 Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).
 
 ###  
@@ -76,7 +76,7 @@ Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeugen 
 Auch Sachverständigengutachten können weitere Kosten verursachen.
   
 ###  
-##### Welche Kosten können mir insgesamt entstehen?
+##### Welche Kosten können für Sie insgesamt entstehen?
 Die Kosten Ihres Falls können Sie mithilfe des Streitwerts abschätzen.
 Ihren Streitwert berechnen wir im nächsten Schritt, wenn Sie eine Klage anlegen.
 In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.  
@@ -201,7 +201,7 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
             <AccordionButton>
               {<RiBankFill size="2.5em" />}
               <Text fontWeight="bold" fontSize="lg" padding="1em">
-                Wie läuft ein Gerichtsprozesses genau ab?
+                Wie läuft ein Gerichtsprozess genau ab?
               </Text>
               <Spacer />
               <AccordionIcon />
