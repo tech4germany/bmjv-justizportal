@@ -17,7 +17,7 @@ export const Feature = (props: FeatureProps) => {
           {icon}
         </Box>
         <Stack spacing="1">
-          <Heading size="md">{title}</Heading>
+          <Heading variant="subheading">{title}</Heading>
           <Box color={C_DarkGray()}>{children}</Box>
         </Stack>
       </Stack>

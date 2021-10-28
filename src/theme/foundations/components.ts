@@ -11,6 +11,14 @@ const components = {
         color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.500`, `${c}.300`)(props),
       };
     },
+    variants: {
+      subheading: {
+        fontSize: '2xl',
+      },
+    },
+    defaultProps: {
+      size: 'lg',
+    },
   },
   Text: {
     baseStyle: (props: any) => {

@@ -129,7 +129,7 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
         <Heading textAlign="center">Eine Klage am Amtsgericht einreichen</Heading>
         <Spacer height={12} />
         <Card p={{ base: 10, md: 14 }}>
-          <Heading textAlign="center" fontSize="2xl">
+          <Heading textAlign="center" variant="subheading">
             Die wichtigsten Informationen auf einen Blick
           </Heading>
           <Spacer height={14} />
@@ -140,9 +140,9 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
           <AccordionItem>
             <AccordionButton>
               {<FaMoneyBill size="2.5em" />}
-              <Text fontWeight="bold" fontSize="lg" padding="1em">
+              <Heading variant="subheading" padding="1em">
                 Welche Kosten entstehen in einem Gerichtsprozess?
-              </Text>
+              </Heading>
               <Spacer />
               <AccordionIcon />
             </AccordionButton>
@@ -156,11 +156,13 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
                     <Th>Streitwert</Th>
                     <Th>
                       Gerichtsgebühren
-                      <br />(Vorschuss)
+                      <br />
+                      (Vorschuss)
                     </Th>
                     <Th>
                       Anwaltshonorar
-                      <br />(pro Seite)
+                      <br />
+                      (pro Seite)
                     </Th>
                   </Tr>
                 </Thead>
@@ -212,7 +214,7 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
         </Accordion>
         <Spacer h={10} />
 
-        <Heading fontSize="2xl" py={6}>
+        <Heading variant="subheading" py={6}>
           Nächste Schritte
         </Heading>
         <AnnotadedText
