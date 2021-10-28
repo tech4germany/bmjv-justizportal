@@ -11,7 +11,6 @@ export const DisclaimerBanner = ({ ...props }) => {
       top={0}
       width="100%"
       bg={'gray.200'}
-      minH={'60px'}
       py={{ base: 4 }}
       px={{ base: 4 }}
       borderBottom={1}
@@ -20,10 +19,10 @@ export const DisclaimerBanner = ({ ...props }) => {
       <Flex alignSelf="center" justify="center" align="start" width="100%" flex={1}>
         <HStack align={'center'} justify={'center'} spacing={1} maxW={'60rem'} flex={1}>
           {/* <IconButton variant="ghost" aria-label="open menu" icon={<AiFillCloseCircle />} /> */}
-          <Text fontWeight="bold" textAlign="center">
-            Diese Seite ist ein Prototyp des Tech4Germany Fellowship Jahrgangs 2021. Die Seite wird nicht mehr aktiv
-            gepflegt, und für die Richtigkeit der Informationen übernehmen wir keine Gewähr.{' '}
-            <Link href="https://tech.4germany.org/project/justizsportal/"> Mehr Informationen.</Link>
+          <Text fontWeight="bold" textAlign="center" fontSize={'small'}>
+            Diese Seite ist ein Prototyp des{' '}
+            <Link href="https://tech.4germany.org/project/justizsportal/">Tech4Germany Fellowships 2021</Link> und
+            bietet keine verbindlichen Rechtsinformationen.
           </Text>
         </HStack>
       </Flex>

@@ -1,4 +1,15 @@
-import { Box, Flex, HStack, Radio, RadioGroup, SimpleGrid, Spacer, Text, useToast } from '@chakra-ui/react';
+import {
+  useToast,
+  HStack,
+  IconButton,
+  SimpleGrid,
+  Flex,
+  VStack,
+  RadioGroup,
+  Radio,
+  Spacer,
+  Text,
+} from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -13,6 +24,7 @@ import { StatsCard } from '../components/shared/StatsCard';
 import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
+import spacing from '../theme/foundations/spacing';
 
 interface FeatureProps {
   id: string | null;
@@ -23,7 +35,18 @@ interface FeatureProps {
 }
 
 export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserState, ...rest }: FeatureProps) => {
-  const [value, setValue] = React.useState('0');
+  const [stateVal, setState] = React.useState({ value: '0', showInfo: false });
+
+  const setValue = (newVal: string) => {
+    setState({ value: newVal, showInfo: stateVal['showInfo'] });
+  };
+  const resetState = () => {
+    setState({ value: '0', showInfo: false });
+  };
+
+  const switchShowInfo = () => {
+    setState({ value: stateVal['value'], showInfo: stateVal['showInfo'] ? false : true });
+  };
 
   const toast = useToast();
   const data = mmobject.getNode(id);
@@ -61,11 +84,21 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
         <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
         <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (
-            <HStack>
-              <Text>{data.title} </Text>
-              <Box color={Primary()} px={2}>
-                <FaInfoCircle></FaInfoCircle>
-              </Box>
+            <HStack align={'top'}>
+              <Text minH={'3em'}>
+                {data.title}
+                {'    '}
+                <IconButton
+                  color={Primary()}
+                  height="1.2em"
+                  variant="ghost"
+                  aria-label=""
+                  icon={<FaInfoCircle />}
+                  fontSize={'xl'}
+                  onClick={switchShowInfo}
+                  display={data.info ? undefined : 'none'}
+                />
+              </Text>
             </HStack>
           ) : (
             t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`
@@ -117,36 +150,41 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             />
           </>
         ) : (
-          <>
-            <Card flex={{ base: 'none', md: 2 }} minWidth="15em" display={data.info ? undefined : 'none'}>
+          <Flex direction={{ base: 'column-reverse', md: 'row' }}>
+            <VStack align="left" spacing={'3.5em'} width="min-content">
+              <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={stateVal['value']}>
+                <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
+                  <Radio value="1">
+                    <Trans>Ja</Trans>
+                  </Radio>
+                  <Radio value="2">
+                    <Trans>Nein</Trans>
+                  </Radio>
+                </Flex>
+              </RadioGroup>
+              <NavButtons
+                linkBack={
+                  parent != undefined
+                    ? parent.children?.length == 1
+                      ? '?id=' + mmobject.getParent(parent.id)?.id
+                      : '?id=' + parent.id
+                    : `${homeURL}/`
+                }
+                linkForward={stateVal['value'] == '1' ? linkOnYes : linkOnNo}
+                disableForward={stateVal['value'] != '2' && stateVal['value'] != '1'}
+                onClick={() => resetState()}
+              />
+            </VStack>
+            <Spacer w="3.5em" h="3.5em" flex="unset" />
+            <Card
+              flex={{ base: 'none', md: 1 }}
+              display={data.info ? (stateVal['showInfo'] ? undefined : 'none') : 'none'}>
               <CardHeader IconLeft={FaInfoCircle} title={t`Info`} />
               <CardContent padding="1em">
                 <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>
             </Card>
-            <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={value}>
-              <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
-                <Radio value="1">
-                  <Trans>Ja</Trans>
-                </Radio>
-                <Radio value="2">
-                  <Trans>Nein</Trans>
-                </Radio>
-              </Flex>
-            </RadioGroup>
-            <NavButtons
-              linkBack={
-                parent != undefined
-                  ? parent.children?.length == 1
-                    ? '?id=' + mmobject.getParent(parent.id)?.id
-                    : '?id=' + parent.id
-                  : `${homeURL}/`
-              }
-              linkForward={value == '1' ? linkOnYes : linkOnNo}
-              disableForward={value != '2' && value != '1'}
-              onClick={() => setValue('0')}
-            />
-          </>
+          </Flex>
         )}
         <Spacer minH="3em" />
       </PageBody>
