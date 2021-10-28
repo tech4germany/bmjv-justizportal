@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Heading,
-  Spacer,
-  Stack,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
+import { Box, Button, Heading, Spacer, Stack, Text, VStack, Flex } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaCheck, FaCompass, FaLandmark, FaSearch } from 'react-icons/fa';
@@ -39,32 +31,24 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
       <HeroSplit
         title1={t`Die Justiz im Netz.`}
         title2={t`Einfach, online, jederzeit.`}
-        image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.jpg`}
-      >
-        <Text fontSize="larger" fontWeight="light">
+        image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.jpg`}>
+        <Text fontSize={{ base: 'lg', lg: '2xl' }} fontWeight="light">
           <Trans render={Text} id="home.sub_heading">
             Ein digitales Serviceangebot der deutschen Justiz. Wir informieren
             Sie über Ihre Rechte im Alltag.
           </Trans>
         </Text>
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          alignSelf="start"
-          spacing={4}
-        >
+        <Flex direction={{ base: 'row', md: 'row' }} wrap="wrap" alignSelf="start" gridGap={5}>
           <Button
+            // size={{ base: 'md', lg: 'lg' }}
+            size="lg"
             colorScheme={'secondary'}
             as={ReactLink}
             to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Jetzt starten!`}
           />
-          <Button
-            as={ReactLink}
-            to="#how"
-            onClick={executeScroll}
-            children={t`Wie es funktioniert`}
-          />
-        </Stack>
+          <Button size="lg" as={ReactLink} to="#how" onClick={executeScroll} children={t`Wie es funktioniert`} />
+        </Flex>
       </HeroSplit>
 
       <Hero title={t`Unser Angebot`}>

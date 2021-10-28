@@ -16,6 +16,7 @@ import * as React from 'react';
 import { FaMoneyBill, FaMoneyCheck, FaMugHot, FaReceipt, FaTools } from 'react-icons/fa';
 import { FiTrendingDown } from 'react-icons/fi';
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
+import { RiToolsFill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
@@ -70,7 +71,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
     },
     {
       label: t`Beseitigung des Mangels durch die Vermieter:in`,
-      icon: FaTools,
+      icon: RiToolsFill,
       buttonLink: '',
       buttonText: '',
       condition: claims.indexOf(Claims.Mängelbeseitigung) != -1,
@@ -179,13 +180,6 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
               </AccordionItem>
             ))}
         </Accordion>
-
-        <AnnotadedText
-          px={{ base: 5, md: 0 }}
-          text={t`
-          Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, 
-          wie Sie diese durchsetzen können. `}
-        />
 
         <HStack spacing="1em" px={{ base: 5, md: 0 }}>
           <Button
