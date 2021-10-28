@@ -1,16 +1,4 @@
-import {
-  Box,
-  Flex,
-  GridItem,
-  HStack,
-  Radio,
-  RadioGroup,
-  SimpleGrid,
-  Spacer,
-  Text,
-  useToast,
-  VStack,
-} from '@chakra-ui/react';
+import { Box, Flex, HStack, Radio, RadioGroup, Spacer, Text, useToast } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -22,7 +10,7 @@ import { NavButtons } from '../components/shared/NavigationButtons';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { StatsCard } from '../components/shared/StatsCard';
-import { homeURL, Routes, Primary } from '../Const';
+import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
 
@@ -69,7 +57,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   return (
     <>
-      <PageBody title={t`Lösungsfinder`} align="left" paddingTop={2}>
+      <PageBody title={t`Lösungsfinder`} paddingTop={2}>
         <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
         <Spacer h={10} />
         <Text width="100%" fontSize={'2xl'}>
@@ -106,7 +94,9 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                           isClosable: true,
                         })
                   }
-                  {...child}
+                  title={child.title}
+                  info={child.info}
+                  icon={child.icon}
                 />
                 // </GridItem>
               ))}

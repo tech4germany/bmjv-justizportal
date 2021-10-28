@@ -1,33 +1,25 @@
 import {
   Box,
   BoxProps,
-  Button,
-  Flex,
-  HStack,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalFooter,
-  ModalHeader,
   ModalOverlay,
   Spacer,
-  Stat,
-  StatLabel,
-  Text,
   useColorModeValue,
   useDisclosure,
+  VStack,
 } from '@chakra-ui/react';
 import { transparentize } from '@chakra-ui/theme-tools';
+import { i18n } from '@lingui/core';
 import * as React from 'react';
 import { ReactNode } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
 import { Primary } from '../../Const';
 import { AnnotadedText } from './AnnotatedText';
-import { i18n } from '@lingui/core';
-import { VStack } from '@chakra-ui/react';
-import { CaseTopics, CaseTypes } from '../../logic/KMParser';
 
 interface StatsCardProps extends BoxProps {
   title: string;
@@ -54,7 +46,8 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
         _hover={{
           transitionDuration: '0.2s',
           bg: transparentize(borderColor, 0.5),
-        }}>
+        }}
+        {...rest}>
         <Box
           display={info ? '' : 'none'}
           as="a"
