@@ -23,7 +23,7 @@ export const StaticProgress = ({ currentStep, progressNextStepInput, ...rest }: 
     progressPercentages.push(0);
   }
   return (
-    <HStack width="100%" spacing="-1px" px={16} justifyContent="center" alignContent="center" {...rest}>
+    <HStack width="100%" spacing="-1px" justifyContent="center" alignContent="center" {...rest}>
       <Spacer minW={10} flex={0} />
       <ProgressBarStep filled={currentStep >= 1} number={1} title={t`Problem einordnen`} />
       <Progress colorScheme="primary" minW={24} size="xs" value={progressPercentages[0]} flex="1" zIndex="-1" />
