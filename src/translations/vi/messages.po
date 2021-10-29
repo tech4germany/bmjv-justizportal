@@ -1,606 +1,870 @@
 msgid ""
 msgstr ""
+"POT-Creation-Date: 2021-10-29 13:06+0200\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Localazy (https://localazy.com)\n"
-"Project-Id-Version: Justizportal\n"
+"X-Generator: @lingui/cli\n"
 "Language: vi\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\nWenn Ihr Flug durch die Fluglinie annuliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annulierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
-msgstr "### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\nWenn Ihr Flug durch die Fluglinie annuliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annulierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
+#: src/data_parser/data.ts:820
+msgid ""
+"### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n"
+"Wenn Ihr Flug durch die Fluglinie annuliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annulierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
+msgstr ""
 
-msgid "### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\nWenn Ihnen die Mitreise verweigert wurde, weil Ihr Flug überbucht war, und Sie nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen haben, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
-msgstr "### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\nWenn Ihnen die Mitreise verweigert wurde, weil Ihr Flug überbucht war, und Sie nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen haben, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+#: src/data_parser/data.ts:1217
+msgid ""
+"### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n"
+"Wenn Ihnen die Mitreise verweigert wurde, weil Ihr Flug überbucht war, und Sie nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen haben, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+msgstr ""
 
-msgid "### Ihre Rechte bei Verspätung nach der EU-Fluggastrechteverordnung\nWenn Ihre Landung am Zielflughafen mehr als drei Stunden verspätet war, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
-msgstr "### Ihre Rechte bei Verspätung nach der EU-Fluggastrechteverordnung\nWenn Ihre Landung am Zielflughafen mehr als drei Stunden verspätet war, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+#: src/data_parser/data.ts:606
+msgid ""
+"### Ihre Rechte bei Verspätung nach der EU-Fluggastrechteverordnung\n"
+"Wenn Ihre Landung am Zielflughafen mehr als drei Stunden verspätet war, haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können schon ab zwei Stunden Verspätung beim Start Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+msgstr ""
 
-msgid "### Ihre Rechte nach der EU-Fluggastrechteverordnung\nWenn Sie wegen einer Flugverspätung, einer Annullierung durch die Fluglinie oder einer Beförderungsverweigerung wegen Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung vielleicht einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen. Zusätzlich können Sie bei Annullierung einen alternativen Flug wählen, oder sich Ihre Flugscheinkosten erstatten lassen. \nHier helfen wir Ihnen, mögliche Ansprüche für Ihren Fall durchzusetzen."
-msgstr "### Ihre Rechte nach der EU-Fluggastrechteverordnung\nWenn Sie wegen einer Flugverspätung, einer Annullierung durch die Fluglinie oder einer Beförderungsverweigerung wegen Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung vielleicht einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen. Zusätzlich können Sie bei Annullierung einen alternativen Flug wählen, oder sich Ihre Flugscheinkosten erstatten lassen. \nHier helfen wir Ihnen, mögliche Ansprüche für Ihren Fall durchzusetzen."
+#: src/data_parser/data.ts:591
+msgid ""
+"### Ihre Rechte nach der EU-Fluggastrechteverordnung\n"
+"Wenn Sie wegen einer Flugverspätung, einer Annullierung durch die Fluglinie oder einer Beförderungsverweigerung wegen Überbuchung Ihr Ziel verspätet oder gar nicht erreichen, haben Sie nach der EU-Fluggastrechteverordnung vielleicht einen Anspruch auf Ausgleichszahlung und Betreuungsleistungen. Die Höhe der  Ausgleichszahlung ist abhängig von der Entfernung des Reiseziels und kann bis zu 600 Euro betragen. Zusätzlich können Sie bei Annullierung einen alternativen Flug wählen, oder sich Ihre Flugscheinkosten erstatten lassen. \n"
+"Hier helfen wir Ihnen, mögliche Ansprüche für Ihren Fall durchzusetzen."
+msgstr ""
 
-msgid "### Was ist ein **Mietmangel**?\nIhre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
-msgstr "### Was ist ein **Mietmangel**?\nIhre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
+#: src/data_parser/data.ts:29
+msgid ""
+"### Was ist ein **Mietmangel**?\n"
+"Ihre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
+msgstr ""
 
-msgid "### Wohnungsmängel durch Lärm\nErheblicher Lärm kann als Mietmangel gelten, beispielswese bei Störungen in den Ruhezeiten. Diese sind in der Regel zwischen 22 und 6 Uhr, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n✅ **Unter Ruhestörungen fallen** Störungen der Nachtruhe (Musik, Staubsaugen, laute Waschmaschine über 30 Dezibel), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst freunddlich darauf ansprechen, um Streit zu vermeiden. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Bei akuten, sehr starken Störungen können Sie auch das Ordnungsamt oder die Polizei kontaktieren."
-msgstr "### Wohnungsmängel durch Lärm\nErheblicher Lärm kann als Mietmangel gelten, beispielswese bei Störungen in den Ruhezeiten. Diese sind in der Regel zwischen 22 und 6 Uhr, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n✅ **Unter Ruhestörungen fallen** Störungen der Nachtruhe (Musik, Staubsaugen, laute Waschmaschine über 30 Dezibel), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst freunddlich darauf ansprechen, um Streit zu vermeiden. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Bei akuten, sehr starken Störungen können Sie auch das Ordnungsamt oder die Polizei kontaktieren."
+#: src/data_parser/data.ts:451
+msgid ""
+"### Wohnungsmängel durch Lärm\n"
+"Erheblicher Lärm kann als Mietmangel gelten, beispielswese bei Störungen in den Ruhezeiten. Diese sind in der Regel zwischen 22 und 6 Uhr, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n"
+"✅ **Unter Ruhestörungen fallen** Störungen der Nachtruhe (Musik, Staubsaugen, laute Waschmaschine über 30 Dezibel), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n"
+"❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n"
+"💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst freunddlich darauf ansprechen, um Streit zu vermeiden. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Bei akuten, sehr starken Störungen können Sie auch das Ordnungsamt oder die Polizei kontaktieren."
+msgstr ""
 
-msgid "### Wohnungsmängel durch Schimmel\nSchimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
-msgstr "### Wohnungsmängel durch Schimmel\nSchimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
+#: src/data_parser/data.ts:42
+msgid ""
+"### Wohnungsmängel durch Schimmel\n"
+"Schimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
+msgstr ""
 
-msgid "### Wohnungsmängel durch Wasserschäden\nWasserschäden in der Wohnung können beispielsweise durch starken Regen oder Schäden an Wasserleitungen, Geräten und im Bad entstehen.\nAnsprüche gegen Vermieter:innen oder Hauseigentümer:innen wegen des Wasserschadens bestehen dann, wenn diese den Mangel verschuldet haben, was beispielsweise oft bei Rohrbrüchen der Fall ist.\nWerden Wasserschäden durch eigene defekte Geräte wie Waschmaschine oder Geschirrspüler verursacht, haftet man in der Regel selbst. Etwas anderes kann gelten, wenn die Geräte mit der Wohnung angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung weiterhelfen."
-msgstr "### Wohnungsmängel durch Wasserschäden\nWasserschäden in der Wohnung können beispielsweise durch starken Regen oder Schäden an Wasserleitungen, Geräten und im Bad entstehen.\nAnsprüche gegen Vermieter:innen oder Hauseigentümer:innen wegen des Wasserschadens bestehen dann, wenn diese den Mangel verschuldet haben, was beispielsweise oft bei Rohrbrüchen der Fall ist.\nWerden Wasserschäden durch eigene defekte Geräte wie Waschmaschine oder Geschirrspüler verursacht, haftet man in der Regel selbst. Etwas anderes kann gelten, wenn die Geräte mit der Wohnung angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung weiterhelfen."
+#: src/data_parser/data.ts:469
+msgid ""
+"### Wohnungsmängel durch Wasserschäden\n"
+"Wasserschäden in der Wohnung können beispielsweise durch starken Regen oder Schäden an Wasserleitungen, Geräten und im Bad entstehen.\n"
+"Ansprüche gegen Vermieter:innen oder Hauseigentümer:innen wegen des Wasserschadens bestehen dann, wenn diese den Mangel verschuldet haben, was beispielsweise oft bei Rohrbrüchen der Fall ist.\n"
+"Werden Wasserschäden durch eigene defekte Geräte wie Waschmaschine oder Geschirrspüler verursacht, haftet man in der Regel selbst. Etwas anderes kann gelten, wenn die Geräte mit der Wohnung angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\n"
+"Wenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung weiterhelfen."
+msgstr ""
 
-msgid "- **Anspruch**\n- Vermieter:innen haben die Pflicht, die Mietsache in einem Zustand\nzu übergeben und zu erhalten, die der vertraglichen Vereinbarung entspricht. \n- Dafür zahlen die Mietenden die Miete. \n- Wenn während der Mietzeit ein Mangel auftritt, dann muss die Vermieter:in ihn beseitigen. \n- **Ausnahme**: bei Kleinreparaturen bis zu einem Betrag von ca. 100 Euro pro Reparatur\n- wenn das im Vertrag so steht und\n- ein Jahres-Höchstbetrag festgelegt wurde. \n- **Durchsetzung:**\n- Den Anspruch auf Beseitigung des Mangels kann man gegenüber dem\nVermieter geltend machen, indem man ihn auffordert, den Mangel zu beseitigen. Oft geschieht dies gemeinsam\nmit der Mitteilung über den Mangel."
-msgstr "- **tuyên bản**\n - Chủ nhà có nhiệm vụ giữ cho tài sản thuê trong một tiểu bang\nbàn giao và nhận được tương ứng với thỏa thuận hợp đồng. \n - Đó là những gì người thuê nhà trả tiền thuê nhà cho. \n - Nếu một khiếm khuyết xảy ra trong thời gian thuê nhà, thì chủ nhà phải sửa chữa nó. \n- **Ngoại trí**: để sửa chữa nhỏ lên đến một số tiền khoảng 100 euro cho mỗi sửa chữa\n - nếu nó nói như vậy trong hợp đồng và\n - một số tiền tối đa hàng năm đã được thiết lập. \n- **Thực thi: **\n - Yêu cầu bồi thường để loại bỏ các khiếm khuyết có thể được thực hiện chống lại\nYêu cầu chủ nhà bằng cách yêu cầu họ khắc phục lỗi. Điều này thường xảy ra với nhau\nvới thông báo về khiếm khuyết."
+#: src/pages/PossibleEntitlements.tsx:109
+msgid ""
+"- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n"
+"- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n"
+"- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
-msgstr "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
+#: src/pages/PossibleEntitlements.tsx:42
+msgid ""
+"- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n"
+"- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annullierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n"
+"- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1.500km)**, **400€ (zwischen 1.500km und 3.500km)** oder **600€ (über 3.500km)**."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
-msgstr "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1500km)**, **400€ (bis zu 3500km)** oder **600€ (über 3500km)**."
+#: src/pages/PossibleEntitlements.tsx:65
+msgid ""
+"- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr **Abflug stark verzögert**.\n"
+"- Betreuungsleistungen müssen **angemessen zur Wartezeit und Tageszeit** sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n"
+"- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen. \n"
+"- In der Regel werden Ihnen diese Leistungen **von der Fluglinie angeboten**; wenn nicht, können Sie **Schadensersatz** für notwendige Ausgaben mit Rechnungen beantragen."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1.500km)**, **400€ (zwischen 1.500km und 3.500km)** oder **600€ (über 3.500km)**."
-msgstr "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1.500km)**, **400€ (zwischen 1.500km und 3.500km)** oder **600€ (über 3.500km)**."
+#: src/pages/PossibleEntitlements.tsx:92
+msgid ""
+"- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\n"
+"durch einen Mangel **erheblich eingeschränkt** ist. \n"
+"- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch und die Wohnqualität stark beeinträchtigt ist.\n"
+"- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n"
+"- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n"
+"- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.\n- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen."
-msgstr "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr Abflug stark verzögert.\n- Betreuungsleistungen müssen angemessen zur Wartezeit und Tageszeit sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen."
+#: src/pages/PossibleEntitlements.tsx:78
+msgid ""
+"- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n"
+"- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n"
+"- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n"
+"- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
-msgstr "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn mehr als **10% der Wohnfläche** durch den Mangel nicht mehr nutzbar ist, zum Beispiel bei Schimmel in einem Raum.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Größe des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+#: src/pages/PossibleEntitlements.tsx:54
+msgid ""
+"- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annullierung innerhalb einer Woche zurückzuerhalten.\n"
+"- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n"
+"- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen."
-msgstr "- Yêu cầu bồi thường đối với khuyết tật khắc phục hậu hội là quyền yêu cầu chủ nhà của quý vị khắc phục hậu hội.\n- Chủ nhà có nhiệm vụ bàn giao và duy trì căn hộ thuê trong điều kiện có thể sử dụng được.\n- Nếu có lỗi xảy ra trong thời gian thuê nhà, chủ nhà phải loại bỏ nó."
+#: src/pages/PossibleEntitlements.tsx:122
+msgid ""
+"- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n"
+"- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n"
+"- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
+msgstr ""
 
-msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde."
-msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde."
-
-msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mieter können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag mit einem Jahreshöchstbetrag festgelegt wurde."
-msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mieter können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag mit einem Jahreshöchstbetrag festgelegt wurde."
-
-msgid "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.\n- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
-msgstr "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.\n- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
-
-msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
-msgstr "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
-
-msgid "1. Ansprüche Prüfen"
-msgstr "1. Kiểm tra khiếu nại"
-
-msgid "2. Mögliche Ansprüche"
-msgstr "2. Các khiếu nại có thể"
-
-msgid "3. Nächste Schritte"
-msgstr "3. Các bước tiếp theo"
-
+#: src/data_parser/data.ts:818
 msgid "Annullierung durch die Fluglinie"
-msgstr "Annullierung durch die Fluglinie"
+msgstr ""
 
+#: src/data_parser/data.ts:565
 msgid "Arbeit"
-msgstr "Arbeit"
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:104
 msgid "Aufwendungsersatz"
-msgstr "Hoàn trả chi phí"
+msgstr ""
 
-msgid "Aus Ihren Angaben könnten sich diese Ansprüche ergeben"
-msgstr "Aus Ihren Angaben könnten sich diese Ansprüche ergeben"
-
-msgid "Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-msgstr "Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
-
+#: src/pages/PossibleEntitlements.tsx:37
 msgid "Ausgleichszahlung"
-msgstr "Ausgleichszahlung"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:98
 msgid "Außergerichtliche Einigung"
-msgstr "Außergerichtliche Einigung"
+msgstr ""
 
+#: src/data_parser/data.ts:1215
 msgid "Beförderungs-verweigerung bei Überbuchung"
-msgstr "Beförderungs-verweigerung bei Überbuchung"
+msgstr ""
 
+#: src/data_parser/data.ts:667
 msgid "Bei Verspätungen der Landung unter 3 Stunden haben Sie leider keinen Anspruch auf Ausgleichszahlung. Es kann aber ein Anspruch auf Verpflegung bestehen, zum Beispiel Essen oder Getränke."
-msgstr "Bei Verspätungen der Landung unter 3 Stunden haben Sie leider keinen Anspruch auf Ausgleichszahlung. Es kann aber ein Anspruch auf Verpflegung bestehen, zum Beispiel Essen oder Getränke."
+msgstr ""
 
+#: src/data_parser/data.ts:906
 msgid "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden."
-msgstr "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden."
+msgstr ""
 
-msgid "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden.\nWenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, können Ihnen noch Ansprüche auf Ausgleichszahlung entstehen."
-msgstr "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden.\nWenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, können Ihnen noch Ansprüche auf Ausgleichszahlung entstehen."
+#: src/data_parser/data.ts:987
+msgid ""
+"Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden.\n"
+"Wenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, können Ihnen noch Ansprüche auf Ausgleichszahlung entstehen."
+msgstr ""
 
+#: src/components/shared/MainMenu.tsx:352
 msgid "Beratungsangebote"
-msgstr "Beratungsangebote"
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:73
 msgid "Beseitigung des Mangels durch die Vermieter:in"
-msgstr "Loại bỏ các khiếm khuyết của chủ nhà"
+msgstr ""
 
+#: src/data_parser/data.ts:106
 msgid "Besteht der Schimmel aktuell noch?"
-msgstr "Besteht der Schimmel aktuell noch?"
+msgstr ""
 
-msgid "Betreuungsleistungen (Essen, Getränke & Unterbringung)"
-msgstr "Betreuungsleistungen (Essen, Getränke & Unterbringung)"
+#: src/pages/PossibleEntitlements.tsx:60
+msgid "Betreuungsleistungen"
+msgstr ""
 
-msgid "Da für das gesamte Projekt nur zwölf Wochen zur Verfügung standen, konnte dieser Pfad leider noch nicht implementiert werden."
-msgstr "Vì chỉ có mười hai tuần đã có sẵn cho toàn bộ dự án, con đường này vẫn chưa thể được thực hiện."
-
+#: src/data_parser/data.ts:637
+#: src/data_parser/data.ts:1248
 msgid "Damit Sie Ansprüche für Ihre Buchung geltend machen können, benötigen Sie eine Bestätigung für Ihre Buchung. Das kann eine Bestätigungs-E-Mail sein, eine Rechnung, oder auch Ihr Boarding Pass."
-msgstr "Damit Sie Ansprüche für Ihre Buchung geltend machen können, benötigen Sie eine Bestätigung für Ihre Buchung. Das kann eine Bestätigungs-E-Mail sein, eine Rechnung, oder auch Ihr Boarding Pass."
+msgstr ""
 
-msgid "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz"
-msgstr "Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n- Der Startflughafen liegt in Europa oder der Schweiz\n- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz"
+#: src/data_parser/data.ts:617
+#: src/data_parser/data.ts:831
+#: src/data_parser/data.ts:1228
+msgid ""
+"Damit die EU-Fluggastrechteverordnung gilt, muss einer der folgenden Fälle vorliegen:\n"
+"- Der Startflughafen liegt in Europa oder der Schweiz\n"
+"- Der Zielflughafen liegt in Europa UND das Luftfahrtunternehmen hat den Sitz in der EU oder der Schweiz"
+msgstr ""
 
+#: src/pages/Home.tsx:32
 msgid "Die Justiz im Netz."
-msgstr "Các cơ quan tư pháp trên mạng."
+msgstr ""
 
-msgid "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt."
-msgstr "Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \nEin durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt."
+#: src/data_parser/data.ts:719
+#: src/data_parser/data.ts:875
+#: src/data_parser/data.ts:1312
+msgid ""
+"Die Verordnung gilt nicht, wenn Sie kostenlos oder zu einem nicht öffentlichen Tarif reisen (z.B. mit Mitarbeitertickets). \n"
+"Ein durch ein Werbeprogramm bezahlter Flug (z.B. Bonusmeilen) ist aber abgedeckt."
+msgstr ""
 
+#: src/data_parser/data.ts:109
 msgid "Diese Frage hilft uns, Ihnen die richtigen nächsten Schritte zu empfehlen. Wenn der Mangel noch besteht, erklären wir Ihnen beispielsweise, wie Sie diesen beseitigen lassen können."
-msgstr "Diese Frage hilft uns, Ihnen die richtigen nächsten Schritte zu empfehlen. Wenn der Mangel noch besteht, erklären wir Ihnen beispielsweise, wie Sie diesen beseitigen lassen können."
+msgstr ""
 
+#: src/pages/SolutionExplorer.tsx:127
 msgid "Diese Option ist leider noch nicht verfügbar."
-msgstr "Thật không may, tùy chọn này chưa có sẵn."
+msgstr ""
 
-msgid "Dieser Pfad wurde noch nicht implementiert"
-msgstr "Con đường này vẫn chưa được thực hiện"
-
+#: src/pages/NextSteps.tsx:89
 msgid "Dokumentation des Mangels"
-msgstr "Tài liệu về khiếm khuyết"
+msgstr ""
 
-msgid "Ein **Anspruch auf Ausgleichszahlung** kann bei einer kurzfristigen Annullierung nur bestehen, wenn die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten hat. \nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht."
-msgstr "Ein **Anspruch auf Ausgleichszahlung** kann bei einer kurzfristigen Annullierung nur bestehen, wenn die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten hat. \nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht."
+#: src/data_parser/data.ts:1112
+msgid ""
+"Ein **Anspruch auf Ausgleichszahlung** kann bei einer kurzfristigen Annullierung nur bestehen, wenn die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten hat. \n"
+"Als vergleichbar gilt:\n"
+"- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n"
+"- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht."
+msgstr ""
 
-msgid "Ein Anspruch auf Ausgleichszahlung entsteht erst ab drei Stunden Verspätung am Zielflughafen. Verspätungen beim Start sind dabei irrelevant. \nAls Landezeit gilt der Moment, in dem die Flugzeugtüren geöffnet werden."
-msgstr "Ein Anspruch auf Ausgleichszahlung entsteht erst ab drei Stunden Verspätung am Zielflughafen. Verspätungen beim Start sind dabei irrelevant. \nAls Landezeit gilt der Moment, in dem die Flugzeugtüren geöffnet werden."
+#: src/data_parser/data.ts:657
+msgid ""
+"Ein Anspruch auf Ausgleichszahlung entsteht erst ab drei Stunden Verspätung am Zielflughafen. Verspätungen beim Start sind dabei irrelevant. \n"
+"Als Landezeit gilt der Moment, in dem die Flugzeugtüren geöffnet werden."
+msgstr ""
 
-msgid "Ein Anspruch ist das Recht, ein Verhalten von einer anderen Person zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-msgstr "Yêu cầu bồi thường là quyền yêu cầu hành vi từ người khác. Nhấp vào xác nhận quyền sở hữu để tìm hiểu thêm về chúng."
+#: src/data_parser/data.ts:939
+#: src/data_parser/data.ts:1064
+msgid ""
+"Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n"
+"Vermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
+msgstr ""
 
-msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren."
-msgstr "Yêu cầu bồi thường là quyền yêu cầu một cái gì đó từ một người hoặc công ty khác. Nhấp vào xác nhận quyền sở hữu để tìm hiểu thêm về chúng."
-
-msgid "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
-msgstr "Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
-
-msgid "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
-msgstr "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
-
+#: src/data_parser/data.ts:504
 msgid "Ein anderes Problem"
-msgstr "Ein anderes Problem"
+msgstr ""
 
+#: src/data_parser/data.ts:647
+#: src/data_parser/data.ts:1259
 msgid "Eine Buchungsbestätigung ist notwendig, um Ansprüche aus Ihrem Flug geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie eine Bestätigung in Ihren E-Mails finden, oder bei Ihrem Reisebüro anfragen."
-msgstr "Eine Buchungsbestätigung ist notwendig, um Ansprüche aus Ihrem Flug geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie eine Bestätigung in Ihren E-Mails finden, oder bei Ihrem Reisebüro anfragen."
+msgstr ""
 
+#: src/pages/Home.tsx:33
 msgid "Einfach, online, jederzeit."
-msgstr "Dễ dàng, trực tuyến, bất cứ lúc nào."
+msgstr ""
 
+#: src/data_parser/data.ts:1390
 msgid "Einkaufen"
-msgstr "Einkaufen"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:90
 msgid "Erstberatung"
-msgstr "Erstberatung"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:152
+#: src/pages/NextSteps.tsx:248
 msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
-msgstr "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
+msgstr ""
 
+#: src/data_parser/data.ts:1399
 msgid "Familie"
-msgstr "Familie"
+msgstr ""
 
+#: src/data_parser/data.ts:695
+#: src/data_parser/data.ts:851
+#: src/data_parser/data.ts:1288
 msgid "Fand der Flug innerhalb der letzten drei Jahre statt?"
-msgstr "Fand der Flug innerhalb der letzten drei Jahre statt?"
+msgstr ""
 
+#: src/data_parser/data.ts:588
 msgid "Fluggastrechte"
-msgstr "Fluggastrechte"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:48
 msgid "Fluglinie kontaktieren"
-msgstr "Fluglinie kontaktieren"
+msgstr ""
 
+#: src/data_parser/data.ts:1269
 msgid "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug."
-msgstr "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug."
+msgstr ""
 
-msgid "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug.\\n"
-msgstr "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Ihnen die Beförderung verweigert wurde, obwohl Sie rechtzeitig beim Boarding waren. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 5 Minuten vor Abflug.\\n"
-
+#: src/data_parser/data.ts:677
 msgid "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Sie sich rechtzeitig zum Check-in eingefunden haben. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 45 Minuten vor Abflug."
-msgstr "Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Sie sich rechtzeitig zum Check-in eingefunden haben. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 45 Minuten vor Abflug."
+msgstr ""
 
+#: src/data_parser/data.ts:77
 msgid "Gab es den Schimmel schon bei Unterzeichnung des Mietvertrags?"
-msgstr "Gab es den Schimmel schon bei Unterzeichnung des Mietvertrags?"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:106
 msgid "Gerichtsverfahren"
-msgstr "Gerichtsverfahren"
+msgstr ""
 
-msgid "Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben"
-msgstr "Xong! Các xác nhận quyền sở hữu sau đây có thể là do thông tin của bạn"
-
-msgid "Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern."
-msgstr "Xong! Dựa trên thông tin bạn cung cấp, các khiếu nại pháp lý sau đây có thể\nđi vào câu hỏi cho bạn. Yêu cầu bồi thường là quyền đối với một hành vi cụ thể của người khác\nđể yêu cầu."
-
+#: src/data_parser/data.ts:949
+#: src/data_parser/data.ts:1074
 msgid "Haben Sie Ihre Fluglinie schon aufgefordert, die Flugscheinkosten zu erstatten?"
-msgstr "Haben Sie Ihre Fluglinie schon aufgefordert, die Flugscheinkosten zu erstatten?"
+msgstr ""
 
+#: src/data_parser/data.ts:739
+#: src/data_parser/data.ts:1124
+#: src/data_parser/data.ts:1332
 msgid "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?"
-msgstr "Haben Sie Ihre Fluglinie schon aufgefordert, eine Ausgleichszahlung an Sie zu zahlen und dafür eine realistische Frist gesetzt?"
+msgstr ""
 
+#: src/data_parser/data.ts:1013
 msgid "Haben Sie Ihre Fluglinie schon aufgefordert, eine Zahlung an Sie zu leisten und dafür eine realistische Frist gesetzt?"
-msgstr "Haben Sie Ihre Fluglinie schon aufgefordert, eine Zahlung an Sie zu leisten und dafür eine realistische Frist gesetzt?"
+msgstr ""
 
+#: src/data_parser/data.ts:128
 msgid "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt, um den Schimmel zu entfernen?"
-msgstr "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt, um den Schimmel zu entfernen?"
+msgstr ""
 
+#: src/data_parser/data.ts:116
 msgid "Haben Sie den Schimmel Ihrer Vermieter:in schriftlich gemeldet?"
-msgstr "Haben Sie den Schimmel Ihrer Vermieter:in schriftlich gemeldet?"
+msgstr ""
 
+#: src/data_parser/data.ts:279
+#: src/data_parser/data.ts:360
 msgid "Haben Sie den Schimmel bei Ihrer Vermieter:in angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?"
-msgstr "Haben Sie den Schimmel bei Ihrer Vermieter:in angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?"
+msgstr ""
 
+#: src/data_parser/data.ts:269
 msgid "Haben Sie den Schimmel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?"
-msgstr "Haben Sie den Schimmel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?"
+msgstr ""
 
+#: src/data_parser/data.ts:51
 msgid "Haben Sie den Schimmel verursacht?"
-msgstr "Haben Sie den Schimmel verursacht?"
+msgstr ""
 
+#: src/data_parser/data.ts:905
+#: src/data_parser/data.ts:986
 msgid "Haben Sie ein Angebot für einen Ersatzflug angenommen, oder wurden ihnen die Flugscheinkosten schon vollständig erstattet?"
-msgstr "Haben Sie ein Angebot für einen Ersatzflug angenommen, oder wurden ihnen die Flugscheinkosten schon vollständig erstattet?"
+msgstr ""
 
+#: src/data_parser/data.ts:717
+#: src/data_parser/data.ts:873
+#: src/data_parser/data.ts:1310
 msgid "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?"
-msgstr "Haben Sie ein Ticket gekauft und selbst oder mit Bonusmeilen bezahlt?"
+msgstr ""
 
+#: src/data_parser/data.ts:636
+#: src/data_parser/data.ts:1247
 msgid "Haben Sie eine Bestätigung für Ihre Buchung?"
-msgstr "Haben Sie eine Bestätigung für Ihre Buchung?"
+msgstr ""
 
+#: src/data_parser/data.ts:924
+#: src/data_parser/data.ts:1049
 msgid "Haben Sie einen Zahlungsbeweis für Ihren Flugschein?"
-msgstr "Haben Sie einen Zahlungsbeweis für Ihren Flugschein?"
+msgstr ""
 
+#: src/pages/Home.tsx:97
 msgid "Handlungsoptionen vergleichen"
-msgstr "So sánh các tùy chọn cho hành động"
+msgstr ""
 
+#: src/data_parser/data.ts:1146
 msgid "Hat Ihre Fluglinie außergewöhnliche Umstände für die Annullierung genannt, die Sie nicht vermeiden konnte?"
-msgstr "Hat Ihre Fluglinie außergewöhnliche Umstände für die Annullierung genannt, die Sie nicht vermeiden konnte?"
+msgstr ""
 
+#: src/data_parser/data.ts:759
 msgid "Hat Ihre Fluglinie außergewöhnliche Umstände für die Verspätung genannt, die Sie nicht vermeiden konnte?"
-msgstr "Hat Ihre Fluglinie außergewöhnliche Umstände für die Verspätung genannt, die Sie nicht vermeiden konnte?"
+msgstr ""
 
+#: src/data_parser/data.ts:486
 msgid "Heizungsausfall"
-msgstr "Heizungsausfall"
+msgstr ""
 
+#: src/data_parser/data.ts:1193
 msgid "Ihr Flug wurde kurzfristig storniert, aber Ihnen wurde ein alternativer vergleichbarer Flug  angeboten. Da Sie diesen angenommen haben, oder Ihnen bereits die Kosten des Flugscheins zurückerstattet wurden, liegen vermutlich keine weiteren Ansprüche vor."
-msgstr "Ihr Flug wurde kurzfristig storniert, aber Ihnen wurde ein alternativer vergleichbarer Flug  angeboten. Da Sie diesen angenommen haben, oder Ihnen bereits die Kosten des Flugscheins zurückerstattet wurden, liegen vermutlich keine weiteren Ansprüche vor."
+msgstr ""
 
+#: src/pages/SolutionExplorer.tsx:104
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
-msgstr "Bạn có vấn đề trong lĩnh vực nào trong cuộc sống của bạn?"
+msgstr ""
 
+#: src/pages/SolutionExplorer.tsx:182
 msgid "Info"
-msgstr "Thông tin"
+msgstr ""
 
+#: src/data_parser/data.ts:140
 msgid "Ist die Frist zur Mängelbeseitigung schon abgelaufen?"
-msgstr "Ist die Frist zur Mängelbeseitigung schon abgelaufen?"
+msgstr ""
 
+#: src/data_parser/data.ts:616
+#: src/data_parser/data.ts:830
+#: src/data_parser/data.ts:1227
 msgid "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?"
-msgstr "Ist ihr Flug in der EU/Schweiz gestartet, oder sind Sie mit einer EU-Fluglinie in der EU/Schweiz gelandet?"
+msgstr ""
 
+#: src/pages/SolutionExplorer.tsx:158
 msgid "Ja"
-msgstr "Có"
+msgstr ""
 
+#: src/pages/Home.tsx:48
+#: src/pages/Home.tsx:134
 msgid "Jetzt starten!"
-msgstr "Bắt đầu ngay bây giờ"
+msgstr ""
 
+#: src/data_parser/data.ts:545
 msgid "Kündigung"
-msgstr "Kündigung"
+msgstr ""
 
+#: src/data_parser/data.ts:731
+#: src/data_parser/data.ts:887
+#: src/data_parser/data.ts:1324
 msgid "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung, da Sie kein reguläres Ticket gekauft haben. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
-msgstr "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung, da Sie kein reguläres Ticket gekauft haben. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
+msgstr ""
 
+#: src/data_parser/data.ts:627
+#: src/data_parser/data.ts:842
+#: src/data_parser/data.ts:1238
 msgid "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
-msgstr "Leider fällt Ihr Flug nicht in den Anwendungsbereich der EU-Fluggastrechteverordnung. Deshalb können Sie über das Portal keine Ansprüche geltend machen."
+msgstr ""
 
+#: src/data_parser/data.ts:449
 msgid "Lärm"
-msgstr "Lärm"
+msgstr ""
 
+#: src/components/shared/MainMenu.tsx:348
+#: src/pages/SolutionExplorer.tsx:83
 msgid "Lösungsfinder"
-msgstr "Công cụ tìm giải pháp"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:130
+#: src/pages/NextSteps.tsx:226
+#: src/pages/PossibleEntitlements.tsx:163
 msgid "Mehr erfahren"
-msgstr "Mehr erfahren"
+msgstr ""
 
+#: src/data_parser/data.ts:517
 msgid "Mieterhöhung"
-msgstr "Mieterhöhung"
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:87
 msgid "Mietminderung"
-msgstr "Giảm tiền thuê"
+msgstr ""
 
+#: src/data_parser/data.ts:526
 msgid "Mietpreisbremse"
-msgstr "Mietpreisbremse"
+msgstr ""
 
+#: src/data_parser/data.ts:22
 msgid "Mängel in der Wohnung"
-msgstr "Mängel in der Wohnung"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:105
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
-msgstr "Thông báo khuyết tật cho chủ nhà của bạn"
+msgstr ""
 
+#: src/components/shared/StaticProgress.tsx:30
 msgid "Mögliche Ansprüche"
-msgstr "Mögliche Ansprüche"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:75
+#: src/pages/PossibleEntitlements.tsx:132
 msgid "Mögliche Lösungen"
-msgstr "Mögliche Lösungen"
+msgstr ""
 
+#: src/data_parser/data.ts:554
 msgid "Nebenkosten-abrechnung"
-msgstr "Nebenkosten-abrechnung"
+msgstr ""
 
+#: src/pages/SolutionExplorer.tsx:161
 msgid "Nein"
-msgstr "Không"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:110
 msgid "Nur kostenlose Angebote anzeigen"
-msgstr "Nur kostenlose Angebote anzeigen"
+msgstr ""
 
+#: src/components/shared/StaticProgress.tsx:32
+#: src/pages/ZPOInformation.tsx:293
 msgid "Nächste Schritte"
-msgstr "Nächste Schritte"
+msgstr ""
 
+#: src/pages/Home.tsx:108
+#: src/pages/NextSteps.tsx:149
 msgid "Online Klage einreichen"
-msgstr "Tộp đơn kiện trực tuyến"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:199
 msgid "Optionen"
-msgstr "Optionen"
+msgstr ""
 
+#: src/components/shared/StaticProgress.tsx:28
 msgid "Problem einordnen"
-msgstr "Problem einordnen"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:174
 msgid "Rechtlich beraten lassen"
-msgstr "Nhận tư vấn pháp lý"
+msgstr ""
 
+#: src/pages/Home.tsx:79
 msgid "Rechtsproblem einordnen"
-msgstr "Phân loại vấn đề pháp lý"
+msgstr ""
 
+#: src/data_parser/data.ts:575
 msgid "Reisen & Verkehr"
-msgstr "Reisen & Verkehr"
+msgstr ""
 
+#: src/data_parser/data.ts:535
 msgid "Renovierung bei Auszug"
-msgstr "Renovierung bei Auszug"
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:49
 msgid "Rückerstattung der Flugscheinkosten"
-msgstr "Rückerstattung der Flugscheinkosten"
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:117
 msgid "Schadensersatz"
-msgstr "Thiệt hại"
+msgstr ""
 
+#: src/data_parser/data.ts:39
 msgid "Schimmel"
-msgstr "Schimmel"
+msgstr ""
 
-msgid "Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nicht  verantwortlich sind. Allerdings kann auch seltenes Lüften und Heizen oder das Trocknen von Wäsche zu Schimmel führen.\nWenn Sie durch Ihr Verhalten den Schimmel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen ihre Vermieter:in."
-msgstr "Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nicht  verantwortlich sind. Allerdings kann auch seltenes Lüften und Heizen oder das Trocknen von Wäsche zu Schimmel führen.\nWenn Sie durch Ihr Verhalten den Schimmel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen ihre Vermieter:in."
+#: src/data_parser/data.ts:52
+msgid ""
+"Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nicht  verantwortlich sind. Allerdings kann auch seltenes Lüften und Heizen oder das Trocknen von Wäsche zu Schimmel führen.\n"
+"Wenn Sie durch Ihr Verhalten den Schimmel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen ihre Vermieter:in."
+msgstr ""
 
+#: src/pages/NextSteps.tsx:69
 msgid "Schlichtungsantrag stellen"
-msgstr "Schlichtungsantrag stellen"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:222
 msgid "Schritt"
-msgstr "Schritt"
+msgstr ""
 
+#: src/data_parser/data.ts:153
 msgid "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen, und zum Beispiel den Mangel selbst beseitigen."
-msgstr "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen, und zum Beispiel den Mangel selbst beseitigen."
+msgstr ""
 
-msgid "Sie haben angegeben, dass die Kosten für Ihren Flug noch nicht erstattet wurden. Um einen Anspruch auf Rückerstattung durchsetzen zu können, müssen Sie einen Zahlungsbeleg vorweisen können. Dazu zählen beispielsweise:\n- Zahlungsbestätigung der Fluglinie\n- Kontoauszug mit der Zahlung\n- Kreditkartenabrechnung mit der Zahlung"
-msgstr "Sie haben angegeben, dass die Kosten für Ihren Flug noch nicht erstattet wurden. Um einen Anspruch auf Rückerstattung durchsetzen zu können, müssen Sie einen Zahlungsbeleg vorweisen können. Dazu zählen beispielsweise:\n- Zahlungsbestätigung der Fluglinie\n- Kontoauszug mit der Zahlung\n- Kreditkartenabrechnung mit der Zahlung"
+#: src/data_parser/data.ts:925
+#: src/data_parser/data.ts:1050
+msgid ""
+"Sie haben angegeben, dass die Kosten für Ihren Flug noch nicht erstattet wurden. Um einen Anspruch auf Rückerstattung durchsetzen zu können, müssen Sie einen Zahlungsbeleg vorweisen können. Dazu zählen beispielsweise:\n"
+"- Zahlungsbestätigung der Fluglinie\n"
+"- Kontoauszug mit der Zahlung\n"
+"- Kreditkartenabrechnung mit der Zahlung"
+msgstr ""
 
-msgid "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Annullierung nicht vermeiden konnte. \nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements"
-msgstr "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Annullierung nicht vermeiden konnte. \nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements"
+#: src/data_parser/data.ts:1148
+msgid ""
+"Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Annullierung nicht vermeiden konnte. \n"
+"Beispiele für außergewöhnliche Umstände sind:\n"
+"- politische Instabilität\n"
+"- starkes Unwetter\n"
+"- Sicherheitsrisiken\n"
+"- Unerwartete Mängel am Flugzeug\n"
+"- Streik am Flughafen\n"
+"- Entscheidungen des Flugverkehrsmanagements"
+msgstr ""
 
-msgid "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Verspätung nicht vermeiden konnte. \nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements"
-msgstr "Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Verspätung nicht vermeiden konnte. \nBeispiele für außergewöhnliche Umstände sind:\n- politische Instabilität\n- starkes Unwetter\n- Sicherheitsrisiken\n- Unerwartete Mängel am Flugzeug\n- Streik am Flughafen\n- Entscheidungen des Flugverkehrsmanagements"
+#: src/data_parser/data.ts:761
+msgid ""
+"Sie haben nur eine realistische Aussicht auf eine Ausgleichszahlung, wenn Ihre Fluglinie die Verspätung nicht vermeiden konnte. \n"
+"Beispiele für außergewöhnliche Umstände sind:\n"
+"- politische Instabilität\n"
+"- starkes Unwetter\n"
+"- Sicherheitsrisiken\n"
+"- Unerwartete Mängel am Flugzeug\n"
+"- Streik am Flughafen\n"
+"- Entscheidungen des Flugverkehrsmanagements"
+msgstr ""
 
-msgid "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. Der genaue Tag und Monat spielen dabei keine Rolle.\nBeispiel: Im Jahr 2021 sind alle Flüge ab dem 1.1.2018 von der Verordnung abgedeckt."
-msgstr "Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. Der genaue Tag und Monat spielen dabei keine Rolle.\nBeispiel: Im Jahr 2021 sind alle Flüge ab dem 1.1.2018 von der Verordnung abgedeckt."
+#: src/data_parser/data.ts:697
+#: src/data_parser/data.ts:853
+#: src/data_parser/data.ts:1290
+msgid ""
+"Sie können Ihre Ansprüche nur durchsetzen, wenn der Flug innerhalb der letzten drei Jahre stattfand. Der genaue Tag und Monat spielen dabei keine Rolle.\n"
+"Beispiel: Im Jahr 2021 sind alle Flüge ab dem 1.1.2018 von der Verordnung abgedeckt."
+msgstr ""
 
-msgid "Solution Explorer"
-msgstr "Solution Explorer"
-
+#: src/components/shared/MainMenu.tsx:344
 msgid "Startseite"
-msgstr "Startseite"
+msgstr ""
 
+#: src/data_parser/data.ts:495
 msgid "Stromausfall"
-msgstr "Stromausfall"
+msgstr ""
 
+#: src/pages/Home.tsx:54
 msgid "Unser Angebot"
-msgstr "Đề nghị của chúng tôi"
+msgstr ""
 
+#: src/data_parser/data.ts:1379
 msgid "Verkehrsunfall"
-msgstr "Verkehrsunfall"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:129
 msgid "Vermieter:in erneut kontaktieren"
-msgstr "Vermieter:in erneut kontaktieren"
+msgstr ""
 
+#: src/data_parser/data.ts:950
+#: src/data_parser/data.ts:1075
 msgid "Vermutlich haben Sie einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden. Ist das noch nicht geschehen, sollten Sie Ihre Fluglinie zunächst selbst zur Zahlung auffordern. Dabei können wir Ihnen helfen."
-msgstr "Vermutlich haben Sie einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden. Ist das noch nicht geschehen, sollten Sie Ihre Fluglinie zunächst selbst zur Zahlung auffordern. Dabei können wir Ihnen helfen."
+msgstr ""
 
+#: src/data_parser/data.ts:603
 msgid "Verspätung"
-msgstr "Verspätung"
+msgstr ""
 
+#: src/data_parser/data.ts:655
 msgid "War ihre Landung um mindestens drei Stunden verspätet?"
-msgstr "War ihre Landung um mindestens drei Stunden verspätet?"
+msgstr ""
 
+#: src/data_parser/data.ts:676
 msgid "Waren Sie rechtzeitig am Check-in (mindestens 45 Minuten vor dem Start)?"
-msgstr "Waren Sie rechtzeitig am Check-in (mindestens 45 Minuten vor dem Start)?"
+msgstr ""
 
+#: src/data_parser/data.ts:1268
 msgid "Waren Sie rechtzeitig beim Boarding (mindestens 5 Minuten vor dem Start)?"
-msgstr "Waren Sie rechtzeitig beim Boarding (mindestens 5 Minuten vor dem Start)?"
+msgstr ""
 
+#: src/data_parser/data.ts:467
 msgid "Wasserschaden"
-msgstr "Wasserschaden"
+msgstr ""
 
-msgid "Weiter"
-msgstr "Tiếp"
-
+#: src/data_parser/data.ts:427
 msgid "Wenn Ihnen durch den Mangel keine Kosten oder Schäden entstanden sind, Sie keine Mietminderung angekündigt haben und der Mangel bereits behoben wurde, haben Sie vermutlich keine weiteren rechtlichen Ansprüche."
-msgstr "Wenn Ihnen durch den Mangel keine Kosten oder Schäden entstanden sind, Sie keine Mietminderung angekündigt haben und der Mangel bereits behoben wurde, haben Sie vermutlich keine weiteren rechtlichen Ansprüche."
+msgstr ""
 
+#: src/data_parser/data.ts:897
 msgid "Wenn Ihr Flug kurzfristig annulliert wurde, können Ihnen zusätzliche Ansprüche entstehen, beispielsweise auf Ausgleichszahlung."
-msgstr "Wenn Ihr Flug kurzfristig annulliert wurde, können Ihnen zusätzliche Ansprüche entstehen, beispielsweise auf Ausgleichszahlung."
+msgstr ""
 
+#: src/data_parser/data.ts:708
+#: src/data_parser/data.ts:864
+#: src/data_parser/data.ts:1301
 msgid "Wenn Ihr Flug vor über drei Jahren stattgefunden hat, ist Ihr Anspruch vermutlich verjährt. Daher können wir Ihnen nicht weiterhelfen."
-msgstr "Wenn Ihr Flug vor über drei Jahren stattgefunden hat, ist Ihr Anspruch vermutlich verjährt. Daher können wir Ihnen nicht weiterhelfen."
+msgstr ""
 
+#: src/data_parser/data.ts:789
+msgid ""
+"Wenn Ihre  Fluglinie außergewöhnliche Umstände für Ihre Verspätung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\n"
+"Wenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/zivil-prozess-info)."
+msgstr ""
+
+#: src/data_parser/data.ts:1165
+msgid ""
+"Wenn Ihre  Fluglinie außergewöhnliche Umstände für die Annullierung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\n"
+"Wenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/zivil-prozess-info)."
+msgstr ""
+
+#: src/data_parser/data.ts:272
 msgid "Wenn Ihre Vermieter:in auch nach Aufforderung und Ablauf einer realistischen Frist den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
-msgstr "Wenn Ihre Vermieter:in auch nach Aufforderung und Ablauf einer realistischen Frist den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
+msgstr ""
 
-msgid "Wenn Ihre  Fluglinie außergewöhnliche Umstände für Ihre Verspätung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\nWenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/klage-einreichen)."
-msgstr "Wenn Ihre  Fluglinie außergewöhnliche Umstände für Ihre Verspätung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\nWenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/klage-einreichen)."
-
-msgid "Wenn Ihre  Fluglinie außergewöhnliche Umstände für die Annullierung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\nWenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/klage-einreichen)."
-msgstr "Wenn Ihre  Fluglinie außergewöhnliche Umstände für die Annullierung nennt, ist es schwer abzuschätzen, ob ein Anspruch auf Ausgleichszahlung vorliegt. Nicht immer sind die genannten Gründe gerechtfertigt. Um das zu prüfen, können Sie sich zum Beispiel [von einer Expert:in beraten lassen](/beratungsangebote).\nWenn Sie Ihren Fall von einer Richter:in entscheiden lassen möchten, können Sie auch klagen. [Hier informieren wir Sie, wie Sie eine Klage einreichen können](/klage-einreichen)."
-
+#: src/data_parser/data.ts:143
 msgid "Wenn Sie Ihrer Vermieter:in eine realistische Frist gesetzt haben, müssen Sie ihr zunächst bis dahin Zeit für die Beseitigung geben. Danach haben Sie zusätzliche rechtliche Ansprüche."
-msgstr "Wenn Sie Ihrer Vermieter:in eine realistische Frist gesetzt haben, müssen Sie ihr zunächst bis dahin Zeit für die Beseitigung geben. Danach haben Sie zusätzliche rechtliche Ansprüche."
+msgstr ""
 
+#: src/data_parser/data.ts:282
+#: src/data_parser/data.ts:362
 msgid "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen."
-msgstr "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen."
+msgstr ""
 
-msgid "Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung gesetzt haben. In der Regel sollten 2-3 Wochen ausreichen, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \nWenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
-msgstr "Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung gesetzt haben. In der Regel sollten 2-3 Wochen ausreichen, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \nWenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
+#: src/data_parser/data.ts:131
+msgid ""
+"Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung gesetzt haben. In der Regel sollten 2-3 Wochen ausreichen, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \n"
+"Wenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
+msgstr ""
 
-msgid "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Eine Ausnahme ist, wenn Versicherungen für den Eintritt eines Mangels bestehen. Zahlen Sie über Ihre Betriebskosten zum Beispiel eine Gebäudeversicherung mit, dann muss diese bei Schäden zahlen. \nIn jedem Fall sollten Sie Ihre Vermieter:in kontaktieren, damit der Mangel beseitigt werden kann. [Nutzen Sie dafür die Vorlage unserer Mängelanzeige](/formular?mangelanzeige&mangelart=schimmel)."
-msgstr "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Eine Ausnahme ist, wenn Versicherungen für den Eintritt eines Mangels bestehen. Zahlen Sie über Ihre Betriebskosten zum Beispiel eine Gebäudeversicherung mit, dann muss diese bei Schäden zahlen. \nIn jedem Fall sollten Sie Ihre Vermieter:in kontaktieren, damit der Mangel beseitigt werden kann. [Nutzen Sie dafür die Vorlage unserer Mängelanzeige](/formular?mangelanzeige&mangelart=schimmel)."
+#: src/data_parser/data.ts:66
+msgid ""
+"Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Eine Ausnahme ist, wenn Versicherungen für den Eintritt eines Mangels bestehen. Zahlen Sie über Ihre Betriebskosten zum Beispiel eine Gebäudeversicherung mit, dann muss diese bei Schäden zahlen. \n"
+"In jedem Fall sollten Sie Ihre Vermieter:in kontaktieren, damit der Mangel beseitigt werden kann. [Nutzen Sie dafür die Vorlage unserer Mängelanzeige](/formular?mangelanzeige&mangelart=schimmel)."
+msgstr ""
 
-msgid "Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \nAnders ist die Situation, wenn der Mangel erst später entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurde."
-msgstr "Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \nAnders ist die Situation, wenn der Mangel erst später entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurde."
+#: src/data_parser/data.ts:78
+msgid ""
+"Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \n"
+"Anders ist die Situation, wenn der Mangel erst später entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurde."
+msgstr ""
 
-msgid "Wenn Sie einen Zahlungsbeweis für Ihren Flug haben, können Sie vermutlich einen **Anspruch auf Rückerstattung der Flugscheinkosten** durchsetzen.\nZusätzlich kann ein **Anspruch auf Ausgleichszahlung** wegen kurzfristiger Annullierung bestehen. Dafür muss die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten haben. \nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht."
-msgstr "Wenn Sie einen Zahlungsbeweis für Ihren Flug haben, können Sie vermutlich einen **Anspruch auf Rückerstattung der Flugscheinkosten** durchsetzen.\nZusätzlich kann ein **Anspruch auf Ausgleichszahlung** wegen kurzfristiger Annullierung bestehen. Dafür muss die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten haben. \nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht."
+#: src/data_parser/data.ts:999
+msgid ""
+"Wenn Sie einen Zahlungsbeweis für Ihren Flug haben, können Sie vermutlich einen **Anspruch auf Rückerstattung der Flugscheinkosten** durchsetzen.\n"
+"Zusätzlich kann ein **Anspruch auf Ausgleichszahlung** wegen kurzfristiger Annullierung bestehen. Dafür muss die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten haben. \n"
+"Als vergleichbar gilt:\n"
+"- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n"
+"- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht."
+msgstr ""
 
+#: src/data_parser/data.ts:1279
 msgid "Wenn Sie nicht rechtzeitig beim Boarding waren, haben Sie vermutlich keinen Anspruch auf Ausgleichszahlung."
-msgstr "Wenn Sie nicht rechtzeitig beim Boarding waren, haben Sie vermutlich keinen Anspruch auf Ausgleichszahlung."
+msgstr ""
 
+#: src/data_parser/data.ts:686
 msgid "Wenn Sie nicht rechtzeitig beim Check-in waren, haben Sie vermutlich keinen Anspruch auf eine Ausgleichszahlung."
-msgstr "Wenn Sie nicht rechtzeitig beim Check-in waren, haben Sie vermutlich keinen Anspruch auf eine Ausgleichszahlung."
+msgstr ""
 
-msgid "Wenn Sie sich über Ihre Ansprüche informiert haben, zeigen wir Ihnen, \nwie Sie diese durchsetzen können. Klicken Sie dafür einfach auf Weiter."
-msgstr "Sau khi bạn đã được thông báo về các yêu cầu của mình, chúng tôi sẽ chỉ cho bạn \nlàm thế nào bạn có thể thực thi chúng. Chỉ cần nhấp vào Tiếp theo để làm như vậy."
-
+#: src/data_parser/data.ts:916
 msgid "Wenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, oder die Flugscheinkosten schon erstattet wurden, haben Sie vermutlich keine weiteren Ansprüche, da Ihr Flug nicht kurzfristig annulliert wurde."
-msgstr "Wenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, oder die Flugscheinkosten schon erstattet wurden, haben Sie vermutlich keine weiteren Ansprüche, da Ihr Flug nicht kurzfristig annulliert wurde."
+msgstr ""
 
-msgid "Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu.\nZunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
-msgstr "Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu.\nZunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+#: src/data_parser/data.ts:1125
+msgid ""
+"Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu.\n"
+"Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+msgstr ""
 
-msgid "Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu. Eine Ausnahme sind außergewöhnliche Umstände, bei denen die Fluglinie die Annullierung nicht vermeiden konnte.\nZusätzlich haben Sie vermutlich einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden.\nZunächst sollten Sie Ihre Fluglinie selbst auffordern, die Zahlungen an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
-msgstr "Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu. Eine Ausnahme sind außergewöhnliche Umstände, bei denen die Fluglinie die Annullierung nicht vermeiden konnte.\nZusätzlich haben Sie vermutlich einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden.\nZunächst sollten Sie Ihre Fluglinie selbst auffordern, die Zahlungen an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+#: src/data_parser/data.ts:1014
+msgid ""
+"Wenn bei einer kurzfristigen Annullierung kein vergleichbarer Flug angeboten wurde, steht Ihnen vermutlich eine Ausgleichszahlung zu. Eine Ausnahme sind außergewöhnliche Umstände, bei denen die Fluglinie die Annullierung nicht vermeiden konnte.\n"
+"Zusätzlich haben Sie vermutlich einen Anspruch auf Erstattung der Flugscheinkosten. Die Kosten sollten innerhalb von sieben Tagen nach Annullierung erstattet werden.\n"
+"Zunächst sollten Sie Ihre Fluglinie selbst auffordern, die Zahlungen an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+msgstr ""
 
-msgid "Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis zu haben.\nWenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
-msgstr "Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis zu haben.\nWenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+#: src/data_parser/data.ts:119
+msgid ""
+"Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis zu haben.\n"
+"Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+msgstr ""
 
+#: src/data_parser/data.ts:97
 msgid "Wenn der Mangel schon bei Vertragsschluss bekannt war, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit Ihrer Vermieter:in suchen."
-msgstr "Wenn der Mangel schon bei Vertragsschluss bekannt war, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit Ihrer Vermieter:in suchen."
+msgstr ""
 
-msgid "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
-msgstr "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
+#: src/data_parser/data.ts:164
+#: src/data_parser/data.ts:200
+#: src/data_parser/data.ts:236
+#: src/data_parser/data.ts:292
+#: src/data_parser/data.ts:327
+#: src/data_parser/data.ts:371
+#: src/data_parser/data.ts:406
+msgid ""
+"Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\n"
+"Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
+msgstr ""
 
+#: src/pages/Home.tsx:50
 msgid "Wie es funktioniert"
-msgstr "Cách hoạt động"
+msgstr ""
 
-msgid "Wobei benötigen Sie Unterstützung?"
-msgstr "Wobei benötigen Sie Unterstützung?"
-
+#: src/pages/Home.tsx:122
 msgid "Wobei können wir Ihnen helfen?"
-msgstr "Chúng tôi có thể giúp gì cho bạn?"
+msgstr ""
 
+#: src/data_parser/data.ts:14
 msgid "Wohnen"
-msgstr "Wohnen"
+msgstr ""
 
+#: src/data_parser/data.ts:998
+#: src/data_parser/data.ts:1111
 msgid "Wurde Ihnen ein alternativer Flug angeboten, mit dem Sie Ihr Ziel nur wenige Stunden später erreichen konnten?"
-msgstr "Wurde Ihnen ein alternativer Flug angeboten, mit dem Sie Ihr Ziel nur wenige Stunden später erreichen konnten?"
+msgstr ""
 
+#: src/data_parser/data.ts:895
 msgid "Wurde Ihr Flug weniger als zwei Wochen vor dem Abflug annulliert?"
-msgstr "Wurde Ihr Flug weniger als zwei Wochen vor dem Abflug annulliert?"
+msgstr ""
 
+#: src/data_parser/data.ts:161
+#: src/data_parser/data.ts:197
+#: src/data_parser/data.ts:233
+#: src/data_parser/data.ts:289
+#: src/data_parser/data.ts:325
+#: src/data_parser/data.ts:370
+#: src/data_parser/data.ts:404
 msgid "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?"
-msgstr "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?"
+msgstr ""
 
-msgid "Zu den Beratungsangeboten"
-msgstr "Đi đến các dịch vụ tư vấn"
+#: src/pages/ZPOInformation.tsx:170
+msgid "ZPO Informationen"
+msgstr ""
 
+#: src/pages/disclaimer.tsx:147
 msgid "Zum Prototypen"
-msgstr "Để nguyên mẫu"
+msgstr ""
 
+#: src/data_parser/data.ts:740
+#: src/data_parser/data.ts:1333
 msgid "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
-msgstr "Zunächst sollten Sie Ihre Fluglinie selbst auffordern, eine Ausgleichszahlung an Sie zu leisten. Wenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+msgstr ""
 
+#: src/pages/ExitJourney.tsx:45
 msgid "Zurück"
-msgstr "Quay lại"
+msgstr ""
 
+#: src/pages/ExitJourney.tsx:47
 msgid "Zurück zur Homepage"
-msgstr "Zurück zur Homepage"
+msgstr ""
 
-msgid "Zweites Schreiben an die Vermieter:in senden"
-msgstr "Thư thứ hai gửi chủ nhà vào"
-
+#: src/components/shared/NavigationButtons.tsx:19
+#: src/pages/PossibleEntitlements.tsx:189
 msgid "back"
-msgstr "Zurück"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:77
 msgid "consultation.header"
-msgstr "Beratungsangebote"
+msgstr ""
 
+#: src/pages/ConsultationOffers.tsx:80
 msgid "consultation.sub_header"
-msgstr "Wobei benötigen Sie Unterstützung?"
+msgstr ""
 
+#: src/pages/ExitJourney.tsx:34
 msgid "exit.footer"
-msgstr "Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt."
+msgstr ""
 
+#: src/pages/ExitJourney.tsx:25
 msgid "exit.heading"
-msgstr "Leider haben wir ihren Fall nicht abgedeckt"
+msgstr ""
 
-msgid "footer.disclaimer"
-msgstr "Trang này là một nguyên mẫu không đảm bảo sự chắc chắn về pháp lý!"
-
-msgid "footer.info"
-msgstr "Bạn có thể tìm thêm thông tin về trang này tại đây"
-
-msgid "footer.text"
-msgstr "Được xây dựng bởi ⚖️ và 🐌 với ❤️"
-
+#: src/components/shared/NavigationButtons.tsx:32
 msgid "forward"
-msgstr "Weiter"
+msgstr ""
 
+#: src/pages/Home.tsx:55
 msgid "home.hero_offer"
-msgstr "Justizportal.de là một lời đề nghị của Bộ Tư pháp Liên bang và Bảo vệ người tiêu dùng hợp tác với các bộ tư pháp liên bang ở các tiểu bang liên bang. Cổng thông tin cung cấp cho bạn một cái nhìn tổng quan về quyền của bạn trong các tình huống hàng ngày khác nhau. Nó cũng giúp bạn phân loại và giải quyết các câu hỏi và vấn đề pháp lý của bạn. Bạn sẽ được thông báo về các lựa chọn hành động của bạn và sẽ được hỗ trợ trong việc khẳng định quyền của bạn."
+msgstr ""
 
+#: src/pages/Home.tsx:87
 msgid "home.howitwork_claims"
-msgstr "Sau đó, chúng tôi sẽ giúp bạn đánh giá những xác nhận quyền sở hữu nào có thể tồn tại trong trường hợp của bạn. Khiếu nại là quyền yêu cầu một hành động cụ thể từ người khác (ví dụ như thanh toán thiệt hại), để chịu đựng (ví dụ như cho thuê lại một căn hộ) hoặc để kiềm chế (ví dụ như nhập vào một tài sản). invidunt ut labore."
+msgstr ""
 
+#: src/pages/Home.tsx:80
 msgid "home.howitwork_classify"
-msgstr "Trước tiên, chúng tôi sẽ giúp bạn làm rõ liệu có vấn đề pháp lý trong trường hợp của bạn hay không. Chúng tôi sẽ cho bạn thấy thông tin phù hợp với trường hợp của bạn."
+msgstr ""
 
+#: src/pages/Home.tsx:69
 msgid "home.howitwork_heading"
-msgstr "Cách hoạt động"
+msgstr ""
 
+#: src/pages/Home.tsx:109
 msgid "home.howitwork_lawsuit"
-msgstr "Khi tất cả các lựa chọn khác đã hết, chúng tôi sẽ giúp bạn nộp đơn khiếu nại với tòa án quận trực tuyến. Để đạt được điều này, chúng tôi giải thích quá trình của quá trình trực tuyến của chúng tôi cho bạn và cung cấp thông tin minh bạch về các chi phí của thủ tục tố tụng pháp lý cũng như các tư vấn pháp lý có thể."
+msgstr ""
 
+#: src/pages/Home.tsx:100
 msgid "home.howitwork_options"
-msgstr "Dựa trên điều này, chúng tôi sẽ đề xuất các giải pháp có thể <0> cho bạn - ban đầu cho một giải quyết tranh chấp thân thiện với phía đối diện. </0>"
+msgstr ""
 
+#: src/pages/Home.tsx:72
 msgid "home.howitwork_subheading"
-msgstr "Chúng tôi có thể giúp bạn giải quyết vấn đề pháp lý của mình bằng bốn bước đơn giản:"
+msgstr ""
 
+#: src/pages/Home.tsx:125
 msgid "home.howtohelp_footer"
-msgstr "Bạn có thể tìm hiểu thêm về các vấn đề pháp lý mà chúng tôi có thể giúp bạn trên các trang sau đây."
+msgstr ""
 
+#: src/pages/Home.tsx:36
 msgid "home.sub_heading"
-msgstr "Chúng tôi thông báo cho bạn về quyền lợi của bạn trong cuộc sống hàng ngày và giúp bạn giải quyết vấn đề pháp lý của bạn trong các bước đơn giản"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:202
 msgid "nextsteps.header"
-msgstr "Các bước tiếp theo có thể của bạn để giải quyết vấn đề"
+msgstr ""
 
+#: src/pages/NextSteps.tsx:205
 msgid "nextsteps.sub_header"
-msgstr "Chúng tôi đã tóm tắt các bước có thể để bạn thực thi khiếu nại của mình tại đây. Nhấp vào từng hộp một để tìm hiểu thêm và nhận được hỗ trợ."
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:135
 msgid "pe.header"
-msgstr "Mögliche rechtliche Ansprüche"
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:139
 msgid "pe.sub_header"
-msgstr "Aus Ihren Angaben könnten sich die folgenden Ansprüche ergeben. Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Dabei können Sie auch mehrere Ansprüche gleichzeitig durchsetzen. \nKlicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte."
+msgstr ""
 
+#: src/pages/PossibleEntitlements.tsx:196
 msgid "pe.to_next_steps"
-msgstr "Zu den nächsten Schritten"
+msgstr ""
 
+#: src/pages/ZPOInformation.tsx:296
+msgid "zpo.nextsteps"
+msgstr ""
+
+#: src/pages/Home.tsx:86
 msgid "Über Ansprüche informieren"
-msgstr "Thông báo về khiếu nại"
-
-msgid "Über das Justizportal eine Klage einreichen"
-msgstr "Nộp đơn yêu cầu bồi thường qua cổng thông tin tư pháp"
+msgstr ""
