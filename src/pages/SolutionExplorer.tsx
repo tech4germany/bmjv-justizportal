@@ -1,15 +1,15 @@
 import {
-  useToast,
+  Flex,
+  GridItem,
   HStack,
   IconButton,
-  SimpleGrid,
-  Flex,
-  VStack,
-  RadioGroup,
   Radio,
+  RadioGroup,
+  SimpleGrid,
   Spacer,
   Text,
-  GridItem,
+  useToast,
+  VStack,
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
@@ -25,7 +25,6 @@ import { StatsCard } from '../components/shared/StatsCard';
 import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
-import spacing from '../theme/foundations/spacing';
 
 interface FeatureProps {
   id: string | null;

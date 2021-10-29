@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
-import { FaMoneyBill, FaMoneyCheck, FaMugHot, FaReceipt, FaTools } from 'react-icons/fa';
+import { FaMoneyBill, FaMoneyCheck, FaMugHot, FaReceipt } from 'react-icons/fa';
 import { FiTrendingDown } from 'react-icons/fi';
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 import { RiToolsFill } from 'react-icons/ri';

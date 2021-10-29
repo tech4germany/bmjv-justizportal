@@ -1,5 +1,4 @@
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
-import { ThemeEditorProvider } from '@hypertheme-editor-pro/chakra-ui';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';

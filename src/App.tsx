@@ -4,7 +4,6 @@ import { I18nProvider } from '@lingui/react';
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Route, Switch, useLocation } from 'react-router-dom';
-import { DisclaimerBanner } from './components/shared/DisclaimerBanner';
 import { MenuWithSubnavigation } from './components/shared/MainMenu';
 import { homeURL, Routes, ShortCuts } from './Const';
 import { MMGraph } from './logic/KMParser';

@@ -17,7 +17,6 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-import { HyperThemeEditor } from '@hypertheme-editor-pro/chakra-ui';
 import { i18n } from '@lingui/core';
 import { t } from '@lingui/macro';
 import React from 'react';
@@ -341,10 +340,14 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  // {
-  //   label: t`Lösungsfinder`,
-  //   href: '/' + Routes.SolutionExplorer,
-  // },
+  {
+    label: t`Startseite`,
+    href: '/',
+  },
+  {
+    label: t`Lösungsfinder`,
+    href: '/' + Routes.SolutionExplorer,
+  },
   // {
   //   label: t`Beratungsangebote`,
   //   href: '/' + Routes.ConsultationOffers,
