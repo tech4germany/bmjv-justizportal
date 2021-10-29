@@ -80,7 +80,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 **Wie gehe ich vor?** 
 - Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen Schlichtungsantrag.
 - Für die [meisten europäischen Fluglinien](https://soep-online.de/assets/files/20.07.soep-Mitgliederliste.pdf) können Sie einen [Antrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/) stellen. Ansonsten ist die [Schlichtungsstelle Luftverkehr beim Bundesamt für Justiz](https://www.bundesjustizamt.de/DE/Themen/Buergerdienste/Luftverkehr/Schlichtungsstelle_node.html) für Ihren Fall zuständig.
-- Wenn Ihr Antrag zulässig und berechtigt ist, macht die Stelle eine Schlichtungsempfehlung an Sie und die Fluglinie.w
+- Wenn Ihr Antrag zulässig und berechtigt ist, macht die Stelle eine Schlichtungsempfehlung an Sie und die Fluglinie.
 - Das gesamte Schlichtungsverfahren dauert etwa drei Monate. Danach können Sie immer noch Klage einreichen.
 `,
       optional: true,
@@ -115,9 +115,9 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   
 ###  
 **Wie gehe ich vor?** 
-- Kontaktieren Sie ihre Vermieter:in und schildern Sie den Mangel sachlich. 
+- Kontaktieren Sie Ihre Vermieter:in und schildern Sie den Mangel sachlich. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie Ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
-- Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen, wenn Sie einen Anspruch auf Mietminderung haben.
+- Geben Sie an, die Miete nur noch unter Vorbehalt zu zahlen, wenn Sie einen Anspruch auf Mietminderung haben.
 - Bleiben Sie dabei freundlich und höflich.  
   
 ###  
@@ -158,10 +158,10 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
   
 ###  
 **Wie gehe ich vor?** 
-- Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsverfahrens informieren.
+- Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsprozesses informieren.
 - Dann helfen wir Ihnen, eine Klageschrift zu erstellen und einzureichen.
 - Vor Gericht versucht die Richter:in, eine Lösung für Sie und die Gegenseite zu finden.
-- Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über ihren Fall entschieden. 
+- Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über Ihren Fall entscheiden. 
   
 ###  
 Wichtig ist, dass Sie die **Gegenseite schon direkt aufgefordert** haben, Ihre Ansprüche zu erfüllen.

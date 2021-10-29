@@ -62,7 +62,7 @@ export const App = () => {
     <I18nProvider i18n={i18n}>
       <Box display="flex" flexDir="column" minH="100vh">
         <ScrollToTop />
-        <DisclaimerBanner />
+        {/* <DisclaimerBanner /> */}
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />

@@ -29,6 +29,12 @@ export const ShortCuts = ({ ...props }): JSX.Element => {
       <Route exact path={`${homeURL}/schimmel-klage`}>
         <Redirect to={`${homeURL}/${Routes.PossibleEntitlements}?id=ceybyumxibs0`} />{' '}
       </Route>
+      <Route exact path={`${homeURL}/flug-kontaktieren`}>
+        <Redirect to={`${homeURL}/${Routes.NextSteps}?id=cf4h5nbt1r40`} />{' '}
+      </Route>
+      <Route exact path={`${homeURL}/flug-alle-ansprueche`}>
+        <Redirect to={`${homeURL}/${Routes.PossibleEntitlements}?id=cf4hcjzx9bk2`} />{' '}
+      </Route>
     </>
   );
 };

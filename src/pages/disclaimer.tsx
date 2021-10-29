@@ -132,13 +132,13 @@ export const Disclaimer = ({ id, mmobject, ...rest }: FeatureProps) => {
       </Container>
       <PageBody title="Disclaimer">
         <Hero title="Umsetzumg" width="100%">
-          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
+          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie
           individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
           Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
           einen Überblick zusammengestellt.
         </Hero>
         <Hero title="Ziele" width="100%" bg={undefined}>
-          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie
+          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie
           individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
           Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite
           einen Überblick zusammengestellt.

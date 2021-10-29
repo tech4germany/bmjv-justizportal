@@ -106,7 +106,7 @@
       'Für einen Anspruch auf Ausgleichszahlung ist es entscheidend, dass Sie sich rechtzeitig zum Check-in eingefunden haben. Wenn kein anderer Termin von Ihrer Fluglinie angegeben wurde, reichen 45 Minuten vor Abflug.',
     'Gab es den Schimmel schon bei Unterzeichnung des Mietvertrags?':
       'Gab es den Schimmel schon bei Unterzeichnung des Mietvertrags?',
-    Gerichtsverfahren: 'Gerichtsverfahren',
+    Gerichtsprozess: 'Gerichtsprozess',
     'Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben':
       'Geschafft! Aus Ihren Angaben könnten sich folgende Ansprüche ergeben',
     'Geschafft! Basierend auf den von Ihnen angegebenen Informationen, könnten die folgenden rechtlichen Ansprüche\nfür Sie in Frage kommen. Ein Anspruch ist das Recht ein bestimmtes Verhalten von einer anderen Person\neinzufordern.':
@@ -269,7 +269,7 @@
     'consultation.header': 'Beratungsangebote',
     'consultation.sub_header': 'Wobei benötigen Sie Unterstützung?',
     'exit.footer':
-      'Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Berartungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt.',
+      'Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir auf der folgenden Seite einen Überblick zusammengestellt.',
     'exit.heading': 'Leider haben wir ihren Fall nicht abgedeckt',
     'footer.disclaimer': 'Diese Seite ist ein Prototyp ohne Garantie auf Rechtssicherheit!',
     'footer.info': 'Weiter Infos zu Seite findest du hier',

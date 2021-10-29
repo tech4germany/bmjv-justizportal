@@ -6,11 +6,17 @@ import {
   AccordionPanel,
   Box,
   Button,
+  Flex,
   Heading,
   Image,
   Spacer,
+  Tab,
   Table,
   TableCaption,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
   Tbody,
   Td,
   Text,
@@ -19,14 +25,14 @@ import {
   Tr,
 } from '@chakra-ui/react';
 import * as React from 'react';
-import { Link as ReactLink } from 'react-router-dom';
-import { AnnotadedText } from '../components/shared/AnnotatedText';
-import { PageBody } from '../components/shared/PageBody';
-import { homeURL } from '../Const';
-import { Routes } from '../Const';
 import { FaMoneyBill } from 'react-icons/fa';
 import { RiBankFill } from 'react-icons/ri';
+import { Link as ReactLink } from 'react-router-dom';
+import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
+import { PageBody } from '../components/shared/PageBody';
+import { homeURL, Routes } from '../Const';
+import { t, Trans } from '@lingui/macro';
 
 interface FeatureProps {
   id: string | null;
@@ -42,7 +48,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 - Kann kein Vergleich gefunden werden, wird am Ende des Prozesses ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
 - Insgesamt dauert ein Prozess üblicherweise zwischen vier und zehn Monaten.
 ###
-**Was kostet ein Gerichtsverfahren?**
+**Was kostet ein Gerichtsprozess?**
 - Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. Wenn keine Partei ganz recht bekommt, werden die Kosten aufgeteilt.
 - Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
@@ -61,7 +67,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 ##### Gerichtsgebühren
 Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom verhandelten Wert Ihrer Forderung (circa 10-15%).
 Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
-Als Kläger müssen Sie die Gerichtsgebühren im Voraus bezahlen.
+Als Kläger:in müssen Sie die Gerichtsgebühren im Voraus bezahlen.
 Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).
 
 ###  
@@ -76,7 +82,7 @@ Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeugen 
 Auch Sachverständigengutachten können weitere Kosten verursachen.
   
 ###  
-##### Welche Kosten können mir insgesamt entstehen?
+##### Welche Kosten können für Sie insgesamt entstehen?
 Die Kosten Ihres Falls können Sie mithilfe des Streitwerts abschätzen.
 Ihren Streitwert berechnen wir im nächsten Schritt, wenn Sie eine Klage anlegen.
 In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.  
@@ -84,48 +90,84 @@ In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiede
 Beispiel: Bei Klagen zur EU-Fluggastrechteverordnung liegen Streitwerte häufig unter 1.000 Euro. Damit betragen die Gerichtsgebühren circa 150 Euro. Diese erhalten Sie bei Gewinn zurück.
 `;
 
-  let processInformation = `
-Jeder Gerichtsprozess folgt einem festen Ablauf:
+  let processInformation = [
+    {
+      title: `Klage einreichen`,
+      text: `
+Sie können eine Klage entweder **direkt hier über das Justizportal einreichen**.  
+Oder, falls sie sich unsicher fühlen, mit Hilfe eines Anwaltes.
 
-#### I. Schriftliches Vorverfahren
-    
-Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite zugestellt. Innerhalb von zwei Wochen muss die Gegenseite schriftlich erklären, dass sie sich verteidigen will. Ansonsten entscheidet die Richter:in allein nach Ihrer Klage, was oft zu Ihrem Vorteil ausfällt - das nennt sich Versäumnisurteil.
+Wenn alle Dokumente vorhanden sind, sollte das Ausfüllen der Klage etwa **20 Minuten dauern.**
+      `,
+    },
+    {
+      title: `Schriftliches Vorverfahren (optional)`,
+      text: `
+Nachdem Sie die Klage beim Gericht eingereicht haben, wird die Klageschrift der Gegenseite zugestellt. 
+Innerhalb einer **2-Wochen-Frist** muss der Beklagte schriftlich anzeigen, dass er sich gegen die Klage verteidigen will. Ansonsten ergeht ein Versäumnisurteil.
 
-Antwortet die Gegenseite mit einer Klageerwiederung, haben Sie erneut die Möglichkeit zu reagieren. Es ist nicht ungewöhnlich, dass Klagende und Beklagte mehrere Schreiben austauschen, bevor es zu einem Gerichtstermin kommt.
+Anschließend haben dann wieder Sie als Kläger Gelegenheit, auf die **Klageerwiderung** – die Stellungnahme der Gegenseite – zu reagieren. Es ist nicht ungewöhnlich, dass Kläger und Beklagter mehrere Schreiben austauschen, bevor es zum Gerichtstermin kommt.
 
-#### II. Güteverhandlung
-    
-Nach dem schriftlichen Vorverfahren gibt es eine (meistens persönliche) Güteverhandlung, um eine schnelle Lösung zu finden. Gerichtsverhandlungen sind außer im Familienrecht grundsätzlich öffentlich. 
+Gerade bei komplexen Rechtsstreitigkeiten kann die Richter:in so die gegensätzlichen Standpunkte beider Parteien in Ruhe nachvollziehen.
 
-Hier schildert die Richter:in Ihr Verständnis des Falls und gibt eine vorläufige Bewertung ab. Dabei kann Sie einen Vorschlag für einen Vergleich machen, mit dem beide Parteien leben könnten.
+Bei dringenden Angelegenheiten (wie zB eine Wohnungsräumung), kann die Richter:in das schriftliche Vorverfahren aber auch überspringen und direkt mit einer Güteverhandlung starten.
+`,
+    },
+    {
+      title: `Güteverhandlung`,
+      text: `
+Die Güteverhandlung lässt sich am besten mit einer Streitschlichtung vergleichen.
 
+Sie findet meist direkt vor der mündlichen Verhandlung statt. 
+**Ziel** ist es, den **Prozess abzukürzen** und eine Lösung zu finden, mit der beide Parteien leben können. 
 
-Eine **Güteverhandlung** kann zu **4 Ergebnissen** führen:
-1. Kläger und Beklagter einigen sich auf einen Vergleich.
-2. Der Beklagte erkennt die Forderung an
-3. Der Kläger zieht die Klage zurück
-4. Kein Ergebnis  
-  
-  
-Tritt eine der ersten 3 Optionen ein, ist der **Prozess verbindlich abgeschlossen**. Bringt die Güteverhandlung kein Ergebnis, lädt das Gericht zur **mündlichen Verhandlung**, die oft am selben Tag stattfindet.
-    
-#### III. Mündliche Verhandlung und Beweisaufnahmen
-    
-Die mündliche Verhandlung beginnt mit einer Bestandsaufnahme durch die Richter:in. Anschließend diskutieren die Parteien, ob die Klage begründet ist. Die Richter:in moderiert das Gespräch und ergänzt Ihre Sichtweise oder fordert weitere Informationen.
+In der Regel müssen beide Parteien persönlich zur Güteverhandlung kommen.
 
-Widersprechen sich die Darstellungen der Parteien, ordnet die Richter:in eine **Beweisaufnahme** an: Dazu werden von den Parteien benannte **Zeugen** befragt, **Sachverständige** angehört und **Beweise** gesichtet.
+Die Richter:in schildert den Sachverhalt, wie er ihn bisher verstanden hat, und erläutert seine vorläufige Bewertung des Rechtsstreits. Anschließend kann er einen Vorschlag für einen **Vergleich** machen – also eine angemessene, für beide Seiten akzeptable Lösung.
 
-Sobald alle Parteien ausreichend gehört wurden und das Gericht sich eine Meinung gebildet hat, ist die mündliche Verhandlung beendet.
-    
-#### IV. Urteil
-    
-Die Richter:in verkündet das Urteil entweder **direkt im Anschluss** an die mündliche Verhandlung **oder** zu einem späteren Termin. Bei einem separaten Termin besteht keine Anwesenheitspflicht, denn das Urteil geht beiden Parteien auch per Post zu.
+Mit einem Vergleich ist das Verfahren genauso **verbindlich abgeschlossen** wie durch ein Urteil. 
 
-Das Urteil ist ein **vollstreckbarer Titel**. Das bedeutet, dass die gewinnende Partei eine Zwangsvollstreckung einleiten dürfte, wenn die gegenseite ihre Pflichten nicht freiwillig erfüllt.
+Eine **Güteverhandlung** kann zu **4 Ergebnissen** führen:
+1 Kläger und Beklagter einigen sich auf einen Vergleich
+2 Der Beklagte erkennt die Forderung an
+3 Der Kläger zieht die Klage zurück
+4 Kein Ergebnis
 
-Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb eines Monats** Berufung einlegen, wenn der Streitwert mindestens 600 Euro beträgt. Der Fall wird dann von einem höheren Gericht neu beurteilt, was den Prozess verlängert.`;
+Mit den ersten drei Optionen ist der **Prozess beendet**. 
+Bringt die Güteverhandlung kein Ergebnis, lädt die Richter:in die Parteien im nächsten Schritt zur **mündlichen Verhandlung**. 
+
+Meistens hat die Richterin schon vorsorglich eine mündliche Verhandlung direkt nach der Güteverhandlung angesetzt. Somit geht es nach einer gescheiterten Güteverhandlung direkt mit der mündlichen Verhandlung weiter.
+`,
+    },
+
+    {
+      title: `Mündliche Verhandlung und Beweisaufnahmen`,
+      text: `
+Die mündliche Verhandlung – auch **Hauptverhandlung** genannt – beginnt mit einer Bestandsaufnahme und einem Zwischenfazit des Richters. 
+
+Anschließend **diskutieren** die **Parteien untereinander**, warum die Klage begründet bzw. unbegründet ist. Der Richter erteilt und entzieht den Parteien als Prozessleiter das Wort. Er gibt zudem Hinweise über seine Sicht der Dinge oder fordert auf, weitere Informationen bei Gericht einzureichen.
+Eine Gerichtsverhandlung ist außer bei Familiensachen **grundsätzlich öffentlich**.
+Widersprechen sich die Darstellungen der Parteien, ordnet der Richter eine **Beweisaufnahme** an: Um den Sachverhalt eindeutig zu klären, vernimmt er die von den Parteien benannten **Zeugen**, hört **Sachverständige** an und sichtet **Beweise.**
+Beide Parteien und der Richter erörtern das Ergebnis der Beweisaufnahme. Sobald alle Parteien ausreichend gehört wurden und das **Gericht** sich seine **Meinung gebildet** hat, ist die mündliche **Verhandlung beendet**.
+`,
+    },
+
+    {
+      title: `Urteil`,
+      text: `
+Sollten alle vorherigen Schritte eine Einigung zu finden scheitern, spricht die Richter:in ein Urteil. 
+Richter:innen versuchen in der Regel ein Urteil zu vermeiden und die beiden Parteien zu einer Einigung zu bewegen.
+
+Das Urteil kann entweder **direkt im Anschluss** an die mündliche Verhandlung **oder**, bei schwierigeren Fällen zu einem späteren Termin verkündet werden. 
+
+Das Urteil ist ein **vollstreckbarer Titel**. Das bedeutet, dass die Gewinner:in des Rechtsstreits die Zwangsvollstreckung einleiten darf, wenn die unterlegene Seite ihre Pflichten nicht freiwillig erfüllt. Die passiert im Notfall mit der Hilfe von Gerichtsvollziehern und Polizei.
+
+Sollten Sie oder die Gegenseite glauben, dass Urteil nicht dem geltenden Recht entspricht, können sie **innerhalb eines Monats** Berufung gehen. Der Fall wird dann von der **nächsthöheren Instanz** noch einmal aufgerollt. Bedingung ist, dass der Streitwert sich auf **mindestens 600 Euro** beläuft. 
+`,
+    },
+  ];
   return (
-    <PageBody title="ZPO Informationen">
+    <PageBody title={t`ZPO Informationen`}>
       <Box>
         <Heading textAlign="center">Eine Klage am Amtsgericht einreichen</Heading>
         <Spacer height={12} />
@@ -149,7 +191,7 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
             </AccordionButton>
             <AccordionPanel pb={4}>
               <AnnotadedText text={costsText} />
-              <Spacer height="1em" />
+              <Spacer height={5} />
               <Table variant="simple">
                 <TableCaption>Ungefähre Kosten in einem Gerichtsverfahren für verschiedene Streitwerte.</TableCaption>
                 <Thead>
@@ -197,32 +239,67 @@ Gegen das Urteil des Amts- oder Landgerichts können beide Parteien **innerhalb
               </Table>
             </AccordionPanel>
           </AccordionItem>
-          <AccordionItem>
+          <AccordionItem bg="gray.50">
             <AccordionButton>
               {<RiBankFill size="2.5em" />}
-              <Text fontWeight="bold" fontSize="lg" padding="1em">
-                Wie läuft ein Gerichtsprozesses genau ab?
-              </Text>
+              <Heading variant="subheading" padding="1em">
+                Wie läuft ein Gerichtsprozess genau ab?
+              </Heading>
               <Spacer />
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pb={4}>
-              <Spacer height="3em" />
+              <Text>
+                Gerichtsprozess folgen einem festen Ablauf, der im Gesetz geregelt ist. Allerdings gibt es für viele
+                Fälle Sonderregelungen. Deswegen haben wir einen stark vereinfachten Ablauf gezeichnet, um Ihnen ein
+                grobes Verständnis über den Verlauf einer Klage zu geben.
+              </Text>
+              <Spacer height={10} />
               <Image src={'data/ablauf.svg'} />
-              <AnnotadedText text={processInformation} />
+              <Spacer height={10} />
+
+              <Tabs>
+                <TabList>
+                  <Tab>Mehr Infos →</Tab>
+                  {processInformation.map((element, i) => (
+                    <Tab>
+                      <Flex w={7} h={7} bg="primary.500" rounded="full" align="center" justify="center">
+                        <Text fontSize="lg" textAlign="center" fontWeight="bold" textColor="white">
+                          {i + 1}
+                        </Text>
+                      </Flex>
+                    </Tab>
+                  ))}
+                </TabList>
+                <TabPanels>
+                  <TabPanel>Klicke auf die Buttons links, um mehr über die einzelnen Schritte zu erfahren.</TabPanel>
+                  {processInformation.map((element, i) => (
+                    <TabPanel>
+                      <Heading variant="subheading">{element.title}</Heading>
+                      <Spacer height={5} />
+
+                      <AnnotadedText text={element.text} />
+                    </TabPanel>
+                  ))}
+                </TabPanels>
+              </Tabs>
+              <Spacer height={10} />
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
         <Spacer h={10} />
 
         <Heading variant="subheading" py={6}>
-          Nächste Schritte
+          <Trans>Nächste Schritte</Trans>
         </Heading>
         <AnnotadedText
-          text="
+          text={t({
+            id: 'zpo.nextsteps',
+            message: `
 1. Auf der kommenden Seite können Sie das Dokument für eine Klage zu Ihrem Fall erstellen.  
 2. Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  
-3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**"
+3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**`,
+          })}
         />
         <Spacer h={8} />
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>

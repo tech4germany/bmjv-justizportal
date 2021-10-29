@@ -31,7 +31,7 @@ const components = {
   Button: {
     baseStyle: {
       fontWeight: '500',
-      rounded: '5',
+      rounded: 'full',
     },
   },
   Tag: {
