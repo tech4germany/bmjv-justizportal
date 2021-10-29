@@ -9,6 +9,7 @@ import {
   Radio,
   Spacer,
   Text,
+  GridItem,
 } from '@chakra-ui/react';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
@@ -113,29 +114,29 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
               flexWrap="wrap"
               justifyContent="space-between">
               {data!.children?.map((child) => (
-                // <GridItem key={child.id}>
-                <StatsCard
-                  link={
-                    child.children
-                      ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
-                      : `?id=${id}#notimplemented:${child.id}`
-                  }
-                  onClick={() =>
-                    child.children
-                      ? undefined
-                      : toast({
-                          title: t`Diese Option ist leider noch nicht verfügbar.`,
-                          // description: t`Bisher, konnte dieser Pfad leider noch nicht implementiert werden.`,
-                          status: 'info',
-                          duration: 8000,
-                          isClosable: true,
-                        })
-                  }
-                  title={child.title}
-                  info={child.info}
-                  icon={child.icon}
-                />
-                // </GridItem>
+                <GridItem key={child.id}>
+                  <StatsCard
+                    link={
+                      child.children
+                        ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
+                        : `?id=${id}#notimplemented:${child.id}`
+                    }
+                    onClick={() =>
+                      child.children
+                        ? undefined
+                        : toast({
+                            title: t`Diese Option ist leider noch nicht verfügbar.`,
+                            // description: t`Bisher, konnte dieser Pfad leider noch nicht implementiert werden.`,
+                            status: 'info',
+                            duration: 8000,
+                            isClosable: true,
+                          })
+                    }
+                    title={child.title}
+                    info={child.info}
+                    icon={child.icon}
+                  />
+                </GridItem>
               ))}
             </SimpleGrid>
 
