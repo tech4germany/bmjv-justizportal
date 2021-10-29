@@ -37,7 +37,13 @@ export const HeroSplit = (props: FeatureProps) => {
           // }}
         >
           <Spacer flex={2} />
-          <VStack spacing={10} w={'full'} maxW={'xl'} paddingLeft={10} paddingRight={{ base: 10, md: 0 }}>
+          <VStack
+            spacing={10}
+            w={'full'}
+            maxW={'xl'}
+            paddingLeft={10}
+            paddingBottom={5}
+            paddingRight={{ base: 10, md: 0 }}>
             {/* <Blob
               w={'150%'}
               h={'150%'}
@@ -59,7 +65,7 @@ export const HeroSplit = (props: FeatureProps) => {
             </Heading>
             {children}
           </VStack>
-          <Spacer flex={4} />
+          <Spacer flex={2} />
         </Flex>
 
         <Flex width={0}>
