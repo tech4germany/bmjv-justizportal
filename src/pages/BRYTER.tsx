@@ -71,11 +71,11 @@ export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
       case CaseTopics.Verspätung:
         bryterLink += 'klagegrund=Verspätung';
         break;
-      case CaseTopics.Annulierung:
-        bryterLink += 'klagegrund=Annulierung';
+      case CaseTopics.Annullierung:
+        bryterLink += 'klagegrund=Annullierung';
         break;
       case CaseTopics.Überbuchung:
-        bryterLink += 'klagegrund=Überbuchung';
+        bryterLink += 'klagegrund=Beförderungsverweigerung';
         break;
     }
   }

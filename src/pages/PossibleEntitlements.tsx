@@ -40,7 +40,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       condition: claims.indexOf(Claims.Ausgleichszahlung) != -1,
       content: t`
 - Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.
-- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annulierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.
+- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annullierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.
 - Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1.500km)**, **400€ (zwischen 1.500km und 3.500km)** oder **600€ (über 3.500km)**.
 `,
     },
@@ -51,7 +51,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       buttonText: '',
       condition: claims.indexOf(Claims.Rückerstattung) != -1,
       content: t`
-- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annulierung innerhalb einer Woche zurückzuerhalten.
+- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annullierung innerhalb einer Woche zurückzuerhalten.
 - Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.
 - Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen.`,
     },

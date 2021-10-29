@@ -39,7 +39,7 @@ export enum CaseTypes {
 export enum CaseTopics {
   Schimmel = 'Schimmel',
   Verspätung = 'Verspätung',
-  Annulierung = 'Annulierung',
+  Annullierung = 'Annullierung',
   Überbuchung = 'Überbuchung',
 }
 
