@@ -734,7 +734,7 @@
                   "id": "cf4gev0vue80",
                   "created": 1634755364925,
                   "text": "Annullierung durch die Fluglinie",
-                  "note": "{ICON:FaTimesCircle}\n### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n\nWenn Ihr Flug durch die Fluglinie annuliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annulierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
+                  "note": "{ICON:FaTimesCircle}\n### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n\nWenn Ihr Flug durch die Fluglinie annuliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annullierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
                 },
                 "children": [
                   {
@@ -896,7 +896,7 @@
                                           "id": "cf9k2znuxao0",
                                           "created": 1635273518874,
                                           "text": "Wurde Ihnen ein alternativer Flug angeboten, mit dem Sie Ihr Ziel nur wenige Stunden später erreichen konnten?",
-                                          "note": "Wenn Sie einen Zahlungsbeweis für Ihren Flug haben, können Sie vermutlich einen **Anspruch auf Rückerstattung der Flugscheinkosten** durchsetzen.\n\nZusätzlich kann ein **Anspruch auf Ausgleichszahlung** wegen kurzfristiger Annullierung bestehen. Dafür muss die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten haben. \n\nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht.",
+                                          "note": "Wenn Sie einen Zahlungsbeweis für Ihren Flug haben, können Sie vermutlich einen **Anspruch auf Rückerstattung der Flugscheinkosten** durchsetzen.\n\nZusätzlich kann ein **Anspruch auf Ausgleichszahlung** wegen kurzfristiger Annullierung bestehen. Dafür muss die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten haben. \n\nAls vergleichbar gilt:\n- Bei Annullierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annullierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht.",
                                           "priority": 1
                                         },
                                         "children": [
@@ -995,7 +995,7 @@
                                           "id": "cf9k2znuxao1",
                                           "created": 1635273518874,
                                           "text": "Wurde Ihnen ein alternativer Flug angeboten, mit dem Sie Ihr Ziel nur wenige Stunden später erreichen konnten?",
-                                          "note": "Ein **Anspruch auf Ausgleichszahlung** kann bei einer kurzfristigen Annullierung nur bestehen, wenn die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten hat. \n\nAls vergleichbar gilt:\n- Bei Annulierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annulierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht.",
+                                          "note": "Ein **Anspruch auf Ausgleichszahlung** kann bei einer kurzfristigen Annullierung nur bestehen, wenn die Fluglinie Ihnen **keine vergleichbare Beförderung** angeboten hat. \n\nAls vergleichbar gilt:\n- Bei Annullierung zwischen 7 und 14 Tagen vor Abflug: Neuer Abflug nicht mehr als zwei Stunden früher, und neue Landung höchstens vier Stunden später als gebucht.\n- Bei Annullierung innerhalb von 7 Tagen vor Abflug: Neuer Abflug nicht mehr als eine Stunde früher, und neue Landung höchstens zwei Stunden später als gebucht.",
                                           "priority": 3
                                         },
                                         "children": [
