@@ -219,7 +219,8 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
                     </Box>
                   }
                   <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
-                    <Trans>Schritt</Trans> {index + 1}: {acc.label}
+                    {/* <Trans>Schritt</Trans> {index + 1}: {acc.label} */}
+                    {acc.label}
                   </Text>
                   <Spacer />
                   <Text>

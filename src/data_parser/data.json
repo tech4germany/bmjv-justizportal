@@ -734,7 +734,7 @@
                   "id": "cf4gev0vue80",
                   "created": 1634755364925,
                   "text": "Annullierung durch die Fluglinie",
-                  "note": "{ICON:FaTimesCircle}\n### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n\nWenn Ihr Flug durch die Fluglinie annuliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annullierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
+                  "note": "{ICON:FaTimesCircle}\n{'caseTopic':'Annullierung'}\n### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n\nWenn Ihr Flug durch die Fluglinie annulliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annullierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
                 },
                 "children": [
                   {
@@ -820,7 +820,7 @@
                                           "created": 1635270334302,
                                           "text": "{EXIT}",
                                           "priority": 3,
-                                          "note": "Wenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, oder die Flugscheinkosten schon erstattet wurden, haben Sie vermutlich keine weiteren Ansprüche, da Ihr Flug nicht kurzfristig annulliert wurde."
+                                          "note": "Wenn Sie statt Ihrem annullierten Flug ein Angebot für einen Ersatzflug angenommen haben, oder die Flugscheinkosten schon erstattet wurden, haben Sie vermutlich keine weiteren Ansprüche, da Ihr Flug nicht kurzfristig annulliert wurde."
                                         },
                                         "children": []
                                       },
@@ -840,7 +840,7 @@
                                               "created": 1635270550368,
                                               "text": "{EXIT}",
                                               "priority": 1,
-                                              "note": "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
+                                              "note": "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annulliert wurde."
                                             },
                                             "children": []
                                           },
@@ -886,7 +886,7 @@
                                       "id": "cf9iv82djdk1",
                                       "created": 1635270089143,
                                       "text": "Haben Sie ein Angebot für einen Ersatzflug angenommen, oder wurden ihnen die Flugscheinkosten schon vollständig erstattet?",
-                                      "note": "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden.\n\nWenn Sie statt Ihrem annulierten Flug ein Angebot für einen Ersatzflug angenommen haben, können Ihnen noch Ansprüche auf Ausgleichszahlung entstehen.",
+                                      "note": "Bei einer Annullierung kann Ihnen die Fluglinie einen alternativen Flug anbieten. Dabei können Sie entscheiden, ob Sie den Flug annehmen oder die Flugscheinkosten zurückerstattet haben wollen. Die Kosten können auch von einem Reiseveranstalter oder Reisebüro erstattet werden.\n\nWenn Sie statt Ihrem annullierten Flug ein Angebot für einen Ersatzflug angenommen haben, können Ihnen noch Ansprüche auf Ausgleichszahlung entstehen.",
                                       "priority": 3,
                                       "expandState": "expand"
                                     },
@@ -949,7 +949,7 @@
                                                   "created": 1635270550368,
                                                   "text": "{EXIT}",
                                                   "priority": 1,
-                                                  "note": "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annuliert wurde."
+                                                  "note": "Ein Zahlungsbeweis ist notwendig, um einen Anspruch auf Rückerstattung der Flugscheinkosten geltend zu machen. Suchen Sie noch einmal - vielleicht können Sie einen Zahlungsbeweis in Ihren E-Mails finden, oder bei Ihrem Reisebüro oder Ihrer Bank anfragen.\n\nVermutlich stehen Ihnen darüber hinaus keine weiteren Ansprüche mehr zu, da Ihr Flug nicht kurzfristig annulliert wurde."
                                                 },
                                                 "children": []
                                               },
@@ -1083,7 +1083,7 @@
                   "id": "cf4gevbcl0o0",
                   "created": 1634755365558,
                   "text": "Beförderungsverweigerung bei Überbuchung",
-                  "note": "{ICON:FaUserTimes}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\n- Ihnen wurde die Mitreise verweigert, weil Ihr Flug überbucht war, und Sie haben nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen?\n- Dann haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+                  "note": "{ICON:FaUserTimes}\n{'caseTopic':'Beförderungsverweigerung'}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\n- Ihnen wurde die Mitreise verweigert, weil Ihr Flug überbucht war, und Sie haben nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen?\n- Dann haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
                 },
                 "children": [
                   {
