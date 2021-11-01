@@ -26,9 +26,10 @@ interface StatsCardProps extends BoxProps {
   link: string;
   info?: string;
   icon?: ReactNode;
+  disabled?: boolean;
 }
 
-export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) => {
+export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsCardProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const borderColor = useColorModeValue('gray.200', 'whiteAlpha.300');
 
@@ -43,10 +44,16 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
         minH={{ base: 32, sm: '10em', md: '10em' }}
         as={ReactLink}
         to={link}
-        _hover={{
-          transitionDuration: '0.2s',
-          bg: transparentize(borderColor, 0.5),
-        }}
+        _hover={
+          disabled
+            ? undefined
+            : {
+                transitionDuration: '0.2s',
+                bg: transparentize(borderColor, 0.5),
+              }
+        }
+        background={disabled ? 'gray.200' : undefined}
+        cursor={disabled ? 'default' : 'pointer'}
         {...rest}>
         <Box
           display={info ? '' : 'none'}
@@ -57,7 +64,7 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
           height="0"
           top=".5em"
           right=".5em"
-          color={borderColor}
+          color={disabled ? 'gray.900' : borderColor}
           _hover={{
             transitionDuration: '0.2s',
             color: Primary(),
@@ -71,7 +78,7 @@ export const StatsCard = ({ title, info, icon, link, ...rest }: StatsCardProps) 
           />
         </Box>
         <Spacer />
-        <Box color={Primary()} paddingBottom={4}>
+        <Box color={disabled ? 'gray.900' : Primary()} paddingBottom={4}>
           {icon}
         </Box>
         <Box fontSize={{ base: 'sm', sm: 'md', md: 'lg' }} textAlign="center" wordBreak="break-word">

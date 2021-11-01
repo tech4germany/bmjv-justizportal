@@ -85,7 +85,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
         <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (
             <HStack align={'top'}>
-              <Text minH={'3em'}>
+              <Text>
                 {data.title}
                 {'    '}
                 <IconButton
@@ -134,6 +134,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                     title={child.title}
                     info={child.info}
                     icon={child.icon}
+                    disabled={!child.children}
                   />
                 </GridItem>
               ))}
