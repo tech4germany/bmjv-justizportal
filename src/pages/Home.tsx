@@ -4,7 +4,7 @@ import * as React from 'react';
 import { FaCheck, FaCompass, FaLandmark, FaSearch } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
 import { Feature } from '../components/shared/Feature';
-import FooterSmallWithSocial from '../components/shared/Footer';
+import Footer from '../components/shared/Footer';
 import { Hero } from '../components/shared/Hero';
 import { HeroSplit } from '../components/shared/Hero_Split';
 import { homeURL, Routes } from '../Const';

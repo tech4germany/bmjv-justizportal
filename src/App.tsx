@@ -21,7 +21,7 @@ import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
 import { Imprint } from './pages/imprint';
-import FooterSmallWithSocial from './components/shared/Footer';
+import Footer from './components/shared/Footer';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -106,7 +106,7 @@ export const App = () => {
           </Route>
           <ShortCuts />
         </Switch>
-        <FooterSmallWithSocial />
+        <Footer />
       </Box>
     </I18nProvider>
   );
