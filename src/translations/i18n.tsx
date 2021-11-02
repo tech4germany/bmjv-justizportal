@@ -13,14 +13,11 @@ export function setCookie(name: string, val: string) {
 }
 
 export const locales: { [id: string]: [string, string] } = {
-  en: ['English', '🇬🇧'],
   de: ['Deutsch', '🇩🇪'],
-  uk: ['Česky', '🇺🇦'],
-  ru: ['Česky', '🇷🇺'],
-  vi: ['Česky', '🇻🇳'],
+  en: ['English', '🇬🇧'],
 };
 
-export const defaultLocale = 'en';
+export const defaultLocale = 'de';
 let userLocale = detect(fromUrl('lang'), fromCookie('lang'), fromStorage('lang'), fromNavigator()) || defaultLocale;
 
 export const gerUserLocale = () => userLocale;
