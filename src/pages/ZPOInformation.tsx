@@ -260,7 +260,7 @@ Sollten Sie oder die Gegenseite glauben, dass Urteil nicht dem geltenden Recht e
 
               <Tabs>
                 <TabList>
-                  <Tab>Mehr Infos →</Tab>
+                  {/* <Tab>Mehr Infos →</Tab> */}
                   {processInformation.map((element, i) => (
                     <Tab>
                       <Flex w={7} h={7} bg="primary.500" rounded="full" align="center" justify="center">
@@ -272,7 +272,7 @@ Sollten Sie oder die Gegenseite glauben, dass Urteil nicht dem geltenden Recht e
                   ))}
                 </TabList>
                 <TabPanels>
-                  <TabPanel>Klicke auf die Buttons links, um mehr über die einzelnen Schritte zu erfahren.</TabPanel>
+                  {/* <TabPanel>Klicke auf die Buttons links, um mehr über die einzelnen Schritte zu erfahren.</TabPanel> */}
                   {processInformation.map((element, i) => (
                     <TabPanel>
                       <Heading variant="subheading">{element.title}</Heading>

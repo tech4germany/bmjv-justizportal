@@ -38,6 +38,9 @@ msgstr "возвратный платеж"
 msgid "Außergerichtliche Einigung"
 msgstr "Внесудебное урегулирование"
 
+msgid "Beratungsangebote"
+msgstr "Beratungsangebote"
+
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Устранение дефекта арендодателями"
 
@@ -145,6 +148,12 @@ msgstr "Наше предложение"
 
 msgid "Vermieter:in erneut kontaktieren"
 msgstr "Арендодатель снова свяжитесь"
+
+msgid "Wegweiser"
+msgstr "Wegweiser"
+
+msgid "Weitere Möglichkeiten"
+msgstr "Weitere Möglichkeiten"
 
 msgid "Wie es funktioniert"
 msgstr "Как это работает"

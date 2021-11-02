@@ -38,6 +38,9 @@ msgstr "Chargeback"
 msgid "Außergerichtliche Einigung"
 msgstr "Out-of-court settlement"
 
+msgid "Beratungsangebote"
+msgstr "Legal advice"
+
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Removal of the defect by the landlords"
 
@@ -145,6 +148,12 @@ msgstr "Our offer"
 
 msgid "Vermieter:in erneut kontaktieren"
 msgstr "Contact Landlord in again"
+
+msgid "Wegweiser"
+msgstr "Wegweiser"
+
+msgid "Weitere Möglichkeiten"
+msgstr "Weitere Möglichkeiten"
 
 msgid "Wie es funktioniert"
 msgstr "How it works"

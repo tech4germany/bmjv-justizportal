@@ -38,6 +38,9 @@ msgstr "Ausgleichszahlung"
 msgid "Außergerichtliche Einigung"
 msgstr "Außergerichtliche Einigung"
 
+msgid "Beratungsangebote"
+msgstr "Beratungsangebote"
+
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Loại bỏ các khiếm khuyết của chủ nhà"
 
@@ -145,6 +148,12 @@ msgstr "Đề nghị của chúng tôi"
 
 msgid "Vermieter:in erneut kontaktieren"
 msgstr "Vermieter:in erneut kontaktieren"
+
+msgid "Wegweiser"
+msgstr "Wegweiser"
+
+msgid "Weitere Möglichkeiten"
+msgstr "Weitere Möglichkeiten"
 
 msgid "Wie es funktioniert"
 msgstr "Cách hoạt động"
