@@ -171,7 +171,7 @@ msgid "consultation.header"
 msgstr "Beratungsangebote"
 
 msgid "consultation.sub_header"
-msgstr "Örtliche und überregionale Beratungsstellen können Sie persönlich und individuell bei Ihrem Fall unterstützen. Hier haben wir verschiedene Angebote aufgelistet. Wobei benötigen Sie Unterstützung?"
+msgstr "Bürger:innen haben in Deutschland viele Rechte. Das macht unser Rechtssystem jedoch auch komplex. Da das Justizportal Sie nicht für Ihren Fall individuell informieren kann, haben wir hier einen Überblick zu kostengünstigen Beratungsstellen für Sie aufbereitet."
 
 msgid "exit.footer"
 msgstr "Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir [hier einen Überblick über Beratungsstellen aufbereitet](/beratungsangebote)."
