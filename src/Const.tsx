@@ -11,7 +11,7 @@ export const C_DarkGray = (): string => useColorModeValue('gray.700', 'gray.300'
 
 export enum Routes {
   Disclaimer = 'disclaimer',
-  SolutionExplorer = 'loesungsfinder',
+  SolutionExplorer = 'wegweiser',
   Exit = 'exit',
   ZPOInformation = 'klage-einreichen',
   PossibleEntitlements = 'moegliche-ansprueche',
