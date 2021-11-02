@@ -98,7 +98,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 ###  
 **Wie gehe ich vor?** 
 - Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
-- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video kann helfen.`,
+- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video oder Zeug:innen können helfen.`,
       optional: false,
     },
     {
@@ -117,7 +117,7 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 **Wie gehe ich vor?** 
 - Kontaktieren Sie Ihre Vermieter:in und schildern Sie den Mangel sachlich. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie Ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. 
-- Geben Sie an, die Miete nur noch unter Vorbehalt zu zahlen, wenn Sie einen Anspruch auf Mietminderung haben.
+- Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen, wenn ein Anspruch auf Mietminderung für Sie möglich erscheint.
 - Bleiben Sie dabei freundlich und höflich.  
   
 ###  
@@ -134,12 +134,12 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       content: `
 **Warum?** 
 - Ein zweites Schreiben kann Ihrer Forderung Nachdruck verleihen.
-- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat Sie Ihre Mängelanzeige vielleicht auch nur übersehen.
+- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat sie Ihre Mängelanzeige vielleicht auch nur übersehen.
 - Wenn neue Kosten entstanden sind (z.B. Aufwendungen durch eigene Mängelbeseitigung), können Sie diese direkt von Ihrer Vermieter:in einfordern.  
   
 ###  
 **Wie gehe ich vor?** 
-- Kontaktieren Sie ihre Vermieter:in und weisen Sie erneut auf das Problem hin. 
+- Kontaktieren Sie Ihre Vermieter:in und weisen sie erneut auf das Problem hin. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie eine letzte Frist zur Mängelbeseitigung oder Zahlung, bevor Sie weitere rechtliche Schritte ergreifen.
 - Bleiben Sie dabei freundlich und höflich.    
 `,
@@ -153,7 +153,7 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
       content: `
 **Warum?** 
-- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn die Gegenseite diese nicht erfüllt. 
+- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn die Gegenseite diese nicht freiwillig erfüllt. 
 - Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.  
   
 ###  
@@ -178,7 +178,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
       condition: false,
       content: `
 **Warum?** 
-- In einer Rechtsberatung kann ihr Fall individuell von einer Expert:in bewertet werden. 
+- In einer Rechtsberatung kann Ihr Fall individuell von einer Expert:in bewertet werden. 
 - Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
 - Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. 
   
