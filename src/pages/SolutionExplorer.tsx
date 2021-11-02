@@ -80,7 +80,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
 
   return (
     <>
-      <PageBody title={t`Lösungsfinder`}>
+      <PageBody title={t`Wegweiser`}>
         <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
         <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (

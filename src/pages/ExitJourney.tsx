@@ -20,7 +20,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
   const data = mmobject.getNode(id);
 
   return (
-    <PageBody title="Lösungsfinder">
+    <PageBody title={t`Weitere Möglichkeiten`}>
       <Heading>
         <Trans id="exit.heading">Leider haben wir Ihren Fall nicht abgedeckt.</Trans>
       </Heading>

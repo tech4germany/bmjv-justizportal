@@ -345,7 +345,7 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '/',
   },
   {
-    label: t`Lösungsfinder`,
+    label: t`Wegweiser`,
     href: '/' + Routes.SolutionExplorer,
   },
   // {
