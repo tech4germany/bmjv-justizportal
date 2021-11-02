@@ -1,6 +1,7 @@
 import { Box, Button, Container, Link, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
+import { Link as ReactLink, useLocation } from 'react-router-dom';
 import { homeURL, Routes } from '../../Const';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -38,7 +39,13 @@ export default function FooterSmallWithSocial() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text fontWeight="bold" textAlign="center">
+        <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} fontWeight="bold" textAlign="center">
+          Impressum
+        </Link>
+        <Text
+          fontWeight="bold"
+          textAlign="center"
+          display={useLocation().pathname == homeURL + '/' ? 'inherit' : 'none'}>
           Illustrations by <Link href="www.freepik.com ">Freepic</Link>
         </Text>
       </Container>

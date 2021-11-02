@@ -20,6 +20,8 @@ import { PossibleEntitlements } from './pages/PossibleEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
+import { Imprint } from './pages/imprint';
+import FooterSmallWithSocial from './components/shared/Footer';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -95,14 +97,16 @@ export const App = () => {
             children={() => <PossibleEntitlements {...featureProps} />}
           />
           <Route exact path={`${homeURL}/${Routes.NextSteps}`} children={() => <NextSteps {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Imprint}`} children={() => <Imprint {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Bryter}`}>
             <Helmet>
-              <title>Justiz Portal - BRYTER</title>
+              <title>Justiz Portal - Formularassistent</title>
             </Helmet>
             <Bryter {...featureProps} />
           </Route>
           <ShortCuts />
         </Switch>
+        <FooterSmallWithSocial />
       </Box>
     </I18nProvider>
   );
