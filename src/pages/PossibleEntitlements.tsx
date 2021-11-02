@@ -81,7 +81,7 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
 - Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.
 - Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.
 - Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.
-- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde.`,
+- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro verantwortlich sein, wenn das im Mietvertrag festgelegt wurde.`,
     },
     {
       label: t`Mietminderung`,
@@ -93,9 +93,9 @@ export const PossibleEntitlements = ({ id, mmobject, ...rest }: FeatureProps) =>
       
 - Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**
 durch einen Mangel **erheblich eingeschränkt** ist. 
-- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch und die Wohnqualität stark beeinträchtigt ist.
-- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.
-- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.
+- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch ist und die Wohnqualität stark beeinträchtigt wird.
+- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in und **endet mit der Beseitigung**.
+- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.
 - Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden.
 
 `,
@@ -109,8 +109,8 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       content: t`
       
 - Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.
-- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.
-- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde. 
+- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels im Verzug** ist oder es sich um eine **Not- oder Eilmaßnahme** handelt.
+- Meistens sollten Sie den Mangel erst dann selbstständig beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben und der Mangel danach nicht behoben wurde. 
 `,
     },
     {
@@ -121,8 +121,8 @@ durch einen Mangel **erheblich eingeschränkt** ist.
       condition: claims.indexOf(Claims.Schadensersatz) != -1,
       content: t`
 - Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.
-- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.
-- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat.
+- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln** oder auch Schmerzensgeld bei körperlichen Schäden.
+- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist oder diesen bei Vertragsabschluss verschwiegen hat.
 `,
     },
   ];

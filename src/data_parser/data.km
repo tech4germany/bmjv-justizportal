@@ -132,7 +132,7 @@
                                                                                             "text": "{EXIT}",
                                                                                             "expandState": "expand",
                                                                                             "priority": 1,
-                                                                                            "note": "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen, und zum Beispiel den Mangel selbst beseitigen."
+                                                                                            "note": "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen und zum Beispiel den Mangel selbst beseitigen."
                                                                                         },
                                                                                         "children": []
                                                                                     },
@@ -500,7 +500,7 @@
                         "data": {
                             "id": "cf3g1pstnqw0",
                             "created": 1634652774865,
-                            "text": "Nebenkosten-abrechnung",
+                            "text": "Nebenkostenabrechnung",
                             "note": "{ICON:FaFileInvoice}"
                         },
                         "children": []
@@ -734,7 +734,7 @@
                                     "id": "cf4gev0vue80",
                                     "created": 1634755364925,
                                     "text": "Annullierung durch die Fluglinie",
-                                    "note": "{ICON:FaTimesCircle}\n### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n\nWenn Ihr Flug durch die Fluglinie annulliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annullierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
+                                    "note": "{ICON:FaTimesCircle}\n{'caseTopic':'Annullierung'}\n### Ihre Rechte bei Annullierung Ihres Flugs nach der EU-Fluggastrechteverordnung\n\nWenn Ihr Flug durch die Fluglinie annulliert wurde, haben Sie vielleicht einen Anspruch auf einen alternativen Flug oder Rückerstattung der Flugscheinkosten. Bei einer kurzfristigen Annullierung können Sie außerdem eine Ausgleichszahlung erhalten, wenn Ihnen kein vergleichbarer Flug angeboten wurde. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke bei einem verspäteten Start entstehen."
                                 },
                                 "children": [
                                     {
@@ -1083,7 +1083,7 @@
                                     "id": "cf4gevbcl0o0",
                                     "created": 1634755365558,
                                     "text": "Beförderungsverweigerung bei Überbuchung",
-                                    "note": "{ICON:FaUserTimes}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\n- Ihnen wurde die Mitreise verweigert, weil Ihr Flug überbucht war, und Sie haben nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen?\n- Dann haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
+                                    "note": "{ICON:FaUserTimes}\n{'caseTopic':'Beförderungsverweigerung'}\n### Ihre Rechte bei Beförderungsverweigerung nach der EU-Fluggastrechteverordnung\n\n- Ihnen wurde die Mitreise verweigert, weil Ihr Flug überbucht war, und Sie haben nicht freiwillig ein alternatives Angebot Ihrer Flugline angenommen?\n- Dann haben Sie vielleicht einen Anspruch auf eine Ausgleichszahlung. Zusätzlich können Ansprüche auf Betreuungsleistungen wie Essen und Getränke entstehen."
                                 },
                                 "children": [
                                     {
