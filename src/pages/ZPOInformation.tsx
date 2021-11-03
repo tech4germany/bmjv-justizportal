@@ -104,7 +104,7 @@ Wenn alle Dokumente vorhanden sind, sollte das Ausfüllen der Klage **etwa 20 Mi
     {
       title: `Schriftliches Vorverfahren und Klageerwiderung`,
       text: `
-Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite zugestellt. Innerhalb von zwei Wochen muss die Gegenseite schriftlich erklären, dass sie sich verteidigen will. Ansonsten entscheidet die Richter:in allein nach Ihrer Klage, was oft zu Ihrem Vorteil ausfällt - das nennt sich **Versäumnisurteil**. Die Gegenseite kann Ihre Klage auch als berechtigt anerkennen (**Anerkenntnisurteil**), wobei Sie direkt Recht erhalten.
+Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite zugestellt. Innerhalb von zwei Wochen muss die Gegenseite schriftlich erklären, dass sie sich verteidigen will. Ansonsten entscheidet die Richter:in allein nach Ihrer Klage, was oft zu Ihrem Vorteil ausfällt - das nennt sich **Versäumnisurteil**. Die Gegenseite kann Ihre Klage auch als berechtigt anerkennen (**Anerkenntnisurteil**), wobei Sie direkt Recht erhalten. In beiden Fällen ist der Prozess dann vorbei, was bei circa 30% aller Gerichtsverfahren vorkommt. 
 
 Antwortet die Gegenseite mit einer **Klageerwiederung**, haben Sie erneut die Möglichkeit zu reagieren. Es ist nicht ungewöhnlich, dass Klagende und Beklagte mehrere Schreiben vor dem ersten Gerichtstermin austauschen. Bei dringenden Angelegenheiten (wie zum Beispiel einer Wohnungsräumung) kann die Richter:in das schriftliche Vorverfahren aber auch überspringen.
 `,
@@ -248,7 +248,6 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
                   ))}
                 </TabList>
                 <TabPanels>
-                  <TabPanel>Klicke auf die Buttons links, um mehr über die einzelnen Schritte zu erfahren.</TabPanel>
                   {processInformation.map((element, i) => (
                     <TabPanel>
                       <Heading variant="subheading">{element.title}</Heading>
