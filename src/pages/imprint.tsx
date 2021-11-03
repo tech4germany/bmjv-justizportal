@@ -1,7 +1,7 @@
-import { Heading, Text } from '@chakra-ui/layout';
+import { Heading } from '@chakra-ui/layout';
 import React from 'react';
-import { PageBody } from '../components/shared/PageBody';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { PageBody } from '../components/shared/PageBody';
 
 export const Imprint = ({ ...props }) => {
   return (

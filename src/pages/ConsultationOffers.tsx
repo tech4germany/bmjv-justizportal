@@ -9,7 +9,6 @@ import {
   ButtonGroup,
   Checkbox,
   Heading,
-  Link,
   Spacer,
   Text,
   VStack,
