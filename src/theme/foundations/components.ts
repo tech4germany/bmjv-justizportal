@@ -7,12 +7,15 @@ const components = {
       const { colorScheme: c } = props;
       return {
         py: '0.1em',
-
+        textAlign: 'center',
+        alignSelf: 'center',
         color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.500`, `${c}.300`)(props),
       };
     },
     variants: {
       subheading: {
+        textAlign: 'start',
+        alignSelf: 'unset',
         fontSize: '2xl',
       },
     },

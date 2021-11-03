@@ -348,10 +348,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: t`Wegweiser`,
     href: '/' + Routes.SolutionExplorer,
   },
-  // {
-  //   label: t`Beratungsangebote`,
-  //   href: '/' + Routes.ConsultationOffers,
-  // },
+  {
+    label: t`Beratungsangebote`,
+    href: '/' + Routes.ConsultationOffers,
+  },
   {
     label: ' ',
     href: '/short',

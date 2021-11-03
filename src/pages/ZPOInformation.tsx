@@ -33,6 +33,7 @@ import { Card } from '../components/shared/Card';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Routes } from '../Const';
 import { t, Trans } from '@lingui/macro';
+import { PageBlock } from '../components/shared/PageBlock';
 
 interface FeatureProps {
   id: string | null;
@@ -145,7 +146,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
   ];
   return (
     <PageBody title={t`ZPO Informationen`}>
-      <Box>
+      <PageBlock>
         <Heading textAlign="center">Eine Klage am Amtsgericht einreichen</Heading>
         <Spacer height={12} />
         <Card p={{ base: 10, md: 14 }}>
@@ -216,7 +217,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
               </Table>
             </AccordionPanel>
           </AccordionItem>
-          <AccordionItem bg="gray.50">
+          <AccordionItem>
             <AccordionButton>
               {<RiBankFill size="2.5em" />}
               <Heading variant="subheading" padding="1em">
@@ -264,7 +265,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         </Accordion>
         <Spacer h={10} />
 
-        <Heading variant="subheading" py={6}>
+        <Heading variant="subheading">
           <Trans>Nächste Schritte</Trans>
         </Heading>
         <AnnotadedText
@@ -276,12 +277,10 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
 3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**`,
           })}
         />
-        <Spacer h={8} />
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           Zur Erstellung des Klagedokuments
         </Button>
-        <Spacer h={8} />
-      </Box>
+      </PageBlock>
     </PageBody>
   );
 };

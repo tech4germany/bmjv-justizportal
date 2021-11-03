@@ -16,12 +16,13 @@ import {
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { IconType } from 'react-icons';
+import { CgUserList } from 'react-icons/cg';
 import { FaCheck, FaCity, FaRegComments } from 'react-icons/fa';
 import { FiPhone } from 'react-icons/fi';
+import { GoLaw } from 'react-icons/go';
 import { RiCommunityLine } from 'react-icons/ri';
-import { GoLaw } from 'react-icons/go'
-import { CgUserList } from 'react-icons/cg'
 import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { Primary } from '../Const';
 import { MMGraph } from '../logic/KMParser';
@@ -168,72 +169,75 @@ Wenn Sie Hilfe bei der Einreichung einer Klage oder der Beantwortung eines Geric
   ];
 
   return (
-    <PageBody marginInline={{ base: 0, md: 10 }} title={t`Mögliche Lösungen`}>
-      <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5}>
-        <Trans id="consultation.header">Beratungsangebote</Trans>
-      </Heading>
-      <Text px={{ base: 5, md: 0 }}>
-        <Trans id="consultation.sub_header">
-          Da das Justizportal Sie nicht in jedem Fall informieren kann, haben wir hier einen Überblick zu
-          kostengünstigen Beratungsstellen für Sie aufbereitet.
-        </Trans>
-      </Text>
-      <VStack align="center" width="100%">
-        <ButtonGroup variant="outline">
-          <Button
-            onClick={() => {
-              toggleFilterState(Tag.consultation);
-            }}
-            rightIcon={filter.includes(Tag.consultation) ? <FaCheck /> : undefined}
-            rounded="full">
-            <Trans>Erstberatung</Trans>
-          </Button>
-          <Button
-            onClick={() => {
-              toggleFilterState(Tag.solutionOptions);
-            }}
-            rightIcon={filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined}
-            rounded="full">
-            <Trans>Außergerichtliche Einigung</Trans>
-          </Button>
-          <Button
-            onClick={() => {
-              toggleFilterState(Tag.trial);
-            }}
-            rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
-            rounded="full">
-            <Trans>Gerichtsverfahren</Trans>
-          </Button>
-        </ButtonGroup>
-        <Checkbox checked={checkbox} onChange={(e) => setCheckbox(e.target.checked)}>
-          <Trans>Nur kostenlose Angebote anzeigen</Trans>
-        </Checkbox>
-      </VStack>
-      <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
-        {data
-          .filter(
-            (i) =>
-              (filter.filter((value) => i.tags.includes(value)).length != 0 || filter.length == 0) &&
-              (checkbox ? i.tags.includes(Tag.free) : true)
-          )
-          .map((acc, index) => (
-            <AccordionItem>
-              <AccordionButton>
-                <Box color={Primary()}>{acc.icon && <acc.icon size="2.5em" />}</Box>
+    <PageBody title={t`Mögliche Lösungen`}>
+      <PageBlock>
+        <Heading>
+          <Trans id="consultation.header">Beratungsangebote</Trans>
+        </Heading>
+        <Text px={{ base: 5, md: 0 }}>
+          <Trans id="consultation.sub_header">
+            Da das Justizportal Sie nicht in jedem Fall informieren kann, haben wir hier einen Überblick zu
+            kostengünstigen Beratungsstellen für Sie aufbereitet.
+          </Trans>
+        </Text>
+        <VStack align="center" width="100%">
+          <ButtonGroup variant="outline">
+            <Button
+              onClick={() => {
+                toggleFilterState(Tag.consultation);
+              }}
+              rightIcon={filter.includes(Tag.consultation) ? <FaCheck /> : undefined}
+              rounded="full">
+              <Trans>Erstberatung</Trans>
+            </Button>
+            <Button
+              onClick={() => {
+                toggleFilterState(Tag.solutionOptions);
+              }}
+              rightIcon={filter.includes(Tag.solutionOptions) ? <FaCheck /> : undefined}
+              rounded="full">
+              <Trans>Außergerichtliche Einigung</Trans>
+            </Button>
+            <Button
+              onClick={() => {
+                toggleFilterState(Tag.trial);
+              }}
+              rightIcon={filter.includes(Tag.trial) ? <FaCheck /> : undefined}
+              rounded="full">
+              <Trans>Gerichtsverfahren</Trans>
+            </Button>
+          </ButtonGroup>
+          <Checkbox checked={checkbox} onChange={(e) => setCheckbox(e.target.checked)}>
+            <Trans>Nur kostenlose Angebote anzeigen</Trans>
+          </Checkbox>
+        </VStack>
+      </PageBlock>
+      <PageBlock size="wide">
+        <Accordion width="100%" allowToggle>
+          {data
+            .filter(
+              (i) =>
+                (filter.filter((value) => i.tags.includes(value)).length != 0 || filter.length == 0) &&
+                (checkbox ? i.tags.includes(Tag.free) : true)
+            )
+            .map((acc, index) => (
+              <AccordionItem>
+                <AccordionButton>
+                  <Box color={Primary()}>{acc.icon && <acc.icon size="2.5em" />}</Box>
 
-                <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
-                  {acc.label}
-                </Text>
-                <Spacer />
-                <Text>
-                  <Trans>Mehr erfahren</Trans>
-                </Text>
-                <AccordionIcon />
-              </AccordionButton>
-              <AccordionPanel pb={4}>
-                <Spacer height={5} />
-                <AnnotadedText text={acc.content} />
-                {/* <Spacer height={10} />
+                  <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                    {acc.label}
+                  </Text>
+                  <Spacer />
+                  <Text>
+                    <Trans>Mehr erfahren</Trans>
+                  </Text>
+                  <AccordionIcon />
+                </AccordionButton>
+                <AccordionPanel pb={4}>
+                  <Spacer height={5} />
+                  <AnnotadedText text={acc.content} />
+                  {/* <Spacer height={10} />
                 {acc.buttonLink && acc.buttonText ? (
                   <>
                     <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
@@ -241,11 +245,12 @@ Wenn Sie Hilfe bei der Einreichung einer Klage oder der Beantwortung eines Geric
                     </Button>
                   </>
                 ) : null} */}
-                <Spacer height="1em" />
-              </AccordionPanel>
-            </AccordionItem>
-          ))}
-      </Accordion>
+                  <Spacer height="1em" />
+                </AccordionPanel>
+              </AccordionItem>
+            ))}
+        </Accordion>
+      </PageBlock>
 
       {/* <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=`} px={{ base: 5, md: 0 }} /> */}
       <Spacer w={5} />

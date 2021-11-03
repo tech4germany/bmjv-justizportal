@@ -67,6 +67,7 @@ export const HeroSplit = (props: FeatureProps) => {
             /> */}
             <Heading
               alignSelf="start"
+              textAlign="start"
               colorScheme="primary"
               fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
               fontWeight="bold"

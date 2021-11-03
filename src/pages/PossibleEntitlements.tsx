@@ -23,6 +23,8 @@ import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL, Primary, Routes } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
+import { PageBlock } from '../components/shared/PageBlock';
+import sizes from '../theme/foundations/sizes';
 
 interface FeatureProps {
   id: string | null;
@@ -129,75 +131,76 @@ durch einen Mangel **erheblich eingeschränkt** ist.
 
   return (
     <>
-      <PageBody marginInline={{ base: 0, md: 10 }} title={t`Mögliche Lösungen`}>
-        <StaticProgress currentStep={2} />
-        <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5} fontSize="3xl">
-          <Trans id="pe.header">Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
-        </Heading>
-        <AnnotadedText
-          px={{ base: 5, md: 0 }}
-          text={t({
-            id: 'pe.sub_header',
-            message: `
+      <PageBody title={t`Mögliche Lösungen`}>
+        <PageBlock>
+          <StaticProgress currentStep={2} />
+          <Heading paddingTop={10}>
+            <Trans id="pe.header">Aus Ihren Angaben könnten sich diese Ansprüche ergeben</Trans>
+          </Heading>
+          <AnnotadedText
+            text={t({
+              id: 'pe.sub_header',
+              message: `
 Ein Anspruch ist das Recht, etwas von einer anderen Person oder einem Unternehmen zu fordern. Sie können mehrere Ansprüche durchsetzen. 
 Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten Seite informieren wir Sie dann über mögliche nächste Schritte. `,
-          })}
-        />
-
-        <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
-          {data
-            .filter((i) => i.condition)
-            .map((acc, index) => (
-              <AccordionItem>
-                <AccordionButton>
-                  {
-                    <Box color={Primary()}>
-                      <acc.icon size="2.5em" />
-                    </Box>
-                  }
-                  <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
-                    {acc.label}
-                  </Text>
-                  <Spacer />
-                  <Text>
-                    <Trans>Mehr erfahren</Trans>
-                  </Text>
-                  <AccordionIcon />
-                </AccordionButton>
-                <AccordionPanel pb={4}>
-                  <Spacer height={5} />
-                  <AnnotadedText text={acc.content} />
-                  <Spacer height={10} />
-                  {acc.buttonLink && acc.buttonText ? (
-                    <>
-                      <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
-                        {acc.buttonText}
-                      </Button>
-                    </>
-                  ) : null}
-                  <Spacer height="1em" />
-                </AccordionPanel>
-              </AccordionItem>
-            ))}
-        </Accordion>
-
-        <HStack spacing="1em" px={{ base: 5, md: 0 }}>
-          <Button
-            as={ReactLink}
-            to={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
-            leftIcon={<IoMdArrowRoundBack />}>
-            <Trans id="back">Zurück</Trans>
-          </Button>
-          <Button
-            colorScheme="secondary"
-            as={ReactLink}
-            to={`${homeURL}/${Routes.NextSteps}?id=${id}`}
-            rightIcon={<IoMdArrowRoundForward />}>
-            <Trans id="pe.to_next_steps">Zu den nächsten Schritten</Trans>
-          </Button>
-        </HStack>
-
-        <Spacer w={5} />
+            })}
+          />
+        </PageBlock>
+        <PageBlock size="wide">
+          <Accordion width="100%" allowToggle>
+            {data
+              .filter((i) => i.condition)
+              .map((acc, index) => (
+                <AccordionItem>
+                  <AccordionButton>
+                    {
+                      <Box color={Primary()}>
+                        <acc.icon size="2.5em" />
+                      </Box>
+                    }
+                    <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                      {acc.label}
+                    </Text>
+                    <Spacer />
+                    <Text>
+                      <Trans>Mehr erfahren</Trans>
+                    </Text>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    <Spacer height={5} />
+                    <AnnotadedText text={acc.content} />
+                    <Spacer height={10} />
+                    {acc.buttonLink && acc.buttonText ? (
+                      <>
+                        <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
+                          {acc.buttonText}
+                        </Button>
+                      </>
+                    ) : null}
+                    <Spacer height="1em" />
+                  </AccordionPanel>
+                </AccordionItem>
+              ))}
+          </Accordion>
+        </PageBlock>
+        <PageBlock>
+          <HStack spacing={5}>
+            <Button
+              as={ReactLink}
+              to={`${homeURL}/${Routes.SolutionExplorer}?id=${mmobject.getParent(id)?.id}`}
+              leftIcon={<IoMdArrowRoundBack />}>
+              <Trans id="back">Zurück</Trans>
+            </Button>
+            <Button
+              colorScheme="secondary"
+              as={ReactLink}
+              to={`${homeURL}/${Routes.NextSteps}?id=${id}`}
+              rightIcon={<IoMdArrowRoundForward />}>
+              <Trans id="pe.to_next_steps">Zu den nächsten Schritten</Trans>
+            </Button>
+          </HStack>
+        </PageBlock>
       </PageBody>
     </>
   );

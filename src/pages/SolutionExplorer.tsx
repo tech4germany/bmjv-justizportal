@@ -25,6 +25,7 @@ import { StatsCard } from '../components/shared/StatsCard';
 import { homeURL, Primary, Routes } from '../Const';
 import { MMGraph } from '../logic/KMParser';
 import { UserState } from '../logic/UserState';
+import { PageBlock } from '../components/shared/PageBlock';
 
 interface FeatureProps {
   id: string | null;
@@ -79,8 +80,8 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
   setUserState(userState);
 
   return (
-    <>
-      <PageBody title={t`Wegweiser`}>
+    <PageBody title={t`Wegweiser`}>
+      <PageBlock>
         <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
         <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (
@@ -187,8 +188,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             </Card>
           </Flex>
         )}
-        <Spacer minH="3em" />
-      </PageBody>
-    </>
+      </PageBlock>
+    </PageBody>
   );
 };

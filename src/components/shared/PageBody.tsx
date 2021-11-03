@@ -1,4 +1,4 @@
-import { StackProps, HStack, VStack } from '@chakra-ui/react';
+import { StackProps, VStack } from '@chakra-ui/react';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -6,24 +6,15 @@ interface Props extends StackProps {
   title: string;
 }
 
-export const PageBody = ({ children, title, margin, ...rest }: Props) => {
+export const PageBody = ({ children, title, ...rest }: Props) => {
   return (
     <>
       <Helmet>
         <title>Justiz Portal - {title}</title>
       </Helmet>
-      <HStack alignSelf="center" justify="center" align="start" width="100%" flex={1}>
-        <VStack
-          textAlign="left"
-          align="start"
-          margin={10}
-          spacing={{ base: 12, md: 14 }}
-          maxW={'50rem'}
-          flex={1}
-          {...rest}>
-          {children}
-        </VStack>
-      </HStack>
+      <VStack textAlign="left" flex={1} paddingBottom={10} spacing={0} {...rest}>
+        {children}
+      </VStack>
     </>
   );
 };

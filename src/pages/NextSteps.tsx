@@ -20,6 +20,7 @@ import { RiScales3Fill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { NavButtons } from '../components/shared/NavigationButtons';
+import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL, Primary, Routes } from '../Const';
@@ -197,63 +198,67 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
   return (
     <>
       <PageBody marginInline={{ base: 0, md: 10 }} title={t`Optionen`}>
-        <StaticProgress currentStep={3} />
-        <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5} fontSize="3xl">
-          <Trans id="nextsteps.header">Ende des Lösungfinders: Mögliche nächste Schritte</Trans>
-        </Heading>
-        <Text px={{ base: 5, md: 0 }}>
-          <Trans id="nextsteps.sub_header">
-            Hier haben wir für Sie nächste Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. <br />
-            Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren.
-          </Trans>
-        </Text>
-        <Accordion width="100%" flex="1" minW={'20em'} alignSelf="stretch" allowToggle>
-          {data
-            .filter((i) => i.condition)
-            .map((acc, index) => (
-              <AccordionItem>
-                <AccordionButton>
-                  {
-                    <Box color={Primary()}>
-                      <acc.icon size="2.5em" />
-                    </Box>
-                  }
-                  <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
-                    {/* <Trans>Schritt</Trans> {index + 1}: {acc.label} */}
-                    {acc.label}
-                  </Text>
-                  <Spacer />
-                  <Text>
-                    <Trans>Mehr erfahren</Trans>
-                  </Text>
-                  <AccordionIcon />
-                </AccordionButton>
-                <AccordionPanel pb={4}>
-                  <Spacer height={5} />
-                  <AnnotadedText text={acc.content} />
-                  <Spacer height={10} />
-                  {acc.buttonLink && acc.buttonText ? (
-                    <>
-                      <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
-                        {acc.buttonText}
-                      </Button>
-                    </>
-                  ) : null}
-                  <Spacer height="1em" />
-                </AccordionPanel>
-              </AccordionItem>
-            ))}
-        </Accordion>
+        <PageBlock>
+          <StaticProgress currentStep={3} />
+          <Heading paddingTop={10}>
+            <Trans id="nextsteps.header">Ende des Lösungfinders: Mögliche nächste Schritte</Trans>
+          </Heading>
+          <Text>
+            <Trans id="nextsteps.sub_header">
+              Hier haben wir für Sie nächste Schritte zusammengefasst, um Ihre Ansprüche durchzusetzen. <br />
+              Klicken Sie nacheinander auf die Felder, um mehr darüber zu erfahren.
+            </Trans>
+          </Text>
+        </PageBlock>
+        <PageBlock size="wide">
+          <Accordion width="100%" allowToggle>
+            {data
+              .filter((i) => i.condition)
+              .map((acc, index) => (
+                <AccordionItem>
+                  <AccordionButton>
+                    {
+                      <Box color={Primary()}>
+                        <acc.icon size="2.5em" />
+                      </Box>
+                    }
+                    <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                      {/* <Trans>Schritt</Trans> {index + 1}: {acc.label} */}
+                      {acc.label}
+                    </Text>
+                    <Spacer />
+                    <Text>
+                      <Trans>Mehr erfahren</Trans>
+                    </Text>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    <Spacer height={5} />
+                    <AnnotadedText text={acc.content} />
+                    <Spacer height={10} />
+                    {acc.buttonLink && acc.buttonText ? (
+                      <>
+                        <Button colorScheme="secondary" paddingBlock="1em" as={ReactLink} to={`${acc.buttonLink}`}>
+                          {acc.buttonText}
+                        </Button>
+                      </>
+                    ) : null}
+                    <Spacer height="1em" />
+                  </AccordionPanel>
+                </AccordionItem>
+              ))}
+          </Accordion>
+        </PageBlock>
+        <PageBlock>
+          <Text>
+            <Trans>
+              Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
+              <Link>hier Beratungsangebote zusammengefasst.</Link>
+            </Trans>
+          </Text>
 
-        <Text px={{ base: 5, md: 0 }}>
-          <Trans>
-            Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
-            <Link>hier Beratungsangebote zusammengefasst.</Link>
-          </Trans>
-        </Text>
-
-        <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} px={{ base: 5, md: 0 }} />
-        <Spacer w={5} />
+          <NavButtons linkBack={`${homeURL}/${Routes.PossibleEntitlements}?id=${id}`} />
+        </PageBlock>
       </PageBody>
     </>
   );
