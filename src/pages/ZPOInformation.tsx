@@ -102,7 +102,7 @@ Wenn alle Dokumente vorhanden sind, sollte das Ausfüllen der Klage **etwa 20 Mi
       `,
     },
     {
-      title: `Schriftliches Vorverfahren und Klageerwiderung`,
+      title: `Schriftliches Vorverfahren`,
       text: `
 Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite zugestellt. Innerhalb von zwei Wochen muss die Gegenseite schriftlich erklären, dass sie sich verteidigen will. Ansonsten entscheidet die Richter:in allein nach Ihrer Klage, was oft zu Ihrem Vorteil ausfällt - das nennt sich **Versäumnisurteil**. Die Gegenseite kann Ihre Klage auch als berechtigt anerkennen (**Anerkenntnisurteil**), wobei Sie direkt Recht erhalten. In beiden Fällen ist der Prozess dann vorbei, was bei circa 30% aller Gerichtsverfahren vorkommt. 
 
@@ -122,7 +122,7 @@ Eine Güteverhandlung kann zu drei Ergebnissen führen, mit denen der Prozess be
 - Die Kläger:in zieht die Klage zurück  
   
   
-Bringt die Güteverhandlung kein Ergebnis, lädt das Gericht zur **mündlichen Verhandlung**, die oft am selben Tag stattfindet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familienrecht.
+In etwa 50% der Fälle endet der Gerichtsprozess hier. Bringt die Güteverhandlung kein Ergebnis, lädt das Gericht zur **mündlichen Verhandlung**, die oft am selben Tag stattfindet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familienrecht.
 `,
     },
 
@@ -133,9 +133,9 @@ Die mündliche **Verhandlung** beginnt mit einer Bestandsaufnahme durch die Rich
 
 Widersprechen sich die Darstellungen der Parteien, ordnet die Richter:in eine **Beweisaufnahme** an: Dazu werden von den Parteien benannte **Zeugen** befragt, **Sachverständige** angehört und **Beweise** gesichtet.
 
-Sobald alle Parteien gehört wurden und das Gericht sich eine Meinung gebildet hat, ist die mündliche Verhandlung beendet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familienrecht.
+Sobald alle Parteien gehört wurden und das Gericht sich eine Meinung gebildet hat, ist die mündliche Verhandlung beendet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familienrecht. Im Anschluss spricht die Richter:in ein **Urteil**. Dazu kommt es in etwa 20% der Gerichtsverfahren.
 
-Die Richter:in verkündet das **Urteil** entweder **direkt im Anschluss** an die mündliche Verhandlung **oder** bei schwierigen Fällen zu einem **späteren Termin**. Dabei besteht keine Anwesenheitspflicht, denn das Urteil wird beiden Parteien auch per Post geschickt.
+Das Urteil wird entweder **direkt im Anschluss** an die mündliche Verhandlung **oder** bei schwierigen Fällen zu einem **späteren Termin** verkündet. Dabei besteht keine Anwesenheitspflicht, denn das Urteil wird beiden Parteien auch per Post geschickt.
 
 Das Urteil ist ein **vollstreckbarer Titel**. Das bedeutet, dass die Gewinner:in des Rechtsstreits die Zwangsvollstreckung einleiten darf, wenn die unterlegene Seite ihre Pflichten nicht freiwillig erfüllt. Dies passiert im Notfall mit der Hilfe von Gerichtsvollziehern und Polizei.
 

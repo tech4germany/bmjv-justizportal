@@ -30,14 +30,12 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
           <AnnotadedText text={data?.info ? data.info : ''} />
         </CardContent>
       </Card>
-      <Text>
-        <Trans id="exit.footer">
-          Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie
-          individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
-          Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir [hier einen Überblick über
-          Beratungsstellen aufbereitet](/beratungsangebote).
-        </Trans>
-      </Text>
+      <AnnotadedText text={t({id:`exit.footer`,message:`        
+Sie suchen noch weitere Unterstützung? Dann können Sie sich an rechtliche Beratungsstellen wenden, die Sie
+individuell zu Ihrem Fall informieren können. In einer Beratung beurteilen Expert:innen, ob rechtliche
+Ansprüche bestehen und wie Sie diese am besten durchsetzen können. Dafür haben wir [hier einen Überblick über
+Beratungsstellen aufbereitet](/beratungsangebote).
+        `})}/>
       <HStack spacing={5}>
         <Button
           as={ReactLink}

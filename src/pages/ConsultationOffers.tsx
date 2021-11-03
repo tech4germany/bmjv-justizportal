@@ -17,7 +17,11 @@ import {
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { IconType } from 'react-icons';
-import { FaCheck } from 'react-icons/fa';
+import { FaCheck, FaCity, FaRegComments } from 'react-icons/fa';
+import { FiPhone } from 'react-icons/fi';
+import { RiCommunityLine } from 'react-icons/ri';
+import { GoLaw } from 'react-icons/go'
+import { CgUserList } from 'react-icons/cg'
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { PageBody } from '../components/shared/PageBody';
 import { Primary } from '../Const';
@@ -52,107 +56,113 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
   }[] = [
     {
       label: 'Städtische Mietberatungen',
+      icon: FaCity,
       content: `
 **Angebot**:
-- Erste Anlaufstelle für drängende Mietfragen (Verträge, Mieterhöhung, Kündigung), teils Beratung in Fremdsprachen
+- Erste Anlaufstelle für drängende Mietfragen (z.B. Mieterhöhung, Kündigung), teils Beratung in Fremdsprachen.
 ######
 **Verfügbarkeit**: 
-- Telefonische oder persönliche Beratung in vielen großen Städten
-- zum Beispiel in Berlin, München, Hamburg, Stuttgart oder Nürnberg.
+- Telefonische oder persönliche Beratung in vielen großen Städten, zum Beispiel in [Berlin](https://www.stadtentwicklung.berlin.de/wohnen/mieterberatungen.shtml), [München](http://www.muenchen.de/dienstleistungsfinder/muenchen/1074551/), [Hamburg](https://www.hamburg.de/oera/), [Stuttgart](https://www.stuttgart.de/vv/verwaltungseinheit/beratungstelefon-fuer-mieter-und-vemieter.php) oder [Nürnberg](https://www.nuernberg.de/internet/wohnen/mietrechtsinformationen.html).
 ###### 
 **Kosten**:
 - Die meisten Angebote sind kostenlos verfügbar.
-- Einige große Städte bieten kostenfreie Mieterberatung an.
-- Diese Beratungsstellen sind oft für drängende Probleme (fristlose Kündigung, Räumungsklage) oder Bürger:innen mit begrenzten finanziellen Mitteln gedacht.
-######`,
+######
+Einige Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind oft für drängende Probleme (fristlose Kündigung, Räumungsklage) oder Bürger:innen mit begrenzten finanziellen Mitteln gedacht.
+`,
       tags: [Tag.consultation, Tag.free],
     },
     {
       label: 'Landesspezifische Schlichtungsstellen',
+      icon: FaRegComments,
       content: `
 **Angebot**: 
 - Vermittlung zwischen Ihnen und Ihrer Vermieter:in für eine Einigung durch eine ausgebildete, unabhängige Schiedsperson.
 ######
 **Verfügbarkeit**: 
-- In einigen Bundesländern, beispielsweise Berlin und Nordrhein-Westfalen.
+- In einigen Bundesländern, beispielsweise [Berlin](https://www.berlin.de/sen/verbraucherschutz/verbraucherportal/recht/vertragsrecht/schlichtung-261337.php) und [Nordrhein-Westfalen](https://streitschlichtung.nrw.de/JOLStreit/).
 ######
 **Kosten**: 
-- In Nordrhein-Westfalen zwischen 10 und 40 Euro.
+- In Nordrhein-Westfalen beispielsweise zwischen 10 und 40 Euro.
+######
+Einige Bundesländer bieten Schlichtungsstellen, die Bürger:innen bei der gütlichen Beilegung von Konflikten helfen. Dabei vermittelt eine Schlichter:in zwischen beiden Parteien. Diese Stellen helfen besonders, wenn man die Beziehung zur Gegenpartei erhalten möchte - zum Beispiel in einem Mietverhältnis.
 `,
       tags: [Tag.solutionOptions, Tag.free],
     },
     {
       label: 'Erstberatung bei der Verbraucherzentrale',
+      icon: FiPhone,
       content: `
 **Angebot**: 
-- Prüfung von rechtlichen Ansprüchen durch Anwält:innen des Deutschen Mieterbunds in einem Gespräch
-- Vorschlag von ersten Handlungsoptionen
+- Prüfung von rechtlichen Ansprüchen durch Anwält:innen des Deutschen Mieterbunds in einem Gespräch.
+- Vorschlag von ersten Handlungsoptionen.
 ######
 **Verfügbarkeit**: 
-- Telefonische oder persönliche Beratung, deutschlandweit.
-- Hier finden Sie die Website für Ihr Bundesland.
+- Telefonische oder persönliche Beratung, deutschlandweit. [Hier finden Sie die Website für Ihr Bundesland](https://www.verbraucherzentrale.de/beratung).
 ######
 **Kosten**: 
 - Circa 20-30 Euro für eine zwanzigminütige Beratung.
 ######
-Die Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mieterbund kostengünstige Erstberatungen durch Anwält:innen an, in Baden-Württemberg beispielsweise ab 20 Euro.
+Die Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mieterbund kostengünstige Erstberatungen durch Anwält:innen an, [in Baden-Württemberg beispielsweise ab 20 Euro](https://www.verbraucherzentrale-bawue.de/beratungsstellen/746/kontakt/Mietrecht/17938).
 `,
       tags: [Tag.consultation, Tag.solutionOptions],
     },
     {
       label: 'Mietervereine / Deutscher Mieterbund',
+      icon: RiCommunityLine,
       content: `
 **Angebot**: 
-- Beratung und außergerichtliche Vertretung in allen Mietfragen durch festangestelle Anwält:innen
-- inklusive Übernahme der Kommunikation mit Ihrer Vermieter:in.
+- Beratung und außergerichtliche Vertretung in allen Mietfragen durch festangestelle Anwält:innen.
+- Auf Wunsch Übernahme der Kommunikation mit Ihrer Vermieter:in.
 - Teilweise Angebote in Drittsprachen.
 ######
 **Verfügbarkeit**: 
-- In vielen mittelgroßen deutschen Städten.
-- Hier finden Sie den für Sie nähesten regionalen Verein des Deutschen Mieterbunds.
+- In vielen deutschen Städten. [Hier finden Sie den für Sie nähesten regionalen Verein des Deutschen Mieterbunds](https://www.mieterbund.de/beratung/mieterverein-vor-ort.html).
 ######
 **Kosten**: 
 - Teilweise kostenlose Erstberatung.
 - Jährliche Mitgliedschaften für etwa 100 Euro, Mindestlaufzeit zwei Jahre.
 ######
-In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen Beratungen für Mitglieder mit Mietrechtsproblemen anbieten. Wenn sich in Ihrem Ort kein Verein befindet, ist eine Mitgliedschaft oft auch aus anderen Städten möglich.
+In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen Beratungen für Mitglieder anbieten. Wenn sich in Ihrem Ort kein Verein befindet, ist eine Mitgliedschaft oft auch aus anderen Städten möglich.
 `,
       tags: [Tag.consultation, Tag.solutionOptions],
     },
     {
       label: 'Rechtsberatung bei Anwält:innen',
+      icon: CgUserList,
       content: `
 **Angebot**: 
 - Rechtliche Beratung sowie außergerichtliche und gerichtliche Vertretung in allen Rechtsfragen.
 ######
 **Verfügbarkeit**: 
 - Deutschlandweit.
-- Über die Anwaltsauskunft, ein Portal des Deutschen Anwaltvereins, können Sie eine Anwält:in in Ihrer Nähe finden.
+- [Über die Anwaltsauskunft](https://anwaltauskunft.de/magazin), ein Portal des Deutschen Anwaltvereins, können Sie eine Anwält:in in Ihrer Nähe finden.
 ######
 **Kosten**: 
 - Eine Erstberatung kostet maximal 149 Euro, kann aber auch deutlich günstiger sein.
 - Kostenlose Beratung ist mit einer Rechtschutzversicherung, oder einem Beratungshilfeschein für finanzschwache Personen möglich.
+- Hier finden Sie einen [Antrag auf Beratungshilfe in Deutsch](https://justiz.de/service/formular/dateien/agI1.pdf), mit zusätzlichen [Hinweisen auf Englisch](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).
 ######
-Rechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber Ihren Vermietern oder dem Gericht vertreten. Jede Bürger:in hat das Recht, sich bei rechtlichen Fragen durch eine Rechtsanwält:in beraten und vertreten zu lassen.
+Rechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber der Gegenseite und vor Gericht vertreten. Jede Bürger:in hat das Recht, sich bei rechtlichen Fragen durch eine Rechtsanwält:in beraten und vertreten zu lassen.
 `,
       tags: [Tag.consultation, Tag.solutionOptions, Tag.trial],
     },
     {
       label: 'Rechtsantragsstelle am Amtsgericht',
+      icon: GoLaw,
       content: `
 **Angebot**: 
-- Hilfe bei der Einreichung von Klagen und Anträgen
-- Erklärung von Gerichtsbriefen.
+- Hilfe bei der Einreichung von Klagen und Anträgen.
+- Beantwortung von Fragen zu Briefen des Gerichts.
 ######
 **Verfügbarkeit**: 
-- Amtsgerichte gibt es in jeder mittelgroßen Stadt.
+- Amtsgerichte gibt es in jeder mittelgroßen deutschen Stadt.
 - Die Rechtantragsstelle können Sie dort persönlich vor Ort oder per Telefon erreichen.
-- Das nächste Amtsgericht für Ihren Wohnort können sie hier finden.
+- [Das nächste Amtsgericht für Ihren Wohnort können sie hier finden](https://www.justizadressen.nrw.de/de/justiz/suche).
 ######
 **Kosten**: 
-- Kostenlos
+- Kostenlos.
 ######
-Wenn Sie Hilfe bei der Formulierung einer Klage oder der Beantwortung eines Schreibens des Gericht brauchen, kann Ihnen die Rechtsantragsstelle eines Amtsgerichts weiterhelfen. Hierfür können Sie einen kostenfreien Termin mit einer ausgebildeten Rechtspfleger:in vereinbaren. Diese stellt sicher, dass Ihre Erklärungen alle rechtlich erforderlichen Informationen erhält. Eine individuelle rechtliche Beratung ist jedoch nicht möglich.
+Wenn Sie Hilfe bei der Einreichung einer Klage oder der Beantwortung eines Gerichtsbriefs brauchen, kann Ihnen die Rechtsantragsstelle am Amtsgericht weiterhelfen. Hierfür können Sie einen kostenfreien Termin mit einer ausgebildeten Rechtspfleger:in vereinbaren. Diese stellt sicher, dass Ihre Erklärungen alle rechtlich erforderlichen Informationen erhält. Eine individuelle rechtliche Beratung ist jedoch nicht möglich.
 `,
       tags: [Tag.trial, Tag.free],
     },
@@ -165,8 +175,7 @@ Wenn Sie Hilfe bei der Formulierung einer Klage oder der Beantwortung eines Schr
       </Heading>
       <Text px={{ base: 5, md: 0 }}>
         <Trans id="consultation.sub_header">
-          Bürger:innen haben in Deutschland viele Rechte. Das macht unser Rechtssystem jedoch auch komplex. Da das
-          Justizportal Sie nicht für Ihren Fall individuell informieren kann, haben wir hier einen Überblick zu
+          Da das Justizportal Sie nicht in jedem Fall informieren kann, haben wir hier einen Überblick zu
           kostengünstigen Beratungsstellen für Sie aufbereitet.
         </Trans>
       </Text>
