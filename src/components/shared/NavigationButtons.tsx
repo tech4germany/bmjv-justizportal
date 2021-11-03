@@ -13,7 +13,7 @@ interface FeatureProps extends BoxProps {
 }
 
 export const NavButtons = ({ linkBack, linkForward, textForward, disableForward, onClick, ...rest }: FeatureProps) => (
-  <HStack spacing="1em" {...rest}>
+  <HStack spacing={5} {...rest}>
     {linkBack ? (
       <Button onClick={onClick} as={ReactLink} to={linkBack} leftIcon={<IoMdArrowRoundBack />}>
         <Trans id="back">Zurück</Trans>

@@ -22,6 +22,7 @@ import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
 import { Imprint } from './pages/imprint';
 import Footer from './components/shared/Footer';
+import { HomeMVP } from './pages/Home_MVP';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -68,6 +69,7 @@ export const App = () => {
         <MenuWithSubnavigation />
         <Switch>
           <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
+          <Route exact path={`${homeURL}/MVP`} children={() => <HomeMVP {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Disclaimer}`} children={() => <Disclaimer {...featureProps} />} />
           <Route
             exact

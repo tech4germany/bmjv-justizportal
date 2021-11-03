@@ -21,8 +21,7 @@ export const Home = ({ anchorId, ...rest }: FeatureProps) => {
     if (howRef.current && anchorId === howRef.current.id) {
       howRef.current.scrollIntoView();
     }
-    // eslint-disable-next-line  react-hooks/exhaustive-deps
-  }, []);
+  });
 
   return (
     <Box textAlign="left">

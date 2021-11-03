@@ -19,12 +19,11 @@ import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 import { RiToolsFill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { StaticProgress } from '../components/shared/StaticProgress';
 import { homeURL, Primary, Routes } from '../Const';
 import { Claims, MMGraph } from '../logic/KMParser';
-import { PageBlock } from '../components/shared/PageBlock';
-import sizes from '../theme/foundations/sizes';
 
 interface FeatureProps {
   id: string | null;

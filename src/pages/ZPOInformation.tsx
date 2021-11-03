@@ -4,7 +4,6 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
-  Box,
   Button,
   Flex,
   Heading,
@@ -24,16 +23,16 @@ import {
   Thead,
   Tr,
 } from '@chakra-ui/react';
+import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaMoneyBill } from 'react-icons/fa';
 import { RiBankFill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
+import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Routes } from '../Const';
-import { t, Trans } from '@lingui/macro';
-import { PageBlock } from '../components/shared/PageBlock';
 
 interface FeatureProps {
   id: string | null;

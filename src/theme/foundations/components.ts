@@ -30,6 +30,12 @@ const components = {
         color: c === 'gray' ? mode(`inherit`, `whiteAlpha.900`)(props) : mode(`${c}.500`, `${c}.300`)(props),
       };
     },
+    variants: {
+      small: {
+        fontSize: 'sm',
+        color: 'gray.500',
+      },
+    },
   },
   Button: {
     baseStyle: {

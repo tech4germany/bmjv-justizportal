@@ -9,7 +9,7 @@ export function setCookie(name: string, val: string) {
   date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
 
   // Set it
-  document.cookie = name + '=' + value + '; expires=' + date.toUTCString() + '; path=/';
+  document.cookie = name + '=' + value + '; expires=' + date.toUTCString() + '; path=/; SameSite=Lax';
 }
 
 export const locales: { [id: string]: [string, string] } = {
