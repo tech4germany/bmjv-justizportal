@@ -1,9 +1,7 @@
-import Icon from '@chakra-ui/icon';
-import { Box, Flex, Link, Spacer, Text } from '@chakra-ui/layout';
-import { AiFillCloseCircle } from 'react-icons/ai';
+import { Box, Flex, Link, Text } from '@chakra-ui/layout';
+import { IconButton } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import spacing from '../../theme/foundations/spacing';
-import { VStack, HStack, IconButton } from '@chakra-ui/react';
+import { AiFillCloseCircle } from 'react-icons/ai';
 
 export const DisclaimerBanner = ({ ...props }) => {
   const [showBanner, setShowBanner] = useState(true);
