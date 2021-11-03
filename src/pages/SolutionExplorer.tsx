@@ -7,6 +7,7 @@ import {
   RadioGroup,
   SimpleGrid,
   Spacer,
+  Stack,
   Text,
   useToast,
   VStack,
@@ -93,7 +94,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                   color={Primary()}
                   height="1.2em"
                   variant="ghost"
-                  aria-label=""
+                  aria-label="Mehr Informationen"
                   icon={<FaInfoCircle />}
                   fontSize={'xl'}
                   onClick={switchShowInfo}
@@ -152,8 +153,8 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
             />
           </>
         ) : (
-          <Flex direction={{ base: 'column-reverse', md: 'row' }}>
-            <VStack align="left" spacing={'3.5em'} width="min-content">
+          <Stack direction={{ base: 'column-reverse', md: 'column-reverse' }} spacing={10}>
+            <VStack align="left" spacing={10} width="min-content">
               <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={stateVal['value']}>
                 <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
                   <Radio value="1">
@@ -177,7 +178,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                 onClick={() => resetState()}
               />
             </VStack>
-            <Spacer w="3.5em" h="3.5em" flex="unset" />
+            {/* <Spacer w="3.5em" h="3.5em" flex="unset" /> */}
             <Card
               flex={{ base: 'none', md: 1 }}
               display={data.info ? (stateVal['showInfo'] ? undefined : 'none') : 'none'}>
@@ -186,7 +187,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
                 <AnnotadedText text={data.info ? data.info : ''} />
               </CardContent>
             </Card>
-          </Flex>
+          </Stack>
         )}
       </PageBlock>
     </PageBody>
