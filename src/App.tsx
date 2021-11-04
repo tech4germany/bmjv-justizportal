@@ -68,8 +68,8 @@ export const App = () => {
         <DisclaimerBanner />
         <MenuWithSubnavigation />
         <Switch>
-          <Route exact path={`${homeURL}/`} children={() => <Home {...featureProps} />} />
-          <Route exact path={`${homeURL}/MVP`} children={() => <HomeMVP {...featureProps} />} />
+          <Route exact path={`${homeURL}/`} children={() => <HomeMVP {...featureProps} />} />
+          <Route exact path={`${homeURL}/old`} children={() => <Home {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Disclaimer}`} children={() => <Disclaimer {...featureProps} />} />
           <Route
             exact

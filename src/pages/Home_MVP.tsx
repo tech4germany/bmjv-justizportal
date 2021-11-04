@@ -6,6 +6,8 @@ import { HeroSplit } from '../components/shared/Hero_Split';
 import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Routes } from '../Const';
+import { Card } from '../components/shared/Card';
+import { CardContent } from '../components/shared/CardContent';
 
 interface MVPFeatureProps {
   title: string;
@@ -14,16 +16,20 @@ interface MVPFeatureProps {
 }
 
 const MVPFeature = ({ title, text, imgURL }: MVPFeatureProps) => (
-  <GridItem as={VStack} bg="white" shadow="base" p={10} spacing={5}>
-    <Image src={imgURL} />
-    <Heading colorScheme="primary" variant="subheading">
-      {title}
-    </Heading>
-    <Text variant="small">{text}</Text>
-    <Spacer />
-    <Button colorScheme="secondary" variant="outline">
-      <Trans>Zum Wegweiser</Trans>
-    </Button>
+  <GridItem as={VStack}>
+    <Card height="full">
+      <CardContent height="full">
+        <Image src={imgURL} />
+        <Heading colorScheme="primary" variant="subheading">
+          {title}
+        </Heading>
+        <Text variant="small">{text}</Text>
+        <Spacer />
+        <Button colorScheme="secondary" variant="outline">
+          <Trans>Zum Wegweiser</Trans>
+        </Button>
+      </CardContent>
+    </Card>
   </GridItem>
 );
 
