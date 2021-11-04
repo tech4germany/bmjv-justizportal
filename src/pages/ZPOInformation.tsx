@@ -4,6 +4,7 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Box,
   Button,
   Flex,
   Heading,
@@ -32,7 +33,7 @@ import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
 import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
-import { homeURL, Routes } from '../Const';
+import { homeURL, Primary, Routes } from '../Const';
 
 interface FeatureProps {
   id: string | null;
@@ -159,11 +160,18 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         <Accordion alignSelf="stretch" allowToggle>
           <AccordionItem>
             <AccordionButton>
-              {<FaMoneyBill size="2.5em" />}
+              {
+                <Box color={Primary()}>
+                  <FaMoneyBill size="2.5em" />
+                </Box>
+              }
               <Heading variant="subheading" padding="1em">
                 Welche Kosten entstehen in einem Gerichtsprozess?
               </Heading>
               <Spacer />
+              <Text>
+                <Trans>Mehr erfahren</Trans>
+              </Text>
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pb={4}>
@@ -218,11 +226,18 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
           </AccordionItem>
           <AccordionItem>
             <AccordionButton>
-              {<RiBankFill size="2.5em" />}
+              {
+                <Box color={Primary()}>
+                  <RiBankFill size="2.5em" />
+                </Box>
+              }
               <Heading variant="subheading" padding="1em">
                 Wie läuft ein Gerichtsprozess genau ab?
               </Heading>
               <Spacer />
+              <Text>
+                <Trans>Mehr erfahren</Trans>
+              </Text>
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pb={4}>

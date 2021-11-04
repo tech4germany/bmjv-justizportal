@@ -20,7 +20,7 @@ import { PossibleEntitlements } from './pages/PossibleEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
-import { Imprint } from './pages/Imprint';
+import { Imprint } from './pages/imprint';
 import Footer from './components/shared/Footer';
 import { HomeMVP } from './pages/Home_MVP';
 import { Privacy } from './pages/Privacy';
