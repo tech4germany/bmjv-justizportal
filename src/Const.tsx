@@ -19,6 +19,7 @@ export enum Routes {
   Bryter = 'formular',
   ConsultationOffers = 'beratungsangebote',
   Imprint = 'impressum',
+  Privacy = 'datenschutz',
 }
 
 export const ShortCuts = ({ ...props }): JSX.Element => {

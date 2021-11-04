@@ -20,9 +20,10 @@ import { PossibleEntitlements } from './pages/PossibleEntitlements';
 import { SolutionExplorer } from './pages/SolutionExplorer';
 import { ZPOInformation } from './pages/ZPOInformation';
 import { dynamicActivate } from './translations/i18n';
-import { Imprint } from './pages/imprint';
+import { Imprint } from './pages/Imprint';
 import Footer from './components/shared/Footer';
 import { HomeMVP } from './pages/Home_MVP';
+import { Privacy } from './pages/Privacy';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -100,6 +101,7 @@ export const App = () => {
           />
           <Route exact path={`${homeURL}/${Routes.NextSteps}`} children={() => <NextSteps {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Imprint}`} children={() => <Imprint {...featureProps} />} />
+          <Route exact path={`${homeURL}/${Routes.Privacy}`} children={() => <Privacy {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Bryter}`}>
             <Helmet>
               <title>Justiz Portal - Formularassistent</title>

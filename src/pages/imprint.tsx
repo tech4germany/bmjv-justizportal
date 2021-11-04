@@ -1,40 +1,32 @@
 import { Heading } from '@chakra-ui/layout';
+import { Trans } from '@lingui/macro';
 import React from 'react';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
+import { Text } from '@chakra-ui/react';
 
 export const Imprint = ({ ...props }) => {
   return (
-    <PageBody title="Impressum">
-      <Heading px={{ base: 5, md: 0 }} alignSelf="center" paddingTop={5}>
-        Impressum
-      </Heading>
-      <AnnotadedText
-        text={`
-Angaben gemäß § 5 TMG
-
-##
-
-**DigitalService4Germany GmbH** 
-
-Prinzessinnenstraße 8-14
-
-10969 Berlin
-
-Deutschland
-
-##
-
-E-Mail: [hallo@4germany.org](mailto:hallo@4germany.org)
-
-Telefon: +49 170 9325017 (Montag – Freitag von 09:00 -14:00 Uhr)
-
-##
-
-**Geschäftsführung**
-
-Frau Christina Lang
-Herr Philipp Möser`}></AnnotadedText>
+    <PageBody title={`Impressum`}>
+      <PageBlock>
+        <Heading>
+          <Trans>Impressum</Trans>
+        </Heading>
+        <Text>
+          <b>DigitalService4Germany GmbH</b> <br />
+          Geschäftsführer: Frau Christina Lang, Herr Philipp Möser <br />
+          Prinzessinnenstraße 8-14 <br />
+          10969 Berlin Deutschland <br />
+          <br />
+          <b>E-Mail-Adresse:</b> hallo@4germany.org <br />
+          <b>Telefonnummer:</b> +491709325017 (Montag – Freitag von 09:00 -14:00 Uhr) <br />
+          <br />
+          Gesellschafter: Bundesrepublik Deutschland, vertreten durch das Bundeskanzleramt <br />
+          Registergericht &amp; Registernummer: Berlin Charlottenburg HRB 212879 B <br />
+          Umsatzsteuer-Identifikationsnummer: DE327075535
+        </Text>
+      </PageBlock>
     </PageBody>
   );
 };
