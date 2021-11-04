@@ -66,7 +66,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 ###  
 ##### Gerichtsgebühren
 - Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom Wert Ihrer Forderung (circa 10-15%).
-- Diese Summe wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
+- Der Wert der Forderung wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
 - Als Kläger:in müssen Sie die Gerichtsgebühren im Voraus bezahlen.
 - Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).
 
@@ -78,7 +78,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
   
 ###  
 ##### Weitere Kosten
-- Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeug:innen verhört werden. Diese erhalten dann eine Vergütung. 
+- Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeug:innen gehört werden. Diese erhalten dann eine Vergütung. 
 - Auch Sachverständige (Experten) können Kosten verursachen, wenn zusätzliche Gutachten benötigt werden.
   
 ###  
@@ -89,7 +89,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 - Wenn Sie nicht genug Geld für einen Gerichtsprozess haben, können Sie [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen.
   
 ###
-Beispiel: Bei Klagen zur EU-Fluggastrechteverordnung liegen Streitwerte häufig unter 1.000 Euro. Damit betragen die Gerichtsgebühren circa 150 Euro. Diese erhalten Sie bei Gewinn zurück. Sollten Sie verlieren, zahlen Sie die Anwält:in der Gegenseite (circa 200 Euro).
+Beispiel: Bei Klagen zur EU-Fluggastrechteverordnung liegen Streitwerte häufig unter 1.000 Euro. Damit betragen die Gerichtsgebühren circa 150 Euro. Diese erhalten Sie bei Gewinn zurück. Sollten Sie verlieren, zahlen Sie die Gerichtskosten und gegebenenfalls die Honorare ihrer und der gegnerischen Anwält:in (je circa 200 Euro). Das Kostenrisiko beträgt daher circa 300 bis 450 Euro.
 `;
 
   let processInformation = [
@@ -106,7 +106,9 @@ Wenn alle Dokumente vorhanden sind, sollte das Ausfüllen der Klage **etwa 20 Mi
       text: `
 Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite zugestellt. Innerhalb von zwei Wochen muss die Gegenseite schriftlich erklären, dass sie sich verteidigen will. Ansonsten entscheidet die Richter:in allein nach Ihrer Klage, was oft zu Ihrem Vorteil ausfällt - das nennt sich **Versäumnisurteil**. Die Gegenseite kann Ihre Klage auch als berechtigt anerkennen (**Anerkenntnisurteil**), wobei Sie direkt Recht erhalten. In beiden Fällen ist der Prozess dann vorbei, was bei circa 30% aller Gerichtsverfahren vorkommt. 
 
-Antwortet die Gegenseite mit einer **Klageerwiederung**, haben Sie erneut die Möglichkeit zu reagieren. Es ist nicht ungewöhnlich, dass Klagende und Beklagte mehrere Schreiben vor dem ersten Gerichtstermin austauschen. Bei dringenden Angelegenheiten (wie zum Beispiel einer Wohnungsräumung) kann die Richter:in das schriftliche Vorverfahren aber auch überspringen.
+Antwortet die Gegenseite mit einer **Klageerwiederung**, haben Sie erneut die Möglichkeit zu reagieren. Es ist nicht ungewöhnlich, dass Klagende und Beklagte mehrere Schreiben vor dem ersten Gerichtstermin austauschen. 
+
+Alternativ zum schriftlichen Vorverfahren kann die Richter:in aber auch gleich nach Eingang der Klage einen Gerichtstermin vereinbaren, zum Beispiel bei dringenden Angelegenheiten.
 `,
     },
     {
@@ -122,7 +124,7 @@ Eine Güteverhandlung kann zu drei Ergebnissen führen, mit denen der Prozess be
 - Die Kläger:in zieht die Klage zurück  
   
   
-In etwa 50% der Fälle endet der Gerichtsprozess hier. Bringt die Güteverhandlung kein Ergebnis, lädt das Gericht zur **mündlichen Verhandlung**, die oft am selben Tag stattfindet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familienrecht.
+In etwa 50% der Fälle endet der Gerichtsprozess hier. Bringt die Güteverhandlung kein Ergebnis, findet oft gleich im selben Termin die mündliche Verhandlung statt. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familien- und Betreuungsrecht.
 `,
     },
 
@@ -133,7 +135,7 @@ Die mündliche **Verhandlung** beginnt mit einer Bestandsaufnahme durch die Rich
 
 Widersprechen sich die Darstellungen der Parteien, ordnet die Richter:in eine **Beweisaufnahme** an: Dazu werden von den Parteien benannte **Zeugen** befragt, **Sachverständige** angehört und **Beweise** gesichtet.
 
-Sobald alle Parteien gehört wurden und das Gericht sich eine Meinung gebildet hat, ist die mündliche Verhandlung beendet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familienrecht. Im Anschluss spricht die Richter:in ein **Urteil**. Dazu kommt es in etwa 20% der Gerichtsverfahren.
+Sobald alle Parteien gehört wurden und das Gericht sich eine Meinung gebildet hat, ist die mündliche Verhandlung beendet. Alle Verhandlungen sind dabei grundsätzlich öffentlich, außer im Familien- und Betreuungsrecht. Im Anschluss spricht die Richter:in ein **Urteil**. Dazu kommt es in etwa 20% der Gerichtsverfahren.
 
 Das Urteil wird entweder **direkt im Anschluss** an die mündliche Verhandlung **oder** bei schwierigen Fällen zu einem **späteren Termin** verkündet. Dabei besteht keine Anwesenheitspflicht, denn das Urteil wird beiden Parteien auch per Post geschickt.
 

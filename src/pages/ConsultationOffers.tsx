@@ -77,7 +77,7 @@ Einige Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind
       icon: FaRegComments,
       content: `
 **Angebot**: 
-- Vermittlung zwischen Ihnen und Ihrer Vermieter:in für eine Einigung durch eine ausgebildete, unabhängige Schiedsperson.
+- Vermittlung zwischen Ihnen und der Gegenseite für eine Einigung durch eine ausgebildete, unabhängige Schiedsperson.
 ######
 **Verfügbarkeit**: 
 - In einigen Bundesländern, beispielsweise [Berlin](https://www.berlin.de/sen/verbraucherschutz/verbraucherportal/recht/vertragsrecht/schlichtung-261337.php) und [Nordrhein-Westfalen](https://streitschlichtung.nrw.de/JOLStreit/).
@@ -140,8 +140,8 @@ In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen 
 ######
 **Kosten**: 
 - Eine Erstberatung kostet maximal 149 Euro, kann aber auch deutlich günstiger sein.
-- Kostenlose Beratung ist mit einer Rechtschutzversicherung, oder einem Beratungshilfeschein für finanzschwache Personen möglich.
-- Hier finden Sie einen [Antrag auf Beratungshilfe in Deutsch](https://justiz.de/service/formular/dateien/agI1.pdf), mit zusätzlichen [Hinweisen auf Englisch](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).
+- Kostenlose Beratung ist mit einer Rechtschutzversicherung oder einem Beratungshilfeschein für finanzschwache Personen möglich.
+- Hier finden Sie einen [Antrag auf Beratungshilfe in Deutsch](https://justiz.de/service/formular/dateien/agI1.pdf) mit zusätzlichen [Hinweisen auf Englisch](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).
 ######
 Rechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber der Gegenseite und vor Gericht vertreten. Jede Bürger:in hat das Recht, sich bei rechtlichen Fragen durch eine Rechtsanwält:in beraten und vertreten zu lassen.
 `,
