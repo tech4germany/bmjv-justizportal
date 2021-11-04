@@ -11,7 +11,6 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-  Spacer,
   Stack,
   Text,
   useColorModeValue,
@@ -23,7 +22,6 @@ import React from 'react';
 import { FaGlobeAfrica } from 'react-icons/fa';
 import { Link as ReactLink, NavLink } from 'react-router-dom';
 import { C_DarkGray, homeURL, Primary, Routes } from '../../Const';
-import { ColorModeSwitcher } from '../../logic/ColorModeSwitcher';
 import { dynamicActivate, gerUserLocale, locales } from '../../translations/i18n';
 
 interface FeatureProps extends BoxProps {}

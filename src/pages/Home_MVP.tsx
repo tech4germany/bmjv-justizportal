@@ -28,6 +28,7 @@ const MVPFeature = ({ title, text, imgURL }: MVPFeatureProps) => (
         <Button colorScheme="secondary" variant="outline">
           <Trans>Zum Wegweiser</Trans>
         </Button>
+        <Spacer />
       </CardContent>
     </Card>
   </GridItem>
@@ -90,7 +91,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           />
           <MVPFeature
             title={t`Abokündigung`}
-            text={t`Ob Wasserschaden, Schimmel oder Lärm, wir unterstütze Sie bei Mietmängeln.`}
+            text={t`Abo unerwartet verlängert? Informieren Sie sich hier über mögliche Ansprüche.`}
             imgURL={`${homeURL}/data/9DD5BDF0-1FC1-40D8-B559-75E0F0947966.png`}
           />
         </SimpleGrid>
@@ -111,9 +112,15 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
         </Box>
         <Spacer height={14}></Spacer>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={10}>
-          <Heading variant="subheading">Rechtsproblem einordnen</Heading>
-          <Heading variant="subheading">Über Ansprüche informieren</Heading>
-          <Heading variant="subheading">Handlungsoptionen vergleichen</Heading>
+          <Heading variant="subheading" fontSize="larger">
+            Rechtsproblem einordnen
+          </Heading>
+          <Heading variant="subheading" fontSize="larger">
+            Über Ansprüche informieren
+          </Heading>
+          <Heading variant="subheading" fontSize="larger">
+            Handlungsoptionen vergleichen
+          </Heading>
         </SimpleGrid>
         <Spacer minH={20} />
 
