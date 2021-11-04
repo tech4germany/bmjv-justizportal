@@ -40,12 +40,14 @@ const components = {
   Button: {
     baseStyle: {
       fontWeight: '500',
-      rounded: 'full',
+      // rounded: 'full',
+      rounded: 'sm',
     },
   },
   Tag: {
     baseStyle: {
-      rounded: 'lg',
+      // rounded: 'lg',
+      rounded: 'none',
     },
   },
   textarea: {

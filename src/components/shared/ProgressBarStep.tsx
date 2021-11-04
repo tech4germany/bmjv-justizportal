@@ -10,14 +10,14 @@ interface FeatureProps {
 
 export const ProgressBarStep = ({ filled, title, number, ...rest }: FeatureProps) => {
   return (
-    <VStack spacing={0} textColor={filled ? 'inherit' : 'gray.300'}>
+    <VStack spacing={0} textColor={filled ? 'inherit' : 'gray.300'} zIndex="1">
       <Box
         width="7"
         height="7"
         borderRadius="full"
         backgroundColor={filled ? mode('primary.500', 'primary.200') : 'background-color'}
         border={filled ? 'none' : '4px solid'}
-        borderColor={filled ? undefined : mode('gray.100', '#3c3e46')}>
+        borderColor={filled ? undefined : mode('white', '#3c3e46')}>
         <Text
           textColor={filled ? 'white' : mode('gray.300', 'gray.600')}
           fontWeight="bold"

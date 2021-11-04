@@ -1,4 +1,4 @@
-import { Box, Flex, Link, Text } from '@chakra-ui/layout';
+import { Box, Link, Text } from '@chakra-ui/layout';
 import { IconButton } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';

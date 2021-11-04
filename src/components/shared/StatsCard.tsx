@@ -20,6 +20,8 @@ import { FaInfoCircle } from 'react-icons/fa';
 import { Link as ReactLink } from 'react-router-dom';
 import { Primary } from '../../Const';
 import { AnnotadedText } from './AnnotatedText';
+import { Card } from './Card';
+import { CardContent } from './CardContent';
 
 interface StatsCardProps extends BoxProps {
   title: string;
@@ -31,61 +33,61 @@ interface StatsCardProps extends BoxProps {
 
 export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsCardProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const borderColor = useColorModeValue('gray.200', 'whiteAlpha.300');
+  const borderColor = useColorModeValue('gray.100', 'whiteAlpha.300');
 
   return (
     <>
-      <VStack
-        border="2px solid"
-        height="100%"
-        pos="relative"
-        borderColor={borderColor}
-        rounded="lg"
-        minH={{ base: 32, sm: '10em', md: '10em' }}
-        as={ReactLink}
-        to={link}
-        _hover={
-          disabled
-            ? undefined
-            : {
-                transitionDuration: '0.2s',
-                bg: transparentize(borderColor, 0.5),
-              }
-        }
-        background={disabled ? 'gray.200' : undefined}
-        cursor={disabled ? 'default' : 'pointer'}
-        {...rest}>
-        <Box
-          display={info ? '' : 'none'}
-          as="a"
-          href="#s"
-          pos="absolute"
-          alignSelf="end"
-          height="0"
-          top=".5em"
-          right=".5em"
-          color={disabled ? 'gray.900' : borderColor}
-          _hover={{
-            transitionDuration: '0.2s',
-            color: Primary(),
-          }}>
-          <FaInfoCircle
-            size="1.5em"
-            onClick={(e) => {
-              e.stopPropagation();
-              onOpen();
-            }}
-          />
-        </Box>
-        <Spacer />
-        <Box color={disabled ? 'gray.900' : Primary()} paddingBottom={4}>
-          {icon}
-        </Box>
-        <Box fontSize={{ base: 'sm', sm: 'md', md: 'lg' }} textAlign="center" wordBreak="break-word">
-          {i18n._(title)}
-        </Box>
-        <Spacer />
-      </VStack>
+      <Card height="full">
+        <CardContent
+          pos="relative"
+          borderColor={borderColor}
+          bg="white"
+          minH={{ base: 32, sm: '10em', md: '10em' }}
+          as={ReactLink}
+          to={link}
+          _hover={
+            disabled
+              ? undefined
+              : {
+                  transitionDuration: '0.2s',
+                  bg: transparentize(borderColor, 0.5),
+                }
+          }
+          background={disabled ? 'gray.50' : undefined}
+          cursor={disabled ? 'default' : 'pointer'}
+          {...rest}>
+          <Box
+            display={info ? '' : 'none'}
+            as="a"
+            href="#s"
+            pos="absolute"
+            alignSelf="end"
+            height="0"
+            top=".5em"
+            right=".5em"
+            color={disabled ? 'gray.900' : borderColor}
+            _hover={{
+              transitionDuration: '0.2s',
+              color: Primary(),
+            }}>
+            <FaInfoCircle
+              size="1.5em"
+              onClick={(e) => {
+                e.stopPropagation();
+                onOpen();
+              }}
+            />
+          </Box>
+          <Spacer />
+          <Box color={disabled ? 'gray.900' : Primary()} paddingBottom={4}>
+            {icon}
+          </Box>
+          <Box fontSize={{ base: 'sm', sm: 'md', md: 'lg' }} textAlign="center" wordBreak="break-word">
+            {i18n._(title)}
+          </Box>
+          <Spacer />
+        </CardContent>
+      </Card>
 
       <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay />

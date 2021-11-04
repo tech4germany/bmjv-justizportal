@@ -26,6 +26,7 @@ import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { Primary } from '../Const';
 import { MMGraph } from '../logic/KMParser';
+import spacing from '../theme/foundations/spacing';
 
 interface FeatureProps {
   id: string | null;
@@ -181,7 +182,7 @@ Wenn Sie Hilfe bei der Einreichung einer Klage oder der Beantwortung eines Geric
           </Trans>
         </Text>
         <VStack align="center" width="100%">
-          <ButtonGroup variant="outline">
+          <ButtonGroup variant="outline" flexWrap="wrap" justifyContent="center" spacing={0} gridGap={5}>
             <Button
               onClick={() => {
                 toggleFilterState(Tag.consultation);
