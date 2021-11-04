@@ -42,9 +42,9 @@ export default function Footer() {
         <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} fontWeight="bold" textAlign="center">
           <Trans>Impressum</Trans>
         </Link>
-        <Text fontWeight="bold" textAlign="center">
-          <Trans>Gebaut von Tech4Germany &amp; dem BMJV</Trans>
-        </Text>
+        <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/" fontWeight="bold" textAlign="center">
+          <Trans>Tech4Germany Fellowship 2021</Trans>
+        </Link>
         <Link as={ReactLink} to={`${homeURL}/${Routes.Privacy}`} fontWeight="bold" textAlign="center">
           <Trans>Datenschutz</Trans>
         </Link>

@@ -102,7 +102,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
               </Text>
             </HStack>
           ) : (
-            t`In welchem Bereich Ihres Lebens haben Sie ein Problem?`
+            t`Wobei haben Sie ein Problem?`
           )}
         </Text>
         {state == 'SE' ? (
