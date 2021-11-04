@@ -44,7 +44,7 @@ export const LanguageSelector = (props: FeatureProps) => {
           border={0}
           boxShadow={'xl'}
           // bg={popoverContentBgColor}
-          rounded={'xl'}
+          rounded={'sm'}
           width={'100%'}
           minW={10}>
           <Stack>
@@ -277,11 +277,11 @@ const MobileNav = () => {
         ))}
       </Stack>
 
-      <Box display="flex" alignItems="center" width="100%" height="auto" borderTop="1px solid gray">
+      {/* <Box display="flex" alignItems="center" width="100%" height="auto" borderTop="1px solid gray">
         <Spacer flex={1} />
         <Text>Dark mode:</Text>
         <ColorModeSwitcher justifySelf="flex-end" />
-      </Box>
+      </Box> */}
     </Box>
   );
 };
