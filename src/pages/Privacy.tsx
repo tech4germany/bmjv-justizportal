@@ -25,12 +25,18 @@ DigitalService4Germany GmbH, Prinzessinnenstraße 8-14, 10969 Berlin, DE,  [hall
 **Datenschutzerklärung:**  [Link zur Datenschutzerklärung](https://docs.github.com/en/github/site-policy/github-privacy-statement) 
 **Privacy Shield:**  [Link Privacy Shield](https://docs.github.com/en/github/site-policy/global-privacy-practices) 
 
-### Web-Schriften
+### Externe Dienste
 #### Google Fonts
 
 Wir verarbeiten mit unserem Auftragsverarbeiter  [Google Fonts](https://fonts.google.com/) , Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland Verbindungsdaten und Browserdaten zum Zweck der Bereitstellung der vom Webbrowser zur Anzeige der Website benötigten Schriftarten. Diese Daten werden nur für die zur Auswahl und Übermittlung der Schriftarten benötigte Dauer verarbeitet.
 Die Rechtsgrundlage für die Datenverarbeitung ist das berechtigte Interesse (unbedingte technische Notwendigkeit zur Bereitstellung und Auslieferung des von Ihnen durch Ihren Aufruf ausdrücklich gewünschten Dienstes „Website“) gemäß Art. 6 Abs. 1 lit. f DSGVO.
 Soweit durch Google Fonts eine weitergehende eigenständige Verarbeitung der Daten erfolgt, ist Google dafür alleinige Verantwortliche. Details finden Sie in der  [Datenschutzerklärung](https://policies.google.com/privacy?gl=AT&hl=de#intro)  und in den  [FAQ](https://developers.google.com/fonts/faq)  von Google Fonts.
+
+#### Mouseflow
+Diese Website verwendet Mouseflow, ein Webanalyse-Tool der Mouseflow ApS, Flaesketorvet 68, 1711 Kopenhagen, Dänemark. Die Datenverarbeitung dient dem Zweck der Analyse dieser Website und ihrer Besucher. Dazu werden Daten zu Marketing- und Optimierungszwecken gesammelt und gespeichert. Aus diesen Daten können unter einem Pseudonym Nutzungsprofile erstellt werden. Hierzu können Cookies eingesetzt werden. Bei dem Webanalyse-Tool Mouseflow werden zufällig ausgewählte einzelne Besuche (nur mit anonymisierter IP-Adresse) aufgezeichnet. Hierbei entsteht ein Protokoll der Mausbewegungen und Klicks mit der Absicht einzelne Website-Besuche stichprobenartig abzuspielen und potentielle Verbesserungen für die Website daraus abzuleiten. Die mit Mouseflow erhobenen Daten werden nicht dazu benutzt, den Besucher dieser Website persönlich zu identifizieren und nicht mit personenbezogenen Daten über den Träger des Pseudonyms zusammengeführt. Die Verarbeitung erfolgt auf Grundlage des Art. 6 (1) f) DSGVO aus dem berechtigten Interesse an direkter Kundenkommunikation und an der bedarfsgerechten Gestaltung der Website. Sie haben das Recht aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen diese auf Art. 6 (1) f DSGVO beruhende Verarbeitung Sie betreffender personenbezogener Daten zu widersprechen. Dazu können Sie eine Aufzeichnung auf allen Websites, die Mouseflow einsetzen, global für Ihren gerade verwendeten Browser unter folgendem Link deaktivieren: https://mouseflow.de/opt-out/
+
+Solltet ihr an einer Auftragsdatenverarbeitung interessiert sein, könnt ihr diese mit uns direkt via RightSignature online schließen: https://mouseflow.de
+
 
 
 ### Personenbezogene Daten, Zwecke und Rechtsgrundlage der Datenverarbeitung
@@ -82,10 +88,6 @@ Wenden Sie sich zur Geltendmachung dieser Rechte bitte an  [datenschutz@4germany
 
 #### Wenn Sie Anmerkungen oder Fragen haben:
 Wir treffen alle erdenklichen Vorkehrungen zum Schutz und zur Sicherheit Ihrer Daten. Ihre Fragen und Kommentare zum Datenschutz sind uns willkommen, schreiben Sie einfach eine Mail an  [datenschutz@4germany.org](mailto:datenschutz@4germany.org) .
-
-
-
-
 
 
 `}
