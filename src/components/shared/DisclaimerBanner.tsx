@@ -14,7 +14,7 @@ export const DisclaimerBanner = ({ ...props }) => {
       borderStyle={'solid'}
       borderColor={'gray.200'}
       display={showBanner ? 'inherit' : 'none'}>
-      <Text fontWeight="bold" textAlign="center" fontSize={'small'} flex={1}>
+      <Text fontWeight="bold" textAlign="center" fontSize={'small'} px={5} flex={1}>
         Diese Seite ist ein Prototyp des{' '}
         <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/">Tech4Germany Fellowships 2021</Link> und
         bietet keine verbindlichen Rechtsinformationen.

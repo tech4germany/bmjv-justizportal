@@ -7,10 +7,8 @@ import {
   ModalContent,
   ModalFooter,
   ModalOverlay,
-  Spacer,
   useColorModeValue,
   useDisclosure,
-  VStack,
 } from '@chakra-ui/react';
 import { transparentize } from '@chakra-ui/theme-tools';
 import { i18n } from '@lingui/core';

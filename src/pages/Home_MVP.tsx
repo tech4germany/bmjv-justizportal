@@ -29,6 +29,7 @@ const MVPFeature = ({ title, text, imgURL, id }: MVPFeatureProps) => (
         <Button colorScheme="secondary" variant="outline" as={ReactLink} to={`${homeURL}/wegweiser?id=${id}`}>
           <Trans>Zum Wegweiser</Trans>
         </Button>
+        <Spacer />
       </CardContent>
     </Card>
   </GridItem>
@@ -101,6 +102,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
             title={t`Abokündigung`}
             text={t`Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen.`}
             imgURL={`${homeURL}/data/9DD5BDF0-1FC1-40D8-B559-75E0F0947966.png`}
+            id={""}
           />
         </SimpleGrid>
         <Spacer minH={20} />

@@ -26,7 +26,6 @@ import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { Primary } from '../Const';
 import { MMGraph } from '../logic/KMParser';
-import spacing from '../theme/foundations/spacing';
 
 interface FeatureProps {
   id: string | null;

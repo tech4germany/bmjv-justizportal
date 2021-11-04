@@ -39,13 +39,13 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} fontWeight="bold" textAlign="center">
+        <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} textAlign="center">
           <Trans>Impressum</Trans>
         </Link>
-        <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/" fontWeight="bold" textAlign="center">
+        <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/" textAlign="center">
           <Trans>Tech4Germany Fellowship 2021</Trans>
         </Link>
-        <Link as={ReactLink} to={`${homeURL}/${Routes.Privacy}`} fontWeight="bold" textAlign="center">
+        <Link as={ReactLink} to={`${homeURL}/${Routes.Privacy}`} textAlign="center">
           <Trans>Datenschutz</Trans>
         </Link>
       </Container>
