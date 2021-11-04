@@ -1,4 +1,4 @@
-import { Link, Text, Tooltip, BoxProps, Box } from '@chakra-ui/react';
+import { Link, Text, Tooltip, BoxProps, Box, Heading } from '@chakra-ui/react';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import * as React from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -48,6 +48,20 @@ export const AnnotadedText = ({ text, ...rest }: AnnotadedTextProps) => {
             } else {
               return children;
             }
+          },
+          h3({ title, children, ...props }) {
+            return (
+              <Heading variant="subheading" py={3}>
+                {children}
+              </Heading>
+            );
+          },
+          h4({ title, children, ...props }) {
+            return (
+              <Heading variant="subheading" fontSize="larger" py={3}>
+                {children}
+              </Heading>
+            );
           },
         })}>
         {annotatedText}

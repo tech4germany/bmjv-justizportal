@@ -49,7 +49,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   });
 
   return (
-    <PageBody title="MVP">
+    <PageBody title={`Home`}>
       <HeroSplit
         title1={t`Die Justiz im Netz.`}
         title2={t`Einfach, online, jederzeit.`}

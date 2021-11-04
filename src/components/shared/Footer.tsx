@@ -1,4 +1,5 @@
-import { Box, Button, Container, Link, Stack, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Box, Button, Container, Link, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 import { homeURL, Routes } from '../../Const';
@@ -39,7 +40,13 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} fontWeight="bold" textAlign="center">
-          Impressum
+          <Trans>Impressum</Trans>
+        </Link>
+        <Text fontWeight="bold" textAlign="center">
+          <Trans>Gebaut von Tech4Germany &amp; dem BMJV</Trans>
+        </Text>
+        <Link as={ReactLink} to={`${homeURL}/${Routes.Privacy}`} fontWeight="bold" textAlign="center">
+          <Trans>Datenschutz</Trans>
         </Link>
       </Container>
     </Box>
