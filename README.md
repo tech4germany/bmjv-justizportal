@@ -1,6 +1,6 @@
 # Justizportal
 
-This is the source code of the 2021 Tech4Germany project "Digitale Klagewege". [Here]() you find a project overview (only in German). 
+This is the source code of the 2021 Tech4Germany project "Digitale Klagewege". [Here](https://tech.4germany.org/project/digitale-klagewege-bmjv/) you find a project overview (only in German). 
 
 **The prototype is live!**
 <https://dev.tech4germany.org/bmjv-justizportal/>
