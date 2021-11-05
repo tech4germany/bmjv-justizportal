@@ -79,14 +79,14 @@ Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltsh
 ###  
 ### Weitere Kosten
 - Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeug:innen gehört werden. Diese erhalten dann eine Vergütung. 
-- Auch Sachverständige (Experten) können Kosten verursachen, wenn zusätzliche Gutachten benötigt werden.
+- Auch Sachverständige (Expert:innen) können Kosten verursachen, wenn zusätzliche Gutachten benötigt werden.
   
 ###  
 ### Welche Kosten können für Sie insgesamt entstehen?
 - Die Kosten Ihres Falls können Sie mithilfe des Streitwerts abschätzen.  
 - Ihren Streitwert berechnen wir im nächsten Schritt, wenn Sie eine Klage erstellen.  
 - In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.  
-- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Mitgliedschaften inbegriffen, z.B. in einem Mieterverein.
+- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Mitgliedschaften inbegriffen, z.B. bei einem Mieterverein.
 - Wenn Sie nicht genug Geld für einen Gerichtsprozess haben, können Sie [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen.
   
 ###
@@ -109,7 +109,7 @@ Nachdem Sie die Klage beim Gericht eingereicht haben, wird diese der Gegenseite 
 
 Antwortet die Gegenseite mit einer **Klageerwiederung**, haben Sie erneut die Möglichkeit zu reagieren. Es ist nicht ungewöhnlich, dass Klagende und Beklagte mehrere Schreiben vor dem ersten Gerichtstermin austauschen. 
 
-Alternativ zum schriftlichen Vorverfahren kann die Richter:in aber auch gleich nach Eingang der Klage einen Gerichtstermin vereinbaren, zum Beispiel bei dringenden Angelegenheiten.
+Alternativ zum schriftlichen Vorverfahren kann die Richter:in aber auch gleich nach Eingang der Klage einen Gerichtstermin vereinbaren.
 `,
     },
     {
@@ -155,8 +155,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
 
         <Text>
           <Trans id="zpo.heading_info">
-            Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Wenn Sie sich
-            dann sicher fühlen, helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
+            Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Am Ende helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
           </Trans>
         </Text>
         <Spacer />
@@ -172,8 +171,9 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
                 id: 'zpo.info1',
                 message: `
 ### Wie läuft ein Gerichtsprozess ab?
+- Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
 - Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
-- Zunächst wird die Richter:in versuchen eine Einigung (Vergleich) zu finden.
+- Zunächst kann die Richter:in Ihnen und der Gegenpartei eine Einigung (Vergleich) vorschlagen, um den Streit schnell beizulegen.
 - Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil. Darin steht, welche Ansprüche wem zustehen.
 - Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.`,
               })}
@@ -195,9 +195,10 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
               id: 'zpo.info2',
               message: `
 ### Was kostet ein Gerichtsprozess?
-- Die Höhe der Kosten ist **abhängig vom Wert der verhandelten Forderung**. 
-- Die **Verlierer:in des Prozesses trägt die Kosten**. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
-- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
+- Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
+- Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung.
+- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen.
+- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, wenn die Kosten für Sie zu hoch sind.
 `,
             })}
           />
@@ -211,9 +212,9 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
               id: 'zpo.info3',
               message: `
 ### Wer kann klagen?
-- **Jede Person ab 18 Jahren** kann **alleine** am Amtsgericht klagen.
-- Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
+- Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.
 - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
+- Eltern können auch für ihre minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
 `,
             })}
           />
