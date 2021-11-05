@@ -187,7 +187,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
 
         <HStack align="start">
           <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
-            <Image src="https://image.freepik.com/free-vector/family-couple-saving-money_74855-5240.jpg" />
+            <Image src="https://image.freepik.com/free-vector/team-crisis-managers-solving-businessman-problems-employees-with-lightbulb-unraveling-tangle-vector-illustration-teamwork-solution-management-concept_74855-10162.jpg" />
           </Box>
           <AnnotadedText
             flex={2}
