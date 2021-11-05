@@ -3,6 +3,7 @@ import { Trans } from '@lingui/macro';
 import React, { ReactNode } from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 import { homeURL, Routes } from '../../Const';
+import { Spacer, HStack } from '@chakra-ui/layout';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
@@ -39,15 +40,25 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} textAlign="center">
-          <Trans>Impressum</Trans>
-        </Link>
-        <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/" textAlign="center">
-          <Trans>Tech4Germany Fellowship 2021</Trans>
-        </Link>
-        <Link as={ReactLink} to={`${homeURL}/${Routes.Privacy}`} textAlign="center">
-          <Trans>Datenschutz</Trans>
-        </Link>
+        <Text textAlign="center">
+          <Trans>
+            Gebaut von <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/">Tech4Germany</Link>
+            {/* &amp; dem{' '}
+            <Link href="https://www.bmjv.de/">BMJV</Link> */}
+          </Trans>
+        </Text>
+        {/* <Text textAlign="center" fontWeight="bold">
+          <Trans>Dies ist ein Prototyp ohne Rechtssicherheit!</Trans>
+        </Text> */}
+        <HStack>
+          <Link as={ReactLink} to={`${homeURL}/${Routes.Privacy}`} textAlign="center">
+            <Trans>Datenschutz</Trans>
+          </Link>
+          <Spacer />
+          <Link as={ReactLink} to={`${homeURL}/${Routes.Imprint}`} textAlign="center">
+            <Trans>Impressum</Trans>
+          </Link>
+        </HStack>
       </Container>
     </Box>
   );
