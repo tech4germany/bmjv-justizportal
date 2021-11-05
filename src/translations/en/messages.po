@@ -11,9 +11,6 @@ msgstr ""
 msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels im Verzug** ist oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst dann selbstständig beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben und der Mangel danach nicht behoben wurde."
 msgstr "- A claim to **reimbursement of expense** is the right to **reimbursement of the costs** incurred in the **elimination of the defect**.\n- You may rectify the defect yourself if the lessor is in arrears with the elimination of the defect or it is a **emergency or urgent measure**.\n- In most cases, you should not repair the defect yourself until you have asked your landlady to remedy it with a deadline and the defect has not been rectified afterwards."
 
-msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
-msgstr "- A claim to **reimbursement of expense** is the right to **reimbursement of the costs** incurred in the **elimination of the defect**.\n- You may rectify the defect yourself if the lessor is in arrears with the elimination of the defect, or it is a **emergency or emergency measure**.\n- In most cases, you should not repair the defect yourself until you have asked your landlady to correct it and the defect has not been rectified afterwards."
-
 msgid "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entschädigung** durch Ihre Fluglinie.\n- Sie bekommen eine Ausgleichszahlung, wenn Sie Ihr Ziel wegen **Verspätung**, **Annullierung** oder **Überbuchung** nicht oder nur verspätet erreichen konnten.\n- Die **Höhe der Zahlung** richtet sich nach der **Flugstrecke** und beträgt **250€ (unter 1.500km)**, **400€ (zwischen 1.500km und 3.500km)** oder **600€ (über 3.500km)**."
 msgstr "- A claim to **Compensation** is the right to a **Compensation** from your airline.\n- You will receive a chargeback if you were unable to reach your destination or were delayed due to **delay**, **cancellation**, or **overbooking**.\n- The **amount of payment** depends on the **flight route** and is **€250 (under 1,500 km)**, **€400 (between 1,500 km and 3,500 km)** or **€600 (over 3,500 km)**."
 
@@ -23,20 +20,11 @@ msgstr "- A claim to **care services** is the right to additional support such a
 msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch ist und die Wohnqualität stark beeinträchtigt wird.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
 msgstr "- A claim to **rent reduction** is the right to pay a **lower total rent** if the **use of the apartment**\nis **significantly limited** due to a defect. \n- There is a **significant deficiency** when the defect is not only visual and the quality of living is severely impaired.\n- The reduction period **begins with the notification of the defect** to the landlord:in and **ends with remediation**.\n- You shouldn't pay a lower rent right away, as you risk terminating because of a delay in rent. Instead, you can report to your landlady that **pay the tentative rent**. Once the defect has been rectified, you can claim back a share.\n- **how many percent** the total rent can be reduced, depends on the **severity of the defect**. You can find a clue for your case in a **rent reduction table** on the Internet."
 
-msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch und die Wohnqualität stark beeinträchtigt ist.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
-msgstr "- A claim to**rent reduction** is the right to pay a **lower total rent** if the**use of the apartment**\nis **significantly limited** due to a defect. \n- There is a **significant deficiency** if the defect is not only visually and the quality of living is severely impaired.\n- The reduction period **begins with the notification of the defect** to the landlord:in, and **ends with remediation**.\n- You shouldn't pay a lower rent right away, as you can risk termination due to delay in rent. Instead, you can report to your landlady that**pay the tentative rent**. Once the defect has been rectified, you can claim back a share.\n- **how many percent** the total rent can be reduced, depends on the **severity of the defect**. You can find a clue for your case in a **rent reduction table** on the Internet."
-
 msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro verantwortlich sein, wenn das im Mietvertrag festgelegt wurde."
-msgstr "- A claim to **remedial defects** is the right to ask your **landlord to remedy the defect**.\n- Landlords have the duty to hand over and maintain the rented apartment in a usable condition.\n- If a defect occurs during the rental period, the landlord must eliminate it.\n- Exception: End of rental can be responsible for small repairs up to around 100 euros if this has been stipulated in the rental agreement."
-
-msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde."
 msgstr "- A claim to **remedial defects** is the right to ask your **landlord to remedy the defect**.\n- Landlords have the duty to hand over and maintain the rented apartment in a usable condition.\n- If a defect occurs during the rental period, the landlord must eliminate it.\n- Exception: End of rental can be responsible for small repairs up to around 100 euros if this has been stipulated in the rental agreement."
 
 msgid "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Recht, Ihren gezahlten Ticketpreis bei Annullierung innerhalb einer Woche zurückzuerhalten.\n- Zusätzlich erhalten Sie einen Rückflug zu Ihrem ersten Abflugort, wenn ein Anschlussflug annuliert wurde.\n- Statt der Rückerstattung können Sie auch eine anderweitige Beförderung zu Ihrem Zielort durch die Fluglinie wählen."
 msgstr "- A claim to **Ticket Fee Refund** is the right to receive your paid ticket price back within one week if cancelled.\n- In addition, you will receive a return flight to your first departure location if a connecting flight has been cancelled.\n- You can choose to transfer the airline to your destination instead of reimbursement."
-
-msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
-msgstr "- A claim to **damages** is the right to be reimbursed to **money** for damages incurred as a result of the defect.\n- **Possible damage** includes incurred **hotel costs**, loss of value for **furniture** that has become unusable, or compensation for physical damage.\n- It is important that the lessor is responsible for the defect, is in arrears with the rectification, or has not disclosed it when concluding the contract."
 
 msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln** oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist oder diesen bei Vertragsabschluss verschwiegen hat."
 msgstr "- A claim to **damages** is the right to be reimbursed to **money** for damages incurred as a result of the defect.\n- **Possible damage** includes incurred **hotel costs**, loss of value for **furniture** that has become unusable or compensation for physical damage.\n- It is important that the lessor is responsible for the defect, is in arrears with the rectification or has not disclosed it when concluding the contract."
@@ -46,9 +34,6 @@ msgstr "<0>Amount in dispute</0> <1>Court fees<2/> (advance)</1> <3>attorney fee
 
 msgid "Abokündigung"
 msgstr "Abo cancelation"
-
-msgid "Abschließend fassen wir mögliche Handlungsoptionen für Sie zusammen, um Ihre Ansprüche durchzusetzen - von einem Informationsschreiben bis zu einer Klage bei Gericht."
-msgstr "Finally, we summarize possible courses of action for you to enforce your claims - from an information letter to a lawsuit in court."
 
 msgid "Aufwendungsersatz"
 msgstr "Reimbursement of expenses"
@@ -68,9 +53,6 @@ msgstr "Removal of the defect by the landlords"
 msgid "Betreuungsleistungen"
 msgstr "Care services"
 
-msgid "Dadurch können wir Sie über die relevanten rechtlichen Ansprüche in Ihrem Fall informieren."
-msgstr "This allows us to inform you about the relevant legal claims in your case."
-
 msgid "Datenschutz"
 msgstr "Privacy"
 
@@ -86,8 +68,8 @@ msgstr "Unfortunately, this option is not yet available."
 msgid "Dokumentation des Mangels"
 msgstr "Documentation of the defect"
 
-msgid "Durch die Beantwortung einfacher Fragen helfen wir Ihnen, Ihr Problem einzuordnen und relevante, kostenfreie Rechtsinformationen zu finden."
-msgstr "By answering simple questions, we help you classify your problem and find relevant, free legal information."
+msgid "Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevante und kostenfreie Rechtsinformationen zu finden."
+msgstr "By answering simple yes-no questions, we help you find relevant and free legal information."
 
 msgid "Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - hier können Sie sich über Ihre Rechte bei Mietmängeln informieren!"
 msgstr "Whether you have problems with mould, noise or water damage, you can find out about your rights in case of rental defects here!"
@@ -131,9 +113,6 @@ msgstr "Has your contract been extended unexpectedly or have you incurred unfore
 msgid "Impressum"
 msgstr "Imprint"
 
-msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
-msgstr "What area of your life do you have a problem in?"
-
 msgid "Info"
 msgstr "Info"
 
@@ -146,9 +125,6 @@ msgstr "Start now!"
 msgid "Landesspezifische Schlichtungsstellen"
 msgstr "Country-specific arbitration bodies"
 
-msgid "Lösungsfinder"
-msgstr "Solutionfinder"
-
 msgid "Mehr erfahren"
 msgstr "Learn more"
 
@@ -160,6 +136,9 @@ msgstr "Rent reduction"
 
 msgid "Mietmängel"
 msgstr "Rental deficiencies"
+
+msgid "Mit Ihren Angaben können wir für Sie mögliche rechtliche Ansprüche zusammenfassen, über die Sie sich in Ruhe informieren können."
+msgstr "With your information, we can summarize possible legal claims for you, which you can find out about in peace."
 
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
 msgstr "Notice letter of defects to your landlord"
@@ -209,9 +188,6 @@ msgstr "Damages"
 msgid "Schlichtungsantrag stellen"
 msgstr "Submit a request for conciliation"
 
-msgid "Schritt"
-msgstr "Step"
-
 msgid "Startseite"
 msgstr "Home page"
 
@@ -253,6 +229,9 @@ msgstr "What can we help you with?"
 
 msgid "ZPO Informationen"
 msgstr "ZPO information"
+
+msgid "Zuletzt geben wir Ihnen mehrere Handlungsoptionen und Vorlagen, um Ihre Ansprüche durchzusetzen - von einem Schreiben an die Gegenseite, über eine Rechtbseratung bis hin zu einer Klage vor Gericht."
+msgstr "Finally, we give you several options for action and templates to enforce your claims - from a letter to the opposite side, to legal councillor and a lawsuit in court."
 
 msgid "Zum Prototypen"
 msgstr "Go to the prototype"
@@ -306,10 +285,10 @@ msgid "consultation.header"
 msgstr "Legal advice"
 
 msgid "consultation.sub_header"
-msgstr "Citizens have many rights in Germany. However, this also makes our legal system complex. As the judicial portal cannot provide you with individual information for your case, we have provided an overview of cost-effective advice centres for you here."
+msgstr "Since the justice portal cannot always inform you, we have provided an overview of cost-effective advice centres for you here."
 
 msgid "exit.footer"
-msgstr "Are you looking for more support? Then you can contact legal advice centres who can inform you individually about your case. In a consultation, experts assess whether legal claims exist and how you can best enforce them. For this purpose, we have [provided an overview of advice centres here](/beratungsangebote)."
+msgstr "Are you looking for more support? Then you can contact legal advice centres that you can\nbe able to inform you individually about your case. In a consultation, experts assess whether legal\nDemands exist and how you can best enforce them. For that, we have [here's an overview of\nprepared counselling centres](/beratungsangebote)."
 
 msgid "exit.heading"
 msgstr "Unfortunately, we didn't cover your case."
@@ -336,7 +315,7 @@ msgid "home.howitwork_options"
 msgstr "Based on this, we will suggest possible solutions for <0>you - initially for an amicable dispute resolution with the opposite side.</0>"
 
 msgid "home.howitwork_subheading"
-msgstr "We can help you solve your legal problem in four easy steps:"
+msgstr "We can help you solve your legal problem in three easy steps:"
 
 msgid "home.howtohelp_footer"
 msgstr "You can find out more about the legal problems we can help you with on the following pages."
@@ -345,7 +324,7 @@ msgid "home.sub_heading"
 msgstr "We inform you about your rights in everyday life and help you solve your legal problem in simple steps"
 
 msgid "nextsteps.header"
-msgstr "Solution Finder End: Possible Next Steps"
+msgstr "End of Solution Explorer: Possible next steps"
 
 msgid "nextsteps.sub_header"
 msgstr "We've summarized next steps to enforce your claims here.<0/> Click the boxes one at a time to learn more."
@@ -384,16 +363,16 @@ msgid "zpo.heading"
 msgstr "File a lawsuit at the district court"
 
 msgid "zpo.heading_info"
-msgstr "With a lawsuit, you start a lawsuit. We'll explain what that means here. When you feel safe, we'll help you file and file a lawsuit."
+msgstr "With a lawsuit, you start a lawsuit. We'll explain what that means here. In the end, we'll help you create and file a lawsuit."
 
 msgid "zpo.info1"
-msgstr "### How does a court case work?\n- In the trial, you and the other party present the case to the judge. If it is not clear which version is true, evidence will be collected. \n- First, the Judge will try to find an agreement (comparison).\n- If no agreement is found, the judge will announce a binding verdict at the end of the trial. It tells which demands are entitled to whom.\n- In total, a process usually takes between three and ten months."
+msgstr "### How does a court case work?\n- If you cannot resolve a conflict with a person or a company alone, a judge can resolve it for you in a court case.\n- In the trial, you and the other party present the case to the judge. If it is not clear which version is true, evidence will be collected. \n- First, the judge can propose an agreement (settlement) to you and the other party to resolve the dispute quickly.\n- If no agreement is found, the judge will announce a binding verdict at the end of the trial. It tells which demands are entitled to whom.\n- In total, a process usually takes between three and ten months."
 
 msgid "zpo.info2"
-msgstr "### What does a court case cost?\n- The amount of costs is **dependent on the value of the negotiated receivable**. \n- The **loser:in the process bears the costs**. If none of the parties is quite right, the costs are shared.\n- You can apply for [legal aid](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) if you are low on money."
+msgstr "### What does a court case cost?\n- The losers:In the process bears the costs. If none of the parties is quite right, the costs are shared.\n- The amount of costs depends on the value of the negotiated claim.\n- If you have legal expenses insurance, it can cover your costs.\n- You can apply for [legal aid](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) if the costs are too high for you."
 
 msgid "zpo.info3"
-msgstr "### Who can sue?\n- **Anyone over 18 years** can sue **alone** at the district court.\n- Parents can sue for underage children, for example in the case of claims under the EU Passenger Rights Regulation.\n- If you feel unsure about this, lawyers can advise you or fully represent you."
+msgstr "### Who can sue?\n- Anyone over the age of 18 can sue at the district court alone.\n- If you feel unsure about this, lawyers can advise you or fully represent you.\n- Parents can also sue for their minor children, for example with claims under the EU Passenger Rights Regulation."
 
 msgid "zpo.nextsteps"
 msgstr "1. On the next page, you can create the document for a lawsuit related to your case. \n2. We will estimate the legal costs for you and inform you about the next steps you need to take. \n3. Once created, you can review all information first. **Only then do you decide on the submission.**"
