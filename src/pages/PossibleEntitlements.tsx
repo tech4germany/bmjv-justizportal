@@ -152,11 +152,9 @@ Klicken Sie auf die Ansprüche, um mehr darüber zu erfahren. Auf der nächsten 
               .map((acc, index) => (
                 <AccordionItem>
                   <AccordionButton>
-                    {
-                      <Box color={Primary()}>
-                        <acc.icon size="2.5em" />
-                      </Box>
-                    }
+                    <Box color={Primary()}>
+                      <acc.icon size="2.5em" />
+                    </Box>
                     <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
                       {acc.label}
                     </Text>

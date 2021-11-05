@@ -201,7 +201,7 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
         <PageBlock>
           <StaticProgress currentStep={3} />
           <Heading paddingTop={10}>
-            <Trans id="nextsteps.header">Ende des Lösungfinders: Mögliche nächste Schritte</Trans>
+            <Trans id="nextsteps.header">Ende des Wegweisers: Mögliche nächste Schritte</Trans>
           </Heading>
           <Text>
             <Trans id="nextsteps.sub_header">

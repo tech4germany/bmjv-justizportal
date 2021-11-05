@@ -76,10 +76,12 @@ export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsC
               }}
             />
           </Box>
-          <Box color={disabled ? 'gray.900' : Primary()} paddingBottom={4}>
-            {icon}
-          </Box>
-          <Box fontSize={{ base: 'sm', sm: 'md', md: 'lg' }} textAlign="center" wordBreak="break-word">
+          <Box color={disabled ? 'gray.400' : Primary()}>{icon}</Box>
+          <Box
+            fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
+            color={disabled ? 'gray.400' : undefined}
+            textAlign="center"
+            wordBreak="break-word">
             {i18n._(title)}
           </Box>
         </CardContent>

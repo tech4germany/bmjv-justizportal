@@ -49,18 +49,28 @@ export const AnnotadedText = ({ text, ...rest }: AnnotadedTextProps) => {
               return children;
             }
           },
-          h3({ title, children, ...props }) {
+          h1({ title, children, ...props }) {
+            return <Heading py={3}>{children}</Heading>;
+          },
+          h2({ title, children, ...props }) {
             return (
               <Heading variant="subheading" py={3}>
                 {children}
               </Heading>
             );
           },
-          h4({ title, children, ...props }) {
+          h3({ title, children, ...props }) {
             return (
               <Heading variant="subheading" fontSize="larger" py={3}>
                 {children}
               </Heading>
+            );
+          },
+          h4({ title, children, ...props }) {
+            return (
+              <Text fontWeight="bold" py={3}>
+                {children}
+              </Text>
             );
           },
         })}>

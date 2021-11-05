@@ -13,20 +13,26 @@ interface MVPFeatureProps {
   title: string;
   text: string;
   imgURL: string;
-  id: string;
+  disabled?: boolean;
+  id?: string;
 }
 
-const MVPFeature = ({ title, text, imgURL, id }: MVPFeatureProps) => (
+const MVPFeature = ({ title, text, imgURL, disabled, id }: MVPFeatureProps) => (
   <GridItem as={VStack}>
     <Card height="full">
       <CardContent height="full">
         <Image src={imgURL} />
-        <Heading colorScheme="primary" variant="subheading">
+        <Heading colorScheme={disabled ? 'gray' : 'primary'} variant="subheading">
           {title}
         </Heading>
         <Text variant="small">{text}</Text>
         <Spacer />
-        <Button colorScheme="secondary" variant="outline" as={ReactLink} to={`${homeURL}/wegweiser?id=${id}`}>
+        <Button
+          colorScheme="secondary"
+          variant="outline"
+          as={ReactLink}
+          to={disabled ? '#' : `${homeURL}/wegweiser?id=${id}`}
+          disabled={disabled}>
           <Trans>Zum Wegweiser</Trans>
         </Button>
         <Spacer />
@@ -37,7 +43,7 @@ const MVPFeature = ({ title, text, imgURL, id }: MVPFeatureProps) => (
 
 interface FeatureProps {
   anchorId: string;
-} 
+}
 
 export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   const howRef = React.useRef<HTMLDivElement>(null);
@@ -80,10 +86,10 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <Trans>Unser Angebot</Trans>
         </Heading>
         <Text>
-        <Trans>
-          Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag und hilft Ihnen Handlungsoptionen 
-          zur Lösung Ihres Rechtsproblems zu finden. Probieren Sie es hier aus!
-        </Trans>
+          <Trans>
+            Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag und hilft Ihnen Handlungsoptionen zur
+            Lösung Ihres Rechtsproblems zu finden. Probieren Sie es hier aus!
+          </Trans>
         </Text>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={10}>
           <MVPFeature
@@ -102,7 +108,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
             title={t`Abokündigung`}
             text={t`Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen.`}
             imgURL={`${homeURL}/data/9DD5BDF0-1FC1-40D8-B559-75E0F0947966.png`}
-            id={""}
+            disabled
           />
         </SimpleGrid>
         <Spacer minH={20} />
@@ -125,19 +131,19 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <div>
             <Heading variant="subheading">Rechtsproblem einordnen</Heading>
             <Trans>
-            Durch die Beantwortung einfacher Fragen helfen wir Ihnen, Ihr Problem einzuordnen und relevante, kostenfreie Rechtsinformationen zu finden.
+              Durch die Beantwortung einfacher Fragen helfen wir Ihnen, Ihr Problem einzuordnen und relevante,
+              kostenfreie Rechtsinformationen zu finden.
             </Trans>
           </div>
           <div>
             <Heading variant="subheading">Über mögliche Ansprüche informieren</Heading>
-            <Trans>
-            Dadurch können wir Sie über die relevanten rechtlichen Ansprüche in Ihrem Fall informieren. 
-            </Trans>
+            <Trans>Dadurch können wir Sie über die relevanten rechtlichen Ansprüche in Ihrem Fall informieren.</Trans>
           </div>
           <div>
             <Heading variant="subheading">Handlungsoptionen vergleichen</Heading>
             <Trans>
-            Abschließend fassen wir mögliche Handlungsoptionen für Sie zusammen, um Ihre Ansprüche durchzusetzen - von einem Informationsschreiben bis zu einer Klage bei Gericht.
+              Abschließend fassen wir mögliche Handlungsoptionen für Sie zusammen, um Ihre Ansprüche durchzusetzen - von
+              einem Informationsschreiben bis zu einer Klage bei Gericht.
             </Trans>
           </div>
         </SimpleGrid>
