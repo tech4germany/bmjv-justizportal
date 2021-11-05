@@ -98,6 +98,9 @@ msgstr "Simple, anywhere, at any time."
 msgid "Erstberatung"
 msgstr "Initial consultation"
 
+msgid "Erstberatung bei der Verbraucherzentrale"
+msgstr "Initial consultation at the consumer centre"
+
 msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
 msgstr "If you feel unsure, you can also seek advice. For this purpose, we have <0>summarized consulting services here.</0>"
 
@@ -140,11 +143,17 @@ msgstr "Yes"
 msgid "Jetzt starten!"
 msgstr "Start now!"
 
+msgid "Landesspezifische Schlichtungsstellen"
+msgstr "Country-specific arbitration bodies"
+
 msgid "Lösungsfinder"
 msgstr "Solutionfinder"
 
 msgid "Mehr erfahren"
 msgstr "Learn more"
+
+msgid "Mietervereine / Deutscher Mieterbund"
+msgstr "Tenant Clubs/German Tenant Association"
 
 msgid "Mietminderung"
 msgstr "Rent reduction"
@@ -182,6 +191,12 @@ msgstr "Classify issue"
 msgid "Rechtlich beraten lassen"
 msgstr "Get legal advice"
 
+msgid "Rechtsantragsstelle am Amtsgericht"
+msgstr "Legal application office at the district court"
+
+msgid "Rechtsberatung bei Anwält:innen"
+msgstr "Legal advice by lawyers"
+
 msgid "Rechtsproblem einordnen"
 msgstr "Classify legal problem"
 
@@ -209,11 +224,20 @@ msgstr "Our offer"
 msgid "Vermieter:in erneut kontaktieren"
 msgstr "Contact Landlord in again"
 
+msgid "Warum?"
+msgstr "Why?"
+
 msgid "Wegweiser"
 msgstr "Solution Explorer"
 
+msgid "Weiter Fragen"
+msgstr "More questions"
+
 msgid "Weitere Möglichkeiten"
 msgstr "More options"
+
+msgid "Welche Kosten entstehen in einem Gerichtsprozess?"
+msgstr "What are the costs of a court case?"
 
 msgid "Wie es funktioniert"
 msgstr "How it works"
@@ -236,6 +260,18 @@ msgstr "Go to the prototype"
 msgid "Zum Wegweiser"
 msgstr "Solution Explorer"
 
+msgid "Zur Erstellung des Klagedokuments"
+msgstr "For the preparation of the claim document"
+
+msgid "Zur Klageerstellung"
+msgstr "To the filing of a claim"
+
+msgid "Zur Vorlage für die Mängelanzeige"
+msgstr "To the template for the defect report"
+
+msgid "Zur Übersicht für Beratungsangebote"
+msgstr "Go to overview for advisory services"
+
 msgid "Zurück"
 msgstr "Back"
 
@@ -244,6 +280,9 @@ msgstr "Back to homepage"
 
 msgid "back"
 msgstr "Back"
+
+msgid "banner"
+msgstr "This page is a prototype of the <0>Tech4Germany Fellowship 2021</0> and does not provide binding legal information."
 
 msgid "co.info_evv"
 msgstr "**Offer**: \n- Examination of legal claims by lawyers of the German Tenants Association in a conversation.\n- Proposal of initial courses of action.\n######\n**Availability**: \n- telephone or personal advice, throughout Germany. [You can find the website for your state here](https://www.verbraucherzentrale.de/beratung).\n######\n**Cost**: \n- About 20-30 euros for a twenty-minute consultation.\n######\nThe consumer centres of the federal states, together with the German Tenant Association, offer inexpensive initial advice by lawyers, [in Baden-Württemberg, for example, from 20 euros](https://www.verbraucherzentrale-bawue.de/beratungsstellen/746/kontakt/Mietrecht/17938)."
@@ -270,7 +309,7 @@ msgid "consultation.sub_header"
 msgstr "Citizens have many rights in Germany. However, this also makes our legal system complex. As the judicial portal cannot provide you with individual information for your case, we have provided an overview of cost-effective advice centres for you here."
 
 msgid "exit.footer"
-msgstr "Are you looking for more support? Then you can contact legal advice centres who can inform you individually about your case. In a consultation, experts assess whether legal claims exist and how you can best enforce them. For this purpose, we have [provided an overview of advice centres here](/advisory services)."
+msgstr "Are you looking for more support? Then you can contact legal advice centres who can inform you individually about your case. In a consultation, experts assess whether legal claims exist and how you can best enforce them. For this purpose, we have [provided an overview of advice centres here](/beratungsangebote)."
 
 msgid "exit.heading"
 msgstr "Unfortunately, we didn't cover your case."
@@ -311,6 +350,27 @@ msgstr "Solution Finder End: Possible Next Steps"
 msgid "nextsteps.sub_header"
 msgstr "We've summarized next steps to enforce your claims here.<0/> Click the boxes one at a time to learn more."
 
+msgid "ns.info_2contact_landlord"
+msgstr "**Why?** \n- A second letter can make your claim more strong.\n- If you haven't received a response from your landlord, she may have missed your notice of defects.\n- If new costs have been incurred (e.g. expenses due to your own rectification of defects), you can claim them directly from your landlord. \n### \n**How?** \n- Contact your landlord and point them back to the problem. \n- Clearly state your claim and set a final deadline for rectification or payment before taking further legal action.\n- Keep it friendly and polite."
+
+msgid "ns.info_ca"
+msgstr "**Why?** \n- If you contact your airline with a correct claim, they usually pay for your claim directly. \n- With a written request, you also have proof of the further process. \n### \n**How?** \n- Use your airline's EU air passenger rights contact form and make your claim. \n- Contact forms can be found on the websites of all major airlines, such as [Ryanair](https://onlineform.ryanair.com/de/de/eu-261), [Lufthansa](https://www.lufthansa.com/de/de/feedback), \n[British Airways](https://www.britishairways.com/travel/customerportal/public/de_gb#/customer-service-portal), [AirFrance-KLM](https://wwws.airfrance.de/claim), or [easyJet](https://www.easyjet.com/de/claim/EU261).\n- If you can't find a form, you can also submit your claim by mail or email. Describe your case specifically and set a deadline for payment, for example, two to three weeks. \n- You can take further steps after the deadline."
+
+msgid "ns.info_consultation"
+msgstr "**Why?** \n- In legal advice, your case can be assessed individually by an expert. \n- They can also contact your landlord again. \n- Sometimes, for example, a letter from a lawyer can help convince the landlord of your claims. \n### \n**How?** \n- There are local counselling services for tenants in many cities. \n- Some advice centres are available free of charge, especially for initial consultation or financially weak individuals. \nOn the next page, we will give you an overview of advice centers."
+
+msgid "ns.info_contact_landlord"
+msgstr "**Why?** \n- As a tenant, you are obliged to report defects in your apartment.\n- Landlords usually eliminate a defect as soon as they are notified. \n- With a written notice of defects, you also have proof of the further process. \n### \n**How?** \n- Contact your landlor:in and describe the defect objectively. \n- Clearly state your claim and set your landlord a realistic deadline to remedy the defect. \n- Propose to pay rent only under reservation if a claim for rent reduction appears possible for you.\n- Keep it friendly and polite. \n### \nWe can help you create a defect report here:"
+
+msgid "ns.info_docu"
+msgstr "**Why?** \n- To have proof of your landlord and the further process, you should document the defect. \n### \n**How?** \n- If the defect is visible, such as a mold stain or water damage, you can take photos or videos of all affected areas of the home. \n- If the defect is not visible, for example in case of noise disturbance, you can write down when and in what form it occurs. A video or testimonies can also help."
+
+msgid "ns.info_file_claim"
+msgstr "**Why?** \n- A lawsuit is the last way to enforce your claims if the other party doesn't voluntarily meet them. \n- With a lawsuit, you are requesting that a judge should: rule your case in court. \n### \n**How?** \n- First, you can check with us about the process and the costs of a court case.\n- Then we will help you create and file a statement of claim.\n- In court, the judge tries to find a solution for you and the other side.\n- If you cannot agree, the judge will decide your case with a verdict. \n### \nIt is important that you have already prompted the **other side directly** to meet your requirements.\nHere we will inform you about the process of a lawsuit and help you file it."
+
+msgid "ns.info_s"
+msgstr "**Why?** \n- If you've already contacted your airline and they haven't complied with your request, arbitration can help.\n- Arbitration does not incur any costs, but the decision is not binding on the airline.\n### \n**How?** \n- Submit a request for conciliation two months after you first contacted the airline.\n- For [most European airlines](https://soep-online.de/assets/files/20.07.soep-Mitgliederliste.pdf), you can submit a [application to the SOEP (Conciliation Board for Public Passenger Transport e.V.)](https://soep-online.de/ihre-beschwerde/). Otherwise, the [Air Transport Arbitration Board at the Federal Office of Justice](https://www.bundesjustizamt.de/DE/Themen/Buergerdienste/Luftverkehr/Schlichtungsstelle_node.html) is responsible for your case.\n- If your request is admissible and eligible, the body will recommend arbitration to you and the airline.\n- The entire conciliation process takes about three months. After that, you can still file a lawsuit."
+
 msgid "pe.header"
 msgstr "Possible legal claims"
 
@@ -319,6 +379,12 @@ msgstr "The following claims could result from your information. A claim is the 
 
 msgid "pe.to_next_steps"
 msgstr "To the next steps"
+
+msgid "zpo.heading"
+msgstr "File a lawsuit at the district court"
+
+msgid "zpo.heading_info"
+msgstr "With a lawsuit, you start a lawsuit. We'll explain what that means here. When you feel safe, we'll help you file and file a lawsuit."
 
 msgid "zpo.info1"
 msgstr "### How does a court case work?\n- In the trial, you and the other party present the case to the judge. If it is not clear which version is true, evidence will be collected. \n- First, the Judge will try to find an agreement (comparison).\n- If no agreement is found, the judge will announce a binding verdict at the end of the trial. It tells which demands are entitled to whom.\n- In total, a process usually takes between three and ten months."
@@ -331,6 +397,9 @@ msgstr "### Who can sue?\n- **Anyone over 18 years** can sue **alone** at the di
 
 msgid "zpo.nextsteps"
 msgstr "1. On the next page, you can create the document for a lawsuit related to your case. \n2. We will estimate the legal costs for you and inform you about the next steps you need to take. \n3. Once created, you can review all information first. **Only then do you decide on the submission.**"
+
+msgid "zpo.subheading"
+msgstr "The most important information at a glance"
 
 msgid "Über Ansprüche informieren"
 msgstr "Inform about claims"

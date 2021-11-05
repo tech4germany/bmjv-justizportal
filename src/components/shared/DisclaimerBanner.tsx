@@ -1,5 +1,6 @@
 import { Box, Link, Text } from '@chakra-ui/layout';
 import { IconButton } from '@chakra-ui/react';
+import { Trans } from '@lingui/macro';
 import React, { useState } from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';
 
@@ -15,9 +16,11 @@ export const DisclaimerBanner = ({ ...props }) => {
       borderColor={'gray.200'}
       display={showBanner ? 'inherit' : 'none'}>
       <Text fontWeight="bold" textAlign="center" fontSize={'small'} px={5} flex={1}>
-        Diese Seite ist ein Prototyp des{' '}
-        <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/">Tech4Germany Fellowships 2021</Link> und
-        bietet keine verbindlichen Rechtsinformationen.
+        <Trans id="banner">
+          Diese Seite ist ein Prototyp des{' '}
+          <Link href="https://tech.4germany.org/project/digitale-klagewege-bmjv/">Tech4Germany Fellowships 2021</Link>{' '}
+          und bietet keine verbindlichen Rechtsinformationen.
+        </Trans>
       </Text>
       <Box position="relative">
         <IconButton

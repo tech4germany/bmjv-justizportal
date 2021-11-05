@@ -75,7 +75,7 @@ Einige Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind
       tags: [Tag.consultation, Tag.free],
     },
     {
-      label: 'Landesspezifische Schlichtungsstellen',
+      label: t`Landesspezifische Schlichtungsstellen`,
       icon: FaRegComments,
       content: t({
         id: 'co.info_ls',
@@ -95,7 +95,7 @@ Einige Bundesländer bieten Schlichtungsstellen, die Bürger:innen bei der gütl
       tags: [Tag.solutionOptions, Tag.free],
     },
     {
-      label: 'Erstberatung bei der Verbraucherzentrale',
+      label: t`Erstberatung bei der Verbraucherzentrale`,
       icon: FiPhone,
       content: t({
         id: 'co.info_evv',
@@ -116,7 +116,7 @@ Die Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mie
       tags: [Tag.consultation, Tag.solutionOptions],
     },
     {
-      label: 'Mietervereine / Deutscher Mieterbund',
+      label: t`Mietervereine / Deutscher Mieterbund`,
       icon: RiCommunityLine,
       content: t({
         id: 'co.info_mm',
@@ -139,7 +139,7 @@ In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen 
       tags: [Tag.consultation, Tag.solutionOptions],
     },
     {
-      label: 'Rechtsberatung bei Anwält:innen',
+      label: t`Rechtsberatung bei Anwält:innen`,
       icon: CgUserList,
       content: t({
         id: 'co.info_ra',
@@ -162,7 +162,7 @@ Rechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber der Gegensei
       tags: [Tag.consultation, Tag.solutionOptions, Tag.trial],
     },
     {
-      label: 'Rechtsantragsstelle am Amtsgericht',
+      label: t`Rechtsantragsstelle am Amtsgericht`,
       icon: GoLaw,
       content: t({
         id: 'co.info_ram',

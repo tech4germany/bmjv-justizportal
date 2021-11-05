@@ -27,7 +27,7 @@ export const ExitJourney = ({ id, mmobject, ...rest }: FeatureProps) => {
           <Trans id="exit.heading">Leider haben wir Ihren Fall nicht abgedeckt.</Trans>
         </Heading>
         <Card display={data.info ? '' : 'none'}>
-          <CardHeader IconLeft={FaInfoCircle} title={`Warum?`} />
+          <CardHeader IconLeft={FaInfoCircle} title={t`Warum?`} />
           <CardContent>
             <AnnotadedText text={data?.info ? data.info : ''} />
           </CardContent>

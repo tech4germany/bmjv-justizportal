@@ -98,6 +98,9 @@ msgstr "Легко, онлайн, в любое время."
 msgid "Erstberatung"
 msgstr "первичная консультация"
 
+msgid "Erstberatung bei der Verbraucherzentrale"
+msgstr "Erstberatung bei der Verbraucherzentrale"
+
 msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
 msgstr "Если вы не уверены, вы также можете обратиться за советом. Для этого мы <0>кратко изложили консультационные услуги здесь.</0>"
 
@@ -140,11 +143,17 @@ msgstr "да"
 msgid "Jetzt starten!"
 msgstr "Начать сейчас"
 
+msgid "Landesspezifische Schlichtungsstellen"
+msgstr "Landesspezifische Schlichtungsstellen"
+
 msgid "Lösungsfinder"
 msgstr "Поиск решений"
 
 msgid "Mehr erfahren"
 msgstr "Подробнее"
+
+msgid "Mietervereine / Deutscher Mieterbund"
+msgstr "Mietervereine / Deutscher Mieterbund"
 
 msgid "Mietminderung"
 msgstr "снижение арендной платы"
@@ -182,6 +191,12 @@ msgstr "Классифицировать проблему"
 msgid "Rechtlich beraten lassen"
 msgstr "Получите юридическую консультацию"
 
+msgid "Rechtsantragsstelle am Amtsgericht"
+msgstr "Rechtsantragsstelle am Amtsgericht"
+
+msgid "Rechtsberatung bei Anwält:innen"
+msgstr "Rechtsberatung bei Anwält:innen"
+
 msgid "Rechtsproblem einordnen"
 msgstr "Классифицировать юридические проблемы"
 
@@ -209,11 +224,20 @@ msgstr "Наше предложение"
 msgid "Vermieter:in erneut kontaktieren"
 msgstr "Арендодатель снова свяжитесь"
 
+msgid "Warum?"
+msgstr "Warum?"
+
 msgid "Wegweiser"
 msgstr "Wegweiser"
 
+msgid "Weiter Fragen"
+msgstr "Weiter Fragen"
+
 msgid "Weitere Möglichkeiten"
 msgstr "Weitere Möglichkeiten"
+
+msgid "Welche Kosten entstehen in einem Gerichtsprozess?"
+msgstr "Welche Kosten entstehen in einem Gerichtsprozess?"
 
 msgid "Wie es funktioniert"
 msgstr "Как это работает"
@@ -236,6 +260,18 @@ msgstr "Прототип"
 msgid "Zum Wegweiser"
 msgstr "Zum Wegweiser"
 
+msgid "Zur Erstellung des Klagedokuments"
+msgstr "Zur Erstellung des Klagedokuments"
+
+msgid "Zur Klageerstellung"
+msgstr "Zur Klageerstellung"
+
+msgid "Zur Vorlage für die Mängelanzeige"
+msgstr "Zur Vorlage für die Mängelanzeige"
+
+msgid "Zur Übersicht für Beratungsangebote"
+msgstr "Zur Übersicht für Beratungsangebote"
+
 msgid "Zurück"
 msgstr "назад"
 
@@ -244,6 +280,9 @@ msgstr "Вернуться на главную страницу"
 
 msgid "back"
 msgstr "назад"
+
+msgid "banner"
+msgstr "Diese Seite ist ein Prototyp des <0>Tech4Germany Fellowships 2021</0> und bietet keine verbindlichen Rechtsinformationen."
 
 msgid "co.info_evv"
 msgstr "**Angebot**: \n- Prüfung von rechtlichen Ansprüchen durch Anwält:innen des Deutschen Mieterbunds in einem Gespräch.\n- Vorschlag von ersten Handlungsoptionen.\n######\n**Verfügbarkeit**: \n- Telefonische oder persönliche Beratung, deutschlandweit. [Hier finden Sie die Website für Ihr Bundesland](https://www.verbraucherzentrale.de/beratung).\n######\n**Kosten**: \n- Circa 20-30 Euro für eine zwanzigminütige Beratung.\n######\nDie Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mieterbund kostengünstige Erstberatungen durch Anwält:innen an, [in Baden-Württemberg beispielsweise ab 20 Euro](https://www.verbraucherzentrale-bawue.de/beratungsstellen/746/kontakt/Mietrecht/17938)."
@@ -311,6 +350,27 @@ msgstr "Ваши следующие возможные шаги к решени�
 msgid "nextsteps.sub_header"
 msgstr "Здесь мы обобщили следующие шаги по обеспечению соблюдения ваших требований. Чтобы узнать больше, поочередно<0/> нажимайте на соответствующие флажки."
 
+msgid "ns.info_2contact_landlord"
+msgstr "**Warum?** \n- Ein zweites Schreiben kann Ihrer Forderung Nachdruck verleihen.\n- Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat sie Ihre Mängelanzeige vielleicht auch nur übersehen.\n- Wenn neue Kosten entstanden sind (z.B. Aufwendungen durch eigene Mängelbeseitigung), können Sie diese direkt von Ihrer Vermieter:in einfordern.  \n###  \n**Wie gehe ich vor?** \n- Kontaktieren Sie Ihre Vermieter:in und weisen sie erneut auf das Problem hin. \n- Benennen Sie klar Ihre Forderung, und setzen Sie eine letzte Frist zur Mängelbeseitigung oder Zahlung, bevor Sie weitere rechtliche Schritte ergreifen.\n- Bleiben Sie dabei freundlich und höflich."
+
+msgid "ns.info_ca"
+msgstr "**Warum?** \n- Wenn Sie Ihre Fluglinie mit einem korrekten Anspruch kontaktieren, bezahlt diese meistens direkt Ihre Forderung. \n- Mit einer schriftlichen Aufforderung haben Sie außerdem einen Nachweis für den weiteren Prozess.  \n###  \n**Wie gehe ich vor?** \n- Nutzen Sie das Kontaktformular Ihrer Fluglinie für EU-Fluggastrechte und stellen Sie Ihre Forderung. \n- Kontaktformulare finden Sie auf den Webseiten aller großen Fluglinien, beispielsweise bei [Ryanair](https://onlineform.ryanair.com/de/de/eu-261), [Lufthansa](https://www.lufthansa.com/de/de/feedback), \n[British Airways](https://www.britishairways.com/travel/customerportal/public/de_gb#/customer-service-portal), [AirFrance-KLM](https://wwws.airfrance.de/claim) oder [easyJet](https://www.easyjet.com/de/claim/EU261).\n- Wenn Sie kein Formular finden, können Sie Ihre Forderung auch per Post oder E-Mail stellen. Schildern Sie dabei Ihren Fall konkret und setzen Sie eine Frist für die Zahlung, zum Beispiel zwei bis drei Wochen. \n- Nach Ablauf der Frist können Sie weitere Schritte unternehmen."
+
+msgid "ns.info_consultation"
+msgstr "**Warum?** \n- In einer Rechtsberatung kann Ihr Fall individuell von einer Expert:in bewertet werden. \n- Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. \n- Manchmal kann beispielsweise ein Schreiben einer Anwält:in helfen, die Vermieter:in von Ihren Ansprüchen zu überzeugen. \n###  \n**Wie gehe ich vor?** \n- In vielen Städten gibt es örtliche Beratungsangebote für Mieter:innen. \n- Einige Beratungsstellen sind kostenlos erreichbar, insbesondere für eine Erstberatung oder finanzschwache Personen. \nAuf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen."
+
+msgid "ns.info_contact_landlord"
+msgstr "**Warum?** \n- Als Mieter:in sind Sie verpflichtet, Mängel in Ihrer Wohnung zu melden.\n- Meistens beseitigen Vermieter:innen einen Mangel, sobald sie benachrichtigt werden. \n- Mit einer schriftlichen Mängelanzeige haben Sie außerdem einen Nachweis für den weiteren Prozess.  \n###  \n**Wie gehe ich vor?** \n- Kontaktieren Sie Ihre Vermieter:in und schildern Sie den Mangel sachlich. \n- Benennen Sie klar Ihre Forderung, und setzen Sie Ihrer Vermieter:in eine realistische Frist, um den Mangel zu beseitigen. \n- Geben Sie an die Miete nur noch unter Vorbehalt zu zahlen, wenn ein Anspruch auf Mietminderung für Sie möglich erscheint.\n- Bleiben Sie dabei freundlich und höflich.  \n###  \nHier helfen wir Ihnen, eine Mängelanzeige zu erstellen:"
+
+msgid "ns.info_docu"
+msgstr "**Warum?** \n- Um einen Nachweis für Ihre Vermieter:in und den weiteren Prozess zu haben, sollten Sie den Mangel dokumentieren.  \n###  \n**Wie gehe ich vor?** \n- Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. \n- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video oder Zeug:innen können helfen."
+
+msgid "ns.info_file_claim"
+msgstr "**Warum?** \n- Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn die Gegenseite diese nicht freiwillig erfüllt. \n- Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.  \n###  \n**Wie gehe ich vor?** \n- Zuerst können Sie sich bei uns über den Ablauf und die Kosten eines Gerichtsprozesses informieren.\n- Dann helfen wir Ihnen, eine Klageschrift zu erstellen und einzureichen.\n- Vor Gericht versucht die Richter:in, eine Lösung für Sie und die Gegenseite zu finden.\n- Können Sie sich nicht einigen, wird die Richter:in mit einem Urteil über Ihren Fall entscheiden. \n###  \nWichtig ist, dass Sie die **Gegenseite schon direkt aufgefordert** haben, Ihre Ansprüche zu erfüllen.\nHier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der Einreichung."
+
+msgid "ns.info_s"
+msgstr "**Warum?** \n- Wenn Sie Ihre Fluglinie bereits kontaktiert haben, und diese Ihrer Forderung nicht nachgekommen ist, kann eine Schlichtung helfen.\n- Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verbindlich für die Fluglinie.\n###  \n**Wie gehe ich vor?** \n- Stellen sie zwei Monate nach Ihrer ersten Kontaktaufnahme mit der Fluglinie einen Schlichtungsantrag.\n- Für die [meisten europäischen Fluglinien](https://soep-online.de/assets/files/20.07.soep-Mitgliederliste.pdf) können Sie einen [Antrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/) stellen. Ansonsten ist die [Schlichtungsstelle Luftverkehr beim Bundesamt für Justiz](https://www.bundesjustizamt.de/DE/Themen/Buergerdienste/Luftverkehr/Schlichtungsstelle_node.html) für Ihren Fall zuständig.\n- Wenn Ihr Antrag zulässig und berechtigt ist, macht die Stelle eine Schlichtungsempfehlung an Sie und die Fluglinie.\n- Das gesamte Schlichtungsverfahren dauert etwa drei Monate. Danach können Sie immer noch Klage einreichen."
+
 msgid "pe.header"
 msgstr "Возможные судебные иски"
 
@@ -319,6 +379,12 @@ msgstr "Из вашей информации могут возникнуть с�
 
 msgid "pe.to_next_steps"
 msgstr "К следующим шагам"
+
+msgid "zpo.heading"
+msgstr "Eine Klage am Amtsgericht einreichen"
+
+msgid "zpo.heading_info"
+msgstr "Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Wenn Sie sich dann sicher fühlen, helfen wir Ihnen, eine Klage zu erstellen und einzureichen."
 
 msgid "zpo.info1"
 msgstr "### Wie läuft ein Gerichtsprozess ab?\n- Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. \n- Zunächst wird die Richter:in versuchen eine Einigung (Vergleich) zu finden.\n- Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil. Darin steht, welche Ansprüche wem zustehen.\n- Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten."
@@ -331,6 +397,9 @@ msgstr "### Wer kann klagen?\n- **Jede Person ab 18 Jahren** kann **alleine** am
 
 msgid "zpo.nextsteps"
 msgstr "1. На следующей странице вы можете создать документ для судебного процесса, связанного с вашим делом. \n2. Мы оценим для вас судебные издержки и проинформируем вас о следующих шагах, которые вам необходимо предпринять. \n3. После создания вы можете сначала просмотреть всю информацию. **Только после этого вы принимаете решение о подаче заявки. **"
+
+msgid "zpo.subheading"
+msgstr "Die wichtigsten Informationen auf einen Blick"
 
 msgid "Über Ansprüche informieren"
 msgstr "Сообщите о претензиях"

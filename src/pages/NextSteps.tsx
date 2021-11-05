@@ -51,7 +51,9 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonLink: '',
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.FluglinieKontaktieren) != -1,
-      content: `
+      content: t({
+        id: 'ns.info_ca',
+        message: `
 **Warum?** 
 - Wenn Sie Ihre Fluglinie mit einem korrekten Anspruch kontaktieren, bezahlt diese meistens direkt Ihre Forderung. 
 - Mit einer schriftlichen Aufforderung haben Sie außerdem einen Nachweis für den weiteren Prozess.  
@@ -63,7 +65,8 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 [British Airways](https://www.britishairways.com/travel/customerportal/public/de_gb#/customer-service-portal), [AirFrance-KLM](https://wwws.airfrance.de/claim) oder [easyJet](https://www.easyjet.com/de/claim/EU261).
 - Wenn Sie kein Formular finden, können Sie Ihre Forderung auch per Post oder E-Mail stellen. Schildern Sie dabei Ihren Fall konkret und setzen Sie eine Frist für die Zahlung, zum Beispiel zwei bis drei Wochen. 
 - Nach Ablauf der Frist können Sie weitere Schritte unternehmen.
-`,
+  `,
+      }),
       optional: false,
     },
     {
@@ -72,7 +75,9 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonLink: '',
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.Schlichtung) != -1,
-      content: `
+      content: t({
+        id: 'ns.info_s',
+        message: `
 **Warum?** 
 - Wenn Sie Ihre Fluglinie bereits kontaktiert haben, und diese Ihrer Forderung nicht nachgekommen ist, kann eine Schlichtung helfen.
 - Eine Schlichtung verursacht keine Kosten, die Entscheidung ist aber nicht verbindlich für die Fluglinie.
@@ -83,7 +88,8 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
 - Für die [meisten europäischen Fluglinien](https://soep-online.de/assets/files/20.07.soep-Mitgliederliste.pdf) können Sie einen [Antrag bei der söp (Schlichtungsstelle für den öffentlichen Personenverkehr e.V.)](https://soep-online.de/ihre-beschwerde/) stellen. Ansonsten ist die [Schlichtungsstelle Luftverkehr beim Bundesamt für Justiz](https://www.bundesjustizamt.de/DE/Themen/Buergerdienste/Luftverkehr/Schlichtungsstelle_node.html) für Ihren Fall zuständig.
 - Wenn Ihr Antrag zulässig und berechtigt ist, macht die Stelle eine Schlichtungsempfehlung an Sie und die Fluglinie.
 - Das gesamte Schlichtungsverfahren dauert etwa drei Monate. Danach können Sie immer noch Klage einreichen.
-`,
+  `,
+      }),
       optional: true,
     },
     {
@@ -92,23 +98,29 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
       buttonLink: '',
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.Docu) != -1,
-      content: `
+      content: t({
+        id: 'ns.info_docu',
+        message: `
 **Warum?** 
 - Um einen Nachweis für Ihre Vermieter:in und den weiteren Prozess zu haben, sollten Sie den Mangel dokumentieren.  
   
 ###  
 **Wie gehe ich vor?** 
 - Ist der Mangel sichtbar, bspw. ein Schimmelfleck oder Wasserschaden, können Sie Fotos oder Videos von allen betroffenen Bereichen der Wohnung machen. 
-- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video oder Zeug:innen können helfen.`,
+- Ist der Mangel nicht sichtbar, bspw. bei Lärmbelästigung, können Sie aufschreiben, wann und in welcher Form dieser auftritt. Auch ein Video oder Zeug:innen können helfen.
+  `,
+      }),
       optional: false,
     },
     {
       label: t`Mängelanzeige bei Ihrer Vermieter:in`,
       icon: FaEnvelopeOpen,
-      buttonText: 'Zur Vorlage für die Mängelanzeige',
+      buttonText: t`Zur Vorlage für die Mängelanzeige`,
       buttonLink: `${homeURL}/${Routes.Bryter}?mangelanzeige&id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.LandlordLetter) != -1,
-      content: `
+      content: t({
+        id: 'ns.info_contact_landlord',
+        message: `
 **Warum?** 
 - Als Mieter:in sind Sie verpflichtet, Mängel in Ihrer Wohnung zu melden.
 - Meistens beseitigen Vermieter:innen einen Mangel, sobald sie benachrichtigt werden. 
@@ -123,7 +135,8 @@ export const NextSteps = ({ id, mmobject, ...rest }: FeatureProps) => {
   
 ###  
 Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
-`,
+  `,
+      }),
       optional: false,
     },
     {
@@ -132,7 +145,9 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
       buttonLink: '',
       buttonText: '',
       condition: nextSteps.indexOf(NextStepsType.LandlordLetterReview) != -1,
-      content: `
+      content: t({
+        id: 'ns.info_2contact_landlord',
+        message: `
 **Warum?** 
 - Ein zweites Schreiben kann Ihrer Forderung Nachdruck verleihen.
 - Wenn Sie keine Reaktion von Ihrer Vermieter:in erhalten haben, hat sie Ihre Mängelanzeige vielleicht auch nur übersehen.
@@ -143,16 +158,19 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 - Kontaktieren Sie Ihre Vermieter:in und weisen sie erneut auf das Problem hin. 
 - Benennen Sie klar Ihre Forderung, und setzen Sie eine letzte Frist zur Mängelbeseitigung oder Zahlung, bevor Sie weitere rechtliche Schritte ergreifen.
 - Bleiben Sie dabei freundlich und höflich.    
-`,
+  `,
+      }),
       optional: true,
     },
     {
       label: t`Online Klage einreichen`,
       icon: RiScales3Fill,
-      buttonText: 'Zur Klageerstellung',
+      buttonText: t`Zur Klageerstellung`,
       buttonLink: `${homeURL}/${Routes.ZPOInformation}?id=${id}`,
       condition: nextSteps.indexOf(NextStepsType.Complaint) != -1,
-      content: `
+      content: t({
+        id: 'ns.info_file_claim',
+        message: `
 **Warum?** 
 - Eine Klage ist der letzte Weg, Ihre Ansprüche durchzusetzen, wenn die Gegenseite diese nicht freiwillig erfüllt. 
 - Mit einer Klage beantragen Sie, dass eine Richter:in Ihren Fall vor Gericht entscheidet.  
@@ -168,16 +186,19 @@ Hier helfen wir Ihnen, eine Mängelanzeige zu erstellen:
 Wichtig ist, dass Sie die **Gegenseite schon direkt aufgefordert** haben, Ihre Ansprüche zu erfüllen.
   
 Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der Einreichung.
-`,
+  `,
+      }),
       optional: true,
     },
     {
       label: t`Rechtlich beraten lassen`,
       icon: FaUserTie,
-      buttonText: 'Zur Übersicht für Beratungsangebote',
+      buttonText: t`Zur Übersicht für Beratungsangebote`,
       buttonLink: '#',
       condition: false,
-      content: `
+      content: t({
+        id: 'ns.info_consultation',
+        message: `
 **Warum?** 
 - In einer Rechtsberatung kann Ihr Fall individuell von einer Expert:in bewertet werden. 
 - Diese kann außerdem erneut Kontakt mit Ihrer Vermieter:in aufnehmen. 
@@ -191,6 +212,7 @@ Hier informieren wir Sie über den Ablauf einer Klage und helfen Ihnen bei der E
   
 Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
   `,
+      }),
       optional: true,
     },
   ];

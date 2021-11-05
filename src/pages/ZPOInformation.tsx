@@ -1,3 +1,4 @@
+import { HStack } from '@chakra-ui/layout';
 import {
   Accordion,
   AccordionButton,
@@ -7,10 +8,8 @@ import {
   Box,
   Button,
   Flex,
-  GridItem,
   Heading,
   Image,
-  SimpleGrid,
   Spacer,
   Tab,
   Table,
@@ -32,38 +31,34 @@ import { FaMoneyBill } from 'react-icons/fa';
 import { RiBankFill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
-import { Card } from '../components/shared/Card';
-import { CardContent } from '../components/shared/CardContent';
-import { CardHeader } from '../components/shared/CardHeader';
 import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Primary, Routes } from '../Const';
-import { HStack, VStack } from '@chakra-ui/layout';
 
 interface FeatureProps {
   id: string | null;
 }
 
 export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
-  let summaryText = `
-**Wie funktioniert eine Klage?**
-- Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
-- Mit einer Klage beginnen Sie einen Gerichtsprozess.
-- Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
-- Zunächst wird die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
-- Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil verkündet. Darin steht, welche Ansprüche Ihnen zustehen.
-- Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.
-###
-**Was kostet ein Gerichtsprozess?**
-- Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
-- Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. 
-- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
-###
-**Wer kann klagen?**
-- Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.
-- Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
-- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
-`;
+  //   let summaryText = `
+  // **Wie funktioniert eine Klage?**
+  // - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
+  // - Mit einer Klage beginnen Sie einen Gerichtsprozess.
+  // - Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben.
+  // - Zunächst wird die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
+  // - Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil verkündet. Darin steht, welche Ansprüche Ihnen zustehen.
+  // - Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.
+  // ###
+  // **Was kostet ein Gerichtsprozess?**
+  // - Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
+  // - Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung.
+  // - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
+  // ###
+  // **Wer kann klagen?**
+  // - Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.
+  // - Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
+  // - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
+  // `;
 
   let costsText = `
 Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.
@@ -154,15 +149,21 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
   return (
     <PageBody title={t`ZPO Informationen`}>
       <PageBlock>
-        <Heading textAlign="center">Eine Klage am Amtsgericht einreichen</Heading>
+        <Heading textAlign="center">
+          <Trans id="zpo.heading">Eine Klage am Amtsgericht einreichen</Trans>
+        </Heading>
 
         <Text>
-          Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Wenn Sie sich
-          dann sicher fühlen, helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
+          <Trans id="zpo.heading_info">
+            Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Wenn Sie sich
+            dann sicher fühlen, helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
+          </Trans>
         </Text>
         <Spacer />
         <Box>
-          <Heading variant="subheading">Die wichtigsten Informationen auf einen Blick</Heading>
+          <Heading variant="subheading">
+            <Trans id="zpo.subheading">Die wichtigsten Informationen auf einen Blick</Trans>
+          </Heading>
           <Spacer height={5} />
           <HStack align="start">
             <AnnotadedText
@@ -223,7 +224,9 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
 
         <Spacer height="3em" />
 
-        <Heading variant="subheading">Weiter Fragen</Heading>
+        <Heading variant="subheading">
+          <Trans>Weiter Fragen</Trans>
+        </Heading>
         <Accordion alignSelf="stretch" allowToggle>
           <AccordionItem>
             <AccordionButton>
@@ -231,7 +234,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
                 <FaMoneyBill size="2.5em" />
               </Box>
               <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
-                Welche Kosten entstehen in einem Gerichtsprozess?
+                <Trans>Welche Kosten entstehen in einem Gerichtsprozess?</Trans>
               </Text>
               <Spacer />
               <Text>
@@ -368,7 +371,7 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
           </Box>
         </HStack>
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
-          Zur Erstellung des Klagedokuments
+          <Trans>Zur Erstellung des Klagedokuments</Trans>
         </Button>
       </PageBlock>
     </PageBody>
