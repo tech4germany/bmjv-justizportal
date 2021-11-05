@@ -17,34 +17,6 @@ interface MVPFeatureProps {
   id?: string;
 }
 
-const MVPFeature = ({ title, text, imgURL, disabled, id }: MVPFeatureProps) => (
-  <GridItem as={VStack}>
-    <Card height="full">
-      <CardContent height="full">
-        <Image src={imgURL} />
-        <Heading colorScheme={disabled ? 'gray' : 'primary'} variant="subheading">
-          {title}
-        </Heading>
-        <Text variant="small">{text}</Text>
-        <Spacer />
-        <Button
-          colorScheme="secondary"
-          variant="outline"
-          as={ReactLink}
-          to={disabled ? '#' : `${homeURL}/wegweiser?id=${id}`}
-          disabled={disabled}>
-          <Trans>Zum Wegweiser</Trans>
-        </Button>
-        <Spacer />
-      </CardContent>
-    </Card>
-  </GridItem>
-);
-
-interface FeatureProps {
-  anchorId: string;
-}
-
 export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   const howRef = React.useRef<HTMLDivElement>(null);
   const executeScroll = () => howRef.current && howRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -55,6 +27,27 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
       howRef.current.scrollIntoView();
     }
   });
+
+const MVPFeature = ({ title, text, imgURL, disabled, id }: MVPFeatureProps) => (
+  <GridItem as={VStack}>
+    <Card height="full">
+      <CardContent height="full">
+        <Image src={imgURL} />
+        <Heading colorScheme={disabled ? 'gray' : 'primary'} variant="subheading">
+          {title}
+        </Heading>
+        <Text variant="small">{text}</Text>
+        <Spacer />
+        <Button size="lg" colorScheme="secondary" variant="outline" as={ReactLink} to="#unser-angebot" onClick={executeScroll} children={t`Jetzt starten!`} />
+        <Spacer />
+      </CardContent>
+    </Card>
+  </GridItem>
+);
+
+interface FeatureProps {
+  anchorId: string;
+}
 
   return (
     <PageBody title={`Home`}>
@@ -76,11 +69,11 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
             to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Zum Wegweiser`}
           />
-          <Button size="lg" as={ReactLink} to="#how" onClick={executeScroll} children={t`Wie es funktioniert`} />
+          <Button size="lg" as={ReactLink} to="#so-funktioniert-es" onClick={executeScroll} children={t`Wie es funktioniert`} />
         </Flex>
       </HeroSplit>
 
-      <PageBlock width={'60em'} bg="gray.100">
+      <PageBlock id="unser-angebot" width={'60em'} bg="gray.100">
         <Spacer minH={10} />
         <Heading colorScheme="primary">
           <Trans>Unser Angebot</Trans>
@@ -114,7 +107,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
         <Spacer minH={20} />
       </PageBlock>
 
-      <PageBlock id="how" ref={howRef}>
+      <PageBlock id="so-funktioniert-es" ref={howRef}>
         <Box width="full">
           <Heading colorScheme="primary">
             <Trans id="home.howitwork_heading">So funktioniert es</Trans>
@@ -122,7 +115,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <Spacer h={5} />
           <Text textAlign="center" width="full" variant="small">
             <Trans id="home.howitwork_subheading">
-              Wir helfen Ihnen in drei einfachen Schritten bei der Lösung Ihres Rechtproblems:
+              Der Justizportal Wegweiser hilft Ihnen in drei einfachen Schritten bei der Lösung Ihres Rechtproblems:
             </Trans>
           </Text>
         </Box>
@@ -131,19 +124,18 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <div>
             <Heading variant="subheading">Rechtsproblem einordnen</Heading>
             <Trans>
-              Durch die Beantwortung einfacher Fragen helfen wir Ihnen, Ihr Problem einzuordnen und relevante,
-              kostenfreie Rechtsinformationen zu finden.
+              Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevante und kostenfreie Rechtsinformationen zu finden.
             </Trans>
           </div>
           <div>
             <Heading variant="subheading">Über mögliche Ansprüche informieren</Heading>
-            <Trans>Dadurch können wir Sie über die relevanten rechtlichen Ansprüche in Ihrem Fall informieren.</Trans>
+            <Trans>Mit Ihren Angaben können wir für Sie mögliche rechtliche Ansprüche zusammenfassen, über die Sie sich in Ruhe informieren können.</Trans>
           </div>
           <div>
             <Heading variant="subheading">Handlungsoptionen vergleichen</Heading>
             <Trans>
-              Abschließend fassen wir mögliche Handlungsoptionen für Sie zusammen, um Ihre Ansprüche durchzusetzen - von
-              einem Informationsschreiben bis zu einer Klage bei Gericht.
+              Zuletzt geben wir Ihnen mehrere Handlungsoptionen und Vorlagen, um Ihre Ansprüche durchzusetzen - 
+              von einem Schreiben an die Gegenseite, über eine Rechtbseratung bis hin zu einer Klage vor Gericht.
             </Trans>
           </div>
         </SimpleGrid>
@@ -152,11 +144,11 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
         <Spacer height={16}></Spacer>
 
         <Button
-          colorScheme={'secondary'}
+          colorScheme={'primary'}
           alignSelf="center"
           as={ReactLink}
           to={`${homeURL}/${Routes.SolutionExplorer}`}
-          children={t`Jetzt starten!`}
+          children={t`Zum Wegweiser`}
         />
       </PageBlock>
     </PageBody>
