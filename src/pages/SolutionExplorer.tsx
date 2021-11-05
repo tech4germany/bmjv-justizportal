@@ -109,7 +109,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
           <>
             <SimpleGrid
               columns={{ base: 2, md: 3 }}
-              gridGap={{ base: 8, md: 12 }}
+              gridGap={{ base: 8, md: 10 }}
               width="100%"
               flexWrap="wrap"
               justifyContent="space-between">
