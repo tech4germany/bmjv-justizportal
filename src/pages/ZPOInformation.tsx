@@ -7,8 +7,10 @@ import {
   Box,
   Button,
   Flex,
+  GridItem,
   Heading,
   Image,
+  SimpleGrid,
   Spacer,
   Tab,
   Table,
@@ -31,9 +33,12 @@ import { RiBankFill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
+import { CardContent } from '../components/shared/CardContent';
+import { CardHeader } from '../components/shared/CardHeader';
 import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Primary, Routes } from '../Const';
+import { HStack, VStack } from '@chakra-ui/layout';
 
 interface FeatureProps {
   id: string | null;
@@ -45,48 +50,48 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
 - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
 - Mit einer Klage beginnen Sie einen Gerichtsprozess.
 - Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
-- Zunächst kann die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
-- Kann keine Einigung gefunden werden, wird am Ende des Prozesses ein verbindliches Urteil verkündet. Darin legt die Richter:in fest, welche Ansprüche Ihnen zustehen.
-- Insgesamt dauert ein Prozess üblicherweise zwischen vier und zehn Monaten.
+- Zunächst wird die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
+- Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil verkündet. Darin steht, welche Ansprüche Ihnen zustehen.
+- Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.
 ###
 **Was kostet ein Gerichtsprozess?**
-- Die Verlierer:in des Prozesses trägt die Kosten. Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
-- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Produkten oder Mitgliedschaften inbegriffen, zum Beispiel in einem Mieterverein.
-- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie finanziell nicht in der Lage sind, die Kosten zu zahlen.
+- Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
+- Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung. 
+- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
 ###
 **Wer kann klagen?**
-- Jede Person ab 18 Jahren kann in Deutschland alleine am Amtsgericht klagen.
-- Eltern können auch für ihre minderjährigen Kinder eine Klage einreichen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
-- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie aber beraten oder ganz vertreten.
+- Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.
+- Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
+- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
 `;
 
   let costsText = `
-  
-  Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.
+Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.
 
 ###  
-##### Gerichtsgebühren
+### Gerichtsgebühren
 - Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom Wert Ihrer Forderung (circa 10-15%).
 - Der Wert der Forderung wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.
 - Als Kläger:in müssen Sie die Gerichtsgebühren im Voraus bezahlen.
 - Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).
 
 ###  
-##### Anwaltshonorare
+### Anwaltshonorare
 - Wenn Sie eine Anwält:in vertritt, müssen Sie im Voraus ein Honorar bezahlen.
 - Auch die Anwaltshonorare sind gesetzlich festgelegt, und abhängig vom Streitwert (circa 20%).
 - Wer den Prozess verliert, bezahlt auch alle Anwält:innen.  
   
 ###  
-##### Weitere Kosten
+### Weitere Kosten
 - Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeug:innen gehört werden. Diese erhalten dann eine Vergütung. 
 - Auch Sachverständige (Experten) können Kosten verursachen, wenn zusätzliche Gutachten benötigt werden.
   
 ###  
-##### Welche Kosten können für Sie insgesamt entstehen?
+### Welche Kosten können für Sie insgesamt entstehen?
 - Die Kosten Ihres Falls können Sie mithilfe des Streitwerts abschätzen.  
 - Ihren Streitwert berechnen wir im nächsten Schritt, wenn Sie eine Klage erstellen.  
 - In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.  
+- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Mitgliedschaften inbegriffen, z.B. in einem Mieterverein.
 - Wenn Sie nicht genug Geld für einen Gerichtsprozess haben, können Sie [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen.
   
 ###
@@ -150,26 +155,84 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
     <PageBody title={t`ZPO Informationen`}>
       <PageBlock>
         <Heading textAlign="center">Eine Klage am Amtsgericht einreichen</Heading>
-        <Spacer height={12} />
-        <Card p={{ base: 10, md: 14 }}>
-          <Heading textAlign="center" variant="subheading">
-            Die wichtigsten Informationen auf einen Blick
-          </Heading>
-          <Spacer height={14} />
-          <AnnotadedText text={summaryText} />
-        </Card>
+
+        <Text>
+          Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Wenn Sie sich
+          dann sicher fühlen, helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
+        </Text>
+        <Spacer />
+        <Box>
+          <Heading variant="subheading">Die wichtigsten Informationen auf einen Blick</Heading>
+          <Spacer height={5} />
+          <HStack align="start">
+            <AnnotadedText
+              flex={2}
+              text={t({
+                id: 'zpo.info1',
+                message: `
+### Wie läuft ein Gerichtsprozess ab?
+- Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. 
+- Zunächst wird die Richter:in versuchen eine Einigung (Vergleich) zu finden.
+- Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil. Darin steht, welche Ansprüche wem zustehen.
+- Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.`,
+              })}
+            />
+            <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
+              <Image src="https://image.freepik.com/free-vector/female-attorney-standing-front-judge-talking-isolated-flat-illustration_74855-10653.jpg" />
+            </Box>
+          </HStack>
+        </Box>
+        <Spacer height={5} />
+
+        <HStack align="start">
+          <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
+            <Image src="https://image.freepik.com/free-vector/family-couple-saving-money_74855-5240.jpg" />
+          </Box>
+          <AnnotadedText
+            flex={2}
+            text={t({
+              id: 'zpo.info2',
+              message: `
+### Was kostet ein Gerichtsprozess?
+- Die Höhe der Kosten ist **abhängig vom Wert der verhandelten Forderung**. 
+- Die **Verlierer:in des Prozesses trägt die Kosten**. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
+- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
+`,
+            })}
+          />
+        </HStack>
+        <Spacer height={5} />
+
+        <HStack align="start">
+          <AnnotadedText
+            flex={2}
+            text={t({
+              id: 'zpo.info3',
+              message: `
+### Wer kann klagen?
+- **Jede Person ab 18 Jahren** kann **alleine** am Amtsgericht klagen.
+- Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
+- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
+`,
+            })}
+          />
+          <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
+            <Image src="https://image.freepik.com/free-vector/diverse-crowd-people-different-ages-races_74855-5235.jpg" />
+          </Box>
+        </HStack>
+
         <Spacer height="3em" />
+
+        <Heading variant="subheading">Weiter Fragen</Heading>
         <Accordion alignSelf="stretch" allowToggle>
           <AccordionItem>
             <AccordionButton>
-              {
-                <Box color={Primary()}>
-                  <FaMoneyBill size="2.5em" />
-                </Box>
-              }
-              <Heading variant="subheading" padding="1em">
+              <Box color={Primary()}>
+                <FaMoneyBill size="2.5em" />
+              </Box>
+              <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
                 Welche Kosten entstehen in einem Gerichtsprozess?
-              </Heading>
+              </Text>
               <Spacer />
               <Text>
                 <Trans>Mehr erfahren</Trans>
@@ -183,17 +246,19 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
                 <TableCaption>Ungefähre Kosten in einem Gerichtsverfahren für verschiedene Streitwerte.</TableCaption>
                 <Thead>
                   <Tr>
-                    <Th>Streitwert</Th>
-                    <Th>
-                      Gerichtsgebühren
-                      <br />
-                      (Vorschuss)
-                    </Th>
-                    <Th>
-                      Anwaltshonorar
-                      <br />
-                      (pro Seite)
-                    </Th>
+                    <Trans>
+                      <Th>Streitwert</Th>
+                      <Th>
+                        Gerichtsgebühren
+                        <br />
+                        (Vorschuss)
+                      </Th>
+                      <Th>
+                        Anwaltshonorar
+                        <br />
+                        (pro Seite)
+                      </Th>
+                    </Trans>
                   </Tr>
                 </Thead>
                 <Tbody>
@@ -224,18 +289,17 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
                   </Tr>
                 </Tbody>
               </Table>
+              <Spacer h={5} />
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
             <AccordionButton>
-              {
-                <Box color={Primary()}>
-                  <RiBankFill size="2.5em" />
-                </Box>
-              }
-              <Heading variant="subheading" padding="1em">
-                Wie läuft ein Gerichtsprozess genau ab?
-              </Heading>
+              <Box color={Primary()}>
+                <RiBankFill size="2.5em" />
+              </Box>
+              <Text textAlign="left" fontWeight="bold" fontSize="lg" padding="1em">
+                <Trans>Wie läuft ein Gerichtsprozess ab?</Trans>
+              </Text>
               <Spacer />
               <Text>
                 <Trans>Mehr erfahren</Trans>
@@ -244,8 +308,10 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text>
-                Gerichtsprozesse folgen einem festen Ablauf, der im Gesetz geregelt ist. Dabei gibt es viele
-                Sonderregelungen. Um Ihnen einen Überblick zu geben, haben wir hier eine vereinfachte Grafik erstellt.
+                <Trans>
+                  Gerichtsprozesse folgen einem festen Ablauf, der im Gesetz geregelt ist. Dabei gibt es viele
+                  Sonderregelungen. Um Ihnen einen Überblick zu geben, haben wir hier eine vereinfachte Grafik erstellt.
+                </Trans>
               </Text>
               <Spacer height={10} />
               <Image src={'data/ablauf.svg'} />
@@ -281,18 +347,26 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         </Accordion>
         <Spacer h={10} />
 
-        <Heading variant="subheading">
-          <Trans>Nächste Schritte</Trans>
-        </Heading>
-        <AnnotadedText
-          text={t({
-            id: 'zpo.nextsteps',
-            message: `
+        <HStack>
+          <Box flex={2}>
+            <Heading variant="subheading">
+              <Trans>Nächste Schritte</Trans>
+            </Heading>
+            <Spacer h={5} />
+            <AnnotadedText
+              text={t({
+                id: 'zpo.nextsteps',
+                message: `
 1. Auf der kommenden Seite können Sie das Dokument für eine Klage zu Ihrem Fall erstellen.  
 2. Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  
 3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**`,
-          })}
-        />
+              })}
+            />
+          </Box>
+          <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
+            <Image src="https://image.freepik.com/free-vector/manager-prioritizing-tasks-list_74855-5272.jpg" />
+          </Box>
+        </HStack>
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           Zur Erstellung des Klagedokuments
         </Button>
