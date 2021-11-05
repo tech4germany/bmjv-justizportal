@@ -14,7 +14,7 @@ export function setCookie(name: string, val: string) {
 
 export const locales: { [id: string]: [string, string] } = {
   de: ['Deutsch', '🇩🇪'],
-  en: ['English', '🇬🇧'],
+  en: ['English (Test)', '🇬🇧'],
 };
 
 export const defaultLocale = 'de';

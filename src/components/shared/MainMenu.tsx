@@ -54,12 +54,14 @@ export const LanguageSelector = (props: FeatureProps) => {
                 _hover={{ background: popoverContentBgColor }}
                 p={2}
                 px={5}
-                rounded={'xl'}
+                rounded={'sm'}
                 onClick={() => {
                   dynamicActivate(key);
                 }}>
-                <Text transition={'all .3s ease'} fontSize={'2xl'}>
+                <Text transition={'all .3s ease'} fontSize={'larger'}>
                   {locales[key][1]}
+                  &nbsp;&nbsp;
+                  {locales[key][0]}
                 </Text>
               </Box>
             ))}
@@ -219,7 +221,7 @@ const DesktopNav = () => {
             </PopoverTrigger>
 
             {navItem.children && (
-              <PopoverContent border={0} boxShadow={'xl'} bg={popoverContentBgColor} p={4} rounded={'xl'} minW={'sm'}>
+              <PopoverContent border={0} boxShadow={'xl'} bg={popoverContentBgColor} p={4} rounded={'sm'} minW={'sm'}>
                 <Stack>
                   {navItem.children.map((child) => (
                     <DesktopSubNav key={child.label} {...child} />
@@ -242,7 +244,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       role={'group'}
       display={'block'}
       p={2}
-      rounded={'md'}
+      rounded={'sm'}
       _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
       <Stack direction={'row'} align={'center'}>
         <Box>
