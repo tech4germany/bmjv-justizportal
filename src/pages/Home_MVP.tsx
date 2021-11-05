@@ -17,6 +17,34 @@ interface MVPFeatureProps {
   id?: string;
 }
 
+const MVPFeature = ({ title, text, imgURL, disabled, id }: MVPFeatureProps) => (
+  <GridItem as={VStack}>
+    <Card height="full">
+      <CardContent height="full">
+        <Image src={imgURL} />
+        <Heading colorScheme={disabled ? 'gray' : 'primary'} variant="subheading">
+          {title}
+        </Heading>
+        <Text variant="small">{text}</Text>
+        <Spacer />
+        <Button
+          colorScheme="secondary"
+          variant="outline"
+          as={ReactLink}
+          to={disabled ? '#' : `${homeURL}/wegweiser?id=${id}`}
+          disabled={disabled}>
+          <Trans>Zum Wegweiser</Trans>
+        </Button>
+        <Spacer />
+      </CardContent>
+    </Card>
+  </GridItem>
+);
+
+interface FeatureProps {
+  anchorId: string;
+}
+
 export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   const howRef = React.useRef<HTMLDivElement>(null);
   const executeScroll = () => howRef.current && howRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -28,32 +56,15 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
     }
   });
 
-const MVPFeature = ({ title, text, imgURL, disabled, id }: MVPFeatureProps) => (
-  <GridItem as={VStack}>
-    <Card height="full">
-      <CardContent height="full">
-        <Image src={imgURL} />
-        <Heading colorScheme={disabled ? 'gray' : 'primary'} variant="subheading">
-          {title}
-        </Heading>
-        <Text variant="small">{text}</Text>
-        <Spacer />
-        <Button size="lg" colorScheme="secondary" variant="outline" as={ReactLink} to="#unser-angebot" onClick={executeScroll} children={t`Jetzt starten!`} />
-        <Spacer />
-      </CardContent>
-    </Card>
-  </GridItem>
-);
-
-interface FeatureProps {
-  anchorId: string;
-}
-
   return (
     <PageBody title={`Home`}>
       <HeroSplit
-        title1={t`Die Justiz im Netz.`}
-        title2={t`Einfach, online, jederzeit.`}
+        title={
+          <Trans>
+            Die Justiz im Netz. <br />
+            Einfach, online, jederzeit.
+          </Trans>
+        }
         image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.jpg`}>
         <Text fontSize={{ base: 'lg', lg: '2xl' }} fontWeight="light">
           <Trans render={Text} id="home.sub_heading">
@@ -69,7 +80,13 @@ interface FeatureProps {
             to={`${homeURL}/${Routes.SolutionExplorer}`}
             children={t`Zum Wegweiser`}
           />
-          <Button size="lg" as={ReactLink} to="#so-funktioniert-es" onClick={executeScroll} children={t`Wie es funktioniert`} />
+          <Button
+            size="lg"
+            as={ReactLink}
+            to="#so-funktioniert-es"
+            onClick={executeScroll}
+            children={t`Wie es funktioniert`}
+          />
         </Flex>
       </HeroSplit>
 
@@ -124,18 +141,22 @@ interface FeatureProps {
           <div>
             <Heading variant="subheading">Rechtsproblem einordnen</Heading>
             <Trans>
-              Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevante und kostenfreie Rechtsinformationen zu finden.
+              Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevante und kostenfreie
+              Rechtsinformationen zu finden.
             </Trans>
           </div>
           <div>
             <Heading variant="subheading">Über mögliche Ansprüche informieren</Heading>
-            <Trans>Mit Ihren Angaben können wir für Sie mögliche rechtliche Ansprüche zusammenfassen, über die Sie sich in Ruhe informieren können.</Trans>
+            <Trans>
+              Mit Ihren Angaben können wir für Sie mögliche rechtliche Ansprüche zusammenfassen, über die Sie sich in
+              Ruhe informieren können.
+            </Trans>
           </div>
           <div>
             <Heading variant="subheading">Handlungsoptionen vergleichen</Heading>
             <Trans>
-              Zuletzt geben wir Ihnen mehrere Handlungsoptionen und Vorlagen, um Ihre Ansprüche durchzusetzen - 
-              von einem Schreiben an die Gegenseite, über eine Rechtbseratung bis hin zu einer Klage vor Gericht.
+              Zuletzt geben wir Ihnen mehrere Handlungsoptionen und Vorlagen, um Ihre Ansprüche durchzusetzen - von
+              einem Schreiben an die Gegenseite, über eine Rechtbseratung bis hin zu einer Klage vor Gericht.
             </Trans>
           </div>
         </SimpleGrid>
