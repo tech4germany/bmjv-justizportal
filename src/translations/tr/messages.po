@@ -8,6 +8,9 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
 
+msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels im Verzug** ist oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst dann selbstständig beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben und der Mangel danach nicht behoben wurde."
+msgstr "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels im Verzug** ist oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst dann selbstständig beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben und der Mangel danach nicht behoben wurde."
+
 msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
 msgstr "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels in Verzug** ist, oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst selbst beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben, und der Mangel danach nicht behoben wurde."
 
@@ -17,8 +20,14 @@ msgstr "- Ein Anspruch auf **Ausgleichszahlung** ist das Recht auf eine **Entsch
 msgid "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr **Abflug stark verzögert**.\n- Betreuungsleistungen müssen **angemessen zur Wartezeit und Tageszeit** sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen. \n- In der Regel werden Ihnen diese Leistungen **von der Fluglinie angeboten**; wenn nicht, können Sie **Schadensersatz** für notwendige Ausgaben mit Rechnungen beantragen."
 msgstr "- Ein Anspruch auf **Betreuungsleistungen** ist das Recht auf zusätzliche Unterstützung wie Essen und Getränke, wenn sich Ihr **Abflug stark verzögert**.\n- Betreuungsleistungen müssen **angemessen zur Wartezeit und Tageszeit** sein. (Kleine) Mahlzeiten und Getränke sowie Zugang zu  Telefon oder Internet sind immer angemessen.\n- Wenn **lange Wartezeiten am Flughafen bei Nacht** entstehen, kann auch das Recht auf eine **Hotelunterbringung** mit Transport dorthin bestehen. \n- In der Regel werden Ihnen diese Leistungen **von der Fluglinie angeboten**; wenn nicht, können Sie **Schadensersatz** für notwendige Ausgaben mit Rechnungen beantragen."
 
+msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch ist und die Wohnqualität stark beeinträchtigt wird.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+msgstr "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch ist und die Wohnqualität stark beeinträchtigt wird.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+
 msgid "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch und die Wohnqualität stark beeinträchtigt ist.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
 msgstr "- Ein Anspruch auf **Mietminderung** ist das Recht, eine **geringere Gesamtmiete zu zahlen**, wenn die **Nutzung der Wohnung**\ndurch einen Mangel **erheblich eingeschränkt** ist. \n- Ein **erheblicher Mangel** liegt vor, wenn der Mangel nicht nur optisch und die Wohnqualität stark beeinträchtigt ist.\n- Der Zeitraum der Minderung **beginnt mit der Anzeige des Mangels** bei der Vermieter:in, und **endet mit der Beseitigung**.\n- Sie sollten nicht sofort eine geringere Miete zahlen, da Sie so eine Kündigung wegen Mietverzug riskieren können. Stattdessen können Sie Ihrer Vermieterin melden, die **Miete unter Vorbehalt zu zahlen**. Nach Beseitigung des Mangels können Sie dann einen Anteil zurückfordern.\n- Um **wie viel Prozent** die Gesamtmiete gekürzt werden kann, hängt von der **Schwere des Mangels** ab. Einen Anhaltspunkt für Ihren Fall können Sie in einer **Mietminderungstabelle** im Internet finden."
+
+msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro verantwortlich sein, wenn das im Mietvertrag festgelegt wurde."
+msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro verantwortlich sein, wenn das im Mietvertrag festgelegt wurde."
 
 msgid "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde."
 msgstr "- Ein Anspruch auf **Mängelbeseitigung** ist das Recht, Ihre **Vermieter:in aufzufordern, den Mangel zu beseitigen**.\n- Vermieter:innen haben die Pflicht, die Mietwohnung in einem nutzbaren Zustand zu übergeben und zu erhalten.\n- Wenn während der Mietzeit ein Mangel auftritt, muss die Vermieter:in ihn beseitigen.\n- Ausnahme: Mietende können für Kleinreperaturen bis etwa 100 Euro veranwortlich sein, wenn das im Mietvertrag festgelegt wurde."
@@ -28,6 +37,18 @@ msgstr "- Ein Anspruch auf **Rückerstattung der Flugscheinkosten** ist das Rech
 
 msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
 msgstr "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln**, oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist, oder diesen bei Vertragsabschluss verschwiegen hat."
+
+msgid "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln** oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist oder diesen bei Vertragsabschluss verschwiegen hat."
+msgstr "- Ein Anspruch auf **Schadensersatz** ist das Recht, sich **Geld** für durch den Mangel **entstandene Schäden erstatten** zu lassen.\n- **Mögliche Schäden** sind entstandene **Hotelkosten**, Wertverlust bei unbrauchbar gewordenen **Möbeln** oder auch Schmerzensgeld bei körperlichen Schäden.\n- Wichtig ist, dass die Vermieter:in den Mangel zu vertreten hat, mit der Beseitigung in Verzug ist oder diesen bei Vertragsabschluss verschwiegen hat."
+
+msgid "<0>Streitwert</0><1>Gerichtsgebühren<2/>(Vorschuss)</1><3>Anwaltshonorar<4/>(pro Seite)</3>"
+msgstr "<0>Streitwert</0><1>Gerichtsgebühren<2/>(Vorschuss)</1><3>Anwaltshonorar<4/>(pro Seite)</3>"
+
+msgid "Abokündigung"
+msgstr "Abokündigung"
+
+msgid "Abschließend fassen wir mögliche Handlungsoptionen für Sie zusammen, um Ihre Ansprüche durchzusetzen - von einem Informationsschreiben bis zu einer Klage bei Gericht."
+msgstr "Abschließend fassen wir mögliche Handlungsoptionen für Sie zusammen, um Ihre Ansprüche durchzusetzen - von einem Informationsschreiben bis zu einer Klage bei Gericht."
 
 msgid "Aufwendungsersatz"
 msgstr "Aufwendungsersatz"
@@ -47,6 +68,15 @@ msgstr "Beseitigung des Mangels durch die Vermieter:in"
 msgid "Betreuungsleistungen"
 msgstr "Betreuungsleistungen"
 
+msgid "Dadurch können wir Sie über die relevanten rechtlichen Ansprüche in Ihrem Fall informieren."
+msgstr "Dadurch können wir Sie über die relevanten rechtlichen Ansprüche in Ihrem Fall informieren."
+
+msgid "Datenschutz"
+msgstr "Datenschutz"
+
+msgid "Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag und hilft Ihnen Handlungsoptionen zur Lösung Ihres Rechtsproblems zu finden. Probieren Sie es hier aus!"
+msgstr "Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag und hilft Ihnen Handlungsoptionen zur Lösung Ihres Rechtsproblems zu finden. Probieren Sie es hier aus!"
+
 msgid "Die Justiz im Netz."
 msgstr "Die Justiz im Netz."
 
@@ -55,6 +85,12 @@ msgstr "Diese Option ist leider noch nicht verfügbar."
 
 msgid "Dokumentation des Mangels"
 msgstr "Dokumentation des Mangels"
+
+msgid "Durch die Beantwortung einfacher Fragen helfen wir Ihnen, Ihr Problem einzuordnen und relevante, kostenfreie Rechtsinformationen zu finden."
+msgstr "Durch die Beantwortung einfacher Fragen helfen wir Ihnen, Ihr Problem einzuordnen und relevante, kostenfreie Rechtsinformationen zu finden."
+
+msgid "Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - hier können Sie sich über Ihre Rechte bei Mietmängeln informieren!"
+msgstr "Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - hier können Sie sich über Ihre Rechte bei Mietmängeln informieren!"
 
 msgid "Einfach, online, jederzeit."
 msgstr "Einfach, online, jederzeit."
@@ -65,14 +101,32 @@ msgstr "Erstberatung"
 msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
 msgstr "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
 
+msgid "Flugentschädigungen"
+msgstr "Flugentschädigungen"
+
 msgid "Fluglinie kontaktieren"
 msgstr "Fluglinie kontaktieren"
+
+msgid "Gebaut von <0>Tech4Germany</0>"
+msgstr "Gebaut von <0>Tech4Germany</0>"
+
+msgid "Gerichtsprozesse folgen einem festen Ablauf, der im Gesetz geregelt ist. Dabei gibt es viele Sonderregelungen. Um Ihnen einen Überblick zu geben, haben wir hier eine vereinfachte Grafik erstellt."
+msgstr "Gerichtsprozesse folgen einem festen Ablauf, der im Gesetz geregelt ist. Dabei gibt es viele Sonderregelungen. Um Ihnen einen Überblick zu geben, haben wir hier eine vereinfachte Grafik erstellt."
 
 msgid "Gerichtsverfahren"
 msgstr "Gerichtsverfahren"
 
 msgid "Handlungsoptionen vergleichen"
 msgstr "Handlungsoptionen vergleichen"
+
+msgid "Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Informieren Sie sich hier über mögliche Ansprüche aus der EU-Fluggastrechteverordnung!"
+msgstr "Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Informieren Sie sich hier über mögliche Ansprüche aus der EU-Fluggastrechteverordnung!"
+
+msgid "Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen."
+msgstr "Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen."
+
+msgid "Impressum"
+msgstr "Impressum"
 
 msgid "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
 msgstr "In welchem Bereich Ihres Lebens haben Sie ein Problem?"
@@ -94,6 +148,9 @@ msgstr "Mehr erfahren"
 
 msgid "Mietminderung"
 msgstr "Mietminderung"
+
+msgid "Mietmängel"
+msgstr "Mietmängel"
 
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
 msgstr "Mängelanzeige bei Ihrer Vermieter:in"
@@ -143,6 +200,9 @@ msgstr "Schritt"
 msgid "Startseite"
 msgstr "Startseite"
 
+msgid "Städtische Mietberatungen"
+msgstr "Städtische Mietberatungen"
+
 msgid "Unser Angebot"
 msgstr "Unser Angebot"
 
@@ -158,6 +218,12 @@ msgstr "Weitere Möglichkeiten"
 msgid "Wie es funktioniert"
 msgstr "Nasıl çalışır"
 
+msgid "Wie läuft ein Gerichtsprozess ab?"
+msgstr "Wie läuft ein Gerichtsprozess ab?"
+
+msgid "Wobei haben Sie ein Problem?"
+msgstr "Wobei haben Sie ein Problem?"
+
 msgid "Wobei können wir Ihnen helfen?"
 msgstr "Size hangi konuda yardımcı olabiliriz?"
 
@@ -167,6 +233,9 @@ msgstr "ZPO Informationen"
 msgid "Zum Prototypen"
 msgstr "Zum Prototypen"
 
+msgid "Zum Wegweiser"
+msgstr "Zum Wegweiser"
+
 msgid "Zurück"
 msgstr "Geri"
 
@@ -175,6 +244,24 @@ msgstr "Zurück zur Homepage"
 
 msgid "back"
 msgstr "Zurück"
+
+msgid "co.info_evv"
+msgstr "**Angebot**: \n- Prüfung von rechtlichen Ansprüchen durch Anwält:innen des Deutschen Mieterbunds in einem Gespräch.\n- Vorschlag von ersten Handlungsoptionen.\n######\n**Verfügbarkeit**: \n- Telefonische oder persönliche Beratung, deutschlandweit. [Hier finden Sie die Website für Ihr Bundesland](https://www.verbraucherzentrale.de/beratung).\n######\n**Kosten**: \n- Circa 20-30 Euro für eine zwanzigminütige Beratung.\n######\nDie Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mieterbund kostengünstige Erstberatungen durch Anwält:innen an, [in Baden-Württemberg beispielsweise ab 20 Euro](https://www.verbraucherzentrale-bawue.de/beratungsstellen/746/kontakt/Mietrecht/17938)."
+
+msgid "co.info_ls"
+msgstr "**Angebot**: \n- Vermittlung zwischen Ihnen und der Gegenseite für eine Einigung durch eine ausgebildete, unabhängige Schiedsperson.\n######\n**Verfügbarkeit**: \n- In einigen Bundesländern, beispielsweise [Berlin](https://www.berlin.de/sen/verbraucherschutz/verbraucherportal/recht/vertragsrecht/schlichtung-261337.php) und [Nordrhein-Westfalen](https://streitschlichtung.nrw.de/JOLStreit/).\n######\n**Kosten**: \n- In Nordrhein-Westfalen beispielsweise zwischen 10 und 40 Euro.\n######\nEinige Bundesländer bieten Schlichtungsstellen, die Bürger:innen bei der gütlichen Beilegung von Konflikten helfen. Dabei vermittelt eine Schlichter:in zwischen beiden Parteien. Diese Stellen helfen besonders, wenn man die Beziehung zur Gegenpartei erhalten möchte - zum Beispiel in einem Mietverhältnis."
+
+msgid "co.info_mm"
+msgstr "**Angebot**: \n- Beratung und außergerichtliche Vertretung in allen Mietfragen durch festangestelle Anwält:innen.\n- Auf Wunsch Übernahme der Kommunikation mit Ihrer Vermieter:in.\n- Teilweise Angebote in Drittsprachen.\n######\n**Verfügbarkeit**: \n- In vielen deutschen Städten. [Hier finden Sie den für Sie nähesten regionalen Verein des Deutschen Mieterbunds](https://www.mieterbund.de/beratung/mieterverein-vor-ort.html).\n######\n**Kosten**: \n- Teilweise kostenlose Erstberatung.\n- Jährliche Mitgliedschaften für etwa 100 Euro, Mindestlaufzeit zwei Jahre.\n######\nIn Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen Beratungen für Mitglieder anbieten. Wenn sich in Ihrem Ort kein Verein befindet, ist eine Mitgliedschaft oft auch aus anderen Städten möglich."
+
+msgid "co.info_ra"
+msgstr "**Angebot**: \n- Rechtliche Beratung sowie außergerichtliche und gerichtliche Vertretung in allen Rechtsfragen.\n######\n**Verfügbarkeit**: \n- Deutschlandweit.\n- [Über die Anwaltsauskunft](https://anwaltauskunft.de/magazin), ein Portal des Deutschen Anwaltvereins, können Sie eine Anwält:in in Ihrer Nähe finden.\n######\n**Kosten**: \n- Eine Erstberatung kostet maximal 149 Euro, kann aber auch deutlich günstiger sein.\n- Kostenlose Beratung ist mit einer Rechtschutzversicherung oder einem Beratungshilfeschein für finanzschwache Personen möglich.\n- Hier finden Sie einen [Antrag auf Beratungshilfe in Deutsch](https://justiz.de/service/formular/dateien/agI1.pdf) mit zusätzlichen [Hinweisen auf Englisch](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).\n######\nRechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber der Gegenseite und vor Gericht vertreten. Jede Bürger:in hat das Recht, sich bei rechtlichen Fragen durch eine Rechtsanwält:in beraten und vertreten zu lassen."
+
+msgid "co.info_ram"
+msgstr "**Angebot**: \n- Hilfe bei der Einreichung von Klagen und Anträgen.\n- Beantwortung von Fragen zu Briefen des Gerichts.\n######\n**Verfügbarkeit**: \n- Amtsgerichte gibt es in jeder mittelgroßen deutschen Stadt.\n- Die Rechtantragsstelle können Sie dort persönlich vor Ort oder per Telefon erreichen.\n- [Das nächste Amtsgericht für Ihren Wohnort können sie hier finden](https://www.justizadressen.nrw.de/de/justiz/suche).\n######\n**Kosten**: \n- Kostenlos.\n######\nWenn Sie Hilfe bei der Einreichung einer Klage oder der Beantwortung eines Gerichtsbriefs brauchen, kann Ihnen die Rechtsantragsstelle am Amtsgericht weiterhelfen. Hierfür können Sie einen kostenfreien Termin mit einer ausgebildeten Rechtspfleger:in vereinbaren. Diese stellt sicher, dass Ihre Erklärungen alle rechtlich erforderlichen Informationen erhält. Eine individuelle rechtliche Beratung ist jedoch nicht möglich."
+
+msgid "co.info_sm"
+msgstr "**Angebot**:\n- Erste Anlaufstelle für drängende Mietfragen (z.B. Mieterhöhung, Kündigung), teils Beratung in Fremdsprachen.\n######\n**Verfügbarkeit**: \n- Telefonische oder persönliche Beratung in vielen großen Städten, zum Beispiel in [Berlin](https://www.stadtentwicklung.berlin.de/wohnen/mieterberatungen.shtml), [München](http://www.muenchen.de/dienstleistungsfinder/muenchen/1074551/), [Hamburg](https://www.hamburg.de/oera/), [Stuttgart](https://www.stuttgart.de/vv/verwaltungseinheit/beratungstelefon-fuer-mieter-und-vemieter.php) oder [Nürnberg](https://www.nuernberg.de/internet/wohnen/mietrechtsinformationen.html).\n###### \n**Kosten**:\n- Die meisten Angebote sind kostenlos verfügbar.\n######\nEinige Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind oft für drängende Probleme (fristlose Kündigung, Räumungsklage) oder Bürger:innen mit begrenzten finanziellen Mitteln gedacht."
 
 msgid "consultation.header"
 msgstr "Beratungsangebote"
@@ -232,6 +319,15 @@ msgstr "Aus Ihren Angaben könnten sich die folgenden Ansprüche ergeben. Ein An
 
 msgid "pe.to_next_steps"
 msgstr "Zu den nächsten Schritten"
+
+msgid "zpo.info1"
+msgstr "### Wie läuft ein Gerichtsprozess ab?\n- Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben. \n- Zunächst wird die Richter:in versuchen eine Einigung (Vergleich) zu finden.\n- Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil. Darin steht, welche Ansprüche wem zustehen.\n- Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten."
+
+msgid "zpo.info2"
+msgstr "### Was kostet ein Gerichtsprozess?\n- Die Höhe der Kosten ist **abhängig vom Wert der verhandelten Forderung**. \n- Die **Verlierer:in des Prozesses trägt die Kosten**. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.\n- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben."
+
+msgid "zpo.info3"
+msgstr "### Wer kann klagen?\n- **Jede Person ab 18 Jahren** kann **alleine** am Amtsgericht klagen.\n- Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.\n- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten."
 
 msgid "zpo.nextsteps"
 msgstr "1. Auf der kommenden Seite können Sie das Dokument für eine Klage zu Ihrem Fall erstellen.  \n2. Dabei schätzen wir die Gerichtskosten für Sie ab und informieren Sie über die nötigen nächsten Schritte.  \n3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**"

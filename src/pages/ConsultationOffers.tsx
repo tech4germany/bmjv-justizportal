@@ -55,9 +55,11 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
     tags: Tag[];
   }[] = [
     {
-      label: 'Städtische Mietberatungen',
+      label: t`Städtische Mietberatungen`,
       icon: FaCity,
-      content: `
+      content: t({
+        id: 'co.info_sm',
+        message: `
 **Angebot**:
 - Erste Anlaufstelle für drängende Mietfragen (z.B. Mieterhöhung, Kündigung), teils Beratung in Fremdsprachen.
 ######
@@ -69,12 +71,15 @@ export const ConsultationOffers = ({ mmobject, ...rest }: FeatureProps) => {
 ######
 Einige Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind oft für drängende Probleme (fristlose Kündigung, Räumungsklage) oder Bürger:innen mit begrenzten finanziellen Mitteln gedacht.
 `,
+      }),
       tags: [Tag.consultation, Tag.free],
     },
     {
       label: 'Landesspezifische Schlichtungsstellen',
       icon: FaRegComments,
-      content: `
+      content: t({
+        id: 'co.info_ls',
+        message: `
 **Angebot**: 
 - Vermittlung zwischen Ihnen und der Gegenseite für eine Einigung durch eine ausgebildete, unabhängige Schiedsperson.
 ######
@@ -86,12 +91,15 @@ Einige Städte bieten kostenfreie Mieterberatung an. Diese Beratungsstellen sind
 ######
 Einige Bundesländer bieten Schlichtungsstellen, die Bürger:innen bei der gütlichen Beilegung von Konflikten helfen. Dabei vermittelt eine Schlichter:in zwischen beiden Parteien. Diese Stellen helfen besonders, wenn man die Beziehung zur Gegenpartei erhalten möchte - zum Beispiel in einem Mietverhältnis.
 `,
+      }),
       tags: [Tag.solutionOptions, Tag.free],
     },
     {
       label: 'Erstberatung bei der Verbraucherzentrale',
       icon: FiPhone,
-      content: `
+      content: t({
+        id: 'co.info_evv',
+        message: `
 **Angebot**: 
 - Prüfung von rechtlichen Ansprüchen durch Anwält:innen des Deutschen Mieterbunds in einem Gespräch.
 - Vorschlag von ersten Handlungsoptionen.
@@ -104,12 +112,15 @@ Einige Bundesländer bieten Schlichtungsstellen, die Bürger:innen bei der gütl
 ######
 Die Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mieterbund kostengünstige Erstberatungen durch Anwält:innen an, [in Baden-Württemberg beispielsweise ab 20 Euro](https://www.verbraucherzentrale-bawue.de/beratungsstellen/746/kontakt/Mietrecht/17938).
 `,
+      }),
       tags: [Tag.consultation, Tag.solutionOptions],
     },
     {
       label: 'Mietervereine / Deutscher Mieterbund',
       icon: RiCommunityLine,
-      content: `
+      content: t({
+        id: 'co.info_mm',
+        message: `
 **Angebot**: 
 - Beratung und außergerichtliche Vertretung in allen Mietfragen durch festangestelle Anwält:innen.
 - Auf Wunsch Übernahme der Kommunikation mit Ihrer Vermieter:in.
@@ -124,12 +135,15 @@ Die Verbraucherzentralen der Bundesländer bieten zusammen mit dem Deutschen Mie
 ######
 In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen Beratungen für Mitglieder anbieten. Wenn sich in Ihrem Ort kein Verein befindet, ist eine Mitgliedschaft oft auch aus anderen Städten möglich.
 `,
+      }),
       tags: [Tag.consultation, Tag.solutionOptions],
     },
     {
       label: 'Rechtsberatung bei Anwält:innen',
       icon: CgUserList,
-      content: `
+      content: t({
+        id: 'co.info_ra',
+        message: `
 **Angebot**: 
 - Rechtliche Beratung sowie außergerichtliche und gerichtliche Vertretung in allen Rechtsfragen.
 ######
@@ -144,12 +158,15 @@ In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen 
 ######
 Rechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber der Gegenseite und vor Gericht vertreten. Jede Bürger:in hat das Recht, sich bei rechtlichen Fragen durch eine Rechtsanwält:in beraten und vertreten zu lassen.
 `,
+      }),
       tags: [Tag.consultation, Tag.solutionOptions, Tag.trial],
     },
     {
       label: 'Rechtsantragsstelle am Amtsgericht',
       icon: GoLaw,
-      content: `
+      content: t({
+        id: 'co.info_ram',
+        message: `
 **Angebot**: 
 - Hilfe bei der Einreichung von Klagen und Anträgen.
 - Beantwortung von Fragen zu Briefen des Gerichts.
@@ -164,6 +181,7 @@ Rechtsanwält:innen können Sie in Rechtsangelegenheiten gegenüber der Gegensei
 ######
 Wenn Sie Hilfe bei der Einreichung einer Klage oder der Beantwortung eines Gerichtsbriefs brauchen, kann Ihnen die Rechtsantragsstelle am Amtsgericht weiterhelfen. Hierfür können Sie einen kostenfreien Termin mit einer ausgebildeten Rechtspfleger:in vereinbaren. Diese stellt sicher, dass Ihre Erklärungen alle rechtlich erforderlichen Informationen erhält. Eine individuelle rechtliche Beratung ist jedoch nicht möglich.
 `,
+      }),
       tags: [Tag.trial, Tag.free],
     },
   ];
