@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/bmjv-justizportal/static/js/main.4ff30ee7.chunk.js",
-    "main.js.map": "/bmjv-justizportal/static/js/main.4ff30ee7.chunk.js.map",
-    "runtime-main.js": "/bmjv-justizportal/static/js/runtime-main.fe5e137f.js",
-    "runtime-main.js.map": "/bmjv-justizportal/static/js/runtime-main.fe5e137f.js.map",
-    "static/js/2.e77471c4.chunk.js": "/bmjv-justizportal/static/js/2.e77471c4.chunk.js",
-    "static/js/2.e77471c4.chunk.js.map": "/bmjv-justizportal/static/js/2.e77471c4.chunk.js.map",
-    "static/js/3.215d8bc1.chunk.js": "/bmjv-justizportal/static/js/3.215d8bc1.chunk.js",
-    "static/js/3.215d8bc1.chunk.js.map": "/bmjv-justizportal/static/js/3.215d8bc1.chunk.js.map",
+    "main.js": "/bmjv-justizportal/static/js/main.dd5d892c.chunk.js",
+    "main.js.map": "/bmjv-justizportal/static/js/main.dd5d892c.chunk.js.map",
+    "runtime-main.js": "/bmjv-justizportal/static/js/runtime-main.a56c9ac7.js",
+    "runtime-main.js.map": "/bmjv-justizportal/static/js/runtime-main.a56c9ac7.js.map",
+    "static/js/2.39d94c37.chunk.js": "/bmjv-justizportal/static/js/2.39d94c37.chunk.js",
+    "static/js/2.39d94c37.chunk.js.map": "/bmjv-justizportal/static/js/2.39d94c37.chunk.js.map",
+    "static/js/3.15866d39.chunk.js": "/bmjv-justizportal/static/js/3.15866d39.chunk.js",
+    "static/js/3.15866d39.chunk.js.map": "/bmjv-justizportal/static/js/3.15866d39.chunk.js.map",
     "static/js/4.8aabec8b.chunk.js": "/bmjv-justizportal/static/js/4.8aabec8b.chunk.js",
     "static/js/4.8aabec8b.chunk.js.map": "/bmjv-justizportal/static/js/4.8aabec8b.chunk.js.map",
     "static/js/5.3c6d7841.chunk.js": "/bmjv-justizportal/static/js/5.3c6d7841.chunk.js",
@@ -19,11 +19,11 @@
     "static/js/8.5bd7daf6.chunk.js": "/bmjv-justizportal/static/js/8.5bd7daf6.chunk.js",
     "static/js/8.5bd7daf6.chunk.js.map": "/bmjv-justizportal/static/js/8.5bd7daf6.chunk.js.map",
     "index.html": "/bmjv-justizportal/index.html",
-    "static/js/2.e77471c4.chunk.js.LICENSE.txt": "/bmjv-justizportal/static/js/2.e77471c4.chunk.js.LICENSE.txt"
+    "static/js/2.39d94c37.chunk.js.LICENSE.txt": "/bmjv-justizportal/static/js/2.39d94c37.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe5e137f.js",
-    "static/js/2.e77471c4.chunk.js",
-    "static/js/main.4ff30ee7.chunk.js"
+    "static/js/runtime-main.a56c9ac7.js",
+    "static/js/2.39d94c37.chunk.js",
+    "static/js/main.dd5d892c.chunk.js"
   ]
 }
