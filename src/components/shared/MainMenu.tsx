@@ -352,7 +352,7 @@ const NAV_ITEMS: Array<NavItem> = [
     label: t`Beratungsangebote`,
     href: '/' + Routes.ConsultationOffers,
   },
-  {
+  /* {
     label: ' ',
     href: '/short',
     children: [
@@ -365,5 +365,5 @@ const NAV_ITEMS: Array<NavItem> = [
         href: '/' + Routes.PossibleEntitlements + '?id=cf4hcjzx9bk0',
       },
     ],
-  },
+  }, */
 ];
