@@ -104,7 +104,7 @@ export const App = () => {
           <Route exact path={`${homeURL}/${Routes.Privacy}`} children={() => <Privacy {...featureProps} />} />
           <Route exact path={`${homeURL}/${Routes.Bryter}`}>
             <Helmet>
-              <title>Justiz Portal - Formularassistent</title>
+              <title>Justizportal - Formularassistent</title>
             </Helmet>
             <Bryter {...featureProps} />
           </Route>

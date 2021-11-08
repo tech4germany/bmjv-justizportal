@@ -2,14 +2,14 @@
   "locales": [
     "de",
     "en",
-    "uk",
-    "vi",
-    "ru",
-    "tr"
+    // "uk",
+    // "vi",
+    // "ru",
+    // "tr"
   ],
   "sourceLocale": "de",
   "fallbackLocales": {
-    "default": "en"
+    "default": "de"
   },
   "catalogs": [
     {

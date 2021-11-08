@@ -222,10 +222,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
             <Spacer height={4} maxHeight="5px" minH="5px"></Spacer>
             <Text textAlign="center" variant="small">
               <Trans>
-                {/* Mit Ihren Angaben können wir für Sie mögliche rechtliche
-                Ansprüche zusammenfassen, über die Sie sich in Ruhe informieren
-                können. */}
-                Basierend auf Ihren Angaben, stellen wir Ihnen passende
+                Basierend auf Ihren Angaben stellen wir Ihnen passende
                 Informationen über mögliche rechtliche Ansprüche bereit.
               </Trans>
             </Text>
@@ -247,7 +244,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
                 Ansprüche durchzusetzen - von Schreiben an die Gegenseite, über
                 Rechtbseratung bis hin zu Klagen vor Gericht. */}
                 Von Beratungsangeboten über praktische Tipps und Vorlagen bis
-                hin zur Klage vor Gericht - finden Sie den passenden Weg.
+                hin zu einer Klage vor Gericht finden Sie den passenden Weg.
               </Trans>
             </Text>
           </VStack>

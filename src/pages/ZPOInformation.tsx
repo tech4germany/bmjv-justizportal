@@ -31,6 +31,7 @@ import { FaMoneyBill } from 'react-icons/fa';
 import { RiBankFill } from 'react-icons/ri';
 import { Link as ReactLink } from 'react-router-dom';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
+import { Card } from '../components/shared/Card';
 import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Primary, Routes } from '../Const';
@@ -40,25 +41,25 @@ interface FeatureProps {
 }
 
 export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
-  //   let summaryText = `
-  // **Wie funktioniert eine Klage?**
-  // - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
-  // - Mit einer Klage beginnen Sie einen Gerichtsprozess.
-  // - Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben.
-  // - Zunächst wird die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
-  // - Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil verkündet. Darin steht, welche Ansprüche Ihnen zustehen.
-  // - Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.
-  // ###
-  // **Was kostet ein Gerichtsprozess?**
-  // - Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
-  // - Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung.
-  // - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
-  // ###
-  // **Wer kann klagen?**
-  // - Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.
-  // - Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
-  // - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
-  // `;
+    let summaryText = `
+  **Wie funktioniert eine Klage?**
+  - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
+  - Mit einer Klage beginnen Sie einen Gerichtsprozess.
+  - Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben.
+  - Zunächst wird die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.
+  - Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil verkündet. Darin steht, welche Ansprüche Ihnen zustehen.
+  - Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.
+  ###
+  **Was kostet ein Gerichtsprozess?**
+  - Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
+  - Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung.
+  - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.
+  ###
+  **Wer kann klagen?**
+  - Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.
+  - Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.
+  - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
+  `;
 
   let costsText = `
 Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.
@@ -147,13 +148,23 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
     },
   ];
   return (
-    <PageBody title={t`ZPO Informationen`}>
+    <PageBody title={t`Eine Klage am Amtsgericht einreichen`}>
       <PageBlock>
         <Heading textAlign="center">
           <Trans id="zpo.heading">Eine Klage am Amtsgericht einreichen</Trans>
         </Heading>
 
-        <Text>
+        <Spacer height={12} />
+          <Card p={{ base: 10, md: 14 }}>
+            <Heading textAlign="center" variant="subheading">
+              Die wichtigsten Informationen auf einen Blick
+            </Heading>
+            <Spacer height={14} />
+            <AnnotadedText text={summaryText} />
+          </Card>
+          <Spacer height="3em" />
+
+        {/* <Text>
           <Trans id="zpo.heading_info">
             Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Am Ende helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
           </Trans>
@@ -226,8 +237,8 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         <Spacer height="3em" />
 
         <Heading variant="subheading">
-          <Trans>Weiter Fragen</Trans>
-        </Heading>
+          <Trans>Weitere Fragen</Trans> 
+        </Heading>*/}
         <Accordion alignSelf="stretch" allowToggle>
           <AccordionItem>
             <AccordionButton>
@@ -351,12 +362,12 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         </Accordion>
         <Spacer h={10} />
 
-        <HStack>
-          <Box flex={2}>
+        {/* <HStack>
+          <Box flex={2}> */}
             <Heading variant="subheading">
               <Trans>Nächste Schritte</Trans>
             </Heading>
-            <Spacer h={5} />
+            {/* <Spacer h={5} /> */}
             <AnnotadedText
               text={t({
                 id: 'zpo.nextsteps',
@@ -366,11 +377,11 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
 3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**`,
               })}
             />
-          </Box>
+{/*           </Box>
           <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
             <Image src="https://image.freepik.com/free-vector/manager-prioritizing-tasks-list_74855-5272.jpg" />
-          </Box>
-        </HStack>
+          </Box> 
+        </HStack>*/}
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           <Trans>Zur Erstellung des Klagedokuments</Trans>
         </Button>
