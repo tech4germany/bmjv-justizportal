@@ -254,9 +254,9 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <Trans>
             Sie haben sich bereits über Ihre Ansprüche informiert und Ihre
             Handlungsoptionen ausgeschöpft? Dann unterstützen wir Sie auch
-            direkt bei der Erstellung und Einreichung einer Klage für
-            <Link href={bryterURLs.claimRent}> Mietmängel</Link> oder
-            <Link href={bryterURLs.claimFlight}> Fluggastrechte</Link>. Falls
+            direkt bei der Erstellung und Einreichung einer Klage für 
+            <Link as={ReactLink} to={`${homeURL}/${Routes.Bryter}/?mietmangelklage`}>Mietmängel</Link> oder 
+            <Link as={ReactLink} to={`${homeURL}/${Routes.Bryter}/?fluggastrechteklage`}>Fluggastrechte</Link>. Falls
             nicht, empfehlen wir zunächst unseren Justizportal Wegweiser:
           </Trans>
         </Text>

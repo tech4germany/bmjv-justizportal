@@ -52,6 +52,10 @@ export const Bryter = ({ id, query, mmobject, ...rest }: FeatureProps) => {
         bryterLink += 'mangelart=schimmel';
         break;
     }
+  } else if (query.get('mietmangelklage') != null) {
+    bryterLink = bryterURLs.claimRent;
+  } else if (query.get('fluggastrechteklage') != null) {
+    bryterLink = bryterURLs.claimFlight;
   } else {
     switch (currentNode.caseType) {
       case CaseTypes.Fluggastrecht:
