@@ -93,7 +93,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   });
 
   return (
-    <PageBody title={`Home`}>
+    <PageBody title={`Startseite`}>
       <HeroSplit
         title1={
           <Trans>

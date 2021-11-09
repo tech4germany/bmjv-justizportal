@@ -274,8 +274,8 @@ Auf der nächsten Seite geben wir Ihnen einen Überblick zu Beratungsstellen.
         <PageBlock>
           <Text>
             <Trans>
-              Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir{' '}
-              <Link>hier Beratungsangebote zusammengefasst.</Link>
+              Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir 
+              <Link as={ReactLink} to={`${homeURL}/${Routes.ConsultationOffers}`}>hier Beratungsangebote zusammengefasst</Link>.
             </Trans>
           </Text>
 
