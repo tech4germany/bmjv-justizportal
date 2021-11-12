@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import * as Icons from 'react-icons/fa';
+import * as IconsFa from 'react-icons/fa';
+import * as IconsMd from 'react-icons/md';
 import Data from '../data_parser/data.json';
 
 interface DynamicFaIconProps {
@@ -7,15 +8,21 @@ interface DynamicFaIconProps {
 }
 
 const DynamicFaIcon = (props: DynamicFaIconProps) => {
-  const IconComponent: any = Icons[props.name];
+  if (props.name in IconsFa) {
+    const IconComponent: any = IconsFa[props.name];
 
-  if (!IconComponent) {
+    return <IconComponent size="3em" />;
+    return;
+  } else if (props.name in IconsMd) {
+    const IconComponent: any = IconsMd[props.name];
+
+    return <IconComponent size="3em" />;
+  } else {
     // Return a default one
-    console.log(`[Warrning] Cloud not find icon '${props.name}'`);
-    return <Icons.FaBeer size="3em" />;
-  }
 
-  return <IconComponent size="3em" />;
+    console.log(`[Warrning] Cloud not find icon '${props.name}'`);
+    throw Error(`[Warrning] Cloud not find icon '${props.name}'`);
+  }
 };
 
 export interface MMNode {
