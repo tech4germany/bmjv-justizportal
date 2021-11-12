@@ -105,8 +105,8 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
       >
         <Text fontSize={{ base: 'lg', lg: '2xl' }} fontWeight="light">
           <Trans render={Text} id="home.sub_heading">
-            Ein digitales Serviceangebot der deutschen Justiz. Wir informieren
-            Sie über Ihre Rechte im Alltag.
+            Ein digitales Serviceangebot der deutschen Justiz. Wir unterstützen
+            Sie bei Rechtsproblemen im Alltag.
           </Trans>
         </Text>
         <Flex
@@ -148,15 +148,15 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={10}>
           <MVPFeature
             title={t`Mietmängel`}
-            text={t`Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - hier können Sie sich über Ihre Rechte bei Mietmängeln informieren!`}
+            text={t`Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - informieren Sie sich hier ganz einfach über mögliche Ansprüche und wir unterstützen Sie bei der Durchsetzung!`}
             imgURL={`${homeURL}/data/D9F5D0B5-68DF-4C90-B7CC-05135361E14C.png`}
             id={`ceppdowbfco0#s`}
             textAlign="center"
-            imageSize="180px"
+            imageSize="185px"
           />
           <MVPFeature
             title={t`Flugentschädigungen`}
-            text={t`Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Informieren Sie sich hier über mögliche Ansprüche aus der EU-Fluggastrechteverordnung!`}
+            text={t`Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Setzen Sie hier mögliche Ansprüche aus der EU-Fluggastrechteverordnung durch!`}
             imgURL={`${homeURL}/data/7189D919-4DC5-4339-BA18-31F37785F662.png`}
             id={`cf008ca222o0#s`}
             textAlign="center"
@@ -164,7 +164,7 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           />
           <MVPFeature
             title={t`Abokündigung`}
-            text={t`Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen.`}
+            text={t`Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft unterstützen wir Sie hier in rechtlichen Problemen bei Abofallen.`}
             imgURL={`${homeURL}/data/9DD5BDF0-1FC1-40D8-B559-75E0F0947966.png`}
             disabled
             textAlign="center"
@@ -254,10 +254,22 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <Trans>
             Sie haben sich bereits über Ihre Ansprüche informiert und Ihre
             Handlungsoptionen ausgeschöpft? Dann unterstützen wir Sie auch
-            direkt bei der Erstellung und Einreichung einer Klage für 
-            <Link as={ReactLink} to={`${homeURL}/${Routes.Bryter}/?mietmangelklage`}>Mietmängel</Link> oder 
-            <Link as={ReactLink} to={`${homeURL}/${Routes.Bryter}/?fluggastrechteklage`}>Fluggastrechte</Link>. Falls
-            nicht, empfehlen wir zunächst unseren Justizportal Wegweiser:
+            direkt bei der Erstellung und Einreichung einer Klage für{' '}
+            <Link
+              as={ReactLink}
+              to={`${homeURL}/${Routes.Bryter}/?mietmangelklage`}
+            >
+              Mietmängel
+            </Link>{' '}
+            oder{' '}
+            <Link
+              as={ReactLink}
+              to={`${homeURL}/${Routes.Bryter}/?fluggastrechteklage`}
+            >
+              Fluggastrechte
+            </Link>
+            . Falls nicht, empfehlen wir zunächst unseren Justizportal
+            Wegweiser:
           </Trans>
         </Text>
 
