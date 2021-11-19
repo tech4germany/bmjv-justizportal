@@ -152,7 +152,7 @@ In Deutschland gibt es hunderte regionale Mietervereine, in denen Anwält:innen 
 - [Über die Anwaltsauskunft](https://anwaltauskunft.de/magazin), ein Portal des Deutschen Anwaltvereins, können Sie eine Anwält:in in Ihrer Nähe finden.
 ######
 **Kosten**: 
-- Eine Erstberatung kostet maximal 149 Euro, kann aber auch deutlich günstiger sein.
+- Eine Erstberatung kostet maximal 190 Euro, kann aber auch deutlich günstiger sein.
 - Kostenlose Beratung ist mit einer Rechtschutzversicherung oder einem Beratungshilfeschein für finanzschwache Personen möglich.
 - Hier finden Sie einen [Antrag auf Beratungshilfe in Deutsch](https://justiz.de/service/formular/dateien/agI1.pdf) mit zusätzlichen [Hinweisen auf Englisch](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).
 ######
