@@ -15,8 +15,8 @@ import {
 } from '@chakra-ui/react';
 import React, { ReactText } from 'react';
 import { IconType } from 'react-icons';
-import { FiCompass, FiHome, FiMenu, FiTrendingUp } from 'react-icons/fi';
-
+import { FiHome, FiMenu, FiTrendingUp } from 'react-icons/fi';
+import { MdGrain } from 'react-icons/md';
 interface LinkItemProps {
   name: string;
   icon: IconType;
@@ -24,13 +24,17 @@ interface LinkItemProps {
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Wohnen', icon: FiHome },
   { name: 'Mangel', icon: FiTrendingUp },
-  { name: 'Schimmel', icon: FiCompass },
+  { name: 'Schimmel', icon: MdGrain },
 ];
 
 export default function ProgressBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box height="100%" display={{ base: 'none', md: 'inherit' }} bg={useColorModeValue('gray.50', 'gray.900')}>
+    <Box
+      height="100%"
+      display={{ base: 'none', md: 'inherit' }}
+      bg={useColorModeValue('gray.50', 'gray.900')}
+    >
       <SidebarContent onClose={() => onClose} />
     </Box>
   );
@@ -48,7 +52,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
       h="full"
-      {...rest}>
+      {...rest}
+    >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
         <Text fontSize="2xl" fontFamily="body" fontWeight="bold">
           Ihre Angaben
@@ -82,7 +87,8 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
           bg: 'cyan.400',
           color: 'white',
         }}
-        {...rest}>
+        {...rest}
+      >
         {icon && (
           <Icon
             mr="4"
@@ -112,8 +118,14 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       borderBottomWidth="1px"
       borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
       justifyContent="flex-start"
-      {...rest}>
-      <IconButton variant="outline" onClick={onOpen} aria-label="open menu" icon={<FiMenu />} />
+      {...rest}
+    >
+      <IconButton
+        variant="outline"
+        onClick={onOpen}
+        aria-label="open menu"
+        icon={<FiMenu />}
+      />
 
       <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
         Logo

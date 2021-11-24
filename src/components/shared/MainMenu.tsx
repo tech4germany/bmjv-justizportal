@@ -170,7 +170,7 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
           {/* <ColorModeSwitcher alignSelf="center" justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} /> */}
-          <LanguageSelector />
+          {/* <LanguageSelector /> */}
           <Button display="none" colorScheme="primary">
             Anmelden
           </Button>
@@ -352,7 +352,7 @@ const NAV_ITEMS: Array<NavItem> = [
     label: t`Beratungsangebote`,
     href: '/' + Routes.ConsultationOffers,
   },
-  {
+  /* {
     label: ' ',
     href: '/short',
     children: [
@@ -365,5 +365,5 @@ const NAV_ITEMS: Array<NavItem> = [
         href: '/' + Routes.PossibleEntitlements + '?id=cf4hcjzx9bk0',
       },
     ],
-  },
+  }, */
 ];

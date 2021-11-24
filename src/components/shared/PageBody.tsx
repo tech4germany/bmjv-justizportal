@@ -10,7 +10,7 @@ export const PageBody = ({ children, title, ...rest }: Props) => {
   return (
     <>
       <Helmet>
-        <title>Justiz Portal - {title}</title>
+        <title>Justizportal - {title}</title>
       </Helmet>
       <VStack textAlign="left" flex={1} paddingBottom={10} spacing={0} {...rest}>
         {children}
