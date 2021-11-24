@@ -33,7 +33,7 @@ msgid "<0>Streitwert</0><1>Gerichtsgebühren<2/>(Vorschuss)</1><3>Anwaltshonorar
 msgstr "<0>Amount in dispute</0> <1>Court fees<2/> (advance)</1> <3>attorney fee<4/> (per page)</3>"
 
 msgid "Abokündigung"
-msgstr "Abo cancelation"
+msgstr "Subscription cancellation"
 
 msgid "Aufwendungsersatz"
 msgstr "Reimbursement of expenses"
@@ -72,7 +72,7 @@ msgid "Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevan
 msgstr "By answering simple yes-no questions, we help you find relevant and free legal information."
 
 msgid "Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - hier können Sie sich über Ihre Rechte bei Mietmängeln informieren!"
-msgstr "Whether you have problems with mould, noise or water damage, you can find out about your rights in case of rental defects here!"
+msgstr "Whether you have problems with mould, noise or water damage, you can find out about your rights in case of rental apartment defects here!"
 
 msgid "Einfach, online, jederzeit."
 msgstr "Simple, anywhere, at any time."
@@ -105,7 +105,7 @@ msgid "Handlungsoptionen vergleichen"
 msgstr "Compare options for action"
 
 msgid "Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Informieren Sie sich hier über mögliche Ansprüche aus der EU-Fluggastrechteverordnung!"
-msgstr "Your flight was delayed, cancelled, or denied boarding? Find out about possible claims from the EU Passenger Rights Regulation here!"
+msgstr "Your flight was delayed, cancelled, or you were denied boarding? Find out about possible claims from the EU Passenger Rights Regulation here!"
 
 msgid "Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen."
 msgstr "Has your contract been extended unexpectedly or have you incurred unforeseen costs? In the future, we will inform you about your subscription rights here."
@@ -135,7 +135,7 @@ msgid "Mietminderung"
 msgstr "Rent reduction"
 
 msgid "Mietmängel"
-msgstr "Rental deficiencies"
+msgstr "Rental apartment defects"
 
 msgid "Mit Ihren Angaben können wir für Sie mögliche rechtliche Ansprüche zusammenfassen, über die Sie sich in Ruhe informieren können."
 msgstr "With your information, we can summarize possible legal claims for you, which you can find out about in peace."
@@ -189,7 +189,7 @@ msgid "Schlichtungsantrag stellen"
 msgstr "Submit a request for conciliation"
 
 msgid "Startseite"
-msgstr "Home page"
+msgstr "Homepage"
 
 msgid "Städtische Mietberatungen"
 msgstr "Municipal rental advice"
