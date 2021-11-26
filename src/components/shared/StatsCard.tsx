@@ -40,6 +40,7 @@ export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsC
           pos="relative"
           borderColor={borderColor}
           bg="white"
+          px={4}
           minH={{ base: 32, sm: '10em', md: '10em' }}
           as={ReactLink}
           to={link}
@@ -63,7 +64,7 @@ export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsC
             height="0"
             top=".5em"
             right=".5em"
-            color={disabled ? 'gray.900' : borderColor}
+            color={disabled ? 'gray.100' : borderColor}
             _hover={{
               transitionDuration: '0.2s',
               color: Primary(),

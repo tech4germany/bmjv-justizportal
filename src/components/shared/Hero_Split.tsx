@@ -14,14 +14,13 @@ import * as React from 'react';
 //   );
 // };
 interface FeatureProps {
-  title1?: string;
-  title2?: string;
+  title?: React.ReactNode;
   children: React.ReactNode;
   image: string;
 }
 
 export const HeroSplit = (props: FeatureProps) => {
-  const { title1, title2, children, image } = props;
+  const { title, children, image } = props;
 
   return (
     <Box>
@@ -72,9 +71,7 @@ export const HeroSplit = (props: FeatureProps) => {
               fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
               fontWeight="bold"
               marginBottom={-5}>
-              {title1}
-              <br />
-              {title2}
+              {title}
             </Heading>
             {children}
           </VStack>
