@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import * as IconsFa from 'react-icons/fa';
 import * as IconsMd from 'react-icons/md';
-import Data from '../data_parser/data.json';
+import { Data } from '../data_parser/data';
 
 interface DynamicFaIconProps {
   name: string;
@@ -10,16 +10,12 @@ interface DynamicFaIconProps {
 const DynamicFaIcon = (props: DynamicFaIconProps) => {
   if (props.name in IconsFa) {
     const IconComponent: any = IconsFa[props.name];
-
     return <IconComponent size="3em" />;
-    return;
   } else if (props.name in IconsMd) {
     const IconComponent: any = IconsMd[props.name];
-
     return <IconComponent size="3em" />;
   } else {
     // Return a default one
-
     console.log(`[Warrning] Cloud not find icon '${props.name}'`);
     throw Error(`[Warrning] Cloud not find icon '${props.name}'`);
   }
@@ -98,20 +94,14 @@ export class MMGraph {
     }
   }
 
-  getTags(id: string | null): Claims[] {
-    if (id != null && id in this.nodes) {
-      return this.nodes[id].claims;
-    } else {
-      return [];
-    }
+  getClaims(id: string | null): Claims[] {
+    if (id == null) return [];
+    return this.nodes[id]?.claims ?? [];
   }
 
   getParent(id: string | null): MMNode | undefined {
-    if (id != null && id in this.parent) {
-      return this.parent[id];
-    } else {
-      return undefined;
-    }
+    if (id == null) return undefined;
+    return this.parent[id] ?? undefined;
   }
 
   getNumberOfParents(id: string | null): number {
@@ -122,47 +112,32 @@ export class MMGraph {
     }
   }
 
-  private configureContent(currentNode: MMNode, currentInput: any) {
-    let lines: string[] = currentInput['data']['note'].split('\n');
-    if (lines[0].includes('{ICON:')) {
-      currentNode.icon = <DynamicFaIcon name={lines[0].substring(6, lines[0].length - 1)} />;
-      lines.splice(0, 1);
-    } else if (lines[0].includes("{'")) {
-      currentNode.claims = JSON.parse(lines[0].replaceAll("'", '"'))['entitlements'];
-      currentNode.nextSteps = JSON.parse(lines[0].replaceAll("'", '"'))['nextsteps'];
-      lines.splice(0, 1);
-    }
-    if (lines.length > 0 && lines[0].includes("{'")) {
-      if (lines[0].includes('caseType')) {
-        currentNode.caseType = JSON.parse(lines[0].replaceAll("'", '"'))['caseType'];
-      }
-      if (lines[0].includes('caseTopic')) {
-        currentNode.caseTopic = JSON.parse(lines[0].replaceAll("'", '"'))['caseTopic'];
-      }
-      lines.splice(0, 1);
-    }
-    if (this.getParent(currentNode.id)) {
-      if (!currentNode.caseType) {
-        currentNode.caseType = this.getParent(currentNode.id)?.caseType;
-      }
-      if (!currentNode.caseTopic) {
-        currentNode.caseTopic = this.getParent(currentNode.id)?.caseTopic;
-      }
-    }
-    currentNode.info = lines.join('\n');
-  }
-
   private traverseMindMap(currentInput: any): MMNode {
-    let currentNode: MMNode = {
-      title: currentInput['data']['text'],
-      id: currentInput['data']['id'],
+    let CI = currentInput['data'];
+
+    var currentNode: MMNode = {
+      title: CI['text'],
+      id: CI['id'],
       type: 'default',
       claims: [],
       nextSteps: [],
     };
 
-    if (currentInput.data.hasOwnProperty('note') && currentInput.data['note'] != null) {
-      this.configureContent(currentNode, currentInput);
+    currentNode.icon = 'icon' in CI ? <DynamicFaIcon name={CI['icon']} /> : undefined;
+    currentNode.info = CI['note'] ?? undefined;
+
+    if ('config' in CI) {
+      let json = JSON.parse(CI['config']);
+      currentNode.claims = json['entitlements'];
+      currentNode.nextSteps = json['nextsteps'];
+      currentNode.caseType = json['caseType'];
+      currentNode.caseTopic = json['caseTopic'];
+      console.log(`ID: ${currentNode.id}, JSON: ${currentNode.claims}`);
+    }
+
+    if (this.getParent(currentNode.id)) {
+      currentNode.caseType = currentNode.caseType ?? this.getParent(currentNode.id)?.caseType;
+      currentNode.caseTopic = currentNode.caseTopic ?? this.getParent(currentNode.id)?.caseTopic;
     }
 
     if (currentInput.data.hasOwnProperty('priority')) {

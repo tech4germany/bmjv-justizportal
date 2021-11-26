@@ -8,6 +8,24 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
 
+msgid "### Entschädigungen nach der EU-Fluggastrechteverordnung\n- Sie haben wegen einer Flugverspätung, einer Annullierung durch die Fluglinie oder einer Beförderungsverweigerung wegen Überbuchung Ihr Ziel verspätet oder gar nicht erreicht? Dann haben Sie nach der EU-Fluggastrechteverordnung vielleicht einen Anspruch auf eine Ausgleichszahlung. \n- Die Höhe der  Ausgleichszahlung ist abhängig von der Flugstrecke und kann bis zu 600 Euro betragen. \n- Bei Annullierung haben Sie zudem einen Anspruch auf Erstattung der Flugscheinkosten oder eine alternative Beförderung.\n- Für lange Wartezeiten am Flughafen können Sie auch Betreuungsleistungen wie Essen und Getränke, oder eine nächtliche Hotelübernachtung erhalten."
+msgstr "### Compensation under the EU Passenger Rights Regulation\n- Have you reached your destination late or not at all due to a flight delay, airline cancellation or refusal of carriage due to overbooking? Then you may be entitled to compensation under the EU Passenger Rights Regulation. \n- The amount of the compensation payment depends on the route of the flight and can be up to 600 euros. \n- In the event of cancellation, you are also entitled to a refund of ticket costs or alternative transportation.\n- For long waiting times at the airport, you can also receive assistance such as food and drinks, or an overnight stay in a hotel at night."
+
+msgid "### Was ist ein **Mietmangel**?\nIhre Vermieter:in muss Ihnen Ihre Wohnung in einem geeigneten Zustand überlassen und erhalten. Ist die **Wohnung in einem erheblich schlechteren Zustand** als erwartet werden kann, liegt vielleicht ein Mangel vor. Dann können Sie verschiedene Ansprüche haben, beispielsweise auf Beseitigung des Mangels oder Mietminderung."
+msgstr "### What is a **rent deficiency**?\nYour landlord:in must leave and maintain your apartment in a suitable condition. If the **apartment is in a significantly worse condition** than can be expected, there may be a defect. Then you can have various claims, for example to remedy the defect or to reduce rent."
+
+msgid "### Wohnungsmängel durch Lärm\nErheblicher Lärm kann als Mietmangel gelten, beispielswese bei Störungen in den Ruhezeiten. Diese sind in der Regel zwischen 22 und 6 Uhr, sowie ganztägig an Sonn- und Feiertagen. Andere Ruhezeiten können von Bundesländern und Gemeinden, aber auch in der Hausordnung festgehalten werden.\n✅ **Unter Ruhestörungen fallen** Störungen der Nachtruhe (Musik, Staubsaugen, laute Waschmaschine über 30 Dezibel), dauerhafte Geräusche von Tieren, laute Gartengeräte, sowie Streitgespräche.\n❌ **Nicht als Ruhestörung zählen** nächtliches Duschen, Renovierungs- und Baulärm, spielende Kinder, oder Kirchenglocken.\n💡 **Hinweis bei Nachbarschaftskonflikten:** Sollten Sie sich von einer Nachbar:in gestört fühlen, sollten Sie zunächst freunddlich darauf ansprechen, um Streit zu vermeiden. Möglicherweise ist der Nachbar:in nicht klar, dass Sie sich gestört fühlen. Bei akuten, sehr starken Störungen können Sie auch das Ordnungsamt oder die Polizei kontaktieren."
+msgstr "### Housing deficiencies due to noise\nSignificant noise can be considered a lack of rent, for example in case of disruptions during rest periods. These are usually between 10pm and 6am, as well as all day on Sundays and public holidays. Other rest periods can be recorded by federal states and municipalities, as well as in the house rules.\n✅ **Disturbed peace** Disturbances of sleep (music, vacuuming, noisy washing machine over 30 decibels), persistent sounds from animals, loud garden tools, and arguments.\n❌ **Don't count as a disturbance of peace** Nightly showering, renovation and construction noise, children playing, or church bells.\n💡 **Neighborhood conflict note**: If you feel disturbed by a neighbor, you should first approach it kindly to avoid quarrels. The neighbor may not realise that you are feeling disturbed. In case of acute, very severe disturbances, you can also contact the public order office or the police."
+
+msgid "### Wohnungsmängel durch Schimmel\nSchimmelpilze sehen aus wie schwarze Flecken und entstehen bei zu hoher Feuchtigkeit in der Wohnung, beispielsweise durch seltenes Lüften, sparsames Heizen oder Baumängel. Schimmel kann sich sowohl negativ auf die Gesundheit, als auch die Wände der Wohnung auswirken. [Mehr können Sie auf der Webseite der Verbraucherzentrale erfahren.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
+msgstr "### Housing defects due to mold\nMolds look like black spots and are formed when humidity is too high in the home, for example due to infrequent ventilation, economical heating or construction defects. Mold can have a negative impact on both health and the walls of the apartment. [You can find out more on the website of the consumer center.](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/schimmel-in-der-wohnung-6794#)"
+
+msgid "### Wohnungsmängel durch Wasserschäden\nWasserschäden in der Wohnung können beispielsweise durch starken Regen oder Schäden an Wasserleitungen, Geräten und im Bad entstehen.\nAnsprüche gegen Vermieter:innen oder Hauseigentümer:innen wegen des Wasserschadens bestehen dann, wenn diese den Mangel verschuldet haben, was beispielsweise oft bei Rohrbrüchen der Fall ist.\nWerden Wasserschäden durch eigene defekte Geräte wie Waschmaschine oder Geschirrspüler verursacht, haftet man in der Regel selbst. Etwas anderes kann gelten, wenn die Geräte mit der Wohnung angemietet wurden (bspw. Geräte in einer angemieteten Einbauküche).\nWenn die Mietenden den Wasserschaden selbst verursacht haben, dann kann eine Hausratsversicherung oder bei Schäden der Nachbarn eine Haftpflichtversicherung weiterhelfen."
+msgstr "### Housing deficiencies due to water damage\nWater damage in the home can be caused, for example, by heavy rain or damage to water pipes, appliances and in the bathroom.\nThere are claims against landlords or homeowners for water damage when they have caused the defect, which is often the case with pipe bursts, for example.\nIf water damage is caused by defective appliances such as washing machines or dishwashers, you are usually liable yourself. Something different may apply if the equipment was rented with the apartment (e.g. appliances in a rented fitted kitchen).\nIf the tenants have caused the water damage themselves, household insurance or liability insurance can help in case of damage to neighbours."
+
+msgid "**Wie funktioniert eine Klage?**\n- Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.\n- Mit einer Klage beginnen Sie einen Gerichtsprozess.\n- Im Prozess stellen Sie und die andere Partei den Fall vor der Richter:in dar. Wenn nicht klar ist, welche Version stimmt, werden Beweise erhoben.\n- Zunächst wird die Richter:in Ihnen und der Gegenpartei eine Einigungsmöglichkeit als Vergleich vorschlagen, um den Streit schnell beizulegen.\n- Wird keine Einigung gefunden, verkündet die Richter:in am Ende des Prozesses ein verbindliches Urteil verkündet. Darin steht, welche Ansprüche Ihnen zustehen.\n- Insgesamt dauert ein Prozess üblicherweise zwischen drei und zehn Monaten.\n###\n**Was kostet ein Gerichtsprozess?**\n- Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.\n- Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung.\n- Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, falls Sie wenig Geld haben.\n###\n**Wer kann klagen?**\n- Jede Person ab 18 Jahren kann alleine am Amtsgericht klagen.\n- Eltern können für minderjährigen Kinder klagen, zum Beispiel bei Ansprüchen aus der EU-Fluggastrechteverordnung.\n- Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten."
+msgstr "**How does a lawsuit work?**\n- If you cannot resolve a dispute with a person or a company on your own, a judge can resolve it for you in a court case.\n- With a lawsuit, you start a court case.\n- In the trial, you and the other party present the case before the judge. If it is not clear which version is correct, evidence will be collected.\n- First, the judge will propose a settlement option to you and the other party in order to resolve the dispute quickly.\n- If no agreement is found, the judge will announce a binding verdict at the end of the trial. It says what demands you are entitled to.\n- In total, a process usually takes between three and ten months.\n###\n**What does a court case cost?**\n- The losers in the process are ordered to pay the costs. If neither party is quite right, the costs are split up.\n- The amount of the costs depends on the value of the negotiated claim.\n- You can apply for [legal aid](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) if you are short on money.\n###\n**Who can sue?**\n- Any person aged 18 and over can sue in the district court alone.\n- Parents can sue for underage children, for example in the case of claims from the EU Passenger Rights Regulation.\n- If you feel unsure about it, lawyers can advise you or represent you entirely."
+
 msgid "- Ein Anspruch auf **Aufwendungsersatz** ist das Recht auf **Erstattung der Kosten**, die bei der **Beseitigung des Mangels** entstanden sind.\n- Sie dürfen den Mangel selbst beseitigen, wenn die Vermieterin **mit der Beseitigung des Mangels im Verzug** ist oder es sich um eine **Not- oder Eilmaßnahme** handelt.\n- Meistens sollten Sie den Mangel erst dann selbstständig beseitigen, wenn Sie Ihre Vermieterin mit einer Frist zur Beseitigung aufgefordert haben und der Mangel danach nicht behoben wurde."
 msgstr "- A claim to **reimbursement of expense** is the right to **reimbursement of the costs** incurred in the **elimination of the defect**.\n- You may rectify the defect yourself if the lessor is in arrears with the elimination of the defect or it is a **emergency or urgent measure**.\n- In most cases, you should not repair the defect yourself until you have asked your landlady to remedy it with a deadline and the defect has not been rectified afterwards."
 
@@ -33,7 +51,10 @@ msgid "<0>Streitwert</0><1>Gerichtsgebühren<2/>(Vorschuss)</1><3>Anwaltshonorar
 msgstr "<0>Amount in dispute</0> <1>Court fees<2/> (advance)</1> <3>attorney fee<4/> (per page)</3>"
 
 msgid "Abokündigung"
-msgstr "Subscription cancellation"
+msgstr "Subscriptions"
+
+msgid "Arbeit"
+msgstr "Work"
 
 msgid "Aufwendungsersatz"
 msgstr "Reimbursement of expenses"
@@ -50,6 +71,9 @@ msgstr "Legal advice"
 msgid "Beseitigung des Mangels durch die Vermieter:in"
 msgstr "Removal of the defect by the landlords"
 
+msgid "Besteht der Schimmel aktuell noch?"
+msgstr "Does the mould still exist?"
+
 msgid "Betreuungsleistungen"
 msgstr "Care services"
 
@@ -59,8 +83,11 @@ msgstr "Privacy"
 msgid "Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag und hilft Ihnen Handlungsoptionen zur Lösung Ihres Rechtsproblems zu finden. Probieren Sie es hier aus!"
 msgstr "The Solution Explorer provides you with information about your rights in everyday life and helps you to find options for action to solve your legal problem. Try it out here!"
 
-msgid "Die Justiz im Netz."
-msgstr "Justice online."
+msgid "Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.\n###  \n### Gerichtsgebühren\n- Die Gerichtsgebühren sind gesetzlich festgelegt und abhängig vom Wert Ihrer Forderung (circa 10-15%).\n- Der Wert der Forderung wird als Streitwert bezeichnet und am Anfang vom Gericht festgelegt.\n- Als Kläger:in müssen Sie die Gerichtsgebühren im Voraus bezahlen.\n- Sollten Sie den Prozess gewinnen, bekommen Sie das Geld danach von der Gegenseite zurück. Dafür stellen Sie einen kurzen [Kostenfestsetzungsantrag](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).\n###  \n### Anwaltshonorare\n- Wenn Sie eine Anwält:in vertritt, müssen Sie im Voraus ein Honorar bezahlen.\n- Auch die Anwaltshonorare sind gesetzlich festgelegt, und abhängig vom Streitwert (circa 20%).\n- Wer den Prozess verliert, bezahlt auch alle Anwält:innen.  \n###  \n### Weitere Kosten\n- Weitere Kosten können entstehen, wenn zur Beweisaufnahme beispielsweise Zeug:innen gehört werden. Diese erhalten dann eine Vergütung. \n- Auch Sachverständige (Expert:innen) können Kosten verursachen, wenn zusätzliche Gutachten benötigt werden.\n###  \n### Welche Kosten können für Sie insgesamt entstehen?\n- Die Kosten Ihres Falls können Sie mithilfe des Streitwerts abschätzen.  \n- Ihren Streitwert berechnen wir im nächsten Schritt, wenn Sie eine Klage erstellen.  \n- In der Tabelle finden Sie eine Orientierung, wie hoch die Kosten für verschiedene Streitwerte sein können.  \n- Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen. Manchmal sind Rechtsschutzversicherungen in Mitgliedschaften inbegriffen, z.B. bei einem Mieterverein.\n- Wenn Sie nicht genug Geld für einen Gerichtsprozess haben, können Sie [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen.\n###\nBeispiel: Bei Klagen zur EU-Fluggastrechteverordnung liegen Streitwerte häufig unter 1.000 Euro. Damit betragen die Gerichtsgebühren circa 150 Euro. Diese erhalten Sie bei Gewinn zurück. Sollten Sie verlieren, zahlen Sie die Gerichtskosten und gegebenenfalls die Honorare ihrer und der gegnerischen Anwält:in (je circa 200 Euro). Das Kostenrisiko beträgt daher circa 300 bis 450 Euro."
+msgstr "The costs of a court case consist of **court fees, attorney's fees and other expenses**.\n### \n### Court fees\n- Court fees are defined by law and depend on the value of your claim (approximately 10-15%).\n- The value of the claim is called the amount in dispute and is determined by the court at the beginning.\n- As a plaintiff, you must pay court fees in advance.\n- If you win the trial, you will then get the money back from the other party. You can do this by submitting a short [cost fixing request](https://www.justiz.nrw.de/BS/formulare/zivilsachen/ziv_zwischentext/kostenfestsetzungsantrag/index.php).\n### \n### Lawyers' fees\n- If a lawyer represents you, you must pay a fee in advance.\n- Lawyers' fees are also defined by law and depend on the amount in dispute (about 20%).\n- Anyone who loses the trial also pays all lawyers. \n### \n### Additional costs\n- Additional costs may arise if, for example, witnesses are heard in the taking of evidence. They will then receive remuneration. \n- Experts can also incur costs if additional reports are required.\n### \n### What costs can you incur overall?\n- You can estimate the costs of your case using the amount in dispute. \n- We calculate your amount in dispute in the next step when you create a claim. \n- In the table you will find an orientation as to how much the costs can be for different litigation assets. \n- If you have legal expenses insurance, it can cover your costs. Sometimes legal protection insurance is included in memberships, for example with a tenant association.\n- If you don't have enough money for a lawsuit, you can apply for [legal aid](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html).\n###\nExample: In cases of lawsuits under the EU Passenger Rights Regulation, litigation values are often below 1,000 euros. The court fees are thus around 150 euros. You will receive this back if you win. Should you lose, you will pay the court costs and, if applicable, the fees of your and the opposing lawyer (approximately 200 euros each). The cost risk is therefore around 300 to 450 euros."
+
+msgid "Diese Frage hilft uns, Ihnen die richtigen nächsten Schritte zu empfehlen. Wenn der Mangel noch besteht, erklären wir Ihnen beispielsweise, wie Sie diesen beseitigen lassen können."
+msgstr "This question helps us recommend the right next steps for you. If the defect still exists, we will explain how you can have it rectified, for example."
 
 msgid "Diese Option ist leider noch nicht verfügbar."
 msgstr "Unfortunately, this option is not yet available."
@@ -68,14 +95,20 @@ msgstr "Unfortunately, this option is not yet available."
 msgid "Dokumentation des Mangels"
 msgstr "Documentation of the defect"
 
-msgid "Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevante und kostenfreie Rechtsinformationen zu finden."
-msgstr "By answering simple yes-no questions, we help you find relevant and free legal information."
+msgid "Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - informieren Sie sich hier ganz einfach über mögliche Ansprüche und wir unterstützen Sie bei der Durchsetzung!"
+msgstr "Whether you have problems with mold, noise or water damage - simply find out about possible claims here and we'll help you enforce them!"
 
-msgid "Egal ob Sie Probleme mit Schimmel, Lärm oder einem Wasserschaden haben - hier können Sie sich über Ihre Rechte bei Mietmängeln informieren!"
-msgstr "Whether you have problems with mould, noise or water damage, you can find out about your rights in case of rental apartment defects here!"
+msgid "Ein anderes Problem"
+msgstr "Another problem"
 
-msgid "Einfach, online, jederzeit."
-msgstr "Simple, anywhere, at any time."
+msgid "Eine Klage am Amtsgericht einreichen"
+msgstr "File a lawsuit at the district court"
+
+msgid "Einkaufen"
+msgstr "Shopping"
+
+msgid "Entschädigungen für einen Flug"
+msgstr "Compensation for a flight"
 
 msgid "Erstberatung"
 msgstr "Initial consultation"
@@ -83,14 +116,20 @@ msgstr "Initial consultation"
 msgid "Erstberatung bei der Verbraucherzentrale"
 msgstr "Initial consultation at the consumer centre"
 
-msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst.</0>"
-msgstr "If you feel unsure, you can also seek advice. For this purpose, we have <0>summarized consulting services here.</0>"
+msgid "Fall Sie sich unsicher fühlen, können Sie sich auch beraten lassen. Dafür haben wir <0>hier Beratungsangebote zusammengefasst</0>."
+msgstr "If you feel unsure, you can also seek advice. For this purpose, we have <0>summarized consulting services here</0>."
+
+msgid "Familie"
+msgstr "Family"
 
 msgid "Flugentschädigungen"
 msgstr "Flight compensation"
 
 msgid "Fluglinie kontaktieren"
 msgstr "Contact airline"
+
+msgid "Gab es den Schimmel schon bei Unterzeichnung des Mietvertrags?"
+msgstr "Did the mold exist when signing the rental agreement?"
 
 msgid "Gebaut von <0>Tech4Germany</0>"
 msgstr "Built by <0>Tech4Germany</0>"
@@ -101,14 +140,29 @@ msgstr "Court proceedings follow a fixed sequence, which is regulated by law. Th
 msgid "Gerichtsverfahren"
 msgstr "Trials"
 
-msgid "Handlungsoptionen vergleichen"
-msgstr "Compare options for action"
+msgid "Haben Sie Ihrer Vermieter:in eine realistische Frist gesetzt, um den Schimmel zu entfernen?"
+msgstr "Have you set your landlord in a realistic deadline to remove the mold?"
 
-msgid "Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Informieren Sie sich hier über mögliche Ansprüche aus der EU-Fluggastrechteverordnung!"
-msgstr "Your flight was delayed, cancelled, or you were denied boarding? Find out about possible claims from the EU Passenger Rights Regulation here!"
+msgid "Haben Sie den Schimmel Ihrer Vermieter:in schriftlich gemeldet?"
+msgstr "Have you reported your landlord's mould in writing?"
 
-msgid "Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft informieren wir Sie hier über Ihre Rechte bei Abofallen."
-msgstr "Has your contract been extended unexpectedly or have you incurred unforeseen costs? In the future, we will inform you about your subscription rights here."
+msgid "Haben Sie den Schimmel bei Ihrer Vermieter:in angezeigt und angekündigt, Ihre Miete nur unter Vorbehalt weiter zu zahlen (Mietminderung)?"
+msgstr "Have you displayed the mould to your landlord:in and announced that you would only continue to pay your rent under reservation (rent reduction)?"
+
+msgid "Haben Sie den Schimmel selbst beseitigt, und sind Ihnen dabei Kosten entstanden?"
+msgstr "Did you remove the mould yourself and have you incurred costs in the process?"
+
+msgid "Haben Sie den Schimmel verursacht?"
+msgstr "Did you cause the mold?"
+
+msgid "Heizungsausfall"
+msgstr "Heater failure"
+
+msgid "Ihr Flug war verspätet, wurde annulliert oder Ihnen wurde die Beförderung verweigert? Setzen Sie hier mögliche Ansprüche aus der EU-Fluggastrechteverordnung durch!"
+msgstr "Was your flight delayed, cancelled or refused boarding? Enforce possible claims from the EU Passenger Rights Regulation here!"
+
+msgid "Ihr Vertrag wurde unerwartet verlängert oder Ihnen sind unvorhergesehene Kosten entstanden? In Zukunft unterstützen wir Sie hier in rechtlichen Problemen bei Abofallen."
+msgstr "Has your contract been extended unexpectedly or have you incurred unforeseen costs? In the future, we will support you in dealing with legal problems with subscription cases."
 
 msgid "Impressum"
 msgstr "Imprint"
@@ -116,17 +170,32 @@ msgstr "Imprint"
 msgid "Info"
 msgstr "Info"
 
+msgid "Ist die Frist zur Mängelbeseitigung schon abgelaufen?"
+msgstr "Has the deadline for rectification of defects already expired?"
+
 msgid "Ja"
 msgstr "Yes"
 
 msgid "Jetzt starten!"
 msgstr "Start now!"
 
+msgid "Klage einreichen"
+msgstr "File a lawsuit"
+
+msgid "Kündigung"
+msgstr "Termination"
+
 msgid "Landesspezifische Schlichtungsstellen"
 msgstr "Country-specific arbitration bodies"
 
+msgid "Lärm"
+msgstr "Noise"
+
 msgid "Mehr erfahren"
 msgstr "Learn more"
+
+msgid "Mieterhöhung"
+msgstr "Rent increase"
 
 msgid "Mietervereine / Deutscher Mieterbund"
 msgstr "Tenant Clubs/German Tenant Association"
@@ -135,10 +204,13 @@ msgid "Mietminderung"
 msgstr "Rent reduction"
 
 msgid "Mietmängel"
-msgstr "Rental apartment defects"
+msgstr "Rental defects"
 
-msgid "Mit Ihren Angaben können wir für Sie mögliche rechtliche Ansprüche zusammenfassen, über die Sie sich in Ruhe informieren können."
-msgstr "With your information, we can summarize possible legal claims for you, which you can find out about in peace."
+msgid "Mietpreisbremse"
+msgstr "Rent brake\n(Mietpreisbremse)"
+
+msgid "Mängel in der Wohnung"
+msgstr "Deficiencies in the apartment"
 
 msgid "Mängelanzeige bei Ihrer Vermieter:in"
 msgstr "Notice letter of defects to your landlord"
@@ -148,6 +220,9 @@ msgstr "Possible claims"
 
 msgid "Mögliche Lösungen"
 msgstr "Possible solutions"
+
+msgid "Nebenkostenabrechnung"
+msgstr "Billing of incidentals"
 
 msgid "Nein"
 msgstr "No"
@@ -176,8 +251,11 @@ msgstr "Legal application office at the district court"
 msgid "Rechtsberatung bei Anwält:innen"
 msgstr "Legal advice by lawyers"
 
-msgid "Rechtsproblem einordnen"
-msgstr "Classify legal problem"
+msgid "Reisen & Verkehr"
+msgstr "Travel & traffic"
+
+msgid "Renovierung bei Auszug"
+msgstr "Renovation when moving out"
 
 msgid "Rückerstattung der Flugscheinkosten"
 msgstr "Ticket reimbursement"
@@ -185,11 +263,29 @@ msgstr "Ticket reimbursement"
 msgid "Schadensersatz"
 msgstr "Damages"
 
+msgid "Schimmel"
+msgstr "Mould"
+
+msgid "Schimmel in der Wohnung kann durch Baufehler entstehen, für die Sie nicht verantwortlich sind. Allerdings kann auch seltenes Lüften und Heizen oder das Trocknen von Wäsche zu Schimmel führen.\nWenn Sie durch Ihr Verhalten den Schimmel ganz oder teilweise mitverursacht haben, bestehen in der Regel keine Ansprüche gegen ihre Vermieter:in."
+msgstr "Mold in the apartment can be caused by construction errors for which you are not responsible. However, rare airing and heating or drying laundry can also lead to mold.\nIf your behaviour has caused the mold in whole or in part, there are usually no claims against your landlord."
+
 msgid "Schlichtungsantrag stellen"
 msgstr "Submit a request for conciliation"
 
+msgid "Sie haben Ihren Mangel angezeigt und eine Frist zur Beseitigung gesetzt? Dann müssen Sie zunächst abwarten, bis diese abgelaufen ist. Falls der Mangel danach noch nicht beseitigt wurde, können Sie weitere Schritte unternehmen und zum Beispiel den Mangel selbst beseitigen."
+msgstr "Have you reported your defect and set a deadline for eliminating it? Then you must wait until it expires. If the defect has not been rectified afterwards, you can take further steps, for example, to correct the defect yourself."
+
+msgid "Sie haben sich bereits über Ihre Ansprüche informiert und Ihre Handlungsoptionen ausgeschöpft? Dann unterstützen wir Sie auch direkt bei der Erstellung und Einreichung einer Klage für <0>Mietmängel</0> oder <1>Fluggastrechte</1>. Falls nicht, empfehlen wir zunächst unseren Justizportal Wegweiser:"
+msgstr "Have you already found out about your requirements and exhausted your options for action? Then we can also support you directly in drafting and filing a claim for <0>rental defects</0> or <1>air passenger rights</1>. If not, we recommend our Justice Portal guide first:"
+
+msgid "Sie können eine Klage **direkt hier über das Justizportal einreichen**. Wenn Sie sich unsicher fühlen, kann Ihnen auch eine Anwält:in dabei helfen.\nWenn alle Dokumente vorhanden sind, sollte das Ausfüllen der Klage **etwa 20 Minuten** dauern."
+msgstr "You can **file a claim directly here via the justice portal**. If you feel unsure, a lawyer can also help you with this.\nOnce all the documents are in place, the lawsuit should **take about 20 minutes** to complete."
+
 msgid "Startseite"
 msgstr "Homepage"
+
+msgid "Stromausfall"
+msgstr "Blackout"
 
 msgid "Städtische Mietberatungen"
 msgstr "Municipal rental advice"
@@ -197,23 +293,56 @@ msgstr "Municipal rental advice"
 msgid "Unser Angebot"
 msgstr "Our offer"
 
+msgid "Verkehrsunfall"
+msgstr "Traffic accident"
+
 msgid "Vermieter:in erneut kontaktieren"
 msgstr "Contact Landlord in again"
 
 msgid "Warum?"
 msgstr "Why?"
 
+msgid "Wasserschaden"
+msgstr "Water damage"
+
 msgid "Wegweiser"
 msgstr "Solution Explorer"
-
-msgid "Weiter Fragen"
-msgstr "More questions"
 
 msgid "Weitere Möglichkeiten"
 msgstr "More options"
 
 msgid "Welche Kosten entstehen in einem Gerichtsprozess?"
 msgstr "What are the costs of a court case?"
+
+msgid "Wenn Ihnen durch den Mangel keine Kosten oder Schäden entstanden sind, Sie keine Mietminderung angekündigt haben und der Mangel bereits behoben wurde, haben Sie vermutlich keine weiteren rechtlichen Ansprüche."
+msgstr "If you did not incur any costs or damage due to the defect, you have not announced a reduction in rent, and the defect has already been resolved, you probably have no further legal claims."
+
+msgid "Wenn Ihre Vermieter:in auch nach Aufforderung und Ablauf einer realistischen Frist den Mangel nicht beseitigt, oder es sich um eine Not- oder Eilmaßnahme handelt, können Sie den Mangel auch selbst beseitigen und sich die Kosten dafür erstatten lassen."
+msgstr "If your landlord does not remedy the defect, even after being requested and after a realistic deadline, or if it is an emergency or urgent measure, you can also rectify the defect yourself and have the costs reimbursed for it."
+
+msgid "Wenn Sie Ihrer Vermieter:in eine realistische Frist gesetzt haben, müssen Sie ihr zunächst bis dahin Zeit für die Beseitigung geben. Danach haben Sie zusätzliche rechtliche Ansprüche."
+msgstr "If you have set a realistic deadline for your landlord, you must first give her time for removal by then. After that, you have additional legal rights."
+
+msgid "Wenn Sie angekündigt haben, Ihre Miete nur unter Vorbehalt zu zahlen, kann Ihnen von der Ankündigung bis zur Beseitigung des Mangels sein Anspruch auf Mietminderung zustehen."
+msgstr "If you have announced that you are only paying your rent on a conditional basis, you may be entitled to a reduction in rent from the announcement until the defect is rectified."
+
+msgid "Wenn Sie den Mangel schon gemeldet haben, ist entscheidend, ob Sie dabei eine realistische Frist zur Beseitigung gesetzt haben. In der Regel sollten 2-3 Wochen ausreichen, um den Mangel zu beheben oder Ihnen zumindest einen Termin für eine Reperatur zu nennen. \nWenn Sie keine oder eine zu kurze Frist gesetzt haben, helfen wir Ihnen, ein neues Schreiben aufzusetzen."
+msgstr "If you have already reported the defect, it is crucial whether you have set a realistic deadline for remedying it. Usually 2-3 weeks should be enough to fix the defect or at least give you an appointment for a repair. \nIf you have not set a deadline, or if you have set a deadline too short, we can help you rewrite a letter."
+
+msgid "Wenn Sie den Mangel selbst verursacht haben, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Eine Ausnahme ist, wenn Versicherungen für den Eintritt eines Mangels bestehen. Zahlen Sie über Ihre Betriebskosten zum Beispiel eine Gebäudeversicherung mit, dann muss diese bei Schäden zahlen. \nIn jedem Fall sollten Sie Ihre Vermieter:in kontaktieren, damit der Mangel beseitigt werden kann. [Nutzen Sie dafür die Vorlage unserer Mängelanzeige](/formular?mangelanzeige&mangelart=schimmel)."
+msgstr "If you caused the defect yourself, it is likely that no legal claims can be enforced. An exception is if there is insurance for the occurrence of a defect. If you, for example, pay for building insurance via your operating costs, then you have to pay for damage. \nIn any case, you should contact your landlord so that the defect can be rectified. [Use the submission of our defect report](/formular?mangelanzeige&mangelart=schimmel)."
+
+msgid "Wenn Sie einen Mangel schon bei Unterschrift des Mietvertrags kannten, aber dabei nicht um Verbesserung gebeten haben, können Ansprüche ausgeschlossen sein. \nAnders ist die Situation, wenn der Mangel erst später entstanden ist, oder bei Vetragsabschluss verschwiegen oder sogar versteckt wurde."
+msgstr "If you knew about a defect when you signed the lease but did not ask for improvement, claims may be excluded. \nThe situation is different if the defect arose later, or was concealed or even hidden when the contract was concluded."
+
+msgid "Wenn der Mangel noch besteht, sollten Sie diesen zuerst Ihrer Vermieter:in melden, um ihn beseitigen zu lassen. Sie sollten dabei eine schriftliche Mängelanzeige verschicken, um einen Nachweis zu haben.\nWenn Sie das noch nicht getan haben, helfen wir Ihnen dabei."
+msgstr "If the defect still persists, you should report it to your landlord first to have it rectified. You should send a written notice of defects in order to have proof.\nIf you haven't done that yet, we'll help you do it."
+
+msgid "Wenn der Mangel schon bei Vertragsschluss bekannt war, können vermutlich keine rechtlichen Ansprüche durchgesetzt werden. Sie können aber den direkten Austausch mit Ihrer Vermieter:in suchen."
+msgstr "If the defect was already known when the contract was concluded, no legal claims can probably be enforced. However, you can seek direct exchange with your landlord."
+
+msgid "Wenn durch den Mangel nicht nur an der Wohnung, sondern auch an Ihrem Eigentum Schäden entstanden sind, haben sie vielleicht Ansprüche auf Schadensersatz.\nZusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene Möbel oder Kleidung beschädigt wurden."
+msgstr "If the defect caused damage not only to the apartment, but also to your property, you may be entitled to compensation.\nAdditional damage can occur if the defect has damaged one's own furniture or clothing, for example."
 
 msgid "Wie es funktioniert"
 msgstr "How it works"
@@ -224,14 +353,11 @@ msgstr "How does a court case work?"
 msgid "Wobei haben Sie ein Problem?"
 msgstr "What do you have a problem with?"
 
-msgid "Wobei können wir Ihnen helfen?"
-msgstr "What can we help you with?"
+msgid "Wohnen"
+msgstr "Dwelling"
 
-msgid "ZPO Informationen"
-msgstr "ZPO information"
-
-msgid "Zuletzt geben wir Ihnen mehrere Handlungsoptionen und Vorlagen, um Ihre Ansprüche durchzusetzen - von einem Schreiben an die Gegenseite, über eine Rechtbseratung bis hin zu einer Klage vor Gericht."
-msgstr "Finally, we give you several options for action and templates to enforce your claims - from a letter to the opposite side, to legal councillor and a lawsuit in court."
+msgid "Wurde durch den Schimmel Eigentum von Ihnen beschädigt?"
+msgstr "Has the mold damaged your property?"
 
 msgid "Zum Prototypen"
 msgstr "Go to the prototype"
@@ -273,7 +399,7 @@ msgid "co.info_mm"
 msgstr "**Offer**: \n- Advice and out-of-court representation on all rental issues by permanent lawyers.\n- On request, communication with your landlord can be taken over.\n- Some offers in third languages.\n######\n**Availability**: \n- In many German cities. [You can find the closest regional association of the German Tenants Association for you here](https://www.mieterbund.de/beratung/mieterverein-vor-ort.html).\n######\n**Cost**: \n- Some free initial consultation.\n- Annual memberships for around 100 euros, minimum term of two years.\n######\nThere are hundreds of regional tenant associations in Germany where lawyers offer advice to members. If there is no club in your city, membership is often also possible from other cities."
 
 msgid "co.info_ra"
-msgstr "**Offer**: \n- Legal advice as well as out-of-court and judicial representation on all legal issues.\n######\n**Availability**: \n- Germany-wide.\n- [About the Bar Information](https://anwaltauskunft.de/magazin), a portal of the German Bar Association, you can find a lawyer near you.\n######\n**Cost**: \n- An initial consultation costs a maximum of 149 euros, but can also be significantly cheaper.\n- Free advice is possible with legal protection insurance or advice certificate for financially weak individuals.\n- You can find a [request for advice in German here](https://justiz.de/service/formular/dateien/agI1.pdf) with additional [notes in English](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).\n######\nLawyers can represent you in legal matters vis-à-vis the opposite side and in court. Every citizen has the right to be advised and represented by a lawyer on legal issues."
+msgstr "**Offer**: \n- Legal advice as well as out-of-court and judicial representation on all legal issues.\n######\n**Availability**: \n- Throughout Germany.\n- [Via the Lawyers' Information](https://anwaltauskunft.de/magazin), a portal of the German Bar Association, you can find a lawyer near you.\n######\n**costs**: \n- An initial consultation costs a maximum of 190 euros, but can also be significantly cheaper.\n- Free advice is possible with legal protection insurance or a consulting assistance certificate for financially weak persons.\n- Here you can find a [request for advice in German](https://justiz.de/service/formular/dateien/agI1.pdf) with additional [notes in English](https://justiz.de/service/formular/dateien/agl1-hinweisblatt_beratungshilfe_englisch.pdf).\n######\nLawyers can represent you in legal matters to the other side and in court. Every citizen has the right to be advised and represented by a lawyer on legal issues."
 
 msgid "co.info_ram"
 msgstr "**Offer**: \n- Help with filing lawsuits and applications.\n- answering questions about letters from the court.\n######\n**Availability**: \n- There are local courts in every medium-sized German city.\n- You can contact the legal application office there in person on site or by phone.\n- [You can find the nearest district court for your place of residence here](https://www.justizadressen.nrw.de/de/justiz/suche).\n######\n**Cost**: \n- It's free.\n######\nIf you need help filing a claim or answering a court letter, the legal application office at the district court can help you. You can arrange a free appointment with a trained legal guarder for this purpose. This ensures that your statements receive all legally required information. However, individual legal advice is not possible."
@@ -296,14 +422,26 @@ msgstr "Unfortunately, we didn't cover your case."
 msgid "forward"
 msgstr "Continue"
 
-msgid "home.hero_offer"
-msgstr "Justizportal.de is an offer of the Federal Ministry of Justice and Consumer Protection in cooperation with the federal ministries of justice in the federal states. The portal gives you an overview of your rights in various everyday situations. It also helps you to classify and solve your legal questions and problems. You will be informed about your options for action and will be supported in asserting your rights."
+msgid "home.header"
+msgstr "Judiciary on the net.<0/> Simple, online, anytime."
 
-msgid "home.howitwork_claims"
-msgstr "We will then help you to evaluate which claims might apply in your case. Claims are rights to demand a certain action from others (e.g. payment of damages), to tolerate (e.g. subletting a flat) or to refrain from (e.g. entering a property)."
+msgid "home.howitwork_1_heading"
+msgstr "Classify problem"
 
-msgid "home.howitwork_classify"
-msgstr "First, we'll help you clarify whether there is a legal problem in your case. We will show you information tailored to your case."
+msgid "home.howitwork_1_subheading"
+msgstr "By answering simple yes-no questions, we help you find relevant and free legal information."
+
+msgid "home.howitwork_2_heading"
+msgstr "Inform about claims"
+
+msgid "home.howitwork_2_subheading"
+msgstr "Based on your information, we provide you with appropriate information about possible legal claims."
+
+msgid "home.howitwork_3_heading"
+msgstr "Compare options"
+
+msgid "home.howitwork_3_subheading"
+msgstr "From advice services to practical tips and templates to a lawsuit in court, you'll find the right way."
 
 msgid "home.howitwork_heading"
 msgstr "How it works"
@@ -311,17 +449,11 @@ msgstr "How it works"
 msgid "home.howitwork_lawsuit"
 msgstr "When all other options are exhausted, we'll help you file a claim with the district court online. To this end, we explain the process of our online process to you and provide transparent information on the costs of legal proceedings as well as possible legal advice."
 
-msgid "home.howitwork_options"
-msgstr "Based on this, we will suggest possible solutions for <0>you - initially for an amicable dispute resolution with the opposite side.</0>"
-
 msgid "home.howitwork_subheading"
 msgstr "We can help you solve your legal problem in three easy steps:"
 
-msgid "home.howtohelp_footer"
-msgstr "You can find out more about the legal problems we can help you with on the following pages."
-
 msgid "home.sub_heading"
-msgstr "We inform you about your rights in everyday life and help you solve your legal problem in simple steps"
+msgstr "A digital service offering from the German judiciary. We support you with legal problems in everyday life."
 
 msgid "nextsteps.header"
 msgstr "End of Solution Explorer: Possible next steps"
@@ -362,23 +494,5 @@ msgstr "To the next steps"
 msgid "zpo.heading"
 msgstr "File a lawsuit at the district court"
 
-msgid "zpo.heading_info"
-msgstr "With a lawsuit, you start a lawsuit. We'll explain what that means here. In the end, we'll help you create and file a lawsuit."
-
-msgid "zpo.info1"
-msgstr "### How does a court case work?\n- If you cannot resolve a conflict with a person or a company alone, a judge can resolve it for you in a court case.\n- In the trial, you and the other party present the case to the judge. If it is not clear which version is true, evidence will be collected. \n- First, the judge can propose an agreement (settlement) to you and the other party to resolve the dispute quickly.\n- If no agreement is found, the judge will announce a binding verdict at the end of the trial. It tells which demands are entitled to whom.\n- In total, a process usually takes between three and ten months."
-
-msgid "zpo.info2"
-msgstr "### What does a court case cost?\n- The losers:In the process bears the costs. If none of the parties is quite right, the costs are shared.\n- The amount of costs depends on the value of the negotiated claim.\n- If you have legal expenses insurance, it can cover your costs.\n- You can apply for [legal aid](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) if the costs are too high for you."
-
-msgid "zpo.info3"
-msgstr "### Who can sue?\n- Anyone over the age of 18 can sue at the district court alone.\n- If you feel unsure about this, lawyers can advise you or fully represent you.\n- Parents can also sue for their minor children, for example with claims under the EU Passenger Rights Regulation."
-
 msgid "zpo.nextsteps"
 msgstr "1. On the next page, you can create the document for a lawsuit related to your case. \n2. We will estimate the legal costs for you and inform you about the next steps you need to take. \n3. Once created, you can review all information first. **Only then do you decide on the submission.**"
-
-msgid "zpo.subheading"
-msgstr "The most important information at a glance"
-
-msgid "Über Ansprüche informieren"
-msgstr "Inform about claims"

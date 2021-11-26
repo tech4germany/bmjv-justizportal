@@ -11,6 +11,7 @@ import {
   useToast,
   VStack,
 } from '@chakra-ui/react';
+import { i18n } from '@lingui/core';
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -90,7 +91,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
           {state != 'SE' ? (
             <HStack align={'top'}>
               <Text>
-                {data.title}
+                {i18n._(data.title)}
                 {'    '}
                 <IconButton
                   color={Primary()}
@@ -185,7 +186,7 @@ export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserSta
               display={data.info ? (stateVal['showInfo'] ? undefined : 'none') : 'none'}>
               <CardHeader IconLeft={FaInfoCircle} title={t`Info`} />
               <CardContent padding="1em">
-                <AnnotadedText text={data.info ? data.info : ''} />
+                <AnnotadedText text={data.info ? i18n._(data.info) : ''} />
               </CardContent>
             </Card>
           </Stack>

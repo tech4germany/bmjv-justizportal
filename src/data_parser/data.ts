@@ -159,7 +159,8 @@ Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene M�
                                                   created: 1634133466075,
                                                   text: '{CONTINUE}',
                                                   priority: 1,
-                                                  note: "'nextsteps': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung']",
+                                                  config:
+                                                    '{"nextsteps": ["Doku","Vermieterschreiben Überprüfung","Klage"],"entitlements":["Mietminderung","Mängelbeseitigung"]}',
                                                 },
                                                 children: [],
                                               },
@@ -169,7 +170,8 @@ Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene M�
                                                   created: 1634133474458,
                                                   text: '{CONTINUE}',
                                                   priority: 3,
-                                                  note: "'nextsteps': ['Doku','Vermieterschreiben Überprüfung','Klage'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']",
+                                                  config:
+                                                    '{"nextsteps": ["Doku","Vermieterschreiben Überprüfung","Klage"],"entitlements":["Mietminderung","Mängelbeseitigung","Schadensersatz"]}',
                                                 },
                                                 children: [],
                                               },
@@ -194,7 +196,8 @@ Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene M�
                                               created: 1634133466075,
                                               text: '{CONTINUE}',
                                               priority: 1,
-                                              note: "'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']",
+                                              config:
+                                                '{"nextsteps": ["Doku","Vermieterschreiben"],"entitlements":["Mietminderung","Mängelbeseitigung"]}',
                                             },
                                             children: [],
                                           },
@@ -204,7 +207,8 @@ Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene M�
                                               created: 1634133474458,
                                               text: '{CONTINUE}',
                                               priority: 3,
-                                              note: "'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']",
+                                              config:
+                                                '{"nextsteps": ["Doku","Vermieterschreiben"],"entitlements":["Mietminderung","Mängelbeseitigung","Schadensersatz"]}',
                                             },
                                             children: [],
                                           },
@@ -229,7 +233,8 @@ Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene M�
                                           created: 1634133466075,
                                           text: '{CONTINUE}',
                                           priority: 1,
-                                          note: "'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung']",
+                                          config:
+                                            '{"nextsteps": ["Doku","Vermieterschreiben"],"entitlements":["Mietminderung","Mängelbeseitigung"]}',
                                         },
                                         children: [],
                                       },
@@ -239,7 +244,8 @@ Zusätzliche Schäden können sein, wenn durch den Mangel zum Beispiel eigene M�
                                           created: 1634133474458,
                                           text: '{CONTINUE}',
                                           priority: 3,
-                                          note: "'nextsteps': ['Doku','Vermieterschreiben'],'entitlements':['Mietminderung','Mängelbeseitigung','Schadensersatz']",
+                                          config:
+                                            '{"nextsteps": ["Doku","Vermieterschreiben"],"entitlements":["Mietminderung","Mängelbeseitigung","Schadensersatz"]}',
                                         },
                                         children: [],
                                       },

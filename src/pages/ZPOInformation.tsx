@@ -41,7 +41,7 @@ interface FeatureProps {
 }
 
 export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
-  let summaryText = `
+  let summaryText = t`
   **Wie funktioniert eine Klage?**
   - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
   - Mit einer Klage beginnen Sie einen Gerichtsprozess.
@@ -61,7 +61,7 @@ export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
   - Wenn Sie sich dabei unsicher fühlen, können Anwält:innen Sie beraten oder ganz vertreten.
   `;
 
-  let costsText = `
+  let costsText = t`
 Die Kosten eines Gerichtsprozesses setzen sich aus **Gerichtsgebühren, Anwaltshonoraren und weiteren Ausgaben** zusammen.
 
 ###  
@@ -96,8 +96,8 @@ Beispiel: Bei Klagen zur EU-Fluggastrechteverordnung liegen Streitwerte häufig 
 
   let processInformation = [
     {
-      title: `Klage einreichen`,
-      text: `
+      title: t`Klage einreichen`,
+      text: t`
 Sie können eine Klage **direkt hier über das Justizportal einreichen**. Wenn Sie sich unsicher fühlen, kann Ihnen auch eine Anwält:in dabei helfen.
 
 Wenn alle Dokumente vorhanden sind, sollte das Ausfüllen der Klage **etwa 20 Minuten** dauern.
@@ -155,26 +155,29 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         </Heading>
 
         <Spacer height={12} />
-          <Card p={{ base: 10, md: 14 }}>
-            <Heading textAlign="center" variant="subheading">
-              Die wichtigsten Informationen auf einen Blick
-            </Heading>
-            <Spacer height={14} />
-            <AnnotadedText text={summaryText} />
-          </Card>
-          <Spacer height="3em" />
+        <Card p={{ base: 10, md: 14 }}>
+          <Heading textAlign="center" variant="subheading">
+            Die wichtigsten Informationen auf einen Blick
+          </Heading>
+          <Spacer height={14} />
+          <AnnotadedText text={summaryText} />
+        </Card>
+        <Spacer height="3em" />
 
         {/* <Text>
           <Trans id="zpo.heading_info">
-            Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Am Ende helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
+            Mit einer Klage beginnen Sie einen Gerichtsprozess. Was das bedeutet, erklären wir ihnen hier. Am Ende
+            helfen wir Ihnen, eine Klage zu erstellen und einzureichen.{' '}
           </Trans>
         </Text>
         <Spacer />
+
         <Box>
           <Heading variant="subheading">
             <Trans id="zpo.subheading">Die wichtigsten Informationen auf einen Blick</Trans>
           </Heading>
           <Spacer height={5} />
+
           <HStack align="start">
             <AnnotadedText
               flex={2}
@@ -206,8 +209,8 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
               id: 'zpo.info2',
               message: `
 ### Was kostet ein Gerichtsprozess?
-- Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
 - Die Höhe der Kosten ist abhängig vom Wert der verhandelten Forderung.
+- Die Verlierer:in des Prozesses trägt die Kosten. Wenn keine Partei ganz Recht bekommt, werden die Kosten aufgeteilt.
 - Wenn Sie eine Rechtsschutzversicherung haben, kann diese Ihre Kosten übernehmen.
 - Sie können [Prozesskostenhilfe](https://www.bmjv.de/DE/Themen/GerichtsverfahrenUndStreitschlichtung/Prozesskostenhilfe/Prozesskostenhilfe_node.html) beantragen, wenn die Kosten für Sie zu hoch sind.
 `,
@@ -232,13 +235,13 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
           <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
             <Image src="https://image.freepik.com/free-vector/diverse-crowd-people-different-ages-races_74855-5235.jpg" />
           </Box>
-        </HStack>
+        </HStack> */}
 
-        <Spacer height="3em" />
+        {/* <Spacer height="3em" />
 
         <Heading variant="subheading">
-          <Trans>Weitere Fragen</Trans> 
-        </Heading>*/}
+          <Trans>Weitere Fragen</Trans>
+        </Heading> */}
         <Accordion alignSelf="stretch" allowToggle>
           <AccordionItem>
             <AccordionButton>
@@ -362,12 +365,12 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
         </Accordion>
         <Spacer h={10} />
 
-        {/* <HStack>
-          <Box flex={2}> */}
+        <HStack>
+          <Box flex={2}>
             <Heading variant="subheading">
               <Trans>Nächste Schritte</Trans>
             </Heading>
-            {/* <Spacer h={5} /> */}
+            <Spacer h={5} />
             <AnnotadedText
               text={t({
                 id: 'zpo.nextsteps',
@@ -377,11 +380,11 @@ Sollten Sie oder die Gegenseite glauben, dass das Urteil nicht dem Gesetz entspr
 3. Nach der Erstellung können Sie alle Informationen zunächst überprüfen. **Über die Einreichung entscheiden Sie erst dann.**`,
               })}
             />
-{/*           </Box>
-          <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
+          </Box>
+          {/* <Box flex={2} display={{ base: 'none', sm: 'unset' }}>
             <Image src="https://image.freepik.com/free-vector/manager-prioritizing-tasks-list_74855-5272.jpg" />
-          </Box> 
-        </HStack>*/}
+          </Box> */}
+        </HStack>
         <Button colorScheme="secondary" as={ReactLink} to={`${homeURL}/${Routes.Bryter}?id=${id}`}>
           <Trans>Zur Erstellung des Klagedokuments</Trans>
         </Button>
