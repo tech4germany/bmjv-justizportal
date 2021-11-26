@@ -14,7 +14,6 @@ import {
 import { t, Trans } from '@lingui/macro';
 import * as React from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
-import { MdOutlineGrain } from 'react-icons/md';
 import { AnnotadedText } from '../components/shared/AnnotatedText';
 import { Card } from '../components/shared/Card';
 import { CardContent } from '../components/shared/CardContent';
@@ -36,14 +35,7 @@ interface FeatureProps {
   setUserState: React.Dispatch<any>;
 }
 
-export const SolutionExplorer = ({
-  id,
-  anchorId,
-  mmobject,
-  userState,
-  setUserState,
-  ...rest
-}: FeatureProps) => {
+export const SolutionExplorer = ({ id, anchorId, mmobject, userState, setUserState, ...rest }: FeatureProps) => {
   const [stateVal, setState] = React.useState({ value: '0', showInfo: false });
 
   const setValue = (newVal: string) => {
@@ -80,12 +72,9 @@ export const SolutionExplorer = ({
     data.children.forEach((child) => {
       const pre =
         (child.title == '{EXIT}' ? `${homeURL}/${Routes.Exit}` : '') +
-        (child.title == '{CONTINUE}'
-          ? `${homeURL}/${Routes.PossibleEntitlements}`
-          : '');
+        (child.title == '{CONTINUE}' ? `${homeURL}/${Routes.PossibleEntitlements}` : '');
 
-      linkOnYes =
-        child.type == 'YESANSWERD' ? `${pre}?id=${child.id}` : linkOnYes;
+      linkOnYes = child.type == 'YESANSWERD' ? `${pre}?id=${child.id}` : linkOnYes;
       linkOnNo = child.type == 'NOANSWERD' ? `${pre}?id=${child.id}` : linkOnNo;
     });
   }
@@ -96,10 +85,7 @@ export const SolutionExplorer = ({
   return (
     <PageBody title={t`Wegweiser`}>
       <PageBlock>
-        <StaticProgress
-          currentStep={1}
-          progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100}
-        />
+        <StaticProgress currentStep={1} progressNextStepInput={(mmobject.getNumberOfParents(id) / 11) * 100} />
         <Text width="100%" fontSize={'2xl'} paddingTop={5}>
           {state != 'SE' ? (
             <HStack align={'top'}>
@@ -129,18 +115,13 @@ export const SolutionExplorer = ({
               gridGap={{ base: 8, md: 10 }}
               width="100%"
               flexWrap="wrap"
-              justifyContent="space-between"
-            >
+              justifyContent="space-between">
               {data!.children?.map((child) => (
                 <GridItem key={child.id}>
                   <StatsCard
                     link={
                       child.children
-                        ? `?id=${
-                            child.children.length == 1
-                              ? child.children[0].id
-                              : child.id
-                          }#s`
+                        ? `?id=${child.children.length == 1 ? child.children[0].id : child.id}#s`
                         : `?id=${id}#notimplemented:${child.id}`
                     }
                     onClick={() =>
@@ -174,22 +155,10 @@ export const SolutionExplorer = ({
             />
           </>
         ) : (
-          <Stack
-            direction={{ base: 'column-reverse', md: 'column-reverse' }}
-            spacing={10}
-          >
+          <Stack direction={{ base: 'column-reverse', md: 'column-reverse' }} spacing={10}>
             <VStack align="left" spacing={10} width="min-content">
-              <RadioGroup
-                size="lg"
-                colorScheme="primary"
-                onChange={setValue}
-                value={stateVal['value']}
-              >
-                <Flex
-                  gridGap="1em"
-                  alignItems="left"
-                  flexDir={{ base: 'row', md: 'column' }}
-                >
+              <RadioGroup size="lg" colorScheme="primary" onChange={setValue} value={stateVal['value']}>
+                <Flex gridGap="1em" alignItems="left" flexDir={{ base: 'row', md: 'column' }}>
                   <Radio value="1">
                     <Trans>Ja</Trans>
                   </Radio>
@@ -207,19 +176,13 @@ export const SolutionExplorer = ({
                     : `${homeURL}/`
                 }
                 linkForward={stateVal['value'] == '1' ? linkOnYes : linkOnNo}
-                disableForward={
-                  stateVal['value'] != '2' && stateVal['value'] != '1'
-                }
+                disableForward={stateVal['value'] != '2' && stateVal['value'] != '1'}
                 onClick={() => resetState()}
               />
             </VStack>
-            {/* <Spacer w="3.5em" h="3.5em" flex="unset" /> */}
             <Card
               flex={{ base: 'none', md: 1 }}
-              display={
-                data.info ? (stateVal['showInfo'] ? undefined : 'none') : 'none'
-              }
-            >
+              display={data.info ? (stateVal['showInfo'] ? undefined : 'none') : 'none'}>
               <CardHeader IconLeft={FaInfoCircle} title={t`Info`} />
               <CardContent padding="1em">
                 <AnnotadedText text={data.info ? data.info : ''} />

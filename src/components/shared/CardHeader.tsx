@@ -9,7 +9,7 @@ interface Props {
 
 export const CardHeader = ({ title, IconLeft }: Props) => {
   return (
-    <Flex align="center" justify="start" alignItems="center" px="6" py="4" spacin borderBottomWidth="1px">
+    <Flex align="center" justify="start" alignItems="center" px="6" py="4" borderBottomWidth="1px">
       {IconLeft && <IconLeft size="1.2em" />}
       <Heading as="h2" paddingBottom={1} ps={IconLeft && 3} fontSize="lg">
         {title}

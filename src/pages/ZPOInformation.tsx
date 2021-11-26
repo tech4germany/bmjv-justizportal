@@ -41,7 +41,7 @@ interface FeatureProps {
 }
 
 export const ZPOInformation = ({ id, ...rest }: FeatureProps) => {
-    let summaryText = `
+  let summaryText = `
   **Wie funktioniert eine Klage?**
   - Wenn Sie einen Konflikt mit einer Person oder einem Unternehmen nicht allein klären können, kann eine Richter:in diesen in einem Gerichtsprozess für Sie lösen.
   - Mit einer Klage beginnen Sie einen Gerichtsprozess.

@@ -9,27 +9,19 @@ import {
   ResponsiveValue,
   SimpleGrid,
   Spacer,
-  Token,
   Text,
   VStack,
 } from '@chakra-ui/react';
-import * as CSS from 'csstype';
 import { t, Trans } from '@lingui/macro';
+import * as CSS from 'csstype';
 import * as React from 'react';
 import { Link as ReactLink } from 'react-router-dom';
+import { Card } from '../components/shared/Card';
+import { CardContent } from '../components/shared/CardContent';
 import { HeroSplit } from '../components/shared/Hero_Split';
 import { PageBlock } from '../components/shared/PageBlock';
 import { PageBody } from '../components/shared/PageBody';
 import { homeURL, Routes } from '../Const';
-import { Card } from '../components/shared/Card';
-import { CardContent } from '../components/shared/CardContent';
-
-const baseURL = 'https://tech4germany.bryter.io/s/';
-const bryterURLs = {
-  landlordLetter: `${baseURL}EnTaPD7jRUKEHZA86ss5QA/mietmangel-vermieterschreiben?`,
-  claimRent: `${baseURL}ekV7FMipRvG6G3gpT6TgxQ/mietmangel-klage?`,
-  claimFlight: `${baseURL}tcm04C0OQFyJDyMdsDUGDQ/eu-fluggastrechteverordnung-klage?`,
-};
 
 interface MVPFeatureProps {
   title: string;
@@ -38,7 +30,7 @@ interface MVPFeatureProps {
   disabled?: boolean;
   id?: string;
   textAlign?: ResponsiveValue<CSS.Property.TextAlign>;
-  imageSize?: Token<CSS.Property.Width | number, 'sizes'>;
+  imageSize?: string;
 }
 
 const MVPFeature = ({
@@ -54,7 +46,7 @@ const MVPFeature = ({
     <Card height="full">
       <CardContent height="full">
         <Image boxSize={imageSize} objectFit="contain" src={imgURL} />
-        <Heading colorScheme="primary" variant="subheading">
+        <Heading colorScheme="primary" variant="subheading" textAlign={textAlign}>
           {title}
         </Heading>
         <Text variant="small" textAlign={textAlign}>
@@ -66,11 +58,10 @@ const MVPFeature = ({
           variant="outline"
           as={ReactLink}
           to={disabled ? '#' : `${homeURL}/wegweiser?id=${id}`}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           <Trans>Zum Wegweiser</Trans>
         </Button>
-        <Spacer />
+        <Spacer flex={0} h={5} />
       </CardContent>
     </Card>
   </GridItem>
@@ -82,8 +73,7 @@ interface FeatureProps {
 
 export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   const howRef = React.useRef<HTMLDivElement>(null);
-  const executeScroll = () =>
-    howRef.current && howRef.current.scrollIntoView({ behavior: 'smooth' });
+  const executeScroll = () => howRef.current && howRef.current.scrollIntoView({ behavior: 'smooth' });
 
   React.useEffect(() => {
     // scroll functionality
@@ -95,28 +85,20 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
   return (
     <PageBody title={`Startseite`}>
       <HeroSplit
-        title1={
-          <Trans>
+        title={
+          <Trans id="home.header">
             Die Justiz im Netz. <br />
             Einfach, online, jederzeit.
           </Trans>
         }
-        image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.jpg`}
-      >
+        image={`${homeURL}/data/30823E44-E7D4-4CB5-871F-E62AD8580AE2.jpg`}>
         <Text fontSize={{ base: 'lg', lg: '2xl' }} fontWeight="light">
           <Trans render={Text} id="home.sub_heading">
-            Ein digitales Serviceangebot der deutschen Justiz. Wir unterstützen
-            Sie bei Rechtsproblemen im Alltag.
+            Ein digitales Serviceangebot der deutschen Justiz. Wir unterstützen Sie bei Rechtsproblemen im Alltag.
           </Trans>
         </Text>
-        <Flex
-          direction={{ base: 'row', md: 'row' }}
-          wrap="wrap"
-          alignSelf="start"
-          gridGap={5}
-        >
+        <Flex direction={{ base: 'row', md: 'row' }} wrap="wrap" alignSelf="start" gridGap={5}>
           <Button
-            // size={{ base: 'md', lg: 'lg' }}
             size="lg"
             colorScheme={'secondary'}
             as={ReactLink}
@@ -140,9 +122,8 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
         </Heading>
         <Text textAlign="center">
           <Trans>
-            Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag
-            und hilft Ihnen Handlungsoptionen zur Lösung Ihres Rechtsproblems zu
-            finden. Probieren Sie es hier aus!
+            Der Justizportal Wegweiser informiert Sie über Ihre Rechte im Alltag und hilft Ihnen Handlungsoptionen zur
+            Lösung Ihres Rechtsproblems zu finden. Probieren Sie es hier aus!
           </Trans>
         </Text>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={10}>
@@ -183,68 +164,51 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
           <Spacer h={5} />
           <Text textAlign="center" width="full">
             <Trans id="home.howitwork_subheading">
-              Der Justizportal Wegweiser hilft Ihnen in drei einfachen Schritten
-              bei der Lösung Ihres Rechtproblems:
+              Der Justizportal Wegweiser hilft Ihnen in drei einfachen Schritten bei der Lösung Ihres Rechtproblems:
             </Trans>
           </Text>
         </Box>
         <Spacer height={14}></Spacer>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={20}>
           <VStack>
-            <Image
-              marginBottom="1s0px"
-              boxSize="150px"
-              objectFit="contain"
-              src={`${homeURL}/data/wegweiser.png`}
-            />
+            <Image marginBottom="1s0px" boxSize="150px" objectFit="contain" src={`${homeURL}/data/wegweiser.png`} />
             <Spacer height={4} maxHeight="20px" minHeight="20px"></Spacer>
             <Heading variant="subheading" textAlign="center">
-              Rechtsproblem einordnen
+              <Trans id="home.howitwork_1_heading">Rechtsproblem einordnen</Trans>
             </Heading>
             <Spacer height={4} maxHeight="5px" minH="5px"></Spacer>
             <Text textAlign="center" variant="small">
-              <Trans>
-                Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir
-                Ihnen, relevante und kostenfreie Rechtsinformationen zu finden.
+              <Trans id="home.howitwork_1_subheading">
+                Durch die Beantwortung einfacher Ja-Nein-Fragen helfen wir Ihnen, relevante und kostenfreie
+                Rechtsinformationen zu finden.
               </Trans>
             </Text>
           </VStack>
           <VStack>
-            <Image
-              boxSize="150px"
-              objectFit="contain"
-              src={`${homeURL}/data/bulb.png`}
-            />
+            <Image boxSize="150px" objectFit="contain" src={`${homeURL}/data/bulb.png`} />
             <Spacer height={4} maxHeight="20px" minHeight="20px"></Spacer>
             <Heading variant="subheading" textAlign="center">
-              Über Ansprüche informieren
+              <Trans id="home.howitwork_2_heading">Über Ansprüche informieren</Trans>
             </Heading>
             <Spacer height={4} maxHeight="5px" minH="5px"></Spacer>
             <Text textAlign="center" variant="small">
-              <Trans>
-                Basierend auf Ihren Angaben stellen wir Ihnen passende
-                Informationen über mögliche rechtliche Ansprüche bereit.
+              <Trans id="home.howitwork_2_subheading">
+                Basierend auf Ihren Angaben stellen wir Ihnen passende Informationen über mögliche rechtliche Ansprüche
+                bereit.
               </Trans>
             </Text>
           </VStack>
           <VStack>
-            <Image
-              boxSize="150px"
-              objectFit="contain"
-              src={`${homeURL}/data/scale.png`}
-            />
+            <Image boxSize="150px" objectFit="contain" src={`${homeURL}/data/scale.png`} />
             <Spacer height={4} maxHeight="20px" minHeight="20px"></Spacer>
             <Heading variant="subheading" textAlign="center">
-              Handlungsoptionen vergleichen
+              <Trans id="home.howitwork_3_heading">Handlungsoptionen vergleichen</Trans>
             </Heading>
             <Spacer height={4} maxHeight="5px" minH="5px"></Spacer>
             <Text textAlign="center" variant="small">
-              <Trans>
-                {/* Wir geben Ihnen Handlungsoptionen und Vorlagen, um Ihre
-                Ansprüche durchzusetzen - von Schreiben an die Gegenseite, über
-                Rechtbseratung bis hin zu Klagen vor Gericht. */}
-                Von Beratungsangeboten über praktische Tipps und Vorlagen bis
-                hin zu einer Klage vor Gericht finden Sie den passenden Weg.
+              <Trans id="home.howitwork_3_subheading">
+                Von Beratungsangeboten über praktische Tipps und Vorlagen bis hin zu einer Klage vor Gericht finden Sie
+                den passenden Weg.
               </Trans>
             </Text>
           </VStack>
@@ -252,24 +216,16 @@ export const HomeMVP = ({ anchorId, ...rest }: FeatureProps) => {
         <Spacer height={4} maxHeight="20px" minHeight="20px"></Spacer>
         <Text textAlign="center" width="full">
           <Trans>
-            Sie haben sich bereits über Ihre Ansprüche informiert und Ihre
-            Handlungsoptionen ausgeschöpft? Dann unterstützen wir Sie auch
-            direkt bei der Erstellung und Einreichung einer Klage für{' '}
-            <Link
-              as={ReactLink}
-              to={`${homeURL}/${Routes.Bryter}/?mietmangelklage`}
-            >
+            Sie haben sich bereits über Ihre Ansprüche informiert und Ihre Handlungsoptionen ausgeschöpft? Dann
+            unterstützen wir Sie auch direkt bei der Erstellung und Einreichung einer Klage für{' '}
+            <Link as={ReactLink} to={`${homeURL}/${Routes.Bryter}/?mietmangelklage`}>
               Mietmängel
             </Link>{' '}
             oder{' '}
-            <Link
-              as={ReactLink}
-              to={`${homeURL}/${Routes.Bryter}/?fluggastrechteklage`}
-            >
+            <Link as={ReactLink} to={`${homeURL}/${Routes.Bryter}/?fluggastrechteklage`}>
               Fluggastrechte
             </Link>
-            . Falls nicht, empfehlen wir zunächst unseren Justizportal
-            Wegweiser:
+            . Falls nicht, empfehlen wir zunächst unseren Justizportal Wegweiser:
           </Trans>
         </Text>
 

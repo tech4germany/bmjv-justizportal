@@ -38,13 +38,7 @@ export const LanguageSelector = (props: FeatureProps) => {
             {gerUserLocale().toUpperCase()}
           </Button>
         </PopoverTrigger>
-        <PopoverContent
-          border={0}
-          boxShadow={'xl'}
-          // bg={popoverContentBgColor}
-          rounded={'sm'}
-          width={'100%'}
-          minW={10}>
+        <PopoverContent border={0} boxShadow={'xl'} rounded={'sm'} width={'100%'} minW={10}>
           <Stack>
             {Object.keys(locales).map((key) => (
               <Box
@@ -170,7 +164,7 @@ export const MenuWithSubnavigation = (props: FeatureProps) => {
 
         <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
           {/* <ColorModeSwitcher alignSelf="center" justifySelf="flex-end" display={{ base: 'none', md: 'flex' }} /> */}
-          {/* <LanguageSelector /> */}
+          <LanguageSelector />
           <Button display="none" colorScheme="primary">
             Anmelden
           </Button>

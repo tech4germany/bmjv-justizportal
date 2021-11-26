@@ -35,10 +35,32 @@ export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsC
 
   return (
     <>
-      <Card height="full">
+      <Card height="full" pos="relative">
+        <Box
+          display={info ? '' : 'none'}
+          as="a"
+          href="#s"
+          pos="absolute"
+          alignSelf="end"
+          height="0"
+          top=".5em"
+          right=".5em"
+          color={disabled ? 'gray.100' : borderColor}
+          _hover={{
+            transitionDuration: '0.2s',
+            color: Primary(),
+          }}>
+          <FaInfoCircle
+            size="1.5em"
+            onClick={(e) => {
+              e.stopPropagation();
+              onOpen();
+            }}
+          />
+        </Box>
         <CardContent
-          pos="relative"
           borderColor={borderColor}
+          justify="center"
           bg="white"
           px={4}
           minH={{ base: 32, sm: '10em', md: '10em' }}
@@ -55,28 +77,6 @@ export const StatsCard = ({ title, info, icon, link, disabled, ...rest }: StatsC
           background={disabled ? 'gray.50' : undefined}
           cursor={disabled ? 'default' : 'pointer'}
           {...rest}>
-          <Box
-            display={info ? '' : 'none'}
-            as="a"
-            href="#s"
-            pos="absolute"
-            alignSelf="end"
-            height="0"
-            top=".5em"
-            right=".5em"
-            color={disabled ? 'gray.100' : borderColor}
-            _hover={{
-              transitionDuration: '0.2s',
-              color: Primary(),
-            }}>
-            <FaInfoCircle
-              size="1.5em"
-              onClick={(e) => {
-                e.stopPropagation();
-                onOpen();
-              }}
-            />
-          </Box>
           <Box color={disabled ? 'gray.400' : Primary()}>{icon}</Box>
           <Box
             fontSize={{ base: 'sm', sm: 'md', md: 'lg' }}
