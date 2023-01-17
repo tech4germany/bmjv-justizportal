@@ -46,7 +46,7 @@ export const AnnotadedText = ({ text, ...rest }: AnnotadedTextProps) => {
             } else if (href != undefined) {
               return <Link href={href}>{children}</Link>;
             } else {
-              return children;
+              return children as React.ReactElement;
             }
           },
           h1({ title, children, ...props }) {

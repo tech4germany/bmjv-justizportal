@@ -9,10 +9,10 @@ interface DynamicFaIconProps {
 
 const DynamicFaIcon = (props: DynamicFaIconProps) => {
   if (props.name in IconsFa) {
-    const IconComponent: any = IconsFa[props.name];
+    const IconComponent: any = IconsFa[props.name as keyof typeof IconsFa];
     return <IconComponent size="3em" />;
   } else if (props.name in IconsMd) {
-    const IconComponent: any = IconsMd[props.name];
+    const IconComponent: any = IconsMd[props.name as keyof typeof IconsMd];
     return <IconComponent size="3em" />;
   } else {
     // Return a default one
@@ -123,7 +123,8 @@ export class MMGraph {
       nextSteps: [],
     };
 
-    currentNode.icon = 'icon' in CI ? <DynamicFaIcon name={CI['icon']} /> : undefined;
+    currentNode.icon =
+      'icon' in CI ? <DynamicFaIcon name={CI['icon']} /> : undefined;
     currentNode.info = CI['note'] ?? undefined;
 
     if ('config' in CI) {
@@ -136,8 +137,10 @@ export class MMGraph {
     }
 
     if (this.getParent(currentNode.id)) {
-      currentNode.caseType = currentNode.caseType ?? this.getParent(currentNode.id)?.caseType;
-      currentNode.caseTopic = currentNode.caseTopic ?? this.getParent(currentNode.id)?.caseTopic;
+      currentNode.caseType =
+        currentNode.caseType ?? this.getParent(currentNode.id)?.caseType;
+      currentNode.caseTopic =
+        currentNode.caseTopic ?? this.getParent(currentNode.id)?.caseTopic;
     }
 
     if (currentInput.data.hasOwnProperty('priority')) {
@@ -148,7 +151,10 @@ export class MMGraph {
       }
     }
 
-    if (Array.isArray(currentInput['children']) && currentInput['children'].length != 0) {
+    if (
+      Array.isArray(currentInput['children']) &&
+      currentInput['children'].length != 0
+    ) {
       currentNode.children = [];
       for (let child of currentInput['children']) {
         if (child['data']['id'] in this.nodes) {
